@@ -3,24 +3,13 @@
     {
       "src": [
         {
-          "src": "libraries/Remora.Discord/src",
+          "src": "src",
           "files": [
             "**/*.csproj"
           ]
         }
       ],
-      "dest": "api/Remora.Discord"
-    },
-    {
-      "src": [
-        {
-          "src": "libraries/Remora.Sdk/src",
-          "files": [
-            "**/*.msbuildproj"
-          ]
-        }
-      ],
-      "dest": "api/Remora.Sdk"
+      "dest": "api/"
     }
   ],
   "build": {
@@ -33,22 +22,16 @@
       },
       {
         "files": [
-          "libraries/Remora.Discord/docs/**/*.{md,yml}"
+          "docs/**/*.{md,yml}"
         ],
-        "dest": "docs/Remora.Discord"
-      },
-      {
-        "files": [
-          "libraries/Remora.Sdk/docs/**/*.{md,yml}"
-        ],
-        "dest": "docs/Remora.Sdk"
+        "dest": "docs/"
       }
     ],
     "resource": [
       {
         "files": [
           "images/**",
-          "libraries/**/docs/images/**"
+          "docs/**/images/**"
         ]
       }
     ],

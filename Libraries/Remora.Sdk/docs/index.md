@@ -1,3 +1,0 @@
-# Remora.Sdk
-
-Hello world!
