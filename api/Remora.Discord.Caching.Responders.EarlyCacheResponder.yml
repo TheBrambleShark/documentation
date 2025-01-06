@@ -1,0 +1,2338 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.Caching.Responders.EarlyCacheResponder
+  commentId: T:Remora.Discord.Caching.Responders.EarlyCacheResponder
+  id: EarlyCacheResponder
+  parent: Remora.Discord.Caching.Responders
+  children:
+  - Remora.Discord.Caching.Responders.EarlyCacheResponder.#ctor(Remora.Discord.Caching.Services.CacheService)
+  - Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IChannelCreate,System.Threading.CancellationToken)
+  - Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IChannelUpdate,System.Threading.CancellationToken)
+  - Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildBanAdd,System.Threading.CancellationToken)
+  - Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate,System.Threading.CancellationToken)
+  - Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildEmojisUpdate,System.Threading.CancellationToken)
+  - Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberAdd,System.Threading.CancellationToken)
+  - Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberUpdate,System.Threading.CancellationToken)
+  - Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk,System.Threading.CancellationToken)
+  - Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleCreate,System.Threading.CancellationToken)
+  - Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleUpdate,System.Threading.CancellationToken)
+  - Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IInteractionCreate,System.Threading.CancellationToken)
+  - Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate,System.Threading.CancellationToken)
+  - Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionAdd,System.Threading.CancellationToken)
+  - Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IUserUpdate,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: EarlyCacheResponder
+  nameWithType: EarlyCacheResponder
+  fullName: Remora.Discord.Caching.Responders.EarlyCacheResponder
+  type: Class
+  source:
+    id: EarlyCacheResponder
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Caching\Responders\EarlyCacheResponder.cs
+    startLine: 40
+  assemblies:
+  - Remora.Discord.Caching
+  namespace: Remora.Discord.Caching.Responders
+  summary: Caches incoming data from the gateway.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public class EarlyCacheResponder : IResponder<IChannelCreate>, IResponder<IChannelUpdate>, IResponder<IGuildBanAdd>, IResponder<IGuildCreate>, IResponder<IGuildEmojisUpdate>, IResponder<IGuildMemberAdd>, IResponder<IGuildMembersChunk>, IResponder<IGuildMemberUpdate>, IResponder<IGuildRoleCreate>, IResponder<IGuildRoleUpdate>, IResponder<IMessageCreate>, IResponder<IMessageReactionAdd>, IResponder<IUserUpdate>, IResponder<IInteractionCreate>, IResponder
+    content.vb: >-
+      <PublicAPI>
+
+      Public Class EarlyCacheResponder Implements IResponder(Of IChannelCreate), IResponder(Of IChannelUpdate), IResponder(Of IGuildBanAdd), IResponder(Of IGuildCreate), IResponder(Of IGuildEmojisUpdate), IResponder(Of IGuildMemberAdd), IResponder(Of IGuildMembersChunk), IResponder(Of IGuildMemberUpdate), IResponder(Of IGuildRoleCreate), IResponder(Of IGuildRoleUpdate), IResponder(Of IMessageCreate), IResponder(Of IMessageReactionAdd), IResponder(Of IUserUpdate), IResponder(Of IInteractionCreate), IResponder
+  inheritance:
+  - System.Object
+  implements:
+  - Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IChannelCreate}
+  - Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IChannelUpdate}
+  - Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildBanAdd}
+  - Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate}
+  - Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildEmojisUpdate}
+  - Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberAdd}
+  - Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk}
+  - Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberUpdate}
+  - Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleCreate}
+  - Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleUpdate}
+  - Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate}
+  - Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionAdd}
+  - Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IUserUpdate}
+  - Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IInteractionCreate}
+  - Remora.Discord.Gateway.Responders.IResponder
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.Caching.Responders.EarlyCacheResponder.#ctor(Remora.Discord.Caching.Services.CacheService)
+  commentId: M:Remora.Discord.Caching.Responders.EarlyCacheResponder.#ctor(Remora.Discord.Caching.Services.CacheService)
+  id: '#ctor(Remora.Discord.Caching.Services.CacheService)'
+  parent: Remora.Discord.Caching.Responders.EarlyCacheResponder
+  langs:
+  - csharp
+  - vb
+  name: EarlyCacheResponder(CacheService)
+  nameWithType: EarlyCacheResponder.EarlyCacheResponder(CacheService)
+  fullName: Remora.Discord.Caching.Responders.EarlyCacheResponder.EarlyCacheResponder(Remora.Discord.Caching.Services.CacheService)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Caching\Responders\EarlyCacheResponder.cs
+    startLine: 63
+  assemblies:
+  - Remora.Discord.Caching
+  namespace: Remora.Discord.Caching.Responders
+  summary: Initializes a new instance of the <xref href="Remora.Discord.Caching.Responders.EarlyCacheResponder" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public EarlyCacheResponder(CacheService cacheService)
+    parameters:
+    - id: cacheService
+      type: Remora.Discord.Caching.Services.CacheService
+      description: The cache service.
+    content.vb: Public Sub New(cacheService As CacheService)
+  overload: Remora.Discord.Caching.Responders.EarlyCacheResponder.#ctor*
+  nameWithType.vb: EarlyCacheResponder.New(CacheService)
+  fullName.vb: Remora.Discord.Caching.Responders.EarlyCacheResponder.New(Remora.Discord.Caching.Services.CacheService)
+  name.vb: New(CacheService)
+- uid: Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IChannelCreate,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IChannelCreate,System.Threading.CancellationToken)
+  id: RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IChannelCreate,System.Threading.CancellationToken)
+  parent: Remora.Discord.Caching.Responders.EarlyCacheResponder
+  langs:
+  - csharp
+  - vb
+  name: RespondAsync(IChannelCreate, CancellationToken)
+  nameWithType: EarlyCacheResponder.RespondAsync(IChannelCreate, CancellationToken)
+  fullName: Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IChannelCreate, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: RespondAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Caching\Responders\EarlyCacheResponder.cs
+    startLine: 69
+  assemblies:
+  - Remora.Discord.Caching
+  namespace: Remora.Discord.Caching.Responders
+  summary: Responds to the given gateway event, handling it asynchronously.
+  example: []
+  syntax:
+    content: public Task<Result> RespondAsync(IChannelCreate gatewayEvent, CancellationToken ct = default)
+    parameters:
+    - id: gatewayEvent
+      type: Remora.Discord.API.Abstractions.Gateway.Events.IChannelCreate
+      description: The event to respond to.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result}
+      description: A response result which may or may not have succeeded.
+    content.vb: Public Function RespondAsync(gatewayEvent As IChannelCreate, ct As CancellationToken = Nothing) As Task(Of Result)
+  overload: Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync*
+  implements:
+  - Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IChannelCreate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IChannelCreate,System.Threading.CancellationToken)
+- uid: Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IChannelUpdate,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IChannelUpdate,System.Threading.CancellationToken)
+  id: RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IChannelUpdate,System.Threading.CancellationToken)
+  parent: Remora.Discord.Caching.Responders.EarlyCacheResponder
+  langs:
+  - csharp
+  - vb
+  name: RespondAsync(IChannelUpdate, CancellationToken)
+  nameWithType: EarlyCacheResponder.RespondAsync(IChannelUpdate, CancellationToken)
+  fullName: Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IChannelUpdate, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: RespondAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Caching\Responders\EarlyCacheResponder.cs
+    startLine: 78
+  assemblies:
+  - Remora.Discord.Caching
+  namespace: Remora.Discord.Caching.Responders
+  summary: Responds to the given gateway event, handling it asynchronously.
+  example: []
+  syntax:
+    content: public Task<Result> RespondAsync(IChannelUpdate gatewayEvent, CancellationToken ct = default)
+    parameters:
+    - id: gatewayEvent
+      type: Remora.Discord.API.Abstractions.Gateway.Events.IChannelUpdate
+      description: The event to respond to.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result}
+      description: A response result which may or may not have succeeded.
+    content.vb: Public Function RespondAsync(gatewayEvent As IChannelUpdate, ct As CancellationToken = Nothing) As Task(Of Result)
+  overload: Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync*
+  implements:
+  - Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IChannelUpdate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IChannelUpdate,System.Threading.CancellationToken)
+- uid: Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildBanAdd,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildBanAdd,System.Threading.CancellationToken)
+  id: RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildBanAdd,System.Threading.CancellationToken)
+  parent: Remora.Discord.Caching.Responders.EarlyCacheResponder
+  langs:
+  - csharp
+  - vb
+  name: RespondAsync(IGuildBanAdd, CancellationToken)
+  nameWithType: EarlyCacheResponder.RespondAsync(IGuildBanAdd, CancellationToken)
+  fullName: Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildBanAdd, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: RespondAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Caching\Responders\EarlyCacheResponder.cs
+    startLine: 87
+  assemblies:
+  - Remora.Discord.Caching
+  namespace: Remora.Discord.Caching.Responders
+  summary: Responds to the given gateway event, handling it asynchronously.
+  example: []
+  syntax:
+    content: public Task<Result> RespondAsync(IGuildBanAdd gatewayEvent, CancellationToken ct = default)
+    parameters:
+    - id: gatewayEvent
+      type: Remora.Discord.API.Abstractions.Gateway.Events.IGuildBanAdd
+      description: The event to respond to.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result}
+      description: A response result which may or may not have succeeded.
+    content.vb: Public Function RespondAsync(gatewayEvent As IGuildBanAdd, ct As CancellationToken = Nothing) As Task(Of Result)
+  overload: Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync*
+  implements:
+  - Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildBanAdd}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildBanAdd,System.Threading.CancellationToken)
+- uid: Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate,System.Threading.CancellationToken)
+  id: RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate,System.Threading.CancellationToken)
+  parent: Remora.Discord.Caching.Responders.EarlyCacheResponder
+  langs:
+  - csharp
+  - vb
+  name: RespondAsync(IGuildCreate, CancellationToken)
+  nameWithType: EarlyCacheResponder.RespondAsync(IGuildCreate, CancellationToken)
+  fullName: Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: RespondAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Caching\Responders\EarlyCacheResponder.cs
+    startLine: 96
+  assemblies:
+  - Remora.Discord.Caching
+  namespace: Remora.Discord.Caching.Responders
+  summary: Responds to the given gateway event, handling it asynchronously.
+  example: []
+  syntax:
+    content: public Task<Result> RespondAsync(IGuildCreate gatewayEvent, CancellationToken ct = default)
+    parameters:
+    - id: gatewayEvent
+      type: Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate
+      description: The event to respond to.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result}
+      description: A response result which may or may not have succeeded.
+    content.vb: Public Function RespondAsync(gatewayEvent As IGuildCreate, ct As CancellationToken = Nothing) As Task(Of Result)
+  overload: Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync*
+  implements:
+  - Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate,System.Threading.CancellationToken)
+- uid: Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildEmojisUpdate,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildEmojisUpdate,System.Threading.CancellationToken)
+  id: RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildEmojisUpdate,System.Threading.CancellationToken)
+  parent: Remora.Discord.Caching.Responders.EarlyCacheResponder
+  langs:
+  - csharp
+  - vb
+  name: RespondAsync(IGuildEmojisUpdate, CancellationToken)
+  nameWithType: EarlyCacheResponder.RespondAsync(IGuildEmojisUpdate, CancellationToken)
+  fullName: Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildEmojisUpdate, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: RespondAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Caching\Responders\EarlyCacheResponder.cs
+    startLine: 110
+  assemblies:
+  - Remora.Discord.Caching
+  namespace: Remora.Discord.Caching.Responders
+  summary: Responds to the given gateway event, handling it asynchronously.
+  example: []
+  syntax:
+    content: public Task<Result> RespondAsync(IGuildEmojisUpdate gatewayEvent, CancellationToken ct = default)
+    parameters:
+    - id: gatewayEvent
+      type: Remora.Discord.API.Abstractions.Gateway.Events.IGuildEmojisUpdate
+      description: The event to respond to.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result}
+      description: A response result which may or may not have succeeded.
+    content.vb: Public Function RespondAsync(gatewayEvent As IGuildEmojisUpdate, ct As CancellationToken = Nothing) As Task(Of Result)
+  overload: Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync*
+  implements:
+  - Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildEmojisUpdate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildEmojisUpdate,System.Threading.CancellationToken)
+- uid: Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberAdd,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberAdd,System.Threading.CancellationToken)
+  id: RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberAdd,System.Threading.CancellationToken)
+  parent: Remora.Discord.Caching.Responders.EarlyCacheResponder
+  langs:
+  - csharp
+  - vb
+  name: RespondAsync(IGuildMemberAdd, CancellationToken)
+  nameWithType: EarlyCacheResponder.RespondAsync(IGuildMemberAdd, CancellationToken)
+  fullName: Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberAdd, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: RespondAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Caching\Responders\EarlyCacheResponder.cs
+    startLine: 127
+  assemblies:
+  - Remora.Discord.Caching
+  namespace: Remora.Discord.Caching.Responders
+  summary: Responds to the given gateway event, handling it asynchronously.
+  example: []
+  syntax:
+    content: public Task<Result> RespondAsync(IGuildMemberAdd gatewayEvent, CancellationToken ct = default)
+    parameters:
+    - id: gatewayEvent
+      type: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberAdd
+      description: The event to respond to.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result}
+      description: A response result which may or may not have succeeded.
+    content.vb: Public Function RespondAsync(gatewayEvent As IGuildMemberAdd, ct As CancellationToken = Nothing) As Task(Of Result)
+  overload: Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync*
+  implements:
+  - Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberAdd}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberAdd,System.Threading.CancellationToken)
+- uid: Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk,System.Threading.CancellationToken)
+  id: RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk,System.Threading.CancellationToken)
+  parent: Remora.Discord.Caching.Responders.EarlyCacheResponder
+  langs:
+  - csharp
+  - vb
+  name: RespondAsync(IGuildMembersChunk, CancellationToken)
+  nameWithType: EarlyCacheResponder.RespondAsync(IGuildMembersChunk, CancellationToken)
+  fullName: Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: RespondAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Caching\Responders\EarlyCacheResponder.cs
+    startLine: 141
+  assemblies:
+  - Remora.Discord.Caching
+  namespace: Remora.Discord.Caching.Responders
+  summary: Responds to the given gateway event, handling it asynchronously.
+  example: []
+  syntax:
+    content: public Task<Result> RespondAsync(IGuildMembersChunk gatewayEvent, CancellationToken ct = default)
+    parameters:
+    - id: gatewayEvent
+      type: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk
+      description: The event to respond to.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result}
+      description: A response result which may or may not have succeeded.
+    content.vb: Public Function RespondAsync(gatewayEvent As IGuildMembersChunk, ct As CancellationToken = Nothing) As Task(Of Result)
+  overload: Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync*
+  implements:
+  - Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk,System.Threading.CancellationToken)
+- uid: Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberUpdate,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberUpdate,System.Threading.CancellationToken)
+  id: RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberUpdate,System.Threading.CancellationToken)
+  parent: Remora.Discord.Caching.Responders.EarlyCacheResponder
+  langs:
+  - csharp
+  - vb
+  name: RespondAsync(IGuildMemberUpdate, CancellationToken)
+  nameWithType: EarlyCacheResponder.RespondAsync(IGuildMemberUpdate, CancellationToken)
+  fullName: Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberUpdate, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: RespondAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Caching\Responders\EarlyCacheResponder.cs
+    startLine: 174
+  assemblies:
+  - Remora.Discord.Caching
+  namespace: Remora.Discord.Caching.Responders
+  summary: Responds to the given gateway event, handling it asynchronously.
+  example: []
+  syntax:
+    content: public Task<Result> RespondAsync(IGuildMemberUpdate gatewayEvent, CancellationToken ct = default)
+    parameters:
+    - id: gatewayEvent
+      type: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberUpdate
+      description: The event to respond to.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result}
+      description: A response result which may or may not have succeeded.
+    content.vb: Public Function RespondAsync(gatewayEvent As IGuildMemberUpdate, ct As CancellationToken = Nothing) As Task(Of Result)
+  overload: Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync*
+  implements:
+  - Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberUpdate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberUpdate,System.Threading.CancellationToken)
+- uid: Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleCreate,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleCreate,System.Threading.CancellationToken)
+  id: RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleCreate,System.Threading.CancellationToken)
+  parent: Remora.Discord.Caching.Responders.EarlyCacheResponder
+  langs:
+  - csharp
+  - vb
+  name: RespondAsync(IGuildRoleCreate, CancellationToken)
+  nameWithType: EarlyCacheResponder.RespondAsync(IGuildRoleCreate, CancellationToken)
+  fullName: Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleCreate, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: RespondAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Caching\Responders\EarlyCacheResponder.cs
+    startLine: 230
+  assemblies:
+  - Remora.Discord.Caching
+  namespace: Remora.Discord.Caching.Responders
+  summary: Responds to the given gateway event, handling it asynchronously.
+  example: []
+  syntax:
+    content: public Task<Result> RespondAsync(IGuildRoleCreate gatewayEvent, CancellationToken ct = default)
+    parameters:
+    - id: gatewayEvent
+      type: Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleCreate
+      description: The event to respond to.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result}
+      description: A response result which may or may not have succeeded.
+    content.vb: Public Function RespondAsync(gatewayEvent As IGuildRoleCreate, ct As CancellationToken = Nothing) As Task(Of Result)
+  overload: Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync*
+  implements:
+  - Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleCreate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleCreate,System.Threading.CancellationToken)
+- uid: Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleUpdate,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleUpdate,System.Threading.CancellationToken)
+  id: RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleUpdate,System.Threading.CancellationToken)
+  parent: Remora.Discord.Caching.Responders.EarlyCacheResponder
+  langs:
+  - csharp
+  - vb
+  name: RespondAsync(IGuildRoleUpdate, CancellationToken)
+  nameWithType: EarlyCacheResponder.RespondAsync(IGuildRoleUpdate, CancellationToken)
+  fullName: Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleUpdate, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: RespondAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Caching\Responders\EarlyCacheResponder.cs
+    startLine: 239
+  assemblies:
+  - Remora.Discord.Caching
+  namespace: Remora.Discord.Caching.Responders
+  summary: Responds to the given gateway event, handling it asynchronously.
+  example: []
+  syntax:
+    content: public Task<Result> RespondAsync(IGuildRoleUpdate gatewayEvent, CancellationToken ct = default)
+    parameters:
+    - id: gatewayEvent
+      type: Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleUpdate
+      description: The event to respond to.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result}
+      description: A response result which may or may not have succeeded.
+    content.vb: Public Function RespondAsync(gatewayEvent As IGuildRoleUpdate, ct As CancellationToken = Nothing) As Task(Of Result)
+  overload: Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync*
+  implements:
+  - Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleUpdate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleUpdate,System.Threading.CancellationToken)
+- uid: Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate,System.Threading.CancellationToken)
+  id: RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate,System.Threading.CancellationToken)
+  parent: Remora.Discord.Caching.Responders.EarlyCacheResponder
+  langs:
+  - csharp
+  - vb
+  name: RespondAsync(IMessageCreate, CancellationToken)
+  nameWithType: EarlyCacheResponder.RespondAsync(IMessageCreate, CancellationToken)
+  fullName: Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: RespondAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Caching\Responders\EarlyCacheResponder.cs
+    startLine: 248
+  assemblies:
+  - Remora.Discord.Caching
+  namespace: Remora.Discord.Caching.Responders
+  summary: Responds to the given gateway event, handling it asynchronously.
+  example: []
+  syntax:
+    content: public Task<Result> RespondAsync(IMessageCreate gatewayEvent, CancellationToken ct = default)
+    parameters:
+    - id: gatewayEvent
+      type: Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate
+      description: The event to respond to.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result}
+      description: A response result which may or may not have succeeded.
+    content.vb: Public Function RespondAsync(gatewayEvent As IMessageCreate, ct As CancellationToken = Nothing) As Task(Of Result)
+  overload: Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync*
+  implements:
+  - Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate,System.Threading.CancellationToken)
+- uid: Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionAdd,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionAdd,System.Threading.CancellationToken)
+  id: RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionAdd,System.Threading.CancellationToken)
+  parent: Remora.Discord.Caching.Responders.EarlyCacheResponder
+  langs:
+  - csharp
+  - vb
+  name: RespondAsync(IMessageReactionAdd, CancellationToken)
+  nameWithType: EarlyCacheResponder.RespondAsync(IMessageReactionAdd, CancellationToken)
+  fullName: Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionAdd, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: RespondAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Caching\Responders\EarlyCacheResponder.cs
+    startLine: 257
+  assemblies:
+  - Remora.Discord.Caching
+  namespace: Remora.Discord.Caching.Responders
+  summary: Responds to the given gateway event, handling it asynchronously.
+  example: []
+  syntax:
+    content: public Task<Result> RespondAsync(IMessageReactionAdd gatewayEvent, CancellationToken ct = default)
+    parameters:
+    - id: gatewayEvent
+      type: Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionAdd
+      description: The event to respond to.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result}
+      description: A response result which may or may not have succeeded.
+    content.vb: Public Function RespondAsync(gatewayEvent As IMessageReactionAdd, ct As CancellationToken = Nothing) As Task(Of Result)
+  overload: Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync*
+  implements:
+  - Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionAdd}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionAdd,System.Threading.CancellationToken)
+- uid: Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IUserUpdate,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IUserUpdate,System.Threading.CancellationToken)
+  id: RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IUserUpdate,System.Threading.CancellationToken)
+  parent: Remora.Discord.Caching.Responders.EarlyCacheResponder
+  langs:
+  - csharp
+  - vb
+  name: RespondAsync(IUserUpdate, CancellationToken)
+  nameWithType: EarlyCacheResponder.RespondAsync(IUserUpdate, CancellationToken)
+  fullName: Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IUserUpdate, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: RespondAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Caching\Responders\EarlyCacheResponder.cs
+    startLine: 281
+  assemblies:
+  - Remora.Discord.Caching
+  namespace: Remora.Discord.Caching.Responders
+  summary: Responds to the given gateway event, handling it asynchronously.
+  example: []
+  syntax:
+    content: public Task<Result> RespondAsync(IUserUpdate gatewayEvent, CancellationToken ct = default)
+    parameters:
+    - id: gatewayEvent
+      type: Remora.Discord.API.Abstractions.Gateway.Events.IUserUpdate
+      description: The event to respond to.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result}
+      description: A response result which may or may not have succeeded.
+    content.vb: Public Function RespondAsync(gatewayEvent As IUserUpdate, ct As CancellationToken = Nothing) As Task(Of Result)
+  overload: Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync*
+  implements:
+  - Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IUserUpdate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IUserUpdate,System.Threading.CancellationToken)
+- uid: Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IInteractionCreate,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IInteractionCreate,System.Threading.CancellationToken)
+  id: RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IInteractionCreate,System.Threading.CancellationToken)
+  parent: Remora.Discord.Caching.Responders.EarlyCacheResponder
+  langs:
+  - csharp
+  - vb
+  name: RespondAsync(IInteractionCreate, CancellationToken)
+  nameWithType: EarlyCacheResponder.RespondAsync(IInteractionCreate, CancellationToken)
+  fullName: Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IInteractionCreate, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: RespondAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Caching\Responders\EarlyCacheResponder.cs
+    startLine: 290
+  assemblies:
+  - Remora.Discord.Caching
+  namespace: Remora.Discord.Caching.Responders
+  summary: Responds to the given gateway event, handling it asynchronously.
+  example: []
+  syntax:
+    content: public Task<Result> RespondAsync(IInteractionCreate gatewayEvent, CancellationToken ct = default)
+    parameters:
+    - id: gatewayEvent
+      type: Remora.Discord.API.Abstractions.Gateway.Events.IInteractionCreate
+      description: The event to respond to.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result}
+      description: A response result which may or may not have succeeded.
+    content.vb: Public Function RespondAsync(gatewayEvent As IInteractionCreate, ct As CancellationToken = Nothing) As Task(Of Result)
+  overload: Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync*
+  implements:
+  - Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IInteractionCreate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IInteractionCreate,System.Threading.CancellationToken)
+references:
+- uid: Remora.Discord.Caching.Responders
+  commentId: N:Remora.Discord.Caching.Responders
+  href: Remora.html
+  name: Remora.Discord.Caching.Responders
+  nameWithType: Remora.Discord.Caching.Responders
+  fullName: Remora.Discord.Caching.Responders
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Caching
+    name: Caching
+    href: Remora.Discord.Caching.html
+  - name: .
+  - uid: Remora.Discord.Caching.Responders
+    name: Responders
+    href: Remora.Discord.Caching.Responders.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Caching
+    name: Caching
+    href: Remora.Discord.Caching.html
+  - name: .
+  - uid: Remora.Discord.Caching.Responders
+    name: Responders
+    href: Remora.Discord.Caching.Responders.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IChannelCreate}
+  commentId: T:Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IChannelCreate}
+  parent: Remora.Discord.Gateway.Responders
+  definition: Remora.Discord.Gateway.Responders.IResponder`1
+  href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  name: IResponder<IChannelCreate>
+  nameWithType: IResponder<IChannelCreate>
+  fullName: Remora.Discord.Gateway.Responders.IResponder<Remora.Discord.API.Abstractions.Gateway.Events.IChannelCreate>
+  nameWithType.vb: IResponder(Of IChannelCreate)
+  fullName.vb: Remora.Discord.Gateway.Responders.IResponder(Of Remora.Discord.API.Abstractions.Gateway.Events.IChannelCreate)
+  name.vb: IResponder(Of IChannelCreate)
+  spec.csharp:
+  - uid: Remora.Discord.Gateway.Responders.IResponder`1
+    name: IResponder
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IChannelCreate
+    name: IChannelCreate
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IChannelCreate.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Discord.Gateway.Responders.IResponder`1
+    name: IResponder
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IChannelCreate
+    name: IChannelCreate
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IChannelCreate.html
+  - name: )
+- uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IChannelUpdate}
+  commentId: T:Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IChannelUpdate}
+  parent: Remora.Discord.Gateway.Responders
+  definition: Remora.Discord.Gateway.Responders.IResponder`1
+  href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  name: IResponder<IChannelUpdate>
+  nameWithType: IResponder<IChannelUpdate>
+  fullName: Remora.Discord.Gateway.Responders.IResponder<Remora.Discord.API.Abstractions.Gateway.Events.IChannelUpdate>
+  nameWithType.vb: IResponder(Of IChannelUpdate)
+  fullName.vb: Remora.Discord.Gateway.Responders.IResponder(Of Remora.Discord.API.Abstractions.Gateway.Events.IChannelUpdate)
+  name.vb: IResponder(Of IChannelUpdate)
+  spec.csharp:
+  - uid: Remora.Discord.Gateway.Responders.IResponder`1
+    name: IResponder
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IChannelUpdate
+    name: IChannelUpdate
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IChannelUpdate.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Discord.Gateway.Responders.IResponder`1
+    name: IResponder
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IChannelUpdate
+    name: IChannelUpdate
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IChannelUpdate.html
+  - name: )
+- uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildBanAdd}
+  commentId: T:Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildBanAdd}
+  parent: Remora.Discord.Gateway.Responders
+  definition: Remora.Discord.Gateway.Responders.IResponder`1
+  href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  name: IResponder<IGuildBanAdd>
+  nameWithType: IResponder<IGuildBanAdd>
+  fullName: Remora.Discord.Gateway.Responders.IResponder<Remora.Discord.API.Abstractions.Gateway.Events.IGuildBanAdd>
+  nameWithType.vb: IResponder(Of IGuildBanAdd)
+  fullName.vb: Remora.Discord.Gateway.Responders.IResponder(Of Remora.Discord.API.Abstractions.Gateway.Events.IGuildBanAdd)
+  name.vb: IResponder(Of IGuildBanAdd)
+  spec.csharp:
+  - uid: Remora.Discord.Gateway.Responders.IResponder`1
+    name: IResponder
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildBanAdd
+    name: IGuildBanAdd
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildBanAdd.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Discord.Gateway.Responders.IResponder`1
+    name: IResponder
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildBanAdd
+    name: IGuildBanAdd
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildBanAdd.html
+  - name: )
+- uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate}
+  commentId: T:Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate}
+  parent: Remora.Discord.Gateway.Responders
+  definition: Remora.Discord.Gateway.Responders.IResponder`1
+  href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  name: IResponder<IGuildCreate>
+  nameWithType: IResponder<IGuildCreate>
+  fullName: Remora.Discord.Gateway.Responders.IResponder<Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate>
+  nameWithType.vb: IResponder(Of IGuildCreate)
+  fullName.vb: Remora.Discord.Gateway.Responders.IResponder(Of Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate)
+  name.vb: IResponder(Of IGuildCreate)
+  spec.csharp:
+  - uid: Remora.Discord.Gateway.Responders.IResponder`1
+    name: IResponder
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate
+    name: IGuildCreate
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Discord.Gateway.Responders.IResponder`1
+    name: IResponder
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate
+    name: IGuildCreate
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate.html
+  - name: )
+- uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildEmojisUpdate}
+  commentId: T:Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildEmojisUpdate}
+  parent: Remora.Discord.Gateway.Responders
+  definition: Remora.Discord.Gateway.Responders.IResponder`1
+  href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  name: IResponder<IGuildEmojisUpdate>
+  nameWithType: IResponder<IGuildEmojisUpdate>
+  fullName: Remora.Discord.Gateway.Responders.IResponder<Remora.Discord.API.Abstractions.Gateway.Events.IGuildEmojisUpdate>
+  nameWithType.vb: IResponder(Of IGuildEmojisUpdate)
+  fullName.vb: Remora.Discord.Gateway.Responders.IResponder(Of Remora.Discord.API.Abstractions.Gateway.Events.IGuildEmojisUpdate)
+  name.vb: IResponder(Of IGuildEmojisUpdate)
+  spec.csharp:
+  - uid: Remora.Discord.Gateway.Responders.IResponder`1
+    name: IResponder
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildEmojisUpdate
+    name: IGuildEmojisUpdate
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildEmojisUpdate.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Discord.Gateway.Responders.IResponder`1
+    name: IResponder
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildEmojisUpdate
+    name: IGuildEmojisUpdate
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildEmojisUpdate.html
+  - name: )
+- uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberAdd}
+  commentId: T:Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberAdd}
+  parent: Remora.Discord.Gateway.Responders
+  definition: Remora.Discord.Gateway.Responders.IResponder`1
+  href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  name: IResponder<IGuildMemberAdd>
+  nameWithType: IResponder<IGuildMemberAdd>
+  fullName: Remora.Discord.Gateway.Responders.IResponder<Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberAdd>
+  nameWithType.vb: IResponder(Of IGuildMemberAdd)
+  fullName.vb: Remora.Discord.Gateway.Responders.IResponder(Of Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberAdd)
+  name.vb: IResponder(Of IGuildMemberAdd)
+  spec.csharp:
+  - uid: Remora.Discord.Gateway.Responders.IResponder`1
+    name: IResponder
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberAdd
+    name: IGuildMemberAdd
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberAdd.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Discord.Gateway.Responders.IResponder`1
+    name: IResponder
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberAdd
+    name: IGuildMemberAdd
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberAdd.html
+  - name: )
+- uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk}
+  commentId: T:Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk}
+  parent: Remora.Discord.Gateway.Responders
+  definition: Remora.Discord.Gateway.Responders.IResponder`1
+  href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  name: IResponder<IGuildMembersChunk>
+  nameWithType: IResponder<IGuildMembersChunk>
+  fullName: Remora.Discord.Gateway.Responders.IResponder<Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk>
+  nameWithType.vb: IResponder(Of IGuildMembersChunk)
+  fullName.vb: Remora.Discord.Gateway.Responders.IResponder(Of Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk)
+  name.vb: IResponder(Of IGuildMembersChunk)
+  spec.csharp:
+  - uid: Remora.Discord.Gateway.Responders.IResponder`1
+    name: IResponder
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk
+    name: IGuildMembersChunk
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Discord.Gateway.Responders.IResponder`1
+    name: IResponder
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk
+    name: IGuildMembersChunk
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.html
+  - name: )
+- uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberUpdate}
+  commentId: T:Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberUpdate}
+  parent: Remora.Discord.Gateway.Responders
+  definition: Remora.Discord.Gateway.Responders.IResponder`1
+  href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  name: IResponder<IGuildMemberUpdate>
+  nameWithType: IResponder<IGuildMemberUpdate>
+  fullName: Remora.Discord.Gateway.Responders.IResponder<Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberUpdate>
+  nameWithType.vb: IResponder(Of IGuildMemberUpdate)
+  fullName.vb: Remora.Discord.Gateway.Responders.IResponder(Of Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberUpdate)
+  name.vb: IResponder(Of IGuildMemberUpdate)
+  spec.csharp:
+  - uid: Remora.Discord.Gateway.Responders.IResponder`1
+    name: IResponder
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberUpdate
+    name: IGuildMemberUpdate
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberUpdate.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Discord.Gateway.Responders.IResponder`1
+    name: IResponder
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberUpdate
+    name: IGuildMemberUpdate
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberUpdate.html
+  - name: )
+- uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleCreate}
+  commentId: T:Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleCreate}
+  parent: Remora.Discord.Gateway.Responders
+  definition: Remora.Discord.Gateway.Responders.IResponder`1
+  href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  name: IResponder<IGuildRoleCreate>
+  nameWithType: IResponder<IGuildRoleCreate>
+  fullName: Remora.Discord.Gateway.Responders.IResponder<Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleCreate>
+  nameWithType.vb: IResponder(Of IGuildRoleCreate)
+  fullName.vb: Remora.Discord.Gateway.Responders.IResponder(Of Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleCreate)
+  name.vb: IResponder(Of IGuildRoleCreate)
+  spec.csharp:
+  - uid: Remora.Discord.Gateway.Responders.IResponder`1
+    name: IResponder
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleCreate
+    name: IGuildRoleCreate
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleCreate.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Discord.Gateway.Responders.IResponder`1
+    name: IResponder
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleCreate
+    name: IGuildRoleCreate
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleCreate.html
+  - name: )
+- uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleUpdate}
+  commentId: T:Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleUpdate}
+  parent: Remora.Discord.Gateway.Responders
+  definition: Remora.Discord.Gateway.Responders.IResponder`1
+  href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  name: IResponder<IGuildRoleUpdate>
+  nameWithType: IResponder<IGuildRoleUpdate>
+  fullName: Remora.Discord.Gateway.Responders.IResponder<Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleUpdate>
+  nameWithType.vb: IResponder(Of IGuildRoleUpdate)
+  fullName.vb: Remora.Discord.Gateway.Responders.IResponder(Of Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleUpdate)
+  name.vb: IResponder(Of IGuildRoleUpdate)
+  spec.csharp:
+  - uid: Remora.Discord.Gateway.Responders.IResponder`1
+    name: IResponder
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleUpdate
+    name: IGuildRoleUpdate
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleUpdate.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Discord.Gateway.Responders.IResponder`1
+    name: IResponder
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleUpdate
+    name: IGuildRoleUpdate
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleUpdate.html
+  - name: )
+- uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate}
+  commentId: T:Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate}
+  parent: Remora.Discord.Gateway.Responders
+  definition: Remora.Discord.Gateway.Responders.IResponder`1
+  href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  name: IResponder<IMessageCreate>
+  nameWithType: IResponder<IMessageCreate>
+  fullName: Remora.Discord.Gateway.Responders.IResponder<Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate>
+  nameWithType.vb: IResponder(Of IMessageCreate)
+  fullName.vb: Remora.Discord.Gateway.Responders.IResponder(Of Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate)
+  name.vb: IResponder(Of IMessageCreate)
+  spec.csharp:
+  - uid: Remora.Discord.Gateway.Responders.IResponder`1
+    name: IResponder
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate
+    name: IMessageCreate
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Discord.Gateway.Responders.IResponder`1
+    name: IResponder
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate
+    name: IMessageCreate
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate.html
+  - name: )
+- uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionAdd}
+  commentId: T:Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionAdd}
+  parent: Remora.Discord.Gateway.Responders
+  definition: Remora.Discord.Gateway.Responders.IResponder`1
+  href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  name: IResponder<IMessageReactionAdd>
+  nameWithType: IResponder<IMessageReactionAdd>
+  fullName: Remora.Discord.Gateway.Responders.IResponder<Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionAdd>
+  nameWithType.vb: IResponder(Of IMessageReactionAdd)
+  fullName.vb: Remora.Discord.Gateway.Responders.IResponder(Of Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionAdd)
+  name.vb: IResponder(Of IMessageReactionAdd)
+  spec.csharp:
+  - uid: Remora.Discord.Gateway.Responders.IResponder`1
+    name: IResponder
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionAdd
+    name: IMessageReactionAdd
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionAdd.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Discord.Gateway.Responders.IResponder`1
+    name: IResponder
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionAdd
+    name: IMessageReactionAdd
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionAdd.html
+  - name: )
+- uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IUserUpdate}
+  commentId: T:Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IUserUpdate}
+  parent: Remora.Discord.Gateway.Responders
+  definition: Remora.Discord.Gateway.Responders.IResponder`1
+  href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  name: IResponder<IUserUpdate>
+  nameWithType: IResponder<IUserUpdate>
+  fullName: Remora.Discord.Gateway.Responders.IResponder<Remora.Discord.API.Abstractions.Gateway.Events.IUserUpdate>
+  nameWithType.vb: IResponder(Of IUserUpdate)
+  fullName.vb: Remora.Discord.Gateway.Responders.IResponder(Of Remora.Discord.API.Abstractions.Gateway.Events.IUserUpdate)
+  name.vb: IResponder(Of IUserUpdate)
+  spec.csharp:
+  - uid: Remora.Discord.Gateway.Responders.IResponder`1
+    name: IResponder
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IUserUpdate
+    name: IUserUpdate
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IUserUpdate.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Discord.Gateway.Responders.IResponder`1
+    name: IResponder
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IUserUpdate
+    name: IUserUpdate
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IUserUpdate.html
+  - name: )
+- uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IInteractionCreate}
+  commentId: T:Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IInteractionCreate}
+  parent: Remora.Discord.Gateway.Responders
+  definition: Remora.Discord.Gateway.Responders.IResponder`1
+  href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  name: IResponder<IInteractionCreate>
+  nameWithType: IResponder<IInteractionCreate>
+  fullName: Remora.Discord.Gateway.Responders.IResponder<Remora.Discord.API.Abstractions.Gateway.Events.IInteractionCreate>
+  nameWithType.vb: IResponder(Of IInteractionCreate)
+  fullName.vb: Remora.Discord.Gateway.Responders.IResponder(Of Remora.Discord.API.Abstractions.Gateway.Events.IInteractionCreate)
+  name.vb: IResponder(Of IInteractionCreate)
+  spec.csharp:
+  - uid: Remora.Discord.Gateway.Responders.IResponder`1
+    name: IResponder
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IInteractionCreate
+    name: IInteractionCreate
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IInteractionCreate.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Discord.Gateway.Responders.IResponder`1
+    name: IResponder
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IInteractionCreate
+    name: IInteractionCreate
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IInteractionCreate.html
+  - name: )
+- uid: Remora.Discord.Gateway.Responders.IResponder
+  commentId: T:Remora.Discord.Gateway.Responders.IResponder
+  parent: Remora.Discord.Gateway.Responders
+  href: Remora.Discord.Gateway.Responders.IResponder.html
+  name: IResponder
+  nameWithType: IResponder
+  fullName: Remora.Discord.Gateway.Responders.IResponder
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.Gateway.Responders.IResponder`1
+  commentId: T:Remora.Discord.Gateway.Responders.IResponder`1
+  href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  name: IResponder<TGatewayEvent>
+  nameWithType: IResponder<TGatewayEvent>
+  fullName: Remora.Discord.Gateway.Responders.IResponder<TGatewayEvent>
+  nameWithType.vb: IResponder(Of TGatewayEvent)
+  fullName.vb: Remora.Discord.Gateway.Responders.IResponder(Of TGatewayEvent)
+  name.vb: IResponder(Of TGatewayEvent)
+  spec.csharp:
+  - uid: Remora.Discord.Gateway.Responders.IResponder`1
+    name: IResponder
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  - name: <
+  - name: TGatewayEvent
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Discord.Gateway.Responders.IResponder`1
+    name: IResponder
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TGatewayEvent
+  - name: )
+- uid: Remora.Discord.Gateway.Responders
+  commentId: N:Remora.Discord.Gateway.Responders
+  href: Remora.html
+  name: Remora.Discord.Gateway.Responders
+  nameWithType: Remora.Discord.Gateway.Responders
+  fullName: Remora.Discord.Gateway.Responders
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Gateway
+    name: Gateway
+    href: Remora.Discord.Gateway.html
+  - name: .
+  - uid: Remora.Discord.Gateway.Responders
+    name: Responders
+    href: Remora.Discord.Gateway.Responders.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Gateway
+    name: Gateway
+    href: Remora.Discord.Gateway.html
+  - name: .
+  - uid: Remora.Discord.Gateway.Responders
+    name: Responders
+    href: Remora.Discord.Gateway.Responders.html
+- uid: Remora.Discord.Caching.Responders.EarlyCacheResponder
+  commentId: T:Remora.Discord.Caching.Responders.EarlyCacheResponder
+  href: Remora.Discord.Caching.Responders.EarlyCacheResponder.html
+  name: EarlyCacheResponder
+  nameWithType: EarlyCacheResponder
+  fullName: Remora.Discord.Caching.Responders.EarlyCacheResponder
+- uid: Remora.Discord.Caching.Responders.EarlyCacheResponder.#ctor*
+  commentId: Overload:Remora.Discord.Caching.Responders.EarlyCacheResponder.#ctor
+  href: Remora.Discord.Caching.Responders.EarlyCacheResponder.html#Remora_Discord_Caching_Responders_EarlyCacheResponder__ctor_Remora_Discord_Caching_Services_CacheService_
+  name: EarlyCacheResponder
+  nameWithType: EarlyCacheResponder.EarlyCacheResponder
+  fullName: Remora.Discord.Caching.Responders.EarlyCacheResponder.EarlyCacheResponder
+  nameWithType.vb: EarlyCacheResponder.New
+  fullName.vb: Remora.Discord.Caching.Responders.EarlyCacheResponder.New
+  name.vb: New
+- uid: Remora.Discord.Caching.Services.CacheService
+  commentId: T:Remora.Discord.Caching.Services.CacheService
+  parent: Remora.Discord.Caching.Services
+  href: Remora.Discord.Caching.Services.CacheService.html
+  name: CacheService
+  nameWithType: CacheService
+  fullName: Remora.Discord.Caching.Services.CacheService
+- uid: Remora.Discord.Caching.Services
+  commentId: N:Remora.Discord.Caching.Services
+  href: Remora.html
+  name: Remora.Discord.Caching.Services
+  nameWithType: Remora.Discord.Caching.Services
+  fullName: Remora.Discord.Caching.Services
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Caching
+    name: Caching
+    href: Remora.Discord.Caching.html
+  - name: .
+  - uid: Remora.Discord.Caching.Services
+    name: Services
+    href: Remora.Discord.Caching.Services.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Caching
+    name: Caching
+    href: Remora.Discord.Caching.html
+  - name: .
+  - uid: Remora.Discord.Caching.Services
+    name: Services
+    href: Remora.Discord.Caching.Services.html
+- uid: Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync*
+  commentId: Overload:Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync
+  href: Remora.Discord.Caching.Responders.EarlyCacheResponder.html#Remora_Discord_Caching_Responders_EarlyCacheResponder_RespondAsync_Remora_Discord_API_Abstractions_Gateway_Events_IChannelCreate_System_Threading_CancellationToken_
+  name: RespondAsync
+  nameWithType: EarlyCacheResponder.RespondAsync
+  fullName: Remora.Discord.Caching.Responders.EarlyCacheResponder.RespondAsync
+- uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IChannelCreate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IChannelCreate,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IChannelCreate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IChannelCreate,System.Threading.CancellationToken)
+  parent: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IChannelCreate}
+  definition: Remora.Discord.Gateway.Responders.IResponder`1.RespondAsync(`0,System.Threading.CancellationToken)
+  href: Remora.Discord.Gateway.Responders.IResponder-1.html#Remora_Discord_Gateway_Responders_IResponder_1_RespondAsync__0_System_Threading_CancellationToken_
+  name: RespondAsync(IChannelCreate, CancellationToken)
+  nameWithType: IResponder<IChannelCreate>.RespondAsync(IChannelCreate, CancellationToken)
+  fullName: Remora.Discord.Gateway.Responders.IResponder<Remora.Discord.API.Abstractions.Gateway.Events.IChannelCreate>.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IChannelCreate, System.Threading.CancellationToken)
+  nameWithType.vb: IResponder(Of IChannelCreate).RespondAsync(IChannelCreate, CancellationToken)
+  fullName.vb: Remora.Discord.Gateway.Responders.IResponder(Of Remora.Discord.API.Abstractions.Gateway.Events.IChannelCreate).RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IChannelCreate, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IChannelCreate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IChannelCreate,System.Threading.CancellationToken)
+    name: RespondAsync
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html#Remora_Discord_Gateway_Responders_IResponder_1_RespondAsync__0_System_Threading_CancellationToken_
+  - name: (
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IChannelCreate
+    name: IChannelCreate
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IChannelCreate.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IChannelCreate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IChannelCreate,System.Threading.CancellationToken)
+    name: RespondAsync
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html#Remora_Discord_Gateway_Responders_IResponder_1_RespondAsync__0_System_Threading_CancellationToken_
+  - name: (
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IChannelCreate
+    name: IChannelCreate
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IChannelCreate.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IChannelCreate
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.Events.IChannelCreate
+  parent: Remora.Discord.API.Abstractions.Gateway.Events
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IChannelCreate.html
+  name: IChannelCreate
+  nameWithType: IChannelCreate
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IChannelCreate
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Remora.Results.Result}
+  commentId: T:System.Threading.Tasks.Task{Remora.Results.Result}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Result>
+  nameWithType: Task<Result>
+  fullName: System.Threading.Tasks.Task<Remora.Results.Result>
+  nameWithType.vb: Task(Of Result)
+  fullName.vb: System.Threading.Tasks.Task(Of Remora.Results.Result)
+  name.vb: Task(Of Result)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Remora.Results.Result
+    name: Result
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Results.Result
+    name: Result
+    isExternal: true
+  - name: )
+- uid: Remora.Discord.Gateway.Responders.IResponder`1.RespondAsync(`0,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Gateway.Responders.IResponder`1.RespondAsync(`0,System.Threading.CancellationToken)
+  isExternal: true
+  href: Remora.Discord.Gateway.Responders.IResponder-1.html#Remora_Discord_Gateway_Responders_IResponder_1_RespondAsync__0_System_Threading_CancellationToken_
+  name: RespondAsync(TGatewayEvent, CancellationToken)
+  nameWithType: IResponder<TGatewayEvent>.RespondAsync(TGatewayEvent, CancellationToken)
+  fullName: Remora.Discord.Gateway.Responders.IResponder<TGatewayEvent>.RespondAsync(TGatewayEvent, System.Threading.CancellationToken)
+  nameWithType.vb: IResponder(Of TGatewayEvent).RespondAsync(TGatewayEvent, CancellationToken)
+  fullName.vb: Remora.Discord.Gateway.Responders.IResponder(Of TGatewayEvent).RespondAsync(TGatewayEvent, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Remora.Discord.Gateway.Responders.IResponder`1.RespondAsync(`0,System.Threading.CancellationToken)
+    name: RespondAsync
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html#Remora_Discord_Gateway_Responders_IResponder_1_RespondAsync__0_System_Threading_CancellationToken_
+  - name: (
+  - name: TGatewayEvent
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Gateway.Responders.IResponder`1.RespondAsync(`0,System.Threading.CancellationToken)
+    name: RespondAsync
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html#Remora_Discord_Gateway_Responders_IResponder_1_RespondAsync__0_System_Threading_CancellationToken_
+  - name: (
+  - name: TGatewayEvent
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Gateway.Events
+  commentId: N:Remora.Discord.API.Abstractions.Gateway.Events
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Gateway.Events
+  nameWithType: Remora.Discord.API.Abstractions.Gateway.Events
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events
+    name: Events
+    href: Remora.Discord.API.Abstractions.Gateway.Events.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events
+    name: Events
+    href: Remora.Discord.API.Abstractions.Gateway.Events.html
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IChannelUpdate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IChannelUpdate,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IChannelUpdate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IChannelUpdate,System.Threading.CancellationToken)
+  parent: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IChannelUpdate}
+  definition: Remora.Discord.Gateway.Responders.IResponder`1.RespondAsync(`0,System.Threading.CancellationToken)
+  href: Remora.Discord.Gateway.Responders.IResponder-1.html#Remora_Discord_Gateway_Responders_IResponder_1_RespondAsync__0_System_Threading_CancellationToken_
+  name: RespondAsync(IChannelUpdate, CancellationToken)
+  nameWithType: IResponder<IChannelUpdate>.RespondAsync(IChannelUpdate, CancellationToken)
+  fullName: Remora.Discord.Gateway.Responders.IResponder<Remora.Discord.API.Abstractions.Gateway.Events.IChannelUpdate>.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IChannelUpdate, System.Threading.CancellationToken)
+  nameWithType.vb: IResponder(Of IChannelUpdate).RespondAsync(IChannelUpdate, CancellationToken)
+  fullName.vb: Remora.Discord.Gateway.Responders.IResponder(Of Remora.Discord.API.Abstractions.Gateway.Events.IChannelUpdate).RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IChannelUpdate, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IChannelUpdate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IChannelUpdate,System.Threading.CancellationToken)
+    name: RespondAsync
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html#Remora_Discord_Gateway_Responders_IResponder_1_RespondAsync__0_System_Threading_CancellationToken_
+  - name: (
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IChannelUpdate
+    name: IChannelUpdate
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IChannelUpdate.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IChannelUpdate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IChannelUpdate,System.Threading.CancellationToken)
+    name: RespondAsync
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html#Remora_Discord_Gateway_Responders_IResponder_1_RespondAsync__0_System_Threading_CancellationToken_
+  - name: (
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IChannelUpdate
+    name: IChannelUpdate
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IChannelUpdate.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IChannelUpdate
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.Events.IChannelUpdate
+  parent: Remora.Discord.API.Abstractions.Gateway.Events
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IChannelUpdate.html
+  name: IChannelUpdate
+  nameWithType: IChannelUpdate
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IChannelUpdate
+- uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildBanAdd}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildBanAdd,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildBanAdd}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildBanAdd,System.Threading.CancellationToken)
+  parent: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildBanAdd}
+  definition: Remora.Discord.Gateway.Responders.IResponder`1.RespondAsync(`0,System.Threading.CancellationToken)
+  href: Remora.Discord.Gateway.Responders.IResponder-1.html#Remora_Discord_Gateway_Responders_IResponder_1_RespondAsync__0_System_Threading_CancellationToken_
+  name: RespondAsync(IGuildBanAdd, CancellationToken)
+  nameWithType: IResponder<IGuildBanAdd>.RespondAsync(IGuildBanAdd, CancellationToken)
+  fullName: Remora.Discord.Gateway.Responders.IResponder<Remora.Discord.API.Abstractions.Gateway.Events.IGuildBanAdd>.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildBanAdd, System.Threading.CancellationToken)
+  nameWithType.vb: IResponder(Of IGuildBanAdd).RespondAsync(IGuildBanAdd, CancellationToken)
+  fullName.vb: Remora.Discord.Gateway.Responders.IResponder(Of Remora.Discord.API.Abstractions.Gateway.Events.IGuildBanAdd).RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildBanAdd, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildBanAdd}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildBanAdd,System.Threading.CancellationToken)
+    name: RespondAsync
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html#Remora_Discord_Gateway_Responders_IResponder_1_RespondAsync__0_System_Threading_CancellationToken_
+  - name: (
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildBanAdd
+    name: IGuildBanAdd
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildBanAdd.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildBanAdd}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildBanAdd,System.Threading.CancellationToken)
+    name: RespondAsync
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html#Remora_Discord_Gateway_Responders_IResponder_1_RespondAsync__0_System_Threading_CancellationToken_
+  - name: (
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildBanAdd
+    name: IGuildBanAdd
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildBanAdd.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildBanAdd
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.Events.IGuildBanAdd
+  parent: Remora.Discord.API.Abstractions.Gateway.Events
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildBanAdd.html
+  name: IGuildBanAdd
+  nameWithType: IGuildBanAdd
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IGuildBanAdd
+- uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate,System.Threading.CancellationToken)
+  parent: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate}
+  definition: Remora.Discord.Gateway.Responders.IResponder`1.RespondAsync(`0,System.Threading.CancellationToken)
+  href: Remora.Discord.Gateway.Responders.IResponder-1.html#Remora_Discord_Gateway_Responders_IResponder_1_RespondAsync__0_System_Threading_CancellationToken_
+  name: RespondAsync(IGuildCreate, CancellationToken)
+  nameWithType: IResponder<IGuildCreate>.RespondAsync(IGuildCreate, CancellationToken)
+  fullName: Remora.Discord.Gateway.Responders.IResponder<Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate>.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate, System.Threading.CancellationToken)
+  nameWithType.vb: IResponder(Of IGuildCreate).RespondAsync(IGuildCreate, CancellationToken)
+  fullName.vb: Remora.Discord.Gateway.Responders.IResponder(Of Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate).RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate,System.Threading.CancellationToken)
+    name: RespondAsync
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html#Remora_Discord_Gateway_Responders_IResponder_1_RespondAsync__0_System_Threading_CancellationToken_
+  - name: (
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate
+    name: IGuildCreate
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate,System.Threading.CancellationToken)
+    name: RespondAsync
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html#Remora_Discord_Gateway_Responders_IResponder_1_RespondAsync__0_System_Threading_CancellationToken_
+  - name: (
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate
+    name: IGuildCreate
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate
+  parent: Remora.Discord.API.Abstractions.Gateway.Events
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate.html
+  name: IGuildCreate
+  nameWithType: IGuildCreate
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate
+- uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildEmojisUpdate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildEmojisUpdate,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildEmojisUpdate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildEmojisUpdate,System.Threading.CancellationToken)
+  parent: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildEmojisUpdate}
+  definition: Remora.Discord.Gateway.Responders.IResponder`1.RespondAsync(`0,System.Threading.CancellationToken)
+  href: Remora.Discord.Gateway.Responders.IResponder-1.html#Remora_Discord_Gateway_Responders_IResponder_1_RespondAsync__0_System_Threading_CancellationToken_
+  name: RespondAsync(IGuildEmojisUpdate, CancellationToken)
+  nameWithType: IResponder<IGuildEmojisUpdate>.RespondAsync(IGuildEmojisUpdate, CancellationToken)
+  fullName: Remora.Discord.Gateway.Responders.IResponder<Remora.Discord.API.Abstractions.Gateway.Events.IGuildEmojisUpdate>.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildEmojisUpdate, System.Threading.CancellationToken)
+  nameWithType.vb: IResponder(Of IGuildEmojisUpdate).RespondAsync(IGuildEmojisUpdate, CancellationToken)
+  fullName.vb: Remora.Discord.Gateway.Responders.IResponder(Of Remora.Discord.API.Abstractions.Gateway.Events.IGuildEmojisUpdate).RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildEmojisUpdate, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildEmojisUpdate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildEmojisUpdate,System.Threading.CancellationToken)
+    name: RespondAsync
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html#Remora_Discord_Gateway_Responders_IResponder_1_RespondAsync__0_System_Threading_CancellationToken_
+  - name: (
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildEmojisUpdate
+    name: IGuildEmojisUpdate
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildEmojisUpdate.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildEmojisUpdate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildEmojisUpdate,System.Threading.CancellationToken)
+    name: RespondAsync
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html#Remora_Discord_Gateway_Responders_IResponder_1_RespondAsync__0_System_Threading_CancellationToken_
+  - name: (
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildEmojisUpdate
+    name: IGuildEmojisUpdate
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildEmojisUpdate.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildEmojisUpdate
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.Events.IGuildEmojisUpdate
+  parent: Remora.Discord.API.Abstractions.Gateway.Events
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildEmojisUpdate.html
+  name: IGuildEmojisUpdate
+  nameWithType: IGuildEmojisUpdate
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IGuildEmojisUpdate
+- uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberAdd}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberAdd,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberAdd}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberAdd,System.Threading.CancellationToken)
+  parent: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberAdd}
+  definition: Remora.Discord.Gateway.Responders.IResponder`1.RespondAsync(`0,System.Threading.CancellationToken)
+  href: Remora.Discord.Gateway.Responders.IResponder-1.html#Remora_Discord_Gateway_Responders_IResponder_1_RespondAsync__0_System_Threading_CancellationToken_
+  name: RespondAsync(IGuildMemberAdd, CancellationToken)
+  nameWithType: IResponder<IGuildMemberAdd>.RespondAsync(IGuildMemberAdd, CancellationToken)
+  fullName: Remora.Discord.Gateway.Responders.IResponder<Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberAdd>.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberAdd, System.Threading.CancellationToken)
+  nameWithType.vb: IResponder(Of IGuildMemberAdd).RespondAsync(IGuildMemberAdd, CancellationToken)
+  fullName.vb: Remora.Discord.Gateway.Responders.IResponder(Of Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberAdd).RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberAdd, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberAdd}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberAdd,System.Threading.CancellationToken)
+    name: RespondAsync
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html#Remora_Discord_Gateway_Responders_IResponder_1_RespondAsync__0_System_Threading_CancellationToken_
+  - name: (
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberAdd
+    name: IGuildMemberAdd
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberAdd.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberAdd}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberAdd,System.Threading.CancellationToken)
+    name: RespondAsync
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html#Remora_Discord_Gateway_Responders_IResponder_1_RespondAsync__0_System_Threading_CancellationToken_
+  - name: (
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberAdd
+    name: IGuildMemberAdd
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberAdd.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberAdd
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberAdd
+  parent: Remora.Discord.API.Abstractions.Gateway.Events
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberAdd.html
+  name: IGuildMemberAdd
+  nameWithType: IGuildMemberAdd
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberAdd
+- uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk,System.Threading.CancellationToken)
+  parent: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk}
+  definition: Remora.Discord.Gateway.Responders.IResponder`1.RespondAsync(`0,System.Threading.CancellationToken)
+  href: Remora.Discord.Gateway.Responders.IResponder-1.html#Remora_Discord_Gateway_Responders_IResponder_1_RespondAsync__0_System_Threading_CancellationToken_
+  name: RespondAsync(IGuildMembersChunk, CancellationToken)
+  nameWithType: IResponder<IGuildMembersChunk>.RespondAsync(IGuildMembersChunk, CancellationToken)
+  fullName: Remora.Discord.Gateway.Responders.IResponder<Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk>.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk, System.Threading.CancellationToken)
+  nameWithType.vb: IResponder(Of IGuildMembersChunk).RespondAsync(IGuildMembersChunk, CancellationToken)
+  fullName.vb: Remora.Discord.Gateway.Responders.IResponder(Of Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk).RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk,System.Threading.CancellationToken)
+    name: RespondAsync
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html#Remora_Discord_Gateway_Responders_IResponder_1_RespondAsync__0_System_Threading_CancellationToken_
+  - name: (
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk
+    name: IGuildMembersChunk
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk,System.Threading.CancellationToken)
+    name: RespondAsync
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html#Remora_Discord_Gateway_Responders_IResponder_1_RespondAsync__0_System_Threading_CancellationToken_
+  - name: (
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk
+    name: IGuildMembersChunk
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk
+  parent: Remora.Discord.API.Abstractions.Gateway.Events
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.html
+  name: IGuildMembersChunk
+  nameWithType: IGuildMembersChunk
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk
+- uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberUpdate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberUpdate,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberUpdate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberUpdate,System.Threading.CancellationToken)
+  parent: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberUpdate}
+  definition: Remora.Discord.Gateway.Responders.IResponder`1.RespondAsync(`0,System.Threading.CancellationToken)
+  href: Remora.Discord.Gateway.Responders.IResponder-1.html#Remora_Discord_Gateway_Responders_IResponder_1_RespondAsync__0_System_Threading_CancellationToken_
+  name: RespondAsync(IGuildMemberUpdate, CancellationToken)
+  nameWithType: IResponder<IGuildMemberUpdate>.RespondAsync(IGuildMemberUpdate, CancellationToken)
+  fullName: Remora.Discord.Gateway.Responders.IResponder<Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberUpdate>.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberUpdate, System.Threading.CancellationToken)
+  nameWithType.vb: IResponder(Of IGuildMemberUpdate).RespondAsync(IGuildMemberUpdate, CancellationToken)
+  fullName.vb: Remora.Discord.Gateway.Responders.IResponder(Of Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberUpdate).RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberUpdate, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberUpdate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberUpdate,System.Threading.CancellationToken)
+    name: RespondAsync
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html#Remora_Discord_Gateway_Responders_IResponder_1_RespondAsync__0_System_Threading_CancellationToken_
+  - name: (
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberUpdate
+    name: IGuildMemberUpdate
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberUpdate.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberUpdate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberUpdate,System.Threading.CancellationToken)
+    name: RespondAsync
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html#Remora_Discord_Gateway_Responders_IResponder_1_RespondAsync__0_System_Threading_CancellationToken_
+  - name: (
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberUpdate
+    name: IGuildMemberUpdate
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberUpdate.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberUpdate
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberUpdate
+  parent: Remora.Discord.API.Abstractions.Gateway.Events
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberUpdate.html
+  name: IGuildMemberUpdate
+  nameWithType: IGuildMemberUpdate
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberUpdate
+- uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleCreate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleCreate,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleCreate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleCreate,System.Threading.CancellationToken)
+  parent: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleCreate}
+  definition: Remora.Discord.Gateway.Responders.IResponder`1.RespondAsync(`0,System.Threading.CancellationToken)
+  href: Remora.Discord.Gateway.Responders.IResponder-1.html#Remora_Discord_Gateway_Responders_IResponder_1_RespondAsync__0_System_Threading_CancellationToken_
+  name: RespondAsync(IGuildRoleCreate, CancellationToken)
+  nameWithType: IResponder<IGuildRoleCreate>.RespondAsync(IGuildRoleCreate, CancellationToken)
+  fullName: Remora.Discord.Gateway.Responders.IResponder<Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleCreate>.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleCreate, System.Threading.CancellationToken)
+  nameWithType.vb: IResponder(Of IGuildRoleCreate).RespondAsync(IGuildRoleCreate, CancellationToken)
+  fullName.vb: Remora.Discord.Gateway.Responders.IResponder(Of Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleCreate).RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleCreate, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleCreate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleCreate,System.Threading.CancellationToken)
+    name: RespondAsync
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html#Remora_Discord_Gateway_Responders_IResponder_1_RespondAsync__0_System_Threading_CancellationToken_
+  - name: (
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleCreate
+    name: IGuildRoleCreate
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleCreate.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleCreate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleCreate,System.Threading.CancellationToken)
+    name: RespondAsync
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html#Remora_Discord_Gateway_Responders_IResponder_1_RespondAsync__0_System_Threading_CancellationToken_
+  - name: (
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleCreate
+    name: IGuildRoleCreate
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleCreate.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleCreate
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleCreate
+  parent: Remora.Discord.API.Abstractions.Gateway.Events
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleCreate.html
+  name: IGuildRoleCreate
+  nameWithType: IGuildRoleCreate
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleCreate
+- uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleUpdate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleUpdate,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleUpdate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleUpdate,System.Threading.CancellationToken)
+  parent: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleUpdate}
+  definition: Remora.Discord.Gateway.Responders.IResponder`1.RespondAsync(`0,System.Threading.CancellationToken)
+  href: Remora.Discord.Gateway.Responders.IResponder-1.html#Remora_Discord_Gateway_Responders_IResponder_1_RespondAsync__0_System_Threading_CancellationToken_
+  name: RespondAsync(IGuildRoleUpdate, CancellationToken)
+  nameWithType: IResponder<IGuildRoleUpdate>.RespondAsync(IGuildRoleUpdate, CancellationToken)
+  fullName: Remora.Discord.Gateway.Responders.IResponder<Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleUpdate>.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleUpdate, System.Threading.CancellationToken)
+  nameWithType.vb: IResponder(Of IGuildRoleUpdate).RespondAsync(IGuildRoleUpdate, CancellationToken)
+  fullName.vb: Remora.Discord.Gateway.Responders.IResponder(Of Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleUpdate).RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleUpdate, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleUpdate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleUpdate,System.Threading.CancellationToken)
+    name: RespondAsync
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html#Remora_Discord_Gateway_Responders_IResponder_1_RespondAsync__0_System_Threading_CancellationToken_
+  - name: (
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleUpdate
+    name: IGuildRoleUpdate
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleUpdate.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleUpdate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleUpdate,System.Threading.CancellationToken)
+    name: RespondAsync
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html#Remora_Discord_Gateway_Responders_IResponder_1_RespondAsync__0_System_Threading_CancellationToken_
+  - name: (
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleUpdate
+    name: IGuildRoleUpdate
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleUpdate.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleUpdate
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleUpdate
+  parent: Remora.Discord.API.Abstractions.Gateway.Events
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleUpdate.html
+  name: IGuildRoleUpdate
+  nameWithType: IGuildRoleUpdate
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IGuildRoleUpdate
+- uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate,System.Threading.CancellationToken)
+  parent: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate}
+  definition: Remora.Discord.Gateway.Responders.IResponder`1.RespondAsync(`0,System.Threading.CancellationToken)
+  href: Remora.Discord.Gateway.Responders.IResponder-1.html#Remora_Discord_Gateway_Responders_IResponder_1_RespondAsync__0_System_Threading_CancellationToken_
+  name: RespondAsync(IMessageCreate, CancellationToken)
+  nameWithType: IResponder<IMessageCreate>.RespondAsync(IMessageCreate, CancellationToken)
+  fullName: Remora.Discord.Gateway.Responders.IResponder<Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate>.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate, System.Threading.CancellationToken)
+  nameWithType.vb: IResponder(Of IMessageCreate).RespondAsync(IMessageCreate, CancellationToken)
+  fullName.vb: Remora.Discord.Gateway.Responders.IResponder(Of Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate).RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate,System.Threading.CancellationToken)
+    name: RespondAsync
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html#Remora_Discord_Gateway_Responders_IResponder_1_RespondAsync__0_System_Threading_CancellationToken_
+  - name: (
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate
+    name: IMessageCreate
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate,System.Threading.CancellationToken)
+    name: RespondAsync
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html#Remora_Discord_Gateway_Responders_IResponder_1_RespondAsync__0_System_Threading_CancellationToken_
+  - name: (
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate
+    name: IMessageCreate
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate
+  parent: Remora.Discord.API.Abstractions.Gateway.Events
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate.html
+  name: IMessageCreate
+  nameWithType: IMessageCreate
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate
+- uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionAdd}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionAdd,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionAdd}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionAdd,System.Threading.CancellationToken)
+  parent: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionAdd}
+  definition: Remora.Discord.Gateway.Responders.IResponder`1.RespondAsync(`0,System.Threading.CancellationToken)
+  href: Remora.Discord.Gateway.Responders.IResponder-1.html#Remora_Discord_Gateway_Responders_IResponder_1_RespondAsync__0_System_Threading_CancellationToken_
+  name: RespondAsync(IMessageReactionAdd, CancellationToken)
+  nameWithType: IResponder<IMessageReactionAdd>.RespondAsync(IMessageReactionAdd, CancellationToken)
+  fullName: Remora.Discord.Gateway.Responders.IResponder<Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionAdd>.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionAdd, System.Threading.CancellationToken)
+  nameWithType.vb: IResponder(Of IMessageReactionAdd).RespondAsync(IMessageReactionAdd, CancellationToken)
+  fullName.vb: Remora.Discord.Gateway.Responders.IResponder(Of Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionAdd).RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionAdd, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionAdd}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionAdd,System.Threading.CancellationToken)
+    name: RespondAsync
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html#Remora_Discord_Gateway_Responders_IResponder_1_RespondAsync__0_System_Threading_CancellationToken_
+  - name: (
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionAdd
+    name: IMessageReactionAdd
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionAdd.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionAdd}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionAdd,System.Threading.CancellationToken)
+    name: RespondAsync
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html#Remora_Discord_Gateway_Responders_IResponder_1_RespondAsync__0_System_Threading_CancellationToken_
+  - name: (
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionAdd
+    name: IMessageReactionAdd
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionAdd.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionAdd
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionAdd
+  parent: Remora.Discord.API.Abstractions.Gateway.Events
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionAdd.html
+  name: IMessageReactionAdd
+  nameWithType: IMessageReactionAdd
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionAdd
+- uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IUserUpdate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IUserUpdate,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IUserUpdate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IUserUpdate,System.Threading.CancellationToken)
+  parent: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IUserUpdate}
+  definition: Remora.Discord.Gateway.Responders.IResponder`1.RespondAsync(`0,System.Threading.CancellationToken)
+  href: Remora.Discord.Gateway.Responders.IResponder-1.html#Remora_Discord_Gateway_Responders_IResponder_1_RespondAsync__0_System_Threading_CancellationToken_
+  name: RespondAsync(IUserUpdate, CancellationToken)
+  nameWithType: IResponder<IUserUpdate>.RespondAsync(IUserUpdate, CancellationToken)
+  fullName: Remora.Discord.Gateway.Responders.IResponder<Remora.Discord.API.Abstractions.Gateway.Events.IUserUpdate>.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IUserUpdate, System.Threading.CancellationToken)
+  nameWithType.vb: IResponder(Of IUserUpdate).RespondAsync(IUserUpdate, CancellationToken)
+  fullName.vb: Remora.Discord.Gateway.Responders.IResponder(Of Remora.Discord.API.Abstractions.Gateway.Events.IUserUpdate).RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IUserUpdate, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IUserUpdate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IUserUpdate,System.Threading.CancellationToken)
+    name: RespondAsync
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html#Remora_Discord_Gateway_Responders_IResponder_1_RespondAsync__0_System_Threading_CancellationToken_
+  - name: (
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IUserUpdate
+    name: IUserUpdate
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IUserUpdate.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IUserUpdate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IUserUpdate,System.Threading.CancellationToken)
+    name: RespondAsync
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html#Remora_Discord_Gateway_Responders_IResponder_1_RespondAsync__0_System_Threading_CancellationToken_
+  - name: (
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IUserUpdate
+    name: IUserUpdate
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IUserUpdate.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IUserUpdate
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.Events.IUserUpdate
+  parent: Remora.Discord.API.Abstractions.Gateway.Events
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IUserUpdate.html
+  name: IUserUpdate
+  nameWithType: IUserUpdate
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IUserUpdate
+- uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IInteractionCreate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IInteractionCreate,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IInteractionCreate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IInteractionCreate,System.Threading.CancellationToken)
+  parent: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IInteractionCreate}
+  definition: Remora.Discord.Gateway.Responders.IResponder`1.RespondAsync(`0,System.Threading.CancellationToken)
+  href: Remora.Discord.Gateway.Responders.IResponder-1.html#Remora_Discord_Gateway_Responders_IResponder_1_RespondAsync__0_System_Threading_CancellationToken_
+  name: RespondAsync(IInteractionCreate, CancellationToken)
+  nameWithType: IResponder<IInteractionCreate>.RespondAsync(IInteractionCreate, CancellationToken)
+  fullName: Remora.Discord.Gateway.Responders.IResponder<Remora.Discord.API.Abstractions.Gateway.Events.IInteractionCreate>.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IInteractionCreate, System.Threading.CancellationToken)
+  nameWithType.vb: IResponder(Of IInteractionCreate).RespondAsync(IInteractionCreate, CancellationToken)
+  fullName.vb: Remora.Discord.Gateway.Responders.IResponder(Of Remora.Discord.API.Abstractions.Gateway.Events.IInteractionCreate).RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IInteractionCreate, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IInteractionCreate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IInteractionCreate,System.Threading.CancellationToken)
+    name: RespondAsync
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html#Remora_Discord_Gateway_Responders_IResponder_1_RespondAsync__0_System_Threading_CancellationToken_
+  - name: (
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IInteractionCreate
+    name: IInteractionCreate
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IInteractionCreate.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IInteractionCreate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IInteractionCreate,System.Threading.CancellationToken)
+    name: RespondAsync
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html#Remora_Discord_Gateway_Responders_IResponder_1_RespondAsync__0_System_Threading_CancellationToken_
+  - name: (
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IInteractionCreate
+    name: IInteractionCreate
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IInteractionCreate.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IInteractionCreate
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.Events.IInteractionCreate
+  parent: Remora.Discord.API.Abstractions.Gateway.Events
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IInteractionCreate.html
+  name: IInteractionCreate
+  nameWithType: IInteractionCreate
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IInteractionCreate

@@ -1,0 +1,1204 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Objects.RoleTemplate
+  commentId: T:Remora.Discord.API.Objects.RoleTemplate
+  id: RoleTemplate
+  parent: Remora.Discord.API.Objects
+  children:
+  - Remora.Discord.API.Objects.RoleTemplate.#ctor(System.Int32,System.String,System.Drawing.Color,System.Boolean,Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IImageHash},Remora.Rest.Core.Optional{System.String},System.Int32,Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet,System.Boolean,Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IRoleTags},Remora.Discord.API.Abstractions.Objects.RoleFlags)
+  - Remora.Discord.API.Objects.RoleTemplate.Colour
+  - Remora.Discord.API.Objects.RoleTemplate.Flags
+  - Remora.Discord.API.Objects.RoleTemplate.ID
+  - Remora.Discord.API.Objects.RoleTemplate.Icon
+  - Remora.Discord.API.Objects.RoleTemplate.IsHoisted
+  - Remora.Discord.API.Objects.RoleTemplate.IsMentionable
+  - Remora.Discord.API.Objects.RoleTemplate.Name
+  - Remora.Discord.API.Objects.RoleTemplate.Permissions
+  - Remora.Discord.API.Objects.RoleTemplate.Position
+  - Remora.Discord.API.Objects.RoleTemplate.Tags
+  - Remora.Discord.API.Objects.RoleTemplate.UnicodeEmoji
+  langs:
+  - csharp
+  - vb
+  name: RoleTemplate
+  nameWithType: RoleTemplate
+  fullName: Remora.Discord.API.Objects.RoleTemplate
+  type: Class
+  source:
+    id: RoleTemplate
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Templates\RoleTemplate.cs
+    startLine: 32
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Represents a Discord role.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public record RoleTemplate : IRoleTemplate, IEquatable<RoleTemplate>
+    content.vb: >-
+      <PublicAPI>
+
+      Public Class RoleTemplate Implements IRoleTemplate, IEquatable(Of RoleTemplate)
+  inheritance:
+  - System.Object
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IRoleTemplate
+  - System.IEquatable{Remora.Discord.API.Objects.RoleTemplate}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Objects.RoleTemplate.#ctor(System.Int32,System.String,System.Drawing.Color,System.Boolean,Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IImageHash},Remora.Rest.Core.Optional{System.String},System.Int32,Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet,System.Boolean,Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IRoleTags},Remora.Discord.API.Abstractions.Objects.RoleFlags)
+  commentId: M:Remora.Discord.API.Objects.RoleTemplate.#ctor(System.Int32,System.String,System.Drawing.Color,System.Boolean,Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IImageHash},Remora.Rest.Core.Optional{System.String},System.Int32,Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet,System.Boolean,Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IRoleTags},Remora.Discord.API.Abstractions.Objects.RoleFlags)
+  id: '#ctor(System.Int32,System.String,System.Drawing.Color,System.Boolean,Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IImageHash},Remora.Rest.Core.Optional{System.String},System.Int32,Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet,System.Boolean,Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IRoleTags},Remora.Discord.API.Abstractions.Objects.RoleFlags)'
+  parent: Remora.Discord.API.Objects.RoleTemplate
+  langs:
+  - csharp
+  - vb
+  name: RoleTemplate(int, string, Color, bool, Optional<IImageHash?>, Optional<string?>, int, IDiscordPermissionSet, bool, Optional<IRoleTags>, RoleFlags)
+  nameWithType: RoleTemplate.RoleTemplate(int, string, Color, bool, Optional<IImageHash?>, Optional<string?>, int, IDiscordPermissionSet, bool, Optional<IRoleTags>, RoleFlags)
+  fullName: Remora.Discord.API.Objects.RoleTemplate.RoleTemplate(int, string, System.Drawing.Color, bool, Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IImageHash?>, Remora.Rest.Core.Optional<string?>, int, Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet, bool, Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IRoleTags>, Remora.Discord.API.Abstractions.Objects.RoleFlags)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Templates\RoleTemplate.cs
+    startLine: 32
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Represents a Discord role.
+  example: []
+  syntax:
+    content: public RoleTemplate(int ID, string Name, Color Colour, bool IsHoisted, Optional<IImageHash?> Icon, Optional<string?> UnicodeEmoji, int Position, IDiscordPermissionSet Permissions, bool IsMentionable, Optional<IRoleTags> Tags, RoleFlags Flags)
+    parameters:
+    - id: ID
+      type: System.Int32
+    - id: Name
+      type: System.String
+    - id: Colour
+      type: System.Drawing.Color
+    - id: IsHoisted
+      type: System.Boolean
+    - id: Icon
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IImageHash}
+    - id: UnicodeEmoji
+      type: Remora.Rest.Core.Optional{System.String}
+    - id: Position
+      type: System.Int32
+    - id: Permissions
+      type: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet
+    - id: IsMentionable
+      type: System.Boolean
+    - id: Tags
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IRoleTags}
+    - id: Flags
+      type: Remora.Discord.API.Abstractions.Objects.RoleFlags
+    content.vb: Public Sub New(ID As Integer, Name As String, Colour As Color, IsHoisted As Boolean, Icon As [Optional](Of IImageHash), UnicodeEmoji As [Optional](Of String), Position As Integer, Permissions As IDiscordPermissionSet, IsMentionable As Boolean, Tags As [Optional](Of IRoleTags), Flags As RoleFlags)
+  overload: Remora.Discord.API.Objects.RoleTemplate.#ctor*
+  nameWithType.vb: RoleTemplate.New(Integer, String, Color, Boolean, Optional(Of IImageHash), Optional(Of String), Integer, IDiscordPermissionSet, Boolean, Optional(Of IRoleTags), RoleFlags)
+  fullName.vb: Remora.Discord.API.Objects.RoleTemplate.New(Integer, String, System.Drawing.Color, Boolean, Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IImageHash), Remora.Rest.Core.Optional(Of String), Integer, Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet, Boolean, Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IRoleTags), Remora.Discord.API.Abstractions.Objects.RoleFlags)
+  name.vb: New(Integer, String, Color, Boolean, Optional(Of IImageHash), Optional(Of String), Integer, IDiscordPermissionSet, Boolean, Optional(Of IRoleTags), RoleFlags)
+- uid: Remora.Discord.API.Objects.RoleTemplate.ID
+  commentId: P:Remora.Discord.API.Objects.RoleTemplate.ID
+  id: ID
+  parent: Remora.Discord.API.Objects.RoleTemplate
+  langs:
+  - csharp
+  - vb
+  name: ID
+  nameWithType: RoleTemplate.ID
+  fullName: Remora.Discord.API.Objects.RoleTemplate.ID
+  type: Property
+  source:
+    id: ID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Templates\RoleTemplate.cs
+    startLine: 35
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the relative ID of the role.
+  example: []
+  syntax:
+    content: public int ID { get; init; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property ID As Integer
+  overload: Remora.Discord.API.Objects.RoleTemplate.ID*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IRoleTemplate.ID
+- uid: Remora.Discord.API.Objects.RoleTemplate.Name
+  commentId: P:Remora.Discord.API.Objects.RoleTemplate.Name
+  id: Name
+  parent: Remora.Discord.API.Objects.RoleTemplate
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: RoleTemplate.Name
+  fullName: Remora.Discord.API.Objects.RoleTemplate.Name
+  type: Property
+  source:
+    id: Name
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Templates\RoleTemplate.cs
+    startLine: 36
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the name of the role.
+  example: []
+  syntax:
+    content: public string Name { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: Remora.Discord.API.Objects.RoleTemplate.Name*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IRoleTemplate.Name
+- uid: Remora.Discord.API.Objects.RoleTemplate.Colour
+  commentId: P:Remora.Discord.API.Objects.RoleTemplate.Colour
+  id: Colour
+  parent: Remora.Discord.API.Objects.RoleTemplate
+  langs:
+  - csharp
+  - vb
+  name: Colour
+  nameWithType: RoleTemplate.Colour
+  fullName: Remora.Discord.API.Objects.RoleTemplate.Colour
+  type: Property
+  source:
+    id: Colour
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Templates\RoleTemplate.cs
+    startLine: 37
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the colour of the role.
+  example: []
+  syntax:
+    content: public Color Colour { get; init; }
+    parameters: []
+    return:
+      type: System.Drawing.Color
+    content.vb: Public Property Colour As Color
+  overload: Remora.Discord.API.Objects.RoleTemplate.Colour*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IRoleTemplate.Colour
+- uid: Remora.Discord.API.Objects.RoleTemplate.IsHoisted
+  commentId: P:Remora.Discord.API.Objects.RoleTemplate.IsHoisted
+  id: IsHoisted
+  parent: Remora.Discord.API.Objects.RoleTemplate
+  langs:
+  - csharp
+  - vb
+  name: IsHoisted
+  nameWithType: RoleTemplate.IsHoisted
+  fullName: Remora.Discord.API.Objects.RoleTemplate.IsHoisted
+  type: Property
+  source:
+    id: IsHoisted
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Templates\RoleTemplate.cs
+    startLine: 38
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets a value indicating whether the role is displayed separately in the sidebar.
+  example: []
+  syntax:
+    content: public bool IsHoisted { get; init; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsHoisted As Boolean
+  overload: Remora.Discord.API.Objects.RoleTemplate.IsHoisted*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IRoleTemplate.IsHoisted
+- uid: Remora.Discord.API.Objects.RoleTemplate.Icon
+  commentId: P:Remora.Discord.API.Objects.RoleTemplate.Icon
+  id: Icon
+  parent: Remora.Discord.API.Objects.RoleTemplate
+  langs:
+  - csharp
+  - vb
+  name: Icon
+  nameWithType: RoleTemplate.Icon
+  fullName: Remora.Discord.API.Objects.RoleTemplate.Icon
+  type: Property
+  source:
+    id: Icon
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Templates\RoleTemplate.cs
+    startLine: 39
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the role's icon, if any.
+  example: []
+  syntax:
+    content: public Optional<IImageHash?> Icon { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IImageHash}
+    content.vb: Public Property Icon As [Optional](Of IImageHash)
+  overload: Remora.Discord.API.Objects.RoleTemplate.Icon*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IRoleTemplate.Icon
+- uid: Remora.Discord.API.Objects.RoleTemplate.UnicodeEmoji
+  commentId: P:Remora.Discord.API.Objects.RoleTemplate.UnicodeEmoji
+  id: UnicodeEmoji
+  parent: Remora.Discord.API.Objects.RoleTemplate
+  langs:
+  - csharp
+  - vb
+  name: UnicodeEmoji
+  nameWithType: RoleTemplate.UnicodeEmoji
+  fullName: Remora.Discord.API.Objects.RoleTemplate.UnicodeEmoji
+  type: Property
+  source:
+    id: UnicodeEmoji
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Templates\RoleTemplate.cs
+    startLine: 40
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the role's unicode emoji icon, if any.
+  example: []
+  syntax:
+    content: public Optional<string?> UnicodeEmoji { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.String}
+    content.vb: Public Property UnicodeEmoji As [Optional](Of String)
+  overload: Remora.Discord.API.Objects.RoleTemplate.UnicodeEmoji*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IRoleTemplate.UnicodeEmoji
+- uid: Remora.Discord.API.Objects.RoleTemplate.Position
+  commentId: P:Remora.Discord.API.Objects.RoleTemplate.Position
+  id: Position
+  parent: Remora.Discord.API.Objects.RoleTemplate
+  langs:
+  - csharp
+  - vb
+  name: Position
+  nameWithType: RoleTemplate.Position
+  fullName: Remora.Discord.API.Objects.RoleTemplate.Position
+  type: Property
+  source:
+    id: Position
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Templates\RoleTemplate.cs
+    startLine: 41
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the position of the role.
+  example: []
+  syntax:
+    content: public int Position { get; init; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Position As Integer
+  overload: Remora.Discord.API.Objects.RoleTemplate.Position*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IRoleTemplate.Position
+- uid: Remora.Discord.API.Objects.RoleTemplate.Permissions
+  commentId: P:Remora.Discord.API.Objects.RoleTemplate.Permissions
+  id: Permissions
+  parent: Remora.Discord.API.Objects.RoleTemplate
+  langs:
+  - csharp
+  - vb
+  name: Permissions
+  nameWithType: RoleTemplate.Permissions
+  fullName: Remora.Discord.API.Objects.RoleTemplate.Permissions
+  type: Property
+  source:
+    id: Permissions
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Templates\RoleTemplate.cs
+    startLine: 42
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the permission set for this role.
+  example: []
+  syntax:
+    content: public IDiscordPermissionSet Permissions { get; init; }
+    parameters: []
+    return:
+      type: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet
+    content.vb: Public Property Permissions As IDiscordPermissionSet
+  overload: Remora.Discord.API.Objects.RoleTemplate.Permissions*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IRoleTemplate.Permissions
+- uid: Remora.Discord.API.Objects.RoleTemplate.IsMentionable
+  commentId: P:Remora.Discord.API.Objects.RoleTemplate.IsMentionable
+  id: IsMentionable
+  parent: Remora.Discord.API.Objects.RoleTemplate
+  langs:
+  - csharp
+  - vb
+  name: IsMentionable
+  nameWithType: RoleTemplate.IsMentionable
+  fullName: Remora.Discord.API.Objects.RoleTemplate.IsMentionable
+  type: Property
+  source:
+    id: IsMentionable
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Templates\RoleTemplate.cs
+    startLine: 43
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets a value indicating whether this role is mentionable.
+  example: []
+  syntax:
+    content: public bool IsMentionable { get; init; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsMentionable As Boolean
+  overload: Remora.Discord.API.Objects.RoleTemplate.IsMentionable*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IRoleTemplate.IsMentionable
+- uid: Remora.Discord.API.Objects.RoleTemplate.Tags
+  commentId: P:Remora.Discord.API.Objects.RoleTemplate.Tags
+  id: Tags
+  parent: Remora.Discord.API.Objects.RoleTemplate
+  langs:
+  - csharp
+  - vb
+  name: Tags
+  nameWithType: RoleTemplate.Tags
+  fullName: Remora.Discord.API.Objects.RoleTemplate.Tags
+  type: Property
+  source:
+    id: Tags
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Templates\RoleTemplate.cs
+    startLine: 44
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the name of the role.
+  example: []
+  syntax:
+    content: public Optional<IRoleTags> Tags { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IRoleTags}
+    content.vb: Public Property Tags As [Optional](Of IRoleTags)
+  overload: Remora.Discord.API.Objects.RoleTemplate.Tags*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IRoleTemplate.Tags
+- uid: Remora.Discord.API.Objects.RoleTemplate.Flags
+  commentId: P:Remora.Discord.API.Objects.RoleTemplate.Flags
+  id: Flags
+  parent: Remora.Discord.API.Objects.RoleTemplate
+  langs:
+  - csharp
+  - vb
+  name: Flags
+  nameWithType: RoleTemplate.Flags
+  fullName: Remora.Discord.API.Objects.RoleTemplate.Flags
+  type: Property
+  source:
+    id: Flags
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Templates\RoleTemplate.cs
+    startLine: 45
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the name of the role.
+  example: []
+  syntax:
+    content: public RoleFlags Flags { get; init; }
+    parameters: []
+    return:
+      type: Remora.Discord.API.Abstractions.Objects.RoleFlags
+    content.vb: Public Property Flags As RoleFlags
+  overload: Remora.Discord.API.Objects.RoleTemplate.Flags*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IRoleTemplate.Flags
+references:
+- uid: Remora.Discord.API.Objects
+  commentId: N:Remora.Discord.API.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Objects
+  nameWithType: Remora.Discord.API.Objects
+  fullName: Remora.Discord.API.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Objects
+    name: Objects
+    href: Remora.Discord.API.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Objects
+    name: Objects
+    href: Remora.Discord.API.Objects.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Remora.Discord.API.Abstractions.Objects.IRoleTemplate
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IRoleTemplate
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IRoleTemplate.html
+  name: IRoleTemplate
+  nameWithType: IRoleTemplate
+  fullName: Remora.Discord.API.Abstractions.Objects.IRoleTemplate
+- uid: System.IEquatable{Remora.Discord.API.Objects.RoleTemplate}
+  commentId: T:System.IEquatable{Remora.Discord.API.Objects.RoleTemplate}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<RoleTemplate>
+  nameWithType: IEquatable<RoleTemplate>
+  fullName: System.IEquatable<Remora.Discord.API.Objects.RoleTemplate>
+  nameWithType.vb: IEquatable(Of RoleTemplate)
+  fullName.vb: System.IEquatable(Of Remora.Discord.API.Objects.RoleTemplate)
+  name.vb: IEquatable(Of RoleTemplate)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Remora.Discord.API.Objects.RoleTemplate
+    name: RoleTemplate
+    href: Remora.Discord.API.Objects.RoleTemplate.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Objects.RoleTemplate
+    name: RoleTemplate
+    href: Remora.Discord.API.Objects.RoleTemplate.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.API.Abstractions.Objects
+  commentId: N:Remora.Discord.API.Abstractions.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Objects
+  nameWithType: Remora.Discord.API.Abstractions.Objects
+  fullName: Remora.Discord.API.Abstractions.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Remora.Discord.API.Objects.RoleTemplate.#ctor*
+  commentId: Overload:Remora.Discord.API.Objects.RoleTemplate.#ctor
+  href: Remora.Discord.API.Objects.RoleTemplate.html#Remora_Discord_API_Objects_RoleTemplate__ctor_System_Int32_System_String_System_Drawing_Color_System_Boolean_Remora_Rest_Core_Optional_Remora_Discord_API_Abstractions_Objects_IImageHash__Remora_Rest_Core_Optional_System_String__System_Int32_Remora_Discord_API_Abstractions_Objects_IDiscordPermissionSet_System_Boolean_Remora_Rest_Core_Optional_Remora_Discord_API_Abstractions_Objects_IRoleTags__Remora_Discord_API_Abstractions_Objects_RoleFlags_
+  name: RoleTemplate
+  nameWithType: RoleTemplate.RoleTemplate
+  fullName: Remora.Discord.API.Objects.RoleTemplate.RoleTemplate
+  nameWithType.vb: RoleTemplate.New
+  fullName.vb: Remora.Discord.API.Objects.RoleTemplate.New
+  name.vb: New
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Drawing.Color
+  commentId: T:System.Drawing.Color
+  parent: System.Drawing
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.drawing.color
+  name: Color
+  nameWithType: Color
+  fullName: System.Drawing.Color
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IImageHash}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IImageHash}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: Remora.Discord.API.Abstractions.Objects.IImageHash.html
+  name: Optional<IImageHash>
+  nameWithType: Optional<IImageHash>
+  fullName: Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IImageHash>
+  nameWithType.vb: Optional(Of IImageHash)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IImageHash)
+  name.vb: Optional(Of IImageHash)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IImageHash
+    name: IImageHash
+    href: Remora.Discord.API.Abstractions.Objects.IImageHash.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IImageHash
+    name: IImageHash
+    href: Remora.Discord.API.Abstractions.Objects.IImageHash.html
+  - name: )
+- uid: Remora.Rest.Core.Optional{System.String}
+  commentId: T:Remora.Rest.Core.Optional{System.String}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Optional<string>
+  nameWithType: Optional<string>
+  fullName: Remora.Rest.Core.Optional<string>
+  nameWithType.vb: Optional(Of String)
+  fullName.vb: Remora.Rest.Core.Optional(Of String)
+  name.vb: Optional(Of String)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet.html
+  name: IDiscordPermissionSet
+  nameWithType: IDiscordPermissionSet
+  fullName: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet
+- uid: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IRoleTags}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IRoleTags}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: Remora.Discord.API.Abstractions.Objects.IRoleTags.html
+  name: Optional<IRoleTags>
+  nameWithType: Optional<IRoleTags>
+  fullName: Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IRoleTags>
+  nameWithType.vb: Optional(Of IRoleTags)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IRoleTags)
+  name.vb: Optional(Of IRoleTags)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IRoleTags
+    name: IRoleTags
+    href: Remora.Discord.API.Abstractions.Objects.IRoleTags.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IRoleTags
+    name: IRoleTags
+    href: Remora.Discord.API.Abstractions.Objects.IRoleTags.html
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Objects.RoleFlags
+  commentId: T:Remora.Discord.API.Abstractions.Objects.RoleFlags
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.RoleFlags.html
+  name: RoleFlags
+  nameWithType: RoleFlags
+  fullName: Remora.Discord.API.Abstractions.Objects.RoleFlags
+- uid: System.Drawing
+  commentId: N:System.Drawing
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Drawing
+  nameWithType: System.Drawing
+  fullName: System.Drawing
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Drawing
+    name: Drawing
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Drawing
+    name: Drawing
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing
+- uid: Remora.Rest.Core.Optional`1
+  commentId: T:Remora.Rest.Core.Optional`1
+  isExternal: true
+  name: Optional<TValue>
+  nameWithType: Optional<TValue>
+  fullName: Remora.Rest.Core.Optional<TValue>
+  nameWithType.vb: Optional(Of TValue)
+  fullName.vb: Remora.Rest.Core.Optional(Of TValue)
+  name.vb: Optional(Of TValue)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+- uid: Remora.Discord.API.Objects.RoleTemplate.ID*
+  commentId: Overload:Remora.Discord.API.Objects.RoleTemplate.ID
+  href: Remora.Discord.API.Objects.RoleTemplate.html#Remora_Discord_API_Objects_RoleTemplate_ID
+  name: ID
+  nameWithType: RoleTemplate.ID
+  fullName: Remora.Discord.API.Objects.RoleTemplate.ID
+- uid: Remora.Discord.API.Abstractions.Objects.IRoleTemplate.ID
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IRoleTemplate.ID
+  parent: Remora.Discord.API.Abstractions.Objects.IRoleTemplate
+  href: Remora.Discord.API.Abstractions.Objects.IRoleTemplate.html#Remora_Discord_API_Abstractions_Objects_IRoleTemplate_ID
+  name: ID
+  nameWithType: IRoleTemplate.ID
+  fullName: Remora.Discord.API.Abstractions.Objects.IRoleTemplate.ID
+- uid: Remora.Discord.API.Objects.RoleTemplate.Name*
+  commentId: Overload:Remora.Discord.API.Objects.RoleTemplate.Name
+  href: Remora.Discord.API.Objects.RoleTemplate.html#Remora_Discord_API_Objects_RoleTemplate_Name
+  name: Name
+  nameWithType: RoleTemplate.Name
+  fullName: Remora.Discord.API.Objects.RoleTemplate.Name
+- uid: Remora.Discord.API.Abstractions.Objects.IRoleTemplate.Name
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IRoleTemplate.Name
+  parent: Remora.Discord.API.Abstractions.Objects.IRoleTemplate
+  href: Remora.Discord.API.Abstractions.Objects.IRoleTemplate.html#Remora_Discord_API_Abstractions_Objects_IRoleTemplate_Name
+  name: Name
+  nameWithType: IRoleTemplate.Name
+  fullName: Remora.Discord.API.Abstractions.Objects.IRoleTemplate.Name
+- uid: Remora.Discord.API.Objects.RoleTemplate.Colour*
+  commentId: Overload:Remora.Discord.API.Objects.RoleTemplate.Colour
+  href: Remora.Discord.API.Objects.RoleTemplate.html#Remora_Discord_API_Objects_RoleTemplate_Colour
+  name: Colour
+  nameWithType: RoleTemplate.Colour
+  fullName: Remora.Discord.API.Objects.RoleTemplate.Colour
+- uid: Remora.Discord.API.Abstractions.Objects.IRoleTemplate.Colour
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IRoleTemplate.Colour
+  parent: Remora.Discord.API.Abstractions.Objects.IRoleTemplate
+  href: Remora.Discord.API.Abstractions.Objects.IRoleTemplate.html#Remora_Discord_API_Abstractions_Objects_IRoleTemplate_Colour
+  name: Colour
+  nameWithType: IRoleTemplate.Colour
+  fullName: Remora.Discord.API.Abstractions.Objects.IRoleTemplate.Colour
+- uid: Remora.Discord.API.Objects.RoleTemplate.IsHoisted*
+  commentId: Overload:Remora.Discord.API.Objects.RoleTemplate.IsHoisted
+  href: Remora.Discord.API.Objects.RoleTemplate.html#Remora_Discord_API_Objects_RoleTemplate_IsHoisted
+  name: IsHoisted
+  nameWithType: RoleTemplate.IsHoisted
+  fullName: Remora.Discord.API.Objects.RoleTemplate.IsHoisted
+- uid: Remora.Discord.API.Abstractions.Objects.IRoleTemplate.IsHoisted
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IRoleTemplate.IsHoisted
+  parent: Remora.Discord.API.Abstractions.Objects.IRoleTemplate
+  href: Remora.Discord.API.Abstractions.Objects.IRoleTemplate.html#Remora_Discord_API_Abstractions_Objects_IRoleTemplate_IsHoisted
+  name: IsHoisted
+  nameWithType: IRoleTemplate.IsHoisted
+  fullName: Remora.Discord.API.Abstractions.Objects.IRoleTemplate.IsHoisted
+- uid: Remora.Discord.API.Objects.RoleTemplate.Icon*
+  commentId: Overload:Remora.Discord.API.Objects.RoleTemplate.Icon
+  href: Remora.Discord.API.Objects.RoleTemplate.html#Remora_Discord_API_Objects_RoleTemplate_Icon
+  name: Icon
+  nameWithType: RoleTemplate.Icon
+  fullName: Remora.Discord.API.Objects.RoleTemplate.Icon
+- uid: Remora.Discord.API.Abstractions.Objects.IRoleTemplate.Icon
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IRoleTemplate.Icon
+  parent: Remora.Discord.API.Abstractions.Objects.IRoleTemplate
+  href: Remora.Discord.API.Abstractions.Objects.IRoleTemplate.html#Remora_Discord_API_Abstractions_Objects_IRoleTemplate_Icon
+  name: Icon
+  nameWithType: IRoleTemplate.Icon
+  fullName: Remora.Discord.API.Abstractions.Objects.IRoleTemplate.Icon
+- uid: Remora.Discord.API.Objects.RoleTemplate.UnicodeEmoji*
+  commentId: Overload:Remora.Discord.API.Objects.RoleTemplate.UnicodeEmoji
+  href: Remora.Discord.API.Objects.RoleTemplate.html#Remora_Discord_API_Objects_RoleTemplate_UnicodeEmoji
+  name: UnicodeEmoji
+  nameWithType: RoleTemplate.UnicodeEmoji
+  fullName: Remora.Discord.API.Objects.RoleTemplate.UnicodeEmoji
+- uid: Remora.Discord.API.Abstractions.Objects.IRoleTemplate.UnicodeEmoji
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IRoleTemplate.UnicodeEmoji
+  parent: Remora.Discord.API.Abstractions.Objects.IRoleTemplate
+  href: Remora.Discord.API.Abstractions.Objects.IRoleTemplate.html#Remora_Discord_API_Abstractions_Objects_IRoleTemplate_UnicodeEmoji
+  name: UnicodeEmoji
+  nameWithType: IRoleTemplate.UnicodeEmoji
+  fullName: Remora.Discord.API.Abstractions.Objects.IRoleTemplate.UnicodeEmoji
+- uid: Remora.Discord.API.Objects.RoleTemplate.Position*
+  commentId: Overload:Remora.Discord.API.Objects.RoleTemplate.Position
+  href: Remora.Discord.API.Objects.RoleTemplate.html#Remora_Discord_API_Objects_RoleTemplate_Position
+  name: Position
+  nameWithType: RoleTemplate.Position
+  fullName: Remora.Discord.API.Objects.RoleTemplate.Position
+- uid: Remora.Discord.API.Abstractions.Objects.IRoleTemplate.Position
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IRoleTemplate.Position
+  parent: Remora.Discord.API.Abstractions.Objects.IRoleTemplate
+  href: Remora.Discord.API.Abstractions.Objects.IRoleTemplate.html#Remora_Discord_API_Abstractions_Objects_IRoleTemplate_Position
+  name: Position
+  nameWithType: IRoleTemplate.Position
+  fullName: Remora.Discord.API.Abstractions.Objects.IRoleTemplate.Position
+- uid: Remora.Discord.API.Objects.RoleTemplate.Permissions*
+  commentId: Overload:Remora.Discord.API.Objects.RoleTemplate.Permissions
+  href: Remora.Discord.API.Objects.RoleTemplate.html#Remora_Discord_API_Objects_RoleTemplate_Permissions
+  name: Permissions
+  nameWithType: RoleTemplate.Permissions
+  fullName: Remora.Discord.API.Objects.RoleTemplate.Permissions
+- uid: Remora.Discord.API.Abstractions.Objects.IRoleTemplate.Permissions
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IRoleTemplate.Permissions
+  parent: Remora.Discord.API.Abstractions.Objects.IRoleTemplate
+  href: Remora.Discord.API.Abstractions.Objects.IRoleTemplate.html#Remora_Discord_API_Abstractions_Objects_IRoleTemplate_Permissions
+  name: Permissions
+  nameWithType: IRoleTemplate.Permissions
+  fullName: Remora.Discord.API.Abstractions.Objects.IRoleTemplate.Permissions
+- uid: Remora.Discord.API.Objects.RoleTemplate.IsMentionable*
+  commentId: Overload:Remora.Discord.API.Objects.RoleTemplate.IsMentionable
+  href: Remora.Discord.API.Objects.RoleTemplate.html#Remora_Discord_API_Objects_RoleTemplate_IsMentionable
+  name: IsMentionable
+  nameWithType: RoleTemplate.IsMentionable
+  fullName: Remora.Discord.API.Objects.RoleTemplate.IsMentionable
+- uid: Remora.Discord.API.Abstractions.Objects.IRoleTemplate.IsMentionable
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IRoleTemplate.IsMentionable
+  parent: Remora.Discord.API.Abstractions.Objects.IRoleTemplate
+  href: Remora.Discord.API.Abstractions.Objects.IRoleTemplate.html#Remora_Discord_API_Abstractions_Objects_IRoleTemplate_IsMentionable
+  name: IsMentionable
+  nameWithType: IRoleTemplate.IsMentionable
+  fullName: Remora.Discord.API.Abstractions.Objects.IRoleTemplate.IsMentionable
+- uid: Remora.Discord.API.Objects.RoleTemplate.Tags*
+  commentId: Overload:Remora.Discord.API.Objects.RoleTemplate.Tags
+  href: Remora.Discord.API.Objects.RoleTemplate.html#Remora_Discord_API_Objects_RoleTemplate_Tags
+  name: Tags
+  nameWithType: RoleTemplate.Tags
+  fullName: Remora.Discord.API.Objects.RoleTemplate.Tags
+- uid: Remora.Discord.API.Abstractions.Objects.IRoleTemplate.Tags
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IRoleTemplate.Tags
+  parent: Remora.Discord.API.Abstractions.Objects.IRoleTemplate
+  href: Remora.Discord.API.Abstractions.Objects.IRoleTemplate.html#Remora_Discord_API_Abstractions_Objects_IRoleTemplate_Tags
+  name: Tags
+  nameWithType: IRoleTemplate.Tags
+  fullName: Remora.Discord.API.Abstractions.Objects.IRoleTemplate.Tags
+- uid: Remora.Discord.API.Objects.RoleTemplate.Flags*
+  commentId: Overload:Remora.Discord.API.Objects.RoleTemplate.Flags
+  href: Remora.Discord.API.Objects.RoleTemplate.html#Remora_Discord_API_Objects_RoleTemplate_Flags
+  name: Flags
+  nameWithType: RoleTemplate.Flags
+  fullName: Remora.Discord.API.Objects.RoleTemplate.Flags
+- uid: Remora.Discord.API.Abstractions.Objects.IRoleTemplate.Flags
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IRoleTemplate.Flags
+  parent: Remora.Discord.API.Abstractions.Objects.IRoleTemplate
+  href: Remora.Discord.API.Abstractions.Objects.IRoleTemplate.html#Remora_Discord_API_Abstractions_Objects_IRoleTemplate_Flags
+  name: Flags
+  nameWithType: IRoleTemplate.Flags
+  fullName: Remora.Discord.API.Abstractions.Objects.IRoleTemplate.Flags

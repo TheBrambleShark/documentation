@@ -1,0 +1,581 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.Interactivity.Services.DataLease`2
+  commentId: T:Remora.Discord.Interactivity.Services.DataLease`2
+  id: DataLease`2
+  parent: Remora.Discord.Interactivity.Services
+  children:
+  - Remora.Discord.Interactivity.Services.DataLease`2.Data
+  - Remora.Discord.Interactivity.Services.DataLease`2.Delete
+  - Remora.Discord.Interactivity.Services.DataLease`2.DisposeAsync
+  - Remora.Discord.Interactivity.Services.DataLease`2.Key
+  langs:
+  - csharp
+  - vb
+  name: DataLease<TKey, TData>
+  nameWithType: DataLease<TKey, TData>
+  fullName: Remora.Discord.Interactivity.Services.DataLease<TKey, TData>
+  type: Class
+  source:
+    id: DataLease
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Remora.Discord.Interactivity\Services\DataLease.cs
+    startLine: 35
+  assemblies:
+  - Remora.Discord.Interactivity
+  namespace: Remora.Discord.Interactivity.Services
+  summary: >-
+    Represents exclusive leased access to a piece of data. An asynchronous lock is held on the data while the lease is
+
+    active. The data is updated and the lock released when the lease is disposed.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public class DataLease<TKey, TData> : IAsyncDisposable where TKey : notnull
+    typeParameters:
+    - id: TKey
+      description: The key type of the leased data.
+    - id: TData
+      description: The data type of the leased data.
+    content.vb: >-
+      <PublicAPI>
+
+      Public Class DataLease(Of TKey, TData) Implements IAsyncDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IAsyncDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+  nameWithType.vb: DataLease(Of TKey, TData)
+  fullName.vb: Remora.Discord.Interactivity.Services.DataLease(Of TKey, TData)
+  name.vb: DataLease(Of TKey, TData)
+- uid: Remora.Discord.Interactivity.Services.DataLease`2.Key
+  commentId: P:Remora.Discord.Interactivity.Services.DataLease`2.Key
+  id: Key
+  parent: Remora.Discord.Interactivity.Services.DataLease`2
+  langs:
+  - csharp
+  - vb
+  name: Key
+  nameWithType: DataLease<TKey, TData>.Key
+  fullName: Remora.Discord.Interactivity.Services.DataLease<TKey, TData>.Key
+  type: Property
+  source:
+    id: Key
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Remora.Discord.Interactivity\Services\DataLease.cs
+    startLine: 48
+  assemblies:
+  - Remora.Discord.Interactivity
+  namespace: Remora.Discord.Interactivity.Services
+  summary: Gets the key associated with the lease.
+  example: []
+  syntax:
+    content: public TKey Key { get; }
+    parameters: []
+    return:
+      type: '{TKey}'
+    content.vb: Public ReadOnly Property Key As TKey
+  overload: Remora.Discord.Interactivity.Services.DataLease`2.Key*
+  nameWithType.vb: DataLease(Of TKey, TData).Key
+  fullName.vb: Remora.Discord.Interactivity.Services.DataLease(Of TKey, TData).Key
+- uid: Remora.Discord.Interactivity.Services.DataLease`2.Data
+  commentId: P:Remora.Discord.Interactivity.Services.DataLease`2.Data
+  id: Data
+  parent: Remora.Discord.Interactivity.Services.DataLease`2
+  langs:
+  - csharp
+  - vb
+  name: Data
+  nameWithType: DataLease<TKey, TData>.Data
+  fullName: Remora.Discord.Interactivity.Services.DataLease<TKey, TData>.Data
+  type: Property
+  source:
+    id: Data
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Remora.Discord.Interactivity\Services\DataLease.cs
+    startLine: 53
+  assemblies:
+  - Remora.Discord.Interactivity
+  namespace: Remora.Discord.Interactivity.Services
+  summary: Gets or sets the data associated with the lease.
+  example: []
+  syntax:
+    content: public TData Data { get; set; }
+    parameters: []
+    return:
+      type: '{TData}'
+    content.vb: Public Property Data As TData
+  overload: Remora.Discord.Interactivity.Services.DataLease`2.Data*
+  nameWithType.vb: DataLease(Of TKey, TData).Data
+  fullName.vb: Remora.Discord.Interactivity.Services.DataLease(Of TKey, TData).Data
+- uid: Remora.Discord.Interactivity.Services.DataLease`2.Delete
+  commentId: M:Remora.Discord.Interactivity.Services.DataLease`2.Delete
+  id: Delete
+  parent: Remora.Discord.Interactivity.Services.DataLease`2
+  langs:
+  - csharp
+  - vb
+  name: Delete()
+  nameWithType: DataLease<TKey, TData>.Delete()
+  fullName: Remora.Discord.Interactivity.Services.DataLease<TKey, TData>.Delete()
+  type: Method
+  source:
+    id: Delete
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Remora.Discord.Interactivity\Services\DataLease.cs
+    startLine: 88
+  assemblies:
+  - Remora.Discord.Interactivity
+  namespace: Remora.Discord.Interactivity.Services
+  summary: Marks the leased data for deletion upon disposal.
+  example: []
+  syntax:
+    content: public void Delete()
+    content.vb: Public Sub Delete()
+  overload: Remora.Discord.Interactivity.Services.DataLease`2.Delete*
+  nameWithType.vb: DataLease(Of TKey, TData).Delete()
+  fullName.vb: Remora.Discord.Interactivity.Services.DataLease(Of TKey, TData).Delete()
+- uid: Remora.Discord.Interactivity.Services.DataLease`2.DisposeAsync
+  commentId: M:Remora.Discord.Interactivity.Services.DataLease`2.DisposeAsync
+  id: DisposeAsync
+  parent: Remora.Discord.Interactivity.Services.DataLease`2
+  langs:
+  - csharp
+  - vb
+  name: DisposeAsync()
+  nameWithType: DataLease<TKey, TData>.DisposeAsync()
+  fullName: Remora.Discord.Interactivity.Services.DataLease<TKey, TData>.DisposeAsync()
+  type: Method
+  source:
+    id: DisposeAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Remora.Discord.Interactivity\Services\DataLease.cs
+    startLine: 94
+  assemblies:
+  - Remora.Discord.Interactivity
+  namespace: Remora.Discord.Interactivity.Services
+  summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources asynchronously.
+  example: []
+  syntax:
+    content: public ValueTask DisposeAsync()
+    return:
+      type: System.Threading.Tasks.ValueTask
+      description: A task that represents the asynchronous dispose operation.
+    content.vb: Public Function DisposeAsync() As ValueTask
+  overload: Remora.Discord.Interactivity.Services.DataLease`2.DisposeAsync*
+  implements:
+  - System.IAsyncDisposable.DisposeAsync
+  nameWithType.vb: DataLease(Of TKey, TData).DisposeAsync()
+  fullName.vb: Remora.Discord.Interactivity.Services.DataLease(Of TKey, TData).DisposeAsync()
+references:
+- uid: Remora.Discord.Interactivity.Services
+  commentId: N:Remora.Discord.Interactivity.Services
+  href: Remora.html
+  name: Remora.Discord.Interactivity.Services
+  nameWithType: Remora.Discord.Interactivity.Services
+  fullName: Remora.Discord.Interactivity.Services
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Interactivity
+    name: Interactivity
+    href: Remora.Discord.Interactivity.html
+  - name: .
+  - uid: Remora.Discord.Interactivity.Services
+    name: Services
+    href: Remora.Discord.Interactivity.Services.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Interactivity
+    name: Interactivity
+    href: Remora.Discord.Interactivity.html
+  - name: .
+  - uid: Remora.Discord.Interactivity.Services
+    name: Services
+    href: Remora.Discord.Interactivity.Services.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IAsyncDisposable
+  commentId: T:System.IAsyncDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable
+  name: IAsyncDisposable
+  nameWithType: IAsyncDisposable
+  fullName: System.IAsyncDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.Interactivity.Services.DataLease`2.Key*
+  commentId: Overload:Remora.Discord.Interactivity.Services.DataLease`2.Key
+  href: Remora.Discord.Interactivity.Services.DataLease-2.html#Remora_Discord_Interactivity_Services_DataLease_2_Key
+  name: Key
+  nameWithType: DataLease<TKey, TData>.Key
+  fullName: Remora.Discord.Interactivity.Services.DataLease<TKey, TData>.Key
+  nameWithType.vb: DataLease(Of TKey, TData).Key
+  fullName.vb: Remora.Discord.Interactivity.Services.DataLease(Of TKey, TData).Key
+- uid: '{TKey}'
+  commentId: '!:TKey'
+  definition: TKey
+  name: TKey
+  nameWithType: TKey
+  fullName: TKey
+- uid: TKey
+  name: TKey
+  nameWithType: TKey
+  fullName: TKey
+- uid: Remora.Discord.Interactivity.Services.DataLease`2.Data*
+  commentId: Overload:Remora.Discord.Interactivity.Services.DataLease`2.Data
+  href: Remora.Discord.Interactivity.Services.DataLease-2.html#Remora_Discord_Interactivity_Services_DataLease_2_Data
+  name: Data
+  nameWithType: DataLease<TKey, TData>.Data
+  fullName: Remora.Discord.Interactivity.Services.DataLease<TKey, TData>.Data
+  nameWithType.vb: DataLease(Of TKey, TData).Data
+  fullName.vb: Remora.Discord.Interactivity.Services.DataLease(Of TKey, TData).Data
+- uid: '{TData}'
+  commentId: '!:TData'
+  definition: TData
+  name: TData
+  nameWithType: TData
+  fullName: TData
+- uid: TData
+  name: TData
+  nameWithType: TData
+  fullName: TData
+- uid: Remora.Discord.Interactivity.Services.DataLease`2.Delete*
+  commentId: Overload:Remora.Discord.Interactivity.Services.DataLease`2.Delete
+  href: Remora.Discord.Interactivity.Services.DataLease-2.html#Remora_Discord_Interactivity_Services_DataLease_2_Delete
+  name: Delete
+  nameWithType: DataLease<TKey, TData>.Delete
+  fullName: Remora.Discord.Interactivity.Services.DataLease<TKey, TData>.Delete
+  nameWithType.vb: DataLease(Of TKey, TData).Delete
+  fullName.vb: Remora.Discord.Interactivity.Services.DataLease(Of TKey, TData).Delete
+- uid: Remora.Discord.Interactivity.Services.DataLease`2.DisposeAsync*
+  commentId: Overload:Remora.Discord.Interactivity.Services.DataLease`2.DisposeAsync
+  href: Remora.Discord.Interactivity.Services.DataLease-2.html#Remora_Discord_Interactivity_Services_DataLease_2_DisposeAsync
+  name: DisposeAsync
+  nameWithType: DataLease<TKey, TData>.DisposeAsync
+  fullName: Remora.Discord.Interactivity.Services.DataLease<TKey, TData>.DisposeAsync
+  nameWithType.vb: DataLease(Of TKey, TData).DisposeAsync
+  fullName.vb: Remora.Discord.Interactivity.Services.DataLease(Of TKey, TData).DisposeAsync
+- uid: System.IAsyncDisposable.DisposeAsync
+  commentId: M:System.IAsyncDisposable.DisposeAsync
+  parent: System.IAsyncDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  name: DisposeAsync()
+  nameWithType: IAsyncDisposable.DisposeAsync()
+  fullName: System.IAsyncDisposable.DisposeAsync()
+  spec.csharp:
+  - uid: System.IAsyncDisposable.DisposeAsync
+    name: DisposeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IAsyncDisposable.DisposeAsync
+    name: DisposeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  - name: (
+  - name: )
+- uid: System.Threading.Tasks.ValueTask
+  commentId: T:System.Threading.Tasks.ValueTask
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask
+  name: ValueTask
+  nameWithType: ValueTask
+  fullName: System.Threading.Tasks.ValueTask
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

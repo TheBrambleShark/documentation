@@ -1,0 +1,828 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Gateway.Commands.UpdateVoiceState
+  commentId: T:Remora.Discord.API.Gateway.Commands.UpdateVoiceState
+  id: UpdateVoiceState
+  parent: Remora.Discord.API.Gateway.Commands
+  children:
+  - Remora.Discord.API.Gateway.Commands.UpdateVoiceState.#ctor(Remora.Rest.Core.Snowflake,System.Boolean,System.Boolean,System.Nullable{Remora.Rest.Core.Snowflake})
+  - Remora.Discord.API.Gateway.Commands.UpdateVoiceState.ChannelID
+  - Remora.Discord.API.Gateway.Commands.UpdateVoiceState.GuildID
+  - Remora.Discord.API.Gateway.Commands.UpdateVoiceState.IsSelfDeafened
+  - Remora.Discord.API.Gateway.Commands.UpdateVoiceState.IsSelfMuted
+  langs:
+  - csharp
+  - vb
+  name: UpdateVoiceState
+  nameWithType: UpdateVoiceState
+  fullName: Remora.Discord.API.Gateway.Commands.UpdateVoiceState
+  type: Class
+  source:
+    id: UpdateVoiceState
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Commands\UpdateVoiceState.cs
+    startLine: 33
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Commands
+  summary: Represents a command to update the voice state of the client.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public record UpdateVoiceState : IUpdateVoiceState, IGatewayCommand, IGatewayPayloadData, IEquatable<UpdateVoiceState>
+    content.vb: >-
+      <PublicAPI>
+
+      Public Class UpdateVoiceState Implements IUpdateVoiceState, IGatewayCommand, IGatewayPayloadData, IEquatable(Of UpdateVoiceState)
+  inheritance:
+  - System.Object
+  implements:
+  - Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState
+  - Remora.Discord.API.Abstractions.Gateway.Commands.IGatewayCommand
+  - Remora.Discord.API.Abstractions.Gateway.IGatewayPayloadData
+  - System.IEquatable{Remora.Discord.API.Gateway.Commands.UpdateVoiceState}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Gateway.Commands.UpdateVoiceState.#ctor(Remora.Rest.Core.Snowflake,System.Boolean,System.Boolean,System.Nullable{Remora.Rest.Core.Snowflake})
+  commentId: M:Remora.Discord.API.Gateway.Commands.UpdateVoiceState.#ctor(Remora.Rest.Core.Snowflake,System.Boolean,System.Boolean,System.Nullable{Remora.Rest.Core.Snowflake})
+  id: '#ctor(Remora.Rest.Core.Snowflake,System.Boolean,System.Boolean,System.Nullable{Remora.Rest.Core.Snowflake})'
+  parent: Remora.Discord.API.Gateway.Commands.UpdateVoiceState
+  langs:
+  - csharp
+  - vb
+  name: UpdateVoiceState(Snowflake, bool, bool, Snowflake?)
+  nameWithType: UpdateVoiceState.UpdateVoiceState(Snowflake, bool, bool, Snowflake?)
+  fullName: Remora.Discord.API.Gateway.Commands.UpdateVoiceState.UpdateVoiceState(Remora.Rest.Core.Snowflake, bool, bool, Remora.Rest.Core.Snowflake?)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Commands\UpdateVoiceState.cs
+    startLine: 33
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Commands
+  summary: Represents a command to update the voice state of the client.
+  example: []
+  syntax:
+    content: public UpdateVoiceState(Snowflake GuildID, bool IsSelfMuted, bool IsSelfDeafened, Snowflake? ChannelID = null)
+    parameters:
+    - id: GuildID
+      type: Remora.Rest.Core.Snowflake
+    - id: IsSelfMuted
+      type: System.Boolean
+    - id: IsSelfDeafened
+      type: System.Boolean
+    - id: ChannelID
+      type: System.Nullable{Remora.Rest.Core.Snowflake}
+    content.vb: Public Sub New(GuildID As Snowflake, IsSelfMuted As Boolean, IsSelfDeafened As Boolean, ChannelID As Snowflake? = Nothing)
+  overload: Remora.Discord.API.Gateway.Commands.UpdateVoiceState.#ctor*
+  nameWithType.vb: UpdateVoiceState.New(Snowflake, Boolean, Boolean, Snowflake?)
+  fullName.vb: Remora.Discord.API.Gateway.Commands.UpdateVoiceState.New(Remora.Rest.Core.Snowflake, Boolean, Boolean, Remora.Rest.Core.Snowflake?)
+  name.vb: New(Snowflake, Boolean, Boolean, Snowflake?)
+- uid: Remora.Discord.API.Gateway.Commands.UpdateVoiceState.GuildID
+  commentId: P:Remora.Discord.API.Gateway.Commands.UpdateVoiceState.GuildID
+  id: GuildID
+  parent: Remora.Discord.API.Gateway.Commands.UpdateVoiceState
+  langs:
+  - csharp
+  - vb
+  name: GuildID
+  nameWithType: UpdateVoiceState.GuildID
+  fullName: Remora.Discord.API.Gateway.Commands.UpdateVoiceState.GuildID
+  type: Property
+  source:
+    id: GuildID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Commands\UpdateVoiceState.cs
+    startLine: 36
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Commands
+  summary: Gets the guild that the status should be updated in.
+  example: []
+  syntax:
+    content: public Snowflake GuildID { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Snowflake
+    content.vb: Public Property GuildID As Snowflake
+  overload: Remora.Discord.API.Gateway.Commands.UpdateVoiceState.GuildID*
+  implements:
+  - Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.GuildID
+- uid: Remora.Discord.API.Gateway.Commands.UpdateVoiceState.IsSelfMuted
+  commentId: P:Remora.Discord.API.Gateway.Commands.UpdateVoiceState.IsSelfMuted
+  id: IsSelfMuted
+  parent: Remora.Discord.API.Gateway.Commands.UpdateVoiceState
+  langs:
+  - csharp
+  - vb
+  name: IsSelfMuted
+  nameWithType: UpdateVoiceState.IsSelfMuted
+  fullName: Remora.Discord.API.Gateway.Commands.UpdateVoiceState.IsSelfMuted
+  type: Property
+  source:
+    id: IsSelfMuted
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Commands\UpdateVoiceState.cs
+    startLine: 37
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Commands
+  summary: Gets a value indicating whether the client is muted.
+  example: []
+  syntax:
+    content: public bool IsSelfMuted { get; init; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsSelfMuted As Boolean
+  overload: Remora.Discord.API.Gateway.Commands.UpdateVoiceState.IsSelfMuted*
+  implements:
+  - Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.IsSelfMuted
+- uid: Remora.Discord.API.Gateway.Commands.UpdateVoiceState.IsSelfDeafened
+  commentId: P:Remora.Discord.API.Gateway.Commands.UpdateVoiceState.IsSelfDeafened
+  id: IsSelfDeafened
+  parent: Remora.Discord.API.Gateway.Commands.UpdateVoiceState
+  langs:
+  - csharp
+  - vb
+  name: IsSelfDeafened
+  nameWithType: UpdateVoiceState.IsSelfDeafened
+  fullName: Remora.Discord.API.Gateway.Commands.UpdateVoiceState.IsSelfDeafened
+  type: Property
+  source:
+    id: IsSelfDeafened
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Commands\UpdateVoiceState.cs
+    startLine: 38
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Commands
+  summary: Gets a value indicating whether the client is deafened.
+  example: []
+  syntax:
+    content: public bool IsSelfDeafened { get; init; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsSelfDeafened As Boolean
+  overload: Remora.Discord.API.Gateway.Commands.UpdateVoiceState.IsSelfDeafened*
+  implements:
+  - Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.IsSelfDeafened
+- uid: Remora.Discord.API.Gateway.Commands.UpdateVoiceState.ChannelID
+  commentId: P:Remora.Discord.API.Gateway.Commands.UpdateVoiceState.ChannelID
+  id: ChannelID
+  parent: Remora.Discord.API.Gateway.Commands.UpdateVoiceState
+  langs:
+  - csharp
+  - vb
+  name: ChannelID
+  nameWithType: UpdateVoiceState.ChannelID
+  fullName: Remora.Discord.API.Gateway.Commands.UpdateVoiceState.ChannelID
+  type: Property
+  source:
+    id: ChannelID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Commands\UpdateVoiceState.cs
+    startLine: 39
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Commands
+  summary: Gets the channel the client wants to join, or null if disconnecting.
+  example: []
+  syntax:
+    content: public Snowflake? ChannelID { get; init; }
+    parameters: []
+    return:
+      type: System.Nullable{Remora.Rest.Core.Snowflake}
+    content.vb: Public Property ChannelID As Snowflake?
+  overload: Remora.Discord.API.Gateway.Commands.UpdateVoiceState.ChannelID*
+  implements:
+  - Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.ChannelID
+references:
+- uid: Remora.Discord.API.Gateway.Commands
+  commentId: N:Remora.Discord.API.Gateway.Commands
+  href: Remora.html
+  name: Remora.Discord.API.Gateway.Commands
+  nameWithType: Remora.Discord.API.Gateway.Commands
+  fullName: Remora.Discord.API.Gateway.Commands
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Gateway.Commands
+    name: Commands
+    href: Remora.Discord.API.Gateway.Commands.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Gateway.Commands
+    name: Commands
+    href: Remora.Discord.API.Gateway.Commands.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState
+  parent: Remora.Discord.API.Abstractions.Gateway.Commands
+  href: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.html
+  name: IUpdateVoiceState
+  nameWithType: IUpdateVoiceState
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IGatewayCommand
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.Commands.IGatewayCommand
+  parent: Remora.Discord.API.Abstractions.Gateway.Commands
+  href: Remora.Discord.API.Abstractions.Gateway.Commands.IGatewayCommand.html
+  name: IGatewayCommand
+  nameWithType: IGatewayCommand
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IGatewayCommand
+- uid: Remora.Discord.API.Abstractions.Gateway.IGatewayPayloadData
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.IGatewayPayloadData
+  parent: Remora.Discord.API.Abstractions.Gateway
+  href: Remora.Discord.API.Abstractions.Gateway.IGatewayPayloadData.html
+  name: IGatewayPayloadData
+  nameWithType: IGatewayPayloadData
+  fullName: Remora.Discord.API.Abstractions.Gateway.IGatewayPayloadData
+- uid: System.IEquatable{Remora.Discord.API.Gateway.Commands.UpdateVoiceState}
+  commentId: T:System.IEquatable{Remora.Discord.API.Gateway.Commands.UpdateVoiceState}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<UpdateVoiceState>
+  nameWithType: IEquatable<UpdateVoiceState>
+  fullName: System.IEquatable<Remora.Discord.API.Gateway.Commands.UpdateVoiceState>
+  nameWithType.vb: IEquatable(Of UpdateVoiceState)
+  fullName.vb: System.IEquatable(Of Remora.Discord.API.Gateway.Commands.UpdateVoiceState)
+  name.vb: IEquatable(Of UpdateVoiceState)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Remora.Discord.API.Gateway.Commands.UpdateVoiceState
+    name: UpdateVoiceState
+    href: Remora.Discord.API.Gateway.Commands.UpdateVoiceState.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Gateway.Commands.UpdateVoiceState
+    name: UpdateVoiceState
+    href: Remora.Discord.API.Gateway.Commands.UpdateVoiceState.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands
+  commentId: N:Remora.Discord.API.Abstractions.Gateway.Commands
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Gateway.Commands
+  nameWithType: Remora.Discord.API.Abstractions.Gateway.Commands
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway.Commands
+    name: Commands
+    href: Remora.Discord.API.Abstractions.Gateway.Commands.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway.Commands
+    name: Commands
+    href: Remora.Discord.API.Abstractions.Gateway.Commands.html
+- uid: Remora.Discord.API.Abstractions.Gateway
+  commentId: N:Remora.Discord.API.Abstractions.Gateway
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Gateway
+  nameWithType: Remora.Discord.API.Abstractions.Gateway
+  fullName: Remora.Discord.API.Abstractions.Gateway
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Remora.Discord.API.Gateway.Commands.UpdateVoiceState.#ctor*
+  commentId: Overload:Remora.Discord.API.Gateway.Commands.UpdateVoiceState.#ctor
+  href: Remora.Discord.API.Gateway.Commands.UpdateVoiceState.html#Remora_Discord_API_Gateway_Commands_UpdateVoiceState__ctor_Remora_Rest_Core_Snowflake_System_Boolean_System_Boolean_System_Nullable_Remora_Rest_Core_Snowflake__
+  name: UpdateVoiceState
+  nameWithType: UpdateVoiceState.UpdateVoiceState
+  fullName: Remora.Discord.API.Gateway.Commands.UpdateVoiceState.UpdateVoiceState
+  nameWithType.vb: UpdateVoiceState.New
+  fullName.vb: Remora.Discord.API.Gateway.Commands.UpdateVoiceState.New
+  name.vb: New
+- uid: Remora.Rest.Core.Snowflake
+  commentId: T:Remora.Rest.Core.Snowflake
+  parent: Remora.Rest.Core
+  isExternal: true
+  name: Snowflake
+  nameWithType: Snowflake
+  fullName: Remora.Rest.Core.Snowflake
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Nullable{Remora.Rest.Core.Snowflake}
+  commentId: T:System.Nullable{Remora.Rest.Core.Snowflake}
+  parent: System
+  definition: System.Nullable`1
+  name: Snowflake?
+  nameWithType: Snowflake?
+  fullName: Remora.Rest.Core.Snowflake?
+  spec.csharp:
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '?'
+  spec.vb:
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '?'
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Remora.Discord.API.Gateway.Commands.UpdateVoiceState.GuildID*
+  commentId: Overload:Remora.Discord.API.Gateway.Commands.UpdateVoiceState.GuildID
+  href: Remora.Discord.API.Gateway.Commands.UpdateVoiceState.html#Remora_Discord_API_Gateway_Commands_UpdateVoiceState_GuildID
+  name: GuildID
+  nameWithType: UpdateVoiceState.GuildID
+  fullName: Remora.Discord.API.Gateway.Commands.UpdateVoiceState.GuildID
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.GuildID
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.GuildID
+  parent: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState
+  href: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.html#Remora_Discord_API_Abstractions_Gateway_Commands_IUpdateVoiceState_GuildID
+  name: GuildID
+  nameWithType: IUpdateVoiceState.GuildID
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.GuildID
+- uid: Remora.Discord.API.Gateway.Commands.UpdateVoiceState.IsSelfMuted*
+  commentId: Overload:Remora.Discord.API.Gateway.Commands.UpdateVoiceState.IsSelfMuted
+  href: Remora.Discord.API.Gateway.Commands.UpdateVoiceState.html#Remora_Discord_API_Gateway_Commands_UpdateVoiceState_IsSelfMuted
+  name: IsSelfMuted
+  nameWithType: UpdateVoiceState.IsSelfMuted
+  fullName: Remora.Discord.API.Gateway.Commands.UpdateVoiceState.IsSelfMuted
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.IsSelfMuted
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.IsSelfMuted
+  parent: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState
+  href: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.html#Remora_Discord_API_Abstractions_Gateway_Commands_IUpdateVoiceState_IsSelfMuted
+  name: IsSelfMuted
+  nameWithType: IUpdateVoiceState.IsSelfMuted
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.IsSelfMuted
+- uid: Remora.Discord.API.Gateway.Commands.UpdateVoiceState.IsSelfDeafened*
+  commentId: Overload:Remora.Discord.API.Gateway.Commands.UpdateVoiceState.IsSelfDeafened
+  href: Remora.Discord.API.Gateway.Commands.UpdateVoiceState.html#Remora_Discord_API_Gateway_Commands_UpdateVoiceState_IsSelfDeafened
+  name: IsSelfDeafened
+  nameWithType: UpdateVoiceState.IsSelfDeafened
+  fullName: Remora.Discord.API.Gateway.Commands.UpdateVoiceState.IsSelfDeafened
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.IsSelfDeafened
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.IsSelfDeafened
+  parent: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState
+  href: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.html#Remora_Discord_API_Abstractions_Gateway_Commands_IUpdateVoiceState_IsSelfDeafened
+  name: IsSelfDeafened
+  nameWithType: IUpdateVoiceState.IsSelfDeafened
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.IsSelfDeafened
+- uid: Remora.Discord.API.Gateway.Commands.UpdateVoiceState.ChannelID*
+  commentId: Overload:Remora.Discord.API.Gateway.Commands.UpdateVoiceState.ChannelID
+  href: Remora.Discord.API.Gateway.Commands.UpdateVoiceState.html#Remora_Discord_API_Gateway_Commands_UpdateVoiceState_ChannelID
+  name: ChannelID
+  nameWithType: UpdateVoiceState.ChannelID
+  fullName: Remora.Discord.API.Gateway.Commands.UpdateVoiceState.ChannelID
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.ChannelID
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.ChannelID
+  parent: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState
+  href: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.html#Remora_Discord_API_Abstractions_Gateway_Commands_IUpdateVoiceState_ChannelID
+  name: ChannelID
+  nameWithType: IUpdateVoiceState.ChannelID
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.ChannelID

@@ -1,0 +1,714 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate
+  id: IMessageUpdate
+  parent: Remora.Discord.API.Abstractions.Gateway.Events
+  children:
+  - Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate.GuildID
+  - Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate.Member
+  - Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate.Mentions
+  langs:
+  - csharp
+  - vb
+  name: IMessageUpdate
+  nameWithType: IMessageUpdate
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate
+  type: Interface
+  source:
+    id: IMessageUpdate
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Events\Messages\IMessageUpdate.cs
+    startLine: 32
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Events
+  summary: Represents the creation of a message.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public interface IMessageUpdate : IMessage, IPartialMessage, IGatewayEvent, IGatewayPayloadData
+    content.vb: >-
+      <PublicAPI>
+
+      Public Interface IMessageUpdate Inherits IMessage, IPartialMessage, IGatewayEvent, IGatewayPayloadData
+  inheritedMembers:
+  - Remora.Discord.API.Abstractions.Objects.IMessage.ID
+  - Remora.Discord.API.Abstractions.Objects.IMessage.ChannelID
+  - Remora.Discord.API.Abstractions.Objects.IMessage.Author
+  - Remora.Discord.API.Abstractions.Objects.IMessage.Content
+  - Remora.Discord.API.Abstractions.Objects.IMessage.Timestamp
+  - Remora.Discord.API.Abstractions.Objects.IMessage.EditedTimestamp
+  - Remora.Discord.API.Abstractions.Objects.IMessage.IsTTS
+  - Remora.Discord.API.Abstractions.Objects.IMessage.MentionsEveryone
+  - Remora.Discord.API.Abstractions.Objects.IMessage.MentionedRoles
+  - Remora.Discord.API.Abstractions.Objects.IMessage.MentionedChannels
+  - Remora.Discord.API.Abstractions.Objects.IMessage.Attachments
+  - Remora.Discord.API.Abstractions.Objects.IMessage.Embeds
+  - Remora.Discord.API.Abstractions.Objects.IMessage.Reactions
+  - Remora.Discord.API.Abstractions.Objects.IMessage.Nonce
+  - Remora.Discord.API.Abstractions.Objects.IMessage.IsPinned
+  - Remora.Discord.API.Abstractions.Objects.IMessage.WebhookID
+  - Remora.Discord.API.Abstractions.Objects.IMessage.Type
+  - Remora.Discord.API.Abstractions.Objects.IMessage.Activity
+  - Remora.Discord.API.Abstractions.Objects.IMessage.Application
+  - Remora.Discord.API.Abstractions.Objects.IMessage.ApplicationID
+  - Remora.Discord.API.Abstractions.Objects.IMessage.MessageReference
+  - Remora.Discord.API.Abstractions.Objects.IMessage.Flags
+  - Remora.Discord.API.Abstractions.Objects.IMessage.ReferencedMessage
+  - Remora.Discord.API.Abstractions.Objects.IMessage.Interaction
+  - Remora.Discord.API.Abstractions.Objects.IMessage.Thread
+  - Remora.Discord.API.Abstractions.Objects.IMessage.Components
+  - Remora.Discord.API.Abstractions.Objects.IMessage.StickerItems
+  - Remora.Discord.API.Abstractions.Objects.IMessage.Position
+  - Remora.Discord.API.Abstractions.Objects.IMessage.Resolved
+  - Remora.Discord.API.Abstractions.Objects.IMessage.InteractionMetadata
+  - Remora.Discord.API.Abstractions.Objects.IMessage.Poll
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate.GuildID
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate.GuildID
+  id: GuildID
+  parent: Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate
+  langs:
+  - csharp
+  - vb
+  name: GuildID
+  nameWithType: IMessageUpdate.GuildID
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate.GuildID
+  type: Property
+  source:
+    id: GuildID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Events\Messages\IMessageUpdate.cs
+    startLine: 38
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Events
+  summary: Gets the ID of the guild the message was sent in.
+  example: []
+  syntax:
+    content: Optional<Snowflake> GuildID { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+    content.vb: ReadOnly Property GuildID As [Optional](Of Snowflake)
+  overload: Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate.GuildID*
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate.Member
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate.Member
+  id: Member
+  parent: Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate
+  langs:
+  - csharp
+  - vb
+  name: Member
+  nameWithType: IMessageUpdate.Member
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate.Member
+  type: Property
+  source:
+    id: Member
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Events\Messages\IMessageUpdate.cs
+    startLine: 45
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Events
+  summary: >-
+    Gets the member properties for the author. The member object exists in MESSAGE_CREATE and
+
+    MESSAGE_UPDATE events from text-based guild channels. This allows bots to obtain real-time member data
+
+    without requiring bots to keep member state in memory.
+  example: []
+  syntax:
+    content: Optional<IPartialGuildMember> Member { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IPartialGuildMember}
+    content.vb: ReadOnly Property Member As [Optional](Of IPartialGuildMember)
+  overload: Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate.Member*
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate.Mentions
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate.Mentions
+  id: Mentions
+  parent: Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate
+  langs:
+  - csharp
+  - vb
+  name: Mentions
+  nameWithType: IMessageUpdate.Mentions
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate.Mentions
+  type: Property
+  source:
+    id: Mentions
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Events\Messages\IMessageUpdate.cs
+    startLine: 50
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Events
+  summary: Gets a list of users mentioned in the message.
+  example: []
+  syntax:
+    content: IReadOnlyList<IUserMention> Mentions { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IUserMention}
+    content.vb: ReadOnly Property Mentions As IReadOnlyList(Of IUserMention)
+  overload: Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate.Mentions*
+references:
+- uid: Remora.Discord.API.Abstractions.Gateway.Events
+  commentId: N:Remora.Discord.API.Abstractions.Gateway.Events
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Gateway.Events
+  nameWithType: Remora.Discord.API.Abstractions.Gateway.Events
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events
+    name: Events
+    href: Remora.Discord.API.Abstractions.Gateway.Events.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events
+    name: Events
+    href: Remora.Discord.API.Abstractions.Gateway.Events.html
+- uid: Remora.Discord.API.Abstractions.Objects.IMessage.ID
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IMessage.ID
+  parent: Remora.Discord.API.Abstractions.Objects.IMessage
+  href: Remora.Discord.API.Abstractions.Objects.IMessage.html#Remora_Discord_API_Abstractions_Objects_IMessage_ID
+  name: ID
+  nameWithType: IMessage.ID
+  fullName: Remora.Discord.API.Abstractions.Objects.IMessage.ID
+- uid: Remora.Discord.API.Abstractions.Objects.IMessage.ChannelID
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IMessage.ChannelID
+  parent: Remora.Discord.API.Abstractions.Objects.IMessage
+  href: Remora.Discord.API.Abstractions.Objects.IMessage.html#Remora_Discord_API_Abstractions_Objects_IMessage_ChannelID
+  name: ChannelID
+  nameWithType: IMessage.ChannelID
+  fullName: Remora.Discord.API.Abstractions.Objects.IMessage.ChannelID
+- uid: Remora.Discord.API.Abstractions.Objects.IMessage.Author
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IMessage.Author
+  parent: Remora.Discord.API.Abstractions.Objects.IMessage
+  href: Remora.Discord.API.Abstractions.Objects.IMessage.html#Remora_Discord_API_Abstractions_Objects_IMessage_Author
+  name: Author
+  nameWithType: IMessage.Author
+  fullName: Remora.Discord.API.Abstractions.Objects.IMessage.Author
+- uid: Remora.Discord.API.Abstractions.Objects.IMessage.Content
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IMessage.Content
+  parent: Remora.Discord.API.Abstractions.Objects.IMessage
+  href: Remora.Discord.API.Abstractions.Objects.IMessage.html#Remora_Discord_API_Abstractions_Objects_IMessage_Content
+  name: Content
+  nameWithType: IMessage.Content
+  fullName: Remora.Discord.API.Abstractions.Objects.IMessage.Content
+- uid: Remora.Discord.API.Abstractions.Objects.IMessage.Timestamp
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IMessage.Timestamp
+  parent: Remora.Discord.API.Abstractions.Objects.IMessage
+  href: Remora.Discord.API.Abstractions.Objects.IMessage.html#Remora_Discord_API_Abstractions_Objects_IMessage_Timestamp
+  name: Timestamp
+  nameWithType: IMessage.Timestamp
+  fullName: Remora.Discord.API.Abstractions.Objects.IMessage.Timestamp
+- uid: Remora.Discord.API.Abstractions.Objects.IMessage.EditedTimestamp
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IMessage.EditedTimestamp
+  parent: Remora.Discord.API.Abstractions.Objects.IMessage
+  href: Remora.Discord.API.Abstractions.Objects.IMessage.html#Remora_Discord_API_Abstractions_Objects_IMessage_EditedTimestamp
+  name: EditedTimestamp
+  nameWithType: IMessage.EditedTimestamp
+  fullName: Remora.Discord.API.Abstractions.Objects.IMessage.EditedTimestamp
+- uid: Remora.Discord.API.Abstractions.Objects.IMessage.IsTTS
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IMessage.IsTTS
+  parent: Remora.Discord.API.Abstractions.Objects.IMessage
+  href: Remora.Discord.API.Abstractions.Objects.IMessage.html#Remora_Discord_API_Abstractions_Objects_IMessage_IsTTS
+  name: IsTTS
+  nameWithType: IMessage.IsTTS
+  fullName: Remora.Discord.API.Abstractions.Objects.IMessage.IsTTS
+- uid: Remora.Discord.API.Abstractions.Objects.IMessage.MentionsEveryone
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IMessage.MentionsEveryone
+  parent: Remora.Discord.API.Abstractions.Objects.IMessage
+  href: Remora.Discord.API.Abstractions.Objects.IMessage.html#Remora_Discord_API_Abstractions_Objects_IMessage_MentionsEveryone
+  name: MentionsEveryone
+  nameWithType: IMessage.MentionsEveryone
+  fullName: Remora.Discord.API.Abstractions.Objects.IMessage.MentionsEveryone
+- uid: Remora.Discord.API.Abstractions.Objects.IMessage.MentionedRoles
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IMessage.MentionedRoles
+  parent: Remora.Discord.API.Abstractions.Objects.IMessage
+  href: Remora.Discord.API.Abstractions.Objects.IMessage.html#Remora_Discord_API_Abstractions_Objects_IMessage_MentionedRoles
+  name: MentionedRoles
+  nameWithType: IMessage.MentionedRoles
+  fullName: Remora.Discord.API.Abstractions.Objects.IMessage.MentionedRoles
+- uid: Remora.Discord.API.Abstractions.Objects.IMessage.MentionedChannels
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IMessage.MentionedChannels
+  parent: Remora.Discord.API.Abstractions.Objects.IMessage
+  href: Remora.Discord.API.Abstractions.Objects.IMessage.html#Remora_Discord_API_Abstractions_Objects_IMessage_MentionedChannels
+  name: MentionedChannels
+  nameWithType: IMessage.MentionedChannels
+  fullName: Remora.Discord.API.Abstractions.Objects.IMessage.MentionedChannels
+- uid: Remora.Discord.API.Abstractions.Objects.IMessage.Attachments
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IMessage.Attachments
+  parent: Remora.Discord.API.Abstractions.Objects.IMessage
+  href: Remora.Discord.API.Abstractions.Objects.IMessage.html#Remora_Discord_API_Abstractions_Objects_IMessage_Attachments
+  name: Attachments
+  nameWithType: IMessage.Attachments
+  fullName: Remora.Discord.API.Abstractions.Objects.IMessage.Attachments
+- uid: Remora.Discord.API.Abstractions.Objects.IMessage.Embeds
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IMessage.Embeds
+  parent: Remora.Discord.API.Abstractions.Objects.IMessage
+  href: Remora.Discord.API.Abstractions.Objects.IMessage.html#Remora_Discord_API_Abstractions_Objects_IMessage_Embeds
+  name: Embeds
+  nameWithType: IMessage.Embeds
+  fullName: Remora.Discord.API.Abstractions.Objects.IMessage.Embeds
+- uid: Remora.Discord.API.Abstractions.Objects.IMessage.Reactions
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IMessage.Reactions
+  parent: Remora.Discord.API.Abstractions.Objects.IMessage
+  href: Remora.Discord.API.Abstractions.Objects.IMessage.html#Remora_Discord_API_Abstractions_Objects_IMessage_Reactions
+  name: Reactions
+  nameWithType: IMessage.Reactions
+  fullName: Remora.Discord.API.Abstractions.Objects.IMessage.Reactions
+- uid: Remora.Discord.API.Abstractions.Objects.IMessage.Nonce
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IMessage.Nonce
+  parent: Remora.Discord.API.Abstractions.Objects.IMessage
+  href: Remora.Discord.API.Abstractions.Objects.IMessage.html#Remora_Discord_API_Abstractions_Objects_IMessage_Nonce
+  name: Nonce
+  nameWithType: IMessage.Nonce
+  fullName: Remora.Discord.API.Abstractions.Objects.IMessage.Nonce
+- uid: Remora.Discord.API.Abstractions.Objects.IMessage.IsPinned
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IMessage.IsPinned
+  parent: Remora.Discord.API.Abstractions.Objects.IMessage
+  href: Remora.Discord.API.Abstractions.Objects.IMessage.html#Remora_Discord_API_Abstractions_Objects_IMessage_IsPinned
+  name: IsPinned
+  nameWithType: IMessage.IsPinned
+  fullName: Remora.Discord.API.Abstractions.Objects.IMessage.IsPinned
+- uid: Remora.Discord.API.Abstractions.Objects.IMessage.WebhookID
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IMessage.WebhookID
+  parent: Remora.Discord.API.Abstractions.Objects.IMessage
+  href: Remora.Discord.API.Abstractions.Objects.IMessage.html#Remora_Discord_API_Abstractions_Objects_IMessage_WebhookID
+  name: WebhookID
+  nameWithType: IMessage.WebhookID
+  fullName: Remora.Discord.API.Abstractions.Objects.IMessage.WebhookID
+- uid: Remora.Discord.API.Abstractions.Objects.IMessage.Type
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IMessage.Type
+  parent: Remora.Discord.API.Abstractions.Objects.IMessage
+  href: Remora.Discord.API.Abstractions.Objects.IMessage.html#Remora_Discord_API_Abstractions_Objects_IMessage_Type
+  name: Type
+  nameWithType: IMessage.Type
+  fullName: Remora.Discord.API.Abstractions.Objects.IMessage.Type
+- uid: Remora.Discord.API.Abstractions.Objects.IMessage.Activity
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IMessage.Activity
+  parent: Remora.Discord.API.Abstractions.Objects.IMessage
+  href: Remora.Discord.API.Abstractions.Objects.IMessage.html#Remora_Discord_API_Abstractions_Objects_IMessage_Activity
+  name: Activity
+  nameWithType: IMessage.Activity
+  fullName: Remora.Discord.API.Abstractions.Objects.IMessage.Activity
+- uid: Remora.Discord.API.Abstractions.Objects.IMessage.Application
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IMessage.Application
+  parent: Remora.Discord.API.Abstractions.Objects.IMessage
+  href: Remora.Discord.API.Abstractions.Objects.IMessage.html#Remora_Discord_API_Abstractions_Objects_IMessage_Application
+  name: Application
+  nameWithType: IMessage.Application
+  fullName: Remora.Discord.API.Abstractions.Objects.IMessage.Application
+- uid: Remora.Discord.API.Abstractions.Objects.IMessage.ApplicationID
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IMessage.ApplicationID
+  parent: Remora.Discord.API.Abstractions.Objects.IMessage
+  href: Remora.Discord.API.Abstractions.Objects.IMessage.html#Remora_Discord_API_Abstractions_Objects_IMessage_ApplicationID
+  name: ApplicationID
+  nameWithType: IMessage.ApplicationID
+  fullName: Remora.Discord.API.Abstractions.Objects.IMessage.ApplicationID
+- uid: Remora.Discord.API.Abstractions.Objects.IMessage.MessageReference
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IMessage.MessageReference
+  parent: Remora.Discord.API.Abstractions.Objects.IMessage
+  href: Remora.Discord.API.Abstractions.Objects.IMessage.html#Remora_Discord_API_Abstractions_Objects_IMessage_MessageReference
+  name: MessageReference
+  nameWithType: IMessage.MessageReference
+  fullName: Remora.Discord.API.Abstractions.Objects.IMessage.MessageReference
+- uid: Remora.Discord.API.Abstractions.Objects.IMessage.Flags
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IMessage.Flags
+  parent: Remora.Discord.API.Abstractions.Objects.IMessage
+  href: Remora.Discord.API.Abstractions.Objects.IMessage.html#Remora_Discord_API_Abstractions_Objects_IMessage_Flags
+  name: Flags
+  nameWithType: IMessage.Flags
+  fullName: Remora.Discord.API.Abstractions.Objects.IMessage.Flags
+- uid: Remora.Discord.API.Abstractions.Objects.IMessage.ReferencedMessage
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IMessage.ReferencedMessage
+  parent: Remora.Discord.API.Abstractions.Objects.IMessage
+  href: Remora.Discord.API.Abstractions.Objects.IMessage.html#Remora_Discord_API_Abstractions_Objects_IMessage_ReferencedMessage
+  name: ReferencedMessage
+  nameWithType: IMessage.ReferencedMessage
+  fullName: Remora.Discord.API.Abstractions.Objects.IMessage.ReferencedMessage
+- uid: Remora.Discord.API.Abstractions.Objects.IMessage.Interaction
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IMessage.Interaction
+  parent: Remora.Discord.API.Abstractions.Objects.IMessage
+  href: Remora.Discord.API.Abstractions.Objects.IMessage.html#Remora_Discord_API_Abstractions_Objects_IMessage_Interaction
+  name: Interaction
+  nameWithType: IMessage.Interaction
+  fullName: Remora.Discord.API.Abstractions.Objects.IMessage.Interaction
+- uid: Remora.Discord.API.Abstractions.Objects.IMessage.Thread
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IMessage.Thread
+  parent: Remora.Discord.API.Abstractions.Objects.IMessage
+  href: Remora.Discord.API.Abstractions.Objects.IMessage.html#Remora_Discord_API_Abstractions_Objects_IMessage_Thread
+  name: Thread
+  nameWithType: IMessage.Thread
+  fullName: Remora.Discord.API.Abstractions.Objects.IMessage.Thread
+- uid: Remora.Discord.API.Abstractions.Objects.IMessage.Components
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IMessage.Components
+  parent: Remora.Discord.API.Abstractions.Objects.IMessage
+  href: Remora.Discord.API.Abstractions.Objects.IMessage.html#Remora_Discord_API_Abstractions_Objects_IMessage_Components
+  name: Components
+  nameWithType: IMessage.Components
+  fullName: Remora.Discord.API.Abstractions.Objects.IMessage.Components
+- uid: Remora.Discord.API.Abstractions.Objects.IMessage.StickerItems
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IMessage.StickerItems
+  parent: Remora.Discord.API.Abstractions.Objects.IMessage
+  href: Remora.Discord.API.Abstractions.Objects.IMessage.html#Remora_Discord_API_Abstractions_Objects_IMessage_StickerItems
+  name: StickerItems
+  nameWithType: IMessage.StickerItems
+  fullName: Remora.Discord.API.Abstractions.Objects.IMessage.StickerItems
+- uid: Remora.Discord.API.Abstractions.Objects.IMessage.Position
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IMessage.Position
+  parent: Remora.Discord.API.Abstractions.Objects.IMessage
+  href: Remora.Discord.API.Abstractions.Objects.IMessage.html#Remora_Discord_API_Abstractions_Objects_IMessage_Position
+  name: Position
+  nameWithType: IMessage.Position
+  fullName: Remora.Discord.API.Abstractions.Objects.IMessage.Position
+- uid: Remora.Discord.API.Abstractions.Objects.IMessage.Resolved
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IMessage.Resolved
+  parent: Remora.Discord.API.Abstractions.Objects.IMessage
+  href: Remora.Discord.API.Abstractions.Objects.IMessage.html#Remora_Discord_API_Abstractions_Objects_IMessage_Resolved
+  name: Resolved
+  nameWithType: IMessage.Resolved
+  fullName: Remora.Discord.API.Abstractions.Objects.IMessage.Resolved
+- uid: Remora.Discord.API.Abstractions.Objects.IMessage.InteractionMetadata
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IMessage.InteractionMetadata
+  parent: Remora.Discord.API.Abstractions.Objects.IMessage
+  href: Remora.Discord.API.Abstractions.Objects.IMessage.html#Remora_Discord_API_Abstractions_Objects_IMessage_InteractionMetadata
+  name: InteractionMetadata
+  nameWithType: IMessage.InteractionMetadata
+  fullName: Remora.Discord.API.Abstractions.Objects.IMessage.InteractionMetadata
+- uid: Remora.Discord.API.Abstractions.Objects.IMessage.Poll
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IMessage.Poll
+  parent: Remora.Discord.API.Abstractions.Objects.IMessage
+  href: Remora.Discord.API.Abstractions.Objects.IMessage.html#Remora_Discord_API_Abstractions_Objects_IMessage_Poll
+  name: Poll
+  nameWithType: IMessage.Poll
+  fullName: Remora.Discord.API.Abstractions.Objects.IMessage.Poll
+- uid: Remora.Discord.API.Abstractions.Objects.IMessage
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IMessage
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IMessage.html
+  name: IMessage
+  nameWithType: IMessage
+  fullName: Remora.Discord.API.Abstractions.Objects.IMessage
+- uid: Remora.Discord.API.Abstractions.Objects
+  commentId: N:Remora.Discord.API.Abstractions.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Objects
+  nameWithType: Remora.Discord.API.Abstractions.Objects
+  fullName: Remora.Discord.API.Abstractions.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate.GuildID*
+  commentId: Overload:Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate.GuildID
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate.html#Remora_Discord_API_Abstractions_Gateway_Events_IMessageUpdate_GuildID
+  name: GuildID
+  nameWithType: IMessageUpdate.GuildID
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate.GuildID
+- uid: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  name: Optional<Snowflake>
+  nameWithType: Optional<Snowflake>
+  fullName: Remora.Rest.Core.Optional<Remora.Rest.Core.Snowflake>
+  nameWithType.vb: Optional(Of Snowflake)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Rest.Core.Snowflake)
+  name.vb: Optional(Of Snowflake)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+- uid: Remora.Rest.Core.Optional`1
+  commentId: T:Remora.Rest.Core.Optional`1
+  isExternal: true
+  name: Optional<TValue>
+  nameWithType: Optional<TValue>
+  fullName: Remora.Rest.Core.Optional<TValue>
+  nameWithType.vb: Optional(Of TValue)
+  fullName.vb: Remora.Rest.Core.Optional(Of TValue)
+  name.vb: Optional(Of TValue)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate.Member*
+  commentId: Overload:Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate.Member
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate.html#Remora_Discord_API_Abstractions_Gateway_Events_IMessageUpdate_Member
+  name: Member
+  nameWithType: IMessageUpdate.Member
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate.Member
+- uid: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IPartialGuildMember}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IPartialGuildMember}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: Remora.Discord.API.Abstractions.Objects.IPartialGuildMember.html
+  name: Optional<IPartialGuildMember>
+  nameWithType: Optional<IPartialGuildMember>
+  fullName: Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IPartialGuildMember>
+  nameWithType.vb: Optional(Of IPartialGuildMember)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IPartialGuildMember)
+  name.vb: Optional(Of IPartialGuildMember)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IPartialGuildMember
+    name: IPartialGuildMember
+    href: Remora.Discord.API.Abstractions.Objects.IPartialGuildMember.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IPartialGuildMember
+    name: IPartialGuildMember
+    href: Remora.Discord.API.Abstractions.Objects.IPartialGuildMember.html
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate.Mentions*
+  commentId: Overload:Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate.Mentions
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate.html#Remora_Discord_API_Abstractions_Gateway_Events_IMessageUpdate_Mentions
+  name: Mentions
+  nameWithType: IMessageUpdate.Mentions
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate.Mentions
+- uid: System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IUserMention}
+  commentId: T:System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IUserMention}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<IUserMention>
+  nameWithType: IReadOnlyList<IUserMention>
+  fullName: System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.IUserMention>
+  nameWithType.vb: IReadOnlyList(Of IUserMention)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.IUserMention)
+  name.vb: IReadOnlyList(Of IUserMention)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IUserMention
+    name: IUserMention
+    href: Remora.Discord.API.Abstractions.Objects.IUserMention.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IUserMention
+    name: IUserMention
+    href: Remora.Discord.API.Abstractions.Objects.IUserMention.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

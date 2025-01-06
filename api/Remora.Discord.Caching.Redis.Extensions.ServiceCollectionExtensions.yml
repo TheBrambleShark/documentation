@@ -1,0 +1,650 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.Caching.Redis.Extensions.ServiceCollectionExtensions
+  commentId: T:Remora.Discord.Caching.Redis.Extensions.ServiceCollectionExtensions
+  id: ServiceCollectionExtensions
+  parent: Remora.Discord.Caching.Redis.Extensions
+  children:
+  - Remora.Discord.Caching.Redis.Extensions.ServiceCollectionExtensions.AddDiscordRedisCaching(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Microsoft.Extensions.Caching.StackExchangeRedis.RedisCacheOptions})
+  langs:
+  - csharp
+  - vb
+  name: ServiceCollectionExtensions
+  nameWithType: ServiceCollectionExtensions
+  fullName: Remora.Discord.Caching.Redis.Extensions.ServiceCollectionExtensions
+  type: Class
+  source:
+    id: ServiceCollectionExtensions
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Caching.Redis\Extensions\ServiceCollectionExtensions.cs
+    startLine: 39
+  assemblies:
+  - Remora.Discord.Caching.Redis
+  namespace: Remora.Discord.Caching.Redis.Extensions
+  summary: Defines extension methods for the <xref href="Microsoft.Extensions.DependencyInjection.IServiceCollection" data-throw-if-not-resolved="false"></xref> interface.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public static class ServiceCollectionExtensions
+    content.vb: >-
+      <PublicAPI>
+
+      Public Module ServiceCollectionExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.Caching.Redis.Extensions.ServiceCollectionExtensions.AddDiscordRedisCaching(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Microsoft.Extensions.Caching.StackExchangeRedis.RedisCacheOptions})
+  commentId: M:Remora.Discord.Caching.Redis.Extensions.ServiceCollectionExtensions.AddDiscordRedisCaching(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Microsoft.Extensions.Caching.StackExchangeRedis.RedisCacheOptions})
+  id: AddDiscordRedisCaching(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Microsoft.Extensions.Caching.StackExchangeRedis.RedisCacheOptions})
+  isExtensionMethod: true
+  parent: Remora.Discord.Caching.Redis.Extensions.ServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddDiscordRedisCaching(IServiceCollection, Action<RedisCacheOptions>?)
+  nameWithType: ServiceCollectionExtensions.AddDiscordRedisCaching(IServiceCollection, Action<RedisCacheOptions>?)
+  fullName: Remora.Discord.Caching.Redis.Extensions.ServiceCollectionExtensions.AddDiscordRedisCaching(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action<Microsoft.Extensions.Caching.StackExchangeRedis.RedisCacheOptions>?)
+  type: Method
+  source:
+    id: AddDiscordRedisCaching
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Caching.Redis\Extensions\ServiceCollectionExtensions.cs
+    startLine: 64
+  assemblies:
+  - Remora.Discord.Caching.Redis
+  namespace: Remora.Discord.Caching.Redis.Extensions
+  summary: Adds a redis-backed caching implementations of various API types, overriding the normally non-caching versions.
+  remarks: >-
+    The cache uses a run-of-the-mill <xref href="Microsoft.Extensions.Caching.Distributed.IDistributedCache" data-throw-if-not-resolved="false"></xref>. Cache entry options for any cached type can be
+
+    configured using <xref href="Microsoft.Extensions.Options.IOptions%601" data-throw-if-not-resolved="false"></xref>.
+
+
+    When choosing a cache implementation, it should be noted that choosing this will override the backing store for
+
+    caching REST clients and responders.
+
+
+    It is also very important to know that the stock implementation of <xref href="Remora.Discord.Caching.Abstractions.Services.ICacheProvider" data-throw-if-not-resolved="false"></xref> that this method
+
+    adds uses JSON to store values for convenience and consistency with Remora's entities. If JSON is not a
+
+    desirable format, the caching methods in <xref href="Remora.Discord.Caching.Redis.Services.RedisCacheProvider" data-throw-if-not-resolved="false"></xref> can be provided, or a custom
+
+    implementation of <xref href="Remora.Discord.Caching.Abstractions.Services.ICacheProvider" data-throw-if-not-resolved="false"></xref> can be added to the container.
+
+
+    If using a custom cache provider, it is necessary to add it after calling this method, or it will be overridden
+
+    by the provider implementation this method adds.
+  example: []
+  syntax:
+    content: public static IServiceCollection AddDiscordRedisCaching(this IServiceCollection services, Action<RedisCacheOptions>? configureRedisAction = null)
+    parameters:
+    - id: services
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: The services.
+    - id: configureRedisAction
+      type: System.Action{Microsoft.Extensions.Caching.StackExchangeRedis.RedisCacheOptions}
+      description: >-
+        An action to configure the redis cache. If none is specified, a
+             default connection of localhost:6379 will be used.
+    return:
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: The services, with caching enabled.
+    content.vb: Public Shared Function AddDiscordRedisCaching(services As IServiceCollection, configureRedisAction As Action(Of RedisCacheOptions) = Nothing) As IServiceCollection
+  overload: Remora.Discord.Caching.Redis.Extensions.ServiceCollectionExtensions.AddDiscordRedisCaching*
+  nameWithType.vb: ServiceCollectionExtensions.AddDiscordRedisCaching(IServiceCollection, Action(Of RedisCacheOptions))
+  fullName.vb: Remora.Discord.Caching.Redis.Extensions.ServiceCollectionExtensions.AddDiscordRedisCaching(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action(Of Microsoft.Extensions.Caching.StackExchangeRedis.RedisCacheOptions))
+  name.vb: AddDiscordRedisCaching(IServiceCollection, Action(Of RedisCacheOptions))
+references:
+- uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
+  commentId: T:Microsoft.Extensions.DependencyInjection.IServiceCollection
+  parent: Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection
+  name: IServiceCollection
+  nameWithType: IServiceCollection
+  fullName: Microsoft.Extensions.DependencyInjection.IServiceCollection
+- uid: Remora.Discord.Caching.Redis.Extensions
+  commentId: N:Remora.Discord.Caching.Redis.Extensions
+  href: Remora.html
+  name: Remora.Discord.Caching.Redis.Extensions
+  nameWithType: Remora.Discord.Caching.Redis.Extensions
+  fullName: Remora.Discord.Caching.Redis.Extensions
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Caching
+    name: Caching
+    href: Remora.Discord.Caching.html
+  - name: .
+  - uid: Remora.Discord.Caching.Redis
+    name: Redis
+    href: Remora.Discord.Caching.Redis.html
+  - name: .
+  - uid: Remora.Discord.Caching.Redis.Extensions
+    name: Extensions
+    href: Remora.Discord.Caching.Redis.Extensions.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Caching
+    name: Caching
+    href: Remora.Discord.Caching.html
+  - name: .
+  - uid: Remora.Discord.Caching.Redis
+    name: Redis
+    href: Remora.Discord.Caching.Redis.html
+  - name: .
+  - uid: Remora.Discord.Caching.Redis.Extensions
+    name: Extensions
+    href: Remora.Discord.Caching.Redis.Extensions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: Microsoft.Extensions.DependencyInjection
+  commentId: N:Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.DependencyInjection
+  nameWithType: Microsoft.Extensions.DependencyInjection
+  fullName: Microsoft.Extensions.DependencyInjection
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.DependencyInjection
+    name: DependencyInjection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.DependencyInjection
+    name: DependencyInjection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+  commentId: T:Microsoft.Extensions.Caching.Distributed.IDistributedCache
+  parent: Microsoft.Extensions.Caching.Distributed
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache
+  name: IDistributedCache
+  nameWithType: IDistributedCache
+  fullName: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+- uid: Microsoft.Extensions.Options.IOptions`1
+  commentId: T:Microsoft.Extensions.Options.IOptions`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  name: IOptions<TOptions>
+  nameWithType: IOptions<TOptions>
+  fullName: Microsoft.Extensions.Options.IOptions<TOptions>
+  nameWithType.vb: IOptions(Of TOptions)
+  fullName.vb: Microsoft.Extensions.Options.IOptions(Of TOptions)
+  name.vb: IOptions(Of TOptions)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: <
+  - name: TOptions
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TOptions
+  - name: )
+- uid: Remora.Discord.Caching.Abstractions.Services.ICacheProvider
+  commentId: T:Remora.Discord.Caching.Abstractions.Services.ICacheProvider
+  parent: Remora.Discord.Caching.Abstractions.Services
+  href: Remora.Discord.Caching.Abstractions.Services.ICacheProvider.html
+  name: ICacheProvider
+  nameWithType: ICacheProvider
+  fullName: Remora.Discord.Caching.Abstractions.Services.ICacheProvider
+- uid: Remora.Discord.Caching.Redis.Services.RedisCacheProvider
+  commentId: T:Remora.Discord.Caching.Redis.Services.RedisCacheProvider
+  href: Remora.Discord.Caching.Redis.Services.RedisCacheProvider.html
+  name: RedisCacheProvider
+  nameWithType: RedisCacheProvider
+  fullName: Remora.Discord.Caching.Redis.Services.RedisCacheProvider
+- uid: Remora.Discord.Caching.Redis.Extensions.ServiceCollectionExtensions.AddDiscordRedisCaching*
+  commentId: Overload:Remora.Discord.Caching.Redis.Extensions.ServiceCollectionExtensions.AddDiscordRedisCaching
+  href: Remora.Discord.Caching.Redis.Extensions.ServiceCollectionExtensions.html#Remora_Discord_Caching_Redis_Extensions_ServiceCollectionExtensions_AddDiscordRedisCaching_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Action_Microsoft_Extensions_Caching_StackExchangeRedis_RedisCacheOptions__
+  name: AddDiscordRedisCaching
+  nameWithType: ServiceCollectionExtensions.AddDiscordRedisCaching
+  fullName: Remora.Discord.Caching.Redis.Extensions.ServiceCollectionExtensions.AddDiscordRedisCaching
+- uid: System.Action{Microsoft.Extensions.Caching.StackExchangeRedis.RedisCacheOptions}
+  commentId: T:System.Action{Microsoft.Extensions.Caching.StackExchangeRedis.RedisCacheOptions}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<RedisCacheOptions>
+  nameWithType: Action<RedisCacheOptions>
+  fullName: System.Action<Microsoft.Extensions.Caching.StackExchangeRedis.RedisCacheOptions>
+  nameWithType.vb: Action(Of RedisCacheOptions)
+  fullName.vb: System.Action(Of Microsoft.Extensions.Caching.StackExchangeRedis.RedisCacheOptions)
+  name.vb: Action(Of RedisCacheOptions)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCacheOptions
+    name: RedisCacheOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.stackexchangeredis.rediscacheoptions
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCacheOptions
+    name: RedisCacheOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.stackexchangeredis.rediscacheoptions
+  - name: )
+- uid: Microsoft.Extensions.Caching.Distributed
+  commentId: N:Microsoft.Extensions.Caching.Distributed
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Caching.Distributed
+  nameWithType: Microsoft.Extensions.Caching.Distributed
+  fullName: Microsoft.Extensions.Caching.Distributed
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Caching
+    name: Caching
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching
+  - name: .
+  - uid: Microsoft.Extensions.Caching.Distributed
+    name: Distributed
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Caching
+    name: Caching
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching
+  - name: .
+  - uid: Microsoft.Extensions.Caching.Distributed
+    name: Distributed
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed
+- uid: Remora.Discord.Caching.Abstractions.Services
+  commentId: N:Remora.Discord.Caching.Abstractions.Services
+  href: Remora.html
+  name: Remora.Discord.Caching.Abstractions.Services
+  nameWithType: Remora.Discord.Caching.Abstractions.Services
+  fullName: Remora.Discord.Caching.Abstractions.Services
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Caching
+    name: Caching
+    href: Remora.Discord.Caching.html
+  - name: .
+  - uid: Remora.Discord.Caching.Abstractions
+    name: Abstractions
+    href: Remora.Discord.Caching.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.Caching.Abstractions.Services
+    name: Services
+    href: Remora.Discord.Caching.Abstractions.Services.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Caching
+    name: Caching
+    href: Remora.Discord.Caching.html
+  - name: .
+  - uid: Remora.Discord.Caching.Abstractions
+    name: Abstractions
+    href: Remora.Discord.Caching.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.Caching.Abstractions.Services
+    name: Services
+    href: Remora.Discord.Caching.Abstractions.Services.html
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

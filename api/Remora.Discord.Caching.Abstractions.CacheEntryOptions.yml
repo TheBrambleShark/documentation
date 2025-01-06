@@ -1,0 +1,693 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.Caching.Abstractions.CacheEntryOptions
+  commentId: T:Remora.Discord.Caching.Abstractions.CacheEntryOptions
+  id: CacheEntryOptions
+  parent: Remora.Discord.Caching.Abstractions
+  children:
+  - Remora.Discord.Caching.Abstractions.CacheEntryOptions.AbsoluteExpiration
+  - Remora.Discord.Caching.Abstractions.CacheEntryOptions.AbsoluteExpirationRelativeToNow
+  - Remora.Discord.Caching.Abstractions.CacheEntryOptions.SlidingExpiration
+  - Remora.Discord.Caching.Abstractions.CacheEntryOptions.op_Implicit(Remora.Discord.Caching.Abstractions.CacheEntryOptions)~Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions
+  - Remora.Discord.Caching.Abstractions.CacheEntryOptions.op_Implicit(Remora.Discord.Caching.Abstractions.CacheEntryOptions)~Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions
+  langs:
+  - csharp
+  - vb
+  name: CacheEntryOptions
+  nameWithType: CacheEntryOptions
+  fullName: Remora.Discord.Caching.Abstractions.CacheEntryOptions
+  type: Class
+  source:
+    id: CacheEntryOptions
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Caching.Abstractions\CacheEntryOptions.cs
+    startLine: 35
+  assemblies:
+  - Remora.Discord.Caching.Abstractions
+  namespace: Remora.Discord.Caching.Abstractions
+  summary: >-
+    Wrapper type for options for entries in <xref href="Microsoft.Extensions.Caching.Memory.IMemoryCache" data-throw-if-not-resolved="false"></xref> or <xref href="Microsoft.Extensions.Caching.Distributed.IDistributedCache" data-throw-if-not-resolved="false"></xref> instances.
+
+    Implicitly convertible to <xref href="Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions" data-throw-if-not-resolved="false"></xref> and/or <xref href="Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public sealed class CacheEntryOptions
+    content.vb: >-
+      <PublicAPI>
+
+      Public NotInheritable Class CacheEntryOptions
+  seealso:
+  - linkId: Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions
+    commentId: T:Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions
+  - linkId: Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions
+    commentId: T:Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.Caching.Abstractions.CacheEntryOptions.AbsoluteExpiration
+  commentId: P:Remora.Discord.Caching.Abstractions.CacheEntryOptions.AbsoluteExpiration
+  id: AbsoluteExpiration
+  parent: Remora.Discord.Caching.Abstractions.CacheEntryOptions
+  langs:
+  - csharp
+  - vb
+  name: AbsoluteExpiration
+  nameWithType: CacheEntryOptions.AbsoluteExpiration
+  fullName: Remora.Discord.Caching.Abstractions.CacheEntryOptions.AbsoluteExpiration
+  type: Property
+  source:
+    id: AbsoluteExpiration
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Caching.Abstractions\CacheEntryOptions.cs
+    startLine: 44
+  assemblies:
+  - Remora.Discord.Caching.Abstractions
+  namespace: Remora.Discord.Caching.Abstractions
+  summary: Gets the absolute expiration time.
+  example: []
+  syntax:
+    content: public DateTimeOffset? AbsoluteExpiration { get; init; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTimeOffset}
+    content.vb: Public Property AbsoluteExpiration As DateTimeOffset?
+  overload: Remora.Discord.Caching.Abstractions.CacheEntryOptions.AbsoluteExpiration*
+- uid: Remora.Discord.Caching.Abstractions.CacheEntryOptions.AbsoluteExpirationRelativeToNow
+  commentId: P:Remora.Discord.Caching.Abstractions.CacheEntryOptions.AbsoluteExpirationRelativeToNow
+  id: AbsoluteExpirationRelativeToNow
+  parent: Remora.Discord.Caching.Abstractions.CacheEntryOptions
+  langs:
+  - csharp
+  - vb
+  name: AbsoluteExpirationRelativeToNow
+  nameWithType: CacheEntryOptions.AbsoluteExpirationRelativeToNow
+  fullName: Remora.Discord.Caching.Abstractions.CacheEntryOptions.AbsoluteExpirationRelativeToNow
+  type: Property
+  source:
+    id: AbsoluteExpirationRelativeToNow
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Caching.Abstractions\CacheEntryOptions.cs
+    startLine: 49
+  assemblies:
+  - Remora.Discord.Caching.Abstractions
+  namespace: Remora.Discord.Caching.Abstractions
+  summary: Gets the absolute expiration time, relative to now.
+  example: []
+  syntax:
+    content: public TimeSpan? AbsoluteExpirationRelativeToNow { get; init; }
+    parameters: []
+    return:
+      type: System.Nullable{System.TimeSpan}
+    content.vb: Public Property AbsoluteExpirationRelativeToNow As TimeSpan?
+  overload: Remora.Discord.Caching.Abstractions.CacheEntryOptions.AbsoluteExpirationRelativeToNow*
+- uid: Remora.Discord.Caching.Abstractions.CacheEntryOptions.SlidingExpiration
+  commentId: P:Remora.Discord.Caching.Abstractions.CacheEntryOptions.SlidingExpiration
+  id: SlidingExpiration
+  parent: Remora.Discord.Caching.Abstractions.CacheEntryOptions
+  langs:
+  - csharp
+  - vb
+  name: SlidingExpiration
+  nameWithType: CacheEntryOptions.SlidingExpiration
+  fullName: Remora.Discord.Caching.Abstractions.CacheEntryOptions.SlidingExpiration
+  type: Property
+  source:
+    id: SlidingExpiration
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Caching.Abstractions\CacheEntryOptions.cs
+    startLine: 54
+  assemblies:
+  - Remora.Discord.Caching.Abstractions
+  namespace: Remora.Discord.Caching.Abstractions
+  summary: Gets the sliding expiration time.
+  example: []
+  syntax:
+    content: public TimeSpan? SlidingExpiration { get; init; }
+    parameters: []
+    return:
+      type: System.Nullable{System.TimeSpan}
+    content.vb: Public Property SlidingExpiration As TimeSpan?
+  overload: Remora.Discord.Caching.Abstractions.CacheEntryOptions.SlidingExpiration*
+- uid: Remora.Discord.Caching.Abstractions.CacheEntryOptions.op_Implicit(Remora.Discord.Caching.Abstractions.CacheEntryOptions)~Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions
+  commentId: M:Remora.Discord.Caching.Abstractions.CacheEntryOptions.op_Implicit(Remora.Discord.Caching.Abstractions.CacheEntryOptions)~Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions
+  id: op_Implicit(Remora.Discord.Caching.Abstractions.CacheEntryOptions)~Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions
+  parent: Remora.Discord.Caching.Abstractions.CacheEntryOptions
+  langs:
+  - csharp
+  - vb
+  name: implicit operator MemoryCacheEntryOptions(CacheEntryOptions)
+  nameWithType: CacheEntryOptions.implicit operator MemoryCacheEntryOptions(CacheEntryOptions)
+  fullName: Remora.Discord.Caching.Abstractions.CacheEntryOptions.implicit operator Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions(Remora.Discord.Caching.Abstractions.CacheEntryOptions)
+  type: Operator
+  source:
+    id: op_Implicit
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Caching.Abstractions\CacheEntryOptions.cs
+    startLine: 63
+  assemblies:
+  - Remora.Discord.Caching.Abstractions
+  namespace: Remora.Discord.Caching.Abstractions
+  summary: Gets the cached <xref href="Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions" data-throw-if-not-resolved="false"></xref> for this instance, or creates a new one and caches it.
+  example: []
+  syntax:
+    content: public static implicit operator MemoryCacheEntryOptions(CacheEntryOptions self)
+    parameters:
+    - id: self
+      type: Remora.Discord.Caching.Abstractions.CacheEntryOptions
+      description: The current <xref href="Remora.Discord.Caching.Abstractions.CacheEntryOptions" data-throw-if-not-resolved="false"></xref> instance.
+    return:
+      type: Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions
+      description: An instance of <xref href="Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions" data-throw-if-not-resolved="false"></xref> with settings corresponding to the current instance.
+    content.vb: Public Shared Widening Operator CType(self As CacheEntryOptions) As MemoryCacheEntryOptions
+  overload: Remora.Discord.Caching.Abstractions.CacheEntryOptions.op_Implicit*
+  nameWithType.vb: CacheEntryOptions.CType(CacheEntryOptions)
+  fullName.vb: Remora.Discord.Caching.Abstractions.CacheEntryOptions.CType(Remora.Discord.Caching.Abstractions.CacheEntryOptions)
+  name.vb: CType(CacheEntryOptions)
+- uid: Remora.Discord.Caching.Abstractions.CacheEntryOptions.op_Implicit(Remora.Discord.Caching.Abstractions.CacheEntryOptions)~Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions
+  commentId: M:Remora.Discord.Caching.Abstractions.CacheEntryOptions.op_Implicit(Remora.Discord.Caching.Abstractions.CacheEntryOptions)~Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions
+  id: op_Implicit(Remora.Discord.Caching.Abstractions.CacheEntryOptions)~Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions
+  parent: Remora.Discord.Caching.Abstractions.CacheEntryOptions
+  langs:
+  - csharp
+  - vb
+  name: implicit operator DistributedCacheEntryOptions(CacheEntryOptions)
+  nameWithType: CacheEntryOptions.implicit operator DistributedCacheEntryOptions(CacheEntryOptions)
+  fullName: Remora.Discord.Caching.Abstractions.CacheEntryOptions.implicit operator Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions(Remora.Discord.Caching.Abstractions.CacheEntryOptions)
+  type: Operator
+  source:
+    id: op_Implicit
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Caching.Abstractions\CacheEntryOptions.cs
+    startLine: 98
+  assemblies:
+  - Remora.Discord.Caching.Abstractions
+  namespace: Remora.Discord.Caching.Abstractions
+  summary: >-
+    Gets the cached <xref href="Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions" data-throw-if-not-resolved="false"></xref> for this instance, or creates a new one and caches
+
+    it.
+  example: []
+  syntax:
+    content: public static implicit operator DistributedCacheEntryOptions(CacheEntryOptions self)
+    parameters:
+    - id: self
+      type: Remora.Discord.Caching.Abstractions.CacheEntryOptions
+      description: The current <xref href="Remora.Discord.Caching.Abstractions.CacheEntryOptions" data-throw-if-not-resolved="false"></xref> instance.
+    return:
+      type: Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions
+      description: An instance of <xref href="Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions" data-throw-if-not-resolved="false"></xref> with settings corresponding to the current instance.
+    content.vb: Public Shared Widening Operator CType(self As CacheEntryOptions) As DistributedCacheEntryOptions
+  overload: Remora.Discord.Caching.Abstractions.CacheEntryOptions.op_Implicit*
+  nameWithType.vb: CacheEntryOptions.CType(CacheEntryOptions)
+  fullName.vb: Remora.Discord.Caching.Abstractions.CacheEntryOptions.CType(Remora.Discord.Caching.Abstractions.CacheEntryOptions)
+  name.vb: CType(CacheEntryOptions)
+references:
+- uid: Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions
+  commentId: T:Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions
+  parent: Microsoft.Extensions.Caching.Memory
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.memorycacheentryoptions
+  name: MemoryCacheEntryOptions
+  nameWithType: MemoryCacheEntryOptions
+  fullName: Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions
+- uid: Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions
+  commentId: T:Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions
+  parent: Microsoft.Extensions.Caching.Distributed
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.distributedcacheentryoptions
+  name: DistributedCacheEntryOptions
+  nameWithType: DistributedCacheEntryOptions
+  fullName: Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions
+- uid: Microsoft.Extensions.Caching.Memory.IMemoryCache
+  commentId: T:Microsoft.Extensions.Caching.Memory.IMemoryCache
+  parent: Microsoft.Extensions.Caching.Memory
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache
+  name: IMemoryCache
+  nameWithType: IMemoryCache
+  fullName: Microsoft.Extensions.Caching.Memory.IMemoryCache
+- uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+  commentId: T:Microsoft.Extensions.Caching.Distributed.IDistributedCache
+  parent: Microsoft.Extensions.Caching.Distributed
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache
+  name: IDistributedCache
+  nameWithType: IDistributedCache
+  fullName: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+- uid: Remora.Discord.Caching.Abstractions
+  commentId: N:Remora.Discord.Caching.Abstractions
+  href: Remora.html
+  name: Remora.Discord.Caching.Abstractions
+  nameWithType: Remora.Discord.Caching.Abstractions
+  fullName: Remora.Discord.Caching.Abstractions
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Caching
+    name: Caching
+    href: Remora.Discord.Caching.html
+  - name: .
+  - uid: Remora.Discord.Caching.Abstractions
+    name: Abstractions
+    href: Remora.Discord.Caching.Abstractions.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Caching
+    name: Caching
+    href: Remora.Discord.Caching.html
+  - name: .
+  - uid: Remora.Discord.Caching.Abstractions
+    name: Abstractions
+    href: Remora.Discord.Caching.Abstractions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: Microsoft.Extensions.Caching.Memory
+  commentId: N:Microsoft.Extensions.Caching.Memory
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Caching.Memory
+  nameWithType: Microsoft.Extensions.Caching.Memory
+  fullName: Microsoft.Extensions.Caching.Memory
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Caching
+    name: Caching
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching
+  - name: .
+  - uid: Microsoft.Extensions.Caching.Memory
+    name: Memory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Caching
+    name: Caching
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching
+  - name: .
+  - uid: Microsoft.Extensions.Caching.Memory
+    name: Memory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory
+- uid: Microsoft.Extensions.Caching.Distributed
+  commentId: N:Microsoft.Extensions.Caching.Distributed
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Caching.Distributed
+  nameWithType: Microsoft.Extensions.Caching.Distributed
+  fullName: Microsoft.Extensions.Caching.Distributed
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Caching
+    name: Caching
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching
+  - name: .
+  - uid: Microsoft.Extensions.Caching.Distributed
+    name: Distributed
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Caching
+    name: Caching
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching
+  - name: .
+  - uid: Microsoft.Extensions.Caching.Distributed
+    name: Distributed
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.Caching.Abstractions.CacheEntryOptions.AbsoluteExpiration*
+  commentId: Overload:Remora.Discord.Caching.Abstractions.CacheEntryOptions.AbsoluteExpiration
+  href: Remora.Discord.Caching.Abstractions.CacheEntryOptions.html#Remora_Discord_Caching_Abstractions_CacheEntryOptions_AbsoluteExpiration
+  name: AbsoluteExpiration
+  nameWithType: CacheEntryOptions.AbsoluteExpiration
+  fullName: Remora.Discord.Caching.Abstractions.CacheEntryOptions.AbsoluteExpiration
+- uid: System.Nullable{System.DateTimeOffset}
+  commentId: T:System.Nullable{System.DateTimeOffset}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  name: DateTimeOffset?
+  nameWithType: DateTimeOffset?
+  fullName: System.DateTimeOffset?
+  spec.csharp:
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  - name: '?'
+  spec.vb:
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Remora.Discord.Caching.Abstractions.CacheEntryOptions.AbsoluteExpirationRelativeToNow*
+  commentId: Overload:Remora.Discord.Caching.Abstractions.CacheEntryOptions.AbsoluteExpirationRelativeToNow
+  href: Remora.Discord.Caching.Abstractions.CacheEntryOptions.html#Remora_Discord_Caching_Abstractions_CacheEntryOptions_AbsoluteExpirationRelativeToNow
+  name: AbsoluteExpirationRelativeToNow
+  nameWithType: CacheEntryOptions.AbsoluteExpirationRelativeToNow
+  fullName: Remora.Discord.Caching.Abstractions.CacheEntryOptions.AbsoluteExpirationRelativeToNow
+- uid: System.Nullable{System.TimeSpan}
+  commentId: T:System.Nullable{System.TimeSpan}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.timespan
+  name: TimeSpan?
+  nameWithType: TimeSpan?
+  fullName: System.TimeSpan?
+  spec.csharp:
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: '?'
+  spec.vb:
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: '?'
+- uid: Remora.Discord.Caching.Abstractions.CacheEntryOptions.SlidingExpiration*
+  commentId: Overload:Remora.Discord.Caching.Abstractions.CacheEntryOptions.SlidingExpiration
+  href: Remora.Discord.Caching.Abstractions.CacheEntryOptions.html#Remora_Discord_Caching_Abstractions_CacheEntryOptions_SlidingExpiration
+  name: SlidingExpiration
+  nameWithType: CacheEntryOptions.SlidingExpiration
+  fullName: Remora.Discord.Caching.Abstractions.CacheEntryOptions.SlidingExpiration
+- uid: Remora.Discord.Caching.Abstractions.CacheEntryOptions
+  commentId: T:Remora.Discord.Caching.Abstractions.CacheEntryOptions
+  parent: Remora.Discord.Caching.Abstractions
+  href: Remora.Discord.Caching.Abstractions.CacheEntryOptions.html
+  name: CacheEntryOptions
+  nameWithType: CacheEntryOptions
+  fullName: Remora.Discord.Caching.Abstractions.CacheEntryOptions
+- uid: Remora.Discord.Caching.Abstractions.CacheEntryOptions.op_Implicit*
+  commentId: Overload:Remora.Discord.Caching.Abstractions.CacheEntryOptions.op_Implicit
+  name: implicit operator
+  nameWithType: CacheEntryOptions.implicit operator
+  fullName: Remora.Discord.Caching.Abstractions.CacheEntryOptions.implicit operator
+  nameWithType.vb: CacheEntryOptions.CType
+  fullName.vb: Remora.Discord.Caching.Abstractions.CacheEntryOptions.CType
+  name.vb: CType
+  spec.csharp:
+  - name: implicit
+  - name: " "
+  - name: operator

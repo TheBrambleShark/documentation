@@ -1,0 +1,1131 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Objects.TextInputComponent
+  commentId: T:Remora.Discord.API.Objects.TextInputComponent
+  id: TextInputComponent
+  parent: Remora.Discord.API.Objects
+  children:
+  - Remora.Discord.API.Objects.TextInputComponent.#ctor(System.String,Remora.Discord.API.Abstractions.Objects.TextInputStyle,System.String,Remora.Rest.Core.Optional{System.Int32},Remora.Rest.Core.Optional{System.Int32},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String})
+  - Remora.Discord.API.Objects.TextInputComponent.CustomID
+  - Remora.Discord.API.Objects.TextInputComponent.IsRequired
+  - Remora.Discord.API.Objects.TextInputComponent.Label
+  - Remora.Discord.API.Objects.TextInputComponent.MaxLength
+  - Remora.Discord.API.Objects.TextInputComponent.MinLength
+  - Remora.Discord.API.Objects.TextInputComponent.Placeholder
+  - Remora.Discord.API.Objects.TextInputComponent.Style
+  - Remora.Discord.API.Objects.TextInputComponent.Type
+  - Remora.Discord.API.Objects.TextInputComponent.Value
+  langs:
+  - csharp
+  - vb
+  name: TextInputComponent
+  nameWithType: TextInputComponent
+  fullName: Remora.Discord.API.Objects.TextInputComponent
+  type: Class
+  source:
+    id: TextInputComponent
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Interactions\Components\TextInput\TextInputComponent.cs
+    startLine: 29
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Represents a text-based input component.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public record TextInputComponent : ITextInputComponent, IMessageComponent, IPartialTextInputComponent, IPartialMessageComponent, IEquatable<TextInputComponent>
+    content.vb: >-
+      <PublicAPI>
+
+      Public Class TextInputComponent Implements ITextInputComponent, IMessageComponent, IPartialTextInputComponent, IPartialMessageComponent, IEquatable(Of TextInputComponent)
+  inheritance:
+  - System.Object
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.ITextInputComponent
+  - Remora.Discord.API.Abstractions.Objects.IMessageComponent
+  - Remora.Discord.API.Abstractions.Objects.IPartialTextInputComponent
+  - Remora.Discord.API.Abstractions.Objects.IPartialMessageComponent
+  - System.IEquatable{Remora.Discord.API.Objects.TextInputComponent}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Objects.TextInputComponent.#ctor(System.String,Remora.Discord.API.Abstractions.Objects.TextInputStyle,System.String,Remora.Rest.Core.Optional{System.Int32},Remora.Rest.Core.Optional{System.Int32},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String})
+  commentId: M:Remora.Discord.API.Objects.TextInputComponent.#ctor(System.String,Remora.Discord.API.Abstractions.Objects.TextInputStyle,System.String,Remora.Rest.Core.Optional{System.Int32},Remora.Rest.Core.Optional{System.Int32},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String})
+  id: '#ctor(System.String,Remora.Discord.API.Abstractions.Objects.TextInputStyle,System.String,Remora.Rest.Core.Optional{System.Int32},Remora.Rest.Core.Optional{System.Int32},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String})'
+  parent: Remora.Discord.API.Objects.TextInputComponent
+  langs:
+  - csharp
+  - vb
+  name: TextInputComponent(string, TextInputStyle, string, Optional<int>, Optional<int>, Optional<bool>, Optional<string>, Optional<string>)
+  nameWithType: TextInputComponent.TextInputComponent(string, TextInputStyle, string, Optional<int>, Optional<int>, Optional<bool>, Optional<string>, Optional<string>)
+  fullName: Remora.Discord.API.Objects.TextInputComponent.TextInputComponent(string, Remora.Discord.API.Abstractions.Objects.TextInputStyle, string, Remora.Rest.Core.Optional<int>, Remora.Rest.Core.Optional<int>, Remora.Rest.Core.Optional<bool>, Remora.Rest.Core.Optional<string>, Remora.Rest.Core.Optional<string>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Interactions\Components\TextInput\TextInputComponent.cs
+    startLine: 29
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Represents a text-based input component.
+  example: []
+  syntax:
+    content: public TextInputComponent(string CustomID, TextInputStyle Style, string Label, Optional<int> MinLength, Optional<int> MaxLength, Optional<bool> IsRequired, Optional<string> Value, Optional<string> Placeholder)
+    parameters:
+    - id: CustomID
+      type: System.String
+    - id: Style
+      type: Remora.Discord.API.Abstractions.Objects.TextInputStyle
+    - id: Label
+      type: System.String
+    - id: MinLength
+      type: Remora.Rest.Core.Optional{System.Int32}
+    - id: MaxLength
+      type: Remora.Rest.Core.Optional{System.Int32}
+    - id: IsRequired
+      type: Remora.Rest.Core.Optional{System.Boolean}
+    - id: Value
+      type: Remora.Rest.Core.Optional{System.String}
+    - id: Placeholder
+      type: Remora.Rest.Core.Optional{System.String}
+    content.vb: Public Sub New(CustomID As String, Style As TextInputStyle, Label As String, MinLength As [Optional](Of Integer), MaxLength As [Optional](Of Integer), IsRequired As [Optional](Of Boolean), Value As [Optional](Of String), Placeholder As [Optional](Of String))
+  overload: Remora.Discord.API.Objects.TextInputComponent.#ctor*
+  nameWithType.vb: TextInputComponent.New(String, TextInputStyle, String, Optional(Of Integer), Optional(Of Integer), Optional(Of Boolean), Optional(Of String), Optional(Of String))
+  fullName.vb: Remora.Discord.API.Objects.TextInputComponent.New(String, Remora.Discord.API.Abstractions.Objects.TextInputStyle, String, Remora.Rest.Core.Optional(Of Integer), Remora.Rest.Core.Optional(Of Integer), Remora.Rest.Core.Optional(Of Boolean), Remora.Rest.Core.Optional(Of String), Remora.Rest.Core.Optional(Of String))
+  name.vb: New(String, TextInputStyle, String, Optional(Of Integer), Optional(Of Integer), Optional(Of Boolean), Optional(Of String), Optional(Of String))
+- uid: Remora.Discord.API.Objects.TextInputComponent.CustomID
+  commentId: P:Remora.Discord.API.Objects.TextInputComponent.CustomID
+  id: CustomID
+  parent: Remora.Discord.API.Objects.TextInputComponent
+  langs:
+  - csharp
+  - vb
+  name: CustomID
+  nameWithType: TextInputComponent.CustomID
+  fullName: Remora.Discord.API.Objects.TextInputComponent.CustomID
+  type: Property
+  source:
+    id: CustomID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Interactions\Components\TextInput\TextInputComponent.cs
+    startLine: 32
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets a custom ID for the component, defined by the developer.
+  example: []
+  syntax:
+    content: public string CustomID { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CustomID As String
+  overload: Remora.Discord.API.Objects.TextInputComponent.CustomID*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.ITextInputComponent.CustomID
+- uid: Remora.Discord.API.Objects.TextInputComponent.Style
+  commentId: P:Remora.Discord.API.Objects.TextInputComponent.Style
+  id: Style
+  parent: Remora.Discord.API.Objects.TextInputComponent
+  langs:
+  - csharp
+  - vb
+  name: Style
+  nameWithType: TextInputComponent.Style
+  fullName: Remora.Discord.API.Objects.TextInputComponent.Style
+  type: Property
+  source:
+    id: Style
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Interactions\Components\TextInput\TextInputComponent.cs
+    startLine: 33
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the text input's style.
+  example: []
+  syntax:
+    content: public TextInputStyle Style { get; init; }
+    parameters: []
+    return:
+      type: Remora.Discord.API.Abstractions.Objects.TextInputStyle
+    content.vb: Public Property Style As TextInputStyle
+  overload: Remora.Discord.API.Objects.TextInputComponent.Style*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.ITextInputComponent.Style
+- uid: Remora.Discord.API.Objects.TextInputComponent.Label
+  commentId: P:Remora.Discord.API.Objects.TextInputComponent.Label
+  id: Label
+  parent: Remora.Discord.API.Objects.TextInputComponent
+  langs:
+  - csharp
+  - vb
+  name: Label
+  nameWithType: TextInputComponent.Label
+  fullName: Remora.Discord.API.Objects.TextInputComponent.Label
+  type: Property
+  source:
+    id: Label
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Interactions\Components\TextInput\TextInputComponent.cs
+    startLine: 34
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the label on the text input. Max 45 characters.
+  example: []
+  syntax:
+    content: public string Label { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Label As String
+  overload: Remora.Discord.API.Objects.TextInputComponent.Label*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.ITextInputComponent.Label
+- uid: Remora.Discord.API.Objects.TextInputComponent.MinLength
+  commentId: P:Remora.Discord.API.Objects.TextInputComponent.MinLength
+  id: MinLength
+  parent: Remora.Discord.API.Objects.TextInputComponent
+  langs:
+  - csharp
+  - vb
+  name: MinLength
+  nameWithType: TextInputComponent.MinLength
+  fullName: Remora.Discord.API.Objects.TextInputComponent.MinLength
+  type: Property
+  source:
+    id: MinLength
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Interactions\Components\TextInput\TextInputComponent.cs
+    startLine: 35
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the minimum length of the input, maximum of 4000.
+  remarks: >-
+    Must be greater than zero and less than or equal to <xref href="Remora.Discord.API.Abstractions.Objects.ITextInputComponent.MaxLength" data-throw-if-not-resolved="false"></xref> if specified. The global maximum is
+
+    4000 characters, regardless of what <xref href="Remora.Discord.API.Abstractions.Objects.ITextInputComponent.MaxLength" data-throw-if-not-resolved="false"></xref> is set to.
+  example: []
+  syntax:
+    content: public Optional<int> MinLength { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Int32}
+    content.vb: Public Property MinLength As [Optional](Of Integer)
+  overload: Remora.Discord.API.Objects.TextInputComponent.MinLength*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.ITextInputComponent.MinLength
+  - Remora.Discord.API.Abstractions.Objects.IPartialTextInputComponent.MinLength
+- uid: Remora.Discord.API.Objects.TextInputComponent.MaxLength
+  commentId: P:Remora.Discord.API.Objects.TextInputComponent.MaxLength
+  id: MaxLength
+  parent: Remora.Discord.API.Objects.TextInputComponent
+  langs:
+  - csharp
+  - vb
+  name: MaxLength
+  nameWithType: TextInputComponent.MaxLength
+  fullName: Remora.Discord.API.Objects.TextInputComponent.MaxLength
+  type: Property
+  source:
+    id: MaxLength
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Interactions\Components\TextInput\TextInputComponent.cs
+    startLine: 36
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the maximum length of the input, maximum of 4000.
+  remarks: >-
+    Must be greater than zero and greater than or equal to <xref href="Remora.Discord.API.Abstractions.Objects.ITextInputComponent.MinLength" data-throw-if-not-resolved="false"></xref> if specified. The global maximum
+
+    is 4000 characters, regardless of what <xref href="Remora.Discord.API.Abstractions.Objects.ITextInputComponent.MaxLength" data-throw-if-not-resolved="false"></xref> is set to.
+  example: []
+  syntax:
+    content: public Optional<int> MaxLength { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Int32}
+    content.vb: Public Property MaxLength As [Optional](Of Integer)
+  overload: Remora.Discord.API.Objects.TextInputComponent.MaxLength*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.ITextInputComponent.MaxLength
+  - Remora.Discord.API.Abstractions.Objects.IPartialTextInputComponent.MaxLength
+- uid: Remora.Discord.API.Objects.TextInputComponent.IsRequired
+  commentId: P:Remora.Discord.API.Objects.TextInputComponent.IsRequired
+  id: IsRequired
+  parent: Remora.Discord.API.Objects.TextInputComponent
+  langs:
+  - csharp
+  - vb
+  name: IsRequired
+  nameWithType: TextInputComponent.IsRequired
+  fullName: Remora.Discord.API.Objects.TextInputComponent.IsRequired
+  type: Property
+  source:
+    id: IsRequired
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Interactions\Components\TextInput\TextInputComponent.cs
+    startLine: 37
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets whether this field must be filled out. Defaults to true.
+  example: []
+  syntax:
+    content: public Optional<bool> IsRequired { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Boolean}
+    content.vb: Public Property IsRequired As [Optional](Of Boolean)
+  overload: Remora.Discord.API.Objects.TextInputComponent.IsRequired*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.ITextInputComponent.IsRequired
+  - Remora.Discord.API.Abstractions.Objects.IPartialTextInputComponent.IsRequired
+- uid: Remora.Discord.API.Objects.TextInputComponent.Value
+  commentId: P:Remora.Discord.API.Objects.TextInputComponent.Value
+  id: Value
+  parent: Remora.Discord.API.Objects.TextInputComponent
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: TextInputComponent.Value
+  fullName: Remora.Discord.API.Objects.TextInputComponent.Value
+  type: Property
+  source:
+    id: Value
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Interactions\Components\TextInput\TextInputComponent.cs
+    startLine: 38
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the pre-filled value for the text field. Maximum 4000 characters.
+  example: []
+  syntax:
+    content: public Optional<string> Value { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.String}
+    content.vb: Public Property Value As [Optional](Of String)
+  overload: Remora.Discord.API.Objects.TextInputComponent.Value*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.ITextInputComponent.Value
+  - Remora.Discord.API.Abstractions.Objects.IPartialTextInputComponent.Value
+- uid: Remora.Discord.API.Objects.TextInputComponent.Placeholder
+  commentId: P:Remora.Discord.API.Objects.TextInputComponent.Placeholder
+  id: Placeholder
+  parent: Remora.Discord.API.Objects.TextInputComponent
+  langs:
+  - csharp
+  - vb
+  name: Placeholder
+  nameWithType: TextInputComponent.Placeholder
+  fullName: Remora.Discord.API.Objects.TextInputComponent.Placeholder
+  type: Property
+  source:
+    id: Placeholder
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Interactions\Components\TextInput\TextInputComponent.cs
+    startLine: 39
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the placeholder text displayed if the input field is empty.
+  example: []
+  syntax:
+    content: public Optional<string> Placeholder { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.String}
+    content.vb: Public Property Placeholder As [Optional](Of String)
+  overload: Remora.Discord.API.Objects.TextInputComponent.Placeholder*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.ITextInputComponent.Placeholder
+  - Remora.Discord.API.Abstractions.Objects.IPartialTextInputComponent.Placeholder
+- uid: Remora.Discord.API.Objects.TextInputComponent.Type
+  commentId: P:Remora.Discord.API.Objects.TextInputComponent.Type
+  id: Type
+  parent: Remora.Discord.API.Objects.TextInputComponent
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: TextInputComponent.Type
+  fullName: Remora.Discord.API.Objects.TextInputComponent.Type
+  type: Property
+  source:
+    id: Type
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Interactions\Components\TextInput\TextInputComponent.cs
+    startLine: 43
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the type of the component.
+  example: []
+  syntax:
+    content: public ComponentType Type { get; }
+    parameters: []
+    return:
+      type: Remora.Discord.API.Abstractions.Objects.ComponentType
+    content.vb: Public ReadOnly Property Type As ComponentType
+  overload: Remora.Discord.API.Objects.TextInputComponent.Type*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.ITextInputComponent.Type
+references:
+- uid: Remora.Discord.API.Objects
+  commentId: N:Remora.Discord.API.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Objects
+  nameWithType: Remora.Discord.API.Objects
+  fullName: Remora.Discord.API.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Objects
+    name: Objects
+    href: Remora.Discord.API.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Objects
+    name: Objects
+    href: Remora.Discord.API.Objects.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Remora.Discord.API.Abstractions.Objects.ITextInputComponent
+  commentId: T:Remora.Discord.API.Abstractions.Objects.ITextInputComponent
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.ITextInputComponent.html
+  name: ITextInputComponent
+  nameWithType: ITextInputComponent
+  fullName: Remora.Discord.API.Abstractions.Objects.ITextInputComponent
+- uid: Remora.Discord.API.Abstractions.Objects.IMessageComponent
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IMessageComponent
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IMessageComponent.html
+  name: IMessageComponent
+  nameWithType: IMessageComponent
+  fullName: Remora.Discord.API.Abstractions.Objects.IMessageComponent
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialTextInputComponent
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IPartialTextInputComponent
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IPartialTextInputComponent.html
+  name: IPartialTextInputComponent
+  nameWithType: IPartialTextInputComponent
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialTextInputComponent
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialMessageComponent
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IPartialMessageComponent
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IPartialMessageComponent.html
+  name: IPartialMessageComponent
+  nameWithType: IPartialMessageComponent
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialMessageComponent
+- uid: System.IEquatable{Remora.Discord.API.Objects.TextInputComponent}
+  commentId: T:System.IEquatable{Remora.Discord.API.Objects.TextInputComponent}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<TextInputComponent>
+  nameWithType: IEquatable<TextInputComponent>
+  fullName: System.IEquatable<Remora.Discord.API.Objects.TextInputComponent>
+  nameWithType.vb: IEquatable(Of TextInputComponent)
+  fullName.vb: System.IEquatable(Of Remora.Discord.API.Objects.TextInputComponent)
+  name.vb: IEquatable(Of TextInputComponent)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Remora.Discord.API.Objects.TextInputComponent
+    name: TextInputComponent
+    href: Remora.Discord.API.Objects.TextInputComponent.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Objects.TextInputComponent
+    name: TextInputComponent
+    href: Remora.Discord.API.Objects.TextInputComponent.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.API.Abstractions.Objects
+  commentId: N:Remora.Discord.API.Abstractions.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Objects
+  nameWithType: Remora.Discord.API.Abstractions.Objects
+  fullName: Remora.Discord.API.Abstractions.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Remora.Discord.API.Objects.TextInputComponent.#ctor*
+  commentId: Overload:Remora.Discord.API.Objects.TextInputComponent.#ctor
+  href: Remora.Discord.API.Objects.TextInputComponent.html#Remora_Discord_API_Objects_TextInputComponent__ctor_System_String_Remora_Discord_API_Abstractions_Objects_TextInputStyle_System_String_Remora_Rest_Core_Optional_System_Int32__Remora_Rest_Core_Optional_System_Int32__Remora_Rest_Core_Optional_System_Boolean__Remora_Rest_Core_Optional_System_String__Remora_Rest_Core_Optional_System_String__
+  name: TextInputComponent
+  nameWithType: TextInputComponent.TextInputComponent
+  fullName: Remora.Discord.API.Objects.TextInputComponent.TextInputComponent
+  nameWithType.vb: TextInputComponent.New
+  fullName.vb: Remora.Discord.API.Objects.TextInputComponent.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Remora.Discord.API.Abstractions.Objects.TextInputStyle
+  commentId: T:Remora.Discord.API.Abstractions.Objects.TextInputStyle
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.TextInputStyle.html
+  name: TextInputStyle
+  nameWithType: TextInputStyle
+  fullName: Remora.Discord.API.Abstractions.Objects.TextInputStyle
+- uid: Remora.Rest.Core.Optional{System.Int32}
+  commentId: T:Remora.Rest.Core.Optional{System.Int32}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: Optional<int>
+  nameWithType: Optional<int>
+  fullName: Remora.Rest.Core.Optional<int>
+  nameWithType.vb: Optional(Of Integer)
+  fullName.vb: Remora.Rest.Core.Optional(Of Integer)
+  name.vb: Optional(Of Integer)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Remora.Rest.Core.Optional{System.Boolean}
+  commentId: T:Remora.Rest.Core.Optional{System.Boolean}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: Optional<bool>
+  nameWithType: Optional<bool>
+  fullName: Remora.Rest.Core.Optional<bool>
+  nameWithType.vb: Optional(Of Boolean)
+  fullName.vb: Remora.Rest.Core.Optional(Of Boolean)
+  name.vb: Optional(Of Boolean)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Remora.Rest.Core.Optional{System.String}
+  commentId: T:Remora.Rest.Core.Optional{System.String}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Optional<string>
+  nameWithType: Optional<string>
+  fullName: Remora.Rest.Core.Optional<string>
+  nameWithType.vb: Optional(Of String)
+  fullName.vb: Remora.Rest.Core.Optional(Of String)
+  name.vb: Optional(Of String)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Remora.Rest.Core.Optional`1
+  commentId: T:Remora.Rest.Core.Optional`1
+  isExternal: true
+  name: Optional<TValue>
+  nameWithType: Optional<TValue>
+  fullName: Remora.Rest.Core.Optional<TValue>
+  nameWithType.vb: Optional(Of TValue)
+  fullName.vb: Remora.Rest.Core.Optional(Of TValue)
+  name.vb: Optional(Of TValue)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+- uid: Remora.Discord.API.Objects.TextInputComponent.CustomID*
+  commentId: Overload:Remora.Discord.API.Objects.TextInputComponent.CustomID
+  href: Remora.Discord.API.Objects.TextInputComponent.html#Remora_Discord_API_Objects_TextInputComponent_CustomID
+  name: CustomID
+  nameWithType: TextInputComponent.CustomID
+  fullName: Remora.Discord.API.Objects.TextInputComponent.CustomID
+- uid: Remora.Discord.API.Abstractions.Objects.ITextInputComponent.CustomID
+  commentId: P:Remora.Discord.API.Abstractions.Objects.ITextInputComponent.CustomID
+  parent: Remora.Discord.API.Abstractions.Objects.ITextInputComponent
+  href: Remora.Discord.API.Abstractions.Objects.ITextInputComponent.html#Remora_Discord_API_Abstractions_Objects_ITextInputComponent_CustomID
+  name: CustomID
+  nameWithType: ITextInputComponent.CustomID
+  fullName: Remora.Discord.API.Abstractions.Objects.ITextInputComponent.CustomID
+- uid: Remora.Discord.API.Objects.TextInputComponent.Style*
+  commentId: Overload:Remora.Discord.API.Objects.TextInputComponent.Style
+  href: Remora.Discord.API.Objects.TextInputComponent.html#Remora_Discord_API_Objects_TextInputComponent_Style
+  name: Style
+  nameWithType: TextInputComponent.Style
+  fullName: Remora.Discord.API.Objects.TextInputComponent.Style
+- uid: Remora.Discord.API.Abstractions.Objects.ITextInputComponent.Style
+  commentId: P:Remora.Discord.API.Abstractions.Objects.ITextInputComponent.Style
+  parent: Remora.Discord.API.Abstractions.Objects.ITextInputComponent
+  href: Remora.Discord.API.Abstractions.Objects.ITextInputComponent.html#Remora_Discord_API_Abstractions_Objects_ITextInputComponent_Style
+  name: Style
+  nameWithType: ITextInputComponent.Style
+  fullName: Remora.Discord.API.Abstractions.Objects.ITextInputComponent.Style
+- uid: Remora.Discord.API.Objects.TextInputComponent.Label*
+  commentId: Overload:Remora.Discord.API.Objects.TextInputComponent.Label
+  href: Remora.Discord.API.Objects.TextInputComponent.html#Remora_Discord_API_Objects_TextInputComponent_Label
+  name: Label
+  nameWithType: TextInputComponent.Label
+  fullName: Remora.Discord.API.Objects.TextInputComponent.Label
+- uid: Remora.Discord.API.Abstractions.Objects.ITextInputComponent.Label
+  commentId: P:Remora.Discord.API.Abstractions.Objects.ITextInputComponent.Label
+  parent: Remora.Discord.API.Abstractions.Objects.ITextInputComponent
+  href: Remora.Discord.API.Abstractions.Objects.ITextInputComponent.html#Remora_Discord_API_Abstractions_Objects_ITextInputComponent_Label
+  name: Label
+  nameWithType: ITextInputComponent.Label
+  fullName: Remora.Discord.API.Abstractions.Objects.ITextInputComponent.Label
+- uid: Remora.Discord.API.Abstractions.Objects.ITextInputComponent.MaxLength
+  commentId: P:Remora.Discord.API.Abstractions.Objects.ITextInputComponent.MaxLength
+  parent: Remora.Discord.API.Abstractions.Objects.ITextInputComponent
+  href: Remora.Discord.API.Abstractions.Objects.ITextInputComponent.html#Remora_Discord_API_Abstractions_Objects_ITextInputComponent_MaxLength
+  name: MaxLength
+  nameWithType: ITextInputComponent.MaxLength
+  fullName: Remora.Discord.API.Abstractions.Objects.ITextInputComponent.MaxLength
+- uid: Remora.Discord.API.Objects.TextInputComponent.MinLength*
+  commentId: Overload:Remora.Discord.API.Objects.TextInputComponent.MinLength
+  href: Remora.Discord.API.Objects.TextInputComponent.html#Remora_Discord_API_Objects_TextInputComponent_MinLength
+  name: MinLength
+  nameWithType: TextInputComponent.MinLength
+  fullName: Remora.Discord.API.Objects.TextInputComponent.MinLength
+- uid: Remora.Discord.API.Abstractions.Objects.ITextInputComponent.MinLength
+  commentId: P:Remora.Discord.API.Abstractions.Objects.ITextInputComponent.MinLength
+  parent: Remora.Discord.API.Abstractions.Objects.ITextInputComponent
+  href: Remora.Discord.API.Abstractions.Objects.ITextInputComponent.html#Remora_Discord_API_Abstractions_Objects_ITextInputComponent_MinLength
+  name: MinLength
+  nameWithType: ITextInputComponent.MinLength
+  fullName: Remora.Discord.API.Abstractions.Objects.ITextInputComponent.MinLength
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialTextInputComponent.MinLength
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialTextInputComponent.MinLength
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialTextInputComponent
+  href: Remora.Discord.API.Abstractions.Objects.IPartialTextInputComponent.html#Remora_Discord_API_Abstractions_Objects_IPartialTextInputComponent_MinLength
+  name: MinLength
+  nameWithType: IPartialTextInputComponent.MinLength
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialTextInputComponent.MinLength
+- uid: Remora.Discord.API.Objects.TextInputComponent.MaxLength*
+  commentId: Overload:Remora.Discord.API.Objects.TextInputComponent.MaxLength
+  href: Remora.Discord.API.Objects.TextInputComponent.html#Remora_Discord_API_Objects_TextInputComponent_MaxLength
+  name: MaxLength
+  nameWithType: TextInputComponent.MaxLength
+  fullName: Remora.Discord.API.Objects.TextInputComponent.MaxLength
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialTextInputComponent.MaxLength
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialTextInputComponent.MaxLength
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialTextInputComponent
+  href: Remora.Discord.API.Abstractions.Objects.IPartialTextInputComponent.html#Remora_Discord_API_Abstractions_Objects_IPartialTextInputComponent_MaxLength
+  name: MaxLength
+  nameWithType: IPartialTextInputComponent.MaxLength
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialTextInputComponent.MaxLength
+- uid: Remora.Discord.API.Objects.TextInputComponent.IsRequired*
+  commentId: Overload:Remora.Discord.API.Objects.TextInputComponent.IsRequired
+  href: Remora.Discord.API.Objects.TextInputComponent.html#Remora_Discord_API_Objects_TextInputComponent_IsRequired
+  name: IsRequired
+  nameWithType: TextInputComponent.IsRequired
+  fullName: Remora.Discord.API.Objects.TextInputComponent.IsRequired
+- uid: Remora.Discord.API.Abstractions.Objects.ITextInputComponent.IsRequired
+  commentId: P:Remora.Discord.API.Abstractions.Objects.ITextInputComponent.IsRequired
+  parent: Remora.Discord.API.Abstractions.Objects.ITextInputComponent
+  href: Remora.Discord.API.Abstractions.Objects.ITextInputComponent.html#Remora_Discord_API_Abstractions_Objects_ITextInputComponent_IsRequired
+  name: IsRequired
+  nameWithType: ITextInputComponent.IsRequired
+  fullName: Remora.Discord.API.Abstractions.Objects.ITextInputComponent.IsRequired
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialTextInputComponent.IsRequired
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialTextInputComponent.IsRequired
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialTextInputComponent
+  href: Remora.Discord.API.Abstractions.Objects.IPartialTextInputComponent.html#Remora_Discord_API_Abstractions_Objects_IPartialTextInputComponent_IsRequired
+  name: IsRequired
+  nameWithType: IPartialTextInputComponent.IsRequired
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialTextInputComponent.IsRequired
+- uid: Remora.Discord.API.Objects.TextInputComponent.Value*
+  commentId: Overload:Remora.Discord.API.Objects.TextInputComponent.Value
+  href: Remora.Discord.API.Objects.TextInputComponent.html#Remora_Discord_API_Objects_TextInputComponent_Value
+  name: Value
+  nameWithType: TextInputComponent.Value
+  fullName: Remora.Discord.API.Objects.TextInputComponent.Value
+- uid: Remora.Discord.API.Abstractions.Objects.ITextInputComponent.Value
+  commentId: P:Remora.Discord.API.Abstractions.Objects.ITextInputComponent.Value
+  parent: Remora.Discord.API.Abstractions.Objects.ITextInputComponent
+  href: Remora.Discord.API.Abstractions.Objects.ITextInputComponent.html#Remora_Discord_API_Abstractions_Objects_ITextInputComponent_Value
+  name: Value
+  nameWithType: ITextInputComponent.Value
+  fullName: Remora.Discord.API.Abstractions.Objects.ITextInputComponent.Value
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialTextInputComponent.Value
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialTextInputComponent.Value
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialTextInputComponent
+  href: Remora.Discord.API.Abstractions.Objects.IPartialTextInputComponent.html#Remora_Discord_API_Abstractions_Objects_IPartialTextInputComponent_Value
+  name: Value
+  nameWithType: IPartialTextInputComponent.Value
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialTextInputComponent.Value
+- uid: Remora.Discord.API.Objects.TextInputComponent.Placeholder*
+  commentId: Overload:Remora.Discord.API.Objects.TextInputComponent.Placeholder
+  href: Remora.Discord.API.Objects.TextInputComponent.html#Remora_Discord_API_Objects_TextInputComponent_Placeholder
+  name: Placeholder
+  nameWithType: TextInputComponent.Placeholder
+  fullName: Remora.Discord.API.Objects.TextInputComponent.Placeholder
+- uid: Remora.Discord.API.Abstractions.Objects.ITextInputComponent.Placeholder
+  commentId: P:Remora.Discord.API.Abstractions.Objects.ITextInputComponent.Placeholder
+  parent: Remora.Discord.API.Abstractions.Objects.ITextInputComponent
+  href: Remora.Discord.API.Abstractions.Objects.ITextInputComponent.html#Remora_Discord_API_Abstractions_Objects_ITextInputComponent_Placeholder
+  name: Placeholder
+  nameWithType: ITextInputComponent.Placeholder
+  fullName: Remora.Discord.API.Abstractions.Objects.ITextInputComponent.Placeholder
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialTextInputComponent.Placeholder
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialTextInputComponent.Placeholder
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialTextInputComponent
+  href: Remora.Discord.API.Abstractions.Objects.IPartialTextInputComponent.html#Remora_Discord_API_Abstractions_Objects_IPartialTextInputComponent_Placeholder
+  name: Placeholder
+  nameWithType: IPartialTextInputComponent.Placeholder
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialTextInputComponent.Placeholder
+- uid: Remora.Discord.API.Objects.TextInputComponent.Type*
+  commentId: Overload:Remora.Discord.API.Objects.TextInputComponent.Type
+  href: Remora.Discord.API.Objects.TextInputComponent.html#Remora_Discord_API_Objects_TextInputComponent_Type
+  name: Type
+  nameWithType: TextInputComponent.Type
+  fullName: Remora.Discord.API.Objects.TextInputComponent.Type
+- uid: Remora.Discord.API.Abstractions.Objects.ITextInputComponent.Type
+  commentId: P:Remora.Discord.API.Abstractions.Objects.ITextInputComponent.Type
+  parent: Remora.Discord.API.Abstractions.Objects.ITextInputComponent
+  href: Remora.Discord.API.Abstractions.Objects.ITextInputComponent.html#Remora_Discord_API_Abstractions_Objects_ITextInputComponent_Type
+  name: Type
+  nameWithType: ITextInputComponent.Type
+  fullName: Remora.Discord.API.Abstractions.Objects.ITextInputComponent.Type
+- uid: Remora.Discord.API.Abstractions.Objects.ComponentType
+  commentId: T:Remora.Discord.API.Abstractions.Objects.ComponentType
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.ComponentType.html
+  name: ComponentType
+  nameWithType: ComponentType
+  fullName: Remora.Discord.API.Abstractions.Objects.ComponentType

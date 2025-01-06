@@ -1,0 +1,787 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.Gateway.Extensions.ServiceCollectionExtensions
+  commentId: T:Remora.Discord.Gateway.Extensions.ServiceCollectionExtensions
+  id: ServiceCollectionExtensions
+  parent: Remora.Discord.Gateway.Extensions
+  children:
+  - Remora.Discord.Gateway.Extensions.ServiceCollectionExtensions.AddDiscordGateway(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Microsoft.Extensions.DependencyInjection.IHttpClientBuilder})
+  - Remora.Discord.Gateway.Extensions.ServiceCollectionExtensions.AddDiscordGateway(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Func{System.IServiceProvider,System.String},System.Action{Microsoft.Extensions.DependencyInjection.IHttpClientBuilder})
+  - Remora.Discord.Gateway.Extensions.ServiceCollectionExtensions.AddResponder(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,Remora.Discord.Gateway.Responders.ResponderGroup)
+  - Remora.Discord.Gateway.Extensions.ServiceCollectionExtensions.AddResponder``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,Remora.Discord.Gateway.Responders.ResponderGroup)
+  langs:
+  - csharp
+  - vb
+  name: ServiceCollectionExtensions
+  nameWithType: ServiceCollectionExtensions
+  fullName: Remora.Discord.Gateway.Extensions.ServiceCollectionExtensions
+  type: Class
+  source:
+    id: ServiceCollectionExtensions
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Gateway\Extensions\ServiceCollectionExtensions.cs
+    startLine: 43
+  assemblies:
+  - Remora.Discord.Gateway
+  namespace: Remora.Discord.Gateway.Extensions
+  summary: Defines extension methods for the <xref href="Microsoft.Extensions.DependencyInjection.IServiceCollection" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public static class ServiceCollectionExtensions
+    content.vb: >-
+      <PublicAPI>
+
+      Public Module ServiceCollectionExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.Gateway.Extensions.ServiceCollectionExtensions.AddDiscordGateway(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Func{System.IServiceProvider,System.String},System.Action{Microsoft.Extensions.DependencyInjection.IHttpClientBuilder})
+  commentId: M:Remora.Discord.Gateway.Extensions.ServiceCollectionExtensions.AddDiscordGateway(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Func{System.IServiceProvider,System.String},System.Action{Microsoft.Extensions.DependencyInjection.IHttpClientBuilder})
+  id: AddDiscordGateway(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Func{System.IServiceProvider,System.String},System.Action{Microsoft.Extensions.DependencyInjection.IHttpClientBuilder})
+  isExtensionMethod: true
+  parent: Remora.Discord.Gateway.Extensions.ServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddDiscordGateway(IServiceCollection, Func<IServiceProvider, string>, Action<IHttpClientBuilder>?)
+  nameWithType: ServiceCollectionExtensions.AddDiscordGateway(IServiceCollection, Func<IServiceProvider, string>, Action<IHttpClientBuilder>?)
+  fullName: Remora.Discord.Gateway.Extensions.ServiceCollectionExtensions.AddDiscordGateway(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Func<System.IServiceProvider, string>, System.Action<Microsoft.Extensions.DependencyInjection.IHttpClientBuilder>?)
+  type: Method
+  source:
+    id: AddDiscordGateway
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Gateway\Extensions\ServiceCollectionExtensions.cs
+    startLine: 53
+  assemblies:
+  - Remora.Discord.Gateway
+  namespace: Remora.Discord.Gateway.Extensions
+  summary: Adds services required by the Discord Gateway system.
+  example: []
+  syntax:
+    content: public static IServiceCollection AddDiscordGateway(this IServiceCollection serviceCollection, Func<IServiceProvider, string> tokenFactory, Action<IHttpClientBuilder>? buildClient = null)
+    parameters:
+    - id: serviceCollection
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: The service collection.
+    - id: tokenFactory
+      type: System.Func{System.IServiceProvider,System.String}
+      description: A function that retrieves the bot token.
+    - id: buildClient
+      type: System.Action{Microsoft.Extensions.DependencyInjection.IHttpClientBuilder}
+      description: Extra options to configure the rest client.
+    return:
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: The service collection, with the services added.
+    content.vb: Public Shared Function AddDiscordGateway(serviceCollection As IServiceCollection, tokenFactory As Func(Of IServiceProvider, String), buildClient As Action(Of IHttpClientBuilder) = Nothing) As IServiceCollection
+  overload: Remora.Discord.Gateway.Extensions.ServiceCollectionExtensions.AddDiscordGateway*
+  nameWithType.vb: ServiceCollectionExtensions.AddDiscordGateway(IServiceCollection, Func(Of IServiceProvider, String), Action(Of IHttpClientBuilder))
+  fullName.vb: Remora.Discord.Gateway.Extensions.ServiceCollectionExtensions.AddDiscordGateway(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Func(Of System.IServiceProvider, String), System.Action(Of Microsoft.Extensions.DependencyInjection.IHttpClientBuilder))
+  name.vb: AddDiscordGateway(IServiceCollection, Func(Of IServiceProvider, String), Action(Of IHttpClientBuilder))
+- uid: Remora.Discord.Gateway.Extensions.ServiceCollectionExtensions.AddDiscordGateway(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Microsoft.Extensions.DependencyInjection.IHttpClientBuilder})
+  commentId: M:Remora.Discord.Gateway.Extensions.ServiceCollectionExtensions.AddDiscordGateway(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Microsoft.Extensions.DependencyInjection.IHttpClientBuilder})
+  id: AddDiscordGateway(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Microsoft.Extensions.DependencyInjection.IHttpClientBuilder})
+  isExtensionMethod: true
+  parent: Remora.Discord.Gateway.Extensions.ServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddDiscordGateway(IServiceCollection, Action<IHttpClientBuilder>?)
+  nameWithType: ServiceCollectionExtensions.AddDiscordGateway(IServiceCollection, Action<IHttpClientBuilder>?)
+  fullName: Remora.Discord.Gateway.Extensions.ServiceCollectionExtensions.AddDiscordGateway(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action<Microsoft.Extensions.DependencyInjection.IHttpClientBuilder>?)
+  type: Method
+  source:
+    id: AddDiscordGateway
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Gateway\Extensions\ServiceCollectionExtensions.cs
+    startLine: 74
+  assemblies:
+  - Remora.Discord.Gateway
+  namespace: Remora.Discord.Gateway.Extensions
+  summary: Adds services required by the Discord Gateway system.
+  example: []
+  syntax:
+    content: public static IServiceCollection AddDiscordGateway(this IServiceCollection serviceCollection, Action<IHttpClientBuilder>? buildClient = null)
+    parameters:
+    - id: serviceCollection
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: The service collection.
+    - id: buildClient
+      type: System.Action{Microsoft.Extensions.DependencyInjection.IHttpClientBuilder}
+      description: Extra options to configure the rest client.
+    return:
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: The service collection, with the services added.
+    content.vb: Public Shared Function AddDiscordGateway(serviceCollection As IServiceCollection, buildClient As Action(Of IHttpClientBuilder) = Nothing) As IServiceCollection
+  overload: Remora.Discord.Gateway.Extensions.ServiceCollectionExtensions.AddDiscordGateway*
+  nameWithType.vb: ServiceCollectionExtensions.AddDiscordGateway(IServiceCollection, Action(Of IHttpClientBuilder))
+  fullName.vb: Remora.Discord.Gateway.Extensions.ServiceCollectionExtensions.AddDiscordGateway(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action(Of Microsoft.Extensions.DependencyInjection.IHttpClientBuilder))
+  name.vb: AddDiscordGateway(IServiceCollection, Action(Of IHttpClientBuilder))
+- uid: Remora.Discord.Gateway.Extensions.ServiceCollectionExtensions.AddResponder``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,Remora.Discord.Gateway.Responders.ResponderGroup)
+  commentId: M:Remora.Discord.Gateway.Extensions.ServiceCollectionExtensions.AddResponder``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,Remora.Discord.Gateway.Responders.ResponderGroup)
+  id: AddResponder``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,Remora.Discord.Gateway.Responders.ResponderGroup)
+  isExtensionMethod: true
+  parent: Remora.Discord.Gateway.Extensions.ServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddResponder<TResponder>(IServiceCollection, ResponderGroup)
+  nameWithType: ServiceCollectionExtensions.AddResponder<TResponder>(IServiceCollection, ResponderGroup)
+  fullName: Remora.Discord.Gateway.Extensions.ServiceCollectionExtensions.AddResponder<TResponder>(Microsoft.Extensions.DependencyInjection.IServiceCollection, Remora.Discord.Gateway.Responders.ResponderGroup)
+  type: Method
+  source:
+    id: AddResponder
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Gateway\Extensions\ServiceCollectionExtensions.cs
+    startLine: 112
+  assemblies:
+  - Remora.Discord.Gateway
+  namespace: Remora.Discord.Gateway.Extensions
+  summary: >-
+    Adds a responder to the service collection. This method registers the responder as being available for all
+
+    <xref href="Remora.Discord.Gateway.Responders.IResponder%601" data-throw-if-not-resolved="false"></xref> implementations it supports.
+  example: []
+  syntax:
+    content: 'public static IServiceCollection AddResponder<TResponder>(this IServiceCollection serviceCollection, ResponderGroup group = ResponderGroup.Normal) where TResponder : IResponder'
+    parameters:
+    - id: serviceCollection
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: The service collection.
+    - id: group
+      type: Remora.Discord.Gateway.Responders.ResponderGroup
+      description: The group the responder belongs to.
+    typeParameters:
+    - id: TResponder
+      description: The concrete responder type.
+    return:
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: The service collection, with the responder added.
+    content.vb: Public Shared Function AddResponder(Of TResponder As IResponder)(serviceCollection As IServiceCollection, group As ResponderGroup = ResponderGroup.Normal) As IServiceCollection
+  overload: Remora.Discord.Gateway.Extensions.ServiceCollectionExtensions.AddResponder*
+  nameWithType.vb: ServiceCollectionExtensions.AddResponder(Of TResponder)(IServiceCollection, ResponderGroup)
+  fullName.vb: Remora.Discord.Gateway.Extensions.ServiceCollectionExtensions.AddResponder(Of TResponder)(Microsoft.Extensions.DependencyInjection.IServiceCollection, Remora.Discord.Gateway.Responders.ResponderGroup)
+  name.vb: AddResponder(Of TResponder)(IServiceCollection, ResponderGroup)
+- uid: Remora.Discord.Gateway.Extensions.ServiceCollectionExtensions.AddResponder(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,Remora.Discord.Gateway.Responders.ResponderGroup)
+  commentId: M:Remora.Discord.Gateway.Extensions.ServiceCollectionExtensions.AddResponder(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,Remora.Discord.Gateway.Responders.ResponderGroup)
+  id: AddResponder(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,Remora.Discord.Gateway.Responders.ResponderGroup)
+  isExtensionMethod: true
+  parent: Remora.Discord.Gateway.Extensions.ServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddResponder(IServiceCollection, Type, ResponderGroup)
+  nameWithType: ServiceCollectionExtensions.AddResponder(IServiceCollection, Type, ResponderGroup)
+  fullName: Remora.Discord.Gateway.Extensions.ServiceCollectionExtensions.AddResponder(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Type, Remora.Discord.Gateway.Responders.ResponderGroup)
+  type: Method
+  source:
+    id: AddResponder
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Gateway\Extensions\ServiceCollectionExtensions.cs
+    startLine: 137
+  assemblies:
+  - Remora.Discord.Gateway
+  namespace: Remora.Discord.Gateway.Extensions
+  summary: >-
+    Adds a responder to the service collection. This method registers the responder as being available for all
+
+    <xref href="Remora.Discord.Gateway.Responders.IResponder%601" data-throw-if-not-resolved="false"></xref> implementations it supports.
+  example: []
+  syntax:
+    content: public static IServiceCollection AddResponder(this IServiceCollection serviceCollection, Type responderType, ResponderGroup group = ResponderGroup.Normal)
+    parameters:
+    - id: serviceCollection
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: The service collection.
+    - id: responderType
+      type: System.Type
+      description: The type implementing <xref href="Remora.Discord.Gateway.Responders.IResponder" data-throw-if-not-resolved="false"></xref>.
+    - id: group
+      type: Remora.Discord.Gateway.Responders.ResponderGroup
+      description: The group the responder belongs to.
+    return:
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: The service collection, with the responder added.
+    content.vb: Public Shared Function AddResponder(serviceCollection As IServiceCollection, responderType As Type, group As ResponderGroup = ResponderGroup.Normal) As IServiceCollection
+  overload: Remora.Discord.Gateway.Extensions.ServiceCollectionExtensions.AddResponder*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown if responderType does not implement <xref href="Remora.Discord.Gateway.Responders.IResponder" data-throw-if-not-resolved="false"></xref>.
+references:
+- uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
+  commentId: T:Microsoft.Extensions.DependencyInjection.IServiceCollection
+  parent: Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection
+  name: IServiceCollection
+  nameWithType: IServiceCollection
+  fullName: Microsoft.Extensions.DependencyInjection.IServiceCollection
+- uid: Remora.Discord.Gateway.Extensions
+  commentId: N:Remora.Discord.Gateway.Extensions
+  href: Remora.html
+  name: Remora.Discord.Gateway.Extensions
+  nameWithType: Remora.Discord.Gateway.Extensions
+  fullName: Remora.Discord.Gateway.Extensions
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Gateway
+    name: Gateway
+    href: Remora.Discord.Gateway.html
+  - name: .
+  - uid: Remora.Discord.Gateway.Extensions
+    name: Extensions
+    href: Remora.Discord.Gateway.Extensions.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Gateway
+    name: Gateway
+    href: Remora.Discord.Gateway.html
+  - name: .
+  - uid: Remora.Discord.Gateway.Extensions
+    name: Extensions
+    href: Remora.Discord.Gateway.Extensions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: Microsoft.Extensions.DependencyInjection
+  commentId: N:Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.DependencyInjection
+  nameWithType: Microsoft.Extensions.DependencyInjection
+  fullName: Microsoft.Extensions.DependencyInjection
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.DependencyInjection
+    name: DependencyInjection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.DependencyInjection
+    name: DependencyInjection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.Gateway.Extensions.ServiceCollectionExtensions.AddDiscordGateway*
+  commentId: Overload:Remora.Discord.Gateway.Extensions.ServiceCollectionExtensions.AddDiscordGateway
+  href: Remora.Discord.Gateway.Extensions.ServiceCollectionExtensions.html#Remora_Discord_Gateway_Extensions_ServiceCollectionExtensions_AddDiscordGateway_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Func_System_IServiceProvider_System_String__System_Action_Microsoft_Extensions_DependencyInjection_IHttpClientBuilder__
+  name: AddDiscordGateway
+  nameWithType: ServiceCollectionExtensions.AddDiscordGateway
+  fullName: Remora.Discord.Gateway.Extensions.ServiceCollectionExtensions.AddDiscordGateway
+- uid: System.Func{System.IServiceProvider,System.String}
+  commentId: T:System.Func{System.IServiceProvider,System.String}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<IServiceProvider, string>
+  nameWithType: Func<IServiceProvider, string>
+  fullName: System.Func<System.IServiceProvider, string>
+  nameWithType.vb: Func(Of IServiceProvider, String)
+  fullName.vb: System.Func(Of System.IServiceProvider, String)
+  name.vb: Func(Of IServiceProvider, String)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: System.IServiceProvider
+    name: IServiceProvider
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iserviceprovider
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.IServiceProvider
+    name: IServiceProvider
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iserviceprovider
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Action{Microsoft.Extensions.DependencyInjection.IHttpClientBuilder}
+  commentId: T:System.Action{Microsoft.Extensions.DependencyInjection.IHttpClientBuilder}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<IHttpClientBuilder>
+  nameWithType: Action<IHttpClientBuilder>
+  fullName: System.Action<Microsoft.Extensions.DependencyInjection.IHttpClientBuilder>
+  nameWithType.vb: Action(Of IHttpClientBuilder)
+  fullName.vb: System.Action(Of Microsoft.Extensions.DependencyInjection.IHttpClientBuilder)
+  name.vb: Action(Of IHttpClientBuilder)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Microsoft.Extensions.DependencyInjection.IHttpClientBuilder
+    name: IHttpClientBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.ihttpclientbuilder
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.DependencyInjection.IHttpClientBuilder
+    name: IHttpClientBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.ihttpclientbuilder
+  - name: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Remora.Discord.Gateway.Responders.IResponder`1
+  commentId: T:Remora.Discord.Gateway.Responders.IResponder`1
+  href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  name: IResponder<TGatewayEvent>
+  nameWithType: IResponder<TGatewayEvent>
+  fullName: Remora.Discord.Gateway.Responders.IResponder<TGatewayEvent>
+  nameWithType.vb: IResponder(Of TGatewayEvent)
+  fullName.vb: Remora.Discord.Gateway.Responders.IResponder(Of TGatewayEvent)
+  name.vb: IResponder(Of TGatewayEvent)
+  spec.csharp:
+  - uid: Remora.Discord.Gateway.Responders.IResponder`1
+    name: IResponder
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  - name: <
+  - name: TGatewayEvent
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Discord.Gateway.Responders.IResponder`1
+    name: IResponder
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TGatewayEvent
+  - name: )
+- uid: Remora.Discord.Gateway.Extensions.ServiceCollectionExtensions.AddResponder*
+  commentId: Overload:Remora.Discord.Gateway.Extensions.ServiceCollectionExtensions.AddResponder
+  href: Remora.Discord.Gateway.Extensions.ServiceCollectionExtensions.html#Remora_Discord_Gateway_Extensions_ServiceCollectionExtensions_AddResponder__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_Remora_Discord_Gateway_Responders_ResponderGroup_
+  name: AddResponder
+  nameWithType: ServiceCollectionExtensions.AddResponder
+  fullName: Remora.Discord.Gateway.Extensions.ServiceCollectionExtensions.AddResponder
+- uid: Remora.Discord.Gateway.Responders.ResponderGroup
+  commentId: T:Remora.Discord.Gateway.Responders.ResponderGroup
+  parent: Remora.Discord.Gateway.Responders
+  href: Remora.Discord.Gateway.Responders.ResponderGroup.html
+  name: ResponderGroup
+  nameWithType: ResponderGroup
+  fullName: Remora.Discord.Gateway.Responders.ResponderGroup
+- uid: Remora.Discord.Gateway.Responders
+  commentId: N:Remora.Discord.Gateway.Responders
+  href: Remora.html
+  name: Remora.Discord.Gateway.Responders
+  nameWithType: Remora.Discord.Gateway.Responders
+  fullName: Remora.Discord.Gateway.Responders
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Gateway
+    name: Gateway
+    href: Remora.Discord.Gateway.html
+  - name: .
+  - uid: Remora.Discord.Gateway.Responders
+    name: Responders
+    href: Remora.Discord.Gateway.Responders.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Gateway
+    name: Gateway
+    href: Remora.Discord.Gateway.html
+  - name: .
+  - uid: Remora.Discord.Gateway.Responders
+    name: Responders
+    href: Remora.Discord.Gateway.Responders.html
+- uid: Remora.Discord.Gateway.Responders.IResponder
+  commentId: T:Remora.Discord.Gateway.Responders.IResponder
+  parent: Remora.Discord.Gateway.Responders
+  href: Remora.Discord.Gateway.Responders.IResponder.html
+  name: IResponder
+  nameWithType: IResponder
+  fullName: Remora.Discord.Gateway.Responders.IResponder
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type

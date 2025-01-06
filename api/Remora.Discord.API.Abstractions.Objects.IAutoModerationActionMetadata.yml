@@ -1,0 +1,377 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationActionMetadata
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IAutoModerationActionMetadata
+  id: IAutoModerationActionMetadata
+  parent: Remora.Discord.API.Abstractions.Objects
+  children:
+  - Remora.Discord.API.Abstractions.Objects.IAutoModerationActionMetadata.ChannelID
+  - Remora.Discord.API.Abstractions.Objects.IAutoModerationActionMetadata.CustomMessage
+  - Remora.Discord.API.Abstractions.Objects.IAutoModerationActionMetadata.Duration
+  langs:
+  - csharp
+  - vb
+  name: IAutoModerationActionMetadata
+  nameWithType: IAutoModerationActionMetadata
+  fullName: Remora.Discord.API.Abstractions.Objects.IAutoModerationActionMetadata
+  type: Interface
+  source:
+    id: IAutoModerationActionMetadata
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\AutoModeration\IAutoModerationActionMetadata.cs
+    startLine: 32
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: >-
+    Additional data used when an action is executed. Different fields are relevant based on value of the
+
+    <xref href="Remora.Discord.API.Abstractions.Objects.AutoModerationActionType" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public interface IAutoModerationActionMetadata
+    content.vb: >-
+      <PublicAPI>
+
+      Public Interface IAutoModerationActionMetadata
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationActionMetadata.ChannelID
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IAutoModerationActionMetadata.ChannelID
+  id: ChannelID
+  parent: Remora.Discord.API.Abstractions.Objects.IAutoModerationActionMetadata
+  langs:
+  - csharp
+  - vb
+  name: ChannelID
+  nameWithType: IAutoModerationActionMetadata.ChannelID
+  fullName: Remora.Discord.API.Abstractions.Objects.IAutoModerationActionMetadata.ChannelID
+  type: Property
+  source:
+    id: ChannelID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\AutoModeration\IAutoModerationActionMetadata.cs
+    startLine: 41
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the channel to which user content should be logged.
+  remarks: The associated action type for this property is <xref href="Remora.Discord.API.Abstractions.Objects.AutoModerationActionType.SendAlertMessage" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: Optional<Snowflake> ChannelID { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+    content.vb: ReadOnly Property ChannelID As [Optional](Of Snowflake)
+  overload: Remora.Discord.API.Abstractions.Objects.IAutoModerationActionMetadata.ChannelID*
+- uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationActionMetadata.Duration
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IAutoModerationActionMetadata.Duration
+  id: Duration
+  parent: Remora.Discord.API.Abstractions.Objects.IAutoModerationActionMetadata
+  langs:
+  - csharp
+  - vb
+  name: Duration
+  nameWithType: IAutoModerationActionMetadata.Duration
+  fullName: Remora.Discord.API.Abstractions.Objects.IAutoModerationActionMetadata.Duration
+  type: Property
+  source:
+    id: Duration
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\AutoModeration\IAutoModerationActionMetadata.cs
+    startLine: 50
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the timeout duration in seconds.
+  remarks: >-
+    <p>Maximum of 2419200 seconds (4 weeks).</p>
+
+    <p>The associated action type for this property is <xref href="Remora.Discord.API.Abstractions.Objects.AutoModerationActionType.Timeout" data-throw-if-not-resolved="false"></xref>.</p>
+  example: []
+  syntax:
+    content: Optional<TimeSpan> Duration { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.TimeSpan}
+    content.vb: ReadOnly Property Duration As [Optional](Of TimeSpan)
+  overload: Remora.Discord.API.Abstractions.Objects.IAutoModerationActionMetadata.Duration*
+- uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationActionMetadata.CustomMessage
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IAutoModerationActionMetadata.CustomMessage
+  id: CustomMessage
+  parent: Remora.Discord.API.Abstractions.Objects.IAutoModerationActionMetadata
+  langs:
+  - csharp
+  - vb
+  name: CustomMessage
+  nameWithType: IAutoModerationActionMetadata.CustomMessage
+  fullName: Remora.Discord.API.Abstractions.Objects.IAutoModerationActionMetadata.CustomMessage
+  type: Property
+  source:
+    id: CustomMessage
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\AutoModeration\IAutoModerationActionMetadata.cs
+    startLine: 61
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets an additional explanation that will be shown to members whenever their message is blocked.
+  remarks: >-
+    <p>Maximum of 150 characters.</p>
+
+    <p>T
+
+    he associated action type for this property is <xref href="Remora.Discord.API.Abstractions.Objects.AutoModerationActionType.BlockMessage" data-throw-if-not-resolved="false"></xref>.
+
+    </p>
+  example: []
+  syntax:
+    content: Optional<string> CustomMessage { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.String}
+    content.vb: ReadOnly Property CustomMessage As [Optional](Of String)
+  overload: Remora.Discord.API.Abstractions.Objects.IAutoModerationActionMetadata.CustomMessage*
+references:
+- uid: Remora.Discord.API.Abstractions.Objects.AutoModerationActionType
+  commentId: T:Remora.Discord.API.Abstractions.Objects.AutoModerationActionType
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.AutoModerationActionType.html
+  name: AutoModerationActionType
+  nameWithType: AutoModerationActionType
+  fullName: Remora.Discord.API.Abstractions.Objects.AutoModerationActionType
+- uid: Remora.Discord.API.Abstractions.Objects
+  commentId: N:Remora.Discord.API.Abstractions.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Objects
+  nameWithType: Remora.Discord.API.Abstractions.Objects
+  fullName: Remora.Discord.API.Abstractions.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+- uid: Remora.Discord.API.Abstractions.Objects.AutoModerationActionType.SendAlertMessage
+  commentId: F:Remora.Discord.API.Abstractions.Objects.AutoModerationActionType.SendAlertMessage
+  href: Remora.Discord.API.Abstractions.Objects.AutoModerationActionType.html#Remora_Discord_API_Abstractions_Objects_AutoModerationActionType_SendAlertMessage
+  name: SendAlertMessage
+  nameWithType: AutoModerationActionType.SendAlertMessage
+  fullName: Remora.Discord.API.Abstractions.Objects.AutoModerationActionType.SendAlertMessage
+- uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationActionMetadata.ChannelID*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IAutoModerationActionMetadata.ChannelID
+  href: Remora.Discord.API.Abstractions.Objects.IAutoModerationActionMetadata.html#Remora_Discord_API_Abstractions_Objects_IAutoModerationActionMetadata_ChannelID
+  name: ChannelID
+  nameWithType: IAutoModerationActionMetadata.ChannelID
+  fullName: Remora.Discord.API.Abstractions.Objects.IAutoModerationActionMetadata.ChannelID
+- uid: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  name: Optional<Snowflake>
+  nameWithType: Optional<Snowflake>
+  fullName: Remora.Rest.Core.Optional<Remora.Rest.Core.Snowflake>
+  nameWithType.vb: Optional(Of Snowflake)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Rest.Core.Snowflake)
+  name.vb: Optional(Of Snowflake)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+- uid: Remora.Rest.Core.Optional`1
+  commentId: T:Remora.Rest.Core.Optional`1
+  isExternal: true
+  name: Optional<TValue>
+  nameWithType: Optional<TValue>
+  fullName: Remora.Rest.Core.Optional<TValue>
+  nameWithType.vb: Optional(Of TValue)
+  fullName.vb: Remora.Rest.Core.Optional(Of TValue)
+  name.vb: Optional(Of TValue)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+- uid: Remora.Discord.API.Abstractions.Objects.AutoModerationActionType.Timeout
+  commentId: F:Remora.Discord.API.Abstractions.Objects.AutoModerationActionType.Timeout
+  href: Remora.Discord.API.Abstractions.Objects.AutoModerationActionType.html#Remora_Discord_API_Abstractions_Objects_AutoModerationActionType_Timeout
+  name: Timeout
+  nameWithType: AutoModerationActionType.Timeout
+  fullName: Remora.Discord.API.Abstractions.Objects.AutoModerationActionType.Timeout
+- uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationActionMetadata.Duration*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IAutoModerationActionMetadata.Duration
+  href: Remora.Discord.API.Abstractions.Objects.IAutoModerationActionMetadata.html#Remora_Discord_API_Abstractions_Objects_IAutoModerationActionMetadata_Duration
+  name: Duration
+  nameWithType: IAutoModerationActionMetadata.Duration
+  fullName: Remora.Discord.API.Abstractions.Objects.IAutoModerationActionMetadata.Duration
+- uid: Remora.Rest.Core.Optional{System.TimeSpan}
+  commentId: T:Remora.Rest.Core.Optional{System.TimeSpan}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.timespan
+  name: Optional<TimeSpan>
+  nameWithType: Optional<TimeSpan>
+  fullName: Remora.Rest.Core.Optional<System.TimeSpan>
+  nameWithType.vb: Optional(Of TimeSpan)
+  fullName.vb: Remora.Rest.Core.Optional(Of System.TimeSpan)
+  name.vb: Optional(Of TimeSpan)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Objects.AutoModerationActionType.BlockMessage
+  commentId: F:Remora.Discord.API.Abstractions.Objects.AutoModerationActionType.BlockMessage
+  href: Remora.Discord.API.Abstractions.Objects.AutoModerationActionType.html#Remora_Discord_API_Abstractions_Objects_AutoModerationActionType_BlockMessage
+  name: BlockMessage
+  nameWithType: AutoModerationActionType.BlockMessage
+  fullName: Remora.Discord.API.Abstractions.Objects.AutoModerationActionType.BlockMessage
+- uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationActionMetadata.CustomMessage*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IAutoModerationActionMetadata.CustomMessage
+  href: Remora.Discord.API.Abstractions.Objects.IAutoModerationActionMetadata.html#Remora_Discord_API_Abstractions_Objects_IAutoModerationActionMetadata_CustomMessage
+  name: CustomMessage
+  nameWithType: IAutoModerationActionMetadata.CustomMessage
+  fullName: Remora.Discord.API.Abstractions.Objects.IAutoModerationActionMetadata.CustomMessage
+- uid: Remora.Rest.Core.Optional{System.String}
+  commentId: T:Remora.Rest.Core.Optional{System.String}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Optional<string>
+  nameWithType: Optional<string>
+  fullName: Remora.Rest.Core.Optional<string>
+  nameWithType.vb: Optional(Of String)
+  fullName.vb: Remora.Rest.Core.Optional(Of String)
+  name.vb: Optional(Of String)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )

@@ -1,0 +1,1720 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Objects.ApplicationCommandOption
+  commentId: T:Remora.Discord.API.Objects.ApplicationCommandOption
+  id: ApplicationCommandOption
+  parent: Remora.Discord.API.Objects
+  children:
+  - Remora.Discord.API.Objects.ApplicationCommandOption.#ctor(Remora.Discord.API.Abstractions.Objects.ApplicationCommandOptionType,System.String,System.String,Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IApplicationCommandOptionChoice}},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption}},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.ChannelType}},Remora.Rest.Core.Optional{OneOf.OneOf{System.UInt64,System.Int64,System.Single,System.Double}},Remora.Rest.Core.Optional{OneOf.OneOf{System.UInt64,System.Int64,System.Single,System.Double}},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.UInt32},Remora.Rest.Core.Optional{System.UInt32})
+  - Remora.Discord.API.Objects.ApplicationCommandOption.ChannelTypes
+  - Remora.Discord.API.Objects.ApplicationCommandOption.Choices
+  - Remora.Discord.API.Objects.ApplicationCommandOption.Description
+  - Remora.Discord.API.Objects.ApplicationCommandOption.DescriptionLocalizations
+  - Remora.Discord.API.Objects.ApplicationCommandOption.DescriptionLocalized
+  - Remora.Discord.API.Objects.ApplicationCommandOption.EnableAutocomplete
+  - Remora.Discord.API.Objects.ApplicationCommandOption.IsDefault
+  - Remora.Discord.API.Objects.ApplicationCommandOption.IsRequired
+  - Remora.Discord.API.Objects.ApplicationCommandOption.MaxLength
+  - Remora.Discord.API.Objects.ApplicationCommandOption.MaxValue
+  - Remora.Discord.API.Objects.ApplicationCommandOption.MinLength
+  - Remora.Discord.API.Objects.ApplicationCommandOption.MinValue
+  - Remora.Discord.API.Objects.ApplicationCommandOption.Name
+  - Remora.Discord.API.Objects.ApplicationCommandOption.NameLocalizations
+  - Remora.Discord.API.Objects.ApplicationCommandOption.NameLocalized
+  - Remora.Discord.API.Objects.ApplicationCommandOption.Options
+  - Remora.Discord.API.Objects.ApplicationCommandOption.Type
+  langs:
+  - csharp
+  - vb
+  name: ApplicationCommandOption
+  nameWithType: ApplicationCommandOption
+  fullName: Remora.Discord.API.Objects.ApplicationCommandOption
+  type: Class
+  source:
+    id: ApplicationCommandOption
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Interactions\ApplicationCommands\ApplicationCommandOption.cs
+    startLine: 33
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Represents an option in an application command.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public record ApplicationCommandOption : IApplicationCommandOption, IEquatable<ApplicationCommandOption>
+    content.vb: >-
+      <PublicAPI>
+
+      Public Class ApplicationCommandOption Implements IApplicationCommandOption, IEquatable(Of ApplicationCommandOption)
+  inheritance:
+  - System.Object
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption
+  - System.IEquatable{Remora.Discord.API.Objects.ApplicationCommandOption}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Objects.ApplicationCommandOption.#ctor(Remora.Discord.API.Abstractions.Objects.ApplicationCommandOptionType,System.String,System.String,Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IApplicationCommandOptionChoice}},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption}},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.ChannelType}},Remora.Rest.Core.Optional{OneOf.OneOf{System.UInt64,System.Int64,System.Single,System.Double}},Remora.Rest.Core.Optional{OneOf.OneOf{System.UInt64,System.Int64,System.Single,System.Double}},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.UInt32},Remora.Rest.Core.Optional{System.UInt32})
+  commentId: M:Remora.Discord.API.Objects.ApplicationCommandOption.#ctor(Remora.Discord.API.Abstractions.Objects.ApplicationCommandOptionType,System.String,System.String,Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IApplicationCommandOptionChoice}},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption}},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.ChannelType}},Remora.Rest.Core.Optional{OneOf.OneOf{System.UInt64,System.Int64,System.Single,System.Double}},Remora.Rest.Core.Optional{OneOf.OneOf{System.UInt64,System.Int64,System.Single,System.Double}},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.UInt32},Remora.Rest.Core.Optional{System.UInt32})
+  id: '#ctor(Remora.Discord.API.Abstractions.Objects.ApplicationCommandOptionType,System.String,System.String,Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IApplicationCommandOptionChoice}},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption}},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.ChannelType}},Remora.Rest.Core.Optional{OneOf.OneOf{System.UInt64,System.Int64,System.Single,System.Double}},Remora.Rest.Core.Optional{OneOf.OneOf{System.UInt64,System.Int64,System.Single,System.Double}},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.UInt32},Remora.Rest.Core.Optional{System.UInt32})'
+  parent: Remora.Discord.API.Objects.ApplicationCommandOption
+  langs:
+  - csharp
+  - vb
+  name: ApplicationCommandOption(ApplicationCommandOptionType, string, string, Optional<bool>, Optional<bool>, Optional<IReadOnlyList<IApplicationCommandOptionChoice>>, Optional<IReadOnlyList<IApplicationCommandOption>>, Optional<IReadOnlyList<ChannelType>>, Optional<OneOf<ulong, long, float, double>>, Optional<OneOf<ulong, long, float, double>>, Optional<bool>, Optional<IReadOnlyDictionary<string, string>?>, Optional<string>, Optional<IReadOnlyDictionary<string, string>?>, Optional<string>, Optional<uint>, Optional<uint>)
+  nameWithType: ApplicationCommandOption.ApplicationCommandOption(ApplicationCommandOptionType, string, string, Optional<bool>, Optional<bool>, Optional<IReadOnlyList<IApplicationCommandOptionChoice>>, Optional<IReadOnlyList<IApplicationCommandOption>>, Optional<IReadOnlyList<ChannelType>>, Optional<OneOf<ulong, long, float, double>>, Optional<OneOf<ulong, long, float, double>>, Optional<bool>, Optional<IReadOnlyDictionary<string, string>?>, Optional<string>, Optional<IReadOnlyDictionary<string, string>?>, Optional<string>, Optional<uint>, Optional<uint>)
+  fullName: Remora.Discord.API.Objects.ApplicationCommandOption.ApplicationCommandOption(Remora.Discord.API.Abstractions.Objects.ApplicationCommandOptionType, string, string, Remora.Rest.Core.Optional<bool>, Remora.Rest.Core.Optional<bool>, Remora.Rest.Core.Optional<System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.IApplicationCommandOptionChoice>>, Remora.Rest.Core.Optional<System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption>>, Remora.Rest.Core.Optional<System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.ChannelType>>, Remora.Rest.Core.Optional<OneOf.OneOf<ulong, long, float, double>>, Remora.Rest.Core.Optional<OneOf.OneOf<ulong, long, float, double>>, Remora.Rest.Core.Optional<bool>, Remora.Rest.Core.Optional<System.Collections.Generic.IReadOnlyDictionary<string, string>?>, Remora.Rest.Core.Optional<string>, Remora.Rest.Core.Optional<System.Collections.Generic.IReadOnlyDictionary<string, string>?>, Remora.Rest.Core.Optional<string>, Remora.Rest.Core.Optional<uint>, Remora.Rest.Core.Optional<uint>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Interactions\ApplicationCommands\ApplicationCommandOption.cs
+    startLine: 33
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Represents an option in an application command.
+  example: []
+  syntax:
+    content: public ApplicationCommandOption(ApplicationCommandOptionType Type, string Name, string Description, Optional<bool> IsDefault = default, Optional<bool> IsRequired = default, Optional<IReadOnlyList<IApplicationCommandOptionChoice>> Choices = default, Optional<IReadOnlyList<IApplicationCommandOption>> Options = default, Optional<IReadOnlyList<ChannelType>> ChannelTypes = default, Optional<OneOf<ulong, long, float, double>> MinValue = default, Optional<OneOf<ulong, long, float, double>> MaxValue = default, Optional<bool> EnableAutocomplete = default, Optional<IReadOnlyDictionary<string, string>?> NameLocalizations = default, Optional<string> NameLocalized = default, Optional<IReadOnlyDictionary<string, string>?> DescriptionLocalizations = default, Optional<string> DescriptionLocalized = default, Optional<uint> MinLength = default, Optional<uint> MaxLength = default)
+    parameters:
+    - id: Type
+      type: Remora.Discord.API.Abstractions.Objects.ApplicationCommandOptionType
+    - id: Name
+      type: System.String
+    - id: Description
+      type: System.String
+    - id: IsDefault
+      type: Remora.Rest.Core.Optional{System.Boolean}
+    - id: IsRequired
+      type: Remora.Rest.Core.Optional{System.Boolean}
+    - id: Choices
+      type: Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IApplicationCommandOptionChoice}}
+    - id: Options
+      type: Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption}}
+    - id: ChannelTypes
+      type: Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.ChannelType}}
+    - id: MinValue
+      type: Remora.Rest.Core.Optional{OneOf.OneOf{System.UInt64,System.Int64,System.Single,System.Double}}
+    - id: MaxValue
+      type: Remora.Rest.Core.Optional{OneOf.OneOf{System.UInt64,System.Int64,System.Single,System.Double}}
+    - id: EnableAutocomplete
+      type: Remora.Rest.Core.Optional{System.Boolean}
+    - id: NameLocalizations
+      type: Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}}
+    - id: NameLocalized
+      type: Remora.Rest.Core.Optional{System.String}
+    - id: DescriptionLocalizations
+      type: Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}}
+    - id: DescriptionLocalized
+      type: Remora.Rest.Core.Optional{System.String}
+    - id: MinLength
+      type: Remora.Rest.Core.Optional{System.UInt32}
+    - id: MaxLength
+      type: Remora.Rest.Core.Optional{System.UInt32}
+    content.vb: Public Sub New(Type As ApplicationCommandOptionType, Name As String, Description As String, IsDefault As [Optional](Of Boolean) = Nothing, IsRequired As [Optional](Of Boolean) = Nothing, Choices As [Optional](Of IReadOnlyList(Of IApplicationCommandOptionChoice)) = Nothing, Options As [Optional](Of IReadOnlyList(Of IApplicationCommandOption)) = Nothing, ChannelTypes As [Optional](Of IReadOnlyList(Of ChannelType)) = Nothing, MinValue As [Optional](Of OneOf(Of ULong, Long, Single, Double)) = Nothing, MaxValue As [Optional](Of OneOf(Of ULong, Long, Single, Double)) = Nothing, EnableAutocomplete As [Optional](Of Boolean) = Nothing, NameLocalizations As [Optional](Of IReadOnlyDictionary(Of String, String)) = Nothing, NameLocalized As [Optional](Of String) = Nothing, DescriptionLocalizations As [Optional](Of IReadOnlyDictionary(Of String, String)) = Nothing, DescriptionLocalized As [Optional](Of String) = Nothing, MinLength As [Optional](Of UInteger) = Nothing, MaxLength As [Optional](Of UInteger) = Nothing)
+  overload: Remora.Discord.API.Objects.ApplicationCommandOption.#ctor*
+  nameWithType.vb: ApplicationCommandOption.New(ApplicationCommandOptionType, String, String, Optional(Of Boolean), Optional(Of Boolean), Optional(Of IReadOnlyList(Of IApplicationCommandOptionChoice)), Optional(Of IReadOnlyList(Of IApplicationCommandOption)), Optional(Of IReadOnlyList(Of ChannelType)), Optional(Of OneOf(Of ULong, Long, Single, Double)), Optional(Of OneOf(Of ULong, Long, Single, Double)), Optional(Of Boolean), Optional(Of IReadOnlyDictionary(Of String, String)), Optional(Of String), Optional(Of IReadOnlyDictionary(Of String, String)), Optional(Of String), Optional(Of UInteger), Optional(Of UInteger))
+  fullName.vb: Remora.Discord.API.Objects.ApplicationCommandOption.New(Remora.Discord.API.Abstractions.Objects.ApplicationCommandOptionType, String, String, Remora.Rest.Core.Optional(Of Boolean), Remora.Rest.Core.Optional(Of Boolean), Remora.Rest.Core.Optional(Of System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.IApplicationCommandOptionChoice)), Remora.Rest.Core.Optional(Of System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption)), Remora.Rest.Core.Optional(Of System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.ChannelType)), Remora.Rest.Core.Optional(Of OneOf.OneOf(Of ULong, Long, Single, Double)), Remora.Rest.Core.Optional(Of OneOf.OneOf(Of ULong, Long, Single, Double)), Remora.Rest.Core.Optional(Of Boolean), Remora.Rest.Core.Optional(Of System.Collections.Generic.IReadOnlyDictionary(Of String, String)), Remora.Rest.Core.Optional(Of String), Remora.Rest.Core.Optional(Of System.Collections.Generic.IReadOnlyDictionary(Of String, String)), Remora.Rest.Core.Optional(Of String), Remora.Rest.Core.Optional(Of UInteger), Remora.Rest.Core.Optional(Of UInteger))
+  name.vb: New(ApplicationCommandOptionType, String, String, Optional(Of Boolean), Optional(Of Boolean), Optional(Of IReadOnlyList(Of IApplicationCommandOptionChoice)), Optional(Of IReadOnlyList(Of IApplicationCommandOption)), Optional(Of IReadOnlyList(Of ChannelType)), Optional(Of OneOf(Of ULong, Long, Single, Double)), Optional(Of OneOf(Of ULong, Long, Single, Double)), Optional(Of Boolean), Optional(Of IReadOnlyDictionary(Of String, String)), Optional(Of String), Optional(Of IReadOnlyDictionary(Of String, String)), Optional(Of String), Optional(Of UInteger), Optional(Of UInteger))
+- uid: Remora.Discord.API.Objects.ApplicationCommandOption.Type
+  commentId: P:Remora.Discord.API.Objects.ApplicationCommandOption.Type
+  id: Type
+  parent: Remora.Discord.API.Objects.ApplicationCommandOption
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: ApplicationCommandOption.Type
+  fullName: Remora.Discord.API.Objects.ApplicationCommandOption.Type
+  type: Property
+  source:
+    id: Type
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Interactions\ApplicationCommands\ApplicationCommandOption.cs
+    startLine: 36
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the option type.
+  example: []
+  syntax:
+    content: public ApplicationCommandOptionType Type { get; init; }
+    parameters: []
+    return:
+      type: Remora.Discord.API.Abstractions.Objects.ApplicationCommandOptionType
+    content.vb: Public Property Type As ApplicationCommandOptionType
+  overload: Remora.Discord.API.Objects.ApplicationCommandOption.Type*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.Type
+- uid: Remora.Discord.API.Objects.ApplicationCommandOption.Name
+  commentId: P:Remora.Discord.API.Objects.ApplicationCommandOption.Name
+  id: Name
+  parent: Remora.Discord.API.Objects.ApplicationCommandOption
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: ApplicationCommandOption.Name
+  fullName: Remora.Discord.API.Objects.ApplicationCommandOption.Name
+  type: Property
+  source:
+    id: Name
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Interactions\ApplicationCommands\ApplicationCommandOption.cs
+    startLine: 37
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the name of the option.
+  remarks: The length of the name must be between 3 and 32 characters.
+  example: []
+  syntax:
+    content: public string Name { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: Remora.Discord.API.Objects.ApplicationCommandOption.Name*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.Name
+- uid: Remora.Discord.API.Objects.ApplicationCommandOption.Description
+  commentId: P:Remora.Discord.API.Objects.ApplicationCommandOption.Description
+  id: Description
+  parent: Remora.Discord.API.Objects.ApplicationCommandOption
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: ApplicationCommandOption.Description
+  fullName: Remora.Discord.API.Objects.ApplicationCommandOption.Description
+  type: Property
+  source:
+    id: Description
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Interactions\ApplicationCommands\ApplicationCommandOption.cs
+    startLine: 38
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the description of the option.
+  remarks: The length of the description must be between 1 and 100 characters.
+  example: []
+  syntax:
+    content: public string Description { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Description As String
+  overload: Remora.Discord.API.Objects.ApplicationCommandOption.Description*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.Description
+- uid: Remora.Discord.API.Objects.ApplicationCommandOption.IsDefault
+  commentId: P:Remora.Discord.API.Objects.ApplicationCommandOption.IsDefault
+  id: IsDefault
+  parent: Remora.Discord.API.Objects.ApplicationCommandOption
+  langs:
+  - csharp
+  - vb
+  name: IsDefault
+  nameWithType: ApplicationCommandOption.IsDefault
+  fullName: Remora.Discord.API.Objects.ApplicationCommandOption.IsDefault
+  type: Property
+  source:
+    id: IsDefault
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Interactions\ApplicationCommands\ApplicationCommandOption.cs
+    startLine: 39
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets a value indicating whether this is the first required option that the user completes.
+  remarks: Only one option can be default.
+  example: []
+  syntax:
+    content: public Optional<bool> IsDefault { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Boolean}
+    content.vb: Public Property IsDefault As [Optional](Of Boolean)
+  overload: Remora.Discord.API.Objects.ApplicationCommandOption.IsDefault*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.IsDefault
+- uid: Remora.Discord.API.Objects.ApplicationCommandOption.IsRequired
+  commentId: P:Remora.Discord.API.Objects.ApplicationCommandOption.IsRequired
+  id: IsRequired
+  parent: Remora.Discord.API.Objects.ApplicationCommandOption
+  langs:
+  - csharp
+  - vb
+  name: IsRequired
+  nameWithType: ApplicationCommandOption.IsRequired
+  fullName: Remora.Discord.API.Objects.ApplicationCommandOption.IsRequired
+  type: Property
+  source:
+    id: IsRequired
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Interactions\ApplicationCommands\ApplicationCommandOption.cs
+    startLine: 40
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets a value indicating whether the option is required.
+  example: []
+  syntax:
+    content: public Optional<bool> IsRequired { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Boolean}
+    content.vb: Public Property IsRequired As [Optional](Of Boolean)
+  overload: Remora.Discord.API.Objects.ApplicationCommandOption.IsRequired*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.IsRequired
+- uid: Remora.Discord.API.Objects.ApplicationCommandOption.Choices
+  commentId: P:Remora.Discord.API.Objects.ApplicationCommandOption.Choices
+  id: Choices
+  parent: Remora.Discord.API.Objects.ApplicationCommandOption
+  langs:
+  - csharp
+  - vb
+  name: Choices
+  nameWithType: ApplicationCommandOption.Choices
+  fullName: Remora.Discord.API.Objects.ApplicationCommandOption.Choices
+  type: Property
+  source:
+    id: Choices
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Interactions\ApplicationCommands\ApplicationCommandOption.cs
+    startLine: 41
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the available options the user can pick from.
+  example: []
+  syntax:
+    content: public Optional<IReadOnlyList<IApplicationCommandOptionChoice>> Choices { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IApplicationCommandOptionChoice}}
+    content.vb: Public Property Choices As [Optional](Of IReadOnlyList(Of IApplicationCommandOptionChoice))
+  overload: Remora.Discord.API.Objects.ApplicationCommandOption.Choices*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.Choices
+- uid: Remora.Discord.API.Objects.ApplicationCommandOption.Options
+  commentId: P:Remora.Discord.API.Objects.ApplicationCommandOption.Options
+  id: Options
+  parent: Remora.Discord.API.Objects.ApplicationCommandOption
+  langs:
+  - csharp
+  - vb
+  name: Options
+  nameWithType: ApplicationCommandOption.Options
+  fullName: Remora.Discord.API.Objects.ApplicationCommandOption.Options
+  type: Property
+  source:
+    id: Options
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Interactions\ApplicationCommands\ApplicationCommandOption.cs
+    startLine: 42
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the options of the nested command or group.
+  example: []
+  syntax:
+    content: public Optional<IReadOnlyList<IApplicationCommandOption>> Options { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption}}
+    content.vb: Public Property Options As [Optional](Of IReadOnlyList(Of IApplicationCommandOption))
+  overload: Remora.Discord.API.Objects.ApplicationCommandOption.Options*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.Options
+- uid: Remora.Discord.API.Objects.ApplicationCommandOption.ChannelTypes
+  commentId: P:Remora.Discord.API.Objects.ApplicationCommandOption.ChannelTypes
+  id: ChannelTypes
+  parent: Remora.Discord.API.Objects.ApplicationCommandOption
+  langs:
+  - csharp
+  - vb
+  name: ChannelTypes
+  nameWithType: ApplicationCommandOption.ChannelTypes
+  fullName: Remora.Discord.API.Objects.ApplicationCommandOption.ChannelTypes
+  type: Property
+  source:
+    id: ChannelTypes
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Interactions\ApplicationCommands\ApplicationCommandOption.cs
+    startLine: 43
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the channel types allowed for options.
+  example: []
+  syntax:
+    content: public Optional<IReadOnlyList<ChannelType>> ChannelTypes { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.ChannelType}}
+    content.vb: Public Property ChannelTypes As [Optional](Of IReadOnlyList(Of ChannelType))
+  overload: Remora.Discord.API.Objects.ApplicationCommandOption.ChannelTypes*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.ChannelTypes
+- uid: Remora.Discord.API.Objects.ApplicationCommandOption.MinValue
+  commentId: P:Remora.Discord.API.Objects.ApplicationCommandOption.MinValue
+  id: MinValue
+  parent: Remora.Discord.API.Objects.ApplicationCommandOption
+  langs:
+  - csharp
+  - vb
+  name: MinValue
+  nameWithType: ApplicationCommandOption.MinValue
+  fullName: Remora.Discord.API.Objects.ApplicationCommandOption.MinValue
+  type: Property
+  source:
+    id: MinValue
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Interactions\ApplicationCommands\ApplicationCommandOption.cs
+    startLine: 44
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the minimum value permitted.
+  remarks: >-
+    Only relevant for <xref href="Remora.Discord.API.Abstractions.Objects.ApplicationCommandOptionType.Integer" data-throw-if-not-resolved="false"></xref> or
+        <xref href="Remora.Discord.API.Abstractions.Objects.ApplicationCommandOptionType.Number" data-throw-if-not-resolved="false"></xref> options.
+  example: []
+  syntax:
+    content: public Optional<OneOf<ulong, long, float, double>> MinValue { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{OneOf.OneOf{System.UInt64,System.Int64,System.Single,System.Double}}
+    content.vb: Public Property MinValue As [Optional](Of OneOf(Of ULong, Long, Single, Double))
+  overload: Remora.Discord.API.Objects.ApplicationCommandOption.MinValue*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.MinValue
+- uid: Remora.Discord.API.Objects.ApplicationCommandOption.MaxValue
+  commentId: P:Remora.Discord.API.Objects.ApplicationCommandOption.MaxValue
+  id: MaxValue
+  parent: Remora.Discord.API.Objects.ApplicationCommandOption
+  langs:
+  - csharp
+  - vb
+  name: MaxValue
+  nameWithType: ApplicationCommandOption.MaxValue
+  fullName: Remora.Discord.API.Objects.ApplicationCommandOption.MaxValue
+  type: Property
+  source:
+    id: MaxValue
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Interactions\ApplicationCommands\ApplicationCommandOption.cs
+    startLine: 45
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the minimum value permitted.
+  remarks: >-
+    Only relevant for <xref href="Remora.Discord.API.Abstractions.Objects.ApplicationCommandOptionType.Integer" data-throw-if-not-resolved="false"></xref> or
+        <xref href="Remora.Discord.API.Abstractions.Objects.ApplicationCommandOptionType.Number" data-throw-if-not-resolved="false"></xref> options.
+  example: []
+  syntax:
+    content: public Optional<OneOf<ulong, long, float, double>> MaxValue { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{OneOf.OneOf{System.UInt64,System.Int64,System.Single,System.Double}}
+    content.vb: Public Property MaxValue As [Optional](Of OneOf(Of ULong, Long, Single, Double))
+  overload: Remora.Discord.API.Objects.ApplicationCommandOption.MaxValue*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.MaxValue
+- uid: Remora.Discord.API.Objects.ApplicationCommandOption.EnableAutocomplete
+  commentId: P:Remora.Discord.API.Objects.ApplicationCommandOption.EnableAutocomplete
+  id: EnableAutocomplete
+  parent: Remora.Discord.API.Objects.ApplicationCommandOption
+  langs:
+  - csharp
+  - vb
+  name: EnableAutocomplete
+  nameWithType: ApplicationCommandOption.EnableAutocomplete
+  fullName: Remora.Discord.API.Objects.ApplicationCommandOption.EnableAutocomplete
+  type: Property
+  source:
+    id: EnableAutocomplete
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Interactions\ApplicationCommands\ApplicationCommandOption.cs
+    startLine: 46
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets a value indicating whether autocompletion should be enabled for this option.
+  example: []
+  syntax:
+    content: public Optional<bool> EnableAutocomplete { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Boolean}
+    content.vb: Public Property EnableAutocomplete As [Optional](Of Boolean)
+  overload: Remora.Discord.API.Objects.ApplicationCommandOption.EnableAutocomplete*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.EnableAutocomplete
+- uid: Remora.Discord.API.Objects.ApplicationCommandOption.NameLocalizations
+  commentId: P:Remora.Discord.API.Objects.ApplicationCommandOption.NameLocalizations
+  id: NameLocalizations
+  parent: Remora.Discord.API.Objects.ApplicationCommandOption
+  langs:
+  - csharp
+  - vb
+  name: NameLocalizations
+  nameWithType: ApplicationCommandOption.NameLocalizations
+  fullName: Remora.Discord.API.Objects.ApplicationCommandOption.NameLocalizations
+  type: Property
+  source:
+    id: NameLocalizations
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Interactions\ApplicationCommands\ApplicationCommandOption.cs
+    startLine: 47
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the localized names of the option.
+  example: []
+  syntax:
+    content: public Optional<IReadOnlyDictionary<string, string>?> NameLocalizations { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}}
+    content.vb: Public Property NameLocalizations As [Optional](Of IReadOnlyDictionary(Of String, String))
+  overload: Remora.Discord.API.Objects.ApplicationCommandOption.NameLocalizations*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.NameLocalizations
+- uid: Remora.Discord.API.Objects.ApplicationCommandOption.NameLocalized
+  commentId: P:Remora.Discord.API.Objects.ApplicationCommandOption.NameLocalized
+  id: NameLocalized
+  parent: Remora.Discord.API.Objects.ApplicationCommandOption
+  langs:
+  - csharp
+  - vb
+  name: NameLocalized
+  nameWithType: ApplicationCommandOption.NameLocalized
+  fullName: Remora.Discord.API.Objects.ApplicationCommandOption.NameLocalized
+  type: Property
+  source:
+    id: NameLocalized
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Interactions\ApplicationCommands\ApplicationCommandOption.cs
+    startLine: 48
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the localized name of the option.
+  remarks: This field is only supplied by Discord as a response, and is not used to set the actual localized string.
+  example: []
+  syntax:
+    content: public Optional<string> NameLocalized { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.String}
+    content.vb: Public Property NameLocalized As [Optional](Of String)
+  overload: Remora.Discord.API.Objects.ApplicationCommandOption.NameLocalized*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.NameLocalized
+- uid: Remora.Discord.API.Objects.ApplicationCommandOption.DescriptionLocalizations
+  commentId: P:Remora.Discord.API.Objects.ApplicationCommandOption.DescriptionLocalizations
+  id: DescriptionLocalizations
+  parent: Remora.Discord.API.Objects.ApplicationCommandOption
+  langs:
+  - csharp
+  - vb
+  name: DescriptionLocalizations
+  nameWithType: ApplicationCommandOption.DescriptionLocalizations
+  fullName: Remora.Discord.API.Objects.ApplicationCommandOption.DescriptionLocalizations
+  type: Property
+  source:
+    id: DescriptionLocalizations
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Interactions\ApplicationCommands\ApplicationCommandOption.cs
+    startLine: 49
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the localized descriptions of the option.
+  example: []
+  syntax:
+    content: public Optional<IReadOnlyDictionary<string, string>?> DescriptionLocalizations { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}}
+    content.vb: Public Property DescriptionLocalizations As [Optional](Of IReadOnlyDictionary(Of String, String))
+  overload: Remora.Discord.API.Objects.ApplicationCommandOption.DescriptionLocalizations*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.DescriptionLocalizations
+- uid: Remora.Discord.API.Objects.ApplicationCommandOption.DescriptionLocalized
+  commentId: P:Remora.Discord.API.Objects.ApplicationCommandOption.DescriptionLocalized
+  id: DescriptionLocalized
+  parent: Remora.Discord.API.Objects.ApplicationCommandOption
+  langs:
+  - csharp
+  - vb
+  name: DescriptionLocalized
+  nameWithType: ApplicationCommandOption.DescriptionLocalized
+  fullName: Remora.Discord.API.Objects.ApplicationCommandOption.DescriptionLocalized
+  type: Property
+  source:
+    id: DescriptionLocalized
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Interactions\ApplicationCommands\ApplicationCommandOption.cs
+    startLine: 50
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the localized description of the option.
+  remarks: This field is only supplied by Discord as a response, and is not used to set the actual localized string.
+  example: []
+  syntax:
+    content: public Optional<string> DescriptionLocalized { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.String}
+    content.vb: Public Property DescriptionLocalized As [Optional](Of String)
+  overload: Remora.Discord.API.Objects.ApplicationCommandOption.DescriptionLocalized*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.DescriptionLocalized
+- uid: Remora.Discord.API.Objects.ApplicationCommandOption.MinLength
+  commentId: P:Remora.Discord.API.Objects.ApplicationCommandOption.MinLength
+  id: MinLength
+  parent: Remora.Discord.API.Objects.ApplicationCommandOption
+  langs:
+  - csharp
+  - vb
+  name: MinLength
+  nameWithType: ApplicationCommandOption.MinLength
+  fullName: Remora.Discord.API.Objects.ApplicationCommandOption.MinLength
+  type: Property
+  source:
+    id: MinLength
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Interactions\ApplicationCommands\ApplicationCommandOption.cs
+    startLine: 51
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the minimum length of the value supplied to the parameter.
+  remarks: Only valid for <xref href="Remora.Discord.API.Abstractions.Objects.ApplicationCommandOptionType.String" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public Optional<uint> MinLength { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.UInt32}
+    content.vb: Public Property MinLength As [Optional](Of UInteger)
+  overload: Remora.Discord.API.Objects.ApplicationCommandOption.MinLength*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.MinLength
+- uid: Remora.Discord.API.Objects.ApplicationCommandOption.MaxLength
+  commentId: P:Remora.Discord.API.Objects.ApplicationCommandOption.MaxLength
+  id: MaxLength
+  parent: Remora.Discord.API.Objects.ApplicationCommandOption
+  langs:
+  - csharp
+  - vb
+  name: MaxLength
+  nameWithType: ApplicationCommandOption.MaxLength
+  fullName: Remora.Discord.API.Objects.ApplicationCommandOption.MaxLength
+  type: Property
+  source:
+    id: MaxLength
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Interactions\ApplicationCommands\ApplicationCommandOption.cs
+    startLine: 52
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the maximum length of the value supplied to the parameter.
+  remarks: Only valid for <xref href="Remora.Discord.API.Abstractions.Objects.ApplicationCommandOptionType.String" data-throw-if-not-resolved="false"></xref>. Minimum 1.
+  example: []
+  syntax:
+    content: public Optional<uint> MaxLength { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.UInt32}
+    content.vb: Public Property MaxLength As [Optional](Of UInteger)
+  overload: Remora.Discord.API.Objects.ApplicationCommandOption.MaxLength*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.MaxLength
+references:
+- uid: Remora.Discord.API.Objects
+  commentId: N:Remora.Discord.API.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Objects
+  nameWithType: Remora.Discord.API.Objects
+  fullName: Remora.Discord.API.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Objects
+    name: Objects
+    href: Remora.Discord.API.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Objects
+    name: Objects
+    href: Remora.Discord.API.Objects.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.html
+  name: IApplicationCommandOption
+  nameWithType: IApplicationCommandOption
+  fullName: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption
+- uid: System.IEquatable{Remora.Discord.API.Objects.ApplicationCommandOption}
+  commentId: T:System.IEquatable{Remora.Discord.API.Objects.ApplicationCommandOption}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<ApplicationCommandOption>
+  nameWithType: IEquatable<ApplicationCommandOption>
+  fullName: System.IEquatable<Remora.Discord.API.Objects.ApplicationCommandOption>
+  nameWithType.vb: IEquatable(Of ApplicationCommandOption)
+  fullName.vb: System.IEquatable(Of Remora.Discord.API.Objects.ApplicationCommandOption)
+  name.vb: IEquatable(Of ApplicationCommandOption)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Remora.Discord.API.Objects.ApplicationCommandOption
+    name: ApplicationCommandOption
+    href: Remora.Discord.API.Objects.ApplicationCommandOption.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Objects.ApplicationCommandOption
+    name: ApplicationCommandOption
+    href: Remora.Discord.API.Objects.ApplicationCommandOption.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.API.Abstractions.Objects
+  commentId: N:Remora.Discord.API.Abstractions.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Objects
+  nameWithType: Remora.Discord.API.Abstractions.Objects
+  fullName: Remora.Discord.API.Abstractions.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Remora.Discord.API.Objects.ApplicationCommandOption.#ctor*
+  commentId: Overload:Remora.Discord.API.Objects.ApplicationCommandOption.#ctor
+  href: Remora.Discord.API.Objects.ApplicationCommandOption.html#Remora_Discord_API_Objects_ApplicationCommandOption__ctor_Remora_Discord_API_Abstractions_Objects_ApplicationCommandOptionType_System_String_System_String_Remora_Rest_Core_Optional_System_Boolean__Remora_Rest_Core_Optional_System_Boolean__Remora_Rest_Core_Optional_System_Collections_Generic_IReadOnlyList_Remora_Discord_API_Abstractions_Objects_IApplicationCommandOptionChoice___Remora_Rest_Core_Optional_System_Collections_Generic_IReadOnlyList_Remora_Discord_API_Abstractions_Objects_IApplicationCommandOption___Remora_Rest_Core_Optional_System_Collections_Generic_IReadOnlyList_Remora_Discord_API_Abstractions_Objects_ChannelType___Remora_Rest_Core_Optional_OneOf_OneOf_System_UInt64_System_Int64_System_Single_System_Double___Remora_Rest_Core_Optional_OneOf_OneOf_System_UInt64_System_Int64_System_Single_System_Double___Remora_Rest_Core_Optional_System_Boolean__Remora_Rest_Core_Optional_System_Collections_Generic_IReadOnlyDictionary_System_String_System_String___Remora_Rest_Core_Optional_System_String__Remora_Rest_Core_Optional_System_Collections_Generic_IReadOnlyDictionary_System_String_System_String___Remora_Rest_Core_Optional_System_String__Remora_Rest_Core_Optional_System_UInt32__Remora_Rest_Core_Optional_System_UInt32__
+  name: ApplicationCommandOption
+  nameWithType: ApplicationCommandOption.ApplicationCommandOption
+  fullName: Remora.Discord.API.Objects.ApplicationCommandOption.ApplicationCommandOption
+  nameWithType.vb: ApplicationCommandOption.New
+  fullName.vb: Remora.Discord.API.Objects.ApplicationCommandOption.New
+  name.vb: New
+- uid: Remora.Discord.API.Abstractions.Objects.ApplicationCommandOptionType
+  commentId: T:Remora.Discord.API.Abstractions.Objects.ApplicationCommandOptionType
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.ApplicationCommandOptionType.html
+  name: ApplicationCommandOptionType
+  nameWithType: ApplicationCommandOptionType
+  fullName: Remora.Discord.API.Abstractions.Objects.ApplicationCommandOptionType
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Remora.Rest.Core.Optional{System.Boolean}
+  commentId: T:Remora.Rest.Core.Optional{System.Boolean}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: Optional<bool>
+  nameWithType: Optional<bool>
+  fullName: Remora.Rest.Core.Optional<bool>
+  nameWithType.vb: Optional(Of Boolean)
+  fullName.vb: Remora.Rest.Core.Optional(Of Boolean)
+  name.vb: Optional(Of Boolean)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IApplicationCommandOptionChoice}}
+  commentId: T:Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IApplicationCommandOptionChoice}}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: Optional<IReadOnlyList<IApplicationCommandOptionChoice>>
+  nameWithType: Optional<IReadOnlyList<IApplicationCommandOptionChoice>>
+  fullName: Remora.Rest.Core.Optional<System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.IApplicationCommandOptionChoice>>
+  nameWithType.vb: Optional(Of IReadOnlyList(Of IApplicationCommandOptionChoice))
+  fullName.vb: Remora.Rest.Core.Optional(Of System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.IApplicationCommandOptionChoice))
+  name.vb: Optional(Of IReadOnlyList(Of IApplicationCommandOptionChoice))
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOptionChoice
+    name: IApplicationCommandOptionChoice
+    href: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOptionChoice.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOptionChoice
+    name: IApplicationCommandOptionChoice
+    href: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOptionChoice.html
+  - name: )
+  - name: )
+- uid: Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption}}
+  commentId: T:Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption}}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: Optional<IReadOnlyList<IApplicationCommandOption>>
+  nameWithType: Optional<IReadOnlyList<IApplicationCommandOption>>
+  fullName: Remora.Rest.Core.Optional<System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption>>
+  nameWithType.vb: Optional(Of IReadOnlyList(Of IApplicationCommandOption))
+  fullName.vb: Remora.Rest.Core.Optional(Of System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption))
+  name.vb: Optional(Of IReadOnlyList(Of IApplicationCommandOption))
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption
+    name: IApplicationCommandOption
+    href: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption
+    name: IApplicationCommandOption
+    href: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.html
+  - name: )
+  - name: )
+- uid: Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.ChannelType}}
+  commentId: T:Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.ChannelType}}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: Optional<IReadOnlyList<ChannelType>>
+  nameWithType: Optional<IReadOnlyList<ChannelType>>
+  fullName: Remora.Rest.Core.Optional<System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.ChannelType>>
+  nameWithType.vb: Optional(Of IReadOnlyList(Of ChannelType))
+  fullName.vb: Remora.Rest.Core.Optional(Of System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.ChannelType))
+  name.vb: Optional(Of IReadOnlyList(Of ChannelType))
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.ChannelType
+    name: ChannelType
+    href: Remora.Discord.API.Abstractions.Objects.ChannelType.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.ChannelType
+    name: ChannelType
+    href: Remora.Discord.API.Abstractions.Objects.ChannelType.html
+  - name: )
+  - name: )
+- uid: Remora.Rest.Core.Optional{OneOf.OneOf{System.UInt64,System.Int64,System.Single,System.Double}}
+  commentId: T:Remora.Rest.Core.Optional{OneOf.OneOf{System.UInt64,System.Int64,System.Single,System.Double}}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.uint64
+  name: Optional<OneOf<ulong, long, float, double>>
+  nameWithType: Optional<OneOf<ulong, long, float, double>>
+  fullName: Remora.Rest.Core.Optional<OneOf.OneOf<ulong, long, float, double>>
+  nameWithType.vb: Optional(Of OneOf(Of ULong, Long, Single, Double))
+  fullName.vb: Remora.Rest.Core.Optional(Of OneOf.OneOf(Of ULong, Long, Single, Double))
+  name.vb: Optional(Of OneOf(Of ULong, Long, Single, Double))
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: OneOf.OneOf`4
+    name: OneOf
+    isExternal: true
+  - name: <
+  - uid: System.UInt64
+    name: ulong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: ','
+  - name: " "
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OneOf.OneOf`4
+    name: OneOf
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.UInt64
+    name: ULong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: ','
+  - name: " "
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  - name: )
+- uid: Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}}
+  commentId: T:Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: Optional<IReadOnlyDictionary<string, string>>
+  nameWithType: Optional<IReadOnlyDictionary<string, string>>
+  fullName: Remora.Rest.Core.Optional<System.Collections.Generic.IReadOnlyDictionary<string, string>>
+  nameWithType.vb: Optional(Of IReadOnlyDictionary(Of String, String))
+  fullName.vb: Remora.Rest.Core.Optional(Of System.Collections.Generic.IReadOnlyDictionary(Of String, String))
+  name.vb: Optional(Of IReadOnlyDictionary(Of String, String))
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )
+- uid: Remora.Rest.Core.Optional{System.String}
+  commentId: T:Remora.Rest.Core.Optional{System.String}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Optional<string>
+  nameWithType: Optional<string>
+  fullName: Remora.Rest.Core.Optional<string>
+  nameWithType.vb: Optional(Of String)
+  fullName.vb: Remora.Rest.Core.Optional(Of String)
+  name.vb: Optional(Of String)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Remora.Rest.Core.Optional{System.UInt32}
+  commentId: T:Remora.Rest.Core.Optional{System.UInt32}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: Optional<uint>
+  nameWithType: Optional<uint>
+  fullName: Remora.Rest.Core.Optional<uint>
+  nameWithType.vb: Optional(Of UInteger)
+  fullName.vb: Remora.Rest.Core.Optional(Of UInteger)
+  name.vb: Optional(Of UInteger)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.UInt32
+    name: uint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.UInt32
+    name: UInteger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: )
+- uid: Remora.Rest.Core.Optional`1
+  commentId: T:Remora.Rest.Core.Optional`1
+  isExternal: true
+  name: Optional<TValue>
+  nameWithType: Optional<TValue>
+  fullName: Remora.Rest.Core.Optional<TValue>
+  nameWithType.vb: Optional(Of TValue)
+  fullName.vb: Remora.Rest.Core.Optional(Of TValue)
+  name.vb: Optional(Of TValue)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+- uid: Remora.Discord.API.Objects.ApplicationCommandOption.Type*
+  commentId: Overload:Remora.Discord.API.Objects.ApplicationCommandOption.Type
+  href: Remora.Discord.API.Objects.ApplicationCommandOption.html#Remora_Discord_API_Objects_ApplicationCommandOption_Type
+  name: Type
+  nameWithType: ApplicationCommandOption.Type
+  fullName: Remora.Discord.API.Objects.ApplicationCommandOption.Type
+- uid: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.Type
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.Type
+  parent: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption
+  href: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.html#Remora_Discord_API_Abstractions_Objects_IApplicationCommandOption_Type
+  name: Type
+  nameWithType: IApplicationCommandOption.Type
+  fullName: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.Type
+- uid: Remora.Discord.API.Objects.ApplicationCommandOption.Name*
+  commentId: Overload:Remora.Discord.API.Objects.ApplicationCommandOption.Name
+  href: Remora.Discord.API.Objects.ApplicationCommandOption.html#Remora_Discord_API_Objects_ApplicationCommandOption_Name
+  name: Name
+  nameWithType: ApplicationCommandOption.Name
+  fullName: Remora.Discord.API.Objects.ApplicationCommandOption.Name
+- uid: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.Name
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.Name
+  parent: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption
+  href: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.html#Remora_Discord_API_Abstractions_Objects_IApplicationCommandOption_Name
+  name: Name
+  nameWithType: IApplicationCommandOption.Name
+  fullName: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.Name
+- uid: Remora.Discord.API.Objects.ApplicationCommandOption.Description*
+  commentId: Overload:Remora.Discord.API.Objects.ApplicationCommandOption.Description
+  href: Remora.Discord.API.Objects.ApplicationCommandOption.html#Remora_Discord_API_Objects_ApplicationCommandOption_Description
+  name: Description
+  nameWithType: ApplicationCommandOption.Description
+  fullName: Remora.Discord.API.Objects.ApplicationCommandOption.Description
+- uid: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.Description
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.Description
+  parent: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption
+  href: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.html#Remora_Discord_API_Abstractions_Objects_IApplicationCommandOption_Description
+  name: Description
+  nameWithType: IApplicationCommandOption.Description
+  fullName: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.Description
+- uid: Remora.Discord.API.Objects.ApplicationCommandOption.IsDefault*
+  commentId: Overload:Remora.Discord.API.Objects.ApplicationCommandOption.IsDefault
+  href: Remora.Discord.API.Objects.ApplicationCommandOption.html#Remora_Discord_API_Objects_ApplicationCommandOption_IsDefault
+  name: IsDefault
+  nameWithType: ApplicationCommandOption.IsDefault
+  fullName: Remora.Discord.API.Objects.ApplicationCommandOption.IsDefault
+- uid: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.IsDefault
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.IsDefault
+  parent: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption
+  href: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.html#Remora_Discord_API_Abstractions_Objects_IApplicationCommandOption_IsDefault
+  name: IsDefault
+  nameWithType: IApplicationCommandOption.IsDefault
+  fullName: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.IsDefault
+- uid: Remora.Discord.API.Objects.ApplicationCommandOption.IsRequired*
+  commentId: Overload:Remora.Discord.API.Objects.ApplicationCommandOption.IsRequired
+  href: Remora.Discord.API.Objects.ApplicationCommandOption.html#Remora_Discord_API_Objects_ApplicationCommandOption_IsRequired
+  name: IsRequired
+  nameWithType: ApplicationCommandOption.IsRequired
+  fullName: Remora.Discord.API.Objects.ApplicationCommandOption.IsRequired
+- uid: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.IsRequired
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.IsRequired
+  parent: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption
+  href: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.html#Remora_Discord_API_Abstractions_Objects_IApplicationCommandOption_IsRequired
+  name: IsRequired
+  nameWithType: IApplicationCommandOption.IsRequired
+  fullName: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.IsRequired
+- uid: Remora.Discord.API.Objects.ApplicationCommandOption.Choices*
+  commentId: Overload:Remora.Discord.API.Objects.ApplicationCommandOption.Choices
+  href: Remora.Discord.API.Objects.ApplicationCommandOption.html#Remora_Discord_API_Objects_ApplicationCommandOption_Choices
+  name: Choices
+  nameWithType: ApplicationCommandOption.Choices
+  fullName: Remora.Discord.API.Objects.ApplicationCommandOption.Choices
+- uid: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.Choices
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.Choices
+  parent: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption
+  href: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.html#Remora_Discord_API_Abstractions_Objects_IApplicationCommandOption_Choices
+  name: Choices
+  nameWithType: IApplicationCommandOption.Choices
+  fullName: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.Choices
+- uid: Remora.Discord.API.Objects.ApplicationCommandOption.Options*
+  commentId: Overload:Remora.Discord.API.Objects.ApplicationCommandOption.Options
+  href: Remora.Discord.API.Objects.ApplicationCommandOption.html#Remora_Discord_API_Objects_ApplicationCommandOption_Options
+  name: Options
+  nameWithType: ApplicationCommandOption.Options
+  fullName: Remora.Discord.API.Objects.ApplicationCommandOption.Options
+- uid: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.Options
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.Options
+  parent: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption
+  href: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.html#Remora_Discord_API_Abstractions_Objects_IApplicationCommandOption_Options
+  name: Options
+  nameWithType: IApplicationCommandOption.Options
+  fullName: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.Options
+- uid: Remora.Discord.API.Objects.ApplicationCommandOption.ChannelTypes*
+  commentId: Overload:Remora.Discord.API.Objects.ApplicationCommandOption.ChannelTypes
+  href: Remora.Discord.API.Objects.ApplicationCommandOption.html#Remora_Discord_API_Objects_ApplicationCommandOption_ChannelTypes
+  name: ChannelTypes
+  nameWithType: ApplicationCommandOption.ChannelTypes
+  fullName: Remora.Discord.API.Objects.ApplicationCommandOption.ChannelTypes
+- uid: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.ChannelTypes
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.ChannelTypes
+  parent: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption
+  href: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.html#Remora_Discord_API_Abstractions_Objects_IApplicationCommandOption_ChannelTypes
+  name: ChannelTypes
+  nameWithType: IApplicationCommandOption.ChannelTypes
+  fullName: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.ChannelTypes
+- uid: Remora.Discord.API.Abstractions.Objects.ApplicationCommandOptionType.Integer
+  commentId: F:Remora.Discord.API.Abstractions.Objects.ApplicationCommandOptionType.Integer
+  href: Remora.Discord.API.Abstractions.Objects.ApplicationCommandOptionType.html#Remora_Discord_API_Abstractions_Objects_ApplicationCommandOptionType_Integer
+  name: Integer
+  nameWithType: ApplicationCommandOptionType.Integer
+  fullName: Remora.Discord.API.Abstractions.Objects.ApplicationCommandOptionType.Integer
+- uid: Remora.Discord.API.Abstractions.Objects.ApplicationCommandOptionType.Number
+  commentId: F:Remora.Discord.API.Abstractions.Objects.ApplicationCommandOptionType.Number
+  href: Remora.Discord.API.Abstractions.Objects.ApplicationCommandOptionType.html#Remora_Discord_API_Abstractions_Objects_ApplicationCommandOptionType_Number
+  name: Number
+  nameWithType: ApplicationCommandOptionType.Number
+  fullName: Remora.Discord.API.Abstractions.Objects.ApplicationCommandOptionType.Number
+- uid: Remora.Discord.API.Objects.ApplicationCommandOption.MinValue*
+  commentId: Overload:Remora.Discord.API.Objects.ApplicationCommandOption.MinValue
+  href: Remora.Discord.API.Objects.ApplicationCommandOption.html#Remora_Discord_API_Objects_ApplicationCommandOption_MinValue
+  name: MinValue
+  nameWithType: ApplicationCommandOption.MinValue
+  fullName: Remora.Discord.API.Objects.ApplicationCommandOption.MinValue
+- uid: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.MinValue
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.MinValue
+  parent: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption
+  href: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.html#Remora_Discord_API_Abstractions_Objects_IApplicationCommandOption_MinValue
+  name: MinValue
+  nameWithType: IApplicationCommandOption.MinValue
+  fullName: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.MinValue
+- uid: Remora.Discord.API.Objects.ApplicationCommandOption.MaxValue*
+  commentId: Overload:Remora.Discord.API.Objects.ApplicationCommandOption.MaxValue
+  href: Remora.Discord.API.Objects.ApplicationCommandOption.html#Remora_Discord_API_Objects_ApplicationCommandOption_MaxValue
+  name: MaxValue
+  nameWithType: ApplicationCommandOption.MaxValue
+  fullName: Remora.Discord.API.Objects.ApplicationCommandOption.MaxValue
+- uid: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.MaxValue
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.MaxValue
+  parent: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption
+  href: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.html#Remora_Discord_API_Abstractions_Objects_IApplicationCommandOption_MaxValue
+  name: MaxValue
+  nameWithType: IApplicationCommandOption.MaxValue
+  fullName: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.MaxValue
+- uid: Remora.Discord.API.Objects.ApplicationCommandOption.EnableAutocomplete*
+  commentId: Overload:Remora.Discord.API.Objects.ApplicationCommandOption.EnableAutocomplete
+  href: Remora.Discord.API.Objects.ApplicationCommandOption.html#Remora_Discord_API_Objects_ApplicationCommandOption_EnableAutocomplete
+  name: EnableAutocomplete
+  nameWithType: ApplicationCommandOption.EnableAutocomplete
+  fullName: Remora.Discord.API.Objects.ApplicationCommandOption.EnableAutocomplete
+- uid: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.EnableAutocomplete
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.EnableAutocomplete
+  parent: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption
+  href: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.html#Remora_Discord_API_Abstractions_Objects_IApplicationCommandOption_EnableAutocomplete
+  name: EnableAutocomplete
+  nameWithType: IApplicationCommandOption.EnableAutocomplete
+  fullName: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.EnableAutocomplete
+- uid: Remora.Discord.API.Objects.ApplicationCommandOption.NameLocalizations*
+  commentId: Overload:Remora.Discord.API.Objects.ApplicationCommandOption.NameLocalizations
+  href: Remora.Discord.API.Objects.ApplicationCommandOption.html#Remora_Discord_API_Objects_ApplicationCommandOption_NameLocalizations
+  name: NameLocalizations
+  nameWithType: ApplicationCommandOption.NameLocalizations
+  fullName: Remora.Discord.API.Objects.ApplicationCommandOption.NameLocalizations
+- uid: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.NameLocalizations
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.NameLocalizations
+  parent: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption
+  href: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.html#Remora_Discord_API_Abstractions_Objects_IApplicationCommandOption_NameLocalizations
+  name: NameLocalizations
+  nameWithType: IApplicationCommandOption.NameLocalizations
+  fullName: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.NameLocalizations
+- uid: Remora.Discord.API.Objects.ApplicationCommandOption.NameLocalized*
+  commentId: Overload:Remora.Discord.API.Objects.ApplicationCommandOption.NameLocalized
+  href: Remora.Discord.API.Objects.ApplicationCommandOption.html#Remora_Discord_API_Objects_ApplicationCommandOption_NameLocalized
+  name: NameLocalized
+  nameWithType: ApplicationCommandOption.NameLocalized
+  fullName: Remora.Discord.API.Objects.ApplicationCommandOption.NameLocalized
+- uid: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.NameLocalized
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.NameLocalized
+  parent: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption
+  href: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.html#Remora_Discord_API_Abstractions_Objects_IApplicationCommandOption_NameLocalized
+  name: NameLocalized
+  nameWithType: IApplicationCommandOption.NameLocalized
+  fullName: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.NameLocalized
+- uid: Remora.Discord.API.Objects.ApplicationCommandOption.DescriptionLocalizations*
+  commentId: Overload:Remora.Discord.API.Objects.ApplicationCommandOption.DescriptionLocalizations
+  href: Remora.Discord.API.Objects.ApplicationCommandOption.html#Remora_Discord_API_Objects_ApplicationCommandOption_DescriptionLocalizations
+  name: DescriptionLocalizations
+  nameWithType: ApplicationCommandOption.DescriptionLocalizations
+  fullName: Remora.Discord.API.Objects.ApplicationCommandOption.DescriptionLocalizations
+- uid: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.DescriptionLocalizations
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.DescriptionLocalizations
+  parent: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption
+  href: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.html#Remora_Discord_API_Abstractions_Objects_IApplicationCommandOption_DescriptionLocalizations
+  name: DescriptionLocalizations
+  nameWithType: IApplicationCommandOption.DescriptionLocalizations
+  fullName: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.DescriptionLocalizations
+- uid: Remora.Discord.API.Objects.ApplicationCommandOption.DescriptionLocalized*
+  commentId: Overload:Remora.Discord.API.Objects.ApplicationCommandOption.DescriptionLocalized
+  href: Remora.Discord.API.Objects.ApplicationCommandOption.html#Remora_Discord_API_Objects_ApplicationCommandOption_DescriptionLocalized
+  name: DescriptionLocalized
+  nameWithType: ApplicationCommandOption.DescriptionLocalized
+  fullName: Remora.Discord.API.Objects.ApplicationCommandOption.DescriptionLocalized
+- uid: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.DescriptionLocalized
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.DescriptionLocalized
+  parent: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption
+  href: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.html#Remora_Discord_API_Abstractions_Objects_IApplicationCommandOption_DescriptionLocalized
+  name: DescriptionLocalized
+  nameWithType: IApplicationCommandOption.DescriptionLocalized
+  fullName: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.DescriptionLocalized
+- uid: Remora.Discord.API.Abstractions.Objects.ApplicationCommandOptionType.String
+  commentId: F:Remora.Discord.API.Abstractions.Objects.ApplicationCommandOptionType.String
+  href: Remora.Discord.API.Abstractions.Objects.ApplicationCommandOptionType.html#Remora_Discord_API_Abstractions_Objects_ApplicationCommandOptionType_String
+  name: String
+  nameWithType: ApplicationCommandOptionType.String
+  fullName: Remora.Discord.API.Abstractions.Objects.ApplicationCommandOptionType.String
+- uid: Remora.Discord.API.Objects.ApplicationCommandOption.MinLength*
+  commentId: Overload:Remora.Discord.API.Objects.ApplicationCommandOption.MinLength
+  href: Remora.Discord.API.Objects.ApplicationCommandOption.html#Remora_Discord_API_Objects_ApplicationCommandOption_MinLength
+  name: MinLength
+  nameWithType: ApplicationCommandOption.MinLength
+  fullName: Remora.Discord.API.Objects.ApplicationCommandOption.MinLength
+- uid: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.MinLength
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.MinLength
+  parent: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption
+  href: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.html#Remora_Discord_API_Abstractions_Objects_IApplicationCommandOption_MinLength
+  name: MinLength
+  nameWithType: IApplicationCommandOption.MinLength
+  fullName: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.MinLength
+- uid: Remora.Discord.API.Objects.ApplicationCommandOption.MaxLength*
+  commentId: Overload:Remora.Discord.API.Objects.ApplicationCommandOption.MaxLength
+  href: Remora.Discord.API.Objects.ApplicationCommandOption.html#Remora_Discord_API_Objects_ApplicationCommandOption_MaxLength
+  name: MaxLength
+  nameWithType: ApplicationCommandOption.MaxLength
+  fullName: Remora.Discord.API.Objects.ApplicationCommandOption.MaxLength
+- uid: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.MaxLength
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.MaxLength
+  parent: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption
+  href: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.html#Remora_Discord_API_Abstractions_Objects_IApplicationCommandOption_MaxLength
+  name: MaxLength
+  nameWithType: IApplicationCommandOption.MaxLength
+  fullName: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOption.MaxLength

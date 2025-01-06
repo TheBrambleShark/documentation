@@ -1,0 +1,271 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationAction
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IAutoModerationAction
+  id: IAutoModerationAction
+  parent: Remora.Discord.API.Abstractions.Objects
+  children:
+  - Remora.Discord.API.Abstractions.Objects.IAutoModerationAction.Metadata
+  - Remora.Discord.API.Abstractions.Objects.IAutoModerationAction.Type
+  langs:
+  - csharp
+  - vb
+  name: IAutoModerationAction
+  nameWithType: IAutoModerationAction
+  fullName: Remora.Discord.API.Abstractions.Objects.IAutoModerationAction
+  type: Interface
+  source:
+    id: IAutoModerationAction
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\AutoModeration\IAutoModerationAction.cs
+    startLine: 30
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: An action which will execute whenever a rule is triggered.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public interface IAutoModerationAction
+    content.vb: >-
+      <PublicAPI>
+
+      Public Interface IAutoModerationAction
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationAction.Type
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IAutoModerationAction.Type
+  id: Type
+  parent: Remora.Discord.API.Abstractions.Objects.IAutoModerationAction
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: IAutoModerationAction.Type
+  fullName: Remora.Discord.API.Abstractions.Objects.IAutoModerationAction.Type
+  type: Property
+  source:
+    id: Type
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\AutoModeration\IAutoModerationAction.cs
+    startLine: 36
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the type of the action.
+  example: []
+  syntax:
+    content: AutoModerationActionType Type { get; }
+    parameters: []
+    return:
+      type: Remora.Discord.API.Abstractions.Objects.AutoModerationActionType
+    content.vb: ReadOnly Property Type As AutoModerationActionType
+  overload: Remora.Discord.API.Abstractions.Objects.IAutoModerationAction.Type*
+- uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationAction.Metadata
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IAutoModerationAction.Metadata
+  id: Metadata
+  parent: Remora.Discord.API.Abstractions.Objects.IAutoModerationAction
+  langs:
+  - csharp
+  - vb
+  name: Metadata
+  nameWithType: IAutoModerationAction.Metadata
+  fullName: Remora.Discord.API.Abstractions.Objects.IAutoModerationAction.Metadata
+  type: Property
+  source:
+    id: Metadata
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\AutoModeration\IAutoModerationAction.cs
+    startLine: 46
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets additional metadata needed during execution for this specific action type.
+  remarks: >-
+    This property can be omitted based on the <xref href="Remora.Discord.API.Abstractions.Objects.IAutoModerationAction.Type" data-throw-if-not-resolved="false"></xref>. See the associated action type in
+
+    <xref href="Remora.Discord.API.Abstractions.Objects.IAutoModerationActionMetadata" data-throw-if-not-resolved="false"></xref> to understand which <xref href="Remora.Discord.API.Abstractions.Objects.IAutoModerationAction.Type" data-throw-if-not-resolved="false"></xref> values require metadata
+
+    to be set.
+  example: []
+  syntax:
+    content: Optional<IAutoModerationActionMetadata> Metadata { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IAutoModerationActionMetadata}
+    content.vb: ReadOnly Property Metadata As [Optional](Of IAutoModerationActionMetadata)
+  overload: Remora.Discord.API.Abstractions.Objects.IAutoModerationAction.Metadata*
+references:
+- uid: Remora.Discord.API.Abstractions.Objects
+  commentId: N:Remora.Discord.API.Abstractions.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Objects
+  nameWithType: Remora.Discord.API.Abstractions.Objects
+  fullName: Remora.Discord.API.Abstractions.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+- uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationAction.Type*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IAutoModerationAction.Type
+  href: Remora.Discord.API.Abstractions.Objects.IAutoModerationAction.html#Remora_Discord_API_Abstractions_Objects_IAutoModerationAction_Type
+  name: Type
+  nameWithType: IAutoModerationAction.Type
+  fullName: Remora.Discord.API.Abstractions.Objects.IAutoModerationAction.Type
+- uid: Remora.Discord.API.Abstractions.Objects.AutoModerationActionType
+  commentId: T:Remora.Discord.API.Abstractions.Objects.AutoModerationActionType
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.AutoModerationActionType.html
+  name: AutoModerationActionType
+  nameWithType: AutoModerationActionType
+  fullName: Remora.Discord.API.Abstractions.Objects.AutoModerationActionType
+- uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationAction.Type
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IAutoModerationAction.Type
+  parent: Remora.Discord.API.Abstractions.Objects.IAutoModerationAction
+  href: Remora.Discord.API.Abstractions.Objects.IAutoModerationAction.html#Remora_Discord_API_Abstractions_Objects_IAutoModerationAction_Type
+  name: Type
+  nameWithType: IAutoModerationAction.Type
+  fullName: Remora.Discord.API.Abstractions.Objects.IAutoModerationAction.Type
+- uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationActionMetadata
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IAutoModerationActionMetadata
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IAutoModerationActionMetadata.html
+  name: IAutoModerationActionMetadata
+  nameWithType: IAutoModerationActionMetadata
+  fullName: Remora.Discord.API.Abstractions.Objects.IAutoModerationActionMetadata
+- uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationAction.Metadata*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IAutoModerationAction.Metadata
+  href: Remora.Discord.API.Abstractions.Objects.IAutoModerationAction.html#Remora_Discord_API_Abstractions_Objects_IAutoModerationAction_Metadata
+  name: Metadata
+  nameWithType: IAutoModerationAction.Metadata
+  fullName: Remora.Discord.API.Abstractions.Objects.IAutoModerationAction.Metadata
+- uid: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IAutoModerationActionMetadata}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IAutoModerationActionMetadata}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: Remora.Discord.API.Abstractions.Objects.IAutoModerationActionMetadata.html
+  name: Optional<IAutoModerationActionMetadata>
+  nameWithType: Optional<IAutoModerationActionMetadata>
+  fullName: Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IAutoModerationActionMetadata>
+  nameWithType.vb: Optional(Of IAutoModerationActionMetadata)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IAutoModerationActionMetadata)
+  name.vb: Optional(Of IAutoModerationActionMetadata)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationActionMetadata
+    name: IAutoModerationActionMetadata
+    href: Remora.Discord.API.Abstractions.Objects.IAutoModerationActionMetadata.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationActionMetadata
+    name: IAutoModerationActionMetadata
+    href: Remora.Discord.API.Abstractions.Objects.IAutoModerationActionMetadata.html
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationAction
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IAutoModerationAction
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IAutoModerationAction.html
+  name: IAutoModerationAction
+  nameWithType: IAutoModerationAction
+  fullName: Remora.Discord.API.Abstractions.Objects.IAutoModerationAction
+- uid: Remora.Rest.Core.Optional`1
+  commentId: T:Remora.Rest.Core.Optional`1
+  isExternal: true
+  name: Optional<TValue>
+  nameWithType: Optional<TValue>
+  fullName: Remora.Rest.Core.Optional<TValue>
+  nameWithType.vb: Optional(Of TValue)
+  fullName.vb: Remora.Rest.Core.Optional(Of TValue)
+  name.vb: Optional(Of TValue)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true

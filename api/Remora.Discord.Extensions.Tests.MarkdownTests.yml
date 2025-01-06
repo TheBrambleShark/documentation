@@ -1,0 +1,2000 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.Extensions.Tests.MarkdownTests
+  commentId: T:Remora.Discord.Extensions.Tests.MarkdownTests
+  id: MarkdownTests
+  parent: Remora.Discord.Extensions.Tests
+  children:
+  - Remora.Discord.Extensions.Tests.MarkdownTests.BlockCodeSuccess(System.String)
+  - Remora.Discord.Extensions.Tests.MarkdownTests.BlockCodeWithLanguageSuccess(System.String,System.String)
+  - Remora.Discord.Extensions.Tests.MarkdownTests.BlockQuoteSuccess(System.String)
+  - Remora.Discord.Extensions.Tests.MarkdownTests.BoldSuccess(System.String)
+  - Remora.Discord.Extensions.Tests.MarkdownTests.EscapeUrlWithStringSuccess(System.String)
+  - Remora.Discord.Extensions.Tests.MarkdownTests.EscapeUrlWithUriSuccess(System.Uri)
+  - Remora.Discord.Extensions.Tests.MarkdownTests.HyperlinkWithTextAndUriSuccess(System.String,System.Uri)
+  - Remora.Discord.Extensions.Tests.MarkdownTests.HyperlinkWithTextAndUrlSuccess(System.String,System.String)
+  - Remora.Discord.Extensions.Tests.MarkdownTests.HyperlinkWithUriSuccess(System.Uri)
+  - Remora.Discord.Extensions.Tests.MarkdownTests.HyperlinkWithUrlSuccess(System.String)
+  - Remora.Discord.Extensions.Tests.MarkdownTests.InlineCodeSuccess(System.String)
+  - Remora.Discord.Extensions.Tests.MarkdownTests.ItaliciseSuccess(System.String)
+  - Remora.Discord.Extensions.Tests.MarkdownTests.SampleTextWithUriTestData
+  - Remora.Discord.Extensions.Tests.MarkdownTests.SampleUriTestData
+  - Remora.Discord.Extensions.Tests.MarkdownTests.SpoilerSuccess(System.String)
+  - Remora.Discord.Extensions.Tests.MarkdownTests.StrikethroughSuccess(System.String)
+  - Remora.Discord.Extensions.Tests.MarkdownTests.TimestampWithUnixTimestampAndTimestampStyleSuccess(System.Int64,System.Nullable{Remora.Discord.Extensions.Formatting.TimestampStyle})
+  - Remora.Discord.Extensions.Tests.MarkdownTests.TimestampWithUnixTimestampSuccess(System.Int64)
+  - Remora.Discord.Extensions.Tests.MarkdownTests.UnderlineSuccess(System.String)
+  langs:
+  - csharp
+  - vb
+  name: MarkdownTests
+  nameWithType: MarkdownTests
+  fullName: Remora.Discord.Extensions.Tests.MarkdownTests
+  type: Class
+  source:
+    id: MarkdownTests
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Tests\Remora.Discord.Extensions.Tests\MarkdownTests.cs
+    startLine: 32
+  assemblies:
+  - Remora.Discord.Extensions.Tests
+  namespace: Remora.Discord.Extensions.Tests
+  summary: Tests to ensure the <xref href="Remora.Discord.Extensions.Formatting.Markdown" data-throw-if-not-resolved="false"></xref> formats inputs correctly to Discord markdown standards.
+  example: []
+  syntax:
+    content: public class MarkdownTests
+    content.vb: Public Class MarkdownTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Remora.Discord.Extensions.Tests.MarkdownTests.BoldSuccess(System.String)
+  commentId: M:Remora.Discord.Extensions.Tests.MarkdownTests.BoldSuccess(System.String)
+  id: BoldSuccess(System.String)
+  parent: Remora.Discord.Extensions.Tests.MarkdownTests
+  langs:
+  - csharp
+  - vb
+  name: BoldSuccess(string)
+  nameWithType: MarkdownTests.BoldSuccess(string)
+  fullName: Remora.Discord.Extensions.Tests.MarkdownTests.BoldSuccess(string)
+  type: Method
+  source:
+    id: BoldSuccess
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Tests\Remora.Discord.Extensions.Tests\MarkdownTests.cs
+    startLine: 38
+  assemblies:
+  - Remora.Discord.Extensions.Tests
+  namespace: Remora.Discord.Extensions.Tests
+  summary: Tests to see if the <xref href="Remora.Discord.Extensions.Formatting.Markdown.Bold(System.String)" data-throw-if-not-resolved="false"></xref> method bolds input text based on Discord's markdown format.
+  example: []
+  syntax:
+    content: >-
+      [Theory]
+
+      [InlineData(new object[] { "Code Geass: Hangyaku no Lelouch" })]
+
+      [InlineData(new object[] { "宇宙戦艦ヤマト2199" })]
+
+      public void BoldSuccess(string text)
+    parameters:
+    - id: text
+      type: System.String
+      description: The input text to format.
+    content.vb: >-
+      <Theory>
+
+      <InlineData(New Object() { "Code Geass: Hangyaku no Lelouch" })>
+
+      <InlineData(New Object() { "宇宙戦艦ヤマト2199" })>
+
+      Public Sub BoldSuccess(text As String)
+  overload: Remora.Discord.Extensions.Tests.MarkdownTests.BoldSuccess*
+  attributes:
+  - type: Xunit.TheoryAttribute
+    ctor: Xunit.TheoryAttribute.#ctor
+    arguments: []
+  nameWithType.vb: MarkdownTests.BoldSuccess(String)
+  fullName.vb: Remora.Discord.Extensions.Tests.MarkdownTests.BoldSuccess(String)
+  name.vb: BoldSuccess(String)
+- uid: Remora.Discord.Extensions.Tests.MarkdownTests.ItaliciseSuccess(System.String)
+  commentId: M:Remora.Discord.Extensions.Tests.MarkdownTests.ItaliciseSuccess(System.String)
+  id: ItaliciseSuccess(System.String)
+  parent: Remora.Discord.Extensions.Tests.MarkdownTests
+  langs:
+  - csharp
+  - vb
+  name: ItaliciseSuccess(string)
+  nameWithType: MarkdownTests.ItaliciseSuccess(string)
+  fullName: Remora.Discord.Extensions.Tests.MarkdownTests.ItaliciseSuccess(string)
+  type: Method
+  source:
+    id: ItaliciseSuccess
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Tests\Remora.Discord.Extensions.Tests\MarkdownTests.cs
+    startLine: 53
+  assemblies:
+  - Remora.Discord.Extensions.Tests
+  namespace: Remora.Discord.Extensions.Tests
+  summary: >-
+    Tests to see if the <xref href="Remora.Discord.Extensions.Formatting.Markdown.Italicise(System.String)" data-throw-if-not-resolved="false"></xref> method italicises input text based on Discord's markdown
+
+    format.
+  example: []
+  syntax:
+    content: >-
+      [Theory]
+
+      [InlineData(new object[] { "Code Geass: Hangyaku no Lelouch" })]
+
+      [InlineData(new object[] { "宇宙戦艦ヤマト2199" })]
+
+      public void ItaliciseSuccess(string text)
+    parameters:
+    - id: text
+      type: System.String
+      description: The input text to format.
+    content.vb: >-
+      <Theory>
+
+      <InlineData(New Object() { "Code Geass: Hangyaku no Lelouch" })>
+
+      <InlineData(New Object() { "宇宙戦艦ヤマト2199" })>
+
+      Public Sub ItaliciseSuccess(text As String)
+  overload: Remora.Discord.Extensions.Tests.MarkdownTests.ItaliciseSuccess*
+  attributes:
+  - type: Xunit.TheoryAttribute
+    ctor: Xunit.TheoryAttribute.#ctor
+    arguments: []
+  nameWithType.vb: MarkdownTests.ItaliciseSuccess(String)
+  fullName.vb: Remora.Discord.Extensions.Tests.MarkdownTests.ItaliciseSuccess(String)
+  name.vb: ItaliciseSuccess(String)
+- uid: Remora.Discord.Extensions.Tests.MarkdownTests.UnderlineSuccess(System.String)
+  commentId: M:Remora.Discord.Extensions.Tests.MarkdownTests.UnderlineSuccess(System.String)
+  id: UnderlineSuccess(System.String)
+  parent: Remora.Discord.Extensions.Tests.MarkdownTests
+  langs:
+  - csharp
+  - vb
+  name: UnderlineSuccess(string)
+  nameWithType: MarkdownTests.UnderlineSuccess(string)
+  fullName: Remora.Discord.Extensions.Tests.MarkdownTests.UnderlineSuccess(string)
+  type: Method
+  source:
+    id: UnderlineSuccess
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Tests\Remora.Discord.Extensions.Tests\MarkdownTests.cs
+    startLine: 68
+  assemblies:
+  - Remora.Discord.Extensions.Tests
+  namespace: Remora.Discord.Extensions.Tests
+  summary: >-
+    Tests to see if the <xref href="Remora.Discord.Extensions.Formatting.Markdown.Underline(System.String)" data-throw-if-not-resolved="false"></xref> method underlines input text based on Discord's markdown
+
+    format.
+  example: []
+  syntax:
+    content: >-
+      [Theory]
+
+      [InlineData(new object[] { "Code Geass: Hangyaku no Lelouch" })]
+
+      [InlineData(new object[] { "宇宙戦艦ヤマト2199" })]
+
+      public void UnderlineSuccess(string text)
+    parameters:
+    - id: text
+      type: System.String
+      description: The input text to format.
+    content.vb: >-
+      <Theory>
+
+      <InlineData(New Object() { "Code Geass: Hangyaku no Lelouch" })>
+
+      <InlineData(New Object() { "宇宙戦艦ヤマト2199" })>
+
+      Public Sub UnderlineSuccess(text As String)
+  overload: Remora.Discord.Extensions.Tests.MarkdownTests.UnderlineSuccess*
+  attributes:
+  - type: Xunit.TheoryAttribute
+    ctor: Xunit.TheoryAttribute.#ctor
+    arguments: []
+  nameWithType.vb: MarkdownTests.UnderlineSuccess(String)
+  fullName.vb: Remora.Discord.Extensions.Tests.MarkdownTests.UnderlineSuccess(String)
+  name.vb: UnderlineSuccess(String)
+- uid: Remora.Discord.Extensions.Tests.MarkdownTests.StrikethroughSuccess(System.String)
+  commentId: M:Remora.Discord.Extensions.Tests.MarkdownTests.StrikethroughSuccess(System.String)
+  id: StrikethroughSuccess(System.String)
+  parent: Remora.Discord.Extensions.Tests.MarkdownTests
+  langs:
+  - csharp
+  - vb
+  name: StrikethroughSuccess(string)
+  nameWithType: MarkdownTests.StrikethroughSuccess(string)
+  fullName: Remora.Discord.Extensions.Tests.MarkdownTests.StrikethroughSuccess(string)
+  type: Method
+  source:
+    id: StrikethroughSuccess
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Tests\Remora.Discord.Extensions.Tests\MarkdownTests.cs
+    startLine: 83
+  assemblies:
+  - Remora.Discord.Extensions.Tests
+  namespace: Remora.Discord.Extensions.Tests
+  summary: >-
+    Tests to see if the <xref href="Remora.Discord.Extensions.Formatting.Markdown.Strikethrough(System.String)" data-throw-if-not-resolved="false"></xref> method will strikethrough input text based on Discord's
+
+    markdown format.
+  example: []
+  syntax:
+    content: >-
+      [Theory]
+
+      [InlineData(new object[] { "Code Geass: Hangyaku no Lelouch" })]
+
+      [InlineData(new object[] { "宇宙戦艦ヤマト2199" })]
+
+      public void StrikethroughSuccess(string text)
+    parameters:
+    - id: text
+      type: System.String
+      description: The input text to format.
+    content.vb: >-
+      <Theory>
+
+      <InlineData(New Object() { "Code Geass: Hangyaku no Lelouch" })>
+
+      <InlineData(New Object() { "宇宙戦艦ヤマト2199" })>
+
+      Public Sub StrikethroughSuccess(text As String)
+  overload: Remora.Discord.Extensions.Tests.MarkdownTests.StrikethroughSuccess*
+  attributes:
+  - type: Xunit.TheoryAttribute
+    ctor: Xunit.TheoryAttribute.#ctor
+    arguments: []
+  nameWithType.vb: MarkdownTests.StrikethroughSuccess(String)
+  fullName.vb: Remora.Discord.Extensions.Tests.MarkdownTests.StrikethroughSuccess(String)
+  name.vb: StrikethroughSuccess(String)
+- uid: Remora.Discord.Extensions.Tests.MarkdownTests.SpoilerSuccess(System.String)
+  commentId: M:Remora.Discord.Extensions.Tests.MarkdownTests.SpoilerSuccess(System.String)
+  id: SpoilerSuccess(System.String)
+  parent: Remora.Discord.Extensions.Tests.MarkdownTests
+  langs:
+  - csharp
+  - vb
+  name: SpoilerSuccess(string)
+  nameWithType: MarkdownTests.SpoilerSuccess(string)
+  fullName: Remora.Discord.Extensions.Tests.MarkdownTests.SpoilerSuccess(string)
+  type: Method
+  source:
+    id: SpoilerSuccess
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Tests\Remora.Discord.Extensions.Tests\MarkdownTests.cs
+    startLine: 98
+  assemblies:
+  - Remora.Discord.Extensions.Tests
+  namespace: Remora.Discord.Extensions.Tests
+  summary: >-
+    Tests to see if the <xref href="Remora.Discord.Extensions.Formatting.Markdown.Spoiler(System.String)" data-throw-if-not-resolved="false"></xref> method spoilers input text based on Discord's markdown
+
+    format.
+  example: []
+  syntax:
+    content: >-
+      [Theory]
+
+      [InlineData(new object[] { "Code Geass: Hangyaku no Lelouch" })]
+
+      [InlineData(new object[] { "宇宙戦艦ヤマト2199" })]
+
+      public void SpoilerSuccess(string text)
+    parameters:
+    - id: text
+      type: System.String
+      description: The input text to format.
+    content.vb: >-
+      <Theory>
+
+      <InlineData(New Object() { "Code Geass: Hangyaku no Lelouch" })>
+
+      <InlineData(New Object() { "宇宙戦艦ヤマト2199" })>
+
+      Public Sub SpoilerSuccess(text As String)
+  overload: Remora.Discord.Extensions.Tests.MarkdownTests.SpoilerSuccess*
+  attributes:
+  - type: Xunit.TheoryAttribute
+    ctor: Xunit.TheoryAttribute.#ctor
+    arguments: []
+  nameWithType.vb: MarkdownTests.SpoilerSuccess(String)
+  fullName.vb: Remora.Discord.Extensions.Tests.MarkdownTests.SpoilerSuccess(String)
+  name.vb: SpoilerSuccess(String)
+- uid: Remora.Discord.Extensions.Tests.MarkdownTests.InlineCodeSuccess(System.String)
+  commentId: M:Remora.Discord.Extensions.Tests.MarkdownTests.InlineCodeSuccess(System.String)
+  id: InlineCodeSuccess(System.String)
+  parent: Remora.Discord.Extensions.Tests.MarkdownTests
+  langs:
+  - csharp
+  - vb
+  name: InlineCodeSuccess(string)
+  nameWithType: MarkdownTests.InlineCodeSuccess(string)
+  fullName: Remora.Discord.Extensions.Tests.MarkdownTests.InlineCodeSuccess(string)
+  type: Method
+  source:
+    id: InlineCodeSuccess
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Tests\Remora.Discord.Extensions.Tests\MarkdownTests.cs
+    startLine: 113
+  assemblies:
+  - Remora.Discord.Extensions.Tests
+  namespace: Remora.Discord.Extensions.Tests
+  summary: >-
+    Tests to see if the <xref href="Remora.Discord.Extensions.Formatting.Markdown.InlineCode(System.String)" data-throw-if-not-resolved="false"></xref> method inline codes input text based on Discord's markdown
+
+    format.
+  example: []
+  syntax:
+    content: >-
+      [Theory]
+
+      [InlineData(new object[] { "Code Geass: Hangyaku no Lelouch" })]
+
+      [InlineData(new object[] { "宇宙戦艦ヤマト2199" })]
+
+      public void InlineCodeSuccess(string text)
+    parameters:
+    - id: text
+      type: System.String
+      description: The input text to format.
+    content.vb: >-
+      <Theory>
+
+      <InlineData(New Object() { "Code Geass: Hangyaku no Lelouch" })>
+
+      <InlineData(New Object() { "宇宙戦艦ヤマト2199" })>
+
+      Public Sub InlineCodeSuccess(text As String)
+  overload: Remora.Discord.Extensions.Tests.MarkdownTests.InlineCodeSuccess*
+  attributes:
+  - type: Xunit.TheoryAttribute
+    ctor: Xunit.TheoryAttribute.#ctor
+    arguments: []
+  nameWithType.vb: MarkdownTests.InlineCodeSuccess(String)
+  fullName.vb: Remora.Discord.Extensions.Tests.MarkdownTests.InlineCodeSuccess(String)
+  name.vb: InlineCodeSuccess(String)
+- uid: Remora.Discord.Extensions.Tests.MarkdownTests.BlockCodeSuccess(System.String)
+  commentId: M:Remora.Discord.Extensions.Tests.MarkdownTests.BlockCodeSuccess(System.String)
+  id: BlockCodeSuccess(System.String)
+  parent: Remora.Discord.Extensions.Tests.MarkdownTests
+  langs:
+  - csharp
+  - vb
+  name: BlockCodeSuccess(string)
+  nameWithType: MarkdownTests.BlockCodeSuccess(string)
+  fullName: Remora.Discord.Extensions.Tests.MarkdownTests.BlockCodeSuccess(string)
+  type: Method
+  source:
+    id: BlockCodeSuccess
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Tests\Remora.Discord.Extensions.Tests\MarkdownTests.cs
+    startLine: 128
+  assemblies:
+  - Remora.Discord.Extensions.Tests
+  namespace: Remora.Discord.Extensions.Tests
+  summary: >-
+    Tests to see if the <xref href="Remora.Discord.Extensions.Formatting.Markdown.BlockCode(System.String)" data-throw-if-not-resolved="false"></xref> method block codes input text based on Discord's
+
+    markdown format.
+  example: []
+  syntax:
+    content: >-
+      [Theory]
+
+      [InlineData(new object[] { "public static void Main(string args){}" })]
+
+      [InlineData(new object[] { "func main(){}" })]
+
+      public void BlockCodeSuccess(string text)
+    parameters:
+    - id: text
+      type: System.String
+      description: The input text to format.
+    content.vb: >-
+      <Theory>
+
+      <InlineData(New Object() { "public static void Main(string args){}" })>
+
+      <InlineData(New Object() { "func main(){}" })>
+
+      Public Sub BlockCodeSuccess(text As String)
+  overload: Remora.Discord.Extensions.Tests.MarkdownTests.BlockCodeSuccess*
+  attributes:
+  - type: Xunit.TheoryAttribute
+    ctor: Xunit.TheoryAttribute.#ctor
+    arguments: []
+  nameWithType.vb: MarkdownTests.BlockCodeSuccess(String)
+  fullName.vb: Remora.Discord.Extensions.Tests.MarkdownTests.BlockCodeSuccess(String)
+  name.vb: BlockCodeSuccess(String)
+- uid: Remora.Discord.Extensions.Tests.MarkdownTests.BlockCodeWithLanguageSuccess(System.String,System.String)
+  commentId: M:Remora.Discord.Extensions.Tests.MarkdownTests.BlockCodeWithLanguageSuccess(System.String,System.String)
+  id: BlockCodeWithLanguageSuccess(System.String,System.String)
+  parent: Remora.Discord.Extensions.Tests.MarkdownTests
+  langs:
+  - csharp
+  - vb
+  name: BlockCodeWithLanguageSuccess(string, string)
+  nameWithType: MarkdownTests.BlockCodeWithLanguageSuccess(string, string)
+  fullName: Remora.Discord.Extensions.Tests.MarkdownTests.BlockCodeWithLanguageSuccess(string, string)
+  type: Method
+  source:
+    id: BlockCodeWithLanguageSuccess
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Tests\Remora.Discord.Extensions.Tests\MarkdownTests.cs
+    startLine: 144
+  assemblies:
+  - Remora.Discord.Extensions.Tests
+  namespace: Remora.Discord.Extensions.Tests
+  summary: >-
+    Tests to see if the <xref href="Remora.Discord.Extensions.Formatting.Markdown.BlockCode(System.String%2cSystem.String)" data-throw-if-not-resolved="false"></xref> method block codes input text with a given
+
+    language based on Discord's markdown format.
+  example: []
+  syntax:
+    content: >-
+      [Theory]
+
+      [InlineData(new object[] { "public static void Main(string args){}", "cs" })]
+
+      [InlineData(new object[] { "func main(){}", "go" })]
+
+      public void BlockCodeWithLanguageSuccess(string text, string language)
+    parameters:
+    - id: text
+      type: System.String
+      description: The input text to format.
+    - id: language
+      type: System.String
+      description: The language for syntax highlighting.
+    content.vb: >-
+      <Theory>
+
+      <InlineData(New Object() { "public static void Main(string args){}", "cs" })>
+
+      <InlineData(New Object() { "func main(){}", "go" })>
+
+      Public Sub BlockCodeWithLanguageSuccess(text As String, language As String)
+  overload: Remora.Discord.Extensions.Tests.MarkdownTests.BlockCodeWithLanguageSuccess*
+  attributes:
+  - type: Xunit.TheoryAttribute
+    ctor: Xunit.TheoryAttribute.#ctor
+    arguments: []
+  nameWithType.vb: MarkdownTests.BlockCodeWithLanguageSuccess(String, String)
+  fullName.vb: Remora.Discord.Extensions.Tests.MarkdownTests.BlockCodeWithLanguageSuccess(String, String)
+  name.vb: BlockCodeWithLanguageSuccess(String, String)
+- uid: Remora.Discord.Extensions.Tests.MarkdownTests.BlockQuoteSuccess(System.String)
+  commentId: M:Remora.Discord.Extensions.Tests.MarkdownTests.BlockQuoteSuccess(System.String)
+  id: BlockQuoteSuccess(System.String)
+  parent: Remora.Discord.Extensions.Tests.MarkdownTests
+  langs:
+  - csharp
+  - vb
+  name: BlockQuoteSuccess(string)
+  nameWithType: MarkdownTests.BlockQuoteSuccess(string)
+  fullName: Remora.Discord.Extensions.Tests.MarkdownTests.BlockQuoteSuccess(string)
+  type: Method
+  source:
+    id: BlockQuoteSuccess
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Tests\Remora.Discord.Extensions.Tests\MarkdownTests.cs
+    startLine: 159
+  assemblies:
+  - Remora.Discord.Extensions.Tests
+  namespace: Remora.Discord.Extensions.Tests
+  summary: >-
+    Tests to see if the <xref href="Remora.Discord.Extensions.Formatting.Markdown.BlockQuote(System.String)" data-throw-if-not-resolved="false"></xref> method block quotes input text based on Discord's markdown
+
+    format.
+  example: []
+  syntax:
+    content: >-
+      [Theory]
+
+      [InlineData(new object[] { "Here lies a visitor from a distant star." })]
+
+      [InlineData(new object[] { "井の中の蛙、大海を知らず" })]
+
+      public void BlockQuoteSuccess(string text)
+    parameters:
+    - id: text
+      type: System.String
+      description: The input text to format.
+    content.vb: >-
+      <Theory>
+
+      <InlineData(New Object() { "Here lies a visitor from a distant star." })>
+
+      <InlineData(New Object() { "井の中の蛙、大海を知らず" })>
+
+      Public Sub BlockQuoteSuccess(text As String)
+  overload: Remora.Discord.Extensions.Tests.MarkdownTests.BlockQuoteSuccess*
+  attributes:
+  - type: Xunit.TheoryAttribute
+    ctor: Xunit.TheoryAttribute.#ctor
+    arguments: []
+  nameWithType.vb: MarkdownTests.BlockQuoteSuccess(String)
+  fullName.vb: Remora.Discord.Extensions.Tests.MarkdownTests.BlockQuoteSuccess(String)
+  name.vb: BlockQuoteSuccess(String)
+- uid: Remora.Discord.Extensions.Tests.MarkdownTests.EscapeUrlWithUriSuccess(System.Uri)
+  commentId: M:Remora.Discord.Extensions.Tests.MarkdownTests.EscapeUrlWithUriSuccess(System.Uri)
+  id: EscapeUrlWithUriSuccess(System.Uri)
+  parent: Remora.Discord.Extensions.Tests.MarkdownTests
+  langs:
+  - csharp
+  - vb
+  name: EscapeUrlWithUriSuccess(Uri)
+  nameWithType: MarkdownTests.EscapeUrlWithUriSuccess(Uri)
+  fullName: Remora.Discord.Extensions.Tests.MarkdownTests.EscapeUrlWithUriSuccess(System.Uri)
+  type: Method
+  source:
+    id: EscapeUrlWithUriSuccess
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Tests\Remora.Discord.Extensions.Tests\MarkdownTests.cs
+    startLine: 174
+  assemblies:
+  - Remora.Discord.Extensions.Tests
+  namespace: Remora.Discord.Extensions.Tests
+  summary: >-
+    Tests to see if the <xref href="Remora.Discord.Extensions.Formatting.Markdown.EscapeUrl(System.Uri)" data-throw-if-not-resolved="false"></xref> method escapes a <xref href="System.Uri" data-throw-if-not-resolved="false"></xref> based on Discord's
+
+    markdown format.
+  example: []
+  syntax:
+    content: >-
+      [Theory]
+
+      [MemberData("SampleUriTestData", new object[] { })]
+
+      public void EscapeUrlWithUriSuccess(Uri uri)
+    parameters:
+    - id: uri
+      type: System.Uri
+      description: The input uri to format.
+    content.vb: >-
+      <Theory>
+
+      <MemberData("SampleUriTestData", New Object() { })>
+
+      Public Sub EscapeUrlWithUriSuccess(uri As Uri)
+  overload: Remora.Discord.Extensions.Tests.MarkdownTests.EscapeUrlWithUriSuccess*
+  attributes:
+  - type: Xunit.TheoryAttribute
+    ctor: Xunit.TheoryAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.Extensions.Tests.MarkdownTests.EscapeUrlWithStringSuccess(System.String)
+  commentId: M:Remora.Discord.Extensions.Tests.MarkdownTests.EscapeUrlWithStringSuccess(System.String)
+  id: EscapeUrlWithStringSuccess(System.String)
+  parent: Remora.Discord.Extensions.Tests.MarkdownTests
+  langs:
+  - csharp
+  - vb
+  name: EscapeUrlWithStringSuccess(string)
+  nameWithType: MarkdownTests.EscapeUrlWithStringSuccess(string)
+  fullName: Remora.Discord.Extensions.Tests.MarkdownTests.EscapeUrlWithStringSuccess(string)
+  type: Method
+  source:
+    id: EscapeUrlWithStringSuccess
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Tests\Remora.Discord.Extensions.Tests\MarkdownTests.cs
+    startLine: 188
+  assemblies:
+  - Remora.Discord.Extensions.Tests
+  namespace: Remora.Discord.Extensions.Tests
+  summary: >-
+    Tests to see if the <xref href="Remora.Discord.Extensions.Formatting.Markdown.EscapeUrl(System.String)" data-throw-if-not-resolved="false"></xref> method escapes a URL based on Discord's markdown
+
+    format.
+  example: []
+  syntax:
+    content: >-
+      [Theory]
+
+      [InlineData(new object[] { "https://github.com/Nihlus/Remora.Discord" })]
+
+      [InlineData(new object[] { "https://leijisha.jp/" })]
+
+      public void EscapeUrlWithStringSuccess(string url)
+    parameters:
+    - id: url
+      type: System.String
+      description: The url to format.
+    content.vb: >-
+      <Theory>
+
+      <InlineData(New Object() { "https://github.com/Nihlus/Remora.Discord" })>
+
+      <InlineData(New Object() { "https://leijisha.jp/" })>
+
+      Public Sub EscapeUrlWithStringSuccess(url As String)
+  overload: Remora.Discord.Extensions.Tests.MarkdownTests.EscapeUrlWithStringSuccess*
+  attributes:
+  - type: Xunit.TheoryAttribute
+    ctor: Xunit.TheoryAttribute.#ctor
+    arguments: []
+  nameWithType.vb: MarkdownTests.EscapeUrlWithStringSuccess(String)
+  fullName.vb: Remora.Discord.Extensions.Tests.MarkdownTests.EscapeUrlWithStringSuccess(String)
+  name.vb: EscapeUrlWithStringSuccess(String)
+- uid: Remora.Discord.Extensions.Tests.MarkdownTests.HyperlinkWithUriSuccess(System.Uri)
+  commentId: M:Remora.Discord.Extensions.Tests.MarkdownTests.HyperlinkWithUriSuccess(System.Uri)
+  id: HyperlinkWithUriSuccess(System.Uri)
+  parent: Remora.Discord.Extensions.Tests.MarkdownTests
+  langs:
+  - csharp
+  - vb
+  name: HyperlinkWithUriSuccess(Uri)
+  nameWithType: MarkdownTests.HyperlinkWithUriSuccess(Uri)
+  fullName: Remora.Discord.Extensions.Tests.MarkdownTests.HyperlinkWithUriSuccess(System.Uri)
+  type: Method
+  source:
+    id: HyperlinkWithUriSuccess
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Tests\Remora.Discord.Extensions.Tests\MarkdownTests.cs
+    startLine: 204
+  assemblies:
+  - Remora.Discord.Extensions.Tests
+  namespace: Remora.Discord.Extensions.Tests
+  summary: >-
+    Tests to see if the <xref href="Remora.Discord.Extensions.Formatting.Markdown.Hyperlink(System.Uri)" data-throw-if-not-resolved="false"></xref> method hyperlinks a uri to itself based on Discord's
+
+    markdown
+
+    format.
+  example: []
+  syntax:
+    content: >-
+      [Theory]
+
+      [MemberData("SampleUriTestData", new object[] { })]
+
+      public void HyperlinkWithUriSuccess(Uri uri)
+    parameters:
+    - id: uri
+      type: System.Uri
+      description: The input uri to format.
+    content.vb: >-
+      <Theory>
+
+      <MemberData("SampleUriTestData", New Object() { })>
+
+      Public Sub HyperlinkWithUriSuccess(uri As Uri)
+  overload: Remora.Discord.Extensions.Tests.MarkdownTests.HyperlinkWithUriSuccess*
+  attributes:
+  - type: Xunit.TheoryAttribute
+    ctor: Xunit.TheoryAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.Extensions.Tests.MarkdownTests.HyperlinkWithUrlSuccess(System.String)
+  commentId: M:Remora.Discord.Extensions.Tests.MarkdownTests.HyperlinkWithUrlSuccess(System.String)
+  id: HyperlinkWithUrlSuccess(System.String)
+  parent: Remora.Discord.Extensions.Tests.MarkdownTests
+  langs:
+  - csharp
+  - vb
+  name: HyperlinkWithUrlSuccess(string)
+  nameWithType: MarkdownTests.HyperlinkWithUrlSuccess(string)
+  fullName: Remora.Discord.Extensions.Tests.MarkdownTests.HyperlinkWithUrlSuccess(string)
+  type: Method
+  source:
+    id: HyperlinkWithUrlSuccess
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Tests\Remora.Discord.Extensions.Tests\MarkdownTests.cs
+    startLine: 219
+  assemblies:
+  - Remora.Discord.Extensions.Tests
+  namespace: Remora.Discord.Extensions.Tests
+  summary: >-
+    Tests to see if the <xref href="Remora.Discord.Extensions.Formatting.Markdown.Hyperlink(System.String)" data-throw-if-not-resolved="false"></xref> method hyperlinks a url to itself based on
+
+    Discord's markdown
+
+    format.
+  example: []
+  syntax:
+    content: >-
+      [Theory]
+
+      [InlineData(new object[] { "https://github.com/Nihlus/Remora.Discord" })]
+
+      [InlineData(new object[] { "https://leijisha.jp/" })]
+
+      public void HyperlinkWithUrlSuccess(string url)
+    parameters:
+    - id: url
+      type: System.String
+      description: The input url to format.
+    content.vb: >-
+      <Theory>
+
+      <InlineData(New Object() { "https://github.com/Nihlus/Remora.Discord" })>
+
+      <InlineData(New Object() { "https://leijisha.jp/" })>
+
+      Public Sub HyperlinkWithUrlSuccess(url As String)
+  overload: Remora.Discord.Extensions.Tests.MarkdownTests.HyperlinkWithUrlSuccess*
+  attributes:
+  - type: Xunit.TheoryAttribute
+    ctor: Xunit.TheoryAttribute.#ctor
+    arguments: []
+  nameWithType.vb: MarkdownTests.HyperlinkWithUrlSuccess(String)
+  fullName.vb: Remora.Discord.Extensions.Tests.MarkdownTests.HyperlinkWithUrlSuccess(String)
+  name.vb: HyperlinkWithUrlSuccess(String)
+- uid: Remora.Discord.Extensions.Tests.MarkdownTests.HyperlinkWithTextAndUriSuccess(System.String,System.Uri)
+  commentId: M:Remora.Discord.Extensions.Tests.MarkdownTests.HyperlinkWithTextAndUriSuccess(System.String,System.Uri)
+  id: HyperlinkWithTextAndUriSuccess(System.String,System.Uri)
+  parent: Remora.Discord.Extensions.Tests.MarkdownTests
+  langs:
+  - csharp
+  - vb
+  name: HyperlinkWithTextAndUriSuccess(string, Uri)
+  nameWithType: MarkdownTests.HyperlinkWithTextAndUriSuccess(string, Uri)
+  fullName: Remora.Discord.Extensions.Tests.MarkdownTests.HyperlinkWithTextAndUriSuccess(string, System.Uri)
+  type: Method
+  source:
+    id: HyperlinkWithTextAndUriSuccess
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Tests\Remora.Discord.Extensions.Tests\MarkdownTests.cs
+    startLine: 235
+  assemblies:
+  - Remora.Discord.Extensions.Tests
+  namespace: Remora.Discord.Extensions.Tests
+  summary: >-
+    Tests to see if the <xref href="Remora.Discord.Extensions.Formatting.Markdown.Hyperlink(System.String)" data-throw-if-not-resolved="false"></xref> method hyperlinks a url to itself based on
+
+    Discord's markdown format.
+  example: []
+  syntax:
+    content: >-
+      [Theory]
+
+      [MemberData("SampleTextWithUriTestData", new object[] { })]
+
+      public void HyperlinkWithTextAndUriSuccess(string text, Uri uri)
+    parameters:
+    - id: text
+      type: System.String
+      description: The text to hyperlink to..
+    - id: uri
+      type: System.Uri
+      description: The input uri to format.
+    content.vb: >-
+      <Theory>
+
+      <MemberData("SampleTextWithUriTestData", New Object() { })>
+
+      Public Sub HyperlinkWithTextAndUriSuccess(text As String, uri As Uri)
+  overload: Remora.Discord.Extensions.Tests.MarkdownTests.HyperlinkWithTextAndUriSuccess*
+  attributes:
+  - type: Xunit.TheoryAttribute
+    ctor: Xunit.TheoryAttribute.#ctor
+    arguments: []
+  nameWithType.vb: MarkdownTests.HyperlinkWithTextAndUriSuccess(String, Uri)
+  fullName.vb: Remora.Discord.Extensions.Tests.MarkdownTests.HyperlinkWithTextAndUriSuccess(String, System.Uri)
+  name.vb: HyperlinkWithTextAndUriSuccess(String, Uri)
+- uid: Remora.Discord.Extensions.Tests.MarkdownTests.HyperlinkWithTextAndUrlSuccess(System.String,System.String)
+  commentId: M:Remora.Discord.Extensions.Tests.MarkdownTests.HyperlinkWithTextAndUrlSuccess(System.String,System.String)
+  id: HyperlinkWithTextAndUrlSuccess(System.String,System.String)
+  parent: Remora.Discord.Extensions.Tests.MarkdownTests
+  langs:
+  - csharp
+  - vb
+  name: HyperlinkWithTextAndUrlSuccess(string, string)
+  nameWithType: MarkdownTests.HyperlinkWithTextAndUrlSuccess(string, string)
+  fullName: Remora.Discord.Extensions.Tests.MarkdownTests.HyperlinkWithTextAndUrlSuccess(string, string)
+  type: Method
+  source:
+    id: HyperlinkWithTextAndUrlSuccess
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Tests\Remora.Discord.Extensions.Tests\MarkdownTests.cs
+    startLine: 250
+  assemblies:
+  - Remora.Discord.Extensions.Tests
+  namespace: Remora.Discord.Extensions.Tests
+  summary: >-
+    Tests to see if the <xref href="Remora.Discord.Extensions.Formatting.Markdown.Hyperlink(System.String)" data-throw-if-not-resolved="false"></xref> method hyperlinks a url to itself based on
+
+    Discord's markdown format.
+  example: []
+  syntax:
+    content: >-
+      [Theory]
+
+      [InlineData(new object[] { "GitHub: Remora.Discord", "https://github.com/Nihlus/Remora.Discord" })]
+
+      [InlineData(new object[] { "Leiji Matsumoto's Personal Page", "https://leijisha.jp/" })]
+
+      public void HyperlinkWithTextAndUrlSuccess(string text, string url)
+    parameters:
+    - id: text
+      type: System.String
+      description: The text to hyperlink to..
+    - id: url
+      type: System.String
+      description: The input uri to format.
+    content.vb: >-
+      <Theory>
+
+      <InlineData(New Object() { "GitHub: Remora.Discord", "https://github.com/Nihlus/Remora.Discord" })>
+
+      <InlineData(New Object() { "Leiji Matsumoto's Personal Page", "https://leijisha.jp/" })>
+
+      Public Sub HyperlinkWithTextAndUrlSuccess(text As String, url As String)
+  overload: Remora.Discord.Extensions.Tests.MarkdownTests.HyperlinkWithTextAndUrlSuccess*
+  attributes:
+  - type: Xunit.TheoryAttribute
+    ctor: Xunit.TheoryAttribute.#ctor
+    arguments: []
+  nameWithType.vb: MarkdownTests.HyperlinkWithTextAndUrlSuccess(String, String)
+  fullName.vb: Remora.Discord.Extensions.Tests.MarkdownTests.HyperlinkWithTextAndUrlSuccess(String, String)
+  name.vb: HyperlinkWithTextAndUrlSuccess(String, String)
+- uid: Remora.Discord.Extensions.Tests.MarkdownTests.TimestampWithUnixTimestampSuccess(System.Int64)
+  commentId: M:Remora.Discord.Extensions.Tests.MarkdownTests.TimestampWithUnixTimestampSuccess(System.Int64)
+  id: TimestampWithUnixTimestampSuccess(System.Int64)
+  parent: Remora.Discord.Extensions.Tests.MarkdownTests
+  langs:
+  - csharp
+  - vb
+  name: TimestampWithUnixTimestampSuccess(long)
+  nameWithType: MarkdownTests.TimestampWithUnixTimestampSuccess(long)
+  fullName: Remora.Discord.Extensions.Tests.MarkdownTests.TimestampWithUnixTimestampSuccess(long)
+  type: Method
+  source:
+    id: TimestampWithUnixTimestampSuccess
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Tests\Remora.Discord.Extensions.Tests\MarkdownTests.cs
+    startLine: 265
+  assemblies:
+  - Remora.Discord.Extensions.Tests
+  namespace: Remora.Discord.Extensions.Tests
+  summary: >-
+    Tests to see if the <xref href="Remora.Discord.Extensions.Formatting.Markdown.Timestamp(System.Int64%2cSystem.Nullable%7bRemora.Discord.Extensions.Formatting.TimestampStyle%7d)" data-throw-if-not-resolved="false"></xref> method formats a date based on
+
+    Discord's markdown format.
+  example: []
+  syntax:
+    content: >-
+      [Theory]
+
+      [InlineData(new object[] { 1156738695 })]
+
+      [InlineData(new object[] { 1590493200 })]
+
+      [InlineData(new object[] { 1052218560 })]
+
+      public void TimestampWithUnixTimestampSuccess(long unixTimestamp)
+    parameters:
+    - id: unixTimestamp
+      type: System.Int64
+      description: The time to format.
+    content.vb: >-
+      <Theory>
+
+      <InlineData(New Object() { 1156738695 })>
+
+      <InlineData(New Object() { 1590493200 })>
+
+      <InlineData(New Object() { 1052218560 })>
+
+      Public Sub TimestampWithUnixTimestampSuccess(unixTimestamp As Long)
+  overload: Remora.Discord.Extensions.Tests.MarkdownTests.TimestampWithUnixTimestampSuccess*
+  attributes:
+  - type: Xunit.TheoryAttribute
+    ctor: Xunit.TheoryAttribute.#ctor
+    arguments: []
+  nameWithType.vb: MarkdownTests.TimestampWithUnixTimestampSuccess(Long)
+  fullName.vb: Remora.Discord.Extensions.Tests.MarkdownTests.TimestampWithUnixTimestampSuccess(Long)
+  name.vb: TimestampWithUnixTimestampSuccess(Long)
+- uid: Remora.Discord.Extensions.Tests.MarkdownTests.TimestampWithUnixTimestampAndTimestampStyleSuccess(System.Int64,System.Nullable{Remora.Discord.Extensions.Formatting.TimestampStyle})
+  commentId: M:Remora.Discord.Extensions.Tests.MarkdownTests.TimestampWithUnixTimestampAndTimestampStyleSuccess(System.Int64,System.Nullable{Remora.Discord.Extensions.Formatting.TimestampStyle})
+  id: TimestampWithUnixTimestampAndTimestampStyleSuccess(System.Int64,System.Nullable{Remora.Discord.Extensions.Formatting.TimestampStyle})
+  parent: Remora.Discord.Extensions.Tests.MarkdownTests
+  langs:
+  - csharp
+  - vb
+  name: TimestampWithUnixTimestampAndTimestampStyleSuccess(long, TimestampStyle?)
+  nameWithType: MarkdownTests.TimestampWithUnixTimestampAndTimestampStyleSuccess(long, TimestampStyle?)
+  fullName: Remora.Discord.Extensions.Tests.MarkdownTests.TimestampWithUnixTimestampAndTimestampStyleSuccess(long, Remora.Discord.Extensions.Formatting.TimestampStyle?)
+  type: Method
+  source:
+    id: TimestampWithUnixTimestampAndTimestampStyleSuccess
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Tests\Remora.Discord.Extensions.Tests\MarkdownTests.cs
+    startLine: 282
+  assemblies:
+  - Remora.Discord.Extensions.Tests
+  namespace: Remora.Discord.Extensions.Tests
+  summary: >-
+    Tests to see if the <xref href="Remora.Discord.Extensions.Formatting.Markdown.Timestamp(System.Int64%2cSystem.Nullable%7bRemora.Discord.Extensions.Formatting.TimestampStyle%7d)" data-throw-if-not-resolved="false"></xref> method formats a date based on
+
+    Discord's markdown format.
+  example: []
+  syntax:
+    content: >-
+      [Theory]
+
+      [InlineData(new object[] { 1052218560, TimestampStyle.ShortTime })]
+
+      [InlineData(new object[] { 1052218560, TimestampStyle.LongTime })]
+
+      [InlineData(new object[] { 1052218560, TimestampStyle.ShortDate })]
+
+      [InlineData(new object[] { 1052218560, TimestampStyle.LongDate })]
+
+      [InlineData(new object[] { 1052218560, TimestampStyle.ShortDateTime })]
+
+      [InlineData(new object[] { 1052218560, TimestampStyle.LongDateTime })]
+
+      [InlineData(new object[] { 1052218560, TimestampStyle.RelativeTime })]
+
+      [InlineData(new object[] { 1052218560, null })]
+
+      public void TimestampWithUnixTimestampAndTimestampStyleSuccess(long unixTimestamp, TimestampStyle? timestampStyle)
+    parameters:
+    - id: unixTimestamp
+      type: System.Int64
+      description: The time to format.
+    - id: timestampStyle
+      type: System.Nullable{Remora.Discord.Extensions.Formatting.TimestampStyle}
+      description: The timestamp style.
+    content.vb: >-
+      <Theory>
+
+      <InlineData(New Object() { 1052218560, TimestampStyle.ShortTime })>
+
+      <InlineData(New Object() { 1052218560, TimestampStyle.LongTime })>
+
+      <InlineData(New Object() { 1052218560, TimestampStyle.ShortDate })>
+
+      <InlineData(New Object() { 1052218560, TimestampStyle.LongDate })>
+
+      <InlineData(New Object() { 1052218560, TimestampStyle.ShortDateTime })>
+
+      <InlineData(New Object() { 1052218560, TimestampStyle.LongDateTime })>
+
+      <InlineData(New Object() { 1052218560, TimestampStyle.RelativeTime })>
+
+      <InlineData(New Object() { 1052218560, Nothing })>
+
+      Public Sub TimestampWithUnixTimestampAndTimestampStyleSuccess(unixTimestamp As Long, timestampStyle As TimestampStyle?)
+  overload: Remora.Discord.Extensions.Tests.MarkdownTests.TimestampWithUnixTimestampAndTimestampStyleSuccess*
+  attributes:
+  - type: Xunit.TheoryAttribute
+    ctor: Xunit.TheoryAttribute.#ctor
+    arguments: []
+  nameWithType.vb: MarkdownTests.TimestampWithUnixTimestampAndTimestampStyleSuccess(Long, TimestampStyle?)
+  fullName.vb: Remora.Discord.Extensions.Tests.MarkdownTests.TimestampWithUnixTimestampAndTimestampStyleSuccess(Long, Remora.Discord.Extensions.Formatting.TimestampStyle?)
+  name.vb: TimestampWithUnixTimestampAndTimestampStyleSuccess(Long, TimestampStyle?)
+- uid: Remora.Discord.Extensions.Tests.MarkdownTests.SampleUriTestData
+  commentId: M:Remora.Discord.Extensions.Tests.MarkdownTests.SampleUriTestData
+  id: SampleUriTestData
+  parent: Remora.Discord.Extensions.Tests.MarkdownTests
+  langs:
+  - csharp
+  - vb
+  name: SampleUriTestData()
+  nameWithType: MarkdownTests.SampleUriTestData()
+  fullName: Remora.Discord.Extensions.Tests.MarkdownTests.SampleUriTestData()
+  type: Method
+  source:
+    id: SampleUriTestData
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Tests\Remora.Discord.Extensions.Tests\MarkdownTests.cs
+    startLine: 316
+  assemblies:
+  - Remora.Discord.Extensions.Tests
+  namespace: Remora.Discord.Extensions.Tests
+  summary: Generates sample uri test data.
+  example: []
+  syntax:
+    content: public static IEnumerable<object[]> SampleUriTestData()
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Object[]}
+      description: The generated test data.
+    content.vb: Public Shared Function SampleUriTestData() As IEnumerable(Of Object())
+  overload: Remora.Discord.Extensions.Tests.MarkdownTests.SampleUriTestData*
+- uid: Remora.Discord.Extensions.Tests.MarkdownTests.SampleTextWithUriTestData
+  commentId: M:Remora.Discord.Extensions.Tests.MarkdownTests.SampleTextWithUriTestData
+  id: SampleTextWithUriTestData
+  parent: Remora.Discord.Extensions.Tests.MarkdownTests
+  langs:
+  - csharp
+  - vb
+  name: SampleTextWithUriTestData()
+  nameWithType: MarkdownTests.SampleTextWithUriTestData()
+  fullName: Remora.Discord.Extensions.Tests.MarkdownTests.SampleTextWithUriTestData()
+  type: Method
+  source:
+    id: SampleTextWithUriTestData
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Tests\Remora.Discord.Extensions.Tests\MarkdownTests.cs
+    startLine: 328
+  assemblies:
+  - Remora.Discord.Extensions.Tests
+  namespace: Remora.Discord.Extensions.Tests
+  summary: Generates sample uri test data with an attributed text to hyperlink to.
+  example: []
+  syntax:
+    content: public static IEnumerable<object[]> SampleTextWithUriTestData()
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Object[]}
+      description: The generated test data.
+    content.vb: Public Shared Function SampleTextWithUriTestData() As IEnumerable(Of Object())
+  overload: Remora.Discord.Extensions.Tests.MarkdownTests.SampleTextWithUriTestData*
+references:
+- uid: Remora.Discord.Extensions.Formatting.Markdown
+  commentId: T:Remora.Discord.Extensions.Formatting.Markdown
+  href: Remora.Discord.Extensions.Formatting.Markdown.html
+  name: Markdown
+  nameWithType: Markdown
+  fullName: Remora.Discord.Extensions.Formatting.Markdown
+- uid: Remora.Discord.Extensions.Tests
+  commentId: N:Remora.Discord.Extensions.Tests
+  href: Remora.html
+  name: Remora.Discord.Extensions.Tests
+  nameWithType: Remora.Discord.Extensions.Tests
+  fullName: Remora.Discord.Extensions.Tests
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Extensions
+    name: Extensions
+    href: Remora.Discord.Extensions.html
+  - name: .
+  - uid: Remora.Discord.Extensions.Tests
+    name: Tests
+    href: Remora.Discord.Extensions.Tests.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Extensions
+    name: Extensions
+    href: Remora.Discord.Extensions.html
+  - name: .
+  - uid: Remora.Discord.Extensions.Tests
+    name: Tests
+    href: Remora.Discord.Extensions.Tests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.Extensions.Formatting.Markdown.Bold(System.String)
+  commentId: M:Remora.Discord.Extensions.Formatting.Markdown.Bold(System.String)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Bold(string)
+  nameWithType: Markdown.Bold(string)
+  fullName: Remora.Discord.Extensions.Formatting.Markdown.Bold(string)
+  nameWithType.vb: Markdown.Bold(String)
+  fullName.vb: Remora.Discord.Extensions.Formatting.Markdown.Bold(String)
+  name.vb: Bold(String)
+  spec.csharp:
+  - uid: Remora.Discord.Extensions.Formatting.Markdown.Bold(System.String)
+    name: Bold
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Extensions.Formatting.Markdown.Bold(System.String)
+    name: Bold
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Remora.Discord.Extensions.Tests.MarkdownTests.BoldSuccess*
+  commentId: Overload:Remora.Discord.Extensions.Tests.MarkdownTests.BoldSuccess
+  href: Remora.Discord.Extensions.Tests.MarkdownTests.html#Remora_Discord_Extensions_Tests_MarkdownTests_BoldSuccess_System_String_
+  name: BoldSuccess
+  nameWithType: MarkdownTests.BoldSuccess
+  fullName: Remora.Discord.Extensions.Tests.MarkdownTests.BoldSuccess
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Remora.Discord.Extensions.Formatting.Markdown.Italicise(System.String)
+  commentId: M:Remora.Discord.Extensions.Formatting.Markdown.Italicise(System.String)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Italicise(string)
+  nameWithType: Markdown.Italicise(string)
+  fullName: Remora.Discord.Extensions.Formatting.Markdown.Italicise(string)
+  nameWithType.vb: Markdown.Italicise(String)
+  fullName.vb: Remora.Discord.Extensions.Formatting.Markdown.Italicise(String)
+  name.vb: Italicise(String)
+  spec.csharp:
+  - uid: Remora.Discord.Extensions.Formatting.Markdown.Italicise(System.String)
+    name: Italicise
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Extensions.Formatting.Markdown.Italicise(System.String)
+    name: Italicise
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Remora.Discord.Extensions.Tests.MarkdownTests.ItaliciseSuccess*
+  commentId: Overload:Remora.Discord.Extensions.Tests.MarkdownTests.ItaliciseSuccess
+  href: Remora.Discord.Extensions.Tests.MarkdownTests.html#Remora_Discord_Extensions_Tests_MarkdownTests_ItaliciseSuccess_System_String_
+  name: ItaliciseSuccess
+  nameWithType: MarkdownTests.ItaliciseSuccess
+  fullName: Remora.Discord.Extensions.Tests.MarkdownTests.ItaliciseSuccess
+- uid: Remora.Discord.Extensions.Formatting.Markdown.Underline(System.String)
+  commentId: M:Remora.Discord.Extensions.Formatting.Markdown.Underline(System.String)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Underline(string)
+  nameWithType: Markdown.Underline(string)
+  fullName: Remora.Discord.Extensions.Formatting.Markdown.Underline(string)
+  nameWithType.vb: Markdown.Underline(String)
+  fullName.vb: Remora.Discord.Extensions.Formatting.Markdown.Underline(String)
+  name.vb: Underline(String)
+  spec.csharp:
+  - uid: Remora.Discord.Extensions.Formatting.Markdown.Underline(System.String)
+    name: Underline
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Extensions.Formatting.Markdown.Underline(System.String)
+    name: Underline
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Remora.Discord.Extensions.Tests.MarkdownTests.UnderlineSuccess*
+  commentId: Overload:Remora.Discord.Extensions.Tests.MarkdownTests.UnderlineSuccess
+  href: Remora.Discord.Extensions.Tests.MarkdownTests.html#Remora_Discord_Extensions_Tests_MarkdownTests_UnderlineSuccess_System_String_
+  name: UnderlineSuccess
+  nameWithType: MarkdownTests.UnderlineSuccess
+  fullName: Remora.Discord.Extensions.Tests.MarkdownTests.UnderlineSuccess
+- uid: Remora.Discord.Extensions.Formatting.Markdown.Strikethrough(System.String)
+  commentId: M:Remora.Discord.Extensions.Formatting.Markdown.Strikethrough(System.String)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Strikethrough(string)
+  nameWithType: Markdown.Strikethrough(string)
+  fullName: Remora.Discord.Extensions.Formatting.Markdown.Strikethrough(string)
+  nameWithType.vb: Markdown.Strikethrough(String)
+  fullName.vb: Remora.Discord.Extensions.Formatting.Markdown.Strikethrough(String)
+  name.vb: Strikethrough(String)
+  spec.csharp:
+  - uid: Remora.Discord.Extensions.Formatting.Markdown.Strikethrough(System.String)
+    name: Strikethrough
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Extensions.Formatting.Markdown.Strikethrough(System.String)
+    name: Strikethrough
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Remora.Discord.Extensions.Tests.MarkdownTests.StrikethroughSuccess*
+  commentId: Overload:Remora.Discord.Extensions.Tests.MarkdownTests.StrikethroughSuccess
+  href: Remora.Discord.Extensions.Tests.MarkdownTests.html#Remora_Discord_Extensions_Tests_MarkdownTests_StrikethroughSuccess_System_String_
+  name: StrikethroughSuccess
+  nameWithType: MarkdownTests.StrikethroughSuccess
+  fullName: Remora.Discord.Extensions.Tests.MarkdownTests.StrikethroughSuccess
+- uid: Remora.Discord.Extensions.Formatting.Markdown.Spoiler(System.String)
+  commentId: M:Remora.Discord.Extensions.Formatting.Markdown.Spoiler(System.String)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Spoiler(string)
+  nameWithType: Markdown.Spoiler(string)
+  fullName: Remora.Discord.Extensions.Formatting.Markdown.Spoiler(string)
+  nameWithType.vb: Markdown.Spoiler(String)
+  fullName.vb: Remora.Discord.Extensions.Formatting.Markdown.Spoiler(String)
+  name.vb: Spoiler(String)
+  spec.csharp:
+  - uid: Remora.Discord.Extensions.Formatting.Markdown.Spoiler(System.String)
+    name: Spoiler
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Extensions.Formatting.Markdown.Spoiler(System.String)
+    name: Spoiler
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Remora.Discord.Extensions.Tests.MarkdownTests.SpoilerSuccess*
+  commentId: Overload:Remora.Discord.Extensions.Tests.MarkdownTests.SpoilerSuccess
+  href: Remora.Discord.Extensions.Tests.MarkdownTests.html#Remora_Discord_Extensions_Tests_MarkdownTests_SpoilerSuccess_System_String_
+  name: SpoilerSuccess
+  nameWithType: MarkdownTests.SpoilerSuccess
+  fullName: Remora.Discord.Extensions.Tests.MarkdownTests.SpoilerSuccess
+- uid: Remora.Discord.Extensions.Formatting.Markdown.InlineCode(System.String)
+  commentId: M:Remora.Discord.Extensions.Formatting.Markdown.InlineCode(System.String)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: InlineCode(string)
+  nameWithType: Markdown.InlineCode(string)
+  fullName: Remora.Discord.Extensions.Formatting.Markdown.InlineCode(string)
+  nameWithType.vb: Markdown.InlineCode(String)
+  fullName.vb: Remora.Discord.Extensions.Formatting.Markdown.InlineCode(String)
+  name.vb: InlineCode(String)
+  spec.csharp:
+  - uid: Remora.Discord.Extensions.Formatting.Markdown.InlineCode(System.String)
+    name: InlineCode
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Extensions.Formatting.Markdown.InlineCode(System.String)
+    name: InlineCode
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Remora.Discord.Extensions.Tests.MarkdownTests.InlineCodeSuccess*
+  commentId: Overload:Remora.Discord.Extensions.Tests.MarkdownTests.InlineCodeSuccess
+  href: Remora.Discord.Extensions.Tests.MarkdownTests.html#Remora_Discord_Extensions_Tests_MarkdownTests_InlineCodeSuccess_System_String_
+  name: InlineCodeSuccess
+  nameWithType: MarkdownTests.InlineCodeSuccess
+  fullName: Remora.Discord.Extensions.Tests.MarkdownTests.InlineCodeSuccess
+- uid: Remora.Discord.Extensions.Formatting.Markdown.BlockCode(System.String)
+  commentId: M:Remora.Discord.Extensions.Formatting.Markdown.BlockCode(System.String)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: BlockCode(string)
+  nameWithType: Markdown.BlockCode(string)
+  fullName: Remora.Discord.Extensions.Formatting.Markdown.BlockCode(string)
+  nameWithType.vb: Markdown.BlockCode(String)
+  fullName.vb: Remora.Discord.Extensions.Formatting.Markdown.BlockCode(String)
+  name.vb: BlockCode(String)
+  spec.csharp:
+  - uid: Remora.Discord.Extensions.Formatting.Markdown.BlockCode(System.String)
+    name: BlockCode
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Extensions.Formatting.Markdown.BlockCode(System.String)
+    name: BlockCode
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Remora.Discord.Extensions.Tests.MarkdownTests.BlockCodeSuccess*
+  commentId: Overload:Remora.Discord.Extensions.Tests.MarkdownTests.BlockCodeSuccess
+  href: Remora.Discord.Extensions.Tests.MarkdownTests.html#Remora_Discord_Extensions_Tests_MarkdownTests_BlockCodeSuccess_System_String_
+  name: BlockCodeSuccess
+  nameWithType: MarkdownTests.BlockCodeSuccess
+  fullName: Remora.Discord.Extensions.Tests.MarkdownTests.BlockCodeSuccess
+- uid: Remora.Discord.Extensions.Formatting.Markdown.BlockCode(System.String,System.String)
+  commentId: M:Remora.Discord.Extensions.Formatting.Markdown.BlockCode(System.String,System.String)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: BlockCode(string, string)
+  nameWithType: Markdown.BlockCode(string, string)
+  fullName: Remora.Discord.Extensions.Formatting.Markdown.BlockCode(string, string)
+  nameWithType.vb: Markdown.BlockCode(String, String)
+  fullName.vb: Remora.Discord.Extensions.Formatting.Markdown.BlockCode(String, String)
+  name.vb: BlockCode(String, String)
+  spec.csharp:
+  - uid: Remora.Discord.Extensions.Formatting.Markdown.BlockCode(System.String,System.String)
+    name: BlockCode
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Extensions.Formatting.Markdown.BlockCode(System.String,System.String)
+    name: BlockCode
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Remora.Discord.Extensions.Tests.MarkdownTests.BlockCodeWithLanguageSuccess*
+  commentId: Overload:Remora.Discord.Extensions.Tests.MarkdownTests.BlockCodeWithLanguageSuccess
+  href: Remora.Discord.Extensions.Tests.MarkdownTests.html#Remora_Discord_Extensions_Tests_MarkdownTests_BlockCodeWithLanguageSuccess_System_String_System_String_
+  name: BlockCodeWithLanguageSuccess
+  nameWithType: MarkdownTests.BlockCodeWithLanguageSuccess
+  fullName: Remora.Discord.Extensions.Tests.MarkdownTests.BlockCodeWithLanguageSuccess
+- uid: Remora.Discord.Extensions.Formatting.Markdown.BlockQuote(System.String)
+  commentId: M:Remora.Discord.Extensions.Formatting.Markdown.BlockQuote(System.String)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: BlockQuote(string)
+  nameWithType: Markdown.BlockQuote(string)
+  fullName: Remora.Discord.Extensions.Formatting.Markdown.BlockQuote(string)
+  nameWithType.vb: Markdown.BlockQuote(String)
+  fullName.vb: Remora.Discord.Extensions.Formatting.Markdown.BlockQuote(String)
+  name.vb: BlockQuote(String)
+  spec.csharp:
+  - uid: Remora.Discord.Extensions.Formatting.Markdown.BlockQuote(System.String)
+    name: BlockQuote
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Extensions.Formatting.Markdown.BlockQuote(System.String)
+    name: BlockQuote
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Remora.Discord.Extensions.Tests.MarkdownTests.BlockQuoteSuccess*
+  commentId: Overload:Remora.Discord.Extensions.Tests.MarkdownTests.BlockQuoteSuccess
+  href: Remora.Discord.Extensions.Tests.MarkdownTests.html#Remora_Discord_Extensions_Tests_MarkdownTests_BlockQuoteSuccess_System_String_
+  name: BlockQuoteSuccess
+  nameWithType: MarkdownTests.BlockQuoteSuccess
+  fullName: Remora.Discord.Extensions.Tests.MarkdownTests.BlockQuoteSuccess
+- uid: Remora.Discord.Extensions.Formatting.Markdown.EscapeUrl(System.Uri)
+  commentId: M:Remora.Discord.Extensions.Formatting.Markdown.EscapeUrl(System.Uri)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uri
+  name: EscapeUrl(Uri)
+  nameWithType: Markdown.EscapeUrl(Uri)
+  fullName: Remora.Discord.Extensions.Formatting.Markdown.EscapeUrl(System.Uri)
+  spec.csharp:
+  - uid: Remora.Discord.Extensions.Formatting.Markdown.EscapeUrl(System.Uri)
+    name: EscapeUrl
+  - name: (
+  - uid: System.Uri
+    name: Uri
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uri
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Extensions.Formatting.Markdown.EscapeUrl(System.Uri)
+    name: EscapeUrl
+  - name: (
+  - uid: System.Uri
+    name: Uri
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uri
+  - name: )
+- uid: System.Uri
+  commentId: T:System.Uri
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uri
+  name: Uri
+  nameWithType: Uri
+  fullName: System.Uri
+- uid: Remora.Discord.Extensions.Tests.MarkdownTests.EscapeUrlWithUriSuccess*
+  commentId: Overload:Remora.Discord.Extensions.Tests.MarkdownTests.EscapeUrlWithUriSuccess
+  href: Remora.Discord.Extensions.Tests.MarkdownTests.html#Remora_Discord_Extensions_Tests_MarkdownTests_EscapeUrlWithUriSuccess_System_Uri_
+  name: EscapeUrlWithUriSuccess
+  nameWithType: MarkdownTests.EscapeUrlWithUriSuccess
+  fullName: Remora.Discord.Extensions.Tests.MarkdownTests.EscapeUrlWithUriSuccess
+- uid: Remora.Discord.Extensions.Formatting.Markdown.EscapeUrl(System.String)
+  commentId: M:Remora.Discord.Extensions.Formatting.Markdown.EscapeUrl(System.String)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: EscapeUrl(string)
+  nameWithType: Markdown.EscapeUrl(string)
+  fullName: Remora.Discord.Extensions.Formatting.Markdown.EscapeUrl(string)
+  nameWithType.vb: Markdown.EscapeUrl(String)
+  fullName.vb: Remora.Discord.Extensions.Formatting.Markdown.EscapeUrl(String)
+  name.vb: EscapeUrl(String)
+  spec.csharp:
+  - uid: Remora.Discord.Extensions.Formatting.Markdown.EscapeUrl(System.String)
+    name: EscapeUrl
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Extensions.Formatting.Markdown.EscapeUrl(System.String)
+    name: EscapeUrl
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Remora.Discord.Extensions.Tests.MarkdownTests.EscapeUrlWithStringSuccess*
+  commentId: Overload:Remora.Discord.Extensions.Tests.MarkdownTests.EscapeUrlWithStringSuccess
+  href: Remora.Discord.Extensions.Tests.MarkdownTests.html#Remora_Discord_Extensions_Tests_MarkdownTests_EscapeUrlWithStringSuccess_System_String_
+  name: EscapeUrlWithStringSuccess
+  nameWithType: MarkdownTests.EscapeUrlWithStringSuccess
+  fullName: Remora.Discord.Extensions.Tests.MarkdownTests.EscapeUrlWithStringSuccess
+- uid: Remora.Discord.Extensions.Formatting.Markdown.Hyperlink(System.Uri)
+  commentId: M:Remora.Discord.Extensions.Formatting.Markdown.Hyperlink(System.Uri)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uri
+  name: Hyperlink(Uri)
+  nameWithType: Markdown.Hyperlink(Uri)
+  fullName: Remora.Discord.Extensions.Formatting.Markdown.Hyperlink(System.Uri)
+  spec.csharp:
+  - uid: Remora.Discord.Extensions.Formatting.Markdown.Hyperlink(System.Uri)
+    name: Hyperlink
+  - name: (
+  - uid: System.Uri
+    name: Uri
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uri
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Extensions.Formatting.Markdown.Hyperlink(System.Uri)
+    name: Hyperlink
+  - name: (
+  - uid: System.Uri
+    name: Uri
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uri
+  - name: )
+- uid: Remora.Discord.Extensions.Tests.MarkdownTests.HyperlinkWithUriSuccess*
+  commentId: Overload:Remora.Discord.Extensions.Tests.MarkdownTests.HyperlinkWithUriSuccess
+  href: Remora.Discord.Extensions.Tests.MarkdownTests.html#Remora_Discord_Extensions_Tests_MarkdownTests_HyperlinkWithUriSuccess_System_Uri_
+  name: HyperlinkWithUriSuccess
+  nameWithType: MarkdownTests.HyperlinkWithUriSuccess
+  fullName: Remora.Discord.Extensions.Tests.MarkdownTests.HyperlinkWithUriSuccess
+- uid: Remora.Discord.Extensions.Formatting.Markdown.Hyperlink(System.String)
+  commentId: M:Remora.Discord.Extensions.Formatting.Markdown.Hyperlink(System.String)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Hyperlink(string)
+  nameWithType: Markdown.Hyperlink(string)
+  fullName: Remora.Discord.Extensions.Formatting.Markdown.Hyperlink(string)
+  nameWithType.vb: Markdown.Hyperlink(String)
+  fullName.vb: Remora.Discord.Extensions.Formatting.Markdown.Hyperlink(String)
+  name.vb: Hyperlink(String)
+  spec.csharp:
+  - uid: Remora.Discord.Extensions.Formatting.Markdown.Hyperlink(System.String)
+    name: Hyperlink
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Extensions.Formatting.Markdown.Hyperlink(System.String)
+    name: Hyperlink
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Remora.Discord.Extensions.Tests.MarkdownTests.HyperlinkWithUrlSuccess*
+  commentId: Overload:Remora.Discord.Extensions.Tests.MarkdownTests.HyperlinkWithUrlSuccess
+  href: Remora.Discord.Extensions.Tests.MarkdownTests.html#Remora_Discord_Extensions_Tests_MarkdownTests_HyperlinkWithUrlSuccess_System_String_
+  name: HyperlinkWithUrlSuccess
+  nameWithType: MarkdownTests.HyperlinkWithUrlSuccess
+  fullName: Remora.Discord.Extensions.Tests.MarkdownTests.HyperlinkWithUrlSuccess
+- uid: Remora.Discord.Extensions.Tests.MarkdownTests.HyperlinkWithTextAndUriSuccess*
+  commentId: Overload:Remora.Discord.Extensions.Tests.MarkdownTests.HyperlinkWithTextAndUriSuccess
+  href: Remora.Discord.Extensions.Tests.MarkdownTests.html#Remora_Discord_Extensions_Tests_MarkdownTests_HyperlinkWithTextAndUriSuccess_System_String_System_Uri_
+  name: HyperlinkWithTextAndUriSuccess
+  nameWithType: MarkdownTests.HyperlinkWithTextAndUriSuccess
+  fullName: Remora.Discord.Extensions.Tests.MarkdownTests.HyperlinkWithTextAndUriSuccess
+- uid: Remora.Discord.Extensions.Tests.MarkdownTests.HyperlinkWithTextAndUrlSuccess*
+  commentId: Overload:Remora.Discord.Extensions.Tests.MarkdownTests.HyperlinkWithTextAndUrlSuccess
+  href: Remora.Discord.Extensions.Tests.MarkdownTests.html#Remora_Discord_Extensions_Tests_MarkdownTests_HyperlinkWithTextAndUrlSuccess_System_String_System_String_
+  name: HyperlinkWithTextAndUrlSuccess
+  nameWithType: MarkdownTests.HyperlinkWithTextAndUrlSuccess
+  fullName: Remora.Discord.Extensions.Tests.MarkdownTests.HyperlinkWithTextAndUrlSuccess
+- uid: Remora.Discord.Extensions.Formatting.Markdown.Timestamp(System.Int64,System.Nullable{Remora.Discord.Extensions.Formatting.TimestampStyle})
+  commentId: M:Remora.Discord.Extensions.Formatting.Markdown.Timestamp(System.Int64,System.Nullable{Remora.Discord.Extensions.Formatting.TimestampStyle})
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: Timestamp(long, TimestampStyle?)
+  nameWithType: Markdown.Timestamp(long, TimestampStyle?)
+  fullName: Remora.Discord.Extensions.Formatting.Markdown.Timestamp(long, Remora.Discord.Extensions.Formatting.TimestampStyle?)
+  nameWithType.vb: Markdown.Timestamp(Long, TimestampStyle?)
+  fullName.vb: Remora.Discord.Extensions.Formatting.Markdown.Timestamp(Long, Remora.Discord.Extensions.Formatting.TimestampStyle?)
+  name.vb: Timestamp(Long, TimestampStyle?)
+  spec.csharp:
+  - uid: Remora.Discord.Extensions.Formatting.Markdown.Timestamp(System.Int64,System.Nullable{Remora.Discord.Extensions.Formatting.TimestampStyle})
+    name: Timestamp
+  - name: (
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: ','
+  - name: " "
+  - uid: Remora.Discord.Extensions.Formatting.TimestampStyle
+    name: TimestampStyle
+  - name: '?'
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Extensions.Formatting.Markdown.Timestamp(System.Int64,System.Nullable{Remora.Discord.Extensions.Formatting.TimestampStyle})
+    name: Timestamp
+  - name: (
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: ','
+  - name: " "
+  - uid: Remora.Discord.Extensions.Formatting.TimestampStyle
+    name: TimestampStyle
+  - name: '?'
+  - name: )
+- uid: Remora.Discord.Extensions.Tests.MarkdownTests.TimestampWithUnixTimestampSuccess*
+  commentId: Overload:Remora.Discord.Extensions.Tests.MarkdownTests.TimestampWithUnixTimestampSuccess
+  href: Remora.Discord.Extensions.Tests.MarkdownTests.html#Remora_Discord_Extensions_Tests_MarkdownTests_TimestampWithUnixTimestampSuccess_System_Int64_
+  name: TimestampWithUnixTimestampSuccess
+  nameWithType: MarkdownTests.TimestampWithUnixTimestampSuccess
+  fullName: Remora.Discord.Extensions.Tests.MarkdownTests.TimestampWithUnixTimestampSuccess
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: Remora.Discord.Extensions.Tests.MarkdownTests.TimestampWithUnixTimestampAndTimestampStyleSuccess*
+  commentId: Overload:Remora.Discord.Extensions.Tests.MarkdownTests.TimestampWithUnixTimestampAndTimestampStyleSuccess
+  href: Remora.Discord.Extensions.Tests.MarkdownTests.html#Remora_Discord_Extensions_Tests_MarkdownTests_TimestampWithUnixTimestampAndTimestampStyleSuccess_System_Int64_System_Nullable_Remora_Discord_Extensions_Formatting_TimestampStyle__
+  name: TimestampWithUnixTimestampAndTimestampStyleSuccess
+  nameWithType: MarkdownTests.TimestampWithUnixTimestampAndTimestampStyleSuccess
+  fullName: Remora.Discord.Extensions.Tests.MarkdownTests.TimestampWithUnixTimestampAndTimestampStyleSuccess
+- uid: System.Nullable{Remora.Discord.Extensions.Formatting.TimestampStyle}
+  commentId: T:System.Nullable{Remora.Discord.Extensions.Formatting.TimestampStyle}
+  parent: System
+  definition: System.Nullable`1
+  href: Remora.Discord.Extensions.Formatting.TimestampStyle.html
+  name: TimestampStyle?
+  nameWithType: TimestampStyle?
+  fullName: Remora.Discord.Extensions.Formatting.TimestampStyle?
+  spec.csharp:
+  - uid: Remora.Discord.Extensions.Formatting.TimestampStyle
+    name: TimestampStyle
+    href: Remora.Discord.Extensions.Formatting.TimestampStyle.html
+  - name: '?'
+  spec.vb:
+  - uid: Remora.Discord.Extensions.Formatting.TimestampStyle
+    name: TimestampStyle
+    href: Remora.Discord.Extensions.Formatting.TimestampStyle.html
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Remora.Discord.Extensions.Tests.MarkdownTests.SampleUriTestData*
+  commentId: Overload:Remora.Discord.Extensions.Tests.MarkdownTests.SampleUriTestData
+  href: Remora.Discord.Extensions.Tests.MarkdownTests.html#Remora_Discord_Extensions_Tests_MarkdownTests_SampleUriTestData
+  name: SampleUriTestData
+  nameWithType: MarkdownTests.SampleUriTestData
+  fullName: Remora.Discord.Extensions.Tests.MarkdownTests.SampleUriTestData
+- uid: System.Collections.Generic.IEnumerable{System.Object[]}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Object[]}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<object[]>
+  nameWithType: IEnumerable<object[]>
+  fullName: System.Collections.Generic.IEnumerable<object[]>
+  nameWithType.vb: IEnumerable(Of Object())
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Object())
+  name.vb: IEnumerable(Of Object())
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Remora.Discord.Extensions.Tests.MarkdownTests.SampleTextWithUriTestData*
+  commentId: Overload:Remora.Discord.Extensions.Tests.MarkdownTests.SampleTextWithUriTestData
+  href: Remora.Discord.Extensions.Tests.MarkdownTests.html#Remora_Discord_Extensions_Tests_MarkdownTests_SampleTextWithUriTestData
+  name: SampleTextWithUriTestData
+  nameWithType: MarkdownTests.SampleTextWithUriTestData
+  fullName: Remora.Discord.Extensions.Tests.MarkdownTests.SampleTextWithUriTestData

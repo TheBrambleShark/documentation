@@ -1,0 +1,426 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Abstractions.Objects.IForumTag
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IForumTag
+  id: IForumTag
+  parent: Remora.Discord.API.Abstractions.Objects
+  children:
+  - Remora.Discord.API.Abstractions.Objects.IForumTag.EmojiID
+  - Remora.Discord.API.Abstractions.Objects.IForumTag.EmojiName
+  - Remora.Discord.API.Abstractions.Objects.IForumTag.ID
+  - Remora.Discord.API.Abstractions.Objects.IForumTag.IsModerated
+  - Remora.Discord.API.Abstractions.Objects.IForumTag.Name
+  langs:
+  - csharp
+  - vb
+  name: IForumTag
+  nameWithType: IForumTag
+  fullName: Remora.Discord.API.Abstractions.Objects.IForumTag
+  type: Interface
+  source:
+    id: IForumTag
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Channels\IForumTag.cs
+    startLine: 30
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Represents a tag that can be attached to posts in a forum.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public interface IForumTag : IPartialForumTag
+    content.vb: >-
+      <PublicAPI>
+
+      Public Interface IForumTag Inherits IPartialForumTag
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Abstractions.Objects.IForumTag.ID
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IForumTag.ID
+  id: ID
+  parent: Remora.Discord.API.Abstractions.Objects.IForumTag
+  langs:
+  - csharp
+  - vb
+  name: ID
+  nameWithType: IForumTag.ID
+  fullName: Remora.Discord.API.Abstractions.Objects.IForumTag.ID
+  type: Property
+  source:
+    id: ID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Channels\IForumTag.cs
+    startLine: 36
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the ID of the tag.
+  example: []
+  syntax:
+    content: Snowflake ID { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Snowflake
+    content.vb: ReadOnly Property ID As Snowflake
+  overload: Remora.Discord.API.Abstractions.Objects.IForumTag.ID*
+- uid: Remora.Discord.API.Abstractions.Objects.IForumTag.Name
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IForumTag.Name
+  id: Name
+  parent: Remora.Discord.API.Abstractions.Objects.IForumTag
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: IForumTag.Name
+  fullName: Remora.Discord.API.Abstractions.Objects.IForumTag.Name
+  type: Property
+  source:
+    id: Name
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Channels\IForumTag.cs
+    startLine: 41
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the name of the tag.
+  example: []
+  syntax:
+    content: string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property Name As String
+  overload: Remora.Discord.API.Abstractions.Objects.IForumTag.Name*
+- uid: Remora.Discord.API.Abstractions.Objects.IForumTag.IsModerated
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IForumTag.IsModerated
+  id: IsModerated
+  parent: Remora.Discord.API.Abstractions.Objects.IForumTag
+  langs:
+  - csharp
+  - vb
+  name: IsModerated
+  nameWithType: IForumTag.IsModerated
+  fullName: Remora.Discord.API.Abstractions.Objects.IForumTag.IsModerated
+  type: Property
+  source:
+    id: IsModerated
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Channels\IForumTag.cs
+    startLine: 47
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: >-
+    Gets a value indicating whether the tag can only be added or removed by someone with the
+
+    <xref href="Remora.Discord.API.Abstractions.Objects.DiscordPermission.ManageThreads" data-throw-if-not-resolved="false"></xref> permission.
+  example: []
+  syntax:
+    content: bool IsModerated { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsModerated As Boolean
+  overload: Remora.Discord.API.Abstractions.Objects.IForumTag.IsModerated*
+- uid: Remora.Discord.API.Abstractions.Objects.IForumTag.EmojiID
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IForumTag.EmojiID
+  id: EmojiID
+  parent: Remora.Discord.API.Abstractions.Objects.IForumTag
+  langs:
+  - csharp
+  - vb
+  name: EmojiID
+  nameWithType: IForumTag.EmojiID
+  fullName: Remora.Discord.API.Abstractions.Objects.IForumTag.EmojiID
+  type: Property
+  source:
+    id: EmojiID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Channels\IForumTag.cs
+    startLine: 56
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the ID of the custom guild emoji to use.
+  remarks: >-
+    Discord's documentation is somewhat unclear as to whether this field is optional, nullable, or both. As as
+
+    result, we're hedging our bets here.
+  example: []
+  syntax:
+    content: Optional<Snowflake?> EmojiID { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Nullable{Remora.Rest.Core.Snowflake}}
+    content.vb: ReadOnly Property EmojiID As [Optional](Of Snowflake?)
+  overload: Remora.Discord.API.Abstractions.Objects.IForumTag.EmojiID*
+- uid: Remora.Discord.API.Abstractions.Objects.IForumTag.EmojiName
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IForumTag.EmojiName
+  id: EmojiName
+  parent: Remora.Discord.API.Abstractions.Objects.IForumTag
+  langs:
+  - csharp
+  - vb
+  name: EmojiName
+  nameWithType: IForumTag.EmojiName
+  fullName: Remora.Discord.API.Abstractions.Objects.IForumTag.EmojiName
+  type: Property
+  source:
+    id: EmojiName
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Channels\IForumTag.cs
+    startLine: 65
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the unicode string of the emoji to use.
+  remarks: >-
+    Discord's documentation is somewhat unclear as to whether this field is optional, nullable, or both. As as
+
+    result, we're hedging our bets here.
+  example: []
+  syntax:
+    content: Optional<string?> EmojiName { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.String}
+    content.vb: ReadOnly Property EmojiName As [Optional](Of String)
+  overload: Remora.Discord.API.Abstractions.Objects.IForumTag.EmojiName*
+references:
+- uid: Remora.Discord.API.Abstractions.Objects
+  commentId: N:Remora.Discord.API.Abstractions.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Objects
+  nameWithType: Remora.Discord.API.Abstractions.Objects
+  fullName: Remora.Discord.API.Abstractions.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+- uid: Remora.Discord.API.Abstractions.Objects.IForumTag.ID*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IForumTag.ID
+  href: Remora.Discord.API.Abstractions.Objects.IForumTag.html#Remora_Discord_API_Abstractions_Objects_IForumTag_ID
+  name: ID
+  nameWithType: IForumTag.ID
+  fullName: Remora.Discord.API.Abstractions.Objects.IForumTag.ID
+- uid: Remora.Rest.Core.Snowflake
+  commentId: T:Remora.Rest.Core.Snowflake
+  parent: Remora.Rest.Core
+  isExternal: true
+  name: Snowflake
+  nameWithType: Snowflake
+  fullName: Remora.Rest.Core.Snowflake
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+- uid: Remora.Discord.API.Abstractions.Objects.IForumTag.Name*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IForumTag.Name
+  href: Remora.Discord.API.Abstractions.Objects.IForumTag.html#Remora_Discord_API_Abstractions_Objects_IForumTag_Name
+  name: Name
+  nameWithType: IForumTag.Name
+  fullName: Remora.Discord.API.Abstractions.Objects.IForumTag.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.API.Abstractions.Objects.DiscordPermission.ManageThreads
+  commentId: F:Remora.Discord.API.Abstractions.Objects.DiscordPermission.ManageThreads
+  href: Remora.Discord.API.Abstractions.Objects.DiscordPermission.html#Remora_Discord_API_Abstractions_Objects_DiscordPermission_ManageThreads
+  name: ManageThreads
+  nameWithType: DiscordPermission.ManageThreads
+  fullName: Remora.Discord.API.Abstractions.Objects.DiscordPermission.ManageThreads
+- uid: Remora.Discord.API.Abstractions.Objects.IForumTag.IsModerated*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IForumTag.IsModerated
+  href: Remora.Discord.API.Abstractions.Objects.IForumTag.html#Remora_Discord_API_Abstractions_Objects_IForumTag_IsModerated
+  name: IsModerated
+  nameWithType: IForumTag.IsModerated
+  fullName: Remora.Discord.API.Abstractions.Objects.IForumTag.IsModerated
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Remora.Discord.API.Abstractions.Objects.IForumTag.EmojiID*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IForumTag.EmojiID
+  href: Remora.Discord.API.Abstractions.Objects.IForumTag.html#Remora_Discord_API_Abstractions_Objects_IForumTag_EmojiID
+  name: EmojiID
+  nameWithType: IForumTag.EmojiID
+  fullName: Remora.Discord.API.Abstractions.Objects.IForumTag.EmojiID
+- uid: Remora.Rest.Core.Optional{System.Nullable{Remora.Rest.Core.Snowflake}}
+  commentId: T:Remora.Rest.Core.Optional{System.Nullable{Remora.Rest.Core.Snowflake}}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  name: Optional<Snowflake?>
+  nameWithType: Optional<Snowflake?>
+  fullName: Remora.Rest.Core.Optional<Remora.Rest.Core.Snowflake?>
+  nameWithType.vb: Optional(Of Snowflake?)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Rest.Core.Snowflake?)
+  name.vb: Optional(Of Snowflake?)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '?'
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '?'
+  - name: )
+- uid: Remora.Rest.Core.Optional`1
+  commentId: T:Remora.Rest.Core.Optional`1
+  isExternal: true
+  name: Optional<TValue>
+  nameWithType: Optional<TValue>
+  fullName: Remora.Rest.Core.Optional<TValue>
+  nameWithType.vb: Optional(Of TValue)
+  fullName.vb: Remora.Rest.Core.Optional(Of TValue)
+  name.vb: Optional(Of TValue)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Objects.IForumTag.EmojiName*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IForumTag.EmojiName
+  href: Remora.Discord.API.Abstractions.Objects.IForumTag.html#Remora_Discord_API_Abstractions_Objects_IForumTag_EmojiName
+  name: EmojiName
+  nameWithType: IForumTag.EmojiName
+  fullName: Remora.Discord.API.Abstractions.Objects.IForumTag.EmojiName
+- uid: Remora.Rest.Core.Optional{System.String}
+  commentId: T:Remora.Rest.Core.Optional{System.String}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Optional<string>
+  nameWithType: Optional<string>
+  fullName: Remora.Rest.Core.Optional<string>
+  nameWithType.vb: Optional(Of String)
+  fullName.vb: Remora.Rest.Core.Optional(Of String)
+  name.vb: Optional(Of String)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )

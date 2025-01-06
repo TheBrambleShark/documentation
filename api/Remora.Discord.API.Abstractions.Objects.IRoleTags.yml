@@ -1,0 +1,419 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Abstractions.Objects.IRoleTags
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IRoleTags
+  id: IRoleTags
+  parent: Remora.Discord.API.Abstractions.Objects
+  children:
+  - Remora.Discord.API.Abstractions.Objects.IRoleTags.BotID
+  - Remora.Discord.API.Abstractions.Objects.IRoleTags.HasGuildConnections
+  - Remora.Discord.API.Abstractions.Objects.IRoleTags.IntegrationID
+  - Remora.Discord.API.Abstractions.Objects.IRoleTags.IsAvailableForPurchase
+  - Remora.Discord.API.Abstractions.Objects.IRoleTags.IsPremiumSubscriberRole
+  - Remora.Discord.API.Abstractions.Objects.IRoleTags.SubscriptionListingID
+  langs:
+  - csharp
+  - vb
+  name: IRoleTags
+  nameWithType: IRoleTags
+  fullName: Remora.Discord.API.Abstractions.Objects.IRoleTags
+  type: Interface
+  source:
+    id: IRoleTags
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Permissions\IRoleTags.cs
+    startLine: 30
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Represents a set of role tags.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public interface IRoleTags
+    content.vb: >-
+      <PublicAPI>
+
+      Public Interface IRoleTags
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Abstractions.Objects.IRoleTags.BotID
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IRoleTags.BotID
+  id: BotID
+  parent: Remora.Discord.API.Abstractions.Objects.IRoleTags
+  langs:
+  - csharp
+  - vb
+  name: BotID
+  nameWithType: IRoleTags.BotID
+  fullName: Remora.Discord.API.Abstractions.Objects.IRoleTags.BotID
+  type: Property
+  source:
+    id: BotID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Permissions\IRoleTags.cs
+    startLine: 36
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the ID of the bot the role belongs to.
+  example: []
+  syntax:
+    content: Optional<Snowflake> BotID { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+    content.vb: ReadOnly Property BotID As [Optional](Of Snowflake)
+  overload: Remora.Discord.API.Abstractions.Objects.IRoleTags.BotID*
+- uid: Remora.Discord.API.Abstractions.Objects.IRoleTags.IntegrationID
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IRoleTags.IntegrationID
+  id: IntegrationID
+  parent: Remora.Discord.API.Abstractions.Objects.IRoleTags
+  langs:
+  - csharp
+  - vb
+  name: IntegrationID
+  nameWithType: IRoleTags.IntegrationID
+  fullName: Remora.Discord.API.Abstractions.Objects.IRoleTags.IntegrationID
+  type: Property
+  source:
+    id: IntegrationID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Permissions\IRoleTags.cs
+    startLine: 41
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the ID of the integration the role belongs to.
+  example: []
+  syntax:
+    content: Optional<Snowflake> IntegrationID { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+    content.vb: ReadOnly Property IntegrationID As [Optional](Of Snowflake)
+  overload: Remora.Discord.API.Abstractions.Objects.IRoleTags.IntegrationID*
+- uid: Remora.Discord.API.Abstractions.Objects.IRoleTags.IsPremiumSubscriberRole
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IRoleTags.IsPremiumSubscriberRole
+  id: IsPremiumSubscriberRole
+  parent: Remora.Discord.API.Abstractions.Objects.IRoleTags
+  langs:
+  - csharp
+  - vb
+  name: IsPremiumSubscriberRole
+  nameWithType: IRoleTags.IsPremiumSubscriberRole
+  fullName: Remora.Discord.API.Abstractions.Objects.IRoleTags.IsPremiumSubscriberRole
+  type: Property
+  source:
+    id: IsPremiumSubscriberRole
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Permissions\IRoleTags.cs
+    startLine: 50
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets a value indicating whether this role is the premium subscriber role.
+  remarks: >-
+    This value is strangely documented in Discord. It appears that a null value may correspond to "true", and
+
+    nonpresence may correspond to "false".
+  example: []
+  syntax:
+    content: Optional<bool?> IsPremiumSubscriberRole { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Nullable{System.Boolean}}
+    content.vb: ReadOnly Property IsPremiumSubscriberRole As [Optional](Of Boolean?)
+  overload: Remora.Discord.API.Abstractions.Objects.IRoleTags.IsPremiumSubscriberRole*
+- uid: Remora.Discord.API.Abstractions.Objects.IRoleTags.SubscriptionListingID
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IRoleTags.SubscriptionListingID
+  id: SubscriptionListingID
+  parent: Remora.Discord.API.Abstractions.Objects.IRoleTags
+  langs:
+  - csharp
+  - vb
+  name: SubscriptionListingID
+  nameWithType: IRoleTags.SubscriptionListingID
+  fullName: Remora.Discord.API.Abstractions.Objects.IRoleTags.SubscriptionListingID
+  type: Property
+  source:
+    id: SubscriptionListingID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Permissions\IRoleTags.cs
+    startLine: 55
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the ID of the role's subscription SKU and listing.
+  example: []
+  syntax:
+    content: Optional<Snowflake> SubscriptionListingID { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+    content.vb: ReadOnly Property SubscriptionListingID As [Optional](Of Snowflake)
+  overload: Remora.Discord.API.Abstractions.Objects.IRoleTags.SubscriptionListingID*
+- uid: Remora.Discord.API.Abstractions.Objects.IRoleTags.IsAvailableForPurchase
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IRoleTags.IsAvailableForPurchase
+  id: IsAvailableForPurchase
+  parent: Remora.Discord.API.Abstractions.Objects.IRoleTags
+  langs:
+  - csharp
+  - vb
+  name: IsAvailableForPurchase
+  nameWithType: IRoleTags.IsAvailableForPurchase
+  fullName: Remora.Discord.API.Abstractions.Objects.IRoleTags.IsAvailableForPurchase
+  type: Property
+  source:
+    id: IsAvailableForPurchase
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Permissions\IRoleTags.cs
+    startLine: 64
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets a value indicating whether the role is available for purchase.
+  remarks: >-
+    This value is strangely documented in Discord. It appears that a null value may correspond to "true", and
+
+    nonpresence may correspond to "false".
+  example: []
+  syntax:
+    content: Optional<bool?> IsAvailableForPurchase { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Nullable{System.Boolean}}
+    content.vb: ReadOnly Property IsAvailableForPurchase As [Optional](Of Boolean?)
+  overload: Remora.Discord.API.Abstractions.Objects.IRoleTags.IsAvailableForPurchase*
+- uid: Remora.Discord.API.Abstractions.Objects.IRoleTags.HasGuildConnections
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IRoleTags.HasGuildConnections
+  id: HasGuildConnections
+  parent: Remora.Discord.API.Abstractions.Objects.IRoleTags
+  langs:
+  - csharp
+  - vb
+  name: HasGuildConnections
+  nameWithType: IRoleTags.HasGuildConnections
+  fullName: Remora.Discord.API.Abstractions.Objects.IRoleTags.HasGuildConnections
+  type: Property
+  source:
+    id: HasGuildConnections
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Permissions\IRoleTags.cs
+    startLine: 73
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets a value indicating whether this role is a guild's linked role.
+  remarks: >-
+    This value is strangely documented in Discord. It appears that a null value may correspond to "true", and
+
+    nonpresence may correspond to "false".
+  example: []
+  syntax:
+    content: Optional<bool?> HasGuildConnections { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Nullable{System.Boolean}}
+    content.vb: ReadOnly Property HasGuildConnections As [Optional](Of Boolean?)
+  overload: Remora.Discord.API.Abstractions.Objects.IRoleTags.HasGuildConnections*
+references:
+- uid: Remora.Discord.API.Abstractions.Objects
+  commentId: N:Remora.Discord.API.Abstractions.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Objects
+  nameWithType: Remora.Discord.API.Abstractions.Objects
+  fullName: Remora.Discord.API.Abstractions.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+- uid: Remora.Discord.API.Abstractions.Objects.IRoleTags.BotID*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IRoleTags.BotID
+  href: Remora.Discord.API.Abstractions.Objects.IRoleTags.html#Remora_Discord_API_Abstractions_Objects_IRoleTags_BotID
+  name: BotID
+  nameWithType: IRoleTags.BotID
+  fullName: Remora.Discord.API.Abstractions.Objects.IRoleTags.BotID
+- uid: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  name: Optional<Snowflake>
+  nameWithType: Optional<Snowflake>
+  fullName: Remora.Rest.Core.Optional<Remora.Rest.Core.Snowflake>
+  nameWithType.vb: Optional(Of Snowflake)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Rest.Core.Snowflake)
+  name.vb: Optional(Of Snowflake)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+- uid: Remora.Rest.Core.Optional`1
+  commentId: T:Remora.Rest.Core.Optional`1
+  isExternal: true
+  name: Optional<TValue>
+  nameWithType: Optional<TValue>
+  fullName: Remora.Rest.Core.Optional<TValue>
+  nameWithType.vb: Optional(Of TValue)
+  fullName.vb: Remora.Rest.Core.Optional(Of TValue)
+  name.vb: Optional(Of TValue)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+- uid: Remora.Discord.API.Abstractions.Objects.IRoleTags.IntegrationID*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IRoleTags.IntegrationID
+  href: Remora.Discord.API.Abstractions.Objects.IRoleTags.html#Remora_Discord_API_Abstractions_Objects_IRoleTags_IntegrationID
+  name: IntegrationID
+  nameWithType: IRoleTags.IntegrationID
+  fullName: Remora.Discord.API.Abstractions.Objects.IRoleTags.IntegrationID
+- uid: Remora.Discord.API.Abstractions.Objects.IRoleTags.IsPremiumSubscriberRole*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IRoleTags.IsPremiumSubscriberRole
+  href: Remora.Discord.API.Abstractions.Objects.IRoleTags.html#Remora_Discord_API_Abstractions_Objects_IRoleTags_IsPremiumSubscriberRole
+  name: IsPremiumSubscriberRole
+  nameWithType: IRoleTags.IsPremiumSubscriberRole
+  fullName: Remora.Discord.API.Abstractions.Objects.IRoleTags.IsPremiumSubscriberRole
+- uid: Remora.Rest.Core.Optional{System.Nullable{System.Boolean}}
+  commentId: T:Remora.Rest.Core.Optional{System.Nullable{System.Boolean}}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: Optional<bool?>
+  nameWithType: Optional<bool?>
+  fullName: Remora.Rest.Core.Optional<bool?>
+  nameWithType.vb: Optional(Of Boolean?)
+  fullName.vb: Remora.Rest.Core.Optional(Of Boolean?)
+  name.vb: Optional(Of Boolean?)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Objects.IRoleTags.SubscriptionListingID*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IRoleTags.SubscriptionListingID
+  href: Remora.Discord.API.Abstractions.Objects.IRoleTags.html#Remora_Discord_API_Abstractions_Objects_IRoleTags_SubscriptionListingID
+  name: SubscriptionListingID
+  nameWithType: IRoleTags.SubscriptionListingID
+  fullName: Remora.Discord.API.Abstractions.Objects.IRoleTags.SubscriptionListingID
+- uid: Remora.Discord.API.Abstractions.Objects.IRoleTags.IsAvailableForPurchase*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IRoleTags.IsAvailableForPurchase
+  href: Remora.Discord.API.Abstractions.Objects.IRoleTags.html#Remora_Discord_API_Abstractions_Objects_IRoleTags_IsAvailableForPurchase
+  name: IsAvailableForPurchase
+  nameWithType: IRoleTags.IsAvailableForPurchase
+  fullName: Remora.Discord.API.Abstractions.Objects.IRoleTags.IsAvailableForPurchase
+- uid: Remora.Discord.API.Abstractions.Objects.IRoleTags.HasGuildConnections*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IRoleTags.HasGuildConnections
+  href: Remora.Discord.API.Abstractions.Objects.IRoleTags.html#Remora_Discord_API_Abstractions_Objects_IRoleTags_HasGuildConnections
+  name: HasGuildConnections
+  nameWithType: IRoleTags.HasGuildConnections
+  fullName: Remora.Discord.API.Abstractions.Objects.IRoleTags.HasGuildConnections

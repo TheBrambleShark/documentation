@@ -1,0 +1,320 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IChannelPinsUpdate
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.Events.IChannelPinsUpdate
+  id: IChannelPinsUpdate
+  parent: Remora.Discord.API.Abstractions.Gateway.Events
+  children:
+  - Remora.Discord.API.Abstractions.Gateway.Events.IChannelPinsUpdate.ChannelID
+  - Remora.Discord.API.Abstractions.Gateway.Events.IChannelPinsUpdate.GuildID
+  - Remora.Discord.API.Abstractions.Gateway.Events.IChannelPinsUpdate.LastPinTimestamp
+  langs:
+  - csharp
+  - vb
+  name: IChannelPinsUpdate
+  nameWithType: IChannelPinsUpdate
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IChannelPinsUpdate
+  type: Interface
+  source:
+    id: IChannelPinsUpdate
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Events\Channels\IChannelPinsUpdate.cs
+    startLine: 31
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Events
+  summary: Represents a pin or unpin of a message in a channel. This is not sent when a pinned message is deleted.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public interface IChannelPinsUpdate : IGatewayEvent, IGatewayPayloadData
+    content.vb: >-
+      <PublicAPI>
+
+      Public Interface IChannelPinsUpdate Inherits IGatewayEvent, IGatewayPayloadData
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IChannelPinsUpdate.GuildID
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Events.IChannelPinsUpdate.GuildID
+  id: GuildID
+  parent: Remora.Discord.API.Abstractions.Gateway.Events.IChannelPinsUpdate
+  langs:
+  - csharp
+  - vb
+  name: GuildID
+  nameWithType: IChannelPinsUpdate.GuildID
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IChannelPinsUpdate.GuildID
+  type: Property
+  source:
+    id: GuildID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Events\Channels\IChannelPinsUpdate.cs
+    startLine: 37
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Events
+  summary: Gets the ID of the guild.
+  example: []
+  syntax:
+    content: Optional<Snowflake> GuildID { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+    content.vb: ReadOnly Property GuildID As [Optional](Of Snowflake)
+  overload: Remora.Discord.API.Abstractions.Gateway.Events.IChannelPinsUpdate.GuildID*
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IChannelPinsUpdate.ChannelID
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Events.IChannelPinsUpdate.ChannelID
+  id: ChannelID
+  parent: Remora.Discord.API.Abstractions.Gateway.Events.IChannelPinsUpdate
+  langs:
+  - csharp
+  - vb
+  name: ChannelID
+  nameWithType: IChannelPinsUpdate.ChannelID
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IChannelPinsUpdate.ChannelID
+  type: Property
+  source:
+    id: ChannelID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Events\Channels\IChannelPinsUpdate.cs
+    startLine: 42
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Events
+  summary: Gets the ID of the channel.
+  example: []
+  syntax:
+    content: Snowflake ChannelID { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Snowflake
+    content.vb: ReadOnly Property ChannelID As Snowflake
+  overload: Remora.Discord.API.Abstractions.Gateway.Events.IChannelPinsUpdate.ChannelID*
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IChannelPinsUpdate.LastPinTimestamp
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Events.IChannelPinsUpdate.LastPinTimestamp
+  id: LastPinTimestamp
+  parent: Remora.Discord.API.Abstractions.Gateway.Events.IChannelPinsUpdate
+  langs:
+  - csharp
+  - vb
+  name: LastPinTimestamp
+  nameWithType: IChannelPinsUpdate.LastPinTimestamp
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IChannelPinsUpdate.LastPinTimestamp
+  type: Property
+  source:
+    id: LastPinTimestamp
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Events\Channels\IChannelPinsUpdate.cs
+    startLine: 47
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Events
+  summary: Gets the time at which the most recent pinned message was pinned.
+  example: []
+  syntax:
+    content: Optional<DateTimeOffset?> LastPinTimestamp { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Nullable{System.DateTimeOffset}}
+    content.vb: ReadOnly Property LastPinTimestamp As [Optional](Of DateTimeOffset?)
+  overload: Remora.Discord.API.Abstractions.Gateway.Events.IChannelPinsUpdate.LastPinTimestamp*
+references:
+- uid: Remora.Discord.API.Abstractions.Gateway.Events
+  commentId: N:Remora.Discord.API.Abstractions.Gateway.Events
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Gateway.Events
+  nameWithType: Remora.Discord.API.Abstractions.Gateway.Events
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events
+    name: Events
+    href: Remora.Discord.API.Abstractions.Gateway.Events.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events
+    name: Events
+    href: Remora.Discord.API.Abstractions.Gateway.Events.html
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IChannelPinsUpdate.GuildID*
+  commentId: Overload:Remora.Discord.API.Abstractions.Gateway.Events.IChannelPinsUpdate.GuildID
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IChannelPinsUpdate.html#Remora_Discord_API_Abstractions_Gateway_Events_IChannelPinsUpdate_GuildID
+  name: GuildID
+  nameWithType: IChannelPinsUpdate.GuildID
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IChannelPinsUpdate.GuildID
+- uid: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  name: Optional<Snowflake>
+  nameWithType: Optional<Snowflake>
+  fullName: Remora.Rest.Core.Optional<Remora.Rest.Core.Snowflake>
+  nameWithType.vb: Optional(Of Snowflake)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Rest.Core.Snowflake)
+  name.vb: Optional(Of Snowflake)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+- uid: Remora.Rest.Core.Optional`1
+  commentId: T:Remora.Rest.Core.Optional`1
+  isExternal: true
+  name: Optional<TValue>
+  nameWithType: Optional<TValue>
+  fullName: Remora.Rest.Core.Optional<TValue>
+  nameWithType.vb: Optional(Of TValue)
+  fullName.vb: Remora.Rest.Core.Optional(Of TValue)
+  name.vb: Optional(Of TValue)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IChannelPinsUpdate.ChannelID*
+  commentId: Overload:Remora.Discord.API.Abstractions.Gateway.Events.IChannelPinsUpdate.ChannelID
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IChannelPinsUpdate.html#Remora_Discord_API_Abstractions_Gateway_Events_IChannelPinsUpdate_ChannelID
+  name: ChannelID
+  nameWithType: IChannelPinsUpdate.ChannelID
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IChannelPinsUpdate.ChannelID
+- uid: Remora.Rest.Core.Snowflake
+  commentId: T:Remora.Rest.Core.Snowflake
+  parent: Remora.Rest.Core
+  isExternal: true
+  name: Snowflake
+  nameWithType: Snowflake
+  fullName: Remora.Rest.Core.Snowflake
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IChannelPinsUpdate.LastPinTimestamp*
+  commentId: Overload:Remora.Discord.API.Abstractions.Gateway.Events.IChannelPinsUpdate.LastPinTimestamp
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IChannelPinsUpdate.html#Remora_Discord_API_Abstractions_Gateway_Events_IChannelPinsUpdate_LastPinTimestamp
+  name: LastPinTimestamp
+  nameWithType: IChannelPinsUpdate.LastPinTimestamp
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IChannelPinsUpdate.LastPinTimestamp
+- uid: Remora.Rest.Core.Optional{System.Nullable{System.DateTimeOffset}}
+  commentId: T:Remora.Rest.Core.Optional{System.Nullable{System.DateTimeOffset}}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  name: Optional<DateTimeOffset?>
+  nameWithType: Optional<DateTimeOffset?>
+  fullName: Remora.Rest.Core.Optional<System.DateTimeOffset?>
+  nameWithType.vb: Optional(Of DateTimeOffset?)
+  fullName.vb: Remora.Rest.Core.Optional(Of System.DateTimeOffset?)
+  name.vb: Optional(Of DateTimeOffset?)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  - name: '?'
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  - name: '?'
+  - name: )

@@ -1,0 +1,1575 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Objects.Embed
+  commentId: T:Remora.Discord.API.Objects.Embed
+  id: Embed
+  parent: Remora.Discord.API.Objects
+  children:
+  - Remora.Discord.API.Objects.Embed.#ctor(Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.EmbedType},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.DateTimeOffset},Remora.Rest.Core.Optional{System.Drawing.Color},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IEmbedFooter},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IEmbedImage},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IEmbedThumbnail},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IEmbedVideo},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IEmbedProvider},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IEmbedAuthor},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IEmbedField}})
+  - Remora.Discord.API.Objects.Embed.Author
+  - Remora.Discord.API.Objects.Embed.Colour
+  - Remora.Discord.API.Objects.Embed.Description
+  - Remora.Discord.API.Objects.Embed.Fields
+  - Remora.Discord.API.Objects.Embed.Footer
+  - Remora.Discord.API.Objects.Embed.Image
+  - Remora.Discord.API.Objects.Embed.Provider
+  - Remora.Discord.API.Objects.Embed.Thumbnail
+  - Remora.Discord.API.Objects.Embed.Timestamp
+  - Remora.Discord.API.Objects.Embed.Title
+  - Remora.Discord.API.Objects.Embed.Type
+  - Remora.Discord.API.Objects.Embed.Url
+  - Remora.Discord.API.Objects.Embed.Video
+  langs:
+  - csharp
+  - vb
+  name: Embed
+  nameWithType: Embed
+  fullName: Remora.Discord.API.Objects.Embed
+  type: Class
+  source:
+    id: Embed
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Messages\Embed.cs
+    startLine: 34
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Represents an embed.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public record Embed : IEmbed, IEquatable<Embed>
+    content.vb: >-
+      <PublicAPI>
+
+      Public Class Embed Implements IEmbed, IEquatable(Of Embed)
+  inheritance:
+  - System.Object
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IEmbed
+  - System.IEquatable{Remora.Discord.API.Objects.Embed}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - Remora.Discord.API.Abstractions.Objects.IEmbed.Remora.Discord.Pagination.Extensions.EmbedExtensions.CalculateEmbedLength
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Objects.Embed.#ctor(Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.EmbedType},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.DateTimeOffset},Remora.Rest.Core.Optional{System.Drawing.Color},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IEmbedFooter},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IEmbedImage},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IEmbedThumbnail},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IEmbedVideo},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IEmbedProvider},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IEmbedAuthor},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IEmbedField}})
+  commentId: M:Remora.Discord.API.Objects.Embed.#ctor(Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.EmbedType},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.DateTimeOffset},Remora.Rest.Core.Optional{System.Drawing.Color},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IEmbedFooter},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IEmbedImage},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IEmbedThumbnail},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IEmbedVideo},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IEmbedProvider},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IEmbedAuthor},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IEmbedField}})
+  id: '#ctor(Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.EmbedType},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.DateTimeOffset},Remora.Rest.Core.Optional{System.Drawing.Color},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IEmbedFooter},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IEmbedImage},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IEmbedThumbnail},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IEmbedVideo},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IEmbedProvider},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IEmbedAuthor},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IEmbedField}})'
+  parent: Remora.Discord.API.Objects.Embed
+  langs:
+  - csharp
+  - vb
+  name: Embed(Optional<string>, Optional<EmbedType>, Optional<string>, Optional<string>, Optional<DateTimeOffset>, Optional<Color>, Optional<IEmbedFooter>, Optional<IEmbedImage>, Optional<IEmbedThumbnail>, Optional<IEmbedVideo>, Optional<IEmbedProvider>, Optional<IEmbedAuthor>, Optional<IReadOnlyList<IEmbedField>>)
+  nameWithType: Embed.Embed(Optional<string>, Optional<EmbedType>, Optional<string>, Optional<string>, Optional<DateTimeOffset>, Optional<Color>, Optional<IEmbedFooter>, Optional<IEmbedImage>, Optional<IEmbedThumbnail>, Optional<IEmbedVideo>, Optional<IEmbedProvider>, Optional<IEmbedAuthor>, Optional<IReadOnlyList<IEmbedField>>)
+  fullName: Remora.Discord.API.Objects.Embed.Embed(Remora.Rest.Core.Optional<string>, Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.EmbedType>, Remora.Rest.Core.Optional<string>, Remora.Rest.Core.Optional<string>, Remora.Rest.Core.Optional<System.DateTimeOffset>, Remora.Rest.Core.Optional<System.Drawing.Color>, Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IEmbedFooter>, Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IEmbedImage>, Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IEmbedThumbnail>, Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IEmbedVideo>, Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IEmbedProvider>, Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IEmbedAuthor>, Remora.Rest.Core.Optional<System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.IEmbedField>>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Messages\Embed.cs
+    startLine: 34
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Represents an embed.
+  example: []
+  syntax:
+    content: public Embed(Optional<string> Title = default, Optional<EmbedType> Type = default, Optional<string> Description = default, Optional<string> Url = default, Optional<DateTimeOffset> Timestamp = default, Optional<Color> Colour = default, Optional<IEmbedFooter> Footer = default, Optional<IEmbedImage> Image = default, Optional<IEmbedThumbnail> Thumbnail = default, Optional<IEmbedVideo> Video = default, Optional<IEmbedProvider> Provider = default, Optional<IEmbedAuthor> Author = default, Optional<IReadOnlyList<IEmbedField>> Fields = default)
+    parameters:
+    - id: Title
+      type: Remora.Rest.Core.Optional{System.String}
+    - id: Type
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.EmbedType}
+    - id: Description
+      type: Remora.Rest.Core.Optional{System.String}
+    - id: Url
+      type: Remora.Rest.Core.Optional{System.String}
+    - id: Timestamp
+      type: Remora.Rest.Core.Optional{System.DateTimeOffset}
+    - id: Colour
+      type: Remora.Rest.Core.Optional{System.Drawing.Color}
+    - id: Footer
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IEmbedFooter}
+    - id: Image
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IEmbedImage}
+    - id: Thumbnail
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IEmbedThumbnail}
+    - id: Video
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IEmbedVideo}
+    - id: Provider
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IEmbedProvider}
+    - id: Author
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IEmbedAuthor}
+    - id: Fields
+      type: Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IEmbedField}}
+    content.vb: Public Sub New(Title As [Optional](Of String) = Nothing, Type As [Optional](Of EmbedType) = Nothing, Description As [Optional](Of String) = Nothing, Url As [Optional](Of String) = Nothing, Timestamp As [Optional](Of DateTimeOffset) = Nothing, Colour As [Optional](Of Color) = Nothing, Footer As [Optional](Of IEmbedFooter) = Nothing, Image As [Optional](Of IEmbedImage) = Nothing, Thumbnail As [Optional](Of IEmbedThumbnail) = Nothing, Video As [Optional](Of IEmbedVideo) = Nothing, Provider As [Optional](Of IEmbedProvider) = Nothing, Author As [Optional](Of IEmbedAuthor) = Nothing, Fields As [Optional](Of IReadOnlyList(Of IEmbedField)) = Nothing)
+  overload: Remora.Discord.API.Objects.Embed.#ctor*
+  nameWithType.vb: Embed.New(Optional(Of String), Optional(Of EmbedType), Optional(Of String), Optional(Of String), Optional(Of DateTimeOffset), Optional(Of Color), Optional(Of IEmbedFooter), Optional(Of IEmbedImage), Optional(Of IEmbedThumbnail), Optional(Of IEmbedVideo), Optional(Of IEmbedProvider), Optional(Of IEmbedAuthor), Optional(Of IReadOnlyList(Of IEmbedField)))
+  fullName.vb: Remora.Discord.API.Objects.Embed.New(Remora.Rest.Core.Optional(Of String), Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.EmbedType), Remora.Rest.Core.Optional(Of String), Remora.Rest.Core.Optional(Of String), Remora.Rest.Core.Optional(Of System.DateTimeOffset), Remora.Rest.Core.Optional(Of System.Drawing.Color), Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IEmbedFooter), Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IEmbedImage), Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IEmbedThumbnail), Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IEmbedVideo), Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IEmbedProvider), Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IEmbedAuthor), Remora.Rest.Core.Optional(Of System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.IEmbedField)))
+  name.vb: New(Optional(Of String), Optional(Of EmbedType), Optional(Of String), Optional(Of String), Optional(Of DateTimeOffset), Optional(Of Color), Optional(Of IEmbedFooter), Optional(Of IEmbedImage), Optional(Of IEmbedThumbnail), Optional(Of IEmbedVideo), Optional(Of IEmbedProvider), Optional(Of IEmbedAuthor), Optional(Of IReadOnlyList(Of IEmbedField)))
+- uid: Remora.Discord.API.Objects.Embed.Title
+  commentId: P:Remora.Discord.API.Objects.Embed.Title
+  id: Title
+  parent: Remora.Discord.API.Objects.Embed
+  langs:
+  - csharp
+  - vb
+  name: Title
+  nameWithType: Embed.Title
+  fullName: Remora.Discord.API.Objects.Embed.Title
+  type: Property
+  source:
+    id: Title
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Messages\Embed.cs
+    startLine: 37
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the title of the embed.
+  example: []
+  syntax:
+    content: public Optional<string> Title { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.String}
+    content.vb: Public Property Title As [Optional](Of String)
+  overload: Remora.Discord.API.Objects.Embed.Title*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IEmbed.Title
+- uid: Remora.Discord.API.Objects.Embed.Type
+  commentId: P:Remora.Discord.API.Objects.Embed.Type
+  id: Type
+  parent: Remora.Discord.API.Objects.Embed
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: Embed.Type
+  fullName: Remora.Discord.API.Objects.Embed.Type
+  type: Property
+  source:
+    id: Type
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Messages\Embed.cs
+    startLine: 38
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the type of the embed.
+  example: []
+  syntax:
+    content: public Optional<EmbedType> Type { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.EmbedType}
+    content.vb: Public Property Type As [Optional](Of EmbedType)
+  overload: Remora.Discord.API.Objects.Embed.Type*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IEmbed.Type
+- uid: Remora.Discord.API.Objects.Embed.Description
+  commentId: P:Remora.Discord.API.Objects.Embed.Description
+  id: Description
+  parent: Remora.Discord.API.Objects.Embed
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: Embed.Description
+  fullName: Remora.Discord.API.Objects.Embed.Description
+  type: Property
+  source:
+    id: Description
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Messages\Embed.cs
+    startLine: 39
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the description of the embed.
+  example: []
+  syntax:
+    content: public Optional<string> Description { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.String}
+    content.vb: Public Property Description As [Optional](Of String)
+  overload: Remora.Discord.API.Objects.Embed.Description*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IEmbed.Description
+- uid: Remora.Discord.API.Objects.Embed.Url
+  commentId: P:Remora.Discord.API.Objects.Embed.Url
+  id: Url
+  parent: Remora.Discord.API.Objects.Embed
+  langs:
+  - csharp
+  - vb
+  name: Url
+  nameWithType: Embed.Url
+  fullName: Remora.Discord.API.Objects.Embed.Url
+  type: Property
+  source:
+    id: Url
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Messages\Embed.cs
+    startLine: 40
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the URL of the embed.
+  example: []
+  syntax:
+    content: public Optional<string> Url { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.String}
+    content.vb: Public Property Url As [Optional](Of String)
+  overload: Remora.Discord.API.Objects.Embed.Url*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IEmbed.Url
+- uid: Remora.Discord.API.Objects.Embed.Timestamp
+  commentId: P:Remora.Discord.API.Objects.Embed.Timestamp
+  id: Timestamp
+  parent: Remora.Discord.API.Objects.Embed
+  langs:
+  - csharp
+  - vb
+  name: Timestamp
+  nameWithType: Embed.Timestamp
+  fullName: Remora.Discord.API.Objects.Embed.Timestamp
+  type: Property
+  source:
+    id: Timestamp
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Messages\Embed.cs
+    startLine: 41
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the timestamp of the embed content.
+  example: []
+  syntax:
+    content: public Optional<DateTimeOffset> Timestamp { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.DateTimeOffset}
+    content.vb: Public Property Timestamp As [Optional](Of DateTimeOffset)
+  overload: Remora.Discord.API.Objects.Embed.Timestamp*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IEmbed.Timestamp
+- uid: Remora.Discord.API.Objects.Embed.Colour
+  commentId: P:Remora.Discord.API.Objects.Embed.Colour
+  id: Colour
+  parent: Remora.Discord.API.Objects.Embed
+  langs:
+  - csharp
+  - vb
+  name: Colour
+  nameWithType: Embed.Colour
+  fullName: Remora.Discord.API.Objects.Embed.Colour
+  type: Property
+  source:
+    id: Colour
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Messages\Embed.cs
+    startLine: 42
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the colour code of the embed.
+  example: []
+  syntax:
+    content: public Optional<Color> Colour { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Drawing.Color}
+    content.vb: Public Property Colour As [Optional](Of Color)
+  overload: Remora.Discord.API.Objects.Embed.Colour*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IEmbed.Colour
+- uid: Remora.Discord.API.Objects.Embed.Footer
+  commentId: P:Remora.Discord.API.Objects.Embed.Footer
+  id: Footer
+  parent: Remora.Discord.API.Objects.Embed
+  langs:
+  - csharp
+  - vb
+  name: Footer
+  nameWithType: Embed.Footer
+  fullName: Remora.Discord.API.Objects.Embed.Footer
+  type: Property
+  source:
+    id: Footer
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Messages\Embed.cs
+    startLine: 43
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the footer information.
+  example: []
+  syntax:
+    content: public Optional<IEmbedFooter> Footer { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IEmbedFooter}
+    content.vb: Public Property Footer As [Optional](Of IEmbedFooter)
+  overload: Remora.Discord.API.Objects.Embed.Footer*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IEmbed.Footer
+- uid: Remora.Discord.API.Objects.Embed.Image
+  commentId: P:Remora.Discord.API.Objects.Embed.Image
+  id: Image
+  parent: Remora.Discord.API.Objects.Embed
+  langs:
+  - csharp
+  - vb
+  name: Image
+  nameWithType: Embed.Image
+  fullName: Remora.Discord.API.Objects.Embed.Image
+  type: Property
+  source:
+    id: Image
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Messages\Embed.cs
+    startLine: 44
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the image information.
+  example: []
+  syntax:
+    content: public Optional<IEmbedImage> Image { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IEmbedImage}
+    content.vb: Public Property Image As [Optional](Of IEmbedImage)
+  overload: Remora.Discord.API.Objects.Embed.Image*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IEmbed.Image
+- uid: Remora.Discord.API.Objects.Embed.Thumbnail
+  commentId: P:Remora.Discord.API.Objects.Embed.Thumbnail
+  id: Thumbnail
+  parent: Remora.Discord.API.Objects.Embed
+  langs:
+  - csharp
+  - vb
+  name: Thumbnail
+  nameWithType: Embed.Thumbnail
+  fullName: Remora.Discord.API.Objects.Embed.Thumbnail
+  type: Property
+  source:
+    id: Thumbnail
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Messages\Embed.cs
+    startLine: 45
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the thumbnail information.
+  example: []
+  syntax:
+    content: public Optional<IEmbedThumbnail> Thumbnail { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IEmbedThumbnail}
+    content.vb: Public Property Thumbnail As [Optional](Of IEmbedThumbnail)
+  overload: Remora.Discord.API.Objects.Embed.Thumbnail*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IEmbed.Thumbnail
+- uid: Remora.Discord.API.Objects.Embed.Video
+  commentId: P:Remora.Discord.API.Objects.Embed.Video
+  id: Video
+  parent: Remora.Discord.API.Objects.Embed
+  langs:
+  - csharp
+  - vb
+  name: Video
+  nameWithType: Embed.Video
+  fullName: Remora.Discord.API.Objects.Embed.Video
+  type: Property
+  source:
+    id: Video
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Messages\Embed.cs
+    startLine: 46
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the video information.
+  example: []
+  syntax:
+    content: public Optional<IEmbedVideo> Video { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IEmbedVideo}
+    content.vb: Public Property Video As [Optional](Of IEmbedVideo)
+  overload: Remora.Discord.API.Objects.Embed.Video*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IEmbed.Video
+- uid: Remora.Discord.API.Objects.Embed.Provider
+  commentId: P:Remora.Discord.API.Objects.Embed.Provider
+  id: Provider
+  parent: Remora.Discord.API.Objects.Embed
+  langs:
+  - csharp
+  - vb
+  name: Provider
+  nameWithType: Embed.Provider
+  fullName: Remora.Discord.API.Objects.Embed.Provider
+  type: Property
+  source:
+    id: Provider
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Messages\Embed.cs
+    startLine: 47
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the provider information.
+  example: []
+  syntax:
+    content: public Optional<IEmbedProvider> Provider { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IEmbedProvider}
+    content.vb: Public Property Provider As [Optional](Of IEmbedProvider)
+  overload: Remora.Discord.API.Objects.Embed.Provider*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IEmbed.Provider
+- uid: Remora.Discord.API.Objects.Embed.Author
+  commentId: P:Remora.Discord.API.Objects.Embed.Author
+  id: Author
+  parent: Remora.Discord.API.Objects.Embed
+  langs:
+  - csharp
+  - vb
+  name: Author
+  nameWithType: Embed.Author
+  fullName: Remora.Discord.API.Objects.Embed.Author
+  type: Property
+  source:
+    id: Author
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Messages\Embed.cs
+    startLine: 48
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the author information.
+  example: []
+  syntax:
+    content: public Optional<IEmbedAuthor> Author { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IEmbedAuthor}
+    content.vb: Public Property Author As [Optional](Of IEmbedAuthor)
+  overload: Remora.Discord.API.Objects.Embed.Author*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IEmbed.Author
+- uid: Remora.Discord.API.Objects.Embed.Fields
+  commentId: P:Remora.Discord.API.Objects.Embed.Fields
+  id: Fields
+  parent: Remora.Discord.API.Objects.Embed
+  langs:
+  - csharp
+  - vb
+  name: Fields
+  nameWithType: Embed.Fields
+  fullName: Remora.Discord.API.Objects.Embed.Fields
+  type: Property
+  source:
+    id: Fields
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Messages\Embed.cs
+    startLine: 49
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the embed fields.
+  example: []
+  syntax:
+    content: public Optional<IReadOnlyList<IEmbedField>> Fields { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IEmbedField}}
+    content.vb: Public Property Fields As [Optional](Of IReadOnlyList(Of IEmbedField))
+  overload: Remora.Discord.API.Objects.Embed.Fields*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IEmbed.Fields
+references:
+- uid: Remora.Discord.API.Objects
+  commentId: N:Remora.Discord.API.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Objects
+  nameWithType: Remora.Discord.API.Objects
+  fullName: Remora.Discord.API.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Objects
+    name: Objects
+    href: Remora.Discord.API.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Objects
+    name: Objects
+    href: Remora.Discord.API.Objects.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Remora.Discord.API.Abstractions.Objects.IEmbed
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IEmbed
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IEmbed.html
+  name: IEmbed
+  nameWithType: IEmbed
+  fullName: Remora.Discord.API.Abstractions.Objects.IEmbed
+- uid: System.IEquatable{Remora.Discord.API.Objects.Embed}
+  commentId: T:System.IEquatable{Remora.Discord.API.Objects.Embed}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<Embed>
+  nameWithType: IEquatable<Embed>
+  fullName: System.IEquatable<Remora.Discord.API.Objects.Embed>
+  nameWithType.vb: IEquatable(Of Embed)
+  fullName.vb: System.IEquatable(Of Remora.Discord.API.Objects.Embed)
+  name.vb: IEquatable(Of Embed)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Remora.Discord.API.Objects.Embed
+    name: Embed
+    href: Remora.Discord.API.Objects.Embed.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Objects.Embed
+    name: Embed
+    href: Remora.Discord.API.Objects.Embed.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Objects.IEmbed.Remora.Discord.Pagination.Extensions.EmbedExtensions.CalculateEmbedLength
+  commentId: M:Remora.Discord.Pagination.Extensions.EmbedExtensions.CalculateEmbedLength(Remora.Discord.API.Abstractions.Objects.IEmbed)
+  parent: Remora.Discord.Pagination.Extensions.EmbedExtensions
+  definition: Remora.Discord.Pagination.Extensions.EmbedExtensions.CalculateEmbedLength(Remora.Discord.API.Abstractions.Objects.IEmbed)
+  href: Remora.Discord.Pagination.Extensions.EmbedExtensions.html#Remora_Discord_Pagination_Extensions_EmbedExtensions_CalculateEmbedLength_Remora_Discord_API_Abstractions_Objects_IEmbed_
+  name: CalculateEmbedLength(IEmbed)
+  nameWithType: EmbedExtensions.CalculateEmbedLength(IEmbed)
+  fullName: Remora.Discord.Pagination.Extensions.EmbedExtensions.CalculateEmbedLength(Remora.Discord.API.Abstractions.Objects.IEmbed)
+  spec.csharp:
+  - uid: Remora.Discord.Pagination.Extensions.EmbedExtensions.CalculateEmbedLength(Remora.Discord.API.Abstractions.Objects.IEmbed)
+    name: CalculateEmbedLength
+    href: Remora.Discord.Pagination.Extensions.EmbedExtensions.html#Remora_Discord_Pagination_Extensions_EmbedExtensions_CalculateEmbedLength_Remora_Discord_API_Abstractions_Objects_IEmbed_
+  - name: (
+  - uid: Remora.Discord.API.Abstractions.Objects.IEmbed
+    name: IEmbed
+    href: Remora.Discord.API.Abstractions.Objects.IEmbed.html
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Pagination.Extensions.EmbedExtensions.CalculateEmbedLength(Remora.Discord.API.Abstractions.Objects.IEmbed)
+    name: CalculateEmbedLength
+    href: Remora.Discord.Pagination.Extensions.EmbedExtensions.html#Remora_Discord_Pagination_Extensions_EmbedExtensions_CalculateEmbedLength_Remora_Discord_API_Abstractions_Objects_IEmbed_
+  - name: (
+  - uid: Remora.Discord.API.Abstractions.Objects.IEmbed
+    name: IEmbed
+    href: Remora.Discord.API.Abstractions.Objects.IEmbed.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.API.Abstractions.Objects
+  commentId: N:Remora.Discord.API.Abstractions.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Objects
+  nameWithType: Remora.Discord.API.Abstractions.Objects
+  fullName: Remora.Discord.API.Abstractions.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Remora.Discord.Pagination.Extensions.EmbedExtensions.CalculateEmbedLength(Remora.Discord.API.Abstractions.Objects.IEmbed)
+  commentId: M:Remora.Discord.Pagination.Extensions.EmbedExtensions.CalculateEmbedLength(Remora.Discord.API.Abstractions.Objects.IEmbed)
+  href: Remora.Discord.Pagination.Extensions.EmbedExtensions.html#Remora_Discord_Pagination_Extensions_EmbedExtensions_CalculateEmbedLength_Remora_Discord_API_Abstractions_Objects_IEmbed_
+  name: CalculateEmbedLength(IEmbed)
+  nameWithType: EmbedExtensions.CalculateEmbedLength(IEmbed)
+  fullName: Remora.Discord.Pagination.Extensions.EmbedExtensions.CalculateEmbedLength(Remora.Discord.API.Abstractions.Objects.IEmbed)
+  spec.csharp:
+  - uid: Remora.Discord.Pagination.Extensions.EmbedExtensions.CalculateEmbedLength(Remora.Discord.API.Abstractions.Objects.IEmbed)
+    name: CalculateEmbedLength
+    href: Remora.Discord.Pagination.Extensions.EmbedExtensions.html#Remora_Discord_Pagination_Extensions_EmbedExtensions_CalculateEmbedLength_Remora_Discord_API_Abstractions_Objects_IEmbed_
+  - name: (
+  - uid: Remora.Discord.API.Abstractions.Objects.IEmbed
+    name: IEmbed
+    href: Remora.Discord.API.Abstractions.Objects.IEmbed.html
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Pagination.Extensions.EmbedExtensions.CalculateEmbedLength(Remora.Discord.API.Abstractions.Objects.IEmbed)
+    name: CalculateEmbedLength
+    href: Remora.Discord.Pagination.Extensions.EmbedExtensions.html#Remora_Discord_Pagination_Extensions_EmbedExtensions_CalculateEmbedLength_Remora_Discord_API_Abstractions_Objects_IEmbed_
+  - name: (
+  - uid: Remora.Discord.API.Abstractions.Objects.IEmbed
+    name: IEmbed
+    href: Remora.Discord.API.Abstractions.Objects.IEmbed.html
+  - name: )
+- uid: Remora.Discord.Pagination.Extensions.EmbedExtensions
+  commentId: T:Remora.Discord.Pagination.Extensions.EmbedExtensions
+  parent: Remora.Discord.Pagination.Extensions
+  href: Remora.Discord.Pagination.Extensions.EmbedExtensions.html
+  name: EmbedExtensions
+  nameWithType: EmbedExtensions
+  fullName: Remora.Discord.Pagination.Extensions.EmbedExtensions
+- uid: Remora.Discord.Pagination.Extensions
+  commentId: N:Remora.Discord.Pagination.Extensions
+  href: Remora.html
+  name: Remora.Discord.Pagination.Extensions
+  nameWithType: Remora.Discord.Pagination.Extensions
+  fullName: Remora.Discord.Pagination.Extensions
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Pagination
+    name: Pagination
+    href: Remora.Discord.Pagination.html
+  - name: .
+  - uid: Remora.Discord.Pagination.Extensions
+    name: Extensions
+    href: Remora.Discord.Pagination.Extensions.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Pagination
+    name: Pagination
+    href: Remora.Discord.Pagination.html
+  - name: .
+  - uid: Remora.Discord.Pagination.Extensions
+    name: Extensions
+    href: Remora.Discord.Pagination.Extensions.html
+- uid: Remora.Discord.API.Objects.Embed.#ctor*
+  commentId: Overload:Remora.Discord.API.Objects.Embed.#ctor
+  href: Remora.Discord.API.Objects.Embed.html#Remora_Discord_API_Objects_Embed__ctor_Remora_Rest_Core_Optional_System_String__Remora_Rest_Core_Optional_Remora_Discord_API_Abstractions_Objects_EmbedType__Remora_Rest_Core_Optional_System_String__Remora_Rest_Core_Optional_System_String__Remora_Rest_Core_Optional_System_DateTimeOffset__Remora_Rest_Core_Optional_System_Drawing_Color__Remora_Rest_Core_Optional_Remora_Discord_API_Abstractions_Objects_IEmbedFooter__Remora_Rest_Core_Optional_Remora_Discord_API_Abstractions_Objects_IEmbedImage__Remora_Rest_Core_Optional_Remora_Discord_API_Abstractions_Objects_IEmbedThumbnail__Remora_Rest_Core_Optional_Remora_Discord_API_Abstractions_Objects_IEmbedVideo__Remora_Rest_Core_Optional_Remora_Discord_API_Abstractions_Objects_IEmbedProvider__Remora_Rest_Core_Optional_Remora_Discord_API_Abstractions_Objects_IEmbedAuthor__Remora_Rest_Core_Optional_System_Collections_Generic_IReadOnlyList_Remora_Discord_API_Abstractions_Objects_IEmbedField___
+  name: Embed
+  nameWithType: Embed.Embed
+  fullName: Remora.Discord.API.Objects.Embed.Embed
+  nameWithType.vb: Embed.New
+  fullName.vb: Remora.Discord.API.Objects.Embed.New
+  name.vb: New
+- uid: Remora.Rest.Core.Optional{System.String}
+  commentId: T:Remora.Rest.Core.Optional{System.String}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Optional<string>
+  nameWithType: Optional<string>
+  fullName: Remora.Rest.Core.Optional<string>
+  nameWithType.vb: Optional(Of String)
+  fullName.vb: Remora.Rest.Core.Optional(Of String)
+  name.vb: Optional(Of String)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.EmbedType}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.EmbedType}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: Remora.Discord.API.Abstractions.Objects.EmbedType.html
+  name: Optional<EmbedType>
+  nameWithType: Optional<EmbedType>
+  fullName: Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.EmbedType>
+  nameWithType.vb: Optional(Of EmbedType)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.EmbedType)
+  name.vb: Optional(Of EmbedType)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.EmbedType
+    name: EmbedType
+    href: Remora.Discord.API.Abstractions.Objects.EmbedType.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.EmbedType
+    name: EmbedType
+    href: Remora.Discord.API.Abstractions.Objects.EmbedType.html
+  - name: )
+- uid: Remora.Rest.Core.Optional{System.DateTimeOffset}
+  commentId: T:Remora.Rest.Core.Optional{System.DateTimeOffset}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  name: Optional<DateTimeOffset>
+  nameWithType: Optional<DateTimeOffset>
+  fullName: Remora.Rest.Core.Optional<System.DateTimeOffset>
+  nameWithType.vb: Optional(Of DateTimeOffset)
+  fullName.vb: Remora.Rest.Core.Optional(Of System.DateTimeOffset)
+  name.vb: Optional(Of DateTimeOffset)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  - name: )
+- uid: Remora.Rest.Core.Optional{System.Drawing.Color}
+  commentId: T:Remora.Rest.Core.Optional{System.Drawing.Color}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.drawing.color
+  name: Optional<Color>
+  nameWithType: Optional<Color>
+  fullName: Remora.Rest.Core.Optional<System.Drawing.Color>
+  nameWithType.vb: Optional(Of Color)
+  fullName.vb: Remora.Rest.Core.Optional(Of System.Drawing.Color)
+  name.vb: Optional(Of Color)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Drawing.Color
+    name: Color
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.color
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Drawing.Color
+    name: Color
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.color
+  - name: )
+- uid: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IEmbedFooter}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IEmbedFooter}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: Remora.Discord.API.Abstractions.Objects.IEmbedFooter.html
+  name: Optional<IEmbedFooter>
+  nameWithType: Optional<IEmbedFooter>
+  fullName: Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IEmbedFooter>
+  nameWithType.vb: Optional(Of IEmbedFooter)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IEmbedFooter)
+  name.vb: Optional(Of IEmbedFooter)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IEmbedFooter
+    name: IEmbedFooter
+    href: Remora.Discord.API.Abstractions.Objects.IEmbedFooter.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IEmbedFooter
+    name: IEmbedFooter
+    href: Remora.Discord.API.Abstractions.Objects.IEmbedFooter.html
+  - name: )
+- uid: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IEmbedImage}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IEmbedImage}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: Remora.Discord.API.Abstractions.Objects.IEmbedImage.html
+  name: Optional<IEmbedImage>
+  nameWithType: Optional<IEmbedImage>
+  fullName: Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IEmbedImage>
+  nameWithType.vb: Optional(Of IEmbedImage)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IEmbedImage)
+  name.vb: Optional(Of IEmbedImage)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IEmbedImage
+    name: IEmbedImage
+    href: Remora.Discord.API.Abstractions.Objects.IEmbedImage.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IEmbedImage
+    name: IEmbedImage
+    href: Remora.Discord.API.Abstractions.Objects.IEmbedImage.html
+  - name: )
+- uid: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IEmbedThumbnail}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IEmbedThumbnail}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: Remora.Discord.API.Abstractions.Objects.IEmbedThumbnail.html
+  name: Optional<IEmbedThumbnail>
+  nameWithType: Optional<IEmbedThumbnail>
+  fullName: Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IEmbedThumbnail>
+  nameWithType.vb: Optional(Of IEmbedThumbnail)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IEmbedThumbnail)
+  name.vb: Optional(Of IEmbedThumbnail)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IEmbedThumbnail
+    name: IEmbedThumbnail
+    href: Remora.Discord.API.Abstractions.Objects.IEmbedThumbnail.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IEmbedThumbnail
+    name: IEmbedThumbnail
+    href: Remora.Discord.API.Abstractions.Objects.IEmbedThumbnail.html
+  - name: )
+- uid: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IEmbedVideo}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IEmbedVideo}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: Remora.Discord.API.Abstractions.Objects.IEmbedVideo.html
+  name: Optional<IEmbedVideo>
+  nameWithType: Optional<IEmbedVideo>
+  fullName: Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IEmbedVideo>
+  nameWithType.vb: Optional(Of IEmbedVideo)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IEmbedVideo)
+  name.vb: Optional(Of IEmbedVideo)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IEmbedVideo
+    name: IEmbedVideo
+    href: Remora.Discord.API.Abstractions.Objects.IEmbedVideo.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IEmbedVideo
+    name: IEmbedVideo
+    href: Remora.Discord.API.Abstractions.Objects.IEmbedVideo.html
+  - name: )
+- uid: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IEmbedProvider}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IEmbedProvider}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: Remora.Discord.API.Abstractions.Objects.IEmbedProvider.html
+  name: Optional<IEmbedProvider>
+  nameWithType: Optional<IEmbedProvider>
+  fullName: Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IEmbedProvider>
+  nameWithType.vb: Optional(Of IEmbedProvider)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IEmbedProvider)
+  name.vb: Optional(Of IEmbedProvider)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IEmbedProvider
+    name: IEmbedProvider
+    href: Remora.Discord.API.Abstractions.Objects.IEmbedProvider.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IEmbedProvider
+    name: IEmbedProvider
+    href: Remora.Discord.API.Abstractions.Objects.IEmbedProvider.html
+  - name: )
+- uid: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IEmbedAuthor}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IEmbedAuthor}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: Remora.Discord.API.Abstractions.Objects.IEmbedAuthor.html
+  name: Optional<IEmbedAuthor>
+  nameWithType: Optional<IEmbedAuthor>
+  fullName: Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IEmbedAuthor>
+  nameWithType.vb: Optional(Of IEmbedAuthor)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IEmbedAuthor)
+  name.vb: Optional(Of IEmbedAuthor)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IEmbedAuthor
+    name: IEmbedAuthor
+    href: Remora.Discord.API.Abstractions.Objects.IEmbedAuthor.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IEmbedAuthor
+    name: IEmbedAuthor
+    href: Remora.Discord.API.Abstractions.Objects.IEmbedAuthor.html
+  - name: )
+- uid: Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IEmbedField}}
+  commentId: T:Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IEmbedField}}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: Optional<IReadOnlyList<IEmbedField>>
+  nameWithType: Optional<IReadOnlyList<IEmbedField>>
+  fullName: Remora.Rest.Core.Optional<System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.IEmbedField>>
+  nameWithType.vb: Optional(Of IReadOnlyList(Of IEmbedField))
+  fullName.vb: Remora.Rest.Core.Optional(Of System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.IEmbedField))
+  name.vb: Optional(Of IReadOnlyList(Of IEmbedField))
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IEmbedField
+    name: IEmbedField
+    href: Remora.Discord.API.Abstractions.Objects.IEmbedField.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IEmbedField
+    name: IEmbedField
+    href: Remora.Discord.API.Abstractions.Objects.IEmbedField.html
+  - name: )
+  - name: )
+- uid: Remora.Rest.Core.Optional`1
+  commentId: T:Remora.Rest.Core.Optional`1
+  isExternal: true
+  name: Optional<TValue>
+  nameWithType: Optional<TValue>
+  fullName: Remora.Rest.Core.Optional<TValue>
+  nameWithType.vb: Optional(Of TValue)
+  fullName.vb: Remora.Rest.Core.Optional(Of TValue)
+  name.vb: Optional(Of TValue)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+- uid: Remora.Discord.API.Objects.Embed.Title*
+  commentId: Overload:Remora.Discord.API.Objects.Embed.Title
+  href: Remora.Discord.API.Objects.Embed.html#Remora_Discord_API_Objects_Embed_Title
+  name: Title
+  nameWithType: Embed.Title
+  fullName: Remora.Discord.API.Objects.Embed.Title
+- uid: Remora.Discord.API.Abstractions.Objects.IEmbed.Title
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IEmbed.Title
+  parent: Remora.Discord.API.Abstractions.Objects.IEmbed
+  href: Remora.Discord.API.Abstractions.Objects.IEmbed.html#Remora_Discord_API_Abstractions_Objects_IEmbed_Title
+  name: Title
+  nameWithType: IEmbed.Title
+  fullName: Remora.Discord.API.Abstractions.Objects.IEmbed.Title
+- uid: Remora.Discord.API.Objects.Embed.Type*
+  commentId: Overload:Remora.Discord.API.Objects.Embed.Type
+  href: Remora.Discord.API.Objects.Embed.html#Remora_Discord_API_Objects_Embed_Type
+  name: Type
+  nameWithType: Embed.Type
+  fullName: Remora.Discord.API.Objects.Embed.Type
+- uid: Remora.Discord.API.Abstractions.Objects.IEmbed.Type
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IEmbed.Type
+  parent: Remora.Discord.API.Abstractions.Objects.IEmbed
+  href: Remora.Discord.API.Abstractions.Objects.IEmbed.html#Remora_Discord_API_Abstractions_Objects_IEmbed_Type
+  name: Type
+  nameWithType: IEmbed.Type
+  fullName: Remora.Discord.API.Abstractions.Objects.IEmbed.Type
+- uid: Remora.Discord.API.Objects.Embed.Description*
+  commentId: Overload:Remora.Discord.API.Objects.Embed.Description
+  href: Remora.Discord.API.Objects.Embed.html#Remora_Discord_API_Objects_Embed_Description
+  name: Description
+  nameWithType: Embed.Description
+  fullName: Remora.Discord.API.Objects.Embed.Description
+- uid: Remora.Discord.API.Abstractions.Objects.IEmbed.Description
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IEmbed.Description
+  parent: Remora.Discord.API.Abstractions.Objects.IEmbed
+  href: Remora.Discord.API.Abstractions.Objects.IEmbed.html#Remora_Discord_API_Abstractions_Objects_IEmbed_Description
+  name: Description
+  nameWithType: IEmbed.Description
+  fullName: Remora.Discord.API.Abstractions.Objects.IEmbed.Description
+- uid: Remora.Discord.API.Objects.Embed.Url*
+  commentId: Overload:Remora.Discord.API.Objects.Embed.Url
+  href: Remora.Discord.API.Objects.Embed.html#Remora_Discord_API_Objects_Embed_Url
+  name: Url
+  nameWithType: Embed.Url
+  fullName: Remora.Discord.API.Objects.Embed.Url
+- uid: Remora.Discord.API.Abstractions.Objects.IEmbed.Url
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IEmbed.Url
+  parent: Remora.Discord.API.Abstractions.Objects.IEmbed
+  href: Remora.Discord.API.Abstractions.Objects.IEmbed.html#Remora_Discord_API_Abstractions_Objects_IEmbed_Url
+  name: Url
+  nameWithType: IEmbed.Url
+  fullName: Remora.Discord.API.Abstractions.Objects.IEmbed.Url
+- uid: Remora.Discord.API.Objects.Embed.Timestamp*
+  commentId: Overload:Remora.Discord.API.Objects.Embed.Timestamp
+  href: Remora.Discord.API.Objects.Embed.html#Remora_Discord_API_Objects_Embed_Timestamp
+  name: Timestamp
+  nameWithType: Embed.Timestamp
+  fullName: Remora.Discord.API.Objects.Embed.Timestamp
+- uid: Remora.Discord.API.Abstractions.Objects.IEmbed.Timestamp
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IEmbed.Timestamp
+  parent: Remora.Discord.API.Abstractions.Objects.IEmbed
+  href: Remora.Discord.API.Abstractions.Objects.IEmbed.html#Remora_Discord_API_Abstractions_Objects_IEmbed_Timestamp
+  name: Timestamp
+  nameWithType: IEmbed.Timestamp
+  fullName: Remora.Discord.API.Abstractions.Objects.IEmbed.Timestamp
+- uid: Remora.Discord.API.Objects.Embed.Colour*
+  commentId: Overload:Remora.Discord.API.Objects.Embed.Colour
+  href: Remora.Discord.API.Objects.Embed.html#Remora_Discord_API_Objects_Embed_Colour
+  name: Colour
+  nameWithType: Embed.Colour
+  fullName: Remora.Discord.API.Objects.Embed.Colour
+- uid: Remora.Discord.API.Abstractions.Objects.IEmbed.Colour
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IEmbed.Colour
+  parent: Remora.Discord.API.Abstractions.Objects.IEmbed
+  href: Remora.Discord.API.Abstractions.Objects.IEmbed.html#Remora_Discord_API_Abstractions_Objects_IEmbed_Colour
+  name: Colour
+  nameWithType: IEmbed.Colour
+  fullName: Remora.Discord.API.Abstractions.Objects.IEmbed.Colour
+- uid: Remora.Discord.API.Objects.Embed.Footer*
+  commentId: Overload:Remora.Discord.API.Objects.Embed.Footer
+  href: Remora.Discord.API.Objects.Embed.html#Remora_Discord_API_Objects_Embed_Footer
+  name: Footer
+  nameWithType: Embed.Footer
+  fullName: Remora.Discord.API.Objects.Embed.Footer
+- uid: Remora.Discord.API.Abstractions.Objects.IEmbed.Footer
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IEmbed.Footer
+  parent: Remora.Discord.API.Abstractions.Objects.IEmbed
+  href: Remora.Discord.API.Abstractions.Objects.IEmbed.html#Remora_Discord_API_Abstractions_Objects_IEmbed_Footer
+  name: Footer
+  nameWithType: IEmbed.Footer
+  fullName: Remora.Discord.API.Abstractions.Objects.IEmbed.Footer
+- uid: Remora.Discord.API.Objects.Embed.Image*
+  commentId: Overload:Remora.Discord.API.Objects.Embed.Image
+  href: Remora.Discord.API.Objects.Embed.html#Remora_Discord_API_Objects_Embed_Image
+  name: Image
+  nameWithType: Embed.Image
+  fullName: Remora.Discord.API.Objects.Embed.Image
+- uid: Remora.Discord.API.Abstractions.Objects.IEmbed.Image
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IEmbed.Image
+  parent: Remora.Discord.API.Abstractions.Objects.IEmbed
+  href: Remora.Discord.API.Abstractions.Objects.IEmbed.html#Remora_Discord_API_Abstractions_Objects_IEmbed_Image
+  name: Image
+  nameWithType: IEmbed.Image
+  fullName: Remora.Discord.API.Abstractions.Objects.IEmbed.Image
+- uid: Remora.Discord.API.Objects.Embed.Thumbnail*
+  commentId: Overload:Remora.Discord.API.Objects.Embed.Thumbnail
+  href: Remora.Discord.API.Objects.Embed.html#Remora_Discord_API_Objects_Embed_Thumbnail
+  name: Thumbnail
+  nameWithType: Embed.Thumbnail
+  fullName: Remora.Discord.API.Objects.Embed.Thumbnail
+- uid: Remora.Discord.API.Abstractions.Objects.IEmbed.Thumbnail
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IEmbed.Thumbnail
+  parent: Remora.Discord.API.Abstractions.Objects.IEmbed
+  href: Remora.Discord.API.Abstractions.Objects.IEmbed.html#Remora_Discord_API_Abstractions_Objects_IEmbed_Thumbnail
+  name: Thumbnail
+  nameWithType: IEmbed.Thumbnail
+  fullName: Remora.Discord.API.Abstractions.Objects.IEmbed.Thumbnail
+- uid: Remora.Discord.API.Objects.Embed.Video*
+  commentId: Overload:Remora.Discord.API.Objects.Embed.Video
+  href: Remora.Discord.API.Objects.Embed.html#Remora_Discord_API_Objects_Embed_Video
+  name: Video
+  nameWithType: Embed.Video
+  fullName: Remora.Discord.API.Objects.Embed.Video
+- uid: Remora.Discord.API.Abstractions.Objects.IEmbed.Video
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IEmbed.Video
+  parent: Remora.Discord.API.Abstractions.Objects.IEmbed
+  href: Remora.Discord.API.Abstractions.Objects.IEmbed.html#Remora_Discord_API_Abstractions_Objects_IEmbed_Video
+  name: Video
+  nameWithType: IEmbed.Video
+  fullName: Remora.Discord.API.Abstractions.Objects.IEmbed.Video
+- uid: Remora.Discord.API.Objects.Embed.Provider*
+  commentId: Overload:Remora.Discord.API.Objects.Embed.Provider
+  href: Remora.Discord.API.Objects.Embed.html#Remora_Discord_API_Objects_Embed_Provider
+  name: Provider
+  nameWithType: Embed.Provider
+  fullName: Remora.Discord.API.Objects.Embed.Provider
+- uid: Remora.Discord.API.Abstractions.Objects.IEmbed.Provider
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IEmbed.Provider
+  parent: Remora.Discord.API.Abstractions.Objects.IEmbed
+  href: Remora.Discord.API.Abstractions.Objects.IEmbed.html#Remora_Discord_API_Abstractions_Objects_IEmbed_Provider
+  name: Provider
+  nameWithType: IEmbed.Provider
+  fullName: Remora.Discord.API.Abstractions.Objects.IEmbed.Provider
+- uid: Remora.Discord.API.Objects.Embed.Author*
+  commentId: Overload:Remora.Discord.API.Objects.Embed.Author
+  href: Remora.Discord.API.Objects.Embed.html#Remora_Discord_API_Objects_Embed_Author
+  name: Author
+  nameWithType: Embed.Author
+  fullName: Remora.Discord.API.Objects.Embed.Author
+- uid: Remora.Discord.API.Abstractions.Objects.IEmbed.Author
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IEmbed.Author
+  parent: Remora.Discord.API.Abstractions.Objects.IEmbed
+  href: Remora.Discord.API.Abstractions.Objects.IEmbed.html#Remora_Discord_API_Abstractions_Objects_IEmbed_Author
+  name: Author
+  nameWithType: IEmbed.Author
+  fullName: Remora.Discord.API.Abstractions.Objects.IEmbed.Author
+- uid: Remora.Discord.API.Objects.Embed.Fields*
+  commentId: Overload:Remora.Discord.API.Objects.Embed.Fields
+  href: Remora.Discord.API.Objects.Embed.html#Remora_Discord_API_Objects_Embed_Fields
+  name: Fields
+  nameWithType: Embed.Fields
+  fullName: Remora.Discord.API.Objects.Embed.Fields
+- uid: Remora.Discord.API.Abstractions.Objects.IEmbed.Fields
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IEmbed.Fields
+  parent: Remora.Discord.API.Abstractions.Objects.IEmbed
+  href: Remora.Discord.API.Abstractions.Objects.IEmbed.html#Remora_Discord_API_Abstractions_Objects_IEmbed_Fields
+  name: Fields
+  nameWithType: IEmbed.Fields
+  fullName: Remora.Discord.API.Abstractions.Objects.IEmbed.Fields

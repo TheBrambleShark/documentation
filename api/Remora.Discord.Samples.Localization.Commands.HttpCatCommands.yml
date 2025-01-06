@@ -1,0 +1,944 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.Samples.Localization.Commands.HttpCatCommands
+  commentId: T:Remora.Discord.Samples.Localization.Commands.HttpCatCommands
+  id: HttpCatCommands
+  parent: Remora.Discord.Samples.Localization.Commands
+  children:
+  - Remora.Discord.Samples.Localization.Commands.HttpCatCommands.#ctor(Remora.Discord.Commands.Feedback.Services.FeedbackService)
+  - Remora.Discord.Samples.Localization.Commands.HttpCatCommands.PostChannelHttpCatAsync(Remora.Discord.API.Abstractions.Objects.IChannel)
+  - Remora.Discord.Samples.Localization.Commands.HttpCatCommands.PostContextualUserHttpCatAsync(Remora.Discord.API.Abstractions.Objects.IUser)
+  - Remora.Discord.Samples.Localization.Commands.HttpCatCommands.PostEphemeralHttpCatAsync(System.Int32)
+  - Remora.Discord.Samples.Localization.Commands.HttpCatCommands.PostHttpCatAsync(System.Int32)
+  - Remora.Discord.Samples.Localization.Commands.HttpCatCommands.PostUserHttpCatAsync(Remora.Discord.API.Abstractions.Objects.IPartialUser)
+  langs:
+  - csharp
+  - vb
+  name: HttpCatCommands
+  nameWithType: HttpCatCommands
+  fullName: Remora.Discord.Samples.Localization.Commands.HttpCatCommands
+  type: Class
+  source:
+    id: HttpCatCommands
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Samples\Localization\Commands\HttpCatCommands.cs
+    startLine: 23
+  assemblies:
+  - Localization
+  namespace: Remora.Discord.Samples.Localization.Commands
+  summary: Responds to a HttpCat command.
+  example: []
+  syntax:
+    content: 'public class HttpCatCommands : CommandGroup'
+    content.vb: Public Class HttpCatCommands Inherits CommandGroup
+  inheritance:
+  - System.Object
+  - Remora.Commands.Groups.CommandGroup
+  inheritedMembers:
+  - Remora.Commands.Groups.CommandGroup.CancellationToken
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Remora.Discord.Samples.Localization.Commands.HttpCatCommands.#ctor(Remora.Discord.Commands.Feedback.Services.FeedbackService)
+  commentId: M:Remora.Discord.Samples.Localization.Commands.HttpCatCommands.#ctor(Remora.Discord.Commands.Feedback.Services.FeedbackService)
+  id: '#ctor(Remora.Discord.Commands.Feedback.Services.FeedbackService)'
+  parent: Remora.Discord.Samples.Localization.Commands.HttpCatCommands
+  langs:
+  - csharp
+  - vb
+  name: HttpCatCommands(FeedbackService)
+  nameWithType: HttpCatCommands.HttpCatCommands(FeedbackService)
+  fullName: Remora.Discord.Samples.Localization.Commands.HttpCatCommands.HttpCatCommands(Remora.Discord.Commands.Feedback.Services.FeedbackService)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Samples\Localization\Commands\HttpCatCommands.cs
+    startLine: 31
+  assemblies:
+  - Localization
+  namespace: Remora.Discord.Samples.Localization.Commands
+  summary: Initializes a new instance of the <xref href="Remora.Discord.Samples.Localization.Commands.HttpCatCommands" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public HttpCatCommands(FeedbackService feedbackService)
+    parameters:
+    - id: feedbackService
+      type: Remora.Discord.Commands.Feedback.Services.FeedbackService
+      description: The feedback service.
+    content.vb: Public Sub New(feedbackService As FeedbackService)
+  overload: Remora.Discord.Samples.Localization.Commands.HttpCatCommands.#ctor*
+  nameWithType.vb: HttpCatCommands.New(FeedbackService)
+  fullName.vb: Remora.Discord.Samples.Localization.Commands.HttpCatCommands.New(Remora.Discord.Commands.Feedback.Services.FeedbackService)
+  name.vb: New(FeedbackService)
+- uid: Remora.Discord.Samples.Localization.Commands.HttpCatCommands.PostContextualUserHttpCatAsync(Remora.Discord.API.Abstractions.Objects.IUser)
+  commentId: M:Remora.Discord.Samples.Localization.Commands.HttpCatCommands.PostContextualUserHttpCatAsync(Remora.Discord.API.Abstractions.Objects.IUser)
+  id: PostContextualUserHttpCatAsync(Remora.Discord.API.Abstractions.Objects.IUser)
+  parent: Remora.Discord.Samples.Localization.Commands.HttpCatCommands
+  langs:
+  - csharp
+  - vb
+  name: PostContextualUserHttpCatAsync(IUser)
+  nameWithType: HttpCatCommands.PostContextualUserHttpCatAsync(IUser)
+  fullName: Remora.Discord.Samples.Localization.Commands.HttpCatCommands.PostContextualUserHttpCatAsync(Remora.Discord.API.Abstractions.Objects.IUser)
+  type: Method
+  source:
+    id: PostContextualUserHttpCatAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Samples\Localization\Commands\HttpCatCommands.cs
+    startLine: 41
+  assemblies:
+  - Localization
+  namespace: Remora.Discord.Samples.Localization.Commands
+  summary: Posts a cat image that matches the user.
+  example: []
+  syntax:
+    content: >-
+      [Command("Cattify", new string[] { })]
+
+      [CommandType(ApplicationCommandType.User)]
+
+      public Task<IResult> PostContextualUserHttpCatAsync(IUser user)
+    parameters:
+    - id: user
+      type: Remora.Discord.API.Abstractions.Objects.IUser
+      description: The user selected.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.IResult}
+      description: The result of the command.
+    content.vb: >-
+      <Command("Cattify", New String() { })>
+
+      <CommandType(ApplicationCommandType.User)>
+
+      Public Function PostContextualUserHttpCatAsync(user As IUser) As Task(Of IResult)
+  overload: Remora.Discord.Samples.Localization.Commands.HttpCatCommands.PostContextualUserHttpCatAsync*
+  attributes:
+  - type: Remora.Discord.Commands.Attributes.CommandTypeAttribute
+    ctor: Remora.Discord.Commands.Attributes.CommandTypeAttribute.#ctor(Remora.Discord.API.Abstractions.Objects.ApplicationCommandType)
+    arguments:
+    - type: Remora.Discord.API.Abstractions.Objects.ApplicationCommandType
+      value: 2
+- uid: Remora.Discord.Samples.Localization.Commands.HttpCatCommands.PostHttpCatAsync(System.Int32)
+  commentId: M:Remora.Discord.Samples.Localization.Commands.HttpCatCommands.PostHttpCatAsync(System.Int32)
+  id: PostHttpCatAsync(System.Int32)
+  parent: Remora.Discord.Samples.Localization.Commands.HttpCatCommands
+  langs:
+  - csharp
+  - vb
+  name: PostHttpCatAsync(int)
+  nameWithType: HttpCatCommands.PostHttpCatAsync(int)
+  fullName: Remora.Discord.Samples.Localization.Commands.HttpCatCommands.PostHttpCatAsync(int)
+  type: Method
+  source:
+    id: PostHttpCatAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Samples\Localization\Commands\HttpCatCommands.cs
+    startLine: 54
+  assemblies:
+  - Localization
+  namespace: Remora.Discord.Samples.Localization.Commands
+  summary: >-
+    Posts a HTTP error code cat.
+
+    This command will generate ephemeral responses.
+  example: []
+  syntax:
+    content: >-
+      [Command("cat", new string[] { })]
+
+      public Task<IResult> PostHttpCatAsync(int httpCode)
+    parameters:
+    - id: httpCode
+      type: System.Int32
+      description: The HTTP error code.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.IResult}
+      description: The result of the command.
+    content.vb: >-
+      <Command("cat", New String() { })>
+
+      Public Function PostHttpCatAsync(httpCode As Integer) As Task(Of IResult)
+  overload: Remora.Discord.Samples.Localization.Commands.HttpCatCommands.PostHttpCatAsync*
+  nameWithType.vb: HttpCatCommands.PostHttpCatAsync(Integer)
+  fullName.vb: Remora.Discord.Samples.Localization.Commands.HttpCatCommands.PostHttpCatAsync(Integer)
+  name.vb: PostHttpCatAsync(Integer)
+- uid: Remora.Discord.Samples.Localization.Commands.HttpCatCommands.PostEphemeralHttpCatAsync(System.Int32)
+  commentId: M:Remora.Discord.Samples.Localization.Commands.HttpCatCommands.PostEphemeralHttpCatAsync(System.Int32)
+  id: PostEphemeralHttpCatAsync(System.Int32)
+  parent: Remora.Discord.Samples.Localization.Commands.HttpCatCommands
+  langs:
+  - csharp
+  - vb
+  name: PostEphemeralHttpCatAsync(int)
+  nameWithType: HttpCatCommands.PostEphemeralHttpCatAsync(int)
+  fullName: Remora.Discord.Samples.Localization.Commands.HttpCatCommands.PostEphemeralHttpCatAsync(int)
+  type: Method
+  source:
+    id: PostEphemeralHttpCatAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Samples\Localization\Commands\HttpCatCommands.cs
+    startLine: 70
+  assemblies:
+  - Localization
+  namespace: Remora.Discord.Samples.Localization.Commands
+  summary: >-
+    Posts a HTTP error code cat.
+
+    This command will generate ephemeral responses.
+  example: []
+  syntax:
+    content: >-
+      [Command("ephemeral-cat", new string[] { })]
+
+      [Ephemeral(true)]
+
+      public Task<IResult> PostEphemeralHttpCatAsync(int httpCode)
+    parameters:
+    - id: httpCode
+      type: System.Int32
+      description: The HTTP error code.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.IResult}
+      description: The result of the command.
+    content.vb: >-
+      <Command("ephemeral-cat", New String() { })>
+
+      <Ephemeral(True)>
+
+      Public Function PostEphemeralHttpCatAsync(httpCode As Integer) As Task(Of IResult)
+  overload: Remora.Discord.Samples.Localization.Commands.HttpCatCommands.PostEphemeralHttpCatAsync*
+  attributes:
+  - type: Remora.Discord.Commands.Attributes.EphemeralAttribute
+    ctor: Remora.Discord.Commands.Attributes.EphemeralAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: true
+  nameWithType.vb: HttpCatCommands.PostEphemeralHttpCatAsync(Integer)
+  fullName.vb: Remora.Discord.Samples.Localization.Commands.HttpCatCommands.PostEphemeralHttpCatAsync(Integer)
+  name.vb: PostEphemeralHttpCatAsync(Integer)
+- uid: Remora.Discord.Samples.Localization.Commands.HttpCatCommands.PostUserHttpCatAsync(Remora.Discord.API.Abstractions.Objects.IPartialUser)
+  commentId: M:Remora.Discord.Samples.Localization.Commands.HttpCatCommands.PostUserHttpCatAsync(Remora.Discord.API.Abstractions.Objects.IPartialUser)
+  id: PostUserHttpCatAsync(Remora.Discord.API.Abstractions.Objects.IPartialUser)
+  parent: Remora.Discord.Samples.Localization.Commands.HttpCatCommands
+  langs:
+  - csharp
+  - vb
+  name: PostUserHttpCatAsync(IPartialUser)
+  nameWithType: HttpCatCommands.PostUserHttpCatAsync(IPartialUser)
+  fullName: Remora.Discord.Samples.Localization.Commands.HttpCatCommands.PostUserHttpCatAsync(Remora.Discord.API.Abstractions.Objects.IPartialUser)
+  type: Method
+  source:
+    id: PostUserHttpCatAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Samples\Localization\Commands\HttpCatCommands.cs
+    startLine: 86
+  assemblies:
+  - Localization
+  namespace: Remora.Discord.Samples.Localization.Commands
+  summary: Posts a HTTP error code cat.
+  example: []
+  syntax:
+    content: >-
+      [Command("user-cat", new string[] { })]
+
+      public Task<IResult> PostUserHttpCatAsync(IPartialUser catUser)
+    parameters:
+    - id: catUser
+      type: Remora.Discord.API.Abstractions.Objects.IPartialUser
+      description: The user to cattify.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.IResult}
+      description: The result of the command.
+    content.vb: >-
+      <Command("user-cat", New String() { })>
+
+      Public Function PostUserHttpCatAsync(catUser As IPartialUser) As Task(Of IResult)
+  overload: Remora.Discord.Samples.Localization.Commands.HttpCatCommands.PostUserHttpCatAsync*
+- uid: Remora.Discord.Samples.Localization.Commands.HttpCatCommands.PostChannelHttpCatAsync(Remora.Discord.API.Abstractions.Objects.IChannel)
+  commentId: M:Remora.Discord.Samples.Localization.Commands.HttpCatCommands.PostChannelHttpCatAsync(Remora.Discord.API.Abstractions.Objects.IChannel)
+  id: PostChannelHttpCatAsync(Remora.Discord.API.Abstractions.Objects.IChannel)
+  parent: Remora.Discord.Samples.Localization.Commands.HttpCatCommands
+  langs:
+  - csharp
+  - vb
+  name: PostChannelHttpCatAsync(IChannel)
+  nameWithType: HttpCatCommands.PostChannelHttpCatAsync(IChannel)
+  fullName: Remora.Discord.Samples.Localization.Commands.HttpCatCommands.PostChannelHttpCatAsync(Remora.Discord.API.Abstractions.Objects.IChannel)
+  type: Method
+  source:
+    id: PostChannelHttpCatAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Samples\Localization\Commands\HttpCatCommands.cs
+    startLine: 109
+  assemblies:
+  - Localization
+  namespace: Remora.Discord.Samples.Localization.Commands
+  summary: >-
+    Posts a HTTP error code cat that mathematically 'matches' a channel.
+
+    The clientside autocompletion of channel selections is restricted to guild text channels
+
+    by the <xref href="Remora.Discord.Commands.Attributes.ChannelTypesAttribute" data-throw-if-not-resolved="false"></xref> on the <code class="paramref">channel</code> parameter.
+  example: []
+  syntax:
+    content: >-
+      [Command("channel-cat", new string[] { })]
+
+      public Task<IResult> PostChannelHttpCatAsync(IChannel channel)
+    parameters:
+    - id: channel
+      type: Remora.Discord.API.Abstractions.Objects.IChannel
+      description: The channel to cattify.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.IResult}
+      description: The result of the command.
+    content.vb: >-
+      <Command("channel-cat", New String() { })>
+
+      Public Function PostChannelHttpCatAsync(channel As IChannel) As Task(Of IResult)
+  overload: Remora.Discord.Samples.Localization.Commands.HttpCatCommands.PostChannelHttpCatAsync*
+references:
+- uid: Remora.Discord.Samples.Localization.Commands
+  commentId: N:Remora.Discord.Samples.Localization.Commands
+  href: Remora.html
+  name: Remora.Discord.Samples.Localization.Commands
+  nameWithType: Remora.Discord.Samples.Localization.Commands
+  fullName: Remora.Discord.Samples.Localization.Commands
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Samples
+    name: Samples
+    href: Remora.Discord.Samples.html
+  - name: .
+  - uid: Remora.Discord.Samples.Localization
+    name: Localization
+    href: Remora.Discord.Samples.Localization.html
+  - name: .
+  - uid: Remora.Discord.Samples.Localization.Commands
+    name: Commands
+    href: Remora.Discord.Samples.Localization.Commands.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Samples
+    name: Samples
+    href: Remora.Discord.Samples.html
+  - name: .
+  - uid: Remora.Discord.Samples.Localization
+    name: Localization
+    href: Remora.Discord.Samples.Localization.html
+  - name: .
+  - uid: Remora.Discord.Samples.Localization.Commands
+    name: Commands
+    href: Remora.Discord.Samples.Localization.Commands.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Remora.Commands.Groups.CommandGroup
+  commentId: T:Remora.Commands.Groups.CommandGroup
+  parent: Remora.Commands.Groups
+  isExternal: true
+  name: CommandGroup
+  nameWithType: CommandGroup
+  fullName: Remora.Commands.Groups.CommandGroup
+- uid: Remora.Commands.Groups.CommandGroup.CancellationToken
+  commentId: P:Remora.Commands.Groups.CommandGroup.CancellationToken
+  parent: Remora.Commands.Groups.CommandGroup
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CommandGroup.CancellationToken
+  fullName: Remora.Commands.Groups.CommandGroup.CancellationToken
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Commands.Groups
+  commentId: N:Remora.Commands.Groups
+  isExternal: true
+  name: Remora.Commands.Groups
+  nameWithType: Remora.Commands.Groups
+  fullName: Remora.Commands.Groups
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Commands
+    name: Commands
+    isExternal: true
+  - name: .
+  - uid: Remora.Commands.Groups
+    name: Groups
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Commands
+    name: Commands
+    isExternal: true
+  - name: .
+  - uid: Remora.Commands.Groups
+    name: Groups
+    isExternal: true
+- uid: Remora.Discord.Samples.Localization.Commands.HttpCatCommands
+  commentId: T:Remora.Discord.Samples.Localization.Commands.HttpCatCommands
+  href: Remora.Discord.Samples.Localization.Commands.HttpCatCommands.html
+  name: HttpCatCommands
+  nameWithType: HttpCatCommands
+  fullName: Remora.Discord.Samples.Localization.Commands.HttpCatCommands
+- uid: Remora.Discord.Samples.Localization.Commands.HttpCatCommands.#ctor*
+  commentId: Overload:Remora.Discord.Samples.Localization.Commands.HttpCatCommands.#ctor
+  href: Remora.Discord.Samples.Localization.Commands.HttpCatCommands.html#Remora_Discord_Samples_Localization_Commands_HttpCatCommands__ctor_Remora_Discord_Commands_Feedback_Services_FeedbackService_
+  name: HttpCatCommands
+  nameWithType: HttpCatCommands.HttpCatCommands
+  fullName: Remora.Discord.Samples.Localization.Commands.HttpCatCommands.HttpCatCommands
+  nameWithType.vb: HttpCatCommands.New
+  fullName.vb: Remora.Discord.Samples.Localization.Commands.HttpCatCommands.New
+  name.vb: New
+- uid: Remora.Discord.Commands.Feedback.Services.FeedbackService
+  commentId: T:Remora.Discord.Commands.Feedback.Services.FeedbackService
+  parent: Remora.Discord.Commands.Feedback.Services
+  href: Remora.Discord.Commands.Feedback.Services.FeedbackService.html
+  name: FeedbackService
+  nameWithType: FeedbackService
+  fullName: Remora.Discord.Commands.Feedback.Services.FeedbackService
+- uid: Remora.Discord.Commands.Feedback.Services
+  commentId: N:Remora.Discord.Commands.Feedback.Services
+  href: Remora.html
+  name: Remora.Discord.Commands.Feedback.Services
+  nameWithType: Remora.Discord.Commands.Feedback.Services
+  fullName: Remora.Discord.Commands.Feedback.Services
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Commands
+    name: Commands
+    href: Remora.Discord.Commands.html
+  - name: .
+  - uid: Remora.Discord.Commands.Feedback
+    name: Feedback
+    href: Remora.Discord.Commands.Feedback.html
+  - name: .
+  - uid: Remora.Discord.Commands.Feedback.Services
+    name: Services
+    href: Remora.Discord.Commands.Feedback.Services.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Commands
+    name: Commands
+    href: Remora.Discord.Commands.html
+  - name: .
+  - uid: Remora.Discord.Commands.Feedback
+    name: Feedback
+    href: Remora.Discord.Commands.Feedback.html
+  - name: .
+  - uid: Remora.Discord.Commands.Feedback.Services
+    name: Services
+    href: Remora.Discord.Commands.Feedback.Services.html
+- uid: Remora.Discord.Samples.Localization.Commands.HttpCatCommands.PostContextualUserHttpCatAsync*
+  commentId: Overload:Remora.Discord.Samples.Localization.Commands.HttpCatCommands.PostContextualUserHttpCatAsync
+  href: Remora.Discord.Samples.Localization.Commands.HttpCatCommands.html#Remora_Discord_Samples_Localization_Commands_HttpCatCommands_PostContextualUserHttpCatAsync_Remora_Discord_API_Abstractions_Objects_IUser_
+  name: PostContextualUserHttpCatAsync
+  nameWithType: HttpCatCommands.PostContextualUserHttpCatAsync
+  fullName: Remora.Discord.Samples.Localization.Commands.HttpCatCommands.PostContextualUserHttpCatAsync
+- uid: Remora.Discord.API.Abstractions.Objects.IUser
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IUser
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IUser.html
+  name: IUser
+  nameWithType: IUser
+  fullName: Remora.Discord.API.Abstractions.Objects.IUser
+- uid: System.Threading.Tasks.Task{Remora.Results.IResult}
+  commentId: T:System.Threading.Tasks.Task{Remora.Results.IResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IResult>
+  nameWithType: Task<IResult>
+  fullName: System.Threading.Tasks.Task<Remora.Results.IResult>
+  nameWithType.vb: Task(Of IResult)
+  fullName.vb: System.Threading.Tasks.Task(Of Remora.Results.IResult)
+  name.vb: Task(Of IResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Remora.Results.IResult
+    name: IResult
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Results.IResult
+    name: IResult
+    isExternal: true
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Objects
+  commentId: N:Remora.Discord.API.Abstractions.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Objects
+  nameWithType: Remora.Discord.API.Abstractions.Objects
+  fullName: Remora.Discord.API.Abstractions.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Remora.Discord.Samples.Localization.Commands.HttpCatCommands.PostHttpCatAsync*
+  commentId: Overload:Remora.Discord.Samples.Localization.Commands.HttpCatCommands.PostHttpCatAsync
+  href: Remora.Discord.Samples.Localization.Commands.HttpCatCommands.html#Remora_Discord_Samples_Localization_Commands_HttpCatCommands_PostHttpCatAsync_System_Int32_
+  name: PostHttpCatAsync
+  nameWithType: HttpCatCommands.PostHttpCatAsync
+  fullName: Remora.Discord.Samples.Localization.Commands.HttpCatCommands.PostHttpCatAsync
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Remora.Discord.Samples.Localization.Commands.HttpCatCommands.PostEphemeralHttpCatAsync*
+  commentId: Overload:Remora.Discord.Samples.Localization.Commands.HttpCatCommands.PostEphemeralHttpCatAsync
+  href: Remora.Discord.Samples.Localization.Commands.HttpCatCommands.html#Remora_Discord_Samples_Localization_Commands_HttpCatCommands_PostEphemeralHttpCatAsync_System_Int32_
+  name: PostEphemeralHttpCatAsync
+  nameWithType: HttpCatCommands.PostEphemeralHttpCatAsync
+  fullName: Remora.Discord.Samples.Localization.Commands.HttpCatCommands.PostEphemeralHttpCatAsync
+- uid: Remora.Discord.Samples.Localization.Commands.HttpCatCommands.PostUserHttpCatAsync*
+  commentId: Overload:Remora.Discord.Samples.Localization.Commands.HttpCatCommands.PostUserHttpCatAsync
+  href: Remora.Discord.Samples.Localization.Commands.HttpCatCommands.html#Remora_Discord_Samples_Localization_Commands_HttpCatCommands_PostUserHttpCatAsync_Remora_Discord_API_Abstractions_Objects_IPartialUser_
+  name: PostUserHttpCatAsync
+  nameWithType: HttpCatCommands.PostUserHttpCatAsync
+  fullName: Remora.Discord.Samples.Localization.Commands.HttpCatCommands.PostUserHttpCatAsync
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialUser
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IPartialUser
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IPartialUser.html
+  name: IPartialUser
+  nameWithType: IPartialUser
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialUser
+- uid: Remora.Discord.Commands.Attributes.ChannelTypesAttribute
+  commentId: T:Remora.Discord.Commands.Attributes.ChannelTypesAttribute
+  parent: Remora.Discord.Commands.Attributes
+  href: Remora.Discord.Commands.Attributes.ChannelTypesAttribute.html
+  name: ChannelTypesAttribute
+  nameWithType: ChannelTypesAttribute
+  fullName: Remora.Discord.Commands.Attributes.ChannelTypesAttribute
+- uid: Remora.Discord.Samples.Localization.Commands.HttpCatCommands.PostChannelHttpCatAsync*
+  commentId: Overload:Remora.Discord.Samples.Localization.Commands.HttpCatCommands.PostChannelHttpCatAsync
+  href: Remora.Discord.Samples.Localization.Commands.HttpCatCommands.html#Remora_Discord_Samples_Localization_Commands_HttpCatCommands_PostChannelHttpCatAsync_Remora_Discord_API_Abstractions_Objects_IChannel_
+  name: PostChannelHttpCatAsync
+  nameWithType: HttpCatCommands.PostChannelHttpCatAsync
+  fullName: Remora.Discord.Samples.Localization.Commands.HttpCatCommands.PostChannelHttpCatAsync
+- uid: Remora.Discord.API.Abstractions.Objects.IChannel
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IChannel
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IChannel.html
+  name: IChannel
+  nameWithType: IChannel
+  fullName: Remora.Discord.API.Abstractions.Objects.IChannel
+- uid: Remora.Discord.Commands.Attributes
+  commentId: N:Remora.Discord.Commands.Attributes
+  href: Remora.html
+  name: Remora.Discord.Commands.Attributes
+  nameWithType: Remora.Discord.Commands.Attributes
+  fullName: Remora.Discord.Commands.Attributes
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Commands
+    name: Commands
+    href: Remora.Discord.Commands.html
+  - name: .
+  - uid: Remora.Discord.Commands.Attributes
+    name: Attributes
+    href: Remora.Discord.Commands.Attributes.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Commands
+    name: Commands
+    href: Remora.Discord.Commands.html
+  - name: .
+  - uid: Remora.Discord.Commands.Attributes
+    name: Attributes
+    href: Remora.Discord.Commands.Attributes.html

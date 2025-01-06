@@ -1,0 +1,1562 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Objects.PartialUser
+  commentId: T:Remora.Discord.API.Objects.PartialUser
+  id: PartialUser
+  parent: Remora.Discord.API.Objects
+  children:
+  - Remora.Discord.API.Objects.PartialUser.#ctor(Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.UInt16},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IImageHash},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IImageHash},Remora.Rest.Core.Optional{System.Nullable{System.Drawing.Color}},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.UserFlags},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.PremiumType},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.UserFlags},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IImageHash})
+  - Remora.Discord.API.Objects.PartialUser.AccentColour
+  - Remora.Discord.API.Objects.PartialUser.Avatar
+  - Remora.Discord.API.Objects.PartialUser.AvatarDecoration
+  - Remora.Discord.API.Objects.PartialUser.Banner
+  - Remora.Discord.API.Objects.PartialUser.Discriminator
+  - Remora.Discord.API.Objects.PartialUser.Email
+  - Remora.Discord.API.Objects.PartialUser.Flags
+  - Remora.Discord.API.Objects.PartialUser.GlobalName
+  - Remora.Discord.API.Objects.PartialUser.ID
+  - Remora.Discord.API.Objects.PartialUser.IsBot
+  - Remora.Discord.API.Objects.PartialUser.IsMFAEnabled
+  - Remora.Discord.API.Objects.PartialUser.IsSystem
+  - Remora.Discord.API.Objects.PartialUser.IsVerified
+  - Remora.Discord.API.Objects.PartialUser.Locale
+  - Remora.Discord.API.Objects.PartialUser.PremiumType
+  - Remora.Discord.API.Objects.PartialUser.PublicFlags
+  - Remora.Discord.API.Objects.PartialUser.Username
+  langs:
+  - csharp
+  - vb
+  name: PartialUser
+  nameWithType: PartialUser
+  fullName: Remora.Discord.API.Objects.PartialUser
+  type: Class
+  source:
+    id: PartialUser
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Users\PartialUser.cs
+    startLine: 32
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Represents a partial Discord user.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public record PartialUser : IPartialUser, IEquatable<PartialUser>
+    content.vb: >-
+      <PublicAPI>
+
+      Public Class PartialUser Implements IPartialUser, IEquatable(Of PartialUser)
+  inheritance:
+  - System.Object
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialUser
+  - System.IEquatable{Remora.Discord.API.Objects.PartialUser}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Objects.PartialUser.#ctor(Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.UInt16},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IImageHash},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IImageHash},Remora.Rest.Core.Optional{System.Nullable{System.Drawing.Color}},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.UserFlags},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.PremiumType},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.UserFlags},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IImageHash})
+  commentId: M:Remora.Discord.API.Objects.PartialUser.#ctor(Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.UInt16},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IImageHash},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IImageHash},Remora.Rest.Core.Optional{System.Nullable{System.Drawing.Color}},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.UserFlags},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.PremiumType},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.UserFlags},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IImageHash})
+  id: '#ctor(Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.UInt16},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IImageHash},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IImageHash},Remora.Rest.Core.Optional{System.Nullable{System.Drawing.Color}},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.UserFlags},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.PremiumType},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.UserFlags},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IImageHash})'
+  parent: Remora.Discord.API.Objects.PartialUser
+  langs:
+  - csharp
+  - vb
+  name: PartialUser(Optional<Snowflake>, Optional<string>, Optional<ushort>, Optional<string?>, Optional<IImageHash?>, Optional<bool>, Optional<bool>, Optional<bool>, Optional<IImageHash?>, Optional<Color?>, Optional<string>, Optional<bool>, Optional<string?>, Optional<UserFlags>, Optional<PremiumType>, Optional<UserFlags>, Optional<IImageHash?>)
+  nameWithType: PartialUser.PartialUser(Optional<Snowflake>, Optional<string>, Optional<ushort>, Optional<string?>, Optional<IImageHash?>, Optional<bool>, Optional<bool>, Optional<bool>, Optional<IImageHash?>, Optional<Color?>, Optional<string>, Optional<bool>, Optional<string?>, Optional<UserFlags>, Optional<PremiumType>, Optional<UserFlags>, Optional<IImageHash?>)
+  fullName: Remora.Discord.API.Objects.PartialUser.PartialUser(Remora.Rest.Core.Optional<Remora.Rest.Core.Snowflake>, Remora.Rest.Core.Optional<string>, Remora.Rest.Core.Optional<ushort>, Remora.Rest.Core.Optional<string?>, Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IImageHash?>, Remora.Rest.Core.Optional<bool>, Remora.Rest.Core.Optional<bool>, Remora.Rest.Core.Optional<bool>, Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IImageHash?>, Remora.Rest.Core.Optional<System.Drawing.Color?>, Remora.Rest.Core.Optional<string>, Remora.Rest.Core.Optional<bool>, Remora.Rest.Core.Optional<string?>, Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.UserFlags>, Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.PremiumType>, Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.UserFlags>, Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IImageHash?>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Users\PartialUser.cs
+    startLine: 32
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Represents a partial Discord user.
+  example: []
+  syntax:
+    content: public PartialUser(Optional<Snowflake> ID = default, Optional<string> Username = default, Optional<ushort> Discriminator = default, Optional<string?> GlobalName = default, Optional<IImageHash?> Avatar = default, Optional<bool> IsBot = default, Optional<bool> IsSystem = default, Optional<bool> IsMFAEnabled = default, Optional<IImageHash?> Banner = default, Optional<Color?> AccentColour = default, Optional<string> Locale = default, Optional<bool> IsVerified = default, Optional<string?> Email = default, Optional<UserFlags> Flags = default, Optional<PremiumType> PremiumType = default, Optional<UserFlags> PublicFlags = default, Optional<IImageHash?> AvatarDecoration = default)
+    parameters:
+    - id: ID
+      type: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+    - id: Username
+      type: Remora.Rest.Core.Optional{System.String}
+    - id: Discriminator
+      type: Remora.Rest.Core.Optional{System.UInt16}
+    - id: GlobalName
+      type: Remora.Rest.Core.Optional{System.String}
+    - id: Avatar
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IImageHash}
+    - id: IsBot
+      type: Remora.Rest.Core.Optional{System.Boolean}
+    - id: IsSystem
+      type: Remora.Rest.Core.Optional{System.Boolean}
+    - id: IsMFAEnabled
+      type: Remora.Rest.Core.Optional{System.Boolean}
+    - id: Banner
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IImageHash}
+    - id: AccentColour
+      type: Remora.Rest.Core.Optional{System.Nullable{System.Drawing.Color}}
+    - id: Locale
+      type: Remora.Rest.Core.Optional{System.String}
+    - id: IsVerified
+      type: Remora.Rest.Core.Optional{System.Boolean}
+    - id: Email
+      type: Remora.Rest.Core.Optional{System.String}
+    - id: Flags
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.UserFlags}
+    - id: PremiumType
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.PremiumType}
+    - id: PublicFlags
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.UserFlags}
+    - id: AvatarDecoration
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IImageHash}
+    content.vb: Public Sub New(ID As [Optional](Of Snowflake) = Nothing, Username As [Optional](Of String) = Nothing, Discriminator As [Optional](Of UShort) = Nothing, GlobalName As [Optional](Of String) = Nothing, Avatar As [Optional](Of IImageHash) = Nothing, IsBot As [Optional](Of Boolean) = Nothing, IsSystem As [Optional](Of Boolean) = Nothing, IsMFAEnabled As [Optional](Of Boolean) = Nothing, Banner As [Optional](Of IImageHash) = Nothing, AccentColour As [Optional](Of Color?) = Nothing, Locale As [Optional](Of String) = Nothing, IsVerified As [Optional](Of Boolean) = Nothing, Email As [Optional](Of String) = Nothing, Flags As [Optional](Of UserFlags) = Nothing, PremiumType As [Optional](Of PremiumType) = Nothing, PublicFlags As [Optional](Of UserFlags) = Nothing, AvatarDecoration As [Optional](Of IImageHash) = Nothing)
+  overload: Remora.Discord.API.Objects.PartialUser.#ctor*
+  nameWithType.vb: PartialUser.New(Optional(Of Snowflake), Optional(Of String), Optional(Of UShort), Optional(Of String), Optional(Of IImageHash), Optional(Of Boolean), Optional(Of Boolean), Optional(Of Boolean), Optional(Of IImageHash), Optional(Of Color?), Optional(Of String), Optional(Of Boolean), Optional(Of String), Optional(Of UserFlags), Optional(Of PremiumType), Optional(Of UserFlags), Optional(Of IImageHash))
+  fullName.vb: Remora.Discord.API.Objects.PartialUser.New(Remora.Rest.Core.Optional(Of Remora.Rest.Core.Snowflake), Remora.Rest.Core.Optional(Of String), Remora.Rest.Core.Optional(Of UShort), Remora.Rest.Core.Optional(Of String), Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IImageHash), Remora.Rest.Core.Optional(Of Boolean), Remora.Rest.Core.Optional(Of Boolean), Remora.Rest.Core.Optional(Of Boolean), Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IImageHash), Remora.Rest.Core.Optional(Of System.Drawing.Color?), Remora.Rest.Core.Optional(Of String), Remora.Rest.Core.Optional(Of Boolean), Remora.Rest.Core.Optional(Of String), Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.UserFlags), Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.PremiumType), Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.UserFlags), Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IImageHash))
+  name.vb: New(Optional(Of Snowflake), Optional(Of String), Optional(Of UShort), Optional(Of String), Optional(Of IImageHash), Optional(Of Boolean), Optional(Of Boolean), Optional(Of Boolean), Optional(Of IImageHash), Optional(Of Color?), Optional(Of String), Optional(Of Boolean), Optional(Of String), Optional(Of UserFlags), Optional(Of PremiumType), Optional(Of UserFlags), Optional(Of IImageHash))
+- uid: Remora.Discord.API.Objects.PartialUser.ID
+  commentId: P:Remora.Discord.API.Objects.PartialUser.ID
+  id: ID
+  parent: Remora.Discord.API.Objects.PartialUser
+  langs:
+  - csharp
+  - vb
+  name: ID
+  nameWithType: PartialUser.ID
+  fullName: Remora.Discord.API.Objects.PartialUser.ID
+  type: Property
+  source:
+    id: ID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Users\PartialUser.cs
+    startLine: 35
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the ID of the user.
+  example: []
+  syntax:
+    content: public Optional<Snowflake> ID { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+    content.vb: Public Property ID As [Optional](Of Snowflake)
+  overload: Remora.Discord.API.Objects.PartialUser.ID*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialUser.ID
+- uid: Remora.Discord.API.Objects.PartialUser.Username
+  commentId: P:Remora.Discord.API.Objects.PartialUser.Username
+  id: Username
+  parent: Remora.Discord.API.Objects.PartialUser
+  langs:
+  - csharp
+  - vb
+  name: Username
+  nameWithType: PartialUser.Username
+  fullName: Remora.Discord.API.Objects.PartialUser.Username
+  type: Property
+  source:
+    id: Username
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Users\PartialUser.cs
+    startLine: 36
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the username of the user. This is a unique value for users, but not for bots.
+  remarks: >-
+    Discord is currently migrating to a new username system. When the migration is complete, this field will be
+
+    unique across the platform.
+  example: []
+  syntax:
+    content: public Optional<string> Username { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.String}
+    content.vb: Public Property Username As [Optional](Of String)
+  overload: Remora.Discord.API.Objects.PartialUser.Username*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialUser.Username
+- uid: Remora.Discord.API.Objects.PartialUser.Discriminator
+  commentId: P:Remora.Discord.API.Objects.PartialUser.Discriminator
+  id: Discriminator
+  parent: Remora.Discord.API.Objects.PartialUser
+  langs:
+  - csharp
+  - vb
+  name: Discriminator
+  nameWithType: PartialUser.Discriminator
+  fullName: Remora.Discord.API.Objects.PartialUser.Discriminator
+  type: Property
+  source:
+    id: Discriminator
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Users\PartialUser.cs
+    startLine: 37
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the user's 4-digit discord tag.
+  remarks: Discord no longer uses discriminators, and migrated users will simply have '0' as their discriminator.
+  example: []
+  syntax:
+    content: public Optional<ushort> Discriminator { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.UInt16}
+    content.vb: Public Property Discriminator As [Optional](Of UShort)
+  overload: Remora.Discord.API.Objects.PartialUser.Discriminator*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialUser.Discriminator
+- uid: Remora.Discord.API.Objects.PartialUser.GlobalName
+  commentId: P:Remora.Discord.API.Objects.PartialUser.GlobalName
+  id: GlobalName
+  parent: Remora.Discord.API.Objects.PartialUser
+  langs:
+  - csharp
+  - vb
+  name: GlobalName
+  nameWithType: PartialUser.GlobalName
+  fullName: Remora.Discord.API.Objects.PartialUser.GlobalName
+  type: Property
+  source:
+    id: GlobalName
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Users\PartialUser.cs
+    startLine: 38
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the user's display name, if it is set. For bots, this is the application name.
+  example: []
+  syntax:
+    content: public Optional<string?> GlobalName { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.String}
+    content.vb: Public Property GlobalName As [Optional](Of String)
+  overload: Remora.Discord.API.Objects.PartialUser.GlobalName*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialUser.GlobalName
+- uid: Remora.Discord.API.Objects.PartialUser.Avatar
+  commentId: P:Remora.Discord.API.Objects.PartialUser.Avatar
+  id: Avatar
+  parent: Remora.Discord.API.Objects.PartialUser
+  langs:
+  - csharp
+  - vb
+  name: Avatar
+  nameWithType: PartialUser.Avatar
+  fullName: Remora.Discord.API.Objects.PartialUser.Avatar
+  type: Property
+  source:
+    id: Avatar
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Users\PartialUser.cs
+    startLine: 39
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the user's avatar hash.
+  example: []
+  syntax:
+    content: public Optional<IImageHash?> Avatar { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IImageHash}
+    content.vb: Public Property Avatar As [Optional](Of IImageHash)
+  overload: Remora.Discord.API.Objects.PartialUser.Avatar*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialUser.Avatar
+- uid: Remora.Discord.API.Objects.PartialUser.IsBot
+  commentId: P:Remora.Discord.API.Objects.PartialUser.IsBot
+  id: IsBot
+  parent: Remora.Discord.API.Objects.PartialUser
+  langs:
+  - csharp
+  - vb
+  name: IsBot
+  nameWithType: PartialUser.IsBot
+  fullName: Remora.Discord.API.Objects.PartialUser.IsBot
+  type: Property
+  source:
+    id: IsBot
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Users\PartialUser.cs
+    startLine: 40
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets a value indicating whether the user is a bot, belonging to an OAuth2 application.
+  example: []
+  syntax:
+    content: public Optional<bool> IsBot { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Boolean}
+    content.vb: Public Property IsBot As [Optional](Of Boolean)
+  overload: Remora.Discord.API.Objects.PartialUser.IsBot*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialUser.IsBot
+- uid: Remora.Discord.API.Objects.PartialUser.IsSystem
+  commentId: P:Remora.Discord.API.Objects.PartialUser.IsSystem
+  id: IsSystem
+  parent: Remora.Discord.API.Objects.PartialUser
+  langs:
+  - csharp
+  - vb
+  name: IsSystem
+  nameWithType: PartialUser.IsSystem
+  fullName: Remora.Discord.API.Objects.PartialUser.IsSystem
+  type: Property
+  source:
+    id: IsSystem
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Users\PartialUser.cs
+    startLine: 41
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: >-
+    Gets a value indicating whether the user is an official Discord system user (part of the urgent message
+
+    system).
+  example: []
+  syntax:
+    content: public Optional<bool> IsSystem { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Boolean}
+    content.vb: Public Property IsSystem As [Optional](Of Boolean)
+  overload: Remora.Discord.API.Objects.PartialUser.IsSystem*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialUser.IsSystem
+- uid: Remora.Discord.API.Objects.PartialUser.IsMFAEnabled
+  commentId: P:Remora.Discord.API.Objects.PartialUser.IsMFAEnabled
+  id: IsMFAEnabled
+  parent: Remora.Discord.API.Objects.PartialUser
+  langs:
+  - csharp
+  - vb
+  name: IsMFAEnabled
+  nameWithType: PartialUser.IsMFAEnabled
+  fullName: Remora.Discord.API.Objects.PartialUser.IsMFAEnabled
+  type: Property
+  source:
+    id: IsMFAEnabled
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Users\PartialUser.cs
+    startLine: 42
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets a value indicating whether the user has multi-factor authentication enabled on their account.
+  example: []
+  syntax:
+    content: public Optional<bool> IsMFAEnabled { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Boolean}
+    content.vb: Public Property IsMFAEnabled As [Optional](Of Boolean)
+  overload: Remora.Discord.API.Objects.PartialUser.IsMFAEnabled*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialUser.IsMFAEnabled
+- uid: Remora.Discord.API.Objects.PartialUser.Banner
+  commentId: P:Remora.Discord.API.Objects.PartialUser.Banner
+  id: Banner
+  parent: Remora.Discord.API.Objects.PartialUser
+  langs:
+  - csharp
+  - vb
+  name: Banner
+  nameWithType: PartialUser.Banner
+  fullName: Remora.Discord.API.Objects.PartialUser.Banner
+  type: Property
+  source:
+    id: Banner
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Users\PartialUser.cs
+    startLine: 43
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the user's banner.
+  example: []
+  syntax:
+    content: public Optional<IImageHash?> Banner { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IImageHash}
+    content.vb: Public Property Banner As [Optional](Of IImageHash)
+  overload: Remora.Discord.API.Objects.PartialUser.Banner*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialUser.Banner
+- uid: Remora.Discord.API.Objects.PartialUser.AccentColour
+  commentId: P:Remora.Discord.API.Objects.PartialUser.AccentColour
+  id: AccentColour
+  parent: Remora.Discord.API.Objects.PartialUser
+  langs:
+  - csharp
+  - vb
+  name: AccentColour
+  nameWithType: PartialUser.AccentColour
+  fullName: Remora.Discord.API.Objects.PartialUser.AccentColour
+  type: Property
+  source:
+    id: AccentColour
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Users\PartialUser.cs
+    startLine: 44
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the user's banner colour.
+  example: []
+  syntax:
+    content: public Optional<Color?> AccentColour { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Nullable{System.Drawing.Color}}
+    content.vb: Public Property AccentColour As [Optional](Of Color?)
+  overload: Remora.Discord.API.Objects.PartialUser.AccentColour*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialUser.AccentColour
+- uid: Remora.Discord.API.Objects.PartialUser.Locale
+  commentId: P:Remora.Discord.API.Objects.PartialUser.Locale
+  id: Locale
+  parent: Remora.Discord.API.Objects.PartialUser
+  langs:
+  - csharp
+  - vb
+  name: Locale
+  nameWithType: PartialUser.Locale
+  fullName: Remora.Discord.API.Objects.PartialUser.Locale
+  type: Property
+  source:
+    id: Locale
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Users\PartialUser.cs
+    startLine: 45
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the user's chosen language option.
+  example: []
+  syntax:
+    content: public Optional<string> Locale { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.String}
+    content.vb: Public Property Locale As [Optional](Of String)
+  overload: Remora.Discord.API.Objects.PartialUser.Locale*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialUser.Locale
+- uid: Remora.Discord.API.Objects.PartialUser.IsVerified
+  commentId: P:Remora.Discord.API.Objects.PartialUser.IsVerified
+  id: IsVerified
+  parent: Remora.Discord.API.Objects.PartialUser
+  langs:
+  - csharp
+  - vb
+  name: IsVerified
+  nameWithType: PartialUser.IsVerified
+  fullName: Remora.Discord.API.Objects.PartialUser.IsVerified
+  type: Property
+  source:
+    id: IsVerified
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Users\PartialUser.cs
+    startLine: 46
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets a value indicating whether the email on the account has been verified.
+  example: []
+  syntax:
+    content: public Optional<bool> IsVerified { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Boolean}
+    content.vb: Public Property IsVerified As [Optional](Of Boolean)
+  overload: Remora.Discord.API.Objects.PartialUser.IsVerified*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialUser.IsVerified
+- uid: Remora.Discord.API.Objects.PartialUser.Email
+  commentId: P:Remora.Discord.API.Objects.PartialUser.Email
+  id: Email
+  parent: Remora.Discord.API.Objects.PartialUser
+  langs:
+  - csharp
+  - vb
+  name: Email
+  nameWithType: PartialUser.Email
+  fullName: Remora.Discord.API.Objects.PartialUser.Email
+  type: Property
+  source:
+    id: Email
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Users\PartialUser.cs
+    startLine: 47
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the user's email address.
+  example: []
+  syntax:
+    content: public Optional<string?> Email { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.String}
+    content.vb: Public Property Email As [Optional](Of String)
+  overload: Remora.Discord.API.Objects.PartialUser.Email*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialUser.Email
+- uid: Remora.Discord.API.Objects.PartialUser.Flags
+  commentId: P:Remora.Discord.API.Objects.PartialUser.Flags
+  id: Flags
+  parent: Remora.Discord.API.Objects.PartialUser
+  langs:
+  - csharp
+  - vb
+  name: Flags
+  nameWithType: PartialUser.Flags
+  fullName: Remora.Discord.API.Objects.PartialUser.Flags
+  type: Property
+  source:
+    id: Flags
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Users\PartialUser.cs
+    startLine: 48
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the flags on the user's account.
+  example: []
+  syntax:
+    content: public Optional<UserFlags> Flags { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.UserFlags}
+    content.vb: Public Property Flags As [Optional](Of UserFlags)
+  overload: Remora.Discord.API.Objects.PartialUser.Flags*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialUser.Flags
+- uid: Remora.Discord.API.Objects.PartialUser.PremiumType
+  commentId: P:Remora.Discord.API.Objects.PartialUser.PremiumType
+  id: PremiumType
+  parent: Remora.Discord.API.Objects.PartialUser
+  langs:
+  - csharp
+  - vb
+  name: PremiumType
+  nameWithType: PartialUser.PremiumType
+  fullName: Remora.Discord.API.Objects.PartialUser.PremiumType
+  type: Property
+  source:
+    id: PremiumType
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Users\PartialUser.cs
+    startLine: 49
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the user's premium status.
+  example: []
+  syntax:
+    content: public Optional<PremiumType> PremiumType { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.PremiumType}
+    content.vb: Public Property PremiumType As [Optional](Of PremiumType)
+  overload: Remora.Discord.API.Objects.PartialUser.PremiumType*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialUser.PremiumType
+- uid: Remora.Discord.API.Objects.PartialUser.PublicFlags
+  commentId: P:Remora.Discord.API.Objects.PartialUser.PublicFlags
+  id: PublicFlags
+  parent: Remora.Discord.API.Objects.PartialUser
+  langs:
+  - csharp
+  - vb
+  name: PublicFlags
+  nameWithType: PartialUser.PublicFlags
+  fullName: Remora.Discord.API.Objects.PartialUser.PublicFlags
+  type: Property
+  source:
+    id: PublicFlags
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Users\PartialUser.cs
+    startLine: 50
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the flags on a user's account.
+  example: []
+  syntax:
+    content: public Optional<UserFlags> PublicFlags { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.UserFlags}
+    content.vb: Public Property PublicFlags As [Optional](Of UserFlags)
+  overload: Remora.Discord.API.Objects.PartialUser.PublicFlags*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialUser.PublicFlags
+- uid: Remora.Discord.API.Objects.PartialUser.AvatarDecoration
+  commentId: P:Remora.Discord.API.Objects.PartialUser.AvatarDecoration
+  id: AvatarDecoration
+  parent: Remora.Discord.API.Objects.PartialUser
+  langs:
+  - csharp
+  - vb
+  name: AvatarDecoration
+  nameWithType: PartialUser.AvatarDecoration
+  fullName: Remora.Discord.API.Objects.PartialUser.AvatarDecoration
+  type: Property
+  source:
+    id: AvatarDecoration
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Users\PartialUser.cs
+    startLine: 51
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the user's avatar decoration.
+  example: []
+  syntax:
+    content: public Optional<IImageHash?> AvatarDecoration { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IImageHash}
+    content.vb: Public Property AvatarDecoration As [Optional](Of IImageHash)
+  overload: Remora.Discord.API.Objects.PartialUser.AvatarDecoration*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialUser.AvatarDecoration
+references:
+- uid: Remora.Discord.API.Objects
+  commentId: N:Remora.Discord.API.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Objects
+  nameWithType: Remora.Discord.API.Objects
+  fullName: Remora.Discord.API.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Objects
+    name: Objects
+    href: Remora.Discord.API.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Objects
+    name: Objects
+    href: Remora.Discord.API.Objects.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialUser
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IPartialUser
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IPartialUser.html
+  name: IPartialUser
+  nameWithType: IPartialUser
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialUser
+- uid: System.IEquatable{Remora.Discord.API.Objects.PartialUser}
+  commentId: T:System.IEquatable{Remora.Discord.API.Objects.PartialUser}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<PartialUser>
+  nameWithType: IEquatable<PartialUser>
+  fullName: System.IEquatable<Remora.Discord.API.Objects.PartialUser>
+  nameWithType.vb: IEquatable(Of PartialUser)
+  fullName.vb: System.IEquatable(Of Remora.Discord.API.Objects.PartialUser)
+  name.vb: IEquatable(Of PartialUser)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Remora.Discord.API.Objects.PartialUser
+    name: PartialUser
+    href: Remora.Discord.API.Objects.PartialUser.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Objects.PartialUser
+    name: PartialUser
+    href: Remora.Discord.API.Objects.PartialUser.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.API.Abstractions.Objects
+  commentId: N:Remora.Discord.API.Abstractions.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Objects
+  nameWithType: Remora.Discord.API.Abstractions.Objects
+  fullName: Remora.Discord.API.Abstractions.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Remora.Discord.API.Objects.PartialUser.#ctor*
+  commentId: Overload:Remora.Discord.API.Objects.PartialUser.#ctor
+  href: Remora.Discord.API.Objects.PartialUser.html#Remora_Discord_API_Objects_PartialUser__ctor_Remora_Rest_Core_Optional_Remora_Rest_Core_Snowflake__Remora_Rest_Core_Optional_System_String__Remora_Rest_Core_Optional_System_UInt16__Remora_Rest_Core_Optional_System_String__Remora_Rest_Core_Optional_Remora_Discord_API_Abstractions_Objects_IImageHash__Remora_Rest_Core_Optional_System_Boolean__Remora_Rest_Core_Optional_System_Boolean__Remora_Rest_Core_Optional_System_Boolean__Remora_Rest_Core_Optional_Remora_Discord_API_Abstractions_Objects_IImageHash__Remora_Rest_Core_Optional_System_Nullable_System_Drawing_Color___Remora_Rest_Core_Optional_System_String__Remora_Rest_Core_Optional_System_Boolean__Remora_Rest_Core_Optional_System_String__Remora_Rest_Core_Optional_Remora_Discord_API_Abstractions_Objects_UserFlags__Remora_Rest_Core_Optional_Remora_Discord_API_Abstractions_Objects_PremiumType__Remora_Rest_Core_Optional_Remora_Discord_API_Abstractions_Objects_UserFlags__Remora_Rest_Core_Optional_Remora_Discord_API_Abstractions_Objects_IImageHash__
+  name: PartialUser
+  nameWithType: PartialUser.PartialUser
+  fullName: Remora.Discord.API.Objects.PartialUser.PartialUser
+  nameWithType.vb: PartialUser.New
+  fullName.vb: Remora.Discord.API.Objects.PartialUser.New
+  name.vb: New
+- uid: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  name: Optional<Snowflake>
+  nameWithType: Optional<Snowflake>
+  fullName: Remora.Rest.Core.Optional<Remora.Rest.Core.Snowflake>
+  nameWithType.vb: Optional(Of Snowflake)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Rest.Core.Snowflake)
+  name.vb: Optional(Of Snowflake)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+- uid: Remora.Rest.Core.Optional{System.String}
+  commentId: T:Remora.Rest.Core.Optional{System.String}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Optional<string>
+  nameWithType: Optional<string>
+  fullName: Remora.Rest.Core.Optional<string>
+  nameWithType.vb: Optional(Of String)
+  fullName.vb: Remora.Rest.Core.Optional(Of String)
+  name.vb: Optional(Of String)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Remora.Rest.Core.Optional{System.UInt16}
+  commentId: T:Remora.Rest.Core.Optional{System.UInt16}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.uint16
+  name: Optional<ushort>
+  nameWithType: Optional<ushort>
+  fullName: Remora.Rest.Core.Optional<ushort>
+  nameWithType.vb: Optional(Of UShort)
+  fullName.vb: Remora.Rest.Core.Optional(Of UShort)
+  name.vb: Optional(Of UShort)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.UInt16
+    name: ushort
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint16
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.UInt16
+    name: UShort
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint16
+  - name: )
+- uid: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IImageHash}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IImageHash}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: Remora.Discord.API.Abstractions.Objects.IImageHash.html
+  name: Optional<IImageHash>
+  nameWithType: Optional<IImageHash>
+  fullName: Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IImageHash>
+  nameWithType.vb: Optional(Of IImageHash)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IImageHash)
+  name.vb: Optional(Of IImageHash)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IImageHash
+    name: IImageHash
+    href: Remora.Discord.API.Abstractions.Objects.IImageHash.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IImageHash
+    name: IImageHash
+    href: Remora.Discord.API.Abstractions.Objects.IImageHash.html
+  - name: )
+- uid: Remora.Rest.Core.Optional{System.Boolean}
+  commentId: T:Remora.Rest.Core.Optional{System.Boolean}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: Optional<bool>
+  nameWithType: Optional<bool>
+  fullName: Remora.Rest.Core.Optional<bool>
+  nameWithType.vb: Optional(Of Boolean)
+  fullName.vb: Remora.Rest.Core.Optional(Of Boolean)
+  name.vb: Optional(Of Boolean)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Remora.Rest.Core.Optional{System.Nullable{System.Drawing.Color}}
+  commentId: T:Remora.Rest.Core.Optional{System.Nullable{System.Drawing.Color}}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.drawing.color
+  name: Optional<Color?>
+  nameWithType: Optional<Color?>
+  fullName: Remora.Rest.Core.Optional<System.Drawing.Color?>
+  nameWithType.vb: Optional(Of Color?)
+  fullName.vb: Remora.Rest.Core.Optional(Of System.Drawing.Color?)
+  name.vb: Optional(Of Color?)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Drawing.Color
+    name: Color
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.color
+  - name: '?'
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Drawing.Color
+    name: Color
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.color
+  - name: '?'
+  - name: )
+- uid: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.UserFlags}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.UserFlags}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: Remora.Discord.API.Abstractions.Objects.UserFlags.html
+  name: Optional<UserFlags>
+  nameWithType: Optional<UserFlags>
+  fullName: Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.UserFlags>
+  nameWithType.vb: Optional(Of UserFlags)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.UserFlags)
+  name.vb: Optional(Of UserFlags)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.UserFlags
+    name: UserFlags
+    href: Remora.Discord.API.Abstractions.Objects.UserFlags.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.UserFlags
+    name: UserFlags
+    href: Remora.Discord.API.Abstractions.Objects.UserFlags.html
+  - name: )
+- uid: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.PremiumType}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.PremiumType}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: Remora.Discord.API.Abstractions.Objects.PremiumType.html
+  name: Optional<PremiumType>
+  nameWithType: Optional<PremiumType>
+  fullName: Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.PremiumType>
+  nameWithType.vb: Optional(Of PremiumType)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.PremiumType)
+  name.vb: Optional(Of PremiumType)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.PremiumType
+    name: PremiumType
+    href: Remora.Discord.API.Abstractions.Objects.PremiumType.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.PremiumType
+    name: PremiumType
+    href: Remora.Discord.API.Abstractions.Objects.PremiumType.html
+  - name: )
+- uid: Remora.Rest.Core.Optional`1
+  commentId: T:Remora.Rest.Core.Optional`1
+  isExternal: true
+  name: Optional<TValue>
+  nameWithType: Optional<TValue>
+  fullName: Remora.Rest.Core.Optional<TValue>
+  nameWithType.vb: Optional(Of TValue)
+  fullName.vb: Remora.Rest.Core.Optional(Of TValue)
+  name.vb: Optional(Of TValue)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+- uid: Remora.Discord.API.Objects.PartialUser.ID*
+  commentId: Overload:Remora.Discord.API.Objects.PartialUser.ID
+  href: Remora.Discord.API.Objects.PartialUser.html#Remora_Discord_API_Objects_PartialUser_ID
+  name: ID
+  nameWithType: PartialUser.ID
+  fullName: Remora.Discord.API.Objects.PartialUser.ID
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialUser.ID
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialUser.ID
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialUser
+  href: Remora.Discord.API.Abstractions.Objects.IPartialUser.html#Remora_Discord_API_Abstractions_Objects_IPartialUser_ID
+  name: ID
+  nameWithType: IPartialUser.ID
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialUser.ID
+- uid: Remora.Discord.API.Objects.PartialUser.Username*
+  commentId: Overload:Remora.Discord.API.Objects.PartialUser.Username
+  href: Remora.Discord.API.Objects.PartialUser.html#Remora_Discord_API_Objects_PartialUser_Username
+  name: Username
+  nameWithType: PartialUser.Username
+  fullName: Remora.Discord.API.Objects.PartialUser.Username
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialUser.Username
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialUser.Username
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialUser
+  href: Remora.Discord.API.Abstractions.Objects.IPartialUser.html#Remora_Discord_API_Abstractions_Objects_IPartialUser_Username
+  name: Username
+  nameWithType: IPartialUser.Username
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialUser.Username
+- uid: Remora.Discord.API.Objects.PartialUser.Discriminator*
+  commentId: Overload:Remora.Discord.API.Objects.PartialUser.Discriminator
+  href: Remora.Discord.API.Objects.PartialUser.html#Remora_Discord_API_Objects_PartialUser_Discriminator
+  name: Discriminator
+  nameWithType: PartialUser.Discriminator
+  fullName: Remora.Discord.API.Objects.PartialUser.Discriminator
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialUser.Discriminator
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialUser.Discriminator
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialUser
+  href: Remora.Discord.API.Abstractions.Objects.IPartialUser.html#Remora_Discord_API_Abstractions_Objects_IPartialUser_Discriminator
+  name: Discriminator
+  nameWithType: IPartialUser.Discriminator
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialUser.Discriminator
+- uid: Remora.Discord.API.Objects.PartialUser.GlobalName*
+  commentId: Overload:Remora.Discord.API.Objects.PartialUser.GlobalName
+  href: Remora.Discord.API.Objects.PartialUser.html#Remora_Discord_API_Objects_PartialUser_GlobalName
+  name: GlobalName
+  nameWithType: PartialUser.GlobalName
+  fullName: Remora.Discord.API.Objects.PartialUser.GlobalName
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialUser.GlobalName
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialUser.GlobalName
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialUser
+  href: Remora.Discord.API.Abstractions.Objects.IPartialUser.html#Remora_Discord_API_Abstractions_Objects_IPartialUser_GlobalName
+  name: GlobalName
+  nameWithType: IPartialUser.GlobalName
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialUser.GlobalName
+- uid: Remora.Discord.API.Objects.PartialUser.Avatar*
+  commentId: Overload:Remora.Discord.API.Objects.PartialUser.Avatar
+  href: Remora.Discord.API.Objects.PartialUser.html#Remora_Discord_API_Objects_PartialUser_Avatar
+  name: Avatar
+  nameWithType: PartialUser.Avatar
+  fullName: Remora.Discord.API.Objects.PartialUser.Avatar
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialUser.Avatar
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialUser.Avatar
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialUser
+  href: Remora.Discord.API.Abstractions.Objects.IPartialUser.html#Remora_Discord_API_Abstractions_Objects_IPartialUser_Avatar
+  name: Avatar
+  nameWithType: IPartialUser.Avatar
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialUser.Avatar
+- uid: Remora.Discord.API.Objects.PartialUser.IsBot*
+  commentId: Overload:Remora.Discord.API.Objects.PartialUser.IsBot
+  href: Remora.Discord.API.Objects.PartialUser.html#Remora_Discord_API_Objects_PartialUser_IsBot
+  name: IsBot
+  nameWithType: PartialUser.IsBot
+  fullName: Remora.Discord.API.Objects.PartialUser.IsBot
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialUser.IsBot
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialUser.IsBot
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialUser
+  href: Remora.Discord.API.Abstractions.Objects.IPartialUser.html#Remora_Discord_API_Abstractions_Objects_IPartialUser_IsBot
+  name: IsBot
+  nameWithType: IPartialUser.IsBot
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialUser.IsBot
+- uid: Remora.Discord.API.Objects.PartialUser.IsSystem*
+  commentId: Overload:Remora.Discord.API.Objects.PartialUser.IsSystem
+  href: Remora.Discord.API.Objects.PartialUser.html#Remora_Discord_API_Objects_PartialUser_IsSystem
+  name: IsSystem
+  nameWithType: PartialUser.IsSystem
+  fullName: Remora.Discord.API.Objects.PartialUser.IsSystem
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialUser.IsSystem
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialUser.IsSystem
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialUser
+  href: Remora.Discord.API.Abstractions.Objects.IPartialUser.html#Remora_Discord_API_Abstractions_Objects_IPartialUser_IsSystem
+  name: IsSystem
+  nameWithType: IPartialUser.IsSystem
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialUser.IsSystem
+- uid: Remora.Discord.API.Objects.PartialUser.IsMFAEnabled*
+  commentId: Overload:Remora.Discord.API.Objects.PartialUser.IsMFAEnabled
+  href: Remora.Discord.API.Objects.PartialUser.html#Remora_Discord_API_Objects_PartialUser_IsMFAEnabled
+  name: IsMFAEnabled
+  nameWithType: PartialUser.IsMFAEnabled
+  fullName: Remora.Discord.API.Objects.PartialUser.IsMFAEnabled
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialUser.IsMFAEnabled
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialUser.IsMFAEnabled
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialUser
+  href: Remora.Discord.API.Abstractions.Objects.IPartialUser.html#Remora_Discord_API_Abstractions_Objects_IPartialUser_IsMFAEnabled
+  name: IsMFAEnabled
+  nameWithType: IPartialUser.IsMFAEnabled
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialUser.IsMFAEnabled
+- uid: Remora.Discord.API.Objects.PartialUser.Banner*
+  commentId: Overload:Remora.Discord.API.Objects.PartialUser.Banner
+  href: Remora.Discord.API.Objects.PartialUser.html#Remora_Discord_API_Objects_PartialUser_Banner
+  name: Banner
+  nameWithType: PartialUser.Banner
+  fullName: Remora.Discord.API.Objects.PartialUser.Banner
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialUser.Banner
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialUser.Banner
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialUser
+  href: Remora.Discord.API.Abstractions.Objects.IPartialUser.html#Remora_Discord_API_Abstractions_Objects_IPartialUser_Banner
+  name: Banner
+  nameWithType: IPartialUser.Banner
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialUser.Banner
+- uid: Remora.Discord.API.Objects.PartialUser.AccentColour*
+  commentId: Overload:Remora.Discord.API.Objects.PartialUser.AccentColour
+  href: Remora.Discord.API.Objects.PartialUser.html#Remora_Discord_API_Objects_PartialUser_AccentColour
+  name: AccentColour
+  nameWithType: PartialUser.AccentColour
+  fullName: Remora.Discord.API.Objects.PartialUser.AccentColour
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialUser.AccentColour
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialUser.AccentColour
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialUser
+  href: Remora.Discord.API.Abstractions.Objects.IPartialUser.html#Remora_Discord_API_Abstractions_Objects_IPartialUser_AccentColour
+  name: AccentColour
+  nameWithType: IPartialUser.AccentColour
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialUser.AccentColour
+- uid: Remora.Discord.API.Objects.PartialUser.Locale*
+  commentId: Overload:Remora.Discord.API.Objects.PartialUser.Locale
+  href: Remora.Discord.API.Objects.PartialUser.html#Remora_Discord_API_Objects_PartialUser_Locale
+  name: Locale
+  nameWithType: PartialUser.Locale
+  fullName: Remora.Discord.API.Objects.PartialUser.Locale
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialUser.Locale
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialUser.Locale
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialUser
+  href: Remora.Discord.API.Abstractions.Objects.IPartialUser.html#Remora_Discord_API_Abstractions_Objects_IPartialUser_Locale
+  name: Locale
+  nameWithType: IPartialUser.Locale
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialUser.Locale
+- uid: Remora.Discord.API.Objects.PartialUser.IsVerified*
+  commentId: Overload:Remora.Discord.API.Objects.PartialUser.IsVerified
+  href: Remora.Discord.API.Objects.PartialUser.html#Remora_Discord_API_Objects_PartialUser_IsVerified
+  name: IsVerified
+  nameWithType: PartialUser.IsVerified
+  fullName: Remora.Discord.API.Objects.PartialUser.IsVerified
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialUser.IsVerified
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialUser.IsVerified
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialUser
+  href: Remora.Discord.API.Abstractions.Objects.IPartialUser.html#Remora_Discord_API_Abstractions_Objects_IPartialUser_IsVerified
+  name: IsVerified
+  nameWithType: IPartialUser.IsVerified
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialUser.IsVerified
+- uid: Remora.Discord.API.Objects.PartialUser.Email*
+  commentId: Overload:Remora.Discord.API.Objects.PartialUser.Email
+  href: Remora.Discord.API.Objects.PartialUser.html#Remora_Discord_API_Objects_PartialUser_Email
+  name: Email
+  nameWithType: PartialUser.Email
+  fullName: Remora.Discord.API.Objects.PartialUser.Email
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialUser.Email
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialUser.Email
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialUser
+  href: Remora.Discord.API.Abstractions.Objects.IPartialUser.html#Remora_Discord_API_Abstractions_Objects_IPartialUser_Email
+  name: Email
+  nameWithType: IPartialUser.Email
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialUser.Email
+- uid: Remora.Discord.API.Objects.PartialUser.Flags*
+  commentId: Overload:Remora.Discord.API.Objects.PartialUser.Flags
+  href: Remora.Discord.API.Objects.PartialUser.html#Remora_Discord_API_Objects_PartialUser_Flags
+  name: Flags
+  nameWithType: PartialUser.Flags
+  fullName: Remora.Discord.API.Objects.PartialUser.Flags
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialUser.Flags
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialUser.Flags
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialUser
+  href: Remora.Discord.API.Abstractions.Objects.IPartialUser.html#Remora_Discord_API_Abstractions_Objects_IPartialUser_Flags
+  name: Flags
+  nameWithType: IPartialUser.Flags
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialUser.Flags
+- uid: Remora.Discord.API.Objects.PartialUser.PremiumType*
+  commentId: Overload:Remora.Discord.API.Objects.PartialUser.PremiumType
+  href: Remora.Discord.API.Objects.PartialUser.html#Remora_Discord_API_Objects_PartialUser_PremiumType
+  name: PremiumType
+  nameWithType: PartialUser.PremiumType
+  fullName: Remora.Discord.API.Objects.PartialUser.PremiumType
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialUser.PremiumType
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialUser.PremiumType
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialUser
+  href: Remora.Discord.API.Abstractions.Objects.IPartialUser.html#Remora_Discord_API_Abstractions_Objects_IPartialUser_PremiumType
+  name: PremiumType
+  nameWithType: IPartialUser.PremiumType
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialUser.PremiumType
+- uid: Remora.Discord.API.Objects.PartialUser.PublicFlags*
+  commentId: Overload:Remora.Discord.API.Objects.PartialUser.PublicFlags
+  href: Remora.Discord.API.Objects.PartialUser.html#Remora_Discord_API_Objects_PartialUser_PublicFlags
+  name: PublicFlags
+  nameWithType: PartialUser.PublicFlags
+  fullName: Remora.Discord.API.Objects.PartialUser.PublicFlags
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialUser.PublicFlags
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialUser.PublicFlags
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialUser
+  href: Remora.Discord.API.Abstractions.Objects.IPartialUser.html#Remora_Discord_API_Abstractions_Objects_IPartialUser_PublicFlags
+  name: PublicFlags
+  nameWithType: IPartialUser.PublicFlags
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialUser.PublicFlags
+- uid: Remora.Discord.API.Objects.PartialUser.AvatarDecoration*
+  commentId: Overload:Remora.Discord.API.Objects.PartialUser.AvatarDecoration
+  href: Remora.Discord.API.Objects.PartialUser.html#Remora_Discord_API_Objects_PartialUser_AvatarDecoration
+  name: AvatarDecoration
+  nameWithType: PartialUser.AvatarDecoration
+  fullName: Remora.Discord.API.Objects.PartialUser.AvatarDecoration
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialUser.AvatarDecoration
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialUser.AvatarDecoration
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialUser
+  href: Remora.Discord.API.Abstractions.Objects.IPartialUser.html#Remora_Discord_API_Abstractions_Objects_IPartialUser_AvatarDecoration
+  name: AvatarDecoration
+  nameWithType: IPartialUser.AvatarDecoration
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialUser.AvatarDecoration

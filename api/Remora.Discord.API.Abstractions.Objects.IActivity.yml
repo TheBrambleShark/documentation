@@ -1,0 +1,1130 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Abstractions.Objects.IActivity
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IActivity
+  id: IActivity
+  parent: Remora.Discord.API.Abstractions.Objects
+  children:
+  - Remora.Discord.API.Abstractions.Objects.IActivity.ApplicationID
+  - Remora.Discord.API.Abstractions.Objects.IActivity.Assets
+  - Remora.Discord.API.Abstractions.Objects.IActivity.Buttons
+  - Remora.Discord.API.Abstractions.Objects.IActivity.CreatedAt
+  - Remora.Discord.API.Abstractions.Objects.IActivity.Details
+  - Remora.Discord.API.Abstractions.Objects.IActivity.Emoji
+  - Remora.Discord.API.Abstractions.Objects.IActivity.Flags
+  - Remora.Discord.API.Abstractions.Objects.IActivity.Instance
+  - Remora.Discord.API.Abstractions.Objects.IActivity.Name
+  - Remora.Discord.API.Abstractions.Objects.IActivity.Party
+  - Remora.Discord.API.Abstractions.Objects.IActivity.Secrets
+  - Remora.Discord.API.Abstractions.Objects.IActivity.State
+  - Remora.Discord.API.Abstractions.Objects.IActivity.Timestamps
+  - Remora.Discord.API.Abstractions.Objects.IActivity.Type
+  - Remora.Discord.API.Abstractions.Objects.IActivity.Url
+  langs:
+  - csharp
+  - vb
+  name: IActivity
+  nameWithType: IActivity
+  fullName: Remora.Discord.API.Abstractions.Objects.IActivity
+  type: Interface
+  source:
+    id: IActivity
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Activities\IActivity.cs
+    startLine: 33
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Represents information about an activity Discord is aware of.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public interface IActivity
+    content.vb: >-
+      <PublicAPI>
+
+      Public Interface IActivity
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Abstractions.Objects.IActivity.Name
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IActivity.Name
+  id: Name
+  parent: Remora.Discord.API.Abstractions.Objects.IActivity
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: IActivity.Name
+  fullName: Remora.Discord.API.Abstractions.Objects.IActivity.Name
+  type: Property
+  source:
+    id: Name
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Activities\IActivity.cs
+    startLine: 39
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the name of the activity.
+  example: []
+  syntax:
+    content: string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property Name As String
+  overload: Remora.Discord.API.Abstractions.Objects.IActivity.Name*
+- uid: Remora.Discord.API.Abstractions.Objects.IActivity.Type
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IActivity.Type
+  id: Type
+  parent: Remora.Discord.API.Abstractions.Objects.IActivity
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: IActivity.Type
+  fullName: Remora.Discord.API.Abstractions.Objects.IActivity.Type
+  type: Property
+  source:
+    id: Type
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Activities\IActivity.cs
+    startLine: 44
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the type of the activity.
+  example: []
+  syntax:
+    content: ActivityType Type { get; }
+    parameters: []
+    return:
+      type: Remora.Discord.API.Abstractions.Objects.ActivityType
+    content.vb: ReadOnly Property Type As ActivityType
+  overload: Remora.Discord.API.Abstractions.Objects.IActivity.Type*
+- uid: Remora.Discord.API.Abstractions.Objects.IActivity.Url
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IActivity.Url
+  id: Url
+  parent: Remora.Discord.API.Abstractions.Objects.IActivity
+  langs:
+  - csharp
+  - vb
+  name: Url
+  nameWithType: IActivity.Url
+  fullName: Remora.Discord.API.Abstractions.Objects.IActivity.Url
+  type: Property
+  source:
+    id: Url
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Activities\IActivity.cs
+    startLine: 49
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the stream URL. Used when <xref href="Remora.Discord.API.Abstractions.Objects.IActivity.Type" data-throw-if-not-resolved="false"></xref> is <xref href="Remora.Discord.API.Abstractions.Objects.ActivityType.Streaming" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: Optional<Uri?> Url { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Uri}
+    content.vb: ReadOnly Property Url As [Optional](Of Uri)
+  overload: Remora.Discord.API.Abstractions.Objects.IActivity.Url*
+- uid: Remora.Discord.API.Abstractions.Objects.IActivity.CreatedAt
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IActivity.CreatedAt
+  id: CreatedAt
+  parent: Remora.Discord.API.Abstractions.Objects.IActivity
+  langs:
+  - csharp
+  - vb
+  name: CreatedAt
+  nameWithType: IActivity.CreatedAt
+  fullName: Remora.Discord.API.Abstractions.Objects.IActivity.CreatedAt
+  type: Property
+  source:
+    id: CreatedAt
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Activities\IActivity.cs
+    startLine: 59
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the time when the activity was added to the user's session.
+  remarks: >-
+    This field is always present on activities received from Discord; it is optional because it should never be
+
+    sent by a bot. Discord's documentation is somewhat vague at first glance, but because of the above it's
+
+    implemented as an optional field.
+  example: []
+  syntax:
+    content: Optional<DateTimeOffset> CreatedAt { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.DateTimeOffset}
+    content.vb: ReadOnly Property CreatedAt As [Optional](Of DateTimeOffset)
+  overload: Remora.Discord.API.Abstractions.Objects.IActivity.CreatedAt*
+- uid: Remora.Discord.API.Abstractions.Objects.IActivity.Timestamps
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IActivity.Timestamps
+  id: Timestamps
+  parent: Remora.Discord.API.Abstractions.Objects.IActivity
+  langs:
+  - csharp
+  - vb
+  name: Timestamps
+  nameWithType: IActivity.Timestamps
+  fullName: Remora.Discord.API.Abstractions.Objects.IActivity.Timestamps
+  type: Property
+  source:
+    id: Timestamps
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Activities\IActivity.cs
+    startLine: 64
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the time at which the activity started and/or ended.
+  example: []
+  syntax:
+    content: Optional<IActivityTimestamps> Timestamps { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IActivityTimestamps}
+    content.vb: ReadOnly Property Timestamps As [Optional](Of IActivityTimestamps)
+  overload: Remora.Discord.API.Abstractions.Objects.IActivity.Timestamps*
+- uid: Remora.Discord.API.Abstractions.Objects.IActivity.ApplicationID
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IActivity.ApplicationID
+  id: ApplicationID
+  parent: Remora.Discord.API.Abstractions.Objects.IActivity
+  langs:
+  - csharp
+  - vb
+  name: ApplicationID
+  nameWithType: IActivity.ApplicationID
+  fullName: Remora.Discord.API.Abstractions.Objects.IActivity.ApplicationID
+  type: Property
+  source:
+    id: ApplicationID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Activities\IActivity.cs
+    startLine: 69
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the ID of the application the activity is associated with.
+  example: []
+  syntax:
+    content: Optional<Snowflake> ApplicationID { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+    content.vb: ReadOnly Property ApplicationID As [Optional](Of Snowflake)
+  overload: Remora.Discord.API.Abstractions.Objects.IActivity.ApplicationID*
+- uid: Remora.Discord.API.Abstractions.Objects.IActivity.Details
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IActivity.Details
+  id: Details
+  parent: Remora.Discord.API.Abstractions.Objects.IActivity
+  langs:
+  - csharp
+  - vb
+  name: Details
+  nameWithType: IActivity.Details
+  fullName: Remora.Discord.API.Abstractions.Objects.IActivity.Details
+  type: Property
+  source:
+    id: Details
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Activities\IActivity.cs
+    startLine: 74
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets a detail string about what the user is currently doing.
+  example: []
+  syntax:
+    content: Optional<string?> Details { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.String}
+    content.vb: ReadOnly Property Details As [Optional](Of String)
+  overload: Remora.Discord.API.Abstractions.Objects.IActivity.Details*
+- uid: Remora.Discord.API.Abstractions.Objects.IActivity.State
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IActivity.State
+  id: State
+  parent: Remora.Discord.API.Abstractions.Objects.IActivity
+  langs:
+  - csharp
+  - vb
+  name: State
+  nameWithType: IActivity.State
+  fullName: Remora.Discord.API.Abstractions.Objects.IActivity.State
+  type: Property
+  source:
+    id: State
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Activities\IActivity.cs
+    startLine: 79
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the user's current party status.
+  example: []
+  syntax:
+    content: Optional<string?> State { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.String}
+    content.vb: ReadOnly Property State As [Optional](Of String)
+  overload: Remora.Discord.API.Abstractions.Objects.IActivity.State*
+- uid: Remora.Discord.API.Abstractions.Objects.IActivity.Emoji
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IActivity.Emoji
+  id: Emoji
+  parent: Remora.Discord.API.Abstractions.Objects.IActivity
+  langs:
+  - csharp
+  - vb
+  name: Emoji
+  nameWithType: IActivity.Emoji
+  fullName: Remora.Discord.API.Abstractions.Objects.IActivity.Emoji
+  type: Property
+  source:
+    id: Emoji
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Activities\IActivity.cs
+    startLine: 84
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the emoji used for a custom status.
+  example: []
+  syntax:
+    content: Optional<IActivityEmoji?> Emoji { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IActivityEmoji}
+    content.vb: ReadOnly Property Emoji As [Optional](Of IActivityEmoji)
+  overload: Remora.Discord.API.Abstractions.Objects.IActivity.Emoji*
+- uid: Remora.Discord.API.Abstractions.Objects.IActivity.Party
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IActivity.Party
+  id: Party
+  parent: Remora.Discord.API.Abstractions.Objects.IActivity
+  langs:
+  - csharp
+  - vb
+  name: Party
+  nameWithType: IActivity.Party
+  fullName: Remora.Discord.API.Abstractions.Objects.IActivity.Party
+  type: Property
+  source:
+    id: Party
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Activities\IActivity.cs
+    startLine: 89
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets information about the user's current party.
+  example: []
+  syntax:
+    content: Optional<IActivityParty> Party { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IActivityParty}
+    content.vb: ReadOnly Property Party As [Optional](Of IActivityParty)
+  overload: Remora.Discord.API.Abstractions.Objects.IActivity.Party*
+- uid: Remora.Discord.API.Abstractions.Objects.IActivity.Assets
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IActivity.Assets
+  id: Assets
+  parent: Remora.Discord.API.Abstractions.Objects.IActivity
+  langs:
+  - csharp
+  - vb
+  name: Assets
+  nameWithType: IActivity.Assets
+  fullName: Remora.Discord.API.Abstractions.Objects.IActivity.Assets
+  type: Property
+  source:
+    id: Assets
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Activities\IActivity.cs
+    startLine: 94
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets information about the assets associated with the user's current activity.
+  example: []
+  syntax:
+    content: Optional<IActivityAssets> Assets { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IActivityAssets}
+    content.vb: ReadOnly Property Assets As [Optional](Of IActivityAssets)
+  overload: Remora.Discord.API.Abstractions.Objects.IActivity.Assets*
+- uid: Remora.Discord.API.Abstractions.Objects.IActivity.Secrets
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IActivity.Secrets
+  id: Secrets
+  parent: Remora.Discord.API.Abstractions.Objects.IActivity
+  langs:
+  - csharp
+  - vb
+  name: Secrets
+  nameWithType: IActivity.Secrets
+  fullName: Remora.Discord.API.Abstractions.Objects.IActivity.Secrets
+  type: Property
+  source:
+    id: Secrets
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Activities\IActivity.cs
+    startLine: 99
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the secrets associated with the user's current activity.
+  example: []
+  syntax:
+    content: Optional<IActivitySecrets> Secrets { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IActivitySecrets}
+    content.vb: ReadOnly Property Secrets As [Optional](Of IActivitySecrets)
+  overload: Remora.Discord.API.Abstractions.Objects.IActivity.Secrets*
+- uid: Remora.Discord.API.Abstractions.Objects.IActivity.Instance
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IActivity.Instance
+  id: Instance
+  parent: Remora.Discord.API.Abstractions.Objects.IActivity
+  langs:
+  - csharp
+  - vb
+  name: Instance
+  nameWithType: IActivity.Instance
+  fullName: Remora.Discord.API.Abstractions.Objects.IActivity.Instance
+  type: Property
+  source:
+    id: Instance
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Activities\IActivity.cs
+    startLine: 104
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets a value indicating whether the activity is in an instanced session.
+  example: []
+  syntax:
+    content: Optional<bool> Instance { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Boolean}
+    content.vb: ReadOnly Property Instance As [Optional](Of Boolean)
+  overload: Remora.Discord.API.Abstractions.Objects.IActivity.Instance*
+- uid: Remora.Discord.API.Abstractions.Objects.IActivity.Flags
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IActivity.Flags
+  id: Flags
+  parent: Remora.Discord.API.Abstractions.Objects.IActivity
+  langs:
+  - csharp
+  - vb
+  name: Flags
+  nameWithType: IActivity.Flags
+  fullName: Remora.Discord.API.Abstractions.Objects.IActivity.Flags
+  type: Property
+  source:
+    id: Flags
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Activities\IActivity.cs
+    startLine: 109
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets a set of descriptive flags that detail what the payload includes.
+  example: []
+  syntax:
+    content: Optional<ActivityFlags> Flags { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.ActivityFlags}
+    content.vb: ReadOnly Property Flags As [Optional](Of ActivityFlags)
+  overload: Remora.Discord.API.Abstractions.Objects.IActivity.Flags*
+- uid: Remora.Discord.API.Abstractions.Objects.IActivity.Buttons
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IActivity.Buttons
+  id: Buttons
+  parent: Remora.Discord.API.Abstractions.Objects.IActivity
+  langs:
+  - csharp
+  - vb
+  name: Buttons
+  nameWithType: IActivity.Buttons
+  fullName: Remora.Discord.API.Abstractions.Objects.IActivity.Buttons
+  type: Property
+  source:
+    id: Buttons
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Activities\IActivity.cs
+    startLine: 114
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the custom buttons show in Rich Presence.
+  example: []
+  syntax:
+    content: Optional<OneOf<IReadOnlyList<string>, IReadOnlyList<IActivityButton>>> Buttons { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{OneOf.OneOf{System.Collections.Generic.IReadOnlyList{System.String},System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IActivityButton}}}
+    content.vb: ReadOnly Property Buttons As [Optional](Of OneOf(Of IReadOnlyList(Of String), IReadOnlyList(Of IActivityButton)))
+  overload: Remora.Discord.API.Abstractions.Objects.IActivity.Buttons*
+references:
+- uid: Remora.Discord.API.Abstractions.Objects
+  commentId: N:Remora.Discord.API.Abstractions.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Objects
+  nameWithType: Remora.Discord.API.Abstractions.Objects
+  fullName: Remora.Discord.API.Abstractions.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+- uid: Remora.Discord.API.Abstractions.Objects.IActivity.Name*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IActivity.Name
+  href: Remora.Discord.API.Abstractions.Objects.IActivity.html#Remora_Discord_API_Abstractions_Objects_IActivity_Name
+  name: Name
+  nameWithType: IActivity.Name
+  fullName: Remora.Discord.API.Abstractions.Objects.IActivity.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.API.Abstractions.Objects.IActivity.Type*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IActivity.Type
+  href: Remora.Discord.API.Abstractions.Objects.IActivity.html#Remora_Discord_API_Abstractions_Objects_IActivity_Type
+  name: Type
+  nameWithType: IActivity.Type
+  fullName: Remora.Discord.API.Abstractions.Objects.IActivity.Type
+- uid: Remora.Discord.API.Abstractions.Objects.ActivityType
+  commentId: T:Remora.Discord.API.Abstractions.Objects.ActivityType
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.ActivityType.html
+  name: ActivityType
+  nameWithType: ActivityType
+  fullName: Remora.Discord.API.Abstractions.Objects.ActivityType
+- uid: Remora.Discord.API.Abstractions.Objects.IActivity.Type
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IActivity.Type
+  parent: Remora.Discord.API.Abstractions.Objects.IActivity
+  href: Remora.Discord.API.Abstractions.Objects.IActivity.html#Remora_Discord_API_Abstractions_Objects_IActivity_Type
+  name: Type
+  nameWithType: IActivity.Type
+  fullName: Remora.Discord.API.Abstractions.Objects.IActivity.Type
+- uid: Remora.Discord.API.Abstractions.Objects.ActivityType.Streaming
+  commentId: F:Remora.Discord.API.Abstractions.Objects.ActivityType.Streaming
+  href: Remora.Discord.API.Abstractions.Objects.ActivityType.html#Remora_Discord_API_Abstractions_Objects_ActivityType_Streaming
+  name: Streaming
+  nameWithType: ActivityType.Streaming
+  fullName: Remora.Discord.API.Abstractions.Objects.ActivityType.Streaming
+- uid: Remora.Discord.API.Abstractions.Objects.IActivity.Url*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IActivity.Url
+  href: Remora.Discord.API.Abstractions.Objects.IActivity.html#Remora_Discord_API_Abstractions_Objects_IActivity_Url
+  name: Url
+  nameWithType: IActivity.Url
+  fullName: Remora.Discord.API.Abstractions.Objects.IActivity.Url
+- uid: Remora.Rest.Core.Optional{System.Uri}
+  commentId: T:Remora.Rest.Core.Optional{System.Uri}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.uri
+  name: Optional<Uri>
+  nameWithType: Optional<Uri>
+  fullName: Remora.Rest.Core.Optional<System.Uri>
+  nameWithType.vb: Optional(Of Uri)
+  fullName.vb: Remora.Rest.Core.Optional(Of System.Uri)
+  name.vb: Optional(Of Uri)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Uri
+    name: Uri
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uri
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Uri
+    name: Uri
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uri
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Objects.IActivity
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IActivity
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IActivity.html
+  name: IActivity
+  nameWithType: IActivity
+  fullName: Remora.Discord.API.Abstractions.Objects.IActivity
+- uid: Remora.Rest.Core.Optional`1
+  commentId: T:Remora.Rest.Core.Optional`1
+  isExternal: true
+  name: Optional<TValue>
+  nameWithType: Optional<TValue>
+  fullName: Remora.Rest.Core.Optional<TValue>
+  nameWithType.vb: Optional(Of TValue)
+  fullName.vb: Remora.Rest.Core.Optional(Of TValue)
+  name.vb: Optional(Of TValue)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+- uid: Remora.Discord.API.Abstractions.Objects.IActivity.CreatedAt*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IActivity.CreatedAt
+  href: Remora.Discord.API.Abstractions.Objects.IActivity.html#Remora_Discord_API_Abstractions_Objects_IActivity_CreatedAt
+  name: CreatedAt
+  nameWithType: IActivity.CreatedAt
+  fullName: Remora.Discord.API.Abstractions.Objects.IActivity.CreatedAt
+- uid: Remora.Rest.Core.Optional{System.DateTimeOffset}
+  commentId: T:Remora.Rest.Core.Optional{System.DateTimeOffset}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  name: Optional<DateTimeOffset>
+  nameWithType: Optional<DateTimeOffset>
+  fullName: Remora.Rest.Core.Optional<System.DateTimeOffset>
+  nameWithType.vb: Optional(Of DateTimeOffset)
+  fullName.vb: Remora.Rest.Core.Optional(Of System.DateTimeOffset)
+  name.vb: Optional(Of DateTimeOffset)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Objects.IActivity.Timestamps*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IActivity.Timestamps
+  href: Remora.Discord.API.Abstractions.Objects.IActivity.html#Remora_Discord_API_Abstractions_Objects_IActivity_Timestamps
+  name: Timestamps
+  nameWithType: IActivity.Timestamps
+  fullName: Remora.Discord.API.Abstractions.Objects.IActivity.Timestamps
+- uid: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IActivityTimestamps}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IActivityTimestamps}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: Remora.Discord.API.Abstractions.Objects.IActivityTimestamps.html
+  name: Optional<IActivityTimestamps>
+  nameWithType: Optional<IActivityTimestamps>
+  fullName: Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IActivityTimestamps>
+  nameWithType.vb: Optional(Of IActivityTimestamps)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IActivityTimestamps)
+  name.vb: Optional(Of IActivityTimestamps)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IActivityTimestamps
+    name: IActivityTimestamps
+    href: Remora.Discord.API.Abstractions.Objects.IActivityTimestamps.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IActivityTimestamps
+    name: IActivityTimestamps
+    href: Remora.Discord.API.Abstractions.Objects.IActivityTimestamps.html
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Objects.IActivity.ApplicationID*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IActivity.ApplicationID
+  href: Remora.Discord.API.Abstractions.Objects.IActivity.html#Remora_Discord_API_Abstractions_Objects_IActivity_ApplicationID
+  name: ApplicationID
+  nameWithType: IActivity.ApplicationID
+  fullName: Remora.Discord.API.Abstractions.Objects.IActivity.ApplicationID
+- uid: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  name: Optional<Snowflake>
+  nameWithType: Optional<Snowflake>
+  fullName: Remora.Rest.Core.Optional<Remora.Rest.Core.Snowflake>
+  nameWithType.vb: Optional(Of Snowflake)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Rest.Core.Snowflake)
+  name.vb: Optional(Of Snowflake)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Objects.IActivity.Details*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IActivity.Details
+  href: Remora.Discord.API.Abstractions.Objects.IActivity.html#Remora_Discord_API_Abstractions_Objects_IActivity_Details
+  name: Details
+  nameWithType: IActivity.Details
+  fullName: Remora.Discord.API.Abstractions.Objects.IActivity.Details
+- uid: Remora.Rest.Core.Optional{System.String}
+  commentId: T:Remora.Rest.Core.Optional{System.String}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Optional<string>
+  nameWithType: Optional<string>
+  fullName: Remora.Rest.Core.Optional<string>
+  nameWithType.vb: Optional(Of String)
+  fullName.vb: Remora.Rest.Core.Optional(Of String)
+  name.vb: Optional(Of String)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Objects.IActivity.State*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IActivity.State
+  href: Remora.Discord.API.Abstractions.Objects.IActivity.html#Remora_Discord_API_Abstractions_Objects_IActivity_State
+  name: State
+  nameWithType: IActivity.State
+  fullName: Remora.Discord.API.Abstractions.Objects.IActivity.State
+- uid: Remora.Discord.API.Abstractions.Objects.IActivity.Emoji*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IActivity.Emoji
+  href: Remora.Discord.API.Abstractions.Objects.IActivity.html#Remora_Discord_API_Abstractions_Objects_IActivity_Emoji
+  name: Emoji
+  nameWithType: IActivity.Emoji
+  fullName: Remora.Discord.API.Abstractions.Objects.IActivity.Emoji
+- uid: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IActivityEmoji}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IActivityEmoji}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: Remora.Discord.API.Abstractions.Objects.IActivityEmoji.html
+  name: Optional<IActivityEmoji>
+  nameWithType: Optional<IActivityEmoji>
+  fullName: Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IActivityEmoji>
+  nameWithType.vb: Optional(Of IActivityEmoji)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IActivityEmoji)
+  name.vb: Optional(Of IActivityEmoji)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IActivityEmoji
+    name: IActivityEmoji
+    href: Remora.Discord.API.Abstractions.Objects.IActivityEmoji.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IActivityEmoji
+    name: IActivityEmoji
+    href: Remora.Discord.API.Abstractions.Objects.IActivityEmoji.html
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Objects.IActivity.Party*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IActivity.Party
+  href: Remora.Discord.API.Abstractions.Objects.IActivity.html#Remora_Discord_API_Abstractions_Objects_IActivity_Party
+  name: Party
+  nameWithType: IActivity.Party
+  fullName: Remora.Discord.API.Abstractions.Objects.IActivity.Party
+- uid: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IActivityParty}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IActivityParty}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: Remora.Discord.API.Abstractions.Objects.IActivityParty.html
+  name: Optional<IActivityParty>
+  nameWithType: Optional<IActivityParty>
+  fullName: Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IActivityParty>
+  nameWithType.vb: Optional(Of IActivityParty)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IActivityParty)
+  name.vb: Optional(Of IActivityParty)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IActivityParty
+    name: IActivityParty
+    href: Remora.Discord.API.Abstractions.Objects.IActivityParty.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IActivityParty
+    name: IActivityParty
+    href: Remora.Discord.API.Abstractions.Objects.IActivityParty.html
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Objects.IActivity.Assets*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IActivity.Assets
+  href: Remora.Discord.API.Abstractions.Objects.IActivity.html#Remora_Discord_API_Abstractions_Objects_IActivity_Assets
+  name: Assets
+  nameWithType: IActivity.Assets
+  fullName: Remora.Discord.API.Abstractions.Objects.IActivity.Assets
+- uid: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IActivityAssets}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IActivityAssets}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: Remora.Discord.API.Abstractions.Objects.IActivityAssets.html
+  name: Optional<IActivityAssets>
+  nameWithType: Optional<IActivityAssets>
+  fullName: Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IActivityAssets>
+  nameWithType.vb: Optional(Of IActivityAssets)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IActivityAssets)
+  name.vb: Optional(Of IActivityAssets)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IActivityAssets
+    name: IActivityAssets
+    href: Remora.Discord.API.Abstractions.Objects.IActivityAssets.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IActivityAssets
+    name: IActivityAssets
+    href: Remora.Discord.API.Abstractions.Objects.IActivityAssets.html
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Objects.IActivity.Secrets*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IActivity.Secrets
+  href: Remora.Discord.API.Abstractions.Objects.IActivity.html#Remora_Discord_API_Abstractions_Objects_IActivity_Secrets
+  name: Secrets
+  nameWithType: IActivity.Secrets
+  fullName: Remora.Discord.API.Abstractions.Objects.IActivity.Secrets
+- uid: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IActivitySecrets}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IActivitySecrets}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: Remora.Discord.API.Abstractions.Objects.IActivitySecrets.html
+  name: Optional<IActivitySecrets>
+  nameWithType: Optional<IActivitySecrets>
+  fullName: Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IActivitySecrets>
+  nameWithType.vb: Optional(Of IActivitySecrets)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IActivitySecrets)
+  name.vb: Optional(Of IActivitySecrets)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IActivitySecrets
+    name: IActivitySecrets
+    href: Remora.Discord.API.Abstractions.Objects.IActivitySecrets.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IActivitySecrets
+    name: IActivitySecrets
+    href: Remora.Discord.API.Abstractions.Objects.IActivitySecrets.html
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Objects.IActivity.Instance*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IActivity.Instance
+  href: Remora.Discord.API.Abstractions.Objects.IActivity.html#Remora_Discord_API_Abstractions_Objects_IActivity_Instance
+  name: Instance
+  nameWithType: IActivity.Instance
+  fullName: Remora.Discord.API.Abstractions.Objects.IActivity.Instance
+- uid: Remora.Rest.Core.Optional{System.Boolean}
+  commentId: T:Remora.Rest.Core.Optional{System.Boolean}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: Optional<bool>
+  nameWithType: Optional<bool>
+  fullName: Remora.Rest.Core.Optional<bool>
+  nameWithType.vb: Optional(Of Boolean)
+  fullName.vb: Remora.Rest.Core.Optional(Of Boolean)
+  name.vb: Optional(Of Boolean)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Objects.IActivity.Flags*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IActivity.Flags
+  href: Remora.Discord.API.Abstractions.Objects.IActivity.html#Remora_Discord_API_Abstractions_Objects_IActivity_Flags
+  name: Flags
+  nameWithType: IActivity.Flags
+  fullName: Remora.Discord.API.Abstractions.Objects.IActivity.Flags
+- uid: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.ActivityFlags}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.ActivityFlags}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: Remora.Discord.API.Abstractions.Objects.ActivityFlags.html
+  name: Optional<ActivityFlags>
+  nameWithType: Optional<ActivityFlags>
+  fullName: Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.ActivityFlags>
+  nameWithType.vb: Optional(Of ActivityFlags)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.ActivityFlags)
+  name.vb: Optional(Of ActivityFlags)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.ActivityFlags
+    name: ActivityFlags
+    href: Remora.Discord.API.Abstractions.Objects.ActivityFlags.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.ActivityFlags
+    name: ActivityFlags
+    href: Remora.Discord.API.Abstractions.Objects.ActivityFlags.html
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Objects.IActivity.Buttons*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IActivity.Buttons
+  href: Remora.Discord.API.Abstractions.Objects.IActivity.html#Remora_Discord_API_Abstractions_Objects_IActivity_Buttons
+  name: Buttons
+  nameWithType: IActivity.Buttons
+  fullName: Remora.Discord.API.Abstractions.Objects.IActivity.Buttons
+- uid: Remora.Rest.Core.Optional{OneOf.OneOf{System.Collections.Generic.IReadOnlyList{System.String},System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IActivityButton}}}
+  commentId: T:Remora.Rest.Core.Optional{OneOf.OneOf{System.Collections.Generic.IReadOnlyList{System.String},System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IActivityButton}}}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: Optional<OneOf<IReadOnlyList<string>, IReadOnlyList<IActivityButton>>>
+  nameWithType: Optional<OneOf<IReadOnlyList<string>, IReadOnlyList<IActivityButton>>>
+  fullName: Remora.Rest.Core.Optional<OneOf.OneOf<System.Collections.Generic.IReadOnlyList<string>, System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.IActivityButton>>>
+  nameWithType.vb: Optional(Of OneOf(Of IReadOnlyList(Of String), IReadOnlyList(Of IActivityButton)))
+  fullName.vb: Remora.Rest.Core.Optional(Of OneOf.OneOf(Of System.Collections.Generic.IReadOnlyList(Of String), System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.IActivityButton)))
+  name.vb: Optional(Of OneOf(Of IReadOnlyList(Of String), IReadOnlyList(Of IActivityButton)))
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: OneOf.OneOf`2
+    name: OneOf
+    isExternal: true
+  - name: <
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IActivityButton
+    name: IActivityButton
+    href: Remora.Discord.API.Abstractions.Objects.IActivityButton.html
+  - name: '>'
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OneOf.OneOf`2
+    name: OneOf
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IActivityButton
+    name: IActivityButton
+    href: Remora.Discord.API.Abstractions.Objects.IActivityButton.html
+  - name: )
+  - name: )
+  - name: )

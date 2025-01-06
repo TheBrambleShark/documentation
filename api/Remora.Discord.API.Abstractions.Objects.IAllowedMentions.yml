@@ -1,0 +1,423 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Abstractions.Objects.IAllowedMentions
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IAllowedMentions
+  id: IAllowedMentions
+  parent: Remora.Discord.API.Abstractions.Objects
+  children:
+  - Remora.Discord.API.Abstractions.Objects.IAllowedMentions.MentionRepliedUser
+  - Remora.Discord.API.Abstractions.Objects.IAllowedMentions.Parse
+  - Remora.Discord.API.Abstractions.Objects.IAllowedMentions.Roles
+  - Remora.Discord.API.Abstractions.Objects.IAllowedMentions.Users
+  langs:
+  - csharp
+  - vb
+  name: IAllowedMentions
+  nameWithType: IAllowedMentions
+  fullName: Remora.Discord.API.Abstractions.Objects.IAllowedMentions
+  type: Interface
+  source:
+    id: IAllowedMentions
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Channels\IAllowedMentions.cs
+    startLine: 31
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Represents a set of allowed mentions.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public interface IAllowedMentions
+    content.vb: >-
+      <PublicAPI>
+
+      Public Interface IAllowedMentions
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Abstractions.Objects.IAllowedMentions.Parse
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IAllowedMentions.Parse
+  id: Parse
+  parent: Remora.Discord.API.Abstractions.Objects.IAllowedMentions
+  langs:
+  - csharp
+  - vb
+  name: Parse
+  nameWithType: IAllowedMentions.Parse
+  fullName: Remora.Discord.API.Abstractions.Objects.IAllowedMentions.Parse
+  type: Property
+  source:
+    id: Parse
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Channels\IAllowedMentions.cs
+    startLine: 39
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: >-
+    Gets a list of mention types to parse. The contents of this field has a mutually exclusive relationship with
+
+    the <xref href="Remora.Discord.API.Abstractions.Objects.IAllowedMentions.Roles" data-throw-if-not-resolved="false"></xref> and <xref href="Remora.Discord.API.Abstractions.Objects.IAllowedMentions.Users" data-throw-if-not-resolved="false"></xref> fields - that is, if that type is contained in this field,
+
+    the corresponding field in the type may not appear.
+  example: []
+  syntax:
+    content: Optional<IReadOnlyList<MentionType>> Parse { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.MentionType}}
+    content.vb: ReadOnly Property Parse As [Optional](Of IReadOnlyList(Of MentionType))
+  overload: Remora.Discord.API.Abstractions.Objects.IAllowedMentions.Parse*
+- uid: Remora.Discord.API.Abstractions.Objects.IAllowedMentions.Roles
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IAllowedMentions.Roles
+  id: Roles
+  parent: Remora.Discord.API.Abstractions.Objects.IAllowedMentions
+  langs:
+  - csharp
+  - vb
+  name: Roles
+  nameWithType: IAllowedMentions.Roles
+  fullName: Remora.Discord.API.Abstractions.Objects.IAllowedMentions.Roles
+  type: Property
+  source:
+    id: Roles
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Channels\IAllowedMentions.cs
+    startLine: 44
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets a list of allowed roles to mention.
+  example: []
+  syntax:
+    content: Optional<IReadOnlyList<Snowflake>> Roles { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}}
+    content.vb: ReadOnly Property Roles As [Optional](Of IReadOnlyList(Of Snowflake))
+  overload: Remora.Discord.API.Abstractions.Objects.IAllowedMentions.Roles*
+- uid: Remora.Discord.API.Abstractions.Objects.IAllowedMentions.Users
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IAllowedMentions.Users
+  id: Users
+  parent: Remora.Discord.API.Abstractions.Objects.IAllowedMentions
+  langs:
+  - csharp
+  - vb
+  name: Users
+  nameWithType: IAllowedMentions.Users
+  fullName: Remora.Discord.API.Abstractions.Objects.IAllowedMentions.Users
+  type: Property
+  source:
+    id: Users
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Channels\IAllowedMentions.cs
+    startLine: 49
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets a list of allowed users to mention.
+  example: []
+  syntax:
+    content: Optional<IReadOnlyList<Snowflake>> Users { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}}
+    content.vb: ReadOnly Property Users As [Optional](Of IReadOnlyList(Of Snowflake))
+  overload: Remora.Discord.API.Abstractions.Objects.IAllowedMentions.Users*
+- uid: Remora.Discord.API.Abstractions.Objects.IAllowedMentions.MentionRepliedUser
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IAllowedMentions.MentionRepliedUser
+  id: MentionRepliedUser
+  parent: Remora.Discord.API.Abstractions.Objects.IAllowedMentions
+  langs:
+  - csharp
+  - vb
+  name: MentionRepliedUser
+  nameWithType: IAllowedMentions.MentionRepliedUser
+  fullName: Remora.Discord.API.Abstractions.Objects.IAllowedMentions.MentionRepliedUser
+  type: Property
+  source:
+    id: MentionRepliedUser
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Channels\IAllowedMentions.cs
+    startLine: 54
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets a value indicating whether the replied-to user should be mentioned.
+  example: []
+  syntax:
+    content: Optional<bool> MentionRepliedUser { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Boolean}
+    content.vb: ReadOnly Property MentionRepliedUser As [Optional](Of Boolean)
+  overload: Remora.Discord.API.Abstractions.Objects.IAllowedMentions.MentionRepliedUser*
+references:
+- uid: Remora.Discord.API.Abstractions.Objects
+  commentId: N:Remora.Discord.API.Abstractions.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Objects
+  nameWithType: Remora.Discord.API.Abstractions.Objects
+  fullName: Remora.Discord.API.Abstractions.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+- uid: Remora.Discord.API.Abstractions.Objects.IAllowedMentions.Roles
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IAllowedMentions.Roles
+  parent: Remora.Discord.API.Abstractions.Objects.IAllowedMentions
+  href: Remora.Discord.API.Abstractions.Objects.IAllowedMentions.html#Remora_Discord_API_Abstractions_Objects_IAllowedMentions_Roles
+  name: Roles
+  nameWithType: IAllowedMentions.Roles
+  fullName: Remora.Discord.API.Abstractions.Objects.IAllowedMentions.Roles
+- uid: Remora.Discord.API.Abstractions.Objects.IAllowedMentions.Users
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IAllowedMentions.Users
+  parent: Remora.Discord.API.Abstractions.Objects.IAllowedMentions
+  href: Remora.Discord.API.Abstractions.Objects.IAllowedMentions.html#Remora_Discord_API_Abstractions_Objects_IAllowedMentions_Users
+  name: Users
+  nameWithType: IAllowedMentions.Users
+  fullName: Remora.Discord.API.Abstractions.Objects.IAllowedMentions.Users
+- uid: Remora.Discord.API.Abstractions.Objects.IAllowedMentions.Parse*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IAllowedMentions.Parse
+  href: Remora.Discord.API.Abstractions.Objects.IAllowedMentions.html#Remora_Discord_API_Abstractions_Objects_IAllowedMentions_Parse
+  name: Parse
+  nameWithType: IAllowedMentions.Parse
+  fullName: Remora.Discord.API.Abstractions.Objects.IAllowedMentions.Parse
+- uid: Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.MentionType}}
+  commentId: T:Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.MentionType}}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: Optional<IReadOnlyList<MentionType>>
+  nameWithType: Optional<IReadOnlyList<MentionType>>
+  fullName: Remora.Rest.Core.Optional<System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.MentionType>>
+  nameWithType.vb: Optional(Of IReadOnlyList(Of MentionType))
+  fullName.vb: Remora.Rest.Core.Optional(Of System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.MentionType))
+  name.vb: Optional(Of IReadOnlyList(Of MentionType))
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.MentionType
+    name: MentionType
+    href: Remora.Discord.API.Abstractions.Objects.MentionType.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.MentionType
+    name: MentionType
+    href: Remora.Discord.API.Abstractions.Objects.MentionType.html
+  - name: )
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Objects.IAllowedMentions
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IAllowedMentions
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IAllowedMentions.html
+  name: IAllowedMentions
+  nameWithType: IAllowedMentions
+  fullName: Remora.Discord.API.Abstractions.Objects.IAllowedMentions
+- uid: Remora.Rest.Core.Optional`1
+  commentId: T:Remora.Rest.Core.Optional`1
+  isExternal: true
+  name: Optional<TValue>
+  nameWithType: Optional<TValue>
+  fullName: Remora.Rest.Core.Optional<TValue>
+  nameWithType.vb: Optional(Of TValue)
+  fullName.vb: Remora.Rest.Core.Optional(Of TValue)
+  name.vb: Optional(Of TValue)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+- uid: Remora.Discord.API.Abstractions.Objects.IAllowedMentions.Roles*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IAllowedMentions.Roles
+  href: Remora.Discord.API.Abstractions.Objects.IAllowedMentions.html#Remora_Discord_API_Abstractions_Objects_IAllowedMentions_Roles
+  name: Roles
+  nameWithType: IAllowedMentions.Roles
+  fullName: Remora.Discord.API.Abstractions.Objects.IAllowedMentions.Roles
+- uid: Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}}
+  commentId: T:Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: Optional<IReadOnlyList<Snowflake>>
+  nameWithType: Optional<IReadOnlyList<Snowflake>>
+  fullName: Remora.Rest.Core.Optional<System.Collections.Generic.IReadOnlyList<Remora.Rest.Core.Snowflake>>
+  nameWithType.vb: Optional(Of IReadOnlyList(Of Snowflake))
+  fullName.vb: Remora.Rest.Core.Optional(Of System.Collections.Generic.IReadOnlyList(Of Remora.Rest.Core.Snowflake))
+  name.vb: Optional(Of IReadOnlyList(Of Snowflake))
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Objects.IAllowedMentions.Users*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IAllowedMentions.Users
+  href: Remora.Discord.API.Abstractions.Objects.IAllowedMentions.html#Remora_Discord_API_Abstractions_Objects_IAllowedMentions_Users
+  name: Users
+  nameWithType: IAllowedMentions.Users
+  fullName: Remora.Discord.API.Abstractions.Objects.IAllowedMentions.Users
+- uid: Remora.Discord.API.Abstractions.Objects.IAllowedMentions.MentionRepliedUser*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IAllowedMentions.MentionRepliedUser
+  href: Remora.Discord.API.Abstractions.Objects.IAllowedMentions.html#Remora_Discord_API_Abstractions_Objects_IAllowedMentions_MentionRepliedUser
+  name: MentionRepliedUser
+  nameWithType: IAllowedMentions.MentionRepliedUser
+  fullName: Remora.Discord.API.Abstractions.Objects.IAllowedMentions.MentionRepliedUser
+- uid: Remora.Rest.Core.Optional{System.Boolean}
+  commentId: T:Remora.Rest.Core.Optional{System.Boolean}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: Optional<bool>
+  nameWithType: Optional<bool>
+  fullName: Remora.Rest.Core.Optional<bool>
+  nameWithType.vb: Optional(Of Boolean)
+  fullName.vb: Remora.Rest.Core.Optional(Of Boolean)
+  name.vb: Optional(Of Boolean)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )

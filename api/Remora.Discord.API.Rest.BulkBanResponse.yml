@@ -1,0 +1,664 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Rest.BulkBanResponse
+  commentId: T:Remora.Discord.API.Rest.BulkBanResponse
+  id: BulkBanResponse
+  parent: Remora.Discord.API.Rest
+  children:
+  - Remora.Discord.API.Rest.BulkBanResponse.#ctor(System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake},System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake})
+  - Remora.Discord.API.Rest.BulkBanResponse.BannedUsers
+  - Remora.Discord.API.Rest.BulkBanResponse.FailedUsers
+  langs:
+  - csharp
+  - vb
+  name: BulkBanResponse
+  nameWithType: BulkBanResponse
+  fullName: Remora.Discord.API.Rest.BulkBanResponse
+  type: Class
+  source:
+    id: BulkBanResponse
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Rest\BulkBanResponse.cs
+    startLine: 30
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Rest
+  summary: Supports all classes in the .NET class hierarchy and provides low-level services to derived classes. This is the ultimate base class of all .NET classes; it is the root of the type hierarchy.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public record BulkBanResponse : IBulkBanResponse, IEquatable<BulkBanResponse>
+    content.vb: >-
+      <PublicAPI>
+
+      Public Class BulkBanResponse Implements IBulkBanResponse, IEquatable(Of BulkBanResponse)
+  inheritance:
+  - System.Object
+  implements:
+  - Remora.Discord.API.Abstractions.Rest.IBulkBanResponse
+  - System.IEquatable{Remora.Discord.API.Rest.BulkBanResponse}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Rest.BulkBanResponse.#ctor(System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake},System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake})
+  commentId: M:Remora.Discord.API.Rest.BulkBanResponse.#ctor(System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake},System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake})
+  id: '#ctor(System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake},System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake})'
+  parent: Remora.Discord.API.Rest.BulkBanResponse
+  langs:
+  - csharp
+  - vb
+  name: BulkBanResponse(IReadOnlyList<Snowflake>, IReadOnlyList<Snowflake>)
+  nameWithType: BulkBanResponse.BulkBanResponse(IReadOnlyList<Snowflake>, IReadOnlyList<Snowflake>)
+  fullName: Remora.Discord.API.Rest.BulkBanResponse.BulkBanResponse(System.Collections.Generic.IReadOnlyList<Remora.Rest.Core.Snowflake>, System.Collections.Generic.IReadOnlyList<Remora.Rest.Core.Snowflake>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Rest\BulkBanResponse.cs
+    startLine: 30
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Rest
+  example: []
+  syntax:
+    content: public BulkBanResponse(IReadOnlyList<Snowflake> BannedUsers, IReadOnlyList<Snowflake> FailedUsers)
+    parameters:
+    - id: BannedUsers
+      type: System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}
+    - id: FailedUsers
+      type: System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}
+    content.vb: Public Sub New(BannedUsers As IReadOnlyList(Of Snowflake), FailedUsers As IReadOnlyList(Of Snowflake))
+  overload: Remora.Discord.API.Rest.BulkBanResponse.#ctor*
+  nameWithType.vb: BulkBanResponse.New(IReadOnlyList(Of Snowflake), IReadOnlyList(Of Snowflake))
+  fullName.vb: Remora.Discord.API.Rest.BulkBanResponse.New(System.Collections.Generic.IReadOnlyList(Of Remora.Rest.Core.Snowflake), System.Collections.Generic.IReadOnlyList(Of Remora.Rest.Core.Snowflake))
+  name.vb: New(IReadOnlyList(Of Snowflake), IReadOnlyList(Of Snowflake))
+- uid: Remora.Discord.API.Rest.BulkBanResponse.BannedUsers
+  commentId: P:Remora.Discord.API.Rest.BulkBanResponse.BannedUsers
+  id: BannedUsers
+  parent: Remora.Discord.API.Rest.BulkBanResponse
+  langs:
+  - csharp
+  - vb
+  name: BannedUsers
+  nameWithType: BulkBanResponse.BannedUsers
+  fullName: Remora.Discord.API.Rest.BulkBanResponse.BannedUsers
+  type: Property
+  source:
+    id: BannedUsers
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Rest\BulkBanResponse.cs
+    startLine: 33
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Rest
+  summary: Gets the IDs of the users who were successfully banned.
+  example: []
+  syntax:
+    content: public IReadOnlyList<Snowflake> BannedUsers { get; init; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}
+    content.vb: Public Property BannedUsers As IReadOnlyList(Of Snowflake)
+  overload: Remora.Discord.API.Rest.BulkBanResponse.BannedUsers*
+  implements:
+  - Remora.Discord.API.Abstractions.Rest.IBulkBanResponse.BannedUsers
+- uid: Remora.Discord.API.Rest.BulkBanResponse.FailedUsers
+  commentId: P:Remora.Discord.API.Rest.BulkBanResponse.FailedUsers
+  id: FailedUsers
+  parent: Remora.Discord.API.Rest.BulkBanResponse
+  langs:
+  - csharp
+  - vb
+  name: FailedUsers
+  nameWithType: BulkBanResponse.FailedUsers
+  fullName: Remora.Discord.API.Rest.BulkBanResponse.FailedUsers
+  type: Property
+  source:
+    id: FailedUsers
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Rest\BulkBanResponse.cs
+    startLine: 34
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Rest
+  summary: Gets the IDs of the users who were not banned.
+  example: []
+  syntax:
+    content: public IReadOnlyList<Snowflake> FailedUsers { get; init; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}
+    content.vb: Public Property FailedUsers As IReadOnlyList(Of Snowflake)
+  overload: Remora.Discord.API.Rest.BulkBanResponse.FailedUsers*
+  implements:
+  - Remora.Discord.API.Abstractions.Rest.IBulkBanResponse.FailedUsers
+references:
+- uid: Remora.Discord.API.Rest
+  commentId: N:Remora.Discord.API.Rest
+  href: Remora.html
+  name: Remora.Discord.API.Rest
+  nameWithType: Remora.Discord.API.Rest
+  fullName: Remora.Discord.API.Rest
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Rest
+    name: Rest
+    href: Remora.Discord.API.Rest.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Rest
+    name: Rest
+    href: Remora.Discord.API.Rest.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Remora.Discord.API.Abstractions.Rest.IBulkBanResponse
+  commentId: T:Remora.Discord.API.Abstractions.Rest.IBulkBanResponse
+  parent: Remora.Discord.API.Abstractions.Rest
+  href: Remora.Discord.API.Abstractions.Rest.IBulkBanResponse.html
+  name: IBulkBanResponse
+  nameWithType: IBulkBanResponse
+  fullName: Remora.Discord.API.Abstractions.Rest.IBulkBanResponse
+- uid: System.IEquatable{Remora.Discord.API.Rest.BulkBanResponse}
+  commentId: T:System.IEquatable{Remora.Discord.API.Rest.BulkBanResponse}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<BulkBanResponse>
+  nameWithType: IEquatable<BulkBanResponse>
+  fullName: System.IEquatable<Remora.Discord.API.Rest.BulkBanResponse>
+  nameWithType.vb: IEquatable(Of BulkBanResponse)
+  fullName.vb: System.IEquatable(Of Remora.Discord.API.Rest.BulkBanResponse)
+  name.vb: IEquatable(Of BulkBanResponse)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Remora.Discord.API.Rest.BulkBanResponse
+    name: BulkBanResponse
+    href: Remora.Discord.API.Rest.BulkBanResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Rest.BulkBanResponse
+    name: BulkBanResponse
+    href: Remora.Discord.API.Rest.BulkBanResponse.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.API.Abstractions.Rest
+  commentId: N:Remora.Discord.API.Abstractions.Rest
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Rest
+  nameWithType: Remora.Discord.API.Abstractions.Rest
+  fullName: Remora.Discord.API.Abstractions.Rest
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Rest
+    name: Rest
+    href: Remora.Discord.API.Abstractions.Rest.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Rest
+    name: Rest
+    href: Remora.Discord.API.Abstractions.Rest.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Remora.Discord.API.Rest.BulkBanResponse.#ctor*
+  commentId: Overload:Remora.Discord.API.Rest.BulkBanResponse.#ctor
+  href: Remora.Discord.API.Rest.BulkBanResponse.html#Remora_Discord_API_Rest_BulkBanResponse__ctor_System_Collections_Generic_IReadOnlyList_Remora_Rest_Core_Snowflake__System_Collections_Generic_IReadOnlyList_Remora_Rest_Core_Snowflake__
+  name: BulkBanResponse
+  nameWithType: BulkBanResponse.BulkBanResponse
+  fullName: Remora.Discord.API.Rest.BulkBanResponse.BulkBanResponse
+  nameWithType.vb: BulkBanResponse.New
+  fullName.vb: Remora.Discord.API.Rest.BulkBanResponse.New
+  name.vb: New
+- uid: System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}
+  commentId: T:System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<Snowflake>
+  nameWithType: IReadOnlyList<Snowflake>
+  fullName: System.Collections.Generic.IReadOnlyList<Remora.Rest.Core.Snowflake>
+  nameWithType.vb: IReadOnlyList(Of Snowflake)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Remora.Rest.Core.Snowflake)
+  name.vb: IReadOnlyList(Of Snowflake)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Remora.Discord.API.Rest.BulkBanResponse.BannedUsers*
+  commentId: Overload:Remora.Discord.API.Rest.BulkBanResponse.BannedUsers
+  href: Remora.Discord.API.Rest.BulkBanResponse.html#Remora_Discord_API_Rest_BulkBanResponse_BannedUsers
+  name: BannedUsers
+  nameWithType: BulkBanResponse.BannedUsers
+  fullName: Remora.Discord.API.Rest.BulkBanResponse.BannedUsers
+- uid: Remora.Discord.API.Abstractions.Rest.IBulkBanResponse.BannedUsers
+  commentId: P:Remora.Discord.API.Abstractions.Rest.IBulkBanResponse.BannedUsers
+  parent: Remora.Discord.API.Abstractions.Rest.IBulkBanResponse
+  href: Remora.Discord.API.Abstractions.Rest.IBulkBanResponse.html#Remora_Discord_API_Abstractions_Rest_IBulkBanResponse_BannedUsers
+  name: BannedUsers
+  nameWithType: IBulkBanResponse.BannedUsers
+  fullName: Remora.Discord.API.Abstractions.Rest.IBulkBanResponse.BannedUsers
+- uid: Remora.Discord.API.Rest.BulkBanResponse.FailedUsers*
+  commentId: Overload:Remora.Discord.API.Rest.BulkBanResponse.FailedUsers
+  href: Remora.Discord.API.Rest.BulkBanResponse.html#Remora_Discord_API_Rest_BulkBanResponse_FailedUsers
+  name: FailedUsers
+  nameWithType: BulkBanResponse.FailedUsers
+  fullName: Remora.Discord.API.Rest.BulkBanResponse.FailedUsers
+- uid: Remora.Discord.API.Abstractions.Rest.IBulkBanResponse.FailedUsers
+  commentId: P:Remora.Discord.API.Abstractions.Rest.IBulkBanResponse.FailedUsers
+  parent: Remora.Discord.API.Abstractions.Rest.IBulkBanResponse
+  href: Remora.Discord.API.Abstractions.Rest.IBulkBanResponse.html#Remora_Discord_API_Abstractions_Rest_IBulkBanResponse_FailedUsers
+  name: FailedUsers
+  nameWithType: IBulkBanResponse.FailedUsers
+  fullName: Remora.Discord.API.Abstractions.Rest.IBulkBanResponse.FailedUsers

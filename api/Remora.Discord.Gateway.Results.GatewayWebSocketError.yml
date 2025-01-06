@@ -1,0 +1,785 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.Gateway.Results.GatewayWebSocketError
+  commentId: T:Remora.Discord.Gateway.Results.GatewayWebSocketError
+  id: GatewayWebSocketError
+  parent: Remora.Discord.Gateway.Results
+  children:
+  - Remora.Discord.Gateway.Results.GatewayWebSocketError.#ctor(System.Net.WebSockets.WebSocketCloseStatus)
+  - Remora.Discord.Gateway.Results.GatewayWebSocketError.CloseStatus
+  langs:
+  - csharp
+  - vb
+  name: GatewayWebSocketError
+  nameWithType: GatewayWebSocketError
+  fullName: Remora.Discord.Gateway.Results.GatewayWebSocketError
+  type: Class
+  source:
+    id: GatewayWebSocketError
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Gateway\Results\GatewayWebSocketError.cs
+    startLine: 33
+  assemblies:
+  - Remora.Discord.Gateway
+  namespace: Remora.Discord.Gateway.Results
+  summary: Represents an unexpected closing of the gateway on the websocket layer.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public record GatewayWebSocketError : ResultError, IResultError, IEquatable<ResultError>, IEquatable<GatewayWebSocketError>
+    content.vb: >-
+      <PublicAPI>
+
+      Public Class GatewayWebSocketError Inherits ResultError Implements IResultError, IEquatable(Of ResultError), IEquatable(Of GatewayWebSocketError)
+  inheritance:
+  - System.Object
+  - Remora.Results.ResultError
+  implements:
+  - Remora.Results.IResultError
+  - System.IEquatable{Remora.Results.ResultError}
+  - System.IEquatable{Remora.Discord.Gateway.Results.GatewayWebSocketError}
+  inheritedMembers:
+  - Remora.Results.ResultError.ToString
+  - Remora.Results.ResultError.PrintMembers(System.Text.StringBuilder)
+  - Remora.Results.ResultError.GetHashCode
+  - Remora.Results.ResultError.Equals(System.Object)
+  - Remora.Results.ResultError.Equals(Remora.Results.ResultError)
+  - Remora.Results.ResultError.{Clone}$
+  - Remora.Results.ResultError.Deconstruct(System.String@)
+  - Remora.Results.ResultError.EqualityContract
+  - Remora.Results.ResultError.Message
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  extensionMethods:
+  - Remora.Results.IResultError.Remora.Discord.Commands.Extensions.ResultErrorExtensions.IsUserOrEnvironmentError
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.Gateway.Results.GatewayWebSocketError.#ctor(System.Net.WebSockets.WebSocketCloseStatus)
+  commentId: M:Remora.Discord.Gateway.Results.GatewayWebSocketError.#ctor(System.Net.WebSockets.WebSocketCloseStatus)
+  id: '#ctor(System.Net.WebSockets.WebSocketCloseStatus)'
+  parent: Remora.Discord.Gateway.Results.GatewayWebSocketError
+  langs:
+  - csharp
+  - vb
+  name: GatewayWebSocketError(WebSocketCloseStatus)
+  nameWithType: GatewayWebSocketError.GatewayWebSocketError(WebSocketCloseStatus)
+  fullName: Remora.Discord.Gateway.Results.GatewayWebSocketError.GatewayWebSocketError(System.Net.WebSockets.WebSocketCloseStatus)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Gateway\Results\GatewayWebSocketError.cs
+    startLine: 33
+  assemblies:
+  - Remora.Discord.Gateway
+  namespace: Remora.Discord.Gateway.Results
+  summary: Represents an unexpected closing of the gateway on the websocket layer.
+  example: []
+  syntax:
+    content: public GatewayWebSocketError(WebSocketCloseStatus CloseStatus)
+    parameters:
+    - id: CloseStatus
+      type: System.Net.WebSockets.WebSocketCloseStatus
+    content.vb: Public Sub New(CloseStatus As WebSocketCloseStatus)
+  overload: Remora.Discord.Gateway.Results.GatewayWebSocketError.#ctor*
+  nameWithType.vb: GatewayWebSocketError.New(WebSocketCloseStatus)
+  fullName.vb: Remora.Discord.Gateway.Results.GatewayWebSocketError.New(System.Net.WebSockets.WebSocketCloseStatus)
+  name.vb: New(WebSocketCloseStatus)
+- uid: Remora.Discord.Gateway.Results.GatewayWebSocketError.CloseStatus
+  commentId: P:Remora.Discord.Gateway.Results.GatewayWebSocketError.CloseStatus
+  id: CloseStatus
+  parent: Remora.Discord.Gateway.Results.GatewayWebSocketError
+  langs:
+  - csharp
+  - vb
+  name: CloseStatus
+  nameWithType: GatewayWebSocketError.CloseStatus
+  fullName: Remora.Discord.Gateway.Results.GatewayWebSocketError.CloseStatus
+  type: Property
+  source:
+    id: CloseStatus
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Gateway\Results\GatewayWebSocketError.cs
+    startLine: 34
+  assemblies:
+  - Remora.Discord.Gateway
+  namespace: Remora.Discord.Gateway.Results
+  syntax:
+    content: public WebSocketCloseStatus CloseStatus { get; init; }
+    parameters: []
+    return:
+      type: System.Net.WebSockets.WebSocketCloseStatus
+    content.vb: Public Property CloseStatus As WebSocketCloseStatus
+  overload: Remora.Discord.Gateway.Results.GatewayWebSocketError.CloseStatus*
+references:
+- uid: Remora.Discord.Gateway.Results
+  commentId: N:Remora.Discord.Gateway.Results
+  href: Remora.html
+  name: Remora.Discord.Gateway.Results
+  nameWithType: Remora.Discord.Gateway.Results
+  fullName: Remora.Discord.Gateway.Results
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Gateway
+    name: Gateway
+    href: Remora.Discord.Gateway.html
+  - name: .
+  - uid: Remora.Discord.Gateway.Results
+    name: Results
+    href: Remora.Discord.Gateway.Results.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Gateway
+    name: Gateway
+    href: Remora.Discord.Gateway.html
+  - name: .
+  - uid: Remora.Discord.Gateway.Results
+    name: Results
+    href: Remora.Discord.Gateway.Results.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Remora.Results.ResultError
+  commentId: T:Remora.Results.ResultError
+  parent: Remora.Results
+  isExternal: true
+  name: ResultError
+  nameWithType: ResultError
+  fullName: Remora.Results.ResultError
+- uid: Remora.Results.IResultError
+  commentId: T:Remora.Results.IResultError
+  parent: Remora.Results
+  isExternal: true
+  name: IResultError
+  nameWithType: IResultError
+  fullName: Remora.Results.IResultError
+- uid: System.IEquatable{Remora.Results.ResultError}
+  commentId: T:System.IEquatable{Remora.Results.ResultError}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<ResultError>
+  nameWithType: IEquatable<ResultError>
+  fullName: System.IEquatable<Remora.Results.ResultError>
+  nameWithType.vb: IEquatable(Of ResultError)
+  fullName.vb: System.IEquatable(Of Remora.Results.ResultError)
+  name.vb: IEquatable(Of ResultError)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Remora.Results.ResultError
+    name: ResultError
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Results.ResultError
+    name: ResultError
+    isExternal: true
+  - name: )
+- uid: System.IEquatable{Remora.Discord.Gateway.Results.GatewayWebSocketError}
+  commentId: T:System.IEquatable{Remora.Discord.Gateway.Results.GatewayWebSocketError}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<GatewayWebSocketError>
+  nameWithType: IEquatable<GatewayWebSocketError>
+  fullName: System.IEquatable<Remora.Discord.Gateway.Results.GatewayWebSocketError>
+  nameWithType.vb: IEquatable(Of GatewayWebSocketError)
+  fullName.vb: System.IEquatable(Of Remora.Discord.Gateway.Results.GatewayWebSocketError)
+  name.vb: IEquatable(Of GatewayWebSocketError)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Remora.Discord.Gateway.Results.GatewayWebSocketError
+    name: GatewayWebSocketError
+    href: Remora.Discord.Gateway.Results.GatewayWebSocketError.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.Gateway.Results.GatewayWebSocketError
+    name: GatewayWebSocketError
+    href: Remora.Discord.Gateway.Results.GatewayWebSocketError.html
+  - name: )
+- uid: Remora.Results.ResultError.ToString
+  commentId: M:Remora.Results.ResultError.ToString
+  parent: Remora.Results.ResultError
+  isExternal: true
+  name: ToString()
+  nameWithType: ResultError.ToString()
+  fullName: Remora.Results.ResultError.ToString()
+  spec.csharp:
+  - uid: Remora.Results.ResultError.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Remora.Results.ResultError.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Remora.Results.ResultError.PrintMembers(System.Text.StringBuilder)
+  commentId: M:Remora.Results.ResultError.PrintMembers(System.Text.StringBuilder)
+  parent: Remora.Results.ResultError
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.text.stringbuilder
+  name: PrintMembers(StringBuilder)
+  nameWithType: ResultError.PrintMembers(StringBuilder)
+  fullName: Remora.Results.ResultError.PrintMembers(System.Text.StringBuilder)
+  spec.csharp:
+  - uid: Remora.Results.ResultError.PrintMembers(System.Text.StringBuilder)
+    name: PrintMembers
+    isExternal: true
+  - name: (
+  - uid: System.Text.StringBuilder
+    name: StringBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text.stringbuilder
+  - name: )
+  spec.vb:
+  - uid: Remora.Results.ResultError.PrintMembers(System.Text.StringBuilder)
+    name: PrintMembers
+    isExternal: true
+  - name: (
+  - uid: System.Text.StringBuilder
+    name: StringBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text.stringbuilder
+  - name: )
+- uid: Remora.Results.ResultError.GetHashCode
+  commentId: M:Remora.Results.ResultError.GetHashCode
+  parent: Remora.Results.ResultError
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ResultError.GetHashCode()
+  fullName: Remora.Results.ResultError.GetHashCode()
+  spec.csharp:
+  - uid: Remora.Results.ResultError.GetHashCode
+    name: GetHashCode
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Remora.Results.ResultError.GetHashCode
+    name: GetHashCode
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Remora.Results.ResultError.Equals(System.Object)
+  commentId: M:Remora.Results.ResultError.Equals(System.Object)
+  parent: Remora.Results.ResultError
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: Equals(object)
+  nameWithType: ResultError.Equals(object)
+  fullName: Remora.Results.ResultError.Equals(object)
+  nameWithType.vb: ResultError.Equals(Object)
+  fullName.vb: Remora.Results.ResultError.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: Remora.Results.ResultError.Equals(System.Object)
+    name: Equals
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Remora.Results.ResultError.Equals(System.Object)
+    name: Equals
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Remora.Results.ResultError.Equals(Remora.Results.ResultError)
+  commentId: M:Remora.Results.ResultError.Equals(Remora.Results.ResultError)
+  parent: Remora.Results.ResultError
+  isExternal: true
+  name: Equals(ResultError)
+  nameWithType: ResultError.Equals(ResultError)
+  fullName: Remora.Results.ResultError.Equals(Remora.Results.ResultError)
+  spec.csharp:
+  - uid: Remora.Results.ResultError.Equals(Remora.Results.ResultError)
+    name: Equals
+    isExternal: true
+  - name: (
+  - uid: Remora.Results.ResultError
+    name: ResultError
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Remora.Results.ResultError.Equals(Remora.Results.ResultError)
+    name: Equals
+    isExternal: true
+  - name: (
+  - uid: Remora.Results.ResultError
+    name: ResultError
+    isExternal: true
+  - name: )
+- uid: Remora.Results.ResultError.{Clone}$
+  commentId: M:Remora.Results.ResultError.{Clone}$
+  parent: Remora.Results.ResultError
+  isExternal: true
+  name: <Clone>$()
+  nameWithType: ResultError.<Clone>$()
+  fullName: Remora.Results.ResultError.<Clone>$()
+  spec.csharp:
+  - uid: Remora.Results.ResultError.{Clone}$
+    name: <Clone>$
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Remora.Results.ResultError.{Clone}$
+    name: <Clone>$
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Remora.Results.ResultError.Deconstruct(System.String@)
+  commentId: M:Remora.Results.ResultError.Deconstruct(System.String@)
+  parent: Remora.Results.ResultError
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Deconstruct(out string)
+  nameWithType: ResultError.Deconstruct(out string)
+  fullName: Remora.Results.ResultError.Deconstruct(out string)
+  nameWithType.vb: ResultError.Deconstruct(String)
+  fullName.vb: Remora.Results.ResultError.Deconstruct(String)
+  name.vb: Deconstruct(String)
+  spec.csharp:
+  - uid: Remora.Results.ResultError.Deconstruct(System.String@)
+    name: Deconstruct
+    isExternal: true
+  - name: (
+  - name: out
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Remora.Results.ResultError.Deconstruct(System.String@)
+    name: Deconstruct
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Remora.Results.ResultError.EqualityContract
+  commentId: P:Remora.Results.ResultError.EqualityContract
+  parent: Remora.Results.ResultError
+  isExternal: true
+  name: EqualityContract
+  nameWithType: ResultError.EqualityContract
+  fullName: Remora.Results.ResultError.EqualityContract
+- uid: Remora.Results.ResultError.Message
+  commentId: P:Remora.Results.ResultError.Message
+  parent: Remora.Results.ResultError
+  isExternal: true
+  name: Message
+  nameWithType: ResultError.Message
+  fullName: Remora.Results.ResultError.Message
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Remora.Results.IResultError.Remora.Discord.Commands.Extensions.ResultErrorExtensions.IsUserOrEnvironmentError
+  commentId: M:Remora.Discord.Commands.Extensions.ResultErrorExtensions.IsUserOrEnvironmentError(Remora.Results.IResultError)
+  parent: Remora.Discord.Commands.Extensions.ResultErrorExtensions
+  definition: Remora.Discord.Commands.Extensions.ResultErrorExtensions.IsUserOrEnvironmentError(Remora.Results.IResultError)
+  href: Remora.Discord.Commands.Extensions.ResultErrorExtensions.html#Remora_Discord_Commands_Extensions_ResultErrorExtensions_IsUserOrEnvironmentError_Remora_Results_IResultError_
+  name: IsUserOrEnvironmentError(IResultError)
+  nameWithType: ResultErrorExtensions.IsUserOrEnvironmentError(IResultError)
+  fullName: Remora.Discord.Commands.Extensions.ResultErrorExtensions.IsUserOrEnvironmentError(Remora.Results.IResultError)
+  spec.csharp:
+  - uid: Remora.Discord.Commands.Extensions.ResultErrorExtensions.IsUserOrEnvironmentError(Remora.Results.IResultError)
+    name: IsUserOrEnvironmentError
+    href: Remora.Discord.Commands.Extensions.ResultErrorExtensions.html#Remora_Discord_Commands_Extensions_ResultErrorExtensions_IsUserOrEnvironmentError_Remora_Results_IResultError_
+  - name: (
+  - uid: Remora.Results.IResultError
+    name: IResultError
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Commands.Extensions.ResultErrorExtensions.IsUserOrEnvironmentError(Remora.Results.IResultError)
+    name: IsUserOrEnvironmentError
+    href: Remora.Discord.Commands.Extensions.ResultErrorExtensions.html#Remora_Discord_Commands_Extensions_ResultErrorExtensions_IsUserOrEnvironmentError_Remora_Results_IResultError_
+  - name: (
+  - uid: Remora.Results.IResultError
+    name: IResultError
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Results
+  commentId: N:Remora.Results
+  isExternal: true
+  name: Remora.Results
+  nameWithType: Remora.Results
+  fullName: Remora.Results
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Results
+    name: Results
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Results
+    name: Results
+    isExternal: true
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Remora.Discord.Commands.Extensions.ResultErrorExtensions.IsUserOrEnvironmentError(Remora.Results.IResultError)
+  commentId: M:Remora.Discord.Commands.Extensions.ResultErrorExtensions.IsUserOrEnvironmentError(Remora.Results.IResultError)
+  isExternal: true
+  href: Remora.Discord.Commands.Extensions.ResultErrorExtensions.html#Remora_Discord_Commands_Extensions_ResultErrorExtensions_IsUserOrEnvironmentError_Remora_Results_IResultError_
+  name: IsUserOrEnvironmentError(IResultError)
+  nameWithType: ResultErrorExtensions.IsUserOrEnvironmentError(IResultError)
+  fullName: Remora.Discord.Commands.Extensions.ResultErrorExtensions.IsUserOrEnvironmentError(Remora.Results.IResultError)
+  spec.csharp:
+  - uid: Remora.Discord.Commands.Extensions.ResultErrorExtensions.IsUserOrEnvironmentError(Remora.Results.IResultError)
+    name: IsUserOrEnvironmentError
+    href: Remora.Discord.Commands.Extensions.ResultErrorExtensions.html#Remora_Discord_Commands_Extensions_ResultErrorExtensions_IsUserOrEnvironmentError_Remora_Results_IResultError_
+  - name: (
+  - uid: Remora.Results.IResultError
+    name: IResultError
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Commands.Extensions.ResultErrorExtensions.IsUserOrEnvironmentError(Remora.Results.IResultError)
+    name: IsUserOrEnvironmentError
+    href: Remora.Discord.Commands.Extensions.ResultErrorExtensions.html#Remora_Discord_Commands_Extensions_ResultErrorExtensions_IsUserOrEnvironmentError_Remora_Results_IResultError_
+  - name: (
+  - uid: Remora.Results.IResultError
+    name: IResultError
+    isExternal: true
+  - name: )
+- uid: Remora.Discord.Commands.Extensions.ResultErrorExtensions
+  commentId: T:Remora.Discord.Commands.Extensions.ResultErrorExtensions
+  parent: Remora.Discord.Commands.Extensions
+  href: Remora.Discord.Commands.Extensions.ResultErrorExtensions.html
+  name: ResultErrorExtensions
+  nameWithType: ResultErrorExtensions
+  fullName: Remora.Discord.Commands.Extensions.ResultErrorExtensions
+- uid: Remora.Discord.Commands.Extensions
+  commentId: N:Remora.Discord.Commands.Extensions
+  href: Remora.html
+  name: Remora.Discord.Commands.Extensions
+  nameWithType: Remora.Discord.Commands.Extensions
+  fullName: Remora.Discord.Commands.Extensions
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Commands
+    name: Commands
+    href: Remora.Discord.Commands.html
+  - name: .
+  - uid: Remora.Discord.Commands.Extensions
+    name: Extensions
+    href: Remora.Discord.Commands.Extensions.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Commands
+    name: Commands
+    href: Remora.Discord.Commands.html
+  - name: .
+  - uid: Remora.Discord.Commands.Extensions
+    name: Extensions
+    href: Remora.Discord.Commands.Extensions.html
+- uid: Remora.Discord.Gateway.Results.GatewayWebSocketError.#ctor*
+  commentId: Overload:Remora.Discord.Gateway.Results.GatewayWebSocketError.#ctor
+  href: Remora.Discord.Gateway.Results.GatewayWebSocketError.html#Remora_Discord_Gateway_Results_GatewayWebSocketError__ctor_System_Net_WebSockets_WebSocketCloseStatus_
+  name: GatewayWebSocketError
+  nameWithType: GatewayWebSocketError.GatewayWebSocketError
+  fullName: Remora.Discord.Gateway.Results.GatewayWebSocketError.GatewayWebSocketError
+  nameWithType.vb: GatewayWebSocketError.New
+  fullName.vb: Remora.Discord.Gateway.Results.GatewayWebSocketError.New
+  name.vb: New
+- uid: System.Net.WebSockets.WebSocketCloseStatus
+  commentId: T:System.Net.WebSockets.WebSocketCloseStatus
+  parent: System.Net.WebSockets
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.net.websockets.websocketclosestatus
+  name: WebSocketCloseStatus
+  nameWithType: WebSocketCloseStatus
+  fullName: System.Net.WebSockets.WebSocketCloseStatus
+- uid: System.Net.WebSockets
+  commentId: N:System.Net.WebSockets
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Net.WebSockets
+  nameWithType: System.Net.WebSockets
+  fullName: System.Net.WebSockets
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Net
+    name: Net
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net
+  - name: .
+  - uid: System.Net.WebSockets
+    name: WebSockets
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.websockets
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Net
+    name: Net
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net
+  - name: .
+  - uid: System.Net.WebSockets
+    name: WebSockets
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.websockets
+- uid: Remora.Discord.Gateway.Results.GatewayWebSocketError.CloseStatus*
+  commentId: Overload:Remora.Discord.Gateway.Results.GatewayWebSocketError.CloseStatus
+  href: Remora.Discord.Gateway.Results.GatewayWebSocketError.html#Remora_Discord_Gateway_Results_GatewayWebSocketError_CloseStatus
+  name: CloseStatus
+  nameWithType: GatewayWebSocketError.CloseStatus
+  fullName: Remora.Discord.Gateway.Results.GatewayWebSocketError.CloseStatus

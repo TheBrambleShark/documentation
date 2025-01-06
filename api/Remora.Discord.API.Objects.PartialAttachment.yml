@@ -1,0 +1,1382 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Objects.PartialAttachment
+  commentId: T:Remora.Discord.API.Objects.PartialAttachment
+  id: PartialAttachment
+  parent: Remora.Discord.API.Objects
+  children:
+  - Remora.Discord.API.Objects.PartialAttachment.#ctor(Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.Int32},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.Nullable{System.Int32}},Remora.Rest.Core.Optional{System.Nullable{System.Int32}},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{System.TimeSpan},Remora.Rest.Core.Optional{System.Byte[]},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.AttachmentFlags})
+  - Remora.Discord.API.Objects.PartialAttachment.ContentType
+  - Remora.Discord.API.Objects.PartialAttachment.Description
+  - Remora.Discord.API.Objects.PartialAttachment.Duration
+  - Remora.Discord.API.Objects.PartialAttachment.Filename
+  - Remora.Discord.API.Objects.PartialAttachment.Flags
+  - Remora.Discord.API.Objects.PartialAttachment.Height
+  - Remora.Discord.API.Objects.PartialAttachment.ID
+  - Remora.Discord.API.Objects.PartialAttachment.IsEphemeral
+  - Remora.Discord.API.Objects.PartialAttachment.ProxyUrl
+  - Remora.Discord.API.Objects.PartialAttachment.Size
+  - Remora.Discord.API.Objects.PartialAttachment.Url
+  - Remora.Discord.API.Objects.PartialAttachment.Waveform
+  - Remora.Discord.API.Objects.PartialAttachment.Width
+  langs:
+  - csharp
+  - vb
+  name: PartialAttachment
+  nameWithType: PartialAttachment
+  fullName: Remora.Discord.API.Objects.PartialAttachment
+  type: Class
+  source:
+    id: PartialAttachment
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Messages\PartialAttachment.cs
+    startLine: 32
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Represents an attachment in a message.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public record PartialAttachment : IPartialAttachment, IEquatable<PartialAttachment>
+    content.vb: >-
+      <PublicAPI>
+
+      Public Class PartialAttachment Implements IPartialAttachment, IEquatable(Of PartialAttachment)
+  inheritance:
+  - System.Object
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialAttachment
+  - System.IEquatable{Remora.Discord.API.Objects.PartialAttachment}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Objects.PartialAttachment.#ctor(Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.Int32},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.Nullable{System.Int32}},Remora.Rest.Core.Optional{System.Nullable{System.Int32}},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{System.TimeSpan},Remora.Rest.Core.Optional{System.Byte[]},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.AttachmentFlags})
+  commentId: M:Remora.Discord.API.Objects.PartialAttachment.#ctor(Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.Int32},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.Nullable{System.Int32}},Remora.Rest.Core.Optional{System.Nullable{System.Int32}},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{System.TimeSpan},Remora.Rest.Core.Optional{System.Byte[]},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.AttachmentFlags})
+  id: '#ctor(Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.Int32},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.Nullable{System.Int32}},Remora.Rest.Core.Optional{System.Nullable{System.Int32}},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{System.TimeSpan},Remora.Rest.Core.Optional{System.Byte[]},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.AttachmentFlags})'
+  parent: Remora.Discord.API.Objects.PartialAttachment
+  langs:
+  - csharp
+  - vb
+  name: PartialAttachment(Optional<Snowflake>, Optional<string>, Optional<string>, Optional<string>, Optional<int>, Optional<string>, Optional<string>, Optional<int?>, Optional<int?>, Optional<bool>, Optional<TimeSpan>, Optional<byte[]>, Optional<AttachmentFlags>)
+  nameWithType: PartialAttachment.PartialAttachment(Optional<Snowflake>, Optional<string>, Optional<string>, Optional<string>, Optional<int>, Optional<string>, Optional<string>, Optional<int?>, Optional<int?>, Optional<bool>, Optional<TimeSpan>, Optional<byte[]>, Optional<AttachmentFlags>)
+  fullName: Remora.Discord.API.Objects.PartialAttachment.PartialAttachment(Remora.Rest.Core.Optional<Remora.Rest.Core.Snowflake>, Remora.Rest.Core.Optional<string>, Remora.Rest.Core.Optional<string>, Remora.Rest.Core.Optional<string>, Remora.Rest.Core.Optional<int>, Remora.Rest.Core.Optional<string>, Remora.Rest.Core.Optional<string>, Remora.Rest.Core.Optional<int?>, Remora.Rest.Core.Optional<int?>, Remora.Rest.Core.Optional<bool>, Remora.Rest.Core.Optional<System.TimeSpan>, Remora.Rest.Core.Optional<byte[]>, Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.AttachmentFlags>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Messages\PartialAttachment.cs
+    startLine: 32
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Represents an attachment in a message.
+  example: []
+  syntax:
+    content: public PartialAttachment(Optional<Snowflake> ID = default, Optional<string> Filename = default, Optional<string> Description = default, Optional<string> ContentType = default, Optional<int> Size = default, Optional<string> Url = default, Optional<string> ProxyUrl = default, Optional<int?> Height = default, Optional<int?> Width = default, Optional<bool> IsEphemeral = default, Optional<TimeSpan> Duration = default, Optional<byte[]> Waveform = default, Optional<AttachmentFlags> Flags = default)
+    parameters:
+    - id: ID
+      type: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+    - id: Filename
+      type: Remora.Rest.Core.Optional{System.String}
+    - id: Description
+      type: Remora.Rest.Core.Optional{System.String}
+    - id: ContentType
+      type: Remora.Rest.Core.Optional{System.String}
+    - id: Size
+      type: Remora.Rest.Core.Optional{System.Int32}
+    - id: Url
+      type: Remora.Rest.Core.Optional{System.String}
+    - id: ProxyUrl
+      type: Remora.Rest.Core.Optional{System.String}
+    - id: Height
+      type: Remora.Rest.Core.Optional{System.Nullable{System.Int32}}
+    - id: Width
+      type: Remora.Rest.Core.Optional{System.Nullable{System.Int32}}
+    - id: IsEphemeral
+      type: Remora.Rest.Core.Optional{System.Boolean}
+    - id: Duration
+      type: Remora.Rest.Core.Optional{System.TimeSpan}
+    - id: Waveform
+      type: Remora.Rest.Core.Optional{System.Byte[]}
+    - id: Flags
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.AttachmentFlags}
+    content.vb: Public Sub New(ID As [Optional](Of Snowflake) = Nothing, Filename As [Optional](Of String) = Nothing, Description As [Optional](Of String) = Nothing, ContentType As [Optional](Of String) = Nothing, Size As [Optional](Of Integer) = Nothing, Url As [Optional](Of String) = Nothing, ProxyUrl As [Optional](Of String) = Nothing, Height As [Optional](Of Integer?) = Nothing, Width As [Optional](Of Integer?) = Nothing, IsEphemeral As [Optional](Of Boolean) = Nothing, Duration As [Optional](Of TimeSpan) = Nothing, Waveform As [Optional](Of Byte()) = Nothing, Flags As [Optional](Of AttachmentFlags) = Nothing)
+  overload: Remora.Discord.API.Objects.PartialAttachment.#ctor*
+  nameWithType.vb: PartialAttachment.New(Optional(Of Snowflake), Optional(Of String), Optional(Of String), Optional(Of String), Optional(Of Integer), Optional(Of String), Optional(Of String), Optional(Of Integer?), Optional(Of Integer?), Optional(Of Boolean), Optional(Of TimeSpan), Optional(Of Byte()), Optional(Of AttachmentFlags))
+  fullName.vb: Remora.Discord.API.Objects.PartialAttachment.New(Remora.Rest.Core.Optional(Of Remora.Rest.Core.Snowflake), Remora.Rest.Core.Optional(Of String), Remora.Rest.Core.Optional(Of String), Remora.Rest.Core.Optional(Of String), Remora.Rest.Core.Optional(Of Integer), Remora.Rest.Core.Optional(Of String), Remora.Rest.Core.Optional(Of String), Remora.Rest.Core.Optional(Of Integer?), Remora.Rest.Core.Optional(Of Integer?), Remora.Rest.Core.Optional(Of Boolean), Remora.Rest.Core.Optional(Of System.TimeSpan), Remora.Rest.Core.Optional(Of Byte()), Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.AttachmentFlags))
+  name.vb: New(Optional(Of Snowflake), Optional(Of String), Optional(Of String), Optional(Of String), Optional(Of Integer), Optional(Of String), Optional(Of String), Optional(Of Integer?), Optional(Of Integer?), Optional(Of Boolean), Optional(Of TimeSpan), Optional(Of Byte()), Optional(Of AttachmentFlags))
+- uid: Remora.Discord.API.Objects.PartialAttachment.ID
+  commentId: P:Remora.Discord.API.Objects.PartialAttachment.ID
+  id: ID
+  parent: Remora.Discord.API.Objects.PartialAttachment
+  langs:
+  - csharp
+  - vb
+  name: ID
+  nameWithType: PartialAttachment.ID
+  fullName: Remora.Discord.API.Objects.PartialAttachment.ID
+  type: Property
+  source:
+    id: ID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Messages\PartialAttachment.cs
+    startLine: 35
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the ID of the attachment.
+  example: []
+  syntax:
+    content: public Optional<Snowflake> ID { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+    content.vb: Public Property ID As [Optional](Of Snowflake)
+  overload: Remora.Discord.API.Objects.PartialAttachment.ID*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialAttachment.ID
+- uid: Remora.Discord.API.Objects.PartialAttachment.Filename
+  commentId: P:Remora.Discord.API.Objects.PartialAttachment.Filename
+  id: Filename
+  parent: Remora.Discord.API.Objects.PartialAttachment
+  langs:
+  - csharp
+  - vb
+  name: Filename
+  nameWithType: PartialAttachment.Filename
+  fullName: Remora.Discord.API.Objects.PartialAttachment.Filename
+  type: Property
+  source:
+    id: Filename
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Messages\PartialAttachment.cs
+    startLine: 36
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the filename of the attachment.
+  example: []
+  syntax:
+    content: public Optional<string> Filename { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.String}
+    content.vb: Public Property Filename As [Optional](Of String)
+  overload: Remora.Discord.API.Objects.PartialAttachment.Filename*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialAttachment.Filename
+- uid: Remora.Discord.API.Objects.PartialAttachment.Description
+  commentId: P:Remora.Discord.API.Objects.PartialAttachment.Description
+  id: Description
+  parent: Remora.Discord.API.Objects.PartialAttachment
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: PartialAttachment.Description
+  fullName: Remora.Discord.API.Objects.PartialAttachment.Description
+  type: Property
+  source:
+    id: Description
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Messages\PartialAttachment.cs
+    startLine: 37
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the description of the attachment (max 1024 characters).
+  example: []
+  syntax:
+    content: public Optional<string> Description { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.String}
+    content.vb: Public Property Description As [Optional](Of String)
+  overload: Remora.Discord.API.Objects.PartialAttachment.Description*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialAttachment.Description
+- uid: Remora.Discord.API.Objects.PartialAttachment.ContentType
+  commentId: P:Remora.Discord.API.Objects.PartialAttachment.ContentType
+  id: ContentType
+  parent: Remora.Discord.API.Objects.PartialAttachment
+  langs:
+  - csharp
+  - vb
+  name: ContentType
+  nameWithType: PartialAttachment.ContentType
+  fullName: Remora.Discord.API.Objects.PartialAttachment.ContentType
+  type: Property
+  source:
+    id: ContentType
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Messages\PartialAttachment.cs
+    startLine: 38
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the attachment's media type (e.g, "application/text" or similar).
+  example: []
+  syntax:
+    content: public Optional<string> ContentType { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.String}
+    content.vb: Public Property ContentType As [Optional](Of String)
+  overload: Remora.Discord.API.Objects.PartialAttachment.ContentType*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialAttachment.ContentType
+- uid: Remora.Discord.API.Objects.PartialAttachment.Size
+  commentId: P:Remora.Discord.API.Objects.PartialAttachment.Size
+  id: Size
+  parent: Remora.Discord.API.Objects.PartialAttachment
+  langs:
+  - csharp
+  - vb
+  name: Size
+  nameWithType: PartialAttachment.Size
+  fullName: Remora.Discord.API.Objects.PartialAttachment.Size
+  type: Property
+  source:
+    id: Size
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Messages\PartialAttachment.cs
+    startLine: 39
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the size of the file in bytes.
+  example: []
+  syntax:
+    content: public Optional<int> Size { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Int32}
+    content.vb: Public Property Size As [Optional](Of Integer)
+  overload: Remora.Discord.API.Objects.PartialAttachment.Size*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialAttachment.Size
+- uid: Remora.Discord.API.Objects.PartialAttachment.Url
+  commentId: P:Remora.Discord.API.Objects.PartialAttachment.Url
+  id: Url
+  parent: Remora.Discord.API.Objects.PartialAttachment
+  langs:
+  - csharp
+  - vb
+  name: Url
+  nameWithType: PartialAttachment.Url
+  fullName: Remora.Discord.API.Objects.PartialAttachment.Url
+  type: Property
+  source:
+    id: Url
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Messages\PartialAttachment.cs
+    startLine: 40
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the source URL of the file.
+  example: []
+  syntax:
+    content: public Optional<string> Url { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.String}
+    content.vb: Public Property Url As [Optional](Of String)
+  overload: Remora.Discord.API.Objects.PartialAttachment.Url*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialAttachment.Url
+- uid: Remora.Discord.API.Objects.PartialAttachment.ProxyUrl
+  commentId: P:Remora.Discord.API.Objects.PartialAttachment.ProxyUrl
+  id: ProxyUrl
+  parent: Remora.Discord.API.Objects.PartialAttachment
+  langs:
+  - csharp
+  - vb
+  name: ProxyUrl
+  nameWithType: PartialAttachment.ProxyUrl
+  fullName: Remora.Discord.API.Objects.PartialAttachment.ProxyUrl
+  type: Property
+  source:
+    id: ProxyUrl
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Messages\PartialAttachment.cs
+    startLine: 41
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the proxied URL of the file.
+  example: []
+  syntax:
+    content: public Optional<string> ProxyUrl { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.String}
+    content.vb: Public Property ProxyUrl As [Optional](Of String)
+  overload: Remora.Discord.API.Objects.PartialAttachment.ProxyUrl*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialAttachment.ProxyUrl
+- uid: Remora.Discord.API.Objects.PartialAttachment.Height
+  commentId: P:Remora.Discord.API.Objects.PartialAttachment.Height
+  id: Height
+  parent: Remora.Discord.API.Objects.PartialAttachment
+  langs:
+  - csharp
+  - vb
+  name: Height
+  nameWithType: PartialAttachment.Height
+  fullName: Remora.Discord.API.Objects.PartialAttachment.Height
+  type: Property
+  source:
+    id: Height
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Messages\PartialAttachment.cs
+    startLine: 42
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the height of the file (if image).
+  example: []
+  syntax:
+    content: public Optional<int?> Height { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Nullable{System.Int32}}
+    content.vb: Public Property Height As [Optional](Of Integer?)
+  overload: Remora.Discord.API.Objects.PartialAttachment.Height*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialAttachment.Height
+- uid: Remora.Discord.API.Objects.PartialAttachment.Width
+  commentId: P:Remora.Discord.API.Objects.PartialAttachment.Width
+  id: Width
+  parent: Remora.Discord.API.Objects.PartialAttachment
+  langs:
+  - csharp
+  - vb
+  name: Width
+  nameWithType: PartialAttachment.Width
+  fullName: Remora.Discord.API.Objects.PartialAttachment.Width
+  type: Property
+  source:
+    id: Width
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Messages\PartialAttachment.cs
+    startLine: 43
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the width of the file (if image).
+  example: []
+  syntax:
+    content: public Optional<int?> Width { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Nullable{System.Int32}}
+    content.vb: Public Property Width As [Optional](Of Integer?)
+  overload: Remora.Discord.API.Objects.PartialAttachment.Width*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialAttachment.Width
+- uid: Remora.Discord.API.Objects.PartialAttachment.IsEphemeral
+  commentId: P:Remora.Discord.API.Objects.PartialAttachment.IsEphemeral
+  id: IsEphemeral
+  parent: Remora.Discord.API.Objects.PartialAttachment
+  langs:
+  - csharp
+  - vb
+  name: IsEphemeral
+  nameWithType: PartialAttachment.IsEphemeral
+  fullName: Remora.Discord.API.Objects.PartialAttachment.IsEphemeral
+  type: Property
+  source:
+    id: IsEphemeral
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Messages\PartialAttachment.cs
+    startLine: 44
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets a value indicating whether the attachment is ephemeral.
+  example: []
+  syntax:
+    content: public Optional<bool> IsEphemeral { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Boolean}
+    content.vb: Public Property IsEphemeral As [Optional](Of Boolean)
+  overload: Remora.Discord.API.Objects.PartialAttachment.IsEphemeral*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialAttachment.IsEphemeral
+- uid: Remora.Discord.API.Objects.PartialAttachment.Duration
+  commentId: P:Remora.Discord.API.Objects.PartialAttachment.Duration
+  id: Duration
+  parent: Remora.Discord.API.Objects.PartialAttachment
+  langs:
+  - csharp
+  - vb
+  name: Duration
+  nameWithType: PartialAttachment.Duration
+  fullName: Remora.Discord.API.Objects.PartialAttachment.Duration
+  type: Property
+  source:
+    id: Duration
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Messages\PartialAttachment.cs
+    startLine: 45
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the duration of the audio file.
+  example: []
+  syntax:
+    content: public Optional<TimeSpan> Duration { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.TimeSpan}
+    content.vb: Public Property Duration As [Optional](Of TimeSpan)
+  overload: Remora.Discord.API.Objects.PartialAttachment.Duration*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialAttachment.Duration
+- uid: Remora.Discord.API.Objects.PartialAttachment.Waveform
+  commentId: P:Remora.Discord.API.Objects.PartialAttachment.Waveform
+  id: Waveform
+  parent: Remora.Discord.API.Objects.PartialAttachment
+  langs:
+  - csharp
+  - vb
+  name: Waveform
+  nameWithType: PartialAttachment.Waveform
+  fullName: Remora.Discord.API.Objects.PartialAttachment.Waveform
+  type: Property
+  source:
+    id: Waveform
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Messages\PartialAttachment.cs
+    startLine: 46
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets a preview of the audio contained in the audio file.
+  example: []
+  syntax:
+    content: public Optional<byte[]> Waveform { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Byte[]}
+    content.vb: Public Property Waveform As [Optional](Of Byte())
+  overload: Remora.Discord.API.Objects.PartialAttachment.Waveform*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialAttachment.Waveform
+- uid: Remora.Discord.API.Objects.PartialAttachment.Flags
+  commentId: P:Remora.Discord.API.Objects.PartialAttachment.Flags
+  id: Flags
+  parent: Remora.Discord.API.Objects.PartialAttachment
+  langs:
+  - csharp
+  - vb
+  name: Flags
+  nameWithType: PartialAttachment.Flags
+  fullName: Remora.Discord.API.Objects.PartialAttachment.Flags
+  type: Property
+  source:
+    id: Flags
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Messages\PartialAttachment.cs
+    startLine: 47
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the flags applied to the attachment.
+  example: []
+  syntax:
+    content: public Optional<AttachmentFlags> Flags { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.AttachmentFlags}
+    content.vb: Public Property Flags As [Optional](Of AttachmentFlags)
+  overload: Remora.Discord.API.Objects.PartialAttachment.Flags*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialAttachment.Flags
+references:
+- uid: Remora.Discord.API.Objects
+  commentId: N:Remora.Discord.API.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Objects
+  nameWithType: Remora.Discord.API.Objects
+  fullName: Remora.Discord.API.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Objects
+    name: Objects
+    href: Remora.Discord.API.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Objects
+    name: Objects
+    href: Remora.Discord.API.Objects.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialAttachment
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IPartialAttachment
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IPartialAttachment.html
+  name: IPartialAttachment
+  nameWithType: IPartialAttachment
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialAttachment
+- uid: System.IEquatable{Remora.Discord.API.Objects.PartialAttachment}
+  commentId: T:System.IEquatable{Remora.Discord.API.Objects.PartialAttachment}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<PartialAttachment>
+  nameWithType: IEquatable<PartialAttachment>
+  fullName: System.IEquatable<Remora.Discord.API.Objects.PartialAttachment>
+  nameWithType.vb: IEquatable(Of PartialAttachment)
+  fullName.vb: System.IEquatable(Of Remora.Discord.API.Objects.PartialAttachment)
+  name.vb: IEquatable(Of PartialAttachment)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Remora.Discord.API.Objects.PartialAttachment
+    name: PartialAttachment
+    href: Remora.Discord.API.Objects.PartialAttachment.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Objects.PartialAttachment
+    name: PartialAttachment
+    href: Remora.Discord.API.Objects.PartialAttachment.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.API.Abstractions.Objects
+  commentId: N:Remora.Discord.API.Abstractions.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Objects
+  nameWithType: Remora.Discord.API.Abstractions.Objects
+  fullName: Remora.Discord.API.Abstractions.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Remora.Discord.API.Objects.PartialAttachment.#ctor*
+  commentId: Overload:Remora.Discord.API.Objects.PartialAttachment.#ctor
+  href: Remora.Discord.API.Objects.PartialAttachment.html#Remora_Discord_API_Objects_PartialAttachment__ctor_Remora_Rest_Core_Optional_Remora_Rest_Core_Snowflake__Remora_Rest_Core_Optional_System_String__Remora_Rest_Core_Optional_System_String__Remora_Rest_Core_Optional_System_String__Remora_Rest_Core_Optional_System_Int32__Remora_Rest_Core_Optional_System_String__Remora_Rest_Core_Optional_System_String__Remora_Rest_Core_Optional_System_Nullable_System_Int32___Remora_Rest_Core_Optional_System_Nullable_System_Int32___Remora_Rest_Core_Optional_System_Boolean__Remora_Rest_Core_Optional_System_TimeSpan__Remora_Rest_Core_Optional_System_Byte____Remora_Rest_Core_Optional_Remora_Discord_API_Abstractions_Objects_AttachmentFlags__
+  name: PartialAttachment
+  nameWithType: PartialAttachment.PartialAttachment
+  fullName: Remora.Discord.API.Objects.PartialAttachment.PartialAttachment
+  nameWithType.vb: PartialAttachment.New
+  fullName.vb: Remora.Discord.API.Objects.PartialAttachment.New
+  name.vb: New
+- uid: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  name: Optional<Snowflake>
+  nameWithType: Optional<Snowflake>
+  fullName: Remora.Rest.Core.Optional<Remora.Rest.Core.Snowflake>
+  nameWithType.vb: Optional(Of Snowflake)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Rest.Core.Snowflake)
+  name.vb: Optional(Of Snowflake)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+- uid: Remora.Rest.Core.Optional{System.String}
+  commentId: T:Remora.Rest.Core.Optional{System.String}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Optional<string>
+  nameWithType: Optional<string>
+  fullName: Remora.Rest.Core.Optional<string>
+  nameWithType.vb: Optional(Of String)
+  fullName.vb: Remora.Rest.Core.Optional(Of String)
+  name.vb: Optional(Of String)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Remora.Rest.Core.Optional{System.Int32}
+  commentId: T:Remora.Rest.Core.Optional{System.Int32}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: Optional<int>
+  nameWithType: Optional<int>
+  fullName: Remora.Rest.Core.Optional<int>
+  nameWithType.vb: Optional(Of Integer)
+  fullName.vb: Remora.Rest.Core.Optional(Of Integer)
+  name.vb: Optional(Of Integer)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Remora.Rest.Core.Optional{System.Nullable{System.Int32}}
+  commentId: T:Remora.Rest.Core.Optional{System.Nullable{System.Int32}}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: Optional<int?>
+  nameWithType: Optional<int?>
+  fullName: Remora.Rest.Core.Optional<int?>
+  nameWithType.vb: Optional(Of Integer?)
+  fullName.vb: Remora.Rest.Core.Optional(Of Integer?)
+  name.vb: Optional(Of Integer?)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  - name: )
+- uid: Remora.Rest.Core.Optional{System.Boolean}
+  commentId: T:Remora.Rest.Core.Optional{System.Boolean}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: Optional<bool>
+  nameWithType: Optional<bool>
+  fullName: Remora.Rest.Core.Optional<bool>
+  nameWithType.vb: Optional(Of Boolean)
+  fullName.vb: Remora.Rest.Core.Optional(Of Boolean)
+  name.vb: Optional(Of Boolean)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Remora.Rest.Core.Optional{System.TimeSpan}
+  commentId: T:Remora.Rest.Core.Optional{System.TimeSpan}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.timespan
+  name: Optional<TimeSpan>
+  nameWithType: Optional<TimeSpan>
+  fullName: Remora.Rest.Core.Optional<System.TimeSpan>
+  nameWithType.vb: Optional(Of TimeSpan)
+  fullName.vb: Remora.Rest.Core.Optional(Of System.TimeSpan)
+  name.vb: Optional(Of TimeSpan)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: )
+- uid: Remora.Rest.Core.Optional{System.Byte[]}
+  commentId: T:Remora.Rest.Core.Optional{System.Byte[]}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: Optional<byte[]>
+  nameWithType: Optional<byte[]>
+  fullName: Remora.Rest.Core.Optional<byte[]>
+  nameWithType.vb: Optional(Of Byte())
+  fullName.vb: Remora.Rest.Core.Optional(Of Byte())
+  name.vb: Optional(Of Byte())
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+  - name: )
+- uid: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.AttachmentFlags}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.AttachmentFlags}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: Remora.Discord.API.Abstractions.Objects.AttachmentFlags.html
+  name: Optional<AttachmentFlags>
+  nameWithType: Optional<AttachmentFlags>
+  fullName: Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.AttachmentFlags>
+  nameWithType.vb: Optional(Of AttachmentFlags)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.AttachmentFlags)
+  name.vb: Optional(Of AttachmentFlags)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.AttachmentFlags
+    name: AttachmentFlags
+    href: Remora.Discord.API.Abstractions.Objects.AttachmentFlags.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.AttachmentFlags
+    name: AttachmentFlags
+    href: Remora.Discord.API.Abstractions.Objects.AttachmentFlags.html
+  - name: )
+- uid: Remora.Rest.Core.Optional`1
+  commentId: T:Remora.Rest.Core.Optional`1
+  isExternal: true
+  name: Optional<TValue>
+  nameWithType: Optional<TValue>
+  fullName: Remora.Rest.Core.Optional<TValue>
+  nameWithType.vb: Optional(Of TValue)
+  fullName.vb: Remora.Rest.Core.Optional(Of TValue)
+  name.vb: Optional(Of TValue)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+- uid: Remora.Discord.API.Objects.PartialAttachment.ID*
+  commentId: Overload:Remora.Discord.API.Objects.PartialAttachment.ID
+  href: Remora.Discord.API.Objects.PartialAttachment.html#Remora_Discord_API_Objects_PartialAttachment_ID
+  name: ID
+  nameWithType: PartialAttachment.ID
+  fullName: Remora.Discord.API.Objects.PartialAttachment.ID
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialAttachment.ID
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialAttachment.ID
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialAttachment
+  href: Remora.Discord.API.Abstractions.Objects.IPartialAttachment.html#Remora_Discord_API_Abstractions_Objects_IPartialAttachment_ID
+  name: ID
+  nameWithType: IPartialAttachment.ID
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialAttachment.ID
+- uid: Remora.Discord.API.Objects.PartialAttachment.Filename*
+  commentId: Overload:Remora.Discord.API.Objects.PartialAttachment.Filename
+  href: Remora.Discord.API.Objects.PartialAttachment.html#Remora_Discord_API_Objects_PartialAttachment_Filename
+  name: Filename
+  nameWithType: PartialAttachment.Filename
+  fullName: Remora.Discord.API.Objects.PartialAttachment.Filename
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialAttachment.Filename
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialAttachment.Filename
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialAttachment
+  href: Remora.Discord.API.Abstractions.Objects.IPartialAttachment.html#Remora_Discord_API_Abstractions_Objects_IPartialAttachment_Filename
+  name: Filename
+  nameWithType: IPartialAttachment.Filename
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialAttachment.Filename
+- uid: Remora.Discord.API.Objects.PartialAttachment.Description*
+  commentId: Overload:Remora.Discord.API.Objects.PartialAttachment.Description
+  href: Remora.Discord.API.Objects.PartialAttachment.html#Remora_Discord_API_Objects_PartialAttachment_Description
+  name: Description
+  nameWithType: PartialAttachment.Description
+  fullName: Remora.Discord.API.Objects.PartialAttachment.Description
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialAttachment.Description
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialAttachment.Description
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialAttachment
+  href: Remora.Discord.API.Abstractions.Objects.IPartialAttachment.html#Remora_Discord_API_Abstractions_Objects_IPartialAttachment_Description
+  name: Description
+  nameWithType: IPartialAttachment.Description
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialAttachment.Description
+- uid: Remora.Discord.API.Objects.PartialAttachment.ContentType*
+  commentId: Overload:Remora.Discord.API.Objects.PartialAttachment.ContentType
+  href: Remora.Discord.API.Objects.PartialAttachment.html#Remora_Discord_API_Objects_PartialAttachment_ContentType
+  name: ContentType
+  nameWithType: PartialAttachment.ContentType
+  fullName: Remora.Discord.API.Objects.PartialAttachment.ContentType
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialAttachment.ContentType
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialAttachment.ContentType
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialAttachment
+  href: Remora.Discord.API.Abstractions.Objects.IPartialAttachment.html#Remora_Discord_API_Abstractions_Objects_IPartialAttachment_ContentType
+  name: ContentType
+  nameWithType: IPartialAttachment.ContentType
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialAttachment.ContentType
+- uid: Remora.Discord.API.Objects.PartialAttachment.Size*
+  commentId: Overload:Remora.Discord.API.Objects.PartialAttachment.Size
+  href: Remora.Discord.API.Objects.PartialAttachment.html#Remora_Discord_API_Objects_PartialAttachment_Size
+  name: Size
+  nameWithType: PartialAttachment.Size
+  fullName: Remora.Discord.API.Objects.PartialAttachment.Size
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialAttachment.Size
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialAttachment.Size
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialAttachment
+  href: Remora.Discord.API.Abstractions.Objects.IPartialAttachment.html#Remora_Discord_API_Abstractions_Objects_IPartialAttachment_Size
+  name: Size
+  nameWithType: IPartialAttachment.Size
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialAttachment.Size
+- uid: Remora.Discord.API.Objects.PartialAttachment.Url*
+  commentId: Overload:Remora.Discord.API.Objects.PartialAttachment.Url
+  href: Remora.Discord.API.Objects.PartialAttachment.html#Remora_Discord_API_Objects_PartialAttachment_Url
+  name: Url
+  nameWithType: PartialAttachment.Url
+  fullName: Remora.Discord.API.Objects.PartialAttachment.Url
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialAttachment.Url
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialAttachment.Url
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialAttachment
+  href: Remora.Discord.API.Abstractions.Objects.IPartialAttachment.html#Remora_Discord_API_Abstractions_Objects_IPartialAttachment_Url
+  name: Url
+  nameWithType: IPartialAttachment.Url
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialAttachment.Url
+- uid: Remora.Discord.API.Objects.PartialAttachment.ProxyUrl*
+  commentId: Overload:Remora.Discord.API.Objects.PartialAttachment.ProxyUrl
+  href: Remora.Discord.API.Objects.PartialAttachment.html#Remora_Discord_API_Objects_PartialAttachment_ProxyUrl
+  name: ProxyUrl
+  nameWithType: PartialAttachment.ProxyUrl
+  fullName: Remora.Discord.API.Objects.PartialAttachment.ProxyUrl
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialAttachment.ProxyUrl
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialAttachment.ProxyUrl
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialAttachment
+  href: Remora.Discord.API.Abstractions.Objects.IPartialAttachment.html#Remora_Discord_API_Abstractions_Objects_IPartialAttachment_ProxyUrl
+  name: ProxyUrl
+  nameWithType: IPartialAttachment.ProxyUrl
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialAttachment.ProxyUrl
+- uid: Remora.Discord.API.Objects.PartialAttachment.Height*
+  commentId: Overload:Remora.Discord.API.Objects.PartialAttachment.Height
+  href: Remora.Discord.API.Objects.PartialAttachment.html#Remora_Discord_API_Objects_PartialAttachment_Height
+  name: Height
+  nameWithType: PartialAttachment.Height
+  fullName: Remora.Discord.API.Objects.PartialAttachment.Height
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialAttachment.Height
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialAttachment.Height
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialAttachment
+  href: Remora.Discord.API.Abstractions.Objects.IPartialAttachment.html#Remora_Discord_API_Abstractions_Objects_IPartialAttachment_Height
+  name: Height
+  nameWithType: IPartialAttachment.Height
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialAttachment.Height
+- uid: Remora.Discord.API.Objects.PartialAttachment.Width*
+  commentId: Overload:Remora.Discord.API.Objects.PartialAttachment.Width
+  href: Remora.Discord.API.Objects.PartialAttachment.html#Remora_Discord_API_Objects_PartialAttachment_Width
+  name: Width
+  nameWithType: PartialAttachment.Width
+  fullName: Remora.Discord.API.Objects.PartialAttachment.Width
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialAttachment.Width
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialAttachment.Width
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialAttachment
+  href: Remora.Discord.API.Abstractions.Objects.IPartialAttachment.html#Remora_Discord_API_Abstractions_Objects_IPartialAttachment_Width
+  name: Width
+  nameWithType: IPartialAttachment.Width
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialAttachment.Width
+- uid: Remora.Discord.API.Objects.PartialAttachment.IsEphemeral*
+  commentId: Overload:Remora.Discord.API.Objects.PartialAttachment.IsEphemeral
+  href: Remora.Discord.API.Objects.PartialAttachment.html#Remora_Discord_API_Objects_PartialAttachment_IsEphemeral
+  name: IsEphemeral
+  nameWithType: PartialAttachment.IsEphemeral
+  fullName: Remora.Discord.API.Objects.PartialAttachment.IsEphemeral
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialAttachment.IsEphemeral
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialAttachment.IsEphemeral
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialAttachment
+  href: Remora.Discord.API.Abstractions.Objects.IPartialAttachment.html#Remora_Discord_API_Abstractions_Objects_IPartialAttachment_IsEphemeral
+  name: IsEphemeral
+  nameWithType: IPartialAttachment.IsEphemeral
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialAttachment.IsEphemeral
+- uid: Remora.Discord.API.Objects.PartialAttachment.Duration*
+  commentId: Overload:Remora.Discord.API.Objects.PartialAttachment.Duration
+  href: Remora.Discord.API.Objects.PartialAttachment.html#Remora_Discord_API_Objects_PartialAttachment_Duration
+  name: Duration
+  nameWithType: PartialAttachment.Duration
+  fullName: Remora.Discord.API.Objects.PartialAttachment.Duration
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialAttachment.Duration
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialAttachment.Duration
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialAttachment
+  href: Remora.Discord.API.Abstractions.Objects.IPartialAttachment.html#Remora_Discord_API_Abstractions_Objects_IPartialAttachment_Duration
+  name: Duration
+  nameWithType: IPartialAttachment.Duration
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialAttachment.Duration
+- uid: Remora.Discord.API.Objects.PartialAttachment.Waveform*
+  commentId: Overload:Remora.Discord.API.Objects.PartialAttachment.Waveform
+  href: Remora.Discord.API.Objects.PartialAttachment.html#Remora_Discord_API_Objects_PartialAttachment_Waveform
+  name: Waveform
+  nameWithType: PartialAttachment.Waveform
+  fullName: Remora.Discord.API.Objects.PartialAttachment.Waveform
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialAttachment.Waveform
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialAttachment.Waveform
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialAttachment
+  href: Remora.Discord.API.Abstractions.Objects.IPartialAttachment.html#Remora_Discord_API_Abstractions_Objects_IPartialAttachment_Waveform
+  name: Waveform
+  nameWithType: IPartialAttachment.Waveform
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialAttachment.Waveform
+- uid: Remora.Discord.API.Objects.PartialAttachment.Flags*
+  commentId: Overload:Remora.Discord.API.Objects.PartialAttachment.Flags
+  href: Remora.Discord.API.Objects.PartialAttachment.html#Remora_Discord_API_Objects_PartialAttachment_Flags
+  name: Flags
+  nameWithType: PartialAttachment.Flags
+  fullName: Remora.Discord.API.Objects.PartialAttachment.Flags
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialAttachment.Flags
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialAttachment.Flags
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialAttachment
+  href: Remora.Discord.API.Abstractions.Objects.IPartialAttachment.html#Remora_Discord_API_Abstractions_Objects_IPartialAttachment_Flags
+  name: Flags
+  nameWithType: IPartialAttachment.Flags
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialAttachment.Flags

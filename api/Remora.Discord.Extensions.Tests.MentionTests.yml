@@ -1,0 +1,1048 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.Extensions.Tests.MentionTests
+  commentId: T:Remora.Discord.Extensions.Tests.MentionTests
+  id: MentionTests
+  parent: Remora.Discord.Extensions.Tests
+  children:
+  - Remora.Discord.Extensions.Tests.MentionTests.ChannelSuccess(System.UInt64)
+  - Remora.Discord.Extensions.Tests.MentionTests.ChannelWithIDSuccess(System.UInt64)
+  - Remora.Discord.Extensions.Tests.MentionTests.RoleSuccess(System.UInt64)
+  - Remora.Discord.Extensions.Tests.MentionTests.RoleWithIDSuccess(System.UInt64)
+  - Remora.Discord.Extensions.Tests.MentionTests.SlashCommandSuccess(System.String,System.UInt64)
+  - Remora.Discord.Extensions.Tests.MentionTests.SlashCommandWithNameAndIDSuccess(System.String,System.UInt64)
+  - Remora.Discord.Extensions.Tests.MentionTests.UserSuccess(System.UInt64)
+  - Remora.Discord.Extensions.Tests.MentionTests.UserWithIDSuccess(System.UInt64)
+  langs:
+  - csharp
+  - vb
+  name: MentionTests
+  nameWithType: MentionTests
+  fullName: Remora.Discord.Extensions.Tests.MentionTests
+  type: Class
+  source:
+    id: MentionTests
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Tests\Remora.Discord.Extensions.Tests\MentionTests.cs
+    startLine: 33
+  assemblies:
+  - Remora.Discord.Extensions.Tests
+  namespace: Remora.Discord.Extensions.Tests
+  summary: Tests to ensure the <xref href="Remora.Discord.Extensions.Formatting.Mention" data-throw-if-not-resolved="false"></xref> formats mentions correctly to Discord standards.
+  example: []
+  syntax:
+    content: public class MentionTests
+    content.vb: Public Class MentionTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Remora.Discord.Extensions.Tests.MentionTests.UserSuccess(System.UInt64)
+  commentId: M:Remora.Discord.Extensions.Tests.MentionTests.UserSuccess(System.UInt64)
+  id: UserSuccess(System.UInt64)
+  parent: Remora.Discord.Extensions.Tests.MentionTests
+  langs:
+  - csharp
+  - vb
+  name: UserSuccess(ulong)
+  nameWithType: MentionTests.UserSuccess(ulong)
+  fullName: Remora.Discord.Extensions.Tests.MentionTests.UserSuccess(ulong)
+  type: Method
+  source:
+    id: UserSuccess
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Tests\Remora.Discord.Extensions.Tests\MentionTests.cs
+    startLine: 40
+  assemblies:
+  - Remora.Discord.Extensions.Tests
+  namespace: Remora.Discord.Extensions.Tests
+  summary: >-
+    Tests to see if the <xref href="Remora.Discord.Extensions.Formatting.Mention.User(Remora.Discord.API.Abstractions.Objects.IUser)" data-throw-if-not-resolved="false"></xref> method formats a user mention based on Discord's
+
+    specifications.
+  example: []
+  syntax:
+    content: >-
+      [Theory]
+
+      [InlineData(new object[] { 330746772378877954 })]
+
+      [InlineData(new object[] { 197291773133979648 })]
+
+      [InlineData(new object[] { 135347310845624320 })]
+
+      [InlineData(new object[] { 201799098137968640 })]
+
+      [InlineData(new object[] { 209279906280898562 })]
+
+      [InlineData(new object[] { 203709726322720768 })]
+
+      public void UserSuccess(ulong userID)
+    parameters:
+    - id: userID
+      type: System.UInt64
+      description: The user ID.
+    content.vb: >-
+      <Theory>
+
+      <InlineData(New Object() { 330746772378877954 })>
+
+      <InlineData(New Object() { 197291773133979648 })>
+
+      <InlineData(New Object() { 135347310845624320 })>
+
+      <InlineData(New Object() { 201799098137968640 })>
+
+      <InlineData(New Object() { 209279906280898562 })>
+
+      <InlineData(New Object() { 203709726322720768 })>
+
+      Public Sub UserSuccess(userID As ULong)
+  overload: Remora.Discord.Extensions.Tests.MentionTests.UserSuccess*
+  attributes:
+  - type: Xunit.TheoryAttribute
+    ctor: Xunit.TheoryAttribute.#ctor
+    arguments: []
+  nameWithType.vb: MentionTests.UserSuccess(ULong)
+  fullName.vb: Remora.Discord.Extensions.Tests.MentionTests.UserSuccess(ULong)
+  name.vb: UserSuccess(ULong)
+- uid: Remora.Discord.Extensions.Tests.MentionTests.UserWithIDSuccess(System.UInt64)
+  commentId: M:Remora.Discord.Extensions.Tests.MentionTests.UserWithIDSuccess(System.UInt64)
+  id: UserWithIDSuccess(System.UInt64)
+  parent: Remora.Discord.Extensions.Tests.MentionTests
+  langs:
+  - csharp
+  - vb
+  name: UserWithIDSuccess(ulong)
+  nameWithType: MentionTests.UserWithIDSuccess(ulong)
+  fullName: Remora.Discord.Extensions.Tests.MentionTests.UserWithIDSuccess(ulong)
+  type: Method
+  source:
+    id: UserWithIDSuccess
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Tests\Remora.Discord.Extensions.Tests\MentionTests.cs
+    startLine: 66
+  assemblies:
+  - Remora.Discord.Extensions.Tests
+  namespace: Remora.Discord.Extensions.Tests
+  summary: >-
+    Tests to see if the <xref href="Remora.Discord.Extensions.Formatting.Mention.User(Remora.Rest.Core.Snowflake)" data-throw-if-not-resolved="false"></xref> method formats a channel mention based on Discord's
+
+    specifications.
+  example: []
+  syntax:
+    content: >-
+      [Theory]
+
+      [InlineData(new object[] { 330746772378877954 })]
+
+      [InlineData(new object[] { 197291773133979648 })]
+
+      [InlineData(new object[] { 135347310845624320 })]
+
+      [InlineData(new object[] { 201799098137968640 })]
+
+      [InlineData(new object[] { 209279906280898562 })]
+
+      [InlineData(new object[] { 203709726322720768 })]
+
+      public void UserWithIDSuccess(ulong userID)
+    parameters:
+    - id: userID
+      type: System.UInt64
+      description: The user ID.
+    content.vb: >-
+      <Theory>
+
+      <InlineData(New Object() { 330746772378877954 })>
+
+      <InlineData(New Object() { 197291773133979648 })>
+
+      <InlineData(New Object() { 135347310845624320 })>
+
+      <InlineData(New Object() { 201799098137968640 })>
+
+      <InlineData(New Object() { 209279906280898562 })>
+
+      <InlineData(New Object() { 203709726322720768 })>
+
+      Public Sub UserWithIDSuccess(userID As ULong)
+  overload: Remora.Discord.Extensions.Tests.MentionTests.UserWithIDSuccess*
+  attributes:
+  - type: Xunit.TheoryAttribute
+    ctor: Xunit.TheoryAttribute.#ctor
+    arguments: []
+  nameWithType.vb: MentionTests.UserWithIDSuccess(ULong)
+  fullName.vb: Remora.Discord.Extensions.Tests.MentionTests.UserWithIDSuccess(ULong)
+  name.vb: UserWithIDSuccess(ULong)
+- uid: Remora.Discord.Extensions.Tests.MentionTests.ChannelSuccess(System.UInt64)
+  commentId: M:Remora.Discord.Extensions.Tests.MentionTests.ChannelSuccess(System.UInt64)
+  id: ChannelSuccess(System.UInt64)
+  parent: Remora.Discord.Extensions.Tests.MentionTests
+  langs:
+  - csharp
+  - vb
+  name: ChannelSuccess(ulong)
+  nameWithType: MentionTests.ChannelSuccess(ulong)
+  fullName: Remora.Discord.Extensions.Tests.MentionTests.ChannelSuccess(ulong)
+  type: Method
+  source:
+    id: ChannelSuccess
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Tests\Remora.Discord.Extensions.Tests\MentionTests.cs
+    startLine: 87
+  assemblies:
+  - Remora.Discord.Extensions.Tests
+  namespace: Remora.Discord.Extensions.Tests
+  summary: >-
+    Tests to see if the <xref href="Remora.Discord.Extensions.Formatting.Mention.Channel(Remora.Discord.API.Abstractions.Objects.IChannel)" data-throw-if-not-resolved="false"></xref> method formats a channel mention based on Discord's
+
+    specifications.
+  example: []
+  syntax:
+    content: >-
+      [Theory]
+
+      [InlineData(new object[] { 789912892899459104 })]
+
+      [InlineData(new object[] { 789922911116984320 })]
+
+      [InlineData(new object[] { 789913136273948692 })]
+
+      [InlineData(new object[] { 789913038920744960 })]
+
+      [InlineData(new object[] { 789913059116187658 })]
+
+      [InlineData(new object[] { 858350463259115550 })]
+
+      public void ChannelSuccess(ulong channelID)
+    parameters:
+    - id: channelID
+      type: System.UInt64
+      description: The channel ID.
+    content.vb: >-
+      <Theory>
+
+      <InlineData(New Object() { 789912892899459104 })>
+
+      <InlineData(New Object() { 789922911116984320 })>
+
+      <InlineData(New Object() { 789913136273948692 })>
+
+      <InlineData(New Object() { 789913038920744960 })>
+
+      <InlineData(New Object() { 789913059116187658 })>
+
+      <InlineData(New Object() { 858350463259115550 })>
+
+      Public Sub ChannelSuccess(channelID As ULong)
+  overload: Remora.Discord.Extensions.Tests.MentionTests.ChannelSuccess*
+  attributes:
+  - type: Xunit.TheoryAttribute
+    ctor: Xunit.TheoryAttribute.#ctor
+    arguments: []
+  nameWithType.vb: MentionTests.ChannelSuccess(ULong)
+  fullName.vb: Remora.Discord.Extensions.Tests.MentionTests.ChannelSuccess(ULong)
+  name.vb: ChannelSuccess(ULong)
+- uid: Remora.Discord.Extensions.Tests.MentionTests.ChannelWithIDSuccess(System.UInt64)
+  commentId: M:Remora.Discord.Extensions.Tests.MentionTests.ChannelWithIDSuccess(System.UInt64)
+  id: ChannelWithIDSuccess(System.UInt64)
+  parent: Remora.Discord.Extensions.Tests.MentionTests
+  langs:
+  - csharp
+  - vb
+  name: ChannelWithIDSuccess(ulong)
+  nameWithType: MentionTests.ChannelWithIDSuccess(ulong)
+  fullName: Remora.Discord.Extensions.Tests.MentionTests.ChannelWithIDSuccess(ulong)
+  type: Method
+  source:
+    id: ChannelWithIDSuccess
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Tests\Remora.Discord.Extensions.Tests\MentionTests.cs
+    startLine: 113
+  assemblies:
+  - Remora.Discord.Extensions.Tests
+  namespace: Remora.Discord.Extensions.Tests
+  summary: >-
+    Tests to see if the <xref href="Remora.Discord.Extensions.Formatting.Mention.Channel(Remora.Rest.Core.Snowflake)" data-throw-if-not-resolved="false"></xref> method formats a role mention based on Discord's
+
+    specifications.
+  example: []
+  syntax:
+    content: >-
+      [Theory]
+
+      [InlineData(new object[] { 789912892899459104 })]
+
+      [InlineData(new object[] { 789922911116984320 })]
+
+      [InlineData(new object[] { 789913136273948692 })]
+
+      [InlineData(new object[] { 789913038920744960 })]
+
+      [InlineData(new object[] { 789913059116187658 })]
+
+      [InlineData(new object[] { 858350463259115550 })]
+
+      public void ChannelWithIDSuccess(ulong channelID)
+    parameters:
+    - id: channelID
+      type: System.UInt64
+      description: The channel ID.
+    content.vb: >-
+      <Theory>
+
+      <InlineData(New Object() { 789912892899459104 })>
+
+      <InlineData(New Object() { 789922911116984320 })>
+
+      <InlineData(New Object() { 789913136273948692 })>
+
+      <InlineData(New Object() { 789913038920744960 })>
+
+      <InlineData(New Object() { 789913059116187658 })>
+
+      <InlineData(New Object() { 858350463259115550 })>
+
+      Public Sub ChannelWithIDSuccess(channelID As ULong)
+  overload: Remora.Discord.Extensions.Tests.MentionTests.ChannelWithIDSuccess*
+  attributes:
+  - type: Xunit.TheoryAttribute
+    ctor: Xunit.TheoryAttribute.#ctor
+    arguments: []
+  nameWithType.vb: MentionTests.ChannelWithIDSuccess(ULong)
+  fullName.vb: Remora.Discord.Extensions.Tests.MentionTests.ChannelWithIDSuccess(ULong)
+  name.vb: ChannelWithIDSuccess(ULong)
+- uid: Remora.Discord.Extensions.Tests.MentionTests.RoleSuccess(System.UInt64)
+  commentId: M:Remora.Discord.Extensions.Tests.MentionTests.RoleSuccess(System.UInt64)
+  id: RoleSuccess(System.UInt64)
+  parent: Remora.Discord.Extensions.Tests.MentionTests
+  langs:
+  - csharp
+  - vb
+  name: RoleSuccess(ulong)
+  nameWithType: MentionTests.RoleSuccess(ulong)
+  fullName: Remora.Discord.Extensions.Tests.MentionTests.RoleSuccess(ulong)
+  type: Method
+  source:
+    id: RoleSuccess
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Tests\Remora.Discord.Extensions.Tests\MentionTests.cs
+    startLine: 134
+  assemblies:
+  - Remora.Discord.Extensions.Tests
+  namespace: Remora.Discord.Extensions.Tests
+  summary: >-
+    Tests to see if the <xref href="Remora.Discord.Extensions.Formatting.Mention.Role(Remora.Discord.API.Abstractions.Objects.IRole)" data-throw-if-not-resolved="false"></xref> method formats a role mention based on Discord's
+
+    specifications.
+  example: []
+  syntax:
+    content: >-
+      [Theory]
+
+      [InlineData(new object[] { 871102387362869288 })]
+
+      [InlineData(new object[] { 301125242749714442 })]
+
+      [InlineData(new object[] { 302310311074070531 })]
+
+      [InlineData(new object[] { 460285613040730112 })]
+
+      [InlineData(new object[] { 402648568197939201 })]
+
+      [InlineData(new object[] { 372178027926519810 })]
+
+      public void RoleSuccess(ulong roleID)
+    parameters:
+    - id: roleID
+      type: System.UInt64
+      description: The channel ID.
+    content.vb: >-
+      <Theory>
+
+      <InlineData(New Object() { 871102387362869288 })>
+
+      <InlineData(New Object() { 301125242749714442 })>
+
+      <InlineData(New Object() { 302310311074070531 })>
+
+      <InlineData(New Object() { 460285613040730112 })>
+
+      <InlineData(New Object() { 402648568197939201 })>
+
+      <InlineData(New Object() { 372178027926519810 })>
+
+      Public Sub RoleSuccess(roleID As ULong)
+  overload: Remora.Discord.Extensions.Tests.MentionTests.RoleSuccess*
+  attributes:
+  - type: Xunit.TheoryAttribute
+    ctor: Xunit.TheoryAttribute.#ctor
+    arguments: []
+  nameWithType.vb: MentionTests.RoleSuccess(ULong)
+  fullName.vb: Remora.Discord.Extensions.Tests.MentionTests.RoleSuccess(ULong)
+  name.vb: RoleSuccess(ULong)
+- uid: Remora.Discord.Extensions.Tests.MentionTests.RoleWithIDSuccess(System.UInt64)
+  commentId: M:Remora.Discord.Extensions.Tests.MentionTests.RoleWithIDSuccess(System.UInt64)
+  id: RoleWithIDSuccess(System.UInt64)
+  parent: Remora.Discord.Extensions.Tests.MentionTests
+  langs:
+  - csharp
+  - vb
+  name: RoleWithIDSuccess(ulong)
+  nameWithType: MentionTests.RoleWithIDSuccess(ulong)
+  fullName: Remora.Discord.Extensions.Tests.MentionTests.RoleWithIDSuccess(ulong)
+  type: Method
+  source:
+    id: RoleWithIDSuccess
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Tests\Remora.Discord.Extensions.Tests\MentionTests.cs
+    startLine: 160
+  assemblies:
+  - Remora.Discord.Extensions.Tests
+  namespace: Remora.Discord.Extensions.Tests
+  summary: >-
+    Tests to see if the <xref href="Remora.Discord.Extensions.Formatting.Mention.Role(Remora.Rest.Core.Snowflake)" data-throw-if-not-resolved="false"></xref> method formats a rike mention based on Discord's
+
+    specifications.
+  example: []
+  syntax:
+    content: >-
+      [Theory]
+
+      [InlineData(new object[] { 789912892899459104 })]
+
+      [InlineData(new object[] { 789922911116984320 })]
+
+      [InlineData(new object[] { 789913136273948692 })]
+
+      [InlineData(new object[] { 789913038920744960 })]
+
+      [InlineData(new object[] { 789913059116187658 })]
+
+      [InlineData(new object[] { 858350463259115550 })]
+
+      public void RoleWithIDSuccess(ulong roleID)
+    parameters:
+    - id: roleID
+      type: System.UInt64
+      description: The role ID.
+    content.vb: >-
+      <Theory>
+
+      <InlineData(New Object() { 789912892899459104 })>
+
+      <InlineData(New Object() { 789922911116984320 })>
+
+      <InlineData(New Object() { 789913136273948692 })>
+
+      <InlineData(New Object() { 789913038920744960 })>
+
+      <InlineData(New Object() { 789913059116187658 })>
+
+      <InlineData(New Object() { 858350463259115550 })>
+
+      Public Sub RoleWithIDSuccess(roleID As ULong)
+  overload: Remora.Discord.Extensions.Tests.MentionTests.RoleWithIDSuccess*
+  attributes:
+  - type: Xunit.TheoryAttribute
+    ctor: Xunit.TheoryAttribute.#ctor
+    arguments: []
+  nameWithType.vb: MentionTests.RoleWithIDSuccess(ULong)
+  fullName.vb: Remora.Discord.Extensions.Tests.MentionTests.RoleWithIDSuccess(ULong)
+  name.vb: RoleWithIDSuccess(ULong)
+- uid: Remora.Discord.Extensions.Tests.MentionTests.SlashCommandSuccess(System.String,System.UInt64)
+  commentId: M:Remora.Discord.Extensions.Tests.MentionTests.SlashCommandSuccess(System.String,System.UInt64)
+  id: SlashCommandSuccess(System.String,System.UInt64)
+  parent: Remora.Discord.Extensions.Tests.MentionTests
+  langs:
+  - csharp
+  - vb
+  name: SlashCommandSuccess(string, ulong)
+  nameWithType: MentionTests.SlashCommandSuccess(string, ulong)
+  fullName: Remora.Discord.Extensions.Tests.MentionTests.SlashCommandSuccess(string, ulong)
+  type: Method
+  source:
+    id: SlashCommandSuccess
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Tests\Remora.Discord.Extensions.Tests\MentionTests.cs
+    startLine: 182
+  assemblies:
+  - Remora.Discord.Extensions.Tests
+  namespace: Remora.Discord.Extensions.Tests
+  summary: >-
+    Tests to see if the <xref href="Remora.Discord.Extensions.Formatting.Mention.SlashCommand(Remora.Discord.API.Abstractions.Objects.IApplicationCommand)" data-throw-if-not-resolved="false"></xref> method formats a role mention based
+
+    on Discord's specifications.
+  example: []
+  syntax:
+    content: >-
+      [Theory]
+
+      [InlineData(new object[] { "wooga", 871102387362869288 })]
+
+      public void SlashCommandSuccess(string name, ulong commandID)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the command.
+    - id: commandID
+      type: System.UInt64
+      description: The ID of the command.
+    content.vb: >-
+      <Theory>
+
+      <InlineData(New Object() { "wooga", 871102387362869288 })>
+
+      Public Sub SlashCommandSuccess(name As String, commandID As ULong)
+  overload: Remora.Discord.Extensions.Tests.MentionTests.SlashCommandSuccess*
+  attributes:
+  - type: Xunit.TheoryAttribute
+    ctor: Xunit.TheoryAttribute.#ctor
+    arguments: []
+  nameWithType.vb: MentionTests.SlashCommandSuccess(String, ULong)
+  fullName.vb: Remora.Discord.Extensions.Tests.MentionTests.SlashCommandSuccess(String, ULong)
+  name.vb: SlashCommandSuccess(String, ULong)
+- uid: Remora.Discord.Extensions.Tests.MentionTests.SlashCommandWithNameAndIDSuccess(System.String,System.UInt64)
+  commentId: M:Remora.Discord.Extensions.Tests.MentionTests.SlashCommandWithNameAndIDSuccess(System.String,System.UInt64)
+  id: SlashCommandWithNameAndIDSuccess(System.String,System.UInt64)
+  parent: Remora.Discord.Extensions.Tests.MentionTests
+  langs:
+  - csharp
+  - vb
+  name: SlashCommandWithNameAndIDSuccess(string, ulong)
+  nameWithType: MentionTests.SlashCommandWithNameAndIDSuccess(string, ulong)
+  fullName: Remora.Discord.Extensions.Tests.MentionTests.SlashCommandWithNameAndIDSuccess(string, ulong)
+  type: Method
+  source:
+    id: SlashCommandWithNameAndIDSuccess
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Tests\Remora.Discord.Extensions.Tests\MentionTests.cs
+    startLine: 208
+  assemblies:
+  - Remora.Discord.Extensions.Tests
+  namespace: Remora.Discord.Extensions.Tests
+  summary: >-
+    Tests to see if the <xref href="Remora.Discord.Extensions.Formatting.Mention.SlashCommand(Remora.Discord.API.Abstractions.Objects.IApplicationCommand)" data-throw-if-not-resolved="false"></xref> method formats a role mention based
+
+    on Discord's specifications.
+  example: []
+  syntax:
+    content: >-
+      [Theory]
+
+      [InlineData(new object[] { "wooga", 871102387362869288 })]
+
+      public void SlashCommandWithNameAndIDSuccess(string name, ulong commandID)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the command.
+    - id: commandID
+      type: System.UInt64
+      description: The ID of the command.
+    content.vb: >-
+      <Theory>
+
+      <InlineData(New Object() { "wooga", 871102387362869288 })>
+
+      Public Sub SlashCommandWithNameAndIDSuccess(name As String, commandID As ULong)
+  overload: Remora.Discord.Extensions.Tests.MentionTests.SlashCommandWithNameAndIDSuccess*
+  attributes:
+  - type: Xunit.TheoryAttribute
+    ctor: Xunit.TheoryAttribute.#ctor
+    arguments: []
+  nameWithType.vb: MentionTests.SlashCommandWithNameAndIDSuccess(String, ULong)
+  fullName.vb: Remora.Discord.Extensions.Tests.MentionTests.SlashCommandWithNameAndIDSuccess(String, ULong)
+  name.vb: SlashCommandWithNameAndIDSuccess(String, ULong)
+references:
+- uid: Remora.Discord.Extensions.Formatting.Mention
+  commentId: T:Remora.Discord.Extensions.Formatting.Mention
+  href: Remora.Discord.Extensions.Formatting.Mention.html
+  name: Mention
+  nameWithType: Mention
+  fullName: Remora.Discord.Extensions.Formatting.Mention
+- uid: Remora.Discord.Extensions.Tests
+  commentId: N:Remora.Discord.Extensions.Tests
+  href: Remora.html
+  name: Remora.Discord.Extensions.Tests
+  nameWithType: Remora.Discord.Extensions.Tests
+  fullName: Remora.Discord.Extensions.Tests
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Extensions
+    name: Extensions
+    href: Remora.Discord.Extensions.html
+  - name: .
+  - uid: Remora.Discord.Extensions.Tests
+    name: Tests
+    href: Remora.Discord.Extensions.Tests.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Extensions
+    name: Extensions
+    href: Remora.Discord.Extensions.html
+  - name: .
+  - uid: Remora.Discord.Extensions.Tests
+    name: Tests
+    href: Remora.Discord.Extensions.Tests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.Extensions.Formatting.Mention.User(Remora.Discord.API.Abstractions.Objects.IUser)
+  commentId: M:Remora.Discord.Extensions.Formatting.Mention.User(Remora.Discord.API.Abstractions.Objects.IUser)
+  name: User(IUser)
+  nameWithType: Mention.User(IUser)
+  fullName: Remora.Discord.Extensions.Formatting.Mention.User(Remora.Discord.API.Abstractions.Objects.IUser)
+  spec.csharp:
+  - uid: Remora.Discord.Extensions.Formatting.Mention.User(Remora.Discord.API.Abstractions.Objects.IUser)
+    name: User
+  - name: (
+  - uid: Remora.Discord.API.Abstractions.Objects.IUser
+    name: IUser
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Extensions.Formatting.Mention.User(Remora.Discord.API.Abstractions.Objects.IUser)
+    name: User
+  - name: (
+  - uid: Remora.Discord.API.Abstractions.Objects.IUser
+    name: IUser
+  - name: )
+- uid: Remora.Discord.Extensions.Tests.MentionTests.UserSuccess*
+  commentId: Overload:Remora.Discord.Extensions.Tests.MentionTests.UserSuccess
+  href: Remora.Discord.Extensions.Tests.MentionTests.html#Remora_Discord_Extensions_Tests_MentionTests_UserSuccess_System_UInt64_
+  name: UserSuccess
+  nameWithType: MentionTests.UserSuccess
+  fullName: Remora.Discord.Extensions.Tests.MentionTests.UserSuccess
+- uid: System.UInt64
+  commentId: T:System.UInt64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint64
+  name: ulong
+  nameWithType: ulong
+  fullName: ulong
+  nameWithType.vb: ULong
+  fullName.vb: ULong
+  name.vb: ULong
+- uid: Remora.Discord.Extensions.Formatting.Mention.User(Remora.Rest.Core.Snowflake)
+  commentId: M:Remora.Discord.Extensions.Formatting.Mention.User(Remora.Rest.Core.Snowflake)
+  isExternal: true
+  name: User(Snowflake)
+  nameWithType: Mention.User(Snowflake)
+  fullName: Remora.Discord.Extensions.Formatting.Mention.User(Remora.Rest.Core.Snowflake)
+  spec.csharp:
+  - uid: Remora.Discord.Extensions.Formatting.Mention.User(Remora.Rest.Core.Snowflake)
+    name: User
+  - name: (
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Extensions.Formatting.Mention.User(Remora.Rest.Core.Snowflake)
+    name: User
+  - name: (
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+- uid: Remora.Discord.Extensions.Tests.MentionTests.UserWithIDSuccess*
+  commentId: Overload:Remora.Discord.Extensions.Tests.MentionTests.UserWithIDSuccess
+  href: Remora.Discord.Extensions.Tests.MentionTests.html#Remora_Discord_Extensions_Tests_MentionTests_UserWithIDSuccess_System_UInt64_
+  name: UserWithIDSuccess
+  nameWithType: MentionTests.UserWithIDSuccess
+  fullName: Remora.Discord.Extensions.Tests.MentionTests.UserWithIDSuccess
+- uid: Remora.Discord.Extensions.Formatting.Mention.Channel(Remora.Discord.API.Abstractions.Objects.IChannel)
+  commentId: M:Remora.Discord.Extensions.Formatting.Mention.Channel(Remora.Discord.API.Abstractions.Objects.IChannel)
+  name: Channel(IChannel)
+  nameWithType: Mention.Channel(IChannel)
+  fullName: Remora.Discord.Extensions.Formatting.Mention.Channel(Remora.Discord.API.Abstractions.Objects.IChannel)
+  spec.csharp:
+  - uid: Remora.Discord.Extensions.Formatting.Mention.Channel(Remora.Discord.API.Abstractions.Objects.IChannel)
+    name: Channel
+  - name: (
+  - uid: Remora.Discord.API.Abstractions.Objects.IChannel
+    name: IChannel
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Extensions.Formatting.Mention.Channel(Remora.Discord.API.Abstractions.Objects.IChannel)
+    name: Channel
+  - name: (
+  - uid: Remora.Discord.API.Abstractions.Objects.IChannel
+    name: IChannel
+  - name: )
+- uid: Remora.Discord.Extensions.Tests.MentionTests.ChannelSuccess*
+  commentId: Overload:Remora.Discord.Extensions.Tests.MentionTests.ChannelSuccess
+  href: Remora.Discord.Extensions.Tests.MentionTests.html#Remora_Discord_Extensions_Tests_MentionTests_ChannelSuccess_System_UInt64_
+  name: ChannelSuccess
+  nameWithType: MentionTests.ChannelSuccess
+  fullName: Remora.Discord.Extensions.Tests.MentionTests.ChannelSuccess
+- uid: Remora.Discord.Extensions.Formatting.Mention.Channel(Remora.Rest.Core.Snowflake)
+  commentId: M:Remora.Discord.Extensions.Formatting.Mention.Channel(Remora.Rest.Core.Snowflake)
+  isExternal: true
+  name: Channel(Snowflake)
+  nameWithType: Mention.Channel(Snowflake)
+  fullName: Remora.Discord.Extensions.Formatting.Mention.Channel(Remora.Rest.Core.Snowflake)
+  spec.csharp:
+  - uid: Remora.Discord.Extensions.Formatting.Mention.Channel(Remora.Rest.Core.Snowflake)
+    name: Channel
+  - name: (
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Extensions.Formatting.Mention.Channel(Remora.Rest.Core.Snowflake)
+    name: Channel
+  - name: (
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+- uid: Remora.Discord.Extensions.Tests.MentionTests.ChannelWithIDSuccess*
+  commentId: Overload:Remora.Discord.Extensions.Tests.MentionTests.ChannelWithIDSuccess
+  href: Remora.Discord.Extensions.Tests.MentionTests.html#Remora_Discord_Extensions_Tests_MentionTests_ChannelWithIDSuccess_System_UInt64_
+  name: ChannelWithIDSuccess
+  nameWithType: MentionTests.ChannelWithIDSuccess
+  fullName: Remora.Discord.Extensions.Tests.MentionTests.ChannelWithIDSuccess
+- uid: Remora.Discord.Extensions.Formatting.Mention.Role(Remora.Discord.API.Abstractions.Objects.IRole)
+  commentId: M:Remora.Discord.Extensions.Formatting.Mention.Role(Remora.Discord.API.Abstractions.Objects.IRole)
+  name: Role(IRole)
+  nameWithType: Mention.Role(IRole)
+  fullName: Remora.Discord.Extensions.Formatting.Mention.Role(Remora.Discord.API.Abstractions.Objects.IRole)
+  spec.csharp:
+  - uid: Remora.Discord.Extensions.Formatting.Mention.Role(Remora.Discord.API.Abstractions.Objects.IRole)
+    name: Role
+  - name: (
+  - uid: Remora.Discord.API.Abstractions.Objects.IRole
+    name: IRole
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Extensions.Formatting.Mention.Role(Remora.Discord.API.Abstractions.Objects.IRole)
+    name: Role
+  - name: (
+  - uid: Remora.Discord.API.Abstractions.Objects.IRole
+    name: IRole
+  - name: )
+- uid: Remora.Discord.Extensions.Tests.MentionTests.RoleSuccess*
+  commentId: Overload:Remora.Discord.Extensions.Tests.MentionTests.RoleSuccess
+  href: Remora.Discord.Extensions.Tests.MentionTests.html#Remora_Discord_Extensions_Tests_MentionTests_RoleSuccess_System_UInt64_
+  name: RoleSuccess
+  nameWithType: MentionTests.RoleSuccess
+  fullName: Remora.Discord.Extensions.Tests.MentionTests.RoleSuccess
+- uid: Remora.Discord.Extensions.Formatting.Mention.Role(Remora.Rest.Core.Snowflake)
+  commentId: M:Remora.Discord.Extensions.Formatting.Mention.Role(Remora.Rest.Core.Snowflake)
+  isExternal: true
+  name: Role(Snowflake)
+  nameWithType: Mention.Role(Snowflake)
+  fullName: Remora.Discord.Extensions.Formatting.Mention.Role(Remora.Rest.Core.Snowflake)
+  spec.csharp:
+  - uid: Remora.Discord.Extensions.Formatting.Mention.Role(Remora.Rest.Core.Snowflake)
+    name: Role
+  - name: (
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Extensions.Formatting.Mention.Role(Remora.Rest.Core.Snowflake)
+    name: Role
+  - name: (
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+- uid: Remora.Discord.Extensions.Tests.MentionTests.RoleWithIDSuccess*
+  commentId: Overload:Remora.Discord.Extensions.Tests.MentionTests.RoleWithIDSuccess
+  href: Remora.Discord.Extensions.Tests.MentionTests.html#Remora_Discord_Extensions_Tests_MentionTests_RoleWithIDSuccess_System_UInt64_
+  name: RoleWithIDSuccess
+  nameWithType: MentionTests.RoleWithIDSuccess
+  fullName: Remora.Discord.Extensions.Tests.MentionTests.RoleWithIDSuccess
+- uid: Remora.Discord.Extensions.Formatting.Mention.SlashCommand(Remora.Discord.API.Abstractions.Objects.IApplicationCommand)
+  commentId: M:Remora.Discord.Extensions.Formatting.Mention.SlashCommand(Remora.Discord.API.Abstractions.Objects.IApplicationCommand)
+  name: SlashCommand(IApplicationCommand)
+  nameWithType: Mention.SlashCommand(IApplicationCommand)
+  fullName: Remora.Discord.Extensions.Formatting.Mention.SlashCommand(Remora.Discord.API.Abstractions.Objects.IApplicationCommand)
+  spec.csharp:
+  - uid: Remora.Discord.Extensions.Formatting.Mention.SlashCommand(Remora.Discord.API.Abstractions.Objects.IApplicationCommand)
+    name: SlashCommand
+  - name: (
+  - uid: Remora.Discord.API.Abstractions.Objects.IApplicationCommand
+    name: IApplicationCommand
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Extensions.Formatting.Mention.SlashCommand(Remora.Discord.API.Abstractions.Objects.IApplicationCommand)
+    name: SlashCommand
+  - name: (
+  - uid: Remora.Discord.API.Abstractions.Objects.IApplicationCommand
+    name: IApplicationCommand
+  - name: )
+- uid: Remora.Discord.Extensions.Tests.MentionTests.SlashCommandSuccess*
+  commentId: Overload:Remora.Discord.Extensions.Tests.MentionTests.SlashCommandSuccess
+  href: Remora.Discord.Extensions.Tests.MentionTests.html#Remora_Discord_Extensions_Tests_MentionTests_SlashCommandSuccess_System_String_System_UInt64_
+  name: SlashCommandSuccess
+  nameWithType: MentionTests.SlashCommandSuccess
+  fullName: Remora.Discord.Extensions.Tests.MentionTests.SlashCommandSuccess
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Remora.Discord.Extensions.Tests.MentionTests.SlashCommandWithNameAndIDSuccess*
+  commentId: Overload:Remora.Discord.Extensions.Tests.MentionTests.SlashCommandWithNameAndIDSuccess
+  href: Remora.Discord.Extensions.Tests.MentionTests.html#Remora_Discord_Extensions_Tests_MentionTests_SlashCommandWithNameAndIDSuccess_System_String_System_UInt64_
+  name: SlashCommandWithNameAndIDSuccess
+  nameWithType: MentionTests.SlashCommandWithNameAndIDSuccess
+  fullName: Remora.Discord.Extensions.Tests.MentionTests.SlashCommandWithNameAndIDSuccess

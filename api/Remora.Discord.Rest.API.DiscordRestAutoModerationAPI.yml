@@ -1,0 +1,2264 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.Rest.API.DiscordRestAutoModerationAPI
+  commentId: T:Remora.Discord.Rest.API.DiscordRestAutoModerationAPI
+  id: DiscordRestAutoModerationAPI
+  parent: Remora.Discord.Rest.API
+  children:
+  - Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.#ctor(Remora.Rest.IRestHttpClient,System.Text.Json.JsonSerializerOptions,Remora.Discord.Caching.Abstractions.Services.ICacheProvider)
+  - Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.CreateAutoModerationRuleAsync(Remora.Rest.Core.Snowflake,System.String,Remora.Discord.API.Abstractions.Objects.AutoModerationEventType,Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType,Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata},System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IAutoModerationAction},Remora.Rest.Core.Optional{System.Nullable{System.Boolean}},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}},System.Threading.CancellationToken)
+  - Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.DeleteAutoModerationRuleAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  - Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.GetAutoModerationRuleAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  - Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.ListAutoModerationRulesAsync(Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  - Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.ModifyAutoModerationRuleAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.AutoModerationEventType},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IAutoModerationAction}},Remora.Rest.Core.Optional{System.Nullable{System.Boolean}},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}},System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: DiscordRestAutoModerationAPI
+  nameWithType: DiscordRestAutoModerationAPI
+  fullName: Remora.Discord.Rest.API.DiscordRestAutoModerationAPI
+  type: Class
+  source:
+    id: DiscordRestAutoModerationAPI
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Rest\API\AutoModeration\DiscordRestAutoModerationAPI.cs
+    startLine: 39
+  assemblies:
+  - Remora.Discord.Rest
+  namespace: Remora.Discord.Rest.API
+  summary: Represents the Discord Auto Moderation API.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public class DiscordRestAutoModerationAPI : AbstractDiscordRestAPI, IRestCustomizable, IDiscordRestAutoModerationAPI
+    content.vb: >-
+      <PublicAPI>
+
+      Public Class DiscordRestAutoModerationAPI Inherits AbstractDiscordRestAPI Implements IRestCustomizable, IDiscordRestAutoModerationAPI
+  inheritance:
+  - System.Object
+  - Remora.Discord.Rest.API.AbstractDiscordRestAPI
+  implements:
+  - Remora.Rest.IRestCustomizable
+  - Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI
+  inheritedMembers:
+  - Remora.Discord.Rest.API.AbstractDiscordRestAPI.RestHttpClient
+  - Remora.Discord.Rest.API.AbstractDiscordRestAPI.JsonOptions
+  - Remora.Discord.Rest.API.AbstractDiscordRestAPI.RateLimitCache
+  - Remora.Discord.Rest.API.AbstractDiscordRestAPI.WithCustomization(System.Action{Remora.Rest.RestRequestBuilder})
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.#ctor(Remora.Rest.IRestHttpClient,System.Text.Json.JsonSerializerOptions,Remora.Discord.Caching.Abstractions.Services.ICacheProvider)
+  commentId: M:Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.#ctor(Remora.Rest.IRestHttpClient,System.Text.Json.JsonSerializerOptions,Remora.Discord.Caching.Abstractions.Services.ICacheProvider)
+  id: '#ctor(Remora.Rest.IRestHttpClient,System.Text.Json.JsonSerializerOptions,Remora.Discord.Caching.Abstractions.Services.ICacheProvider)'
+  parent: Remora.Discord.Rest.API.DiscordRestAutoModerationAPI
+  langs:
+  - csharp
+  - vb
+  name: DiscordRestAutoModerationAPI(IRestHttpClient, JsonSerializerOptions, ICacheProvider)
+  nameWithType: DiscordRestAutoModerationAPI.DiscordRestAutoModerationAPI(IRestHttpClient, JsonSerializerOptions, ICacheProvider)
+  fullName: Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.DiscordRestAutoModerationAPI(Remora.Rest.IRestHttpClient, System.Text.Json.JsonSerializerOptions, Remora.Discord.Caching.Abstractions.Services.ICacheProvider)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Rest\API\AutoModeration\DiscordRestAutoModerationAPI.cs
+    startLine: 48
+  assemblies:
+  - Remora.Discord.Rest
+  namespace: Remora.Discord.Rest.API
+  summary: Initializes a new instance of the <xref href="Remora.Discord.Rest.API.DiscordRestAutoModerationAPI" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public DiscordRestAutoModerationAPI(IRestHttpClient restHttpClient, JsonSerializerOptions jsonOptions, ICacheProvider rateLimitCache)
+    parameters:
+    - id: restHttpClient
+      type: Remora.Rest.IRestHttpClient
+      description: The Discord HTTP client.
+    - id: jsonOptions
+      type: System.Text.Json.JsonSerializerOptions
+      description: The JSON options.
+    - id: rateLimitCache
+      type: Remora.Discord.Caching.Abstractions.Services.ICacheProvider
+      description: The memory cache used for rate limits.
+    content.vb: Public Sub New(restHttpClient As IRestHttpClient, jsonOptions As JsonSerializerOptions, rateLimitCache As ICacheProvider)
+  overload: Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.#ctor*
+  nameWithType.vb: DiscordRestAutoModerationAPI.New(IRestHttpClient, JsonSerializerOptions, ICacheProvider)
+  fullName.vb: Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.New(Remora.Rest.IRestHttpClient, System.Text.Json.JsonSerializerOptions, Remora.Discord.Caching.Abstractions.Services.ICacheProvider)
+  name.vb: New(IRestHttpClient, JsonSerializerOptions, ICacheProvider)
+- uid: Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.ListAutoModerationRulesAsync(Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.ListAutoModerationRulesAsync(Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  id: ListAutoModerationRulesAsync(Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  parent: Remora.Discord.Rest.API.DiscordRestAutoModerationAPI
+  langs:
+  - csharp
+  - vb
+  name: ListAutoModerationRulesAsync(Snowflake, CancellationToken)
+  nameWithType: DiscordRestAutoModerationAPI.ListAutoModerationRulesAsync(Snowflake, CancellationToken)
+  fullName: Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.ListAutoModerationRulesAsync(Remora.Rest.Core.Snowflake, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: ListAutoModerationRulesAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Rest\API\AutoModeration\DiscordRestAutoModerationAPI.cs
+    startLine: 59
+  assemblies:
+  - Remora.Discord.Rest
+  namespace: Remora.Discord.Rest.API
+  summary: Gets a list of all Auto Moderation rules.
+  example: []
+  syntax:
+    content: public Task<Result<IReadOnlyList<IAutoModerationRule>>> ListAutoModerationRulesAsync(Snowflake guildID, CancellationToken ct = default)
+    parameters:
+    - id: guildID
+      type: Remora.Rest.Core.Snowflake
+      description: The ID of the guild.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IAutoModerationRule}}}
+      description: A retrieval result which may or may not have succeeded.
+    content.vb: Public Function ListAutoModerationRulesAsync(guildID As Snowflake, ct As CancellationToken = Nothing) As Task(Of Result(Of IReadOnlyList(Of IAutoModerationRule)))
+  overload: Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.ListAutoModerationRulesAsync*
+  implements:
+  - Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI.ListAutoModerationRulesAsync(Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+- uid: Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.GetAutoModerationRuleAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.GetAutoModerationRuleAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  id: GetAutoModerationRuleAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  parent: Remora.Discord.Rest.API.DiscordRestAutoModerationAPI
+  langs:
+  - csharp
+  - vb
+  name: GetAutoModerationRuleAsync(Snowflake, Snowflake, CancellationToken)
+  nameWithType: DiscordRestAutoModerationAPI.GetAutoModerationRuleAsync(Snowflake, Snowflake, CancellationToken)
+  fullName: Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.GetAutoModerationRuleAsync(Remora.Rest.Core.Snowflake, Remora.Rest.Core.Snowflake, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: GetAutoModerationRuleAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Rest\API\AutoModeration\DiscordRestAutoModerationAPI.cs
+    startLine: 74
+  assemblies:
+  - Remora.Discord.Rest
+  namespace: Remora.Discord.Rest.API
+  summary: Gets a single Auto Moderation rule by ID.
+  example: []
+  syntax:
+    content: public Task<Result<IAutoModerationRule>> GetAutoModerationRuleAsync(Snowflake guildID, Snowflake ruleID, CancellationToken ct = default)
+    parameters:
+    - id: guildID
+      type: Remora.Rest.Core.Snowflake
+      description: The ID of the guild.
+    - id: ruleID
+      type: Remora.Rest.Core.Snowflake
+      description: The ID of the rule.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IAutoModerationRule}}
+      description: A retrieval result which may or may not have succeeded.
+    content.vb: Public Function GetAutoModerationRuleAsync(guildID As Snowflake, ruleID As Snowflake, ct As CancellationToken = Nothing) As Task(Of Result(Of IAutoModerationRule))
+  overload: Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.GetAutoModerationRuleAsync*
+  implements:
+  - Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI.GetAutoModerationRuleAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+- uid: Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.CreateAutoModerationRuleAsync(Remora.Rest.Core.Snowflake,System.String,Remora.Discord.API.Abstractions.Objects.AutoModerationEventType,Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType,Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata},System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IAutoModerationAction},Remora.Rest.Core.Optional{System.Nullable{System.Boolean}},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}},System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.CreateAutoModerationRuleAsync(Remora.Rest.Core.Snowflake,System.String,Remora.Discord.API.Abstractions.Objects.AutoModerationEventType,Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType,Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata},System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IAutoModerationAction},Remora.Rest.Core.Optional{System.Nullable{System.Boolean}},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}},System.Threading.CancellationToken)
+  id: CreateAutoModerationRuleAsync(Remora.Rest.Core.Snowflake,System.String,Remora.Discord.API.Abstractions.Objects.AutoModerationEventType,Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType,Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata},System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IAutoModerationAction},Remora.Rest.Core.Optional{System.Nullable{System.Boolean}},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}},System.Threading.CancellationToken)
+  parent: Remora.Discord.Rest.API.DiscordRestAutoModerationAPI
+  langs:
+  - csharp
+  - vb
+  name: CreateAutoModerationRuleAsync(Snowflake, string, AutoModerationEventType, AutoModerationTriggerType, Optional<IAutoModerationTriggerMetadata>, IReadOnlyList<IAutoModerationAction>, Optional<bool?>, Optional<IReadOnlyList<Snowflake>?>, Optional<IReadOnlyList<Snowflake>?>, CancellationToken)
+  nameWithType: DiscordRestAutoModerationAPI.CreateAutoModerationRuleAsync(Snowflake, string, AutoModerationEventType, AutoModerationTriggerType, Optional<IAutoModerationTriggerMetadata>, IReadOnlyList<IAutoModerationAction>, Optional<bool?>, Optional<IReadOnlyList<Snowflake>?>, Optional<IReadOnlyList<Snowflake>?>, CancellationToken)
+  fullName: Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.CreateAutoModerationRuleAsync(Remora.Rest.Core.Snowflake, string, Remora.Discord.API.Abstractions.Objects.AutoModerationEventType, Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType, Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata>, System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.IAutoModerationAction>, Remora.Rest.Core.Optional<bool?>, Remora.Rest.Core.Optional<System.Collections.Generic.IReadOnlyList<Remora.Rest.Core.Snowflake>?>, Remora.Rest.Core.Optional<System.Collections.Generic.IReadOnlyList<Remora.Rest.Core.Snowflake>?>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: CreateAutoModerationRuleAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Rest\API\AutoModeration\DiscordRestAutoModerationAPI.cs
+    startLine: 90
+  assemblies:
+  - Remora.Discord.Rest
+  namespace: Remora.Discord.Rest.API
+  summary: Creates a new Auto Moderation rule in a guild.
+  example: []
+  syntax:
+    content: public Task<Result<IAutoModerationRule>> CreateAutoModerationRuleAsync(Snowflake guildID, string name, AutoModerationEventType eventType, AutoModerationTriggerType triggerType, Optional<IAutoModerationTriggerMetadata> triggerMetadata, IReadOnlyList<IAutoModerationAction> actions, Optional<bool?> enabled = default, Optional<IReadOnlyList<Snowflake>?> exemptRoles = default, Optional<IReadOnlyList<Snowflake>?> exemptChannels = default, CancellationToken ct = default)
+    parameters:
+    - id: guildID
+      type: Remora.Rest.Core.Snowflake
+      description: The ID of the guild.
+    - id: name
+      type: System.String
+      description: The name of the rule.
+    - id: eventType
+      type: Remora.Discord.API.Abstractions.Objects.AutoModerationEventType
+      description: The type event on which the rule should be triggered.
+    - id: triggerType
+      type: Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType
+      description: The type of content which can trigger the rule.
+    - id: triggerMetadata
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata}
+      description: The associated trigger metadata.
+    - id: actions
+      type: System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IAutoModerationAction}
+      description: The actions which will execute when the rule is triggered.
+    - id: enabled
+      type: Remora.Rest.Core.Optional{System.Nullable{System.Boolean}}
+      description: Whether the rule is enabled.
+    - id: exemptRoles
+      type: Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}}
+      description: The role IDs that should not be affected by this rule.
+    - id: exemptChannels
+      type: Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}}
+      description: The channel IDs that should not be affected by this rule.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IAutoModerationRule}}
+      description: A modification result which may or may not have succeeded.
+    content.vb: Public Function CreateAutoModerationRuleAsync(guildID As Snowflake, name As String, eventType As AutoModerationEventType, triggerType As AutoModerationTriggerType, triggerMetadata As [Optional](Of IAutoModerationTriggerMetadata), actions As IReadOnlyList(Of IAutoModerationAction), enabled As [Optional](Of Boolean?) = Nothing, exemptRoles As [Optional](Of IReadOnlyList(Of Snowflake)) = Nothing, exemptChannels As [Optional](Of IReadOnlyList(Of Snowflake)) = Nothing, ct As CancellationToken = Nothing) As Task(Of Result(Of IAutoModerationRule))
+  overload: Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.CreateAutoModerationRuleAsync*
+  implements:
+  - Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI.CreateAutoModerationRuleAsync(Remora.Rest.Core.Snowflake,System.String,Remora.Discord.API.Abstractions.Objects.AutoModerationEventType,Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType,Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata},System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IAutoModerationAction},Remora.Rest.Core.Optional{System.Nullable{System.Boolean}},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}},System.Threading.CancellationToken)
+  nameWithType.vb: DiscordRestAutoModerationAPI.CreateAutoModerationRuleAsync(Snowflake, String, AutoModerationEventType, AutoModerationTriggerType, Optional(Of IAutoModerationTriggerMetadata), IReadOnlyList(Of IAutoModerationAction), Optional(Of Boolean?), Optional(Of IReadOnlyList(Of Snowflake)), Optional(Of IReadOnlyList(Of Snowflake)), CancellationToken)
+  fullName.vb: Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.CreateAutoModerationRuleAsync(Remora.Rest.Core.Snowflake, String, Remora.Discord.API.Abstractions.Objects.AutoModerationEventType, Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType, Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata), System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.IAutoModerationAction), Remora.Rest.Core.Optional(Of Boolean?), Remora.Rest.Core.Optional(Of System.Collections.Generic.IReadOnlyList(Of Remora.Rest.Core.Snowflake)), Remora.Rest.Core.Optional(Of System.Collections.Generic.IReadOnlyList(Of Remora.Rest.Core.Snowflake)), System.Threading.CancellationToken)
+  name.vb: CreateAutoModerationRuleAsync(Snowflake, String, AutoModerationEventType, AutoModerationTriggerType, Optional(Of IAutoModerationTriggerMetadata), IReadOnlyList(Of IAutoModerationAction), Optional(Of Boolean?), Optional(Of IReadOnlyList(Of Snowflake)), Optional(Of IReadOnlyList(Of Snowflake)), CancellationToken)
+- uid: Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.ModifyAutoModerationRuleAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.AutoModerationEventType},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IAutoModerationAction}},Remora.Rest.Core.Optional{System.Nullable{System.Boolean}},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}},System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.ModifyAutoModerationRuleAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.AutoModerationEventType},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IAutoModerationAction}},Remora.Rest.Core.Optional{System.Nullable{System.Boolean}},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}},System.Threading.CancellationToken)
+  id: ModifyAutoModerationRuleAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.AutoModerationEventType},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IAutoModerationAction}},Remora.Rest.Core.Optional{System.Nullable{System.Boolean}},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}},System.Threading.CancellationToken)
+  parent: Remora.Discord.Rest.API.DiscordRestAutoModerationAPI
+  langs:
+  - csharp
+  - vb
+  name: ModifyAutoModerationRuleAsync(Snowflake, Snowflake, Optional<string>, Optional<AutoModerationEventType>, Optional<AutoModerationTriggerType>, Optional<IAutoModerationTriggerMetadata>, Optional<IReadOnlyList<IAutoModerationAction>>, Optional<bool?>, Optional<IReadOnlyList<Snowflake>?>, Optional<IReadOnlyList<Snowflake>?>, CancellationToken)
+  nameWithType: DiscordRestAutoModerationAPI.ModifyAutoModerationRuleAsync(Snowflake, Snowflake, Optional<string>, Optional<AutoModerationEventType>, Optional<AutoModerationTriggerType>, Optional<IAutoModerationTriggerMetadata>, Optional<IReadOnlyList<IAutoModerationAction>>, Optional<bool?>, Optional<IReadOnlyList<Snowflake>?>, Optional<IReadOnlyList<Snowflake>?>, CancellationToken)
+  fullName: Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.ModifyAutoModerationRuleAsync(Remora.Rest.Core.Snowflake, Remora.Rest.Core.Snowflake, Remora.Rest.Core.Optional<string>, Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.AutoModerationEventType>, Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType>, Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata>, Remora.Rest.Core.Optional<System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.IAutoModerationAction>>, Remora.Rest.Core.Optional<bool?>, Remora.Rest.Core.Optional<System.Collections.Generic.IReadOnlyList<Remora.Rest.Core.Snowflake>?>, Remora.Rest.Core.Optional<System.Collections.Generic.IReadOnlyList<Remora.Rest.Core.Snowflake>?>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: ModifyAutoModerationRuleAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Rest\API\AutoModeration\DiscordRestAutoModerationAPI.cs
+    startLine: 130
+  assemblies:
+  - Remora.Discord.Rest
+  namespace: Remora.Discord.Rest.API
+  summary: Modifies an existing Auto Moderation rule in a guild.
+  example: []
+  syntax:
+    content: public Task<Result<IAutoModerationRule>> ModifyAutoModerationRuleAsync(Snowflake guildID, Snowflake ruleID, Optional<string> name = default, Optional<AutoModerationEventType> eventType = default, Optional<AutoModerationTriggerType> triggerType = default, Optional<IAutoModerationTriggerMetadata> triggerMetadata = default, Optional<IReadOnlyList<IAutoModerationAction>> actions = default, Optional<bool?> enabled = default, Optional<IReadOnlyList<Snowflake>?> exemptRoles = default, Optional<IReadOnlyList<Snowflake>?> exemptChannels = default, CancellationToken ct = default)
+    parameters:
+    - id: guildID
+      type: Remora.Rest.Core.Snowflake
+      description: The ID of the guild.
+    - id: ruleID
+      type: Remora.Rest.Core.Snowflake
+      description: The ID of the rule.
+    - id: name
+      type: Remora.Rest.Core.Optional{System.String}
+      description: The name of the rule.
+    - id: eventType
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.AutoModerationEventType}
+      description: The type event on which the rule should be triggered.
+    - id: triggerType
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType}
+      description: The type of content which can trigger the rule.
+    - id: triggerMetadata
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata}
+      description: The associated trigger metadata.
+    - id: actions
+      type: Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IAutoModerationAction}}
+      description: The actions which will execute when the rule is triggered.
+    - id: enabled
+      type: Remora.Rest.Core.Optional{System.Nullable{System.Boolean}}
+      description: Whether the rule is enabled.
+    - id: exemptRoles
+      type: Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}}
+      description: The role IDs that should not be affected by this rule.
+    - id: exemptChannels
+      type: Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}}
+      description: The channel IDs that should not be affected by this rule.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IAutoModerationRule}}
+      description: A modification result which may or may not have succeeded.
+    content.vb: Public Function ModifyAutoModerationRuleAsync(guildID As Snowflake, ruleID As Snowflake, name As [Optional](Of String) = Nothing, eventType As [Optional](Of AutoModerationEventType) = Nothing, triggerType As [Optional](Of AutoModerationTriggerType) = Nothing, triggerMetadata As [Optional](Of IAutoModerationTriggerMetadata) = Nothing, actions As [Optional](Of IReadOnlyList(Of IAutoModerationAction)) = Nothing, enabled As [Optional](Of Boolean?) = Nothing, exemptRoles As [Optional](Of IReadOnlyList(Of Snowflake)) = Nothing, exemptChannels As [Optional](Of IReadOnlyList(Of Snowflake)) = Nothing, ct As CancellationToken = Nothing) As Task(Of Result(Of IAutoModerationRule))
+  overload: Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.ModifyAutoModerationRuleAsync*
+  implements:
+  - Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI.ModifyAutoModerationRuleAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.AutoModerationEventType},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IAutoModerationAction}},Remora.Rest.Core.Optional{System.Nullable{System.Boolean}},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}},System.Threading.CancellationToken)
+  nameWithType.vb: DiscordRestAutoModerationAPI.ModifyAutoModerationRuleAsync(Snowflake, Snowflake, Optional(Of String), Optional(Of AutoModerationEventType), Optional(Of AutoModerationTriggerType), Optional(Of IAutoModerationTriggerMetadata), Optional(Of IReadOnlyList(Of IAutoModerationAction)), Optional(Of Boolean?), Optional(Of IReadOnlyList(Of Snowflake)), Optional(Of IReadOnlyList(Of Snowflake)), CancellationToken)
+  fullName.vb: Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.ModifyAutoModerationRuleAsync(Remora.Rest.Core.Snowflake, Remora.Rest.Core.Snowflake, Remora.Rest.Core.Optional(Of String), Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.AutoModerationEventType), Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType), Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata), Remora.Rest.Core.Optional(Of System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.IAutoModerationAction)), Remora.Rest.Core.Optional(Of Boolean?), Remora.Rest.Core.Optional(Of System.Collections.Generic.IReadOnlyList(Of Remora.Rest.Core.Snowflake)), Remora.Rest.Core.Optional(Of System.Collections.Generic.IReadOnlyList(Of Remora.Rest.Core.Snowflake)), System.Threading.CancellationToken)
+  name.vb: ModifyAutoModerationRuleAsync(Snowflake, Snowflake, Optional(Of String), Optional(Of AutoModerationEventType), Optional(Of AutoModerationTriggerType), Optional(Of IAutoModerationTriggerMetadata), Optional(Of IReadOnlyList(Of IAutoModerationAction)), Optional(Of Boolean?), Optional(Of IReadOnlyList(Of Snowflake)), Optional(Of IReadOnlyList(Of Snowflake)), CancellationToken)
+- uid: Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.DeleteAutoModerationRuleAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.DeleteAutoModerationRuleAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  id: DeleteAutoModerationRuleAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  parent: Remora.Discord.Rest.API.DiscordRestAutoModerationAPI
+  langs:
+  - csharp
+  - vb
+  name: DeleteAutoModerationRuleAsync(Snowflake, Snowflake, CancellationToken)
+  nameWithType: DiscordRestAutoModerationAPI.DeleteAutoModerationRuleAsync(Snowflake, Snowflake, CancellationToken)
+  fullName: Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.DeleteAutoModerationRuleAsync(Remora.Rest.Core.Snowflake, Remora.Rest.Core.Snowflake, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: DeleteAutoModerationRuleAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Rest\API\AutoModeration\DiscordRestAutoModerationAPI.cs
+    startLine: 171
+  assemblies:
+  - Remora.Discord.Rest
+  namespace: Remora.Discord.Rest.API
+  summary: Deletes an existing Auto Moderation rule in a guild.
+  example: []
+  syntax:
+    content: public Task<Result> DeleteAutoModerationRuleAsync(Snowflake guildID, Snowflake ruleID, CancellationToken ct = default)
+    parameters:
+    - id: guildID
+      type: Remora.Rest.Core.Snowflake
+      description: The ID of the guild.
+    - id: ruleID
+      type: Remora.Rest.Core.Snowflake
+      description: The ID of the rule.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result}
+      description: A deletion result which may or may not have succeeded.
+    content.vb: Public Function DeleteAutoModerationRuleAsync(guildID As Snowflake, ruleID As Snowflake, ct As CancellationToken = Nothing) As Task(Of Result)
+  overload: Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.DeleteAutoModerationRuleAsync*
+  implements:
+  - Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI.DeleteAutoModerationRuleAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+references:
+- uid: Remora.Discord.Rest.API
+  commentId: N:Remora.Discord.Rest.API
+  href: Remora.html
+  name: Remora.Discord.Rest.API
+  nameWithType: Remora.Discord.Rest.API
+  fullName: Remora.Discord.Rest.API
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Rest
+    name: Rest
+    href: Remora.Discord.Rest.html
+  - name: .
+  - uid: Remora.Discord.Rest.API
+    name: API
+    href: Remora.Discord.Rest.API.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Rest
+    name: Rest
+    href: Remora.Discord.Rest.html
+  - name: .
+  - uid: Remora.Discord.Rest.API
+    name: API
+    href: Remora.Discord.Rest.API.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Remora.Discord.Rest.API.AbstractDiscordRestAPI
+  commentId: T:Remora.Discord.Rest.API.AbstractDiscordRestAPI
+  parent: Remora.Discord.Rest.API
+  href: Remora.Discord.Rest.API.AbstractDiscordRestAPI.html
+  name: AbstractDiscordRestAPI
+  nameWithType: AbstractDiscordRestAPI
+  fullName: Remora.Discord.Rest.API.AbstractDiscordRestAPI
+- uid: Remora.Rest.IRestCustomizable
+  commentId: T:Remora.Rest.IRestCustomizable
+  parent: Remora.Rest
+  isExternal: true
+  name: IRestCustomizable
+  nameWithType: IRestCustomizable
+  fullName: Remora.Rest.IRestCustomizable
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI
+  commentId: T:Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI
+  parent: Remora.Discord.API.Abstractions.Rest
+  href: Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI.html
+  name: IDiscordRestAutoModerationAPI
+  nameWithType: IDiscordRestAutoModerationAPI
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI
+- uid: Remora.Discord.Rest.API.AbstractDiscordRestAPI.RestHttpClient
+  commentId: P:Remora.Discord.Rest.API.AbstractDiscordRestAPI.RestHttpClient
+  parent: Remora.Discord.Rest.API.AbstractDiscordRestAPI
+  href: Remora.Discord.Rest.API.AbstractDiscordRestAPI.html#Remora_Discord_Rest_API_AbstractDiscordRestAPI_RestHttpClient
+  name: RestHttpClient
+  nameWithType: AbstractDiscordRestAPI.RestHttpClient
+  fullName: Remora.Discord.Rest.API.AbstractDiscordRestAPI.RestHttpClient
+- uid: Remora.Discord.Rest.API.AbstractDiscordRestAPI.JsonOptions
+  commentId: P:Remora.Discord.Rest.API.AbstractDiscordRestAPI.JsonOptions
+  parent: Remora.Discord.Rest.API.AbstractDiscordRestAPI
+  href: Remora.Discord.Rest.API.AbstractDiscordRestAPI.html#Remora_Discord_Rest_API_AbstractDiscordRestAPI_JsonOptions
+  name: JsonOptions
+  nameWithType: AbstractDiscordRestAPI.JsonOptions
+  fullName: Remora.Discord.Rest.API.AbstractDiscordRestAPI.JsonOptions
+- uid: Remora.Discord.Rest.API.AbstractDiscordRestAPI.RateLimitCache
+  commentId: P:Remora.Discord.Rest.API.AbstractDiscordRestAPI.RateLimitCache
+  parent: Remora.Discord.Rest.API.AbstractDiscordRestAPI
+  href: Remora.Discord.Rest.API.AbstractDiscordRestAPI.html#Remora_Discord_Rest_API_AbstractDiscordRestAPI_RateLimitCache
+  name: RateLimitCache
+  nameWithType: AbstractDiscordRestAPI.RateLimitCache
+  fullName: Remora.Discord.Rest.API.AbstractDiscordRestAPI.RateLimitCache
+- uid: Remora.Discord.Rest.API.AbstractDiscordRestAPI.WithCustomization(System.Action{Remora.Rest.RestRequestBuilder})
+  commentId: M:Remora.Discord.Rest.API.AbstractDiscordRestAPI.WithCustomization(System.Action{Remora.Rest.RestRequestBuilder})
+  parent: Remora.Discord.Rest.API.AbstractDiscordRestAPI
+  isExternal: true
+  href: Remora.Discord.Rest.API.AbstractDiscordRestAPI.html#Remora_Discord_Rest_API_AbstractDiscordRestAPI_WithCustomization_System_Action_Remora_Rest_RestRequestBuilder__
+  name: WithCustomization(Action<RestRequestBuilder>)
+  nameWithType: AbstractDiscordRestAPI.WithCustomization(Action<RestRequestBuilder>)
+  fullName: Remora.Discord.Rest.API.AbstractDiscordRestAPI.WithCustomization(System.Action<Remora.Rest.RestRequestBuilder>)
+  nameWithType.vb: AbstractDiscordRestAPI.WithCustomization(Action(Of RestRequestBuilder))
+  fullName.vb: Remora.Discord.Rest.API.AbstractDiscordRestAPI.WithCustomization(System.Action(Of Remora.Rest.RestRequestBuilder))
+  name.vb: WithCustomization(Action(Of RestRequestBuilder))
+  spec.csharp:
+  - uid: Remora.Discord.Rest.API.AbstractDiscordRestAPI.WithCustomization(System.Action{Remora.Rest.RestRequestBuilder})
+    name: WithCustomization
+    href: Remora.Discord.Rest.API.AbstractDiscordRestAPI.html#Remora_Discord_Rest_API_AbstractDiscordRestAPI_WithCustomization_System_Action_Remora_Rest_RestRequestBuilder__
+  - name: (
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Remora.Rest.RestRequestBuilder
+    name: RestRequestBuilder
+    isExternal: true
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Rest.API.AbstractDiscordRestAPI.WithCustomization(System.Action{Remora.Rest.RestRequestBuilder})
+    name: WithCustomization
+    href: Remora.Discord.Rest.API.AbstractDiscordRestAPI.html#Remora_Discord_Rest_API_AbstractDiscordRestAPI_WithCustomization_System_Action_Remora_Rest_RestRequestBuilder__
+  - name: (
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Rest.RestRequestBuilder
+    name: RestRequestBuilder
+    isExternal: true
+  - name: )
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Rest
+  commentId: N:Remora.Rest
+  isExternal: true
+  name: Remora.Rest
+  nameWithType: Remora.Rest
+  fullName: Remora.Rest
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+- uid: Remora.Discord.API.Abstractions.Rest
+  commentId: N:Remora.Discord.API.Abstractions.Rest
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Rest
+  nameWithType: Remora.Discord.API.Abstractions.Rest
+  fullName: Remora.Discord.API.Abstractions.Rest
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Rest
+    name: Rest
+    href: Remora.Discord.API.Abstractions.Rest.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Rest
+    name: Rest
+    href: Remora.Discord.API.Abstractions.Rest.html
+- uid: Remora.Discord.Rest.API.DiscordRestAutoModerationAPI
+  commentId: T:Remora.Discord.Rest.API.DiscordRestAutoModerationAPI
+  href: Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.html
+  name: DiscordRestAutoModerationAPI
+  nameWithType: DiscordRestAutoModerationAPI
+  fullName: Remora.Discord.Rest.API.DiscordRestAutoModerationAPI
+- uid: Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.#ctor*
+  commentId: Overload:Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.#ctor
+  href: Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.html#Remora_Discord_Rest_API_DiscordRestAutoModerationAPI__ctor_Remora_Rest_IRestHttpClient_System_Text_Json_JsonSerializerOptions_Remora_Discord_Caching_Abstractions_Services_ICacheProvider_
+  name: DiscordRestAutoModerationAPI
+  nameWithType: DiscordRestAutoModerationAPI.DiscordRestAutoModerationAPI
+  fullName: Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.DiscordRestAutoModerationAPI
+  nameWithType.vb: DiscordRestAutoModerationAPI.New
+  fullName.vb: Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.New
+  name.vb: New
+- uid: Remora.Rest.IRestHttpClient
+  commentId: T:Remora.Rest.IRestHttpClient
+  parent: Remora.Rest
+  isExternal: true
+  name: IRestHttpClient
+  nameWithType: IRestHttpClient
+  fullName: Remora.Rest.IRestHttpClient
+- uid: System.Text.Json.JsonSerializerOptions
+  commentId: T:System.Text.Json.JsonSerializerOptions
+  parent: System.Text.Json
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.text.json.jsonserializeroptions
+  name: JsonSerializerOptions
+  nameWithType: JsonSerializerOptions
+  fullName: System.Text.Json.JsonSerializerOptions
+- uid: Remora.Discord.Caching.Abstractions.Services.ICacheProvider
+  commentId: T:Remora.Discord.Caching.Abstractions.Services.ICacheProvider
+  parent: Remora.Discord.Caching.Abstractions.Services
+  href: Remora.Discord.Caching.Abstractions.Services.ICacheProvider.html
+  name: ICacheProvider
+  nameWithType: ICacheProvider
+  fullName: Remora.Discord.Caching.Abstractions.Services.ICacheProvider
+- uid: System.Text.Json
+  commentId: N:System.Text.Json
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Text.Json
+  nameWithType: System.Text.Json
+  fullName: System.Text.Json
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+  - name: .
+  - uid: System.Text.Json
+    name: Json
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text.json
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+  - name: .
+  - uid: System.Text.Json
+    name: Json
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text.json
+- uid: Remora.Discord.Caching.Abstractions.Services
+  commentId: N:Remora.Discord.Caching.Abstractions.Services
+  href: Remora.html
+  name: Remora.Discord.Caching.Abstractions.Services
+  nameWithType: Remora.Discord.Caching.Abstractions.Services
+  fullName: Remora.Discord.Caching.Abstractions.Services
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Caching
+    name: Caching
+    href: Remora.Discord.Caching.html
+  - name: .
+  - uid: Remora.Discord.Caching.Abstractions
+    name: Abstractions
+    href: Remora.Discord.Caching.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.Caching.Abstractions.Services
+    name: Services
+    href: Remora.Discord.Caching.Abstractions.Services.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Caching
+    name: Caching
+    href: Remora.Discord.Caching.html
+  - name: .
+  - uid: Remora.Discord.Caching.Abstractions
+    name: Abstractions
+    href: Remora.Discord.Caching.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.Caching.Abstractions.Services
+    name: Services
+    href: Remora.Discord.Caching.Abstractions.Services.html
+- uid: Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.ListAutoModerationRulesAsync*
+  commentId: Overload:Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.ListAutoModerationRulesAsync
+  href: Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.html#Remora_Discord_Rest_API_DiscordRestAutoModerationAPI_ListAutoModerationRulesAsync_Remora_Rest_Core_Snowflake_System_Threading_CancellationToken_
+  name: ListAutoModerationRulesAsync
+  nameWithType: DiscordRestAutoModerationAPI.ListAutoModerationRulesAsync
+  fullName: Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.ListAutoModerationRulesAsync
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI.ListAutoModerationRulesAsync(Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI.ListAutoModerationRulesAsync(Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  parent: Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI
+  isExternal: true
+  href: Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI.html#Remora_Discord_API_Abstractions_Rest_IDiscordRestAutoModerationAPI_ListAutoModerationRulesAsync_Remora_Rest_Core_Snowflake_System_Threading_CancellationToken_
+  name: ListAutoModerationRulesAsync(Snowflake, CancellationToken)
+  nameWithType: IDiscordRestAutoModerationAPI.ListAutoModerationRulesAsync(Snowflake, CancellationToken)
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI.ListAutoModerationRulesAsync(Remora.Rest.Core.Snowflake, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI.ListAutoModerationRulesAsync(Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+    name: ListAutoModerationRulesAsync
+    href: Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI.html#Remora_Discord_API_Abstractions_Rest_IDiscordRestAutoModerationAPI_ListAutoModerationRulesAsync_Remora_Rest_Core_Snowflake_System_Threading_CancellationToken_
+  - name: (
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI.ListAutoModerationRulesAsync(Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+    name: ListAutoModerationRulesAsync
+    href: Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI.html#Remora_Discord_API_Abstractions_Rest_IDiscordRestAutoModerationAPI_ListAutoModerationRulesAsync_Remora_Rest_Core_Snowflake_System_Threading_CancellationToken_
+  - name: (
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Remora.Rest.Core.Snowflake
+  commentId: T:Remora.Rest.Core.Snowflake
+  parent: Remora.Rest.Core
+  isExternal: true
+  name: Snowflake
+  nameWithType: Snowflake
+  fullName: Remora.Rest.Core.Snowflake
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Remora.Results.Result{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IAutoModerationRule}}}
+  commentId: T:System.Threading.Tasks.Task{Remora.Results.Result{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IAutoModerationRule}}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Result<IReadOnlyList<IAutoModerationRule>>>
+  nameWithType: Task<Result<IReadOnlyList<IAutoModerationRule>>>
+  fullName: System.Threading.Tasks.Task<Remora.Results.Result<System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.IAutoModerationRule>>>
+  nameWithType.vb: Task(Of Result(Of IReadOnlyList(Of IAutoModerationRule)))
+  fullName.vb: System.Threading.Tasks.Task(Of Remora.Results.Result(Of System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.IAutoModerationRule)))
+  name.vb: Task(Of Result(Of IReadOnlyList(Of IAutoModerationRule)))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Remora.Results.Result`1
+    name: Result
+    isExternal: true
+  - name: <
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule
+    name: IAutoModerationRule
+    href: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.html
+  - name: '>'
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Results.Result`1
+    name: Result
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule
+    name: IAutoModerationRule
+    href: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.html
+  - name: )
+  - name: )
+  - name: )
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.GetAutoModerationRuleAsync*
+  commentId: Overload:Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.GetAutoModerationRuleAsync
+  href: Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.html#Remora_Discord_Rest_API_DiscordRestAutoModerationAPI_GetAutoModerationRuleAsync_Remora_Rest_Core_Snowflake_Remora_Rest_Core_Snowflake_System_Threading_CancellationToken_
+  name: GetAutoModerationRuleAsync
+  nameWithType: DiscordRestAutoModerationAPI.GetAutoModerationRuleAsync
+  fullName: Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.GetAutoModerationRuleAsync
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI.GetAutoModerationRuleAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI.GetAutoModerationRuleAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  parent: Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI
+  isExternal: true
+  href: Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI.html#Remora_Discord_API_Abstractions_Rest_IDiscordRestAutoModerationAPI_GetAutoModerationRuleAsync_Remora_Rest_Core_Snowflake_Remora_Rest_Core_Snowflake_System_Threading_CancellationToken_
+  name: GetAutoModerationRuleAsync(Snowflake, Snowflake, CancellationToken)
+  nameWithType: IDiscordRestAutoModerationAPI.GetAutoModerationRuleAsync(Snowflake, Snowflake, CancellationToken)
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI.GetAutoModerationRuleAsync(Remora.Rest.Core.Snowflake, Remora.Rest.Core.Snowflake, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI.GetAutoModerationRuleAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+    name: GetAutoModerationRuleAsync
+    href: Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI.html#Remora_Discord_API_Abstractions_Rest_IDiscordRestAutoModerationAPI_GetAutoModerationRuleAsync_Remora_Rest_Core_Snowflake_Remora_Rest_Core_Snowflake_System_Threading_CancellationToken_
+  - name: (
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI.GetAutoModerationRuleAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+    name: GetAutoModerationRuleAsync
+    href: Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI.html#Remora_Discord_API_Abstractions_Rest_IDiscordRestAutoModerationAPI_GetAutoModerationRuleAsync_Remora_Rest_Core_Snowflake_Remora_Rest_Core_Snowflake_System_Threading_CancellationToken_
+  - name: (
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IAutoModerationRule}}
+  commentId: T:System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IAutoModerationRule}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Result<IAutoModerationRule>>
+  nameWithType: Task<Result<IAutoModerationRule>>
+  fullName: System.Threading.Tasks.Task<Remora.Results.Result<Remora.Discord.API.Abstractions.Objects.IAutoModerationRule>>
+  nameWithType.vb: Task(Of Result(Of IAutoModerationRule))
+  fullName.vb: System.Threading.Tasks.Task(Of Remora.Results.Result(Of Remora.Discord.API.Abstractions.Objects.IAutoModerationRule))
+  name.vb: Task(Of Result(Of IAutoModerationRule))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Remora.Results.Result`1
+    name: Result
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule
+    name: IAutoModerationRule
+    href: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Results.Result`1
+    name: Result
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule
+    name: IAutoModerationRule
+    href: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.html
+  - name: )
+  - name: )
+- uid: Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.CreateAutoModerationRuleAsync*
+  commentId: Overload:Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.CreateAutoModerationRuleAsync
+  href: Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.html#Remora_Discord_Rest_API_DiscordRestAutoModerationAPI_CreateAutoModerationRuleAsync_Remora_Rest_Core_Snowflake_System_String_Remora_Discord_API_Abstractions_Objects_AutoModerationEventType_Remora_Discord_API_Abstractions_Objects_AutoModerationTriggerType_Remora_Rest_Core_Optional_Remora_Discord_API_Abstractions_Objects_IAutoModerationTriggerMetadata__System_Collections_Generic_IReadOnlyList_Remora_Discord_API_Abstractions_Objects_IAutoModerationAction__Remora_Rest_Core_Optional_System_Nullable_System_Boolean___Remora_Rest_Core_Optional_System_Collections_Generic_IReadOnlyList_Remora_Rest_Core_Snowflake___Remora_Rest_Core_Optional_System_Collections_Generic_IReadOnlyList_Remora_Rest_Core_Snowflake___System_Threading_CancellationToken_
+  name: CreateAutoModerationRuleAsync
+  nameWithType: DiscordRestAutoModerationAPI.CreateAutoModerationRuleAsync
+  fullName: Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.CreateAutoModerationRuleAsync
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI.CreateAutoModerationRuleAsync(Remora.Rest.Core.Snowflake,System.String,Remora.Discord.API.Abstractions.Objects.AutoModerationEventType,Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType,Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata},System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IAutoModerationAction},Remora.Rest.Core.Optional{System.Nullable{System.Boolean}},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}},System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI.CreateAutoModerationRuleAsync(Remora.Rest.Core.Snowflake,System.String,Remora.Discord.API.Abstractions.Objects.AutoModerationEventType,Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType,Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata},System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IAutoModerationAction},Remora.Rest.Core.Optional{System.Nullable{System.Boolean}},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}},System.Threading.CancellationToken)
+  parent: Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI
+  isExternal: true
+  href: Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI.html#Remora_Discord_API_Abstractions_Rest_IDiscordRestAutoModerationAPI_CreateAutoModerationRuleAsync_Remora_Rest_Core_Snowflake_System_String_Remora_Discord_API_Abstractions_Objects_AutoModerationEventType_Remora_Discord_API_Abstractions_Objects_AutoModerationTriggerType_Remora_Rest_Core_Optional_Remora_Discord_API_Abstractions_Objects_IAutoModerationTriggerMetadata__System_Collections_Generic_IReadOnlyList_Remora_Discord_API_Abstractions_Objects_IAutoModerationAction__Remora_Rest_Core_Optional_System_Nullable_System_Boolean___Remora_Rest_Core_Optional_System_Collections_Generic_IReadOnlyList_Remora_Rest_Core_Snowflake___Remora_Rest_Core_Optional_System_Collections_Generic_IReadOnlyList_Remora_Rest_Core_Snowflake___System_Threading_CancellationToken_
+  name: CreateAutoModerationRuleAsync(Snowflake, string, AutoModerationEventType, AutoModerationTriggerType, Optional<IAutoModerationTriggerMetadata>, IReadOnlyList<IAutoModerationAction>, Optional<bool?>, Optional<IReadOnlyList<Snowflake>>, Optional<IReadOnlyList<Snowflake>>, CancellationToken)
+  nameWithType: IDiscordRestAutoModerationAPI.CreateAutoModerationRuleAsync(Snowflake, string, AutoModerationEventType, AutoModerationTriggerType, Optional<IAutoModerationTriggerMetadata>, IReadOnlyList<IAutoModerationAction>, Optional<bool?>, Optional<IReadOnlyList<Snowflake>>, Optional<IReadOnlyList<Snowflake>>, CancellationToken)
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI.CreateAutoModerationRuleAsync(Remora.Rest.Core.Snowflake, string, Remora.Discord.API.Abstractions.Objects.AutoModerationEventType, Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType, Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata>, System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.IAutoModerationAction>, Remora.Rest.Core.Optional<bool?>, Remora.Rest.Core.Optional<System.Collections.Generic.IReadOnlyList<Remora.Rest.Core.Snowflake>>, Remora.Rest.Core.Optional<System.Collections.Generic.IReadOnlyList<Remora.Rest.Core.Snowflake>>, System.Threading.CancellationToken)
+  nameWithType.vb: IDiscordRestAutoModerationAPI.CreateAutoModerationRuleAsync(Snowflake, String, AutoModerationEventType, AutoModerationTriggerType, Optional(Of IAutoModerationTriggerMetadata), IReadOnlyList(Of IAutoModerationAction), Optional(Of Boolean?), Optional(Of IReadOnlyList(Of Snowflake)), Optional(Of IReadOnlyList(Of Snowflake)), CancellationToken)
+  fullName.vb: Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI.CreateAutoModerationRuleAsync(Remora.Rest.Core.Snowflake, String, Remora.Discord.API.Abstractions.Objects.AutoModerationEventType, Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType, Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata), System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.IAutoModerationAction), Remora.Rest.Core.Optional(Of Boolean?), Remora.Rest.Core.Optional(Of System.Collections.Generic.IReadOnlyList(Of Remora.Rest.Core.Snowflake)), Remora.Rest.Core.Optional(Of System.Collections.Generic.IReadOnlyList(Of Remora.Rest.Core.Snowflake)), System.Threading.CancellationToken)
+  name.vb: CreateAutoModerationRuleAsync(Snowflake, String, AutoModerationEventType, AutoModerationTriggerType, Optional(Of IAutoModerationTriggerMetadata), IReadOnlyList(Of IAutoModerationAction), Optional(Of Boolean?), Optional(Of IReadOnlyList(Of Snowflake)), Optional(Of IReadOnlyList(Of Snowflake)), CancellationToken)
+  spec.csharp:
+  - uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI.CreateAutoModerationRuleAsync(Remora.Rest.Core.Snowflake,System.String,Remora.Discord.API.Abstractions.Objects.AutoModerationEventType,Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType,Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata},System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IAutoModerationAction},Remora.Rest.Core.Optional{System.Nullable{System.Boolean}},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}},System.Threading.CancellationToken)
+    name: CreateAutoModerationRuleAsync
+    href: Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI.html#Remora_Discord_API_Abstractions_Rest_IDiscordRestAutoModerationAPI_CreateAutoModerationRuleAsync_Remora_Rest_Core_Snowflake_System_String_Remora_Discord_API_Abstractions_Objects_AutoModerationEventType_Remora_Discord_API_Abstractions_Objects_AutoModerationTriggerType_Remora_Rest_Core_Optional_Remora_Discord_API_Abstractions_Objects_IAutoModerationTriggerMetadata__System_Collections_Generic_IReadOnlyList_Remora_Discord_API_Abstractions_Objects_IAutoModerationAction__Remora_Rest_Core_Optional_System_Nullable_System_Boolean___Remora_Rest_Core_Optional_System_Collections_Generic_IReadOnlyList_Remora_Rest_Core_Snowflake___Remora_Rest_Core_Optional_System_Collections_Generic_IReadOnlyList_Remora_Rest_Core_Snowflake___System_Threading_CancellationToken_
+  - name: (
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.AutoModerationEventType
+    name: AutoModerationEventType
+    href: Remora.Discord.API.Abstractions.Objects.AutoModerationEventType.html
+  - name: ','
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType
+    name: AutoModerationTriggerType
+    href: Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType.html
+  - name: ','
+  - name: " "
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata
+    name: IAutoModerationTriggerMetadata
+    href: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.html
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationAction
+    name: IAutoModerationAction
+    href: Remora.Discord.API.Abstractions.Objects.IAutoModerationAction.html
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI.CreateAutoModerationRuleAsync(Remora.Rest.Core.Snowflake,System.String,Remora.Discord.API.Abstractions.Objects.AutoModerationEventType,Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType,Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata},System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IAutoModerationAction},Remora.Rest.Core.Optional{System.Nullable{System.Boolean}},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}},System.Threading.CancellationToken)
+    name: CreateAutoModerationRuleAsync
+    href: Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI.html#Remora_Discord_API_Abstractions_Rest_IDiscordRestAutoModerationAPI_CreateAutoModerationRuleAsync_Remora_Rest_Core_Snowflake_System_String_Remora_Discord_API_Abstractions_Objects_AutoModerationEventType_Remora_Discord_API_Abstractions_Objects_AutoModerationTriggerType_Remora_Rest_Core_Optional_Remora_Discord_API_Abstractions_Objects_IAutoModerationTriggerMetadata__System_Collections_Generic_IReadOnlyList_Remora_Discord_API_Abstractions_Objects_IAutoModerationAction__Remora_Rest_Core_Optional_System_Nullable_System_Boolean___Remora_Rest_Core_Optional_System_Collections_Generic_IReadOnlyList_Remora_Rest_Core_Snowflake___Remora_Rest_Core_Optional_System_Collections_Generic_IReadOnlyList_Remora_Rest_Core_Snowflake___System_Threading_CancellationToken_
+  - name: (
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.AutoModerationEventType
+    name: AutoModerationEventType
+    href: Remora.Discord.API.Abstractions.Objects.AutoModerationEventType.html
+  - name: ','
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType
+    name: AutoModerationTriggerType
+    href: Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType.html
+  - name: ','
+  - name: " "
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata
+    name: IAutoModerationTriggerMetadata
+    href: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.html
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationAction
+    name: IAutoModerationAction
+    href: Remora.Discord.API.Abstractions.Objects.IAutoModerationAction.html
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Remora.Discord.API.Abstractions.Objects.AutoModerationEventType
+  commentId: T:Remora.Discord.API.Abstractions.Objects.AutoModerationEventType
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.AutoModerationEventType.html
+  name: AutoModerationEventType
+  nameWithType: AutoModerationEventType
+  fullName: Remora.Discord.API.Abstractions.Objects.AutoModerationEventType
+- uid: Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType
+  commentId: T:Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType.html
+  name: AutoModerationTriggerType
+  nameWithType: AutoModerationTriggerType
+  fullName: Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType
+- uid: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.html
+  name: Optional<IAutoModerationTriggerMetadata>
+  nameWithType: Optional<IAutoModerationTriggerMetadata>
+  fullName: Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata>
+  nameWithType.vb: Optional(Of IAutoModerationTriggerMetadata)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata)
+  name.vb: Optional(Of IAutoModerationTriggerMetadata)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata
+    name: IAutoModerationTriggerMetadata
+    href: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata
+    name: IAutoModerationTriggerMetadata
+    href: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IAutoModerationAction}
+  commentId: T:System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IAutoModerationAction}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<IAutoModerationAction>
+  nameWithType: IReadOnlyList<IAutoModerationAction>
+  fullName: System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.IAutoModerationAction>
+  nameWithType.vb: IReadOnlyList(Of IAutoModerationAction)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.IAutoModerationAction)
+  name.vb: IReadOnlyList(Of IAutoModerationAction)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationAction
+    name: IAutoModerationAction
+    href: Remora.Discord.API.Abstractions.Objects.IAutoModerationAction.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationAction
+    name: IAutoModerationAction
+    href: Remora.Discord.API.Abstractions.Objects.IAutoModerationAction.html
+  - name: )
+- uid: Remora.Rest.Core.Optional{System.Nullable{System.Boolean}}
+  commentId: T:Remora.Rest.Core.Optional{System.Nullable{System.Boolean}}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: Optional<bool?>
+  nameWithType: Optional<bool?>
+  fullName: Remora.Rest.Core.Optional<bool?>
+  nameWithType.vb: Optional(Of Boolean?)
+  fullName.vb: Remora.Rest.Core.Optional(Of Boolean?)
+  name.vb: Optional(Of Boolean?)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+  - name: )
+- uid: Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}}
+  commentId: T:Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: Optional<IReadOnlyList<Snowflake>>
+  nameWithType: Optional<IReadOnlyList<Snowflake>>
+  fullName: Remora.Rest.Core.Optional<System.Collections.Generic.IReadOnlyList<Remora.Rest.Core.Snowflake>>
+  nameWithType.vb: Optional(Of IReadOnlyList(Of Snowflake))
+  fullName.vb: Remora.Rest.Core.Optional(Of System.Collections.Generic.IReadOnlyList(Of Remora.Rest.Core.Snowflake))
+  name.vb: Optional(Of IReadOnlyList(Of Snowflake))
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Objects
+  commentId: N:Remora.Discord.API.Abstractions.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Objects
+  nameWithType: Remora.Discord.API.Abstractions.Objects
+  fullName: Remora.Discord.API.Abstractions.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+- uid: Remora.Rest.Core.Optional`1
+  commentId: T:Remora.Rest.Core.Optional`1
+  isExternal: true
+  name: Optional<TValue>
+  nameWithType: Optional<TValue>
+  fullName: Remora.Rest.Core.Optional<TValue>
+  nameWithType.vb: Optional(Of TValue)
+  fullName.vb: Remora.Rest.Core.Optional(Of TValue)
+  name.vb: Optional(Of TValue)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.ModifyAutoModerationRuleAsync*
+  commentId: Overload:Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.ModifyAutoModerationRuleAsync
+  href: Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.html#Remora_Discord_Rest_API_DiscordRestAutoModerationAPI_ModifyAutoModerationRuleAsync_Remora_Rest_Core_Snowflake_Remora_Rest_Core_Snowflake_Remora_Rest_Core_Optional_System_String__Remora_Rest_Core_Optional_Remora_Discord_API_Abstractions_Objects_AutoModerationEventType__Remora_Rest_Core_Optional_Remora_Discord_API_Abstractions_Objects_AutoModerationTriggerType__Remora_Rest_Core_Optional_Remora_Discord_API_Abstractions_Objects_IAutoModerationTriggerMetadata__Remora_Rest_Core_Optional_System_Collections_Generic_IReadOnlyList_Remora_Discord_API_Abstractions_Objects_IAutoModerationAction___Remora_Rest_Core_Optional_System_Nullable_System_Boolean___Remora_Rest_Core_Optional_System_Collections_Generic_IReadOnlyList_Remora_Rest_Core_Snowflake___Remora_Rest_Core_Optional_System_Collections_Generic_IReadOnlyList_Remora_Rest_Core_Snowflake___System_Threading_CancellationToken_
+  name: ModifyAutoModerationRuleAsync
+  nameWithType: DiscordRestAutoModerationAPI.ModifyAutoModerationRuleAsync
+  fullName: Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.ModifyAutoModerationRuleAsync
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI.ModifyAutoModerationRuleAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.AutoModerationEventType},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IAutoModerationAction}},Remora.Rest.Core.Optional{System.Nullable{System.Boolean}},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}},System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI.ModifyAutoModerationRuleAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.AutoModerationEventType},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IAutoModerationAction}},Remora.Rest.Core.Optional{System.Nullable{System.Boolean}},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}},System.Threading.CancellationToken)
+  parent: Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI
+  isExternal: true
+  href: Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI.html#Remora_Discord_API_Abstractions_Rest_IDiscordRestAutoModerationAPI_ModifyAutoModerationRuleAsync_Remora_Rest_Core_Snowflake_Remora_Rest_Core_Snowflake_Remora_Rest_Core_Optional_System_String__Remora_Rest_Core_Optional_Remora_Discord_API_Abstractions_Objects_AutoModerationEventType__Remora_Rest_Core_Optional_Remora_Discord_API_Abstractions_Objects_AutoModerationTriggerType__Remora_Rest_Core_Optional_Remora_Discord_API_Abstractions_Objects_IAutoModerationTriggerMetadata__Remora_Rest_Core_Optional_System_Collections_Generic_IReadOnlyList_Remora_Discord_API_Abstractions_Objects_IAutoModerationAction___Remora_Rest_Core_Optional_System_Nullable_System_Boolean___Remora_Rest_Core_Optional_System_Collections_Generic_IReadOnlyList_Remora_Rest_Core_Snowflake___Remora_Rest_Core_Optional_System_Collections_Generic_IReadOnlyList_Remora_Rest_Core_Snowflake___System_Threading_CancellationToken_
+  name: ModifyAutoModerationRuleAsync(Snowflake, Snowflake, Optional<string>, Optional<AutoModerationEventType>, Optional<AutoModerationTriggerType>, Optional<IAutoModerationTriggerMetadata>, Optional<IReadOnlyList<IAutoModerationAction>>, Optional<bool?>, Optional<IReadOnlyList<Snowflake>>, Optional<IReadOnlyList<Snowflake>>, CancellationToken)
+  nameWithType: IDiscordRestAutoModerationAPI.ModifyAutoModerationRuleAsync(Snowflake, Snowflake, Optional<string>, Optional<AutoModerationEventType>, Optional<AutoModerationTriggerType>, Optional<IAutoModerationTriggerMetadata>, Optional<IReadOnlyList<IAutoModerationAction>>, Optional<bool?>, Optional<IReadOnlyList<Snowflake>>, Optional<IReadOnlyList<Snowflake>>, CancellationToken)
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI.ModifyAutoModerationRuleAsync(Remora.Rest.Core.Snowflake, Remora.Rest.Core.Snowflake, Remora.Rest.Core.Optional<string>, Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.AutoModerationEventType>, Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType>, Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata>, Remora.Rest.Core.Optional<System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.IAutoModerationAction>>, Remora.Rest.Core.Optional<bool?>, Remora.Rest.Core.Optional<System.Collections.Generic.IReadOnlyList<Remora.Rest.Core.Snowflake>>, Remora.Rest.Core.Optional<System.Collections.Generic.IReadOnlyList<Remora.Rest.Core.Snowflake>>, System.Threading.CancellationToken)
+  nameWithType.vb: IDiscordRestAutoModerationAPI.ModifyAutoModerationRuleAsync(Snowflake, Snowflake, Optional(Of String), Optional(Of AutoModerationEventType), Optional(Of AutoModerationTriggerType), Optional(Of IAutoModerationTriggerMetadata), Optional(Of IReadOnlyList(Of IAutoModerationAction)), Optional(Of Boolean?), Optional(Of IReadOnlyList(Of Snowflake)), Optional(Of IReadOnlyList(Of Snowflake)), CancellationToken)
+  fullName.vb: Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI.ModifyAutoModerationRuleAsync(Remora.Rest.Core.Snowflake, Remora.Rest.Core.Snowflake, Remora.Rest.Core.Optional(Of String), Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.AutoModerationEventType), Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType), Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata), Remora.Rest.Core.Optional(Of System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.IAutoModerationAction)), Remora.Rest.Core.Optional(Of Boolean?), Remora.Rest.Core.Optional(Of System.Collections.Generic.IReadOnlyList(Of Remora.Rest.Core.Snowflake)), Remora.Rest.Core.Optional(Of System.Collections.Generic.IReadOnlyList(Of Remora.Rest.Core.Snowflake)), System.Threading.CancellationToken)
+  name.vb: ModifyAutoModerationRuleAsync(Snowflake, Snowflake, Optional(Of String), Optional(Of AutoModerationEventType), Optional(Of AutoModerationTriggerType), Optional(Of IAutoModerationTriggerMetadata), Optional(Of IReadOnlyList(Of IAutoModerationAction)), Optional(Of Boolean?), Optional(Of IReadOnlyList(Of Snowflake)), Optional(Of IReadOnlyList(Of Snowflake)), CancellationToken)
+  spec.csharp:
+  - uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI.ModifyAutoModerationRuleAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.AutoModerationEventType},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IAutoModerationAction}},Remora.Rest.Core.Optional{System.Nullable{System.Boolean}},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}},System.Threading.CancellationToken)
+    name: ModifyAutoModerationRuleAsync
+    href: Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI.html#Remora_Discord_API_Abstractions_Rest_IDiscordRestAutoModerationAPI_ModifyAutoModerationRuleAsync_Remora_Rest_Core_Snowflake_Remora_Rest_Core_Snowflake_Remora_Rest_Core_Optional_System_String__Remora_Rest_Core_Optional_Remora_Discord_API_Abstractions_Objects_AutoModerationEventType__Remora_Rest_Core_Optional_Remora_Discord_API_Abstractions_Objects_AutoModerationTriggerType__Remora_Rest_Core_Optional_Remora_Discord_API_Abstractions_Objects_IAutoModerationTriggerMetadata__Remora_Rest_Core_Optional_System_Collections_Generic_IReadOnlyList_Remora_Discord_API_Abstractions_Objects_IAutoModerationAction___Remora_Rest_Core_Optional_System_Nullable_System_Boolean___Remora_Rest_Core_Optional_System_Collections_Generic_IReadOnlyList_Remora_Rest_Core_Snowflake___Remora_Rest_Core_Optional_System_Collections_Generic_IReadOnlyList_Remora_Rest_Core_Snowflake___System_Threading_CancellationToken_
+  - name: (
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.AutoModerationEventType
+    name: AutoModerationEventType
+    href: Remora.Discord.API.Abstractions.Objects.AutoModerationEventType.html
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType
+    name: AutoModerationTriggerType
+    href: Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType.html
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata
+    name: IAutoModerationTriggerMetadata
+    href: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.html
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationAction
+    name: IAutoModerationAction
+    href: Remora.Discord.API.Abstractions.Objects.IAutoModerationAction.html
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI.ModifyAutoModerationRuleAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.AutoModerationEventType},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IAutoModerationAction}},Remora.Rest.Core.Optional{System.Nullable{System.Boolean}},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}},System.Threading.CancellationToken)
+    name: ModifyAutoModerationRuleAsync
+    href: Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI.html#Remora_Discord_API_Abstractions_Rest_IDiscordRestAutoModerationAPI_ModifyAutoModerationRuleAsync_Remora_Rest_Core_Snowflake_Remora_Rest_Core_Snowflake_Remora_Rest_Core_Optional_System_String__Remora_Rest_Core_Optional_Remora_Discord_API_Abstractions_Objects_AutoModerationEventType__Remora_Rest_Core_Optional_Remora_Discord_API_Abstractions_Objects_AutoModerationTriggerType__Remora_Rest_Core_Optional_Remora_Discord_API_Abstractions_Objects_IAutoModerationTriggerMetadata__Remora_Rest_Core_Optional_System_Collections_Generic_IReadOnlyList_Remora_Discord_API_Abstractions_Objects_IAutoModerationAction___Remora_Rest_Core_Optional_System_Nullable_System_Boolean___Remora_Rest_Core_Optional_System_Collections_Generic_IReadOnlyList_Remora_Rest_Core_Snowflake___Remora_Rest_Core_Optional_System_Collections_Generic_IReadOnlyList_Remora_Rest_Core_Snowflake___System_Threading_CancellationToken_
+  - name: (
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.AutoModerationEventType
+    name: AutoModerationEventType
+    href: Remora.Discord.API.Abstractions.Objects.AutoModerationEventType.html
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType
+    name: AutoModerationTriggerType
+    href: Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType.html
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata
+    name: IAutoModerationTriggerMetadata
+    href: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.html
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationAction
+    name: IAutoModerationAction
+    href: Remora.Discord.API.Abstractions.Objects.IAutoModerationAction.html
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Remora.Rest.Core.Optional{System.String}
+  commentId: T:Remora.Rest.Core.Optional{System.String}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Optional<string>
+  nameWithType: Optional<string>
+  fullName: Remora.Rest.Core.Optional<string>
+  nameWithType.vb: Optional(Of String)
+  fullName.vb: Remora.Rest.Core.Optional(Of String)
+  name.vb: Optional(Of String)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.AutoModerationEventType}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.AutoModerationEventType}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: Remora.Discord.API.Abstractions.Objects.AutoModerationEventType.html
+  name: Optional<AutoModerationEventType>
+  nameWithType: Optional<AutoModerationEventType>
+  fullName: Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.AutoModerationEventType>
+  nameWithType.vb: Optional(Of AutoModerationEventType)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.AutoModerationEventType)
+  name.vb: Optional(Of AutoModerationEventType)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.AutoModerationEventType
+    name: AutoModerationEventType
+    href: Remora.Discord.API.Abstractions.Objects.AutoModerationEventType.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.AutoModerationEventType
+    name: AutoModerationEventType
+    href: Remora.Discord.API.Abstractions.Objects.AutoModerationEventType.html
+  - name: )
+- uid: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType.html
+  name: Optional<AutoModerationTriggerType>
+  nameWithType: Optional<AutoModerationTriggerType>
+  fullName: Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType>
+  nameWithType.vb: Optional(Of AutoModerationTriggerType)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType)
+  name.vb: Optional(Of AutoModerationTriggerType)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType
+    name: AutoModerationTriggerType
+    href: Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType
+    name: AutoModerationTriggerType
+    href: Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType.html
+  - name: )
+- uid: Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IAutoModerationAction}}
+  commentId: T:Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IAutoModerationAction}}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: Optional<IReadOnlyList<IAutoModerationAction>>
+  nameWithType: Optional<IReadOnlyList<IAutoModerationAction>>
+  fullName: Remora.Rest.Core.Optional<System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.IAutoModerationAction>>
+  nameWithType.vb: Optional(Of IReadOnlyList(Of IAutoModerationAction))
+  fullName.vb: Remora.Rest.Core.Optional(Of System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.IAutoModerationAction))
+  name.vb: Optional(Of IReadOnlyList(Of IAutoModerationAction))
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationAction
+    name: IAutoModerationAction
+    href: Remora.Discord.API.Abstractions.Objects.IAutoModerationAction.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationAction
+    name: IAutoModerationAction
+    href: Remora.Discord.API.Abstractions.Objects.IAutoModerationAction.html
+  - name: )
+  - name: )
+- uid: Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.DeleteAutoModerationRuleAsync*
+  commentId: Overload:Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.DeleteAutoModerationRuleAsync
+  href: Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.html#Remora_Discord_Rest_API_DiscordRestAutoModerationAPI_DeleteAutoModerationRuleAsync_Remora_Rest_Core_Snowflake_Remora_Rest_Core_Snowflake_System_Threading_CancellationToken_
+  name: DeleteAutoModerationRuleAsync
+  nameWithType: DiscordRestAutoModerationAPI.DeleteAutoModerationRuleAsync
+  fullName: Remora.Discord.Rest.API.DiscordRestAutoModerationAPI.DeleteAutoModerationRuleAsync
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI.DeleteAutoModerationRuleAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI.DeleteAutoModerationRuleAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  parent: Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI
+  isExternal: true
+  href: Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI.html#Remora_Discord_API_Abstractions_Rest_IDiscordRestAutoModerationAPI_DeleteAutoModerationRuleAsync_Remora_Rest_Core_Snowflake_Remora_Rest_Core_Snowflake_System_Threading_CancellationToken_
+  name: DeleteAutoModerationRuleAsync(Snowflake, Snowflake, CancellationToken)
+  nameWithType: IDiscordRestAutoModerationAPI.DeleteAutoModerationRuleAsync(Snowflake, Snowflake, CancellationToken)
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI.DeleteAutoModerationRuleAsync(Remora.Rest.Core.Snowflake, Remora.Rest.Core.Snowflake, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI.DeleteAutoModerationRuleAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+    name: DeleteAutoModerationRuleAsync
+    href: Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI.html#Remora_Discord_API_Abstractions_Rest_IDiscordRestAutoModerationAPI_DeleteAutoModerationRuleAsync_Remora_Rest_Core_Snowflake_Remora_Rest_Core_Snowflake_System_Threading_CancellationToken_
+  - name: (
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI.DeleteAutoModerationRuleAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+    name: DeleteAutoModerationRuleAsync
+    href: Remora.Discord.API.Abstractions.Rest.IDiscordRestAutoModerationAPI.html#Remora_Discord_API_Abstractions_Rest_IDiscordRestAutoModerationAPI_DeleteAutoModerationRuleAsync_Remora_Rest_Core_Snowflake_Remora_Rest_Core_Snowflake_System_Threading_CancellationToken_
+  - name: (
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Threading.Tasks.Task{Remora.Results.Result}
+  commentId: T:System.Threading.Tasks.Task{Remora.Results.Result}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Result>
+  nameWithType: Task<Result>
+  fullName: System.Threading.Tasks.Task<Remora.Results.Result>
+  nameWithType.vb: Task(Of Result)
+  fullName.vb: System.Threading.Tasks.Task(Of Remora.Results.Result)
+  name.vb: Task(Of Result)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Remora.Results.Result
+    name: Result
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Results.Result
+    name: Result
+    isExternal: true
+  - name: )

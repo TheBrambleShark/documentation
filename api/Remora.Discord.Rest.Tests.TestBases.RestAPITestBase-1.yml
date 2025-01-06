@@ -1,0 +1,763 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.Rest.Tests.TestBases.RestAPITestBase`1
+  commentId: T:Remora.Discord.Rest.Tests.TestBases.RestAPITestBase`1
+  id: RestAPITestBase`1
+  parent: Remora.Discord.Rest.Tests.TestBases
+  children:
+  - Remora.Discord.Rest.Tests.TestBases.RestAPITestBase`1.#ctor(Remora.Discord.Rest.Tests.TestBases.RestAPITestFixture)
+  - Remora.Discord.Rest.Tests.TestBases.RestAPITestBase`1.CreateAPI(System.Action{RichardSzalay.MockHttp.MockHttpMessageHandler})
+  - Remora.Discord.Rest.Tests.TestBases.RestAPITestBase`1.CreateConfiguredAPIServices(System.Action{RichardSzalay.MockHttp.MockHttpMessageHandler})
+  langs:
+  - csharp
+  - vb
+  name: RestAPITestBase<TAPI>
+  nameWithType: RestAPITestBase<TAPI>
+  fullName: Remora.Discord.Rest.Tests.TestBases.RestAPITestBase<TAPI>
+  type: Class
+  source:
+    id: RestAPITestBase
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Tests\Remora.Discord.Rest.Tests\TestBases\RestAPITestBase.cs
+    startLine: 40
+  assemblies:
+  - Remora.Discord.Rest.Tests
+  namespace: Remora.Discord.Rest.Tests.TestBases
+  summary: Serves as a base class for REST API tests.
+  example: []
+  syntax:
+    content: >-
+      [Collection("REST API tests")]
+
+      public abstract class RestAPITestBase<TAPI> where TAPI : notnull
+    typeParameters:
+    - id: TAPI
+      description: The API type.
+    content.vb: >-
+      <Collection("REST API tests")>
+
+      Public MustInherit Class RestAPITestBase(Of TAPI)
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Remora.Discord.Rest.Tests.API.Applications.DiscordRestApplicationAPITests.BulkOverwriteGlobalApplicationCommandsAsync
+  - Remora.Discord.Rest.Tests.API.Applications.DiscordRestApplicationAPITests.BulkOverwriteGuildApplicationCommandsAsync
+  - Remora.Discord.Rest.Tests.API.Applications.DiscordRestApplicationAPITests.CreateGlobalApplicationCommandAsync
+  - Remora.Discord.Rest.Tests.API.Applications.DiscordRestApplicationAPITests.CreateGuildApplicationCommandAsync
+  - Remora.Discord.Rest.Tests.API.Applications.DiscordRestApplicationAPITests.DeleteGlobalApplicationCommandAsync
+  - Remora.Discord.Rest.Tests.API.Applications.DiscordRestApplicationAPITests.DeleteGuildApplicationCommandAsync
+  - Remora.Discord.Rest.Tests.API.Applications.DiscordRestApplicationAPITests.EditApplicationCommandPermissionsAsync
+  - Remora.Discord.Rest.Tests.API.Applications.DiscordRestApplicationAPITests.EditCurrentApplicationAsync
+  - Remora.Discord.Rest.Tests.API.Applications.DiscordRestApplicationAPITests.EditGlobalApplicationCommandAsync
+  - Remora.Discord.Rest.Tests.API.Applications.DiscordRestApplicationAPITests.EditGuildApplicationCommandAsync
+  - Remora.Discord.Rest.Tests.API.Applications.DiscordRestApplicationAPITests.GetApplicationCommandPermissionsAsync
+  - Remora.Discord.Rest.Tests.API.Applications.DiscordRestApplicationAPITests.GetApplicationRoleConnectionMetadataRecordsAsync
+  - Remora.Discord.Rest.Tests.API.Applications.DiscordRestApplicationAPITests.GetCurrentApplicationAsync
+  - Remora.Discord.Rest.Tests.API.Applications.DiscordRestApplicationAPITests.GetGlobalApplicationCommandAsync
+  - Remora.Discord.Rest.Tests.API.Applications.DiscordRestApplicationAPITests.GetGlobalApplicationCommandsAsync
+  - Remora.Discord.Rest.Tests.API.Applications.DiscordRestApplicationAPITests.GetGuildApplicationCommandAsync
+  - Remora.Discord.Rest.Tests.API.Applications.DiscordRestApplicationAPITests.GetGuildApplicationCommandPermissionsAsync
+  - Remora.Discord.Rest.Tests.API.Applications.DiscordRestApplicationAPITests.GetGuildApplicationCommandsAsync
+  - Remora.Discord.Rest.Tests.API.Applications.DiscordRestApplicationAPITests.UpdateApplicationRoleConnectionMetadataRecordsAsync
+  - Remora.Discord.Rest.Tests.API.AuditLog.DiscordRestAuditLogAPITests.GetAuditLogAsync
+  - Remora.Discord.Rest.Tests.API.AutoModeration.DiscordRestAutoModerationAPITests.CreateGuildAutoModerationRuleAsync
+  - Remora.Discord.Rest.Tests.API.AutoModeration.DiscordRestAutoModerationAPITests.DeleteGuildAutoModerationRuleAsync
+  - Remora.Discord.Rest.Tests.API.AutoModeration.DiscordRestAutoModerationAPITests.GetGuildAutoModerationRuleAsync
+  - Remora.Discord.Rest.Tests.API.AutoModeration.DiscordRestAutoModerationAPITests.ListGuildAutoModerationRulesAsync
+  - Remora.Discord.Rest.Tests.API.AutoModeration.DiscordRestAutoModerationAPITests.ModifyGuildAutoModerationRuleAsync
+  - Remora.Discord.Rest.Tests.API.Channels.DiscordRestChannelAPITests.AddThreadMemberAsync
+  - Remora.Discord.Rest.Tests.API.Channels.DiscordRestChannelAPITests.BulkDeleteMessagesAsync
+  - Remora.Discord.Rest.Tests.API.Channels.DiscordRestChannelAPITests.CreateChannelInviteAsync
+  - Remora.Discord.Rest.Tests.API.Channels.DiscordRestChannelAPITests.CreateMessageAsync
+  - Remora.Discord.Rest.Tests.API.Channels.DiscordRestChannelAPITests.CreateReactionAsync
+  - Remora.Discord.Rest.Tests.API.Channels.DiscordRestChannelAPITests.CrosspostMessageAsync
+  - Remora.Discord.Rest.Tests.API.Channels.DiscordRestChannelAPITests.DeleteAllReactionsAsync
+  - Remora.Discord.Rest.Tests.API.Channels.DiscordRestChannelAPITests.DeleteAllReactionsForEmojiAsync
+  - Remora.Discord.Rest.Tests.API.Channels.DiscordRestChannelAPITests.DeleteChannelAsync
+  - Remora.Discord.Rest.Tests.API.Channels.DiscordRestChannelAPITests.DeleteChannelPermissionAsync
+  - Remora.Discord.Rest.Tests.API.Channels.DiscordRestChannelAPITests.DeleteMessageAsync
+  - Remora.Discord.Rest.Tests.API.Channels.DiscordRestChannelAPITests.DeleteOwnReactionAsync
+  - Remora.Discord.Rest.Tests.API.Channels.DiscordRestChannelAPITests.DeleteUserReactionAsync
+  - Remora.Discord.Rest.Tests.API.Channels.DiscordRestChannelAPITests.EditChannelPermissionsAsync
+  - Remora.Discord.Rest.Tests.API.Channels.DiscordRestChannelAPITests.EditMessageAsync
+  - Remora.Discord.Rest.Tests.API.Channels.DiscordRestChannelAPITests.FollowAnnouncementChannelAsync
+  - Remora.Discord.Rest.Tests.API.Channels.DiscordRestChannelAPITests.GetChannelAsync
+  - Remora.Discord.Rest.Tests.API.Channels.DiscordRestChannelAPITests.GetChannelInvitesAsync
+  - Remora.Discord.Rest.Tests.API.Channels.DiscordRestChannelAPITests.GetChannelMessageAsync
+  - Remora.Discord.Rest.Tests.API.Channels.DiscordRestChannelAPITests.GetChannelMessagesAsync
+  - Remora.Discord.Rest.Tests.API.Channels.DiscordRestChannelAPITests.GetPinnedMessagesAsync
+  - Remora.Discord.Rest.Tests.API.Channels.DiscordRestChannelAPITests.GetReactionsAsync
+  - Remora.Discord.Rest.Tests.API.Channels.DiscordRestChannelAPITests.GetThreadMemberAsync
+  - Remora.Discord.Rest.Tests.API.Channels.DiscordRestChannelAPITests.GroupDMAddRecipientAsync
+  - Remora.Discord.Rest.Tests.API.Channels.DiscordRestChannelAPITests.GroupDMRemoveRecipientAsync
+  - Remora.Discord.Rest.Tests.API.Channels.DiscordRestChannelAPITests.JoinThreadAsync
+  - Remora.Discord.Rest.Tests.API.Channels.DiscordRestChannelAPITests.LeaveThreadAsync
+  - Remora.Discord.Rest.Tests.API.Channels.DiscordRestChannelAPITests.ListJoinedPrivateArchivedThreadsAsync
+  - Remora.Discord.Rest.Tests.API.Channels.DiscordRestChannelAPITests.ListPrivateArchivedThreadsAsync
+  - Remora.Discord.Rest.Tests.API.Channels.DiscordRestChannelAPITests.ListPublicArchivedThreadsAsync
+  - Remora.Discord.Rest.Tests.API.Channels.DiscordRestChannelAPITests.ListThreadMembersAsync
+  - Remora.Discord.Rest.Tests.API.Channels.DiscordRestChannelAPITests.ModifyChannelAsync
+  - Remora.Discord.Rest.Tests.API.Channels.DiscordRestChannelAPITests.PinMessageAsync
+  - Remora.Discord.Rest.Tests.API.Channels.DiscordRestChannelAPITests.RemoveThreadMemberAsync
+  - Remora.Discord.Rest.Tests.API.Channels.DiscordRestChannelAPITests.StartThreadInForumChannelAsync
+  - Remora.Discord.Rest.Tests.API.Channels.DiscordRestChannelAPITests.StartThreadWithMessageAsync
+  - Remora.Discord.Rest.Tests.API.Channels.DiscordRestChannelAPITests.StartThreadWithoutMessageAsync
+  - Remora.Discord.Rest.Tests.API.Channels.DiscordRestChannelAPITests.TriggerTypingIndicatorAsync
+  - Remora.Discord.Rest.Tests.API.Channels.DiscordRestChannelAPITests.UnpinMessageAsync
+  - Remora.Discord.Rest.Tests.API.DiscordRestStageInstanceAPITests.CreateStageInstanceAsync
+  - Remora.Discord.Rest.Tests.API.DiscordRestStageInstanceAPITests.DeleteStageInstance
+  - Remora.Discord.Rest.Tests.API.DiscordRestStageInstanceAPITests.GetStageInstanceAsync
+  - Remora.Discord.Rest.Tests.API.DiscordRestStageInstanceAPITests.UpdateStageInstanceAsync
+  - Remora.Discord.Rest.Tests.API.DiscordRestStickerAPITests.CreateGuildStickerAsync
+  - Remora.Discord.Rest.Tests.API.DiscordRestStickerAPITests.DeleteGuildStickerAsync
+  - Remora.Discord.Rest.Tests.API.DiscordRestStickerAPITests.GetGuildStickerAsync
+  - Remora.Discord.Rest.Tests.API.DiscordRestStickerAPITests.GetStickerAsync
+  - Remora.Discord.Rest.Tests.API.DiscordRestStickerAPITests.ListGuildStickersAsync
+  - Remora.Discord.Rest.Tests.API.DiscordRestStickerAPITests.ListNitroStickerPacksAsync
+  - Remora.Discord.Rest.Tests.API.DiscordRestStickerAPITests.ModifyGuildStickerAsync
+  - Remora.Discord.Rest.Tests.API.DiscordRestTemplateAPITests.CreateGuildFromTemplateAsync
+  - Remora.Discord.Rest.Tests.API.DiscordRestTemplateAPITests.CreateGuildTemplateAsync
+  - Remora.Discord.Rest.Tests.API.DiscordRestTemplateAPITests.DeleteGuildTemplateAsync
+  - Remora.Discord.Rest.Tests.API.DiscordRestTemplateAPITests.GetGuildTemplatesAsync
+  - Remora.Discord.Rest.Tests.API.DiscordRestTemplateAPITests.GetTemplateAsync
+  - Remora.Discord.Rest.Tests.API.DiscordRestTemplateAPITests.ModifyGuildTemplateAsync
+  - Remora.Discord.Rest.Tests.API.DiscordRestTemplateAPITests.SyncGuildTemplateAsync
+  - Remora.Discord.Rest.Tests.API.Emoji.DiscordRestEmojiAPITests.CreateGuildEmojiAsync
+  - Remora.Discord.Rest.Tests.API.Emoji.DiscordRestEmojiAPITests.DeleteGuildEmojiAsync
+  - Remora.Discord.Rest.Tests.API.Emoji.DiscordRestEmojiAPITests.GetGuildEmojiAsync
+  - Remora.Discord.Rest.Tests.API.Emoji.DiscordRestEmojiAPITests.ListGuildEmojisAsync
+  - Remora.Discord.Rest.Tests.API.Emoji.DiscordRestEmojiAPITests.ModifyGuildEmojiAsync
+  - Remora.Discord.Rest.Tests.API.Gateway.DiscordRestGatewayAPITests.GetGatewayAsync
+  - Remora.Discord.Rest.Tests.API.Gateway.DiscordRestGatewayAPITests.GetGatewayBotAsync
+  - Remora.Discord.Rest.Tests.API.Guild.DiscordRestGuildAPITests.AddGuildMemberAsync
+  - Remora.Discord.Rest.Tests.API.Guild.DiscordRestGuildAPITests.AddGuildMemberRoleAsync
+  - Remora.Discord.Rest.Tests.API.Guild.DiscordRestGuildAPITests.BeginGuildPruneAsync
+  - Remora.Discord.Rest.Tests.API.Guild.DiscordRestGuildAPITests.BulkGuildBanAsync
+  - Remora.Discord.Rest.Tests.API.Guild.DiscordRestGuildAPITests.CreateGuildAsync
+  - Remora.Discord.Rest.Tests.API.Guild.DiscordRestGuildAPITests.CreateGuildBanAsync
+  - Remora.Discord.Rest.Tests.API.Guild.DiscordRestGuildAPITests.CreateGuildChannelAsync
+  - Remora.Discord.Rest.Tests.API.Guild.DiscordRestGuildAPITests.CreateGuildRoleAsync
+  - Remora.Discord.Rest.Tests.API.Guild.DiscordRestGuildAPITests.DeleteGuildAsync
+  - Remora.Discord.Rest.Tests.API.Guild.DiscordRestGuildAPITests.DeleteGuildIntegrationAsync
+  - Remora.Discord.Rest.Tests.API.Guild.DiscordRestGuildAPITests.DeleteGuildRoleAsync
+  - Remora.Discord.Rest.Tests.API.Guild.DiscordRestGuildAPITests.GetGuildAsync
+  - Remora.Discord.Rest.Tests.API.Guild.DiscordRestGuildAPITests.GetGuildBanAsync
+  - Remora.Discord.Rest.Tests.API.Guild.DiscordRestGuildAPITests.GetGuildBansAsync
+  - Remora.Discord.Rest.Tests.API.Guild.DiscordRestGuildAPITests.GetGuildChannelsAsync
+  - Remora.Discord.Rest.Tests.API.Guild.DiscordRestGuildAPITests.GetGuildIntegrationsAsync
+  - Remora.Discord.Rest.Tests.API.Guild.DiscordRestGuildAPITests.GetGuildInvitesAsync
+  - Remora.Discord.Rest.Tests.API.Guild.DiscordRestGuildAPITests.GetGuildMemberAsync
+  - Remora.Discord.Rest.Tests.API.Guild.DiscordRestGuildAPITests.GetGuildOnboardingAsync
+  - Remora.Discord.Rest.Tests.API.Guild.DiscordRestGuildAPITests.GetGuildPreviewAsync
+  - Remora.Discord.Rest.Tests.API.Guild.DiscordRestGuildAPITests.GetGuildPruneCountAsync
+  - Remora.Discord.Rest.Tests.API.Guild.DiscordRestGuildAPITests.GetGuildRolesAsync
+  - Remora.Discord.Rest.Tests.API.Guild.DiscordRestGuildAPITests.GetGuildVanityUrlAsync
+  - Remora.Discord.Rest.Tests.API.Guild.DiscordRestGuildAPITests.GetGuildVoiceRegionsAsync
+  - Remora.Discord.Rest.Tests.API.Guild.DiscordRestGuildAPITests.GetGuildWelcomeScreenAsync
+  - Remora.Discord.Rest.Tests.API.Guild.DiscordRestGuildAPITests.GetGuildWidgetAsync
+  - Remora.Discord.Rest.Tests.API.Guild.DiscordRestGuildAPITests.GetGuildWidgetImageAsync
+  - Remora.Discord.Rest.Tests.API.Guild.DiscordRestGuildAPITests.GetGuildWidgetSettingsAsync
+  - Remora.Discord.Rest.Tests.API.Guild.DiscordRestGuildAPITests.ListActiveThreadsAsync
+  - Remora.Discord.Rest.Tests.API.Guild.DiscordRestGuildAPITests.ListGuildMembersAsync
+  - Remora.Discord.Rest.Tests.API.Guild.DiscordRestGuildAPITests.ModifyCurrentMemberAsync
+  - Remora.Discord.Rest.Tests.API.Guild.DiscordRestGuildAPITests.ModifyGuildAsync
+  - Remora.Discord.Rest.Tests.API.Guild.DiscordRestGuildAPITests.ModifyGuildChannelPositionsAsync
+  - Remora.Discord.Rest.Tests.API.Guild.DiscordRestGuildAPITests.ModifyGuildMFALevelAsync
+  - Remora.Discord.Rest.Tests.API.Guild.DiscordRestGuildAPITests.ModifyGuildMemberAsync
+  - Remora.Discord.Rest.Tests.API.Guild.DiscordRestGuildAPITests.ModifyGuildOnboardingAsync
+  - Remora.Discord.Rest.Tests.API.Guild.DiscordRestGuildAPITests.ModifyGuildRoleAsync
+  - Remora.Discord.Rest.Tests.API.Guild.DiscordRestGuildAPITests.ModifyGuildRolePositionsAsync
+  - Remora.Discord.Rest.Tests.API.Guild.DiscordRestGuildAPITests.ModifyGuildWelcomeScreenAsync
+  - Remora.Discord.Rest.Tests.API.Guild.DiscordRestGuildAPITests.ModifyGuildWidgetAsync
+  - Remora.Discord.Rest.Tests.API.Guild.DiscordRestGuildAPITests.RemoveGuildBanAsync
+  - Remora.Discord.Rest.Tests.API.Guild.DiscordRestGuildAPITests.RemoveGuildMemberAsync
+  - Remora.Discord.Rest.Tests.API.Guild.DiscordRestGuildAPITests.RemoveGuildMemberRoleAsync
+  - Remora.Discord.Rest.Tests.API.Guild.DiscordRestGuildAPITests.SearchGuildMembersAsync
+  - Remora.Discord.Rest.Tests.API.Guild.DiscordRestGuildAPITests.UpdateCurrentUserVoiceStateAsync
+  - Remora.Discord.Rest.Tests.API.Guild.DiscordRestGuildAPITests.UpdateUserVoiceStateAsync
+  - Remora.Discord.Rest.Tests.API.GuildScheduledEvents.DiscordRestGuildScheduledEventAPITests.CreateGuildScheduledEventAsync
+  - Remora.Discord.Rest.Tests.API.GuildScheduledEvents.DiscordRestGuildScheduledEventAPITests.DeleteGuildScheduledEventAsync
+  - Remora.Discord.Rest.Tests.API.GuildScheduledEvents.DiscordRestGuildScheduledEventAPITests.GetGuildScheduledEventAsync
+  - Remora.Discord.Rest.Tests.API.GuildScheduledEvents.DiscordRestGuildScheduledEventAPITests.GetGuildScheduledEventUsersAsync
+  - Remora.Discord.Rest.Tests.API.GuildScheduledEvents.DiscordRestGuildScheduledEventAPITests.ListScheduledEventsForGuildAsync
+  - Remora.Discord.Rest.Tests.API.GuildScheduledEvents.DiscordRestGuildScheduledEventAPITests.ModifyGuildScheduledEventAsync
+  - Remora.Discord.Rest.Tests.API.Interactions.DiscordRestInteractionAPITests.CreateFollowupMessageAsync
+  - Remora.Discord.Rest.Tests.API.Interactions.DiscordRestInteractionAPITests.CreateInteractionResponseAsync
+  - Remora.Discord.Rest.Tests.API.Interactions.DiscordRestInteractionAPITests.DeleteFollowupMessageAsync
+  - Remora.Discord.Rest.Tests.API.Interactions.DiscordRestInteractionAPITests.DeleteOriginalInteractionResponseAsync
+  - Remora.Discord.Rest.Tests.API.Interactions.DiscordRestInteractionAPITests.EditFollowupMessageAsync
+  - Remora.Discord.Rest.Tests.API.Interactions.DiscordRestInteractionAPITests.EditOriginalInteractionResponseAsync
+  - Remora.Discord.Rest.Tests.API.Interactions.DiscordRestInteractionAPITests.GetFollowupMessageAsync
+  - Remora.Discord.Rest.Tests.API.Interactions.DiscordRestInteractionAPITests.GetOriginalInteractionResponseAsync
+  - Remora.Discord.Rest.Tests.API.Invites.DiscordRestInviteAPITests.DeleteInviteAsync
+  - Remora.Discord.Rest.Tests.API.Invites.DiscordRestInviteAPITests.GetInviteAsync
+  - Remora.Discord.Rest.Tests.API.Monetization.DiscordRestMonetizationAPITests.ConsumeEntitlementAsync
+  - Remora.Discord.Rest.Tests.API.Monetization.DiscordRestMonetizationAPITests.CreateTestEntitlementAsync
+  - Remora.Discord.Rest.Tests.API.Monetization.DiscordRestMonetizationAPITests.DeleteTestEntitlementAsync
+  - Remora.Discord.Rest.Tests.API.Monetization.DiscordRestMonetizationAPITests.ListEntitlementsAsync
+  - Remora.Discord.Rest.Tests.API.Monetization.DiscordRestMonetizationAPITests.ListSKUsAsync
+  - Remora.Discord.Rest.Tests.API.OAuth2.DiscordRestOAuth2APITests.GetCurrentApplicationInformationAsync
+  - Remora.Discord.Rest.Tests.API.OAuth2.DiscordRestOAuth2APITests.GetCurrentAuthorizationInformationAsync
+  - Remora.Discord.Rest.Tests.API.Polls.DiscordRestPollsAPITests.EndPollAsync
+  - Remora.Discord.Rest.Tests.API.Polls.DiscordRestPollsAPITests.GetAnswerVotersAsync
+  - Remora.Discord.Rest.Tests.API.Users.DiscordRestUserAPITests.CreateDMAsync
+  - Remora.Discord.Rest.Tests.API.Users.DiscordRestUserAPITests.GetCurrentUserApplicationRoleConnectionAsync
+  - Remora.Discord.Rest.Tests.API.Users.DiscordRestUserAPITests.GetCurrentUserAsync
+  - Remora.Discord.Rest.Tests.API.Users.DiscordRestUserAPITests.GetCurrentUserConnectionsAsync
+  - Remora.Discord.Rest.Tests.API.Users.DiscordRestUserAPITests.GetCurrentUserGuildMemberAsync
+  - Remora.Discord.Rest.Tests.API.Users.DiscordRestUserAPITests.GetCurrentUserGuildsAsync
+  - Remora.Discord.Rest.Tests.API.Users.DiscordRestUserAPITests.GetUserAsync
+  - Remora.Discord.Rest.Tests.API.Users.DiscordRestUserAPITests.GetUserDMsAsync
+  - Remora.Discord.Rest.Tests.API.Users.DiscordRestUserAPITests.LeaveGuildAsync
+  - Remora.Discord.Rest.Tests.API.Users.DiscordRestUserAPITests.ModifyCurrentUserAsync
+  - Remora.Discord.Rest.Tests.API.Users.DiscordRestUserAPITests.UpdateCurrentUserApplicationRoleConnectionAsync
+  - Remora.Discord.Rest.Tests.API.Voice.DiscordRestVoiceAPITests.ListVoiceRegionsAsync
+  - Remora.Discord.Rest.Tests.API.Webhooks.DiscordRestWebhookAPITests.CreateWebhookAsync
+  - Remora.Discord.Rest.Tests.API.Webhooks.DiscordRestWebhookAPITests.DeleteWebhookAsync
+  - Remora.Discord.Rest.Tests.API.Webhooks.DiscordRestWebhookAPITests.DeleteWebhookMessageAsync
+  - Remora.Discord.Rest.Tests.API.Webhooks.DiscordRestWebhookAPITests.DeleteWebhookWithTokenAsync
+  - Remora.Discord.Rest.Tests.API.Webhooks.DiscordRestWebhookAPITests.EditWebhookMessageAsync
+  - Remora.Discord.Rest.Tests.API.Webhooks.DiscordRestWebhookAPITests.ExecuteWebhookAsync
+  - Remora.Discord.Rest.Tests.API.Webhooks.DiscordRestWebhookAPITests.GetChannelWebhooksAsync
+  - Remora.Discord.Rest.Tests.API.Webhooks.DiscordRestWebhookAPITests.GetGuildWebhooksAsync
+  - Remora.Discord.Rest.Tests.API.Webhooks.DiscordRestWebhookAPITests.GetWebhookAsync
+  - Remora.Discord.Rest.Tests.API.Webhooks.DiscordRestWebhookAPITests.GetWebhookMessageAsync
+  - Remora.Discord.Rest.Tests.API.Webhooks.DiscordRestWebhookAPITests.GetWebhookWithTokenAsync
+  - Remora.Discord.Rest.Tests.API.Webhooks.DiscordRestWebhookAPITests.ModifyWebhookAsync
+  - Remora.Discord.Rest.Tests.API.Webhooks.DiscordRestWebhookAPITests.ModifyWebhookWithTokenAsync
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: Xunit.CollectionAttribute
+    ctor: Xunit.CollectionAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: REST API tests
+  nameWithType.vb: RestAPITestBase(Of TAPI)
+  fullName.vb: Remora.Discord.Rest.Tests.TestBases.RestAPITestBase(Of TAPI)
+  name.vb: RestAPITestBase(Of TAPI)
+- uid: Remora.Discord.Rest.Tests.TestBases.RestAPITestBase`1.#ctor(Remora.Discord.Rest.Tests.TestBases.RestAPITestFixture)
+  commentId: M:Remora.Discord.Rest.Tests.TestBases.RestAPITestBase`1.#ctor(Remora.Discord.Rest.Tests.TestBases.RestAPITestFixture)
+  id: '#ctor(Remora.Discord.Rest.Tests.TestBases.RestAPITestFixture)'
+  parent: Remora.Discord.Rest.Tests.TestBases.RestAPITestBase`1
+  langs:
+  - csharp
+  - vb
+  name: RestAPITestBase(RestAPITestFixture)
+  nameWithType: RestAPITestBase<TAPI>.RestAPITestBase(RestAPITestFixture)
+  fullName: Remora.Discord.Rest.Tests.TestBases.RestAPITestBase<TAPI>.RestAPITestBase(Remora.Discord.Rest.Tests.TestBases.RestAPITestFixture)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Tests\Remora.Discord.Rest.Tests\TestBases\RestAPITestBase.cs
+    startLine: 49
+  assemblies:
+  - Remora.Discord.Rest.Tests
+  namespace: Remora.Discord.Rest.Tests.TestBases
+  summary: Initializes a new instance of the <xref href="Remora.Discord.Rest.Tests.TestBases.RestAPITestBase%601" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: protected RestAPITestBase(RestAPITestFixture fixture)
+    parameters:
+    - id: fixture
+      type: Remora.Discord.Rest.Tests.TestBases.RestAPITestFixture
+      description: The test fixture.
+    content.vb: Protected Sub New(fixture As RestAPITestFixture)
+  overload: Remora.Discord.Rest.Tests.TestBases.RestAPITestBase`1.#ctor*
+  nameWithType.vb: RestAPITestBase(Of TAPI).New(RestAPITestFixture)
+  fullName.vb: Remora.Discord.Rest.Tests.TestBases.RestAPITestBase(Of TAPI).New(Remora.Discord.Rest.Tests.TestBases.RestAPITestFixture)
+  name.vb: New(RestAPITestFixture)
+- uid: Remora.Discord.Rest.Tests.TestBases.RestAPITestBase`1.CreateAPI(System.Action{RichardSzalay.MockHttp.MockHttpMessageHandler})
+  commentId: M:Remora.Discord.Rest.Tests.TestBases.RestAPITestBase`1.CreateAPI(System.Action{RichardSzalay.MockHttp.MockHttpMessageHandler})
+  id: CreateAPI(System.Action{RichardSzalay.MockHttp.MockHttpMessageHandler})
+  parent: Remora.Discord.Rest.Tests.TestBases.RestAPITestBase`1
+  langs:
+  - csharp
+  - vb
+  name: CreateAPI(Action<MockHttpMessageHandler>)
+  nameWithType: RestAPITestBase<TAPI>.CreateAPI(Action<MockHttpMessageHandler>)
+  fullName: Remora.Discord.Rest.Tests.TestBases.RestAPITestBase<TAPI>.CreateAPI(System.Action<RichardSzalay.MockHttp.MockHttpMessageHandler>)
+  type: Method
+  source:
+    id: CreateAPI
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Tests\Remora.Discord.Rest.Tests\TestBases\RestAPITestBase.cs
+    startLine: 59
+  assemblies:
+  - Remora.Discord.Rest.Tests
+  namespace: Remora.Discord.Rest.Tests.TestBases
+  summary: Creates a configured, mocked API instance.
+  example: []
+  syntax:
+    content: protected TAPI CreateAPI(Action<MockHttpMessageHandler> builder)
+    parameters:
+    - id: builder
+      type: System.Action{RichardSzalay.MockHttp.MockHttpMessageHandler}
+      description: The mock builder.
+    return:
+      type: '{TAPI}'
+      description: The API instance.
+    content.vb: Protected Function CreateAPI(builder As Action(Of MockHttpMessageHandler)) As TAPI
+  overload: Remora.Discord.Rest.Tests.TestBases.RestAPITestBase`1.CreateAPI*
+  nameWithType.vb: RestAPITestBase(Of TAPI).CreateAPI(Action(Of MockHttpMessageHandler))
+  fullName.vb: Remora.Discord.Rest.Tests.TestBases.RestAPITestBase(Of TAPI).CreateAPI(System.Action(Of RichardSzalay.MockHttp.MockHttpMessageHandler))
+  name.vb: CreateAPI(Action(Of MockHttpMessageHandler))
+- uid: Remora.Discord.Rest.Tests.TestBases.RestAPITestBase`1.CreateConfiguredAPIServices(System.Action{RichardSzalay.MockHttp.MockHttpMessageHandler})
+  commentId: M:Remora.Discord.Rest.Tests.TestBases.RestAPITestBase`1.CreateConfiguredAPIServices(System.Action{RichardSzalay.MockHttp.MockHttpMessageHandler})
+  id: CreateConfiguredAPIServices(System.Action{RichardSzalay.MockHttp.MockHttpMessageHandler})
+  parent: Remora.Discord.Rest.Tests.TestBases.RestAPITestBase`1
+  langs:
+  - csharp
+  - vb
+  name: CreateConfiguredAPIServices(Action<MockHttpMessageHandler>)
+  nameWithType: RestAPITestBase<TAPI>.CreateConfiguredAPIServices(Action<MockHttpMessageHandler>)
+  fullName: Remora.Discord.Rest.Tests.TestBases.RestAPITestBase<TAPI>.CreateConfiguredAPIServices(System.Action<RichardSzalay.MockHttp.MockHttpMessageHandler>)
+  type: Method
+  source:
+    id: CreateConfiguredAPIServices
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Tests\Remora.Discord.Rest.Tests\TestBases\RestAPITestBase.cs
+    startLine: 70
+  assemblies:
+  - Remora.Discord.Rest.Tests
+  namespace: Remora.Discord.Rest.Tests.TestBases
+  summary: Creates a configured service provider with the given HTTP mock settings.
+  example: []
+  syntax:
+    content: protected IServiceProvider CreateConfiguredAPIServices(Action<MockHttpMessageHandler> builder)
+    parameters:
+    - id: builder
+      type: System.Action{RichardSzalay.MockHttp.MockHttpMessageHandler}
+      description: The HTTP mock builder.
+    return:
+      type: System.IServiceProvider
+      description: The configured services.
+    content.vb: Protected Function CreateConfiguredAPIServices(builder As Action(Of MockHttpMessageHandler)) As IServiceProvider
+  overload: Remora.Discord.Rest.Tests.TestBases.RestAPITestBase`1.CreateConfiguredAPIServices*
+  nameWithType.vb: RestAPITestBase(Of TAPI).CreateConfiguredAPIServices(Action(Of MockHttpMessageHandler))
+  fullName.vb: Remora.Discord.Rest.Tests.TestBases.RestAPITestBase(Of TAPI).CreateConfiguredAPIServices(System.Action(Of RichardSzalay.MockHttp.MockHttpMessageHandler))
+  name.vb: CreateConfiguredAPIServices(Action(Of MockHttpMessageHandler))
+references:
+- uid: Remora.Discord.Rest.Tests.TestBases
+  commentId: N:Remora.Discord.Rest.Tests.TestBases
+  href: Remora.html
+  name: Remora.Discord.Rest.Tests.TestBases
+  nameWithType: Remora.Discord.Rest.Tests.TestBases
+  fullName: Remora.Discord.Rest.Tests.TestBases
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Rest
+    name: Rest
+    href: Remora.Discord.Rest.html
+  - name: .
+  - uid: Remora.Discord.Rest.Tests
+    name: Tests
+    href: Remora.Discord.Rest.Tests.html
+  - name: .
+  - uid: Remora.Discord.Rest.Tests.TestBases
+    name: TestBases
+    href: Remora.Discord.Rest.Tests.TestBases.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Rest
+    name: Rest
+    href: Remora.Discord.Rest.html
+  - name: .
+  - uid: Remora.Discord.Rest.Tests
+    name: Tests
+    href: Remora.Discord.Rest.Tests.html
+  - name: .
+  - uid: Remora.Discord.Rest.Tests.TestBases
+    name: TestBases
+    href: Remora.Discord.Rest.Tests.TestBases.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.Rest.Tests.TestBases.RestAPITestBase`1
+  commentId: T:Remora.Discord.Rest.Tests.TestBases.RestAPITestBase`1
+  href: Remora.Discord.Rest.Tests.TestBases.RestAPITestBase-1.html
+  name: RestAPITestBase<TAPI>
+  nameWithType: RestAPITestBase<TAPI>
+  fullName: Remora.Discord.Rest.Tests.TestBases.RestAPITestBase<TAPI>
+  nameWithType.vb: RestAPITestBase(Of TAPI)
+  fullName.vb: Remora.Discord.Rest.Tests.TestBases.RestAPITestBase(Of TAPI)
+  name.vb: RestAPITestBase(Of TAPI)
+  spec.csharp:
+  - uid: Remora.Discord.Rest.Tests.TestBases.RestAPITestBase`1
+    name: RestAPITestBase
+    href: Remora.Discord.Rest.Tests.TestBases.RestAPITestBase-1.html
+  - name: <
+  - name: TAPI
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Discord.Rest.Tests.TestBases.RestAPITestBase`1
+    name: RestAPITestBase
+    href: Remora.Discord.Rest.Tests.TestBases.RestAPITestBase-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAPI
+  - name: )
+- uid: Remora.Discord.Rest.Tests.TestBases.RestAPITestBase`1.#ctor*
+  commentId: Overload:Remora.Discord.Rest.Tests.TestBases.RestAPITestBase`1.#ctor
+  href: Remora.Discord.Rest.Tests.TestBases.RestAPITestBase-1.html#Remora_Discord_Rest_Tests_TestBases_RestAPITestBase_1__ctor_Remora_Discord_Rest_Tests_TestBases_RestAPITestFixture_
+  name: RestAPITestBase
+  nameWithType: RestAPITestBase<TAPI>.RestAPITestBase
+  fullName: Remora.Discord.Rest.Tests.TestBases.RestAPITestBase<TAPI>.RestAPITestBase
+  nameWithType.vb: RestAPITestBase(Of TAPI).New
+  fullName.vb: Remora.Discord.Rest.Tests.TestBases.RestAPITestBase(Of TAPI).New
+  name.vb: New
+- uid: Remora.Discord.Rest.Tests.TestBases.RestAPITestFixture
+  commentId: T:Remora.Discord.Rest.Tests.TestBases.RestAPITestFixture
+  parent: Remora.Discord.Rest.Tests.TestBases
+  href: Remora.Discord.Rest.Tests.TestBases.RestAPITestFixture.html
+  name: RestAPITestFixture
+  nameWithType: RestAPITestFixture
+  fullName: Remora.Discord.Rest.Tests.TestBases.RestAPITestFixture
+- uid: Remora.Discord.Rest.Tests.TestBases.RestAPITestBase`1.CreateAPI*
+  commentId: Overload:Remora.Discord.Rest.Tests.TestBases.RestAPITestBase`1.CreateAPI
+  href: Remora.Discord.Rest.Tests.TestBases.RestAPITestBase-1.html#Remora_Discord_Rest_Tests_TestBases_RestAPITestBase_1_CreateAPI_System_Action_RichardSzalay_MockHttp_MockHttpMessageHandler__
+  name: CreateAPI
+  nameWithType: RestAPITestBase<TAPI>.CreateAPI
+  fullName: Remora.Discord.Rest.Tests.TestBases.RestAPITestBase<TAPI>.CreateAPI
+  nameWithType.vb: RestAPITestBase(Of TAPI).CreateAPI
+  fullName.vb: Remora.Discord.Rest.Tests.TestBases.RestAPITestBase(Of TAPI).CreateAPI
+- uid: System.Action{RichardSzalay.MockHttp.MockHttpMessageHandler}
+  commentId: T:System.Action{RichardSzalay.MockHttp.MockHttpMessageHandler}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<MockHttpMessageHandler>
+  nameWithType: Action<MockHttpMessageHandler>
+  fullName: System.Action<RichardSzalay.MockHttp.MockHttpMessageHandler>
+  nameWithType.vb: Action(Of MockHttpMessageHandler)
+  fullName.vb: System.Action(Of RichardSzalay.MockHttp.MockHttpMessageHandler)
+  name.vb: Action(Of MockHttpMessageHandler)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: RichardSzalay.MockHttp.MockHttpMessageHandler
+    name: MockHttpMessageHandler
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: RichardSzalay.MockHttp.MockHttpMessageHandler
+    name: MockHttpMessageHandler
+    isExternal: true
+  - name: )
+- uid: '{TAPI}'
+  commentId: '!:TAPI'
+  definition: TAPI
+  name: TAPI
+  nameWithType: TAPI
+  fullName: TAPI
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: TAPI
+  commentId: '!:TAPI'
+  name: TAPI
+  nameWithType: TAPI
+  fullName: TAPI
+- uid: Remora.Discord.Rest.Tests.TestBases.RestAPITestBase`1.CreateConfiguredAPIServices*
+  commentId: Overload:Remora.Discord.Rest.Tests.TestBases.RestAPITestBase`1.CreateConfiguredAPIServices
+  href: Remora.Discord.Rest.Tests.TestBases.RestAPITestBase-1.html#Remora_Discord_Rest_Tests_TestBases_RestAPITestBase_1_CreateConfiguredAPIServices_System_Action_RichardSzalay_MockHttp_MockHttpMessageHandler__
+  name: CreateConfiguredAPIServices
+  nameWithType: RestAPITestBase<TAPI>.CreateConfiguredAPIServices
+  fullName: Remora.Discord.Rest.Tests.TestBases.RestAPITestBase<TAPI>.CreateConfiguredAPIServices
+  nameWithType.vb: RestAPITestBase(Of TAPI).CreateConfiguredAPIServices
+  fullName.vb: Remora.Discord.Rest.Tests.TestBases.RestAPITestBase(Of TAPI).CreateConfiguredAPIServices
+- uid: System.IServiceProvider
+  commentId: T:System.IServiceProvider
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iserviceprovider
+  name: IServiceProvider
+  nameWithType: IServiceProvider
+  fullName: System.IServiceProvider

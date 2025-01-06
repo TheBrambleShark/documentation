@@ -1,0 +1,689 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IAutoModerationRule
+  id: IAutoModerationRule
+  parent: Remora.Discord.API.Abstractions.Objects
+  children:
+  - Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.Actions
+  - Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.CreatorID
+  - Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.EventType
+  - Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.ExemptChannels
+  - Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.ExemptRoles
+  - Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.GuildID
+  - Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.ID
+  - Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.IsEnabled
+  - Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.Name
+  - Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.TriggerMetadata
+  - Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.TriggerType
+  langs:
+  - csharp
+  - vb
+  name: IAutoModerationRule
+  nameWithType: IAutoModerationRule
+  fullName: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule
+  type: Interface
+  source:
+    id: IAutoModerationRule
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\AutoModeration\IAutoModerationRule.cs
+    startLine: 31
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Represents an auto-moderation rule.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public interface IAutoModerationRule
+    content.vb: >-
+      <PublicAPI>
+
+      Public Interface IAutoModerationRule
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.ID
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.ID
+  id: ID
+  parent: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule
+  langs:
+  - csharp
+  - vb
+  name: ID
+  nameWithType: IAutoModerationRule.ID
+  fullName: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.ID
+  type: Property
+  source:
+    id: ID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\AutoModeration\IAutoModerationRule.cs
+    startLine: 37
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the id of this rule.
+  example: []
+  syntax:
+    content: Snowflake ID { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Snowflake
+    content.vb: ReadOnly Property ID As Snowflake
+  overload: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.ID*
+- uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.GuildID
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.GuildID
+  id: GuildID
+  parent: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule
+  langs:
+  - csharp
+  - vb
+  name: GuildID
+  nameWithType: IAutoModerationRule.GuildID
+  fullName: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.GuildID
+  type: Property
+  source:
+    id: GuildID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\AutoModeration\IAutoModerationRule.cs
+    startLine: 42
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the guild which the rule belongs to.
+  example: []
+  syntax:
+    content: Snowflake GuildID { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Snowflake
+    content.vb: ReadOnly Property GuildID As Snowflake
+  overload: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.GuildID*
+- uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.Name
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.Name
+  id: Name
+  parent: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: IAutoModerationRule.Name
+  fullName: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.Name
+  type: Property
+  source:
+    id: Name
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\AutoModeration\IAutoModerationRule.cs
+    startLine: 47
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the rule name.
+  example: []
+  syntax:
+    content: string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property Name As String
+  overload: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.Name*
+- uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.CreatorID
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.CreatorID
+  id: CreatorID
+  parent: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule
+  langs:
+  - csharp
+  - vb
+  name: CreatorID
+  nameWithType: IAutoModerationRule.CreatorID
+  fullName: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.CreatorID
+  type: Property
+  source:
+    id: CreatorID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\AutoModeration\IAutoModerationRule.cs
+    startLine: 52
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the user which first created this rule.
+  example: []
+  syntax:
+    content: Snowflake CreatorID { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Snowflake
+    content.vb: ReadOnly Property CreatorID As Snowflake
+  overload: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.CreatorID*
+- uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.EventType
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.EventType
+  id: EventType
+  parent: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule
+  langs:
+  - csharp
+  - vb
+  name: EventType
+  nameWithType: IAutoModerationRule.EventType
+  fullName: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.EventType
+  type: Property
+  source:
+    id: EventType
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\AutoModeration\IAutoModerationRule.cs
+    startLine: 57
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the rule <xref href="Remora.Discord.API.Abstractions.Objects.AutoModerationEventType" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: AutoModerationEventType EventType { get; }
+    parameters: []
+    return:
+      type: Remora.Discord.API.Abstractions.Objects.AutoModerationEventType
+    content.vb: ReadOnly Property EventType As AutoModerationEventType
+  overload: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.EventType*
+- uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.TriggerType
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.TriggerType
+  id: TriggerType
+  parent: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule
+  langs:
+  - csharp
+  - vb
+  name: TriggerType
+  nameWithType: IAutoModerationRule.TriggerType
+  fullName: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.TriggerType
+  type: Property
+  source:
+    id: TriggerType
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\AutoModeration\IAutoModerationRule.cs
+    startLine: 62
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the rule <xref href="Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.TriggerType" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: AutoModerationTriggerType TriggerType { get; }
+    parameters: []
+    return:
+      type: Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType
+    content.vb: ReadOnly Property TriggerType As AutoModerationTriggerType
+  overload: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.TriggerType*
+- uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.TriggerMetadata
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.TriggerMetadata
+  id: TriggerMetadata
+  parent: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule
+  langs:
+  - csharp
+  - vb
+  name: TriggerMetadata
+  nameWithType: IAutoModerationRule.TriggerMetadata
+  fullName: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.TriggerMetadata
+  type: Property
+  source:
+    id: TriggerMetadata
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\AutoModeration\IAutoModerationRule.cs
+    startLine: 67
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the rule <xref href="Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: IAutoModerationTriggerMetadata TriggerMetadata { get; }
+    parameters: []
+    return:
+      type: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata
+    content.vb: ReadOnly Property TriggerMetadata As IAutoModerationTriggerMetadata
+  overload: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.TriggerMetadata*
+- uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.Actions
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.Actions
+  id: Actions
+  parent: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule
+  langs:
+  - csharp
+  - vb
+  name: Actions
+  nameWithType: IAutoModerationRule.Actions
+  fullName: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.Actions
+  type: Property
+  source:
+    id: Actions
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\AutoModeration\IAutoModerationRule.cs
+    startLine: 72
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the actions which will execute when the rule is triggered.
+  example: []
+  syntax:
+    content: IReadOnlyList<IAutoModerationAction> Actions { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IAutoModerationAction}
+    content.vb: ReadOnly Property Actions As IReadOnlyList(Of IAutoModerationAction)
+  overload: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.Actions*
+- uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.IsEnabled
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.IsEnabled
+  id: IsEnabled
+  parent: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule
+  langs:
+  - csharp
+  - vb
+  name: IsEnabled
+  nameWithType: IAutoModerationRule.IsEnabled
+  fullName: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.IsEnabled
+  type: Property
+  source:
+    id: IsEnabled
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\AutoModeration\IAutoModerationRule.cs
+    startLine: 77
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets a value indicating whether the rule is enabled.
+  example: []
+  syntax:
+    content: bool IsEnabled { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsEnabled As Boolean
+  overload: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.IsEnabled*
+- uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.ExemptRoles
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.ExemptRoles
+  id: ExemptRoles
+  parent: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule
+  langs:
+  - csharp
+  - vb
+  name: ExemptRoles
+  nameWithType: IAutoModerationRule.ExemptRoles
+  fullName: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.ExemptRoles
+  type: Property
+  source:
+    id: ExemptRoles
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\AutoModeration\IAutoModerationRule.cs
+    startLine: 82
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the role IDs that should not be affected by the rule (Maximum of 20).
+  example: []
+  syntax:
+    content: IReadOnlyList<Snowflake> ExemptRoles { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}
+    content.vb: ReadOnly Property ExemptRoles As IReadOnlyList(Of Snowflake)
+  overload: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.ExemptRoles*
+- uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.ExemptChannels
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.ExemptChannels
+  id: ExemptChannels
+  parent: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule
+  langs:
+  - csharp
+  - vb
+  name: ExemptChannels
+  nameWithType: IAutoModerationRule.ExemptChannels
+  fullName: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.ExemptChannels
+  type: Property
+  source:
+    id: ExemptChannels
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\AutoModeration\IAutoModerationRule.cs
+    startLine: 87
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the channel IDs that should not be affected by the rule (Maximum of 50).
+  example: []
+  syntax:
+    content: IReadOnlyList<Snowflake> ExemptChannels { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}
+    content.vb: ReadOnly Property ExemptChannels As IReadOnlyList(Of Snowflake)
+  overload: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.ExemptChannels*
+references:
+- uid: Remora.Discord.API.Abstractions.Objects
+  commentId: N:Remora.Discord.API.Abstractions.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Objects
+  nameWithType: Remora.Discord.API.Abstractions.Objects
+  fullName: Remora.Discord.API.Abstractions.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+- uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.ID*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.ID
+  href: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.html#Remora_Discord_API_Abstractions_Objects_IAutoModerationRule_ID
+  name: ID
+  nameWithType: IAutoModerationRule.ID
+  fullName: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.ID
+- uid: Remora.Rest.Core.Snowflake
+  commentId: T:Remora.Rest.Core.Snowflake
+  parent: Remora.Rest.Core
+  isExternal: true
+  name: Snowflake
+  nameWithType: Snowflake
+  fullName: Remora.Rest.Core.Snowflake
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+- uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.GuildID*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.GuildID
+  href: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.html#Remora_Discord_API_Abstractions_Objects_IAutoModerationRule_GuildID
+  name: GuildID
+  nameWithType: IAutoModerationRule.GuildID
+  fullName: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.GuildID
+- uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.Name*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.Name
+  href: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.html#Remora_Discord_API_Abstractions_Objects_IAutoModerationRule_Name
+  name: Name
+  nameWithType: IAutoModerationRule.Name
+  fullName: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.CreatorID*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.CreatorID
+  href: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.html#Remora_Discord_API_Abstractions_Objects_IAutoModerationRule_CreatorID
+  name: CreatorID
+  nameWithType: IAutoModerationRule.CreatorID
+  fullName: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.CreatorID
+- uid: Remora.Discord.API.Abstractions.Objects.AutoModerationEventType
+  commentId: T:Remora.Discord.API.Abstractions.Objects.AutoModerationEventType
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.AutoModerationEventType.html
+  name: AutoModerationEventType
+  nameWithType: AutoModerationEventType
+  fullName: Remora.Discord.API.Abstractions.Objects.AutoModerationEventType
+- uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.EventType*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.EventType
+  href: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.html#Remora_Discord_API_Abstractions_Objects_IAutoModerationRule_EventType
+  name: EventType
+  nameWithType: IAutoModerationRule.EventType
+  fullName: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.EventType
+- uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.TriggerType
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.TriggerType
+  parent: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule
+  href: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.html#Remora_Discord_API_Abstractions_Objects_IAutoModerationRule_TriggerType
+  name: TriggerType
+  nameWithType: IAutoModerationRule.TriggerType
+  fullName: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.TriggerType
+- uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.TriggerType*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.TriggerType
+  href: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.html#Remora_Discord_API_Abstractions_Objects_IAutoModerationRule_TriggerType
+  name: TriggerType
+  nameWithType: IAutoModerationRule.TriggerType
+  fullName: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.TriggerType
+- uid: Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType
+  commentId: T:Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType.html
+  name: AutoModerationTriggerType
+  nameWithType: AutoModerationTriggerType
+  fullName: Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType
+- uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IAutoModerationRule
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.html
+  name: IAutoModerationRule
+  nameWithType: IAutoModerationRule
+  fullName: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule
+- uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.html
+  name: IAutoModerationTriggerMetadata
+  nameWithType: IAutoModerationTriggerMetadata
+  fullName: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata
+- uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.TriggerMetadata*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.TriggerMetadata
+  href: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.html#Remora_Discord_API_Abstractions_Objects_IAutoModerationRule_TriggerMetadata
+  name: TriggerMetadata
+  nameWithType: IAutoModerationRule.TriggerMetadata
+  fullName: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.TriggerMetadata
+- uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.Actions*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.Actions
+  href: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.html#Remora_Discord_API_Abstractions_Objects_IAutoModerationRule_Actions
+  name: Actions
+  nameWithType: IAutoModerationRule.Actions
+  fullName: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.Actions
+- uid: System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IAutoModerationAction}
+  commentId: T:System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IAutoModerationAction}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<IAutoModerationAction>
+  nameWithType: IReadOnlyList<IAutoModerationAction>
+  fullName: System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.IAutoModerationAction>
+  nameWithType.vb: IReadOnlyList(Of IAutoModerationAction)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.IAutoModerationAction)
+  name.vb: IReadOnlyList(Of IAutoModerationAction)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationAction
+    name: IAutoModerationAction
+    href: Remora.Discord.API.Abstractions.Objects.IAutoModerationAction.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationAction
+    name: IAutoModerationAction
+    href: Remora.Discord.API.Abstractions.Objects.IAutoModerationAction.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.IsEnabled*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.IsEnabled
+  href: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.html#Remora_Discord_API_Abstractions_Objects_IAutoModerationRule_IsEnabled
+  name: IsEnabled
+  nameWithType: IAutoModerationRule.IsEnabled
+  fullName: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.IsEnabled
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.ExemptRoles*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.ExemptRoles
+  href: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.html#Remora_Discord_API_Abstractions_Objects_IAutoModerationRule_ExemptRoles
+  name: ExemptRoles
+  nameWithType: IAutoModerationRule.ExemptRoles
+  fullName: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.ExemptRoles
+- uid: System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}
+  commentId: T:System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<Snowflake>
+  nameWithType: IReadOnlyList<Snowflake>
+  fullName: System.Collections.Generic.IReadOnlyList<Remora.Rest.Core.Snowflake>
+  nameWithType.vb: IReadOnlyList(Of Snowflake)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Remora.Rest.Core.Snowflake)
+  name.vb: IReadOnlyList(Of Snowflake)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.ExemptChannels*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.ExemptChannels
+  href: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.html#Remora_Discord_API_Abstractions_Objects_IAutoModerationRule_ExemptChannels
+  name: ExemptChannels
+  nameWithType: IAutoModerationRule.ExemptChannels
+  fullName: Remora.Discord.API.Abstractions.Objects.IAutoModerationRule.ExemptChannels

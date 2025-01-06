@@ -1,0 +1,950 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2
+  commentId: T:Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2
+  id: JsonBackedTypeTestBase`2
+  parent: Remora.Discord.API.Tests.TestBases
+  children:
+  - Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2.#ctor(Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestFixture)
+  - Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2.AllowUnknownEvents
+  - Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2.AssertOptions
+  - Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2.CanDeserialize(Remora.Discord.API.Tests.Services.SampleDataDescriptor)
+  - Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2.CanSerialize(Remora.Discord.API.Tests.Services.SampleDataDescriptor)
+  - Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2.Options
+  - Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2.SampleSource
+  - Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2.SurvivesRoundTrip(Remora.Discord.API.Tests.Services.SampleDataDescriptor)
+  langs:
+  - csharp
+  - vb
+  name: JsonBackedTypeTestBase<TType, TSampleSource>
+  nameWithType: JsonBackedTypeTestBase<TType, TSampleSource>
+  fullName: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase<TType, TSampleSource>
+  type: Class
+  source:
+    id: JsonBackedTypeTestBase
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Tests\Remora.Discord.API.Tests\TestBases\JsonBackedTypeTestBase.cs
+    startLine: 45
+  assemblies:
+  - Remora.Discord.API.Tests
+  namespace: Remora.Discord.API.Tests.TestBases
+  summary: >-
+    Acts as a base class for testing JSON-backed types in the Discord API. This class contains common baseline
+
+    tests for all types.
+  example: []
+  syntax:
+    content: >-
+      [Collection("JSON-backed type tests")]
+
+      [UsedImplicitly(ImplicitUseTargetFlags.WithInheritors)]
+
+      public abstract class JsonBackedTypeTestBase<TType, TSampleSource> where TSampleSource : TheoryData, new()
+    typeParameters:
+    - id: TType
+      description: The type under test.
+    - id: TSampleSource
+      description: The theory data source.
+    content.vb: >-
+      <Collection("JSON-backed type tests")>
+
+      <UsedImplicitly(ImplicitUseTargetFlags.WithInheritors)>
+
+      Public MustInherit Class JsonBackedTypeTestBase(Of TType, TSampleSource As {TheoryData, New})
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Remora.Discord.API.Tests.TestBases.GatewayTestBase`2
+  - Remora.Discord.API.Tests.TestBases.ObjectTestBase`1
+  - Remora.Discord.API.Tests.TestBases.VoiceGatewayTestBase`2
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: Xunit.CollectionAttribute
+    ctor: Xunit.CollectionAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: JSON-backed type tests
+  - type: JetBrains.Annotations.UsedImplicitlyAttribute
+    ctor: JetBrains.Annotations.UsedImplicitlyAttribute.#ctor(JetBrains.Annotations.ImplicitUseTargetFlags)
+    arguments:
+    - type: JetBrains.Annotations.ImplicitUseTargetFlags
+      value: 4
+  nameWithType.vb: JsonBackedTypeTestBase(Of TType, TSampleSource)
+  fullName.vb: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase(Of TType, TSampleSource)
+  name.vb: JsonBackedTypeTestBase(Of TType, TSampleSource)
+- uid: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2.SampleSource
+  commentId: P:Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2.SampleSource
+  id: SampleSource
+  parent: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2
+  langs:
+  - csharp
+  - vb
+  name: SampleSource
+  nameWithType: JsonBackedTypeTestBase<TType, TSampleSource>.SampleSource
+  fullName: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase<TType, TSampleSource>.SampleSource
+  type: Property
+  source:
+    id: SampleSource
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Tests\Remora.Discord.API.Tests\TestBases\JsonBackedTypeTestBase.cs
+    startLine: 53
+  assemblies:
+  - Remora.Discord.API.Tests
+  namespace: Remora.Discord.API.Tests.TestBases
+  summary: Gets the data sample source.
+  example: []
+  syntax:
+    content: public static TheoryData SampleSource { get; }
+    parameters: []
+    return:
+      type: Xunit.TheoryData
+    content.vb: Public Shared ReadOnly Property SampleSource As TheoryData
+  overload: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2.SampleSource*
+  nameWithType.vb: JsonBackedTypeTestBase(Of TType, TSampleSource).SampleSource
+  fullName.vb: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase(Of TType, TSampleSource).SampleSource
+- uid: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2.Options
+  commentId: P:Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2.Options
+  id: Options
+  parent: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2
+  langs:
+  - csharp
+  - vb
+  name: Options
+  nameWithType: JsonBackedTypeTestBase<TType, TSampleSource>.Options
+  fullName: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase<TType, TSampleSource>.Options
+  type: Property
+  source:
+    id: Options
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Tests\Remora.Discord.API.Tests\TestBases\JsonBackedTypeTestBase.cs
+    startLine: 58
+  assemblies:
+  - Remora.Discord.API.Tests
+  namespace: Remora.Discord.API.Tests.TestBases
+  summary: Gets the JSON serializer options in use.
+  example: []
+  syntax:
+    content: protected JsonSerializerOptions Options { get; }
+    parameters: []
+    return:
+      type: System.Text.Json.JsonSerializerOptions
+    content.vb: Protected ReadOnly Property Options As JsonSerializerOptions
+  overload: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2.Options*
+  nameWithType.vb: JsonBackedTypeTestBase(Of TType, TSampleSource).Options
+  fullName.vb: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase(Of TType, TSampleSource).Options
+- uid: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2.AssertOptions
+  commentId: P:Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2.AssertOptions
+  id: AssertOptions
+  parent: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2
+  langs:
+  - csharp
+  - vb
+  name: AssertOptions
+  nameWithType: JsonBackedTypeTestBase<TType, TSampleSource>.AssertOptions
+  fullName: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase<TType, TSampleSource>.AssertOptions
+  type: Property
+  source:
+    id: AssertOptions
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Tests\Remora.Discord.API.Tests\TestBases\JsonBackedTypeTestBase.cs
+    startLine: 63
+  assemblies:
+  - Remora.Discord.API.Tests
+  namespace: Remora.Discord.API.Tests.TestBases
+  summary: Gets the assertion options.
+  example: []
+  syntax:
+    content: protected virtual JsonAssertOptions AssertOptions { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Xunit.JsonAssertOptions
+    content.vb: Protected Overridable ReadOnly Property AssertOptions As JsonAssertOptions
+  overload: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2.AssertOptions*
+  nameWithType.vb: JsonBackedTypeTestBase(Of TType, TSampleSource).AssertOptions
+  fullName.vb: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase(Of TType, TSampleSource).AssertOptions
+- uid: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2.AllowUnknownEvents
+  commentId: P:Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2.AllowUnknownEvents
+  id: AllowUnknownEvents
+  parent: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2
+  langs:
+  - csharp
+  - vb
+  name: AllowUnknownEvents
+  nameWithType: JsonBackedTypeTestBase<TType, TSampleSource>.AllowUnknownEvents
+  fullName: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase<TType, TSampleSource>.AllowUnknownEvents
+  type: Property
+  source:
+    id: AllowUnknownEvents
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Tests\Remora.Discord.API.Tests\TestBases\JsonBackedTypeTestBase.cs
+    startLine: 68
+  assemblies:
+  - Remora.Discord.API.Tests
+  namespace: Remora.Discord.API.Tests.TestBases
+  summary: Gets a value indicating whether unknown events are allowed.
+  example: []
+  syntax:
+    content: protected virtual bool AllowUnknownEvents { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Protected Overridable ReadOnly Property AllowUnknownEvents As Boolean
+  overload: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2.AllowUnknownEvents*
+  nameWithType.vb: JsonBackedTypeTestBase(Of TType, TSampleSource).AllowUnknownEvents
+  fullName.vb: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase(Of TType, TSampleSource).AllowUnknownEvents
+- uid: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2.#ctor(Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestFixture)
+  commentId: M:Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2.#ctor(Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestFixture)
+  id: '#ctor(Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestFixture)'
+  parent: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2
+  langs:
+  - csharp
+  - vb
+  name: JsonBackedTypeTestBase(JsonBackedTypeTestFixture)
+  nameWithType: JsonBackedTypeTestBase<TType, TSampleSource>.JsonBackedTypeTestBase(JsonBackedTypeTestFixture)
+  fullName: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase<TType, TSampleSource>.JsonBackedTypeTestBase(Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestFixture)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Tests\Remora.Discord.API.Tests\TestBases\JsonBackedTypeTestBase.cs
+    startLine: 74
+  assemblies:
+  - Remora.Discord.API.Tests
+  namespace: Remora.Discord.API.Tests.TestBases
+  summary: Initializes a new instance of the <xref href="Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase%602" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: protected JsonBackedTypeTestBase(JsonBackedTypeTestFixture fixture)
+    parameters:
+    - id: fixture
+      type: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestFixture
+      description: The test fixture.
+    content.vb: Protected Sub New(fixture As JsonBackedTypeTestFixture)
+  overload: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2.#ctor*
+  nameWithType.vb: JsonBackedTypeTestBase(Of TType, TSampleSource).New(JsonBackedTypeTestFixture)
+  fullName.vb: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase(Of TType, TSampleSource).New(Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestFixture)
+  name.vb: New(JsonBackedTypeTestFixture)
+- uid: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2.CanDeserialize(Remora.Discord.API.Tests.Services.SampleDataDescriptor)
+  commentId: M:Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2.CanDeserialize(Remora.Discord.API.Tests.Services.SampleDataDescriptor)
+  id: CanDeserialize(Remora.Discord.API.Tests.Services.SampleDataDescriptor)
+  parent: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2
+  langs:
+  - csharp
+  - vb
+  name: CanDeserialize(SampleDataDescriptor)
+  nameWithType: JsonBackedTypeTestBase<TType, TSampleSource>.CanDeserialize(SampleDataDescriptor)
+  fullName: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase<TType, TSampleSource>.CanDeserialize(Remora.Discord.API.Tests.Services.SampleDataDescriptor)
+  type: Method
+  source:
+    id: CanDeserialize
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Tests\Remora.Discord.API.Tests\TestBases\JsonBackedTypeTestBase.cs
+    startLine: 87
+  assemblies:
+  - Remora.Discord.API.Tests
+  namespace: Remora.Discord.API.Tests.TestBases
+  summary: Tests whether the type can be deserialized from a JSON object.
+  example: []
+  syntax:
+    content: >-
+      [SkippableTheory(new Type[] { })]
+
+      [MemberData("SampleSource", new object[] { }, DisableDiscoveryEnumeration = true)]
+
+      public Task CanDeserialize(SampleDataDescriptor sampleDataFile)
+    parameters:
+    - id: sampleDataFile
+      type: Remora.Discord.API.Tests.Services.SampleDataDescriptor
+      description: The sample data.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A <xref href="System.Threading.Tasks.Task" data-throw-if-not-resolved="false"></xref> representing the asynchronous unit test.
+    content.vb: >-
+      <SkippableTheory(New Type() { })>
+
+      <MemberData("SampleSource", New Object() { }, DisableDiscoveryEnumeration:=True)>
+
+      Public Function CanDeserialize(sampleDataFile As SampleDataDescriptor) As Task
+  overload: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2.CanDeserialize*
+  nameWithType.vb: JsonBackedTypeTestBase(Of TType, TSampleSource).CanDeserialize(SampleDataDescriptor)
+  fullName.vb: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase(Of TType, TSampleSource).CanDeserialize(Remora.Discord.API.Tests.Services.SampleDataDescriptor)
+- uid: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2.CanSerialize(Remora.Discord.API.Tests.Services.SampleDataDescriptor)
+  commentId: M:Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2.CanSerialize(Remora.Discord.API.Tests.Services.SampleDataDescriptor)
+  id: CanSerialize(Remora.Discord.API.Tests.Services.SampleDataDescriptor)
+  parent: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2
+  langs:
+  - csharp
+  - vb
+  name: CanSerialize(SampleDataDescriptor)
+  nameWithType: JsonBackedTypeTestBase<TType, TSampleSource>.CanSerialize(SampleDataDescriptor)
+  fullName: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase<TType, TSampleSource>.CanSerialize(Remora.Discord.API.Tests.Services.SampleDataDescriptor)
+  type: Method
+  source:
+    id: CanSerialize
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Tests\Remora.Discord.API.Tests\TestBases\JsonBackedTypeTestBase.cs
+    startLine: 101
+  assemblies:
+  - Remora.Discord.API.Tests
+  namespace: Remora.Discord.API.Tests.TestBases
+  summary: Tests whether the type can be serialized to a JSON object.
+  example: []
+  syntax:
+    content: >-
+      [SkippableTheory(new Type[] { })]
+
+      [MemberData("SampleSource", new object[] { }, DisableDiscoveryEnumeration = true)]
+
+      public Task CanSerialize(SampleDataDescriptor sampleDataFile)
+    parameters:
+    - id: sampleDataFile
+      type: Remora.Discord.API.Tests.Services.SampleDataDescriptor
+      description: The sample data.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A <xref href="System.Threading.Tasks.Task" data-throw-if-not-resolved="false"></xref> representing the asynchronous unit test.
+    content.vb: >-
+      <SkippableTheory(New Type() { })>
+
+      <MemberData("SampleSource", New Object() { }, DisableDiscoveryEnumeration:=True)>
+
+      Public Function CanSerialize(sampleDataFile As SampleDataDescriptor) As Task
+  overload: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2.CanSerialize*
+  nameWithType.vb: JsonBackedTypeTestBase(Of TType, TSampleSource).CanSerialize(SampleDataDescriptor)
+  fullName.vb: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase(Of TType, TSampleSource).CanSerialize(Remora.Discord.API.Tests.Services.SampleDataDescriptor)
+- uid: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2.SurvivesRoundTrip(Remora.Discord.API.Tests.Services.SampleDataDescriptor)
+  commentId: M:Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2.SurvivesRoundTrip(Remora.Discord.API.Tests.Services.SampleDataDescriptor)
+  id: SurvivesRoundTrip(Remora.Discord.API.Tests.Services.SampleDataDescriptor)
+  parent: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2
+  langs:
+  - csharp
+  - vb
+  name: SurvivesRoundTrip(SampleDataDescriptor)
+  nameWithType: JsonBackedTypeTestBase<TType, TSampleSource>.SurvivesRoundTrip(SampleDataDescriptor)
+  fullName: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase<TType, TSampleSource>.SurvivesRoundTrip(Remora.Discord.API.Tests.Services.SampleDataDescriptor)
+  type: Method
+  source:
+    id: SurvivesRoundTrip
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Tests\Remora.Discord.API.Tests\TestBases\JsonBackedTypeTestBase.cs
+    startLine: 120
+  assemblies:
+  - Remora.Discord.API.Tests
+  namespace: Remora.Discord.API.Tests.TestBases
+  summary: >-
+    Tests whether data survives being round-tripped by the type - that is, it can be deserialized and then
+
+    serialized again without data loss.
+  example: []
+  syntax:
+    content: >-
+      [SkippableTheory(new Type[] { })]
+
+      [MemberData("SampleSource", new object[] { }, DisableDiscoveryEnumeration = true)]
+
+      public Task SurvivesRoundTrip(SampleDataDescriptor sampleDataFile)
+    parameters:
+    - id: sampleDataFile
+      type: Remora.Discord.API.Tests.Services.SampleDataDescriptor
+      description: The sample data.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A <xref href="System.Threading.Tasks.Task" data-throw-if-not-resolved="false"></xref> representing the asynchronous unit test.
+    content.vb: >-
+      <SkippableTheory(New Type() { })>
+
+      <MemberData("SampleSource", New Object() { }, DisableDiscoveryEnumeration:=True)>
+
+      Public Function SurvivesRoundTrip(sampleDataFile As SampleDataDescriptor) As Task
+  overload: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2.SurvivesRoundTrip*
+  nameWithType.vb: JsonBackedTypeTestBase(Of TType, TSampleSource).SurvivesRoundTrip(SampleDataDescriptor)
+  fullName.vb: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase(Of TType, TSampleSource).SurvivesRoundTrip(Remora.Discord.API.Tests.Services.SampleDataDescriptor)
+references:
+- uid: Remora.Discord.API.Tests.TestBases
+  commentId: N:Remora.Discord.API.Tests.TestBases
+  href: Remora.html
+  name: Remora.Discord.API.Tests.TestBases
+  nameWithType: Remora.Discord.API.Tests.TestBases
+  fullName: Remora.Discord.API.Tests.TestBases
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Tests
+    name: Tests
+    href: Remora.Discord.API.Tests.html
+  - name: .
+  - uid: Remora.Discord.API.Tests.TestBases
+    name: TestBases
+    href: Remora.Discord.API.Tests.TestBases.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Tests
+    name: Tests
+    href: Remora.Discord.API.Tests.html
+  - name: .
+  - uid: Remora.Discord.API.Tests.TestBases
+    name: TestBases
+    href: Remora.Discord.API.Tests.TestBases.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2.SampleSource*
+  commentId: Overload:Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2.SampleSource
+  href: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase-2.html#Remora_Discord_API_Tests_TestBases_JsonBackedTypeTestBase_2_SampleSource
+  name: SampleSource
+  nameWithType: JsonBackedTypeTestBase<TType, TSampleSource>.SampleSource
+  fullName: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase<TType, TSampleSource>.SampleSource
+  nameWithType.vb: JsonBackedTypeTestBase(Of TType, TSampleSource).SampleSource
+  fullName.vb: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase(Of TType, TSampleSource).SampleSource
+- uid: Xunit.TheoryData
+  commentId: T:Xunit.TheoryData
+  parent: Xunit
+  isExternal: true
+  name: TheoryData
+  nameWithType: TheoryData
+  fullName: Xunit.TheoryData
+- uid: Xunit
+  commentId: N:Xunit
+  isExternal: true
+  name: Xunit
+  nameWithType: Xunit
+  fullName: Xunit
+- uid: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2.Options*
+  commentId: Overload:Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2.Options
+  href: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase-2.html#Remora_Discord_API_Tests_TestBases_JsonBackedTypeTestBase_2_Options
+  name: Options
+  nameWithType: JsonBackedTypeTestBase<TType, TSampleSource>.Options
+  fullName: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase<TType, TSampleSource>.Options
+  nameWithType.vb: JsonBackedTypeTestBase(Of TType, TSampleSource).Options
+  fullName.vb: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase(Of TType, TSampleSource).Options
+- uid: System.Text.Json.JsonSerializerOptions
+  commentId: T:System.Text.Json.JsonSerializerOptions
+  parent: System.Text.Json
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.text.json.jsonserializeroptions
+  name: JsonSerializerOptions
+  nameWithType: JsonSerializerOptions
+  fullName: System.Text.Json.JsonSerializerOptions
+- uid: System.Text.Json
+  commentId: N:System.Text.Json
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Text.Json
+  nameWithType: System.Text.Json
+  fullName: System.Text.Json
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+  - name: .
+  - uid: System.Text.Json
+    name: Json
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text.json
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+  - name: .
+  - uid: System.Text.Json
+    name: Json
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text.json
+- uid: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2.AssertOptions*
+  commentId: Overload:Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2.AssertOptions
+  href: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase-2.html#Remora_Discord_API_Tests_TestBases_JsonBackedTypeTestBase_2_AssertOptions
+  name: AssertOptions
+  nameWithType: JsonBackedTypeTestBase<TType, TSampleSource>.AssertOptions
+  fullName: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase<TType, TSampleSource>.AssertOptions
+  nameWithType.vb: JsonBackedTypeTestBase(Of TType, TSampleSource).AssertOptions
+  fullName.vb: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase(Of TType, TSampleSource).AssertOptions
+- uid: Remora.Rest.Xunit.JsonAssertOptions
+  commentId: T:Remora.Rest.Xunit.JsonAssertOptions
+  parent: Remora.Rest.Xunit
+  isExternal: true
+  name: JsonAssertOptions
+  nameWithType: JsonAssertOptions
+  fullName: Remora.Rest.Xunit.JsonAssertOptions
+- uid: Remora.Rest.Xunit
+  commentId: N:Remora.Rest.Xunit
+  isExternal: true
+  name: Remora.Rest.Xunit
+  nameWithType: Remora.Rest.Xunit
+  fullName: Remora.Rest.Xunit
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Xunit
+    name: Xunit
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Xunit
+    name: Xunit
+    isExternal: true
+- uid: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2.AllowUnknownEvents*
+  commentId: Overload:Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2.AllowUnknownEvents
+  href: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase-2.html#Remora_Discord_API_Tests_TestBases_JsonBackedTypeTestBase_2_AllowUnknownEvents
+  name: AllowUnknownEvents
+  nameWithType: JsonBackedTypeTestBase<TType, TSampleSource>.AllowUnknownEvents
+  fullName: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase<TType, TSampleSource>.AllowUnknownEvents
+  nameWithType.vb: JsonBackedTypeTestBase(Of TType, TSampleSource).AllowUnknownEvents
+  fullName.vb: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase(Of TType, TSampleSource).AllowUnknownEvents
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2
+  commentId: T:Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2
+  href: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase-2.html
+  name: JsonBackedTypeTestBase<TType, TSampleSource>
+  nameWithType: JsonBackedTypeTestBase<TType, TSampleSource>
+  fullName: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase<TType, TSampleSource>
+  nameWithType.vb: JsonBackedTypeTestBase(Of TType, TSampleSource)
+  fullName.vb: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase(Of TType, TSampleSource)
+  name.vb: JsonBackedTypeTestBase(Of TType, TSampleSource)
+  spec.csharp:
+  - uid: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2
+    name: JsonBackedTypeTestBase
+    href: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase-2.html
+  - name: <
+  - name: TType
+  - name: ','
+  - name: " "
+  - name: TSampleSource
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2
+    name: JsonBackedTypeTestBase
+    href: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TType
+  - name: ','
+  - name: " "
+  - name: TSampleSource
+  - name: )
+- uid: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2.#ctor*
+  commentId: Overload:Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2.#ctor
+  href: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase-2.html#Remora_Discord_API_Tests_TestBases_JsonBackedTypeTestBase_2__ctor_Remora_Discord_API_Tests_TestBases_JsonBackedTypeTestFixture_
+  name: JsonBackedTypeTestBase
+  nameWithType: JsonBackedTypeTestBase<TType, TSampleSource>.JsonBackedTypeTestBase
+  fullName: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase<TType, TSampleSource>.JsonBackedTypeTestBase
+  nameWithType.vb: JsonBackedTypeTestBase(Of TType, TSampleSource).New
+  fullName.vb: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase(Of TType, TSampleSource).New
+  name.vb: New
+- uid: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestFixture
+  commentId: T:Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestFixture
+  parent: Remora.Discord.API.Tests.TestBases
+  href: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestFixture.html
+  name: JsonBackedTypeTestFixture
+  nameWithType: JsonBackedTypeTestFixture
+  fullName: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestFixture
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2.CanDeserialize*
+  commentId: Overload:Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2.CanDeserialize
+  href: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase-2.html#Remora_Discord_API_Tests_TestBases_JsonBackedTypeTestBase_2_CanDeserialize_Remora_Discord_API_Tests_Services_SampleDataDescriptor_
+  name: CanDeserialize
+  nameWithType: JsonBackedTypeTestBase<TType, TSampleSource>.CanDeserialize
+  fullName: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase<TType, TSampleSource>.CanDeserialize
+  nameWithType.vb: JsonBackedTypeTestBase(Of TType, TSampleSource).CanDeserialize
+  fullName.vb: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase(Of TType, TSampleSource).CanDeserialize
+- uid: Remora.Discord.API.Tests.Services.SampleDataDescriptor
+  commentId: T:Remora.Discord.API.Tests.Services.SampleDataDescriptor
+  parent: Remora.Discord.API.Tests.Services
+  href: Remora.Discord.API.Tests.Services.SampleDataDescriptor.html
+  name: SampleDataDescriptor
+  nameWithType: SampleDataDescriptor
+  fullName: Remora.Discord.API.Tests.Services.SampleDataDescriptor
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Remora.Discord.API.Tests.Services
+  commentId: N:Remora.Discord.API.Tests.Services
+  href: Remora.html
+  name: Remora.Discord.API.Tests.Services
+  nameWithType: Remora.Discord.API.Tests.Services
+  fullName: Remora.Discord.API.Tests.Services
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Tests
+    name: Tests
+    href: Remora.Discord.API.Tests.html
+  - name: .
+  - uid: Remora.Discord.API.Tests.Services
+    name: Services
+    href: Remora.Discord.API.Tests.Services.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Tests
+    name: Tests
+    href: Remora.Discord.API.Tests.html
+  - name: .
+  - uid: Remora.Discord.API.Tests.Services
+    name: Services
+    href: Remora.Discord.API.Tests.Services.html
+- uid: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2.CanSerialize*
+  commentId: Overload:Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2.CanSerialize
+  href: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase-2.html#Remora_Discord_API_Tests_TestBases_JsonBackedTypeTestBase_2_CanSerialize_Remora_Discord_API_Tests_Services_SampleDataDescriptor_
+  name: CanSerialize
+  nameWithType: JsonBackedTypeTestBase<TType, TSampleSource>.CanSerialize
+  fullName: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase<TType, TSampleSource>.CanSerialize
+  nameWithType.vb: JsonBackedTypeTestBase(Of TType, TSampleSource).CanSerialize
+  fullName.vb: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase(Of TType, TSampleSource).CanSerialize
+- uid: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2.SurvivesRoundTrip*
+  commentId: Overload:Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase`2.SurvivesRoundTrip
+  href: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase-2.html#Remora_Discord_API_Tests_TestBases_JsonBackedTypeTestBase_2_SurvivesRoundTrip_Remora_Discord_API_Tests_Services_SampleDataDescriptor_
+  name: SurvivesRoundTrip
+  nameWithType: JsonBackedTypeTestBase<TType, TSampleSource>.SurvivesRoundTrip
+  fullName: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase<TType, TSampleSource>.SurvivesRoundTrip
+  nameWithType.vb: JsonBackedTypeTestBase(Of TType, TSampleSource).SurvivesRoundTrip
+  fullName.vb: Remora.Discord.API.Tests.TestBases.JsonBackedTypeTestBase(Of TType, TSampleSource).SurvivesRoundTrip

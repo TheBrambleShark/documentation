@@ -1,0 +1,892 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.VoiceGateway.Events.VoiceReady
+  commentId: T:Remora.Discord.API.VoiceGateway.Events.VoiceReady
+  id: VoiceReady
+  parent: Remora.Discord.API.VoiceGateway.Events
+  children:
+  - Remora.Discord.API.VoiceGateway.Events.VoiceReady.#ctor(System.UInt32,System.Net.IPAddress,System.UInt16,System.Collections.Generic.IReadOnlyList{System.String})
+  - Remora.Discord.API.VoiceGateway.Events.VoiceReady.IP
+  - Remora.Discord.API.VoiceGateway.Events.VoiceReady.Modes
+  - Remora.Discord.API.VoiceGateway.Events.VoiceReady.Port
+  - Remora.Discord.API.VoiceGateway.Events.VoiceReady.SSRC
+  langs:
+  - csharp
+  - vb
+  name: VoiceReady
+  nameWithType: VoiceReady
+  fullName: Remora.Discord.API.VoiceGateway.Events.VoiceReady
+  type: Class
+  source:
+    id: VoiceReady
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\VoiceGateway\Events\VoiceReady.cs
+    startLine: 30
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.VoiceGateway.Events
+  summary: Indicates a successful authentication with the voice gateway, and provides initial connection information.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public record VoiceReady : IVoiceReady, IVoiceGatewayEvent, IVoiceGatewayPayloadData, IEquatable<VoiceReady>
+    content.vb: >-
+      <PublicAPI>
+
+      Public Class VoiceReady Implements IVoiceReady, IVoiceGatewayEvent, IVoiceGatewayPayloadData, IEquatable(Of VoiceReady)
+  inheritance:
+  - System.Object
+  implements:
+  - Remora.Discord.API.Abstractions.VoiceGateway.Events.IVoiceReady
+  - Remora.Discord.API.Abstractions.VoiceGateway.Events.IVoiceGatewayEvent
+  - Remora.Discord.API.Abstractions.VoiceGateway.IVoiceGatewayPayloadData
+  - System.IEquatable{Remora.Discord.API.VoiceGateway.Events.VoiceReady}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.VoiceGateway.Events.VoiceReady.#ctor(System.UInt32,System.Net.IPAddress,System.UInt16,System.Collections.Generic.IReadOnlyList{System.String})
+  commentId: M:Remora.Discord.API.VoiceGateway.Events.VoiceReady.#ctor(System.UInt32,System.Net.IPAddress,System.UInt16,System.Collections.Generic.IReadOnlyList{System.String})
+  id: '#ctor(System.UInt32,System.Net.IPAddress,System.UInt16,System.Collections.Generic.IReadOnlyList{System.String})'
+  parent: Remora.Discord.API.VoiceGateway.Events.VoiceReady
+  langs:
+  - csharp
+  - vb
+  name: VoiceReady(uint, IPAddress, ushort, IReadOnlyList<string>)
+  nameWithType: VoiceReady.VoiceReady(uint, IPAddress, ushort, IReadOnlyList<string>)
+  fullName: Remora.Discord.API.VoiceGateway.Events.VoiceReady.VoiceReady(uint, System.Net.IPAddress, ushort, System.Collections.Generic.IReadOnlyList<string>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\VoiceGateway\Events\VoiceReady.cs
+    startLine: 30
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.VoiceGateway.Events
+  summary: Indicates a successful authentication with the voice gateway, and provides initial connection information.
+  example: []
+  syntax:
+    content: public VoiceReady(uint SSRC, IPAddress IP, ushort Port, IReadOnlyList<string> Modes)
+    parameters:
+    - id: SSRC
+      type: System.UInt32
+    - id: IP
+      type: System.Net.IPAddress
+    - id: Port
+      type: System.UInt16
+    - id: Modes
+      type: System.Collections.Generic.IReadOnlyList{System.String}
+    content.vb: Public Sub New(SSRC As UInteger, IP As IPAddress, Port As UShort, Modes As IReadOnlyList(Of String))
+  overload: Remora.Discord.API.VoiceGateway.Events.VoiceReady.#ctor*
+  nameWithType.vb: VoiceReady.New(UInteger, IPAddress, UShort, IReadOnlyList(Of String))
+  fullName.vb: Remora.Discord.API.VoiceGateway.Events.VoiceReady.New(UInteger, System.Net.IPAddress, UShort, System.Collections.Generic.IReadOnlyList(Of String))
+  name.vb: New(UInteger, IPAddress, UShort, IReadOnlyList(Of String))
+- uid: Remora.Discord.API.VoiceGateway.Events.VoiceReady.SSRC
+  commentId: P:Remora.Discord.API.VoiceGateway.Events.VoiceReady.SSRC
+  id: SSRC
+  parent: Remora.Discord.API.VoiceGateway.Events.VoiceReady
+  langs:
+  - csharp
+  - vb
+  name: SSRC
+  nameWithType: VoiceReady.SSRC
+  fullName: Remora.Discord.API.VoiceGateway.Events.VoiceReady.SSRC
+  type: Property
+  source:
+    id: SSRC
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\VoiceGateway\Events\VoiceReady.cs
+    startLine: 33
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.VoiceGateway.Events
+  summary: Gets the synchronization source ID. This acts as an identifier for this voice connection.
+  example: []
+  syntax:
+    content: public uint SSRC { get; init; }
+    parameters: []
+    return:
+      type: System.UInt32
+    content.vb: Public Property SSRC As UInteger
+  overload: Remora.Discord.API.VoiceGateway.Events.VoiceReady.SSRC*
+  implements:
+  - Remora.Discord.API.Abstractions.VoiceGateway.Events.IVoiceReady.SSRC
+- uid: Remora.Discord.API.VoiceGateway.Events.VoiceReady.IP
+  commentId: P:Remora.Discord.API.VoiceGateway.Events.VoiceReady.IP
+  id: IP
+  parent: Remora.Discord.API.VoiceGateway.Events.VoiceReady
+  langs:
+  - csharp
+  - vb
+  name: IP
+  nameWithType: VoiceReady.IP
+  fullName: Remora.Discord.API.VoiceGateway.Events.VoiceReady.IP
+  type: Property
+  source:
+    id: IP
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\VoiceGateway\Events\VoiceReady.cs
+    startLine: 34
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.VoiceGateway.Events
+  summary: Gets the IP that the voice server is available on.
+  example: []
+  syntax:
+    content: public IPAddress IP { get; init; }
+    parameters: []
+    return:
+      type: System.Net.IPAddress
+    content.vb: Public Property IP As IPAddress
+  overload: Remora.Discord.API.VoiceGateway.Events.VoiceReady.IP*
+  implements:
+  - Remora.Discord.API.Abstractions.VoiceGateway.Events.IVoiceReady.IP
+- uid: Remora.Discord.API.VoiceGateway.Events.VoiceReady.Port
+  commentId: P:Remora.Discord.API.VoiceGateway.Events.VoiceReady.Port
+  id: Port
+  parent: Remora.Discord.API.VoiceGateway.Events.VoiceReady
+  langs:
+  - csharp
+  - vb
+  name: Port
+  nameWithType: VoiceReady.Port
+  fullName: Remora.Discord.API.VoiceGateway.Events.VoiceReady.Port
+  type: Property
+  source:
+    id: Port
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\VoiceGateway\Events\VoiceReady.cs
+    startLine: 35
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.VoiceGateway.Events
+  summary: Gets the UDP port that the voice server is available on.
+  example: []
+  syntax:
+    content: public ushort Port { get; init; }
+    parameters: []
+    return:
+      type: System.UInt16
+    content.vb: Public Property Port As UShort
+  overload: Remora.Discord.API.VoiceGateway.Events.VoiceReady.Port*
+  implements:
+  - Remora.Discord.API.Abstractions.VoiceGateway.Events.IVoiceReady.Port
+- uid: Remora.Discord.API.VoiceGateway.Events.VoiceReady.Modes
+  commentId: P:Remora.Discord.API.VoiceGateway.Events.VoiceReady.Modes
+  id: Modes
+  parent: Remora.Discord.API.VoiceGateway.Events.VoiceReady
+  langs:
+  - csharp
+  - vb
+  name: Modes
+  nameWithType: VoiceReady.Modes
+  fullName: Remora.Discord.API.VoiceGateway.Events.VoiceReady.Modes
+  type: Property
+  source:
+    id: Modes
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\VoiceGateway\Events\VoiceReady.cs
+    startLine: 36
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.VoiceGateway.Events
+  summary: Gets the encryption modes the server supports.
+  example: []
+  syntax:
+    content: public IReadOnlyList<string> Modes { get; init; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{System.String}
+    content.vb: Public Property Modes As IReadOnlyList(Of String)
+  overload: Remora.Discord.API.VoiceGateway.Events.VoiceReady.Modes*
+  implements:
+  - Remora.Discord.API.Abstractions.VoiceGateway.Events.IVoiceReady.Modes
+references:
+- uid: Remora.Discord.API.VoiceGateway.Events
+  commentId: N:Remora.Discord.API.VoiceGateway.Events
+  href: Remora.html
+  name: Remora.Discord.API.VoiceGateway.Events
+  nameWithType: Remora.Discord.API.VoiceGateway.Events
+  fullName: Remora.Discord.API.VoiceGateway.Events
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.VoiceGateway
+    name: VoiceGateway
+    href: Remora.Discord.API.VoiceGateway.html
+  - name: .
+  - uid: Remora.Discord.API.VoiceGateway.Events
+    name: Events
+    href: Remora.Discord.API.VoiceGateway.Events.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.VoiceGateway
+    name: VoiceGateway
+    href: Remora.Discord.API.VoiceGateway.html
+  - name: .
+  - uid: Remora.Discord.API.VoiceGateway.Events
+    name: Events
+    href: Remora.Discord.API.VoiceGateway.Events.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Remora.Discord.API.Abstractions.VoiceGateway.Events.IVoiceReady
+  commentId: T:Remora.Discord.API.Abstractions.VoiceGateway.Events.IVoiceReady
+  parent: Remora.Discord.API.Abstractions.VoiceGateway.Events
+  href: Remora.Discord.API.Abstractions.VoiceGateway.Events.IVoiceReady.html
+  name: IVoiceReady
+  nameWithType: IVoiceReady
+  fullName: Remora.Discord.API.Abstractions.VoiceGateway.Events.IVoiceReady
+- uid: Remora.Discord.API.Abstractions.VoiceGateway.Events.IVoiceGatewayEvent
+  commentId: T:Remora.Discord.API.Abstractions.VoiceGateway.Events.IVoiceGatewayEvent
+  parent: Remora.Discord.API.Abstractions.VoiceGateway.Events
+  href: Remora.Discord.API.Abstractions.VoiceGateway.Events.IVoiceGatewayEvent.html
+  name: IVoiceGatewayEvent
+  nameWithType: IVoiceGatewayEvent
+  fullName: Remora.Discord.API.Abstractions.VoiceGateway.Events.IVoiceGatewayEvent
+- uid: Remora.Discord.API.Abstractions.VoiceGateway.IVoiceGatewayPayloadData
+  commentId: T:Remora.Discord.API.Abstractions.VoiceGateway.IVoiceGatewayPayloadData
+  parent: Remora.Discord.API.Abstractions.VoiceGateway
+  href: Remora.Discord.API.Abstractions.VoiceGateway.IVoiceGatewayPayloadData.html
+  name: IVoiceGatewayPayloadData
+  nameWithType: IVoiceGatewayPayloadData
+  fullName: Remora.Discord.API.Abstractions.VoiceGateway.IVoiceGatewayPayloadData
+- uid: System.IEquatable{Remora.Discord.API.VoiceGateway.Events.VoiceReady}
+  commentId: T:System.IEquatable{Remora.Discord.API.VoiceGateway.Events.VoiceReady}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<VoiceReady>
+  nameWithType: IEquatable<VoiceReady>
+  fullName: System.IEquatable<Remora.Discord.API.VoiceGateway.Events.VoiceReady>
+  nameWithType.vb: IEquatable(Of VoiceReady)
+  fullName.vb: System.IEquatable(Of Remora.Discord.API.VoiceGateway.Events.VoiceReady)
+  name.vb: IEquatable(Of VoiceReady)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Remora.Discord.API.VoiceGateway.Events.VoiceReady
+    name: VoiceReady
+    href: Remora.Discord.API.VoiceGateway.Events.VoiceReady.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.VoiceGateway.Events.VoiceReady
+    name: VoiceReady
+    href: Remora.Discord.API.VoiceGateway.Events.VoiceReady.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.API.Abstractions.VoiceGateway.Events
+  commentId: N:Remora.Discord.API.Abstractions.VoiceGateway.Events
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.VoiceGateway.Events
+  nameWithType: Remora.Discord.API.Abstractions.VoiceGateway.Events
+  fullName: Remora.Discord.API.Abstractions.VoiceGateway.Events
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.VoiceGateway
+    name: VoiceGateway
+    href: Remora.Discord.API.Abstractions.VoiceGateway.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.VoiceGateway.Events
+    name: Events
+    href: Remora.Discord.API.Abstractions.VoiceGateway.Events.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.VoiceGateway
+    name: VoiceGateway
+    href: Remora.Discord.API.Abstractions.VoiceGateway.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.VoiceGateway.Events
+    name: Events
+    href: Remora.Discord.API.Abstractions.VoiceGateway.Events.html
+- uid: Remora.Discord.API.Abstractions.VoiceGateway
+  commentId: N:Remora.Discord.API.Abstractions.VoiceGateway
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.VoiceGateway
+  nameWithType: Remora.Discord.API.Abstractions.VoiceGateway
+  fullName: Remora.Discord.API.Abstractions.VoiceGateway
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.VoiceGateway
+    name: VoiceGateway
+    href: Remora.Discord.API.Abstractions.VoiceGateway.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.VoiceGateway
+    name: VoiceGateway
+    href: Remora.Discord.API.Abstractions.VoiceGateway.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Remora.Discord.API.VoiceGateway.Events.VoiceReady.#ctor*
+  commentId: Overload:Remora.Discord.API.VoiceGateway.Events.VoiceReady.#ctor
+  href: Remora.Discord.API.VoiceGateway.Events.VoiceReady.html#Remora_Discord_API_VoiceGateway_Events_VoiceReady__ctor_System_UInt32_System_Net_IPAddress_System_UInt16_System_Collections_Generic_IReadOnlyList_System_String__
+  name: VoiceReady
+  nameWithType: VoiceReady.VoiceReady
+  fullName: Remora.Discord.API.VoiceGateway.Events.VoiceReady.VoiceReady
+  nameWithType.vb: VoiceReady.New
+  fullName.vb: Remora.Discord.API.VoiceGateway.Events.VoiceReady.New
+  name.vb: New
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: System.Net.IPAddress
+  commentId: T:System.Net.IPAddress
+  parent: System.Net
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.net.ipaddress
+  name: IPAddress
+  nameWithType: IPAddress
+  fullName: System.Net.IPAddress
+- uid: System.UInt16
+  commentId: T:System.UInt16
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint16
+  name: ushort
+  nameWithType: ushort
+  fullName: ushort
+  nameWithType.vb: UShort
+  fullName.vb: UShort
+  name.vb: UShort
+- uid: System.Collections.Generic.IReadOnlyList{System.String}
+  commentId: T:System.Collections.Generic.IReadOnlyList{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<string>
+  nameWithType: IReadOnlyList<string>
+  fullName: System.Collections.Generic.IReadOnlyList<string>
+  nameWithType.vb: IReadOnlyList(Of String)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of String)
+  name.vb: IReadOnlyList(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Net
+  commentId: N:System.Net
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Net
+  nameWithType: System.Net
+  fullName: System.Net
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Net
+    name: Net
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Net
+    name: Net
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Remora.Discord.API.VoiceGateway.Events.VoiceReady.SSRC*
+  commentId: Overload:Remora.Discord.API.VoiceGateway.Events.VoiceReady.SSRC
+  href: Remora.Discord.API.VoiceGateway.Events.VoiceReady.html#Remora_Discord_API_VoiceGateway_Events_VoiceReady_SSRC
+  name: SSRC
+  nameWithType: VoiceReady.SSRC
+  fullName: Remora.Discord.API.VoiceGateway.Events.VoiceReady.SSRC
+- uid: Remora.Discord.API.Abstractions.VoiceGateway.Events.IVoiceReady.SSRC
+  commentId: P:Remora.Discord.API.Abstractions.VoiceGateway.Events.IVoiceReady.SSRC
+  parent: Remora.Discord.API.Abstractions.VoiceGateway.Events.IVoiceReady
+  href: Remora.Discord.API.Abstractions.VoiceGateway.Events.IVoiceReady.html#Remora_Discord_API_Abstractions_VoiceGateway_Events_IVoiceReady_SSRC
+  name: SSRC
+  nameWithType: IVoiceReady.SSRC
+  fullName: Remora.Discord.API.Abstractions.VoiceGateway.Events.IVoiceReady.SSRC
+- uid: Remora.Discord.API.VoiceGateway.Events.VoiceReady.IP*
+  commentId: Overload:Remora.Discord.API.VoiceGateway.Events.VoiceReady.IP
+  href: Remora.Discord.API.VoiceGateway.Events.VoiceReady.html#Remora_Discord_API_VoiceGateway_Events_VoiceReady_IP
+  name: IP
+  nameWithType: VoiceReady.IP
+  fullName: Remora.Discord.API.VoiceGateway.Events.VoiceReady.IP
+- uid: Remora.Discord.API.Abstractions.VoiceGateway.Events.IVoiceReady.IP
+  commentId: P:Remora.Discord.API.Abstractions.VoiceGateway.Events.IVoiceReady.IP
+  parent: Remora.Discord.API.Abstractions.VoiceGateway.Events.IVoiceReady
+  href: Remora.Discord.API.Abstractions.VoiceGateway.Events.IVoiceReady.html#Remora_Discord_API_Abstractions_VoiceGateway_Events_IVoiceReady_IP
+  name: IP
+  nameWithType: IVoiceReady.IP
+  fullName: Remora.Discord.API.Abstractions.VoiceGateway.Events.IVoiceReady.IP
+- uid: Remora.Discord.API.VoiceGateway.Events.VoiceReady.Port*
+  commentId: Overload:Remora.Discord.API.VoiceGateway.Events.VoiceReady.Port
+  href: Remora.Discord.API.VoiceGateway.Events.VoiceReady.html#Remora_Discord_API_VoiceGateway_Events_VoiceReady_Port
+  name: Port
+  nameWithType: VoiceReady.Port
+  fullName: Remora.Discord.API.VoiceGateway.Events.VoiceReady.Port
+- uid: Remora.Discord.API.Abstractions.VoiceGateway.Events.IVoiceReady.Port
+  commentId: P:Remora.Discord.API.Abstractions.VoiceGateway.Events.IVoiceReady.Port
+  parent: Remora.Discord.API.Abstractions.VoiceGateway.Events.IVoiceReady
+  href: Remora.Discord.API.Abstractions.VoiceGateway.Events.IVoiceReady.html#Remora_Discord_API_Abstractions_VoiceGateway_Events_IVoiceReady_Port
+  name: Port
+  nameWithType: IVoiceReady.Port
+  fullName: Remora.Discord.API.Abstractions.VoiceGateway.Events.IVoiceReady.Port
+- uid: Remora.Discord.API.VoiceGateway.Events.VoiceReady.Modes*
+  commentId: Overload:Remora.Discord.API.VoiceGateway.Events.VoiceReady.Modes
+  href: Remora.Discord.API.VoiceGateway.Events.VoiceReady.html#Remora_Discord_API_VoiceGateway_Events_VoiceReady_Modes
+  name: Modes
+  nameWithType: VoiceReady.Modes
+  fullName: Remora.Discord.API.VoiceGateway.Events.VoiceReady.Modes
+- uid: Remora.Discord.API.Abstractions.VoiceGateway.Events.IVoiceReady.Modes
+  commentId: P:Remora.Discord.API.Abstractions.VoiceGateway.Events.IVoiceReady.Modes
+  parent: Remora.Discord.API.Abstractions.VoiceGateway.Events.IVoiceReady
+  href: Remora.Discord.API.Abstractions.VoiceGateway.Events.IVoiceReady.html#Remora_Discord_API_Abstractions_VoiceGateway_Events_IVoiceReady_Modes
+  name: Modes
+  nameWithType: IVoiceReady.Modes
+  fullName: Remora.Discord.API.Abstractions.VoiceGateway.Events.IVoiceReady.Modes

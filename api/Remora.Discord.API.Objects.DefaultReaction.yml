@@ -1,0 +1,622 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Objects.DefaultReaction
+  commentId: T:Remora.Discord.API.Objects.DefaultReaction
+  id: DefaultReaction
+  parent: Remora.Discord.API.Objects
+  children:
+  - Remora.Discord.API.Objects.DefaultReaction.#ctor(System.Nullable{Remora.Rest.Core.Snowflake},System.String)
+  - Remora.Discord.API.Objects.DefaultReaction.EmojiID
+  - Remora.Discord.API.Objects.DefaultReaction.EmojiName
+  langs:
+  - csharp
+  - vb
+  name: DefaultReaction
+  nameWithType: DefaultReaction
+  fullName: Remora.Discord.API.Objects.DefaultReaction
+  type: Class
+  source:
+    id: DefaultReaction
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Channels\DefaultReaction.cs
+    startLine: 29
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Supports all classes in the .NET class hierarchy and provides low-level services to derived classes. This is the ultimate base class of all .NET classes; it is the root of the type hierarchy.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public record DefaultReaction : IDefaultReaction, IEquatable<DefaultReaction>
+    content.vb: >-
+      <PublicAPI>
+
+      Public Class DefaultReaction Implements IDefaultReaction, IEquatable(Of DefaultReaction)
+  inheritance:
+  - System.Object
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IDefaultReaction
+  - System.IEquatable{Remora.Discord.API.Objects.DefaultReaction}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Objects.DefaultReaction.#ctor(System.Nullable{Remora.Rest.Core.Snowflake},System.String)
+  commentId: M:Remora.Discord.API.Objects.DefaultReaction.#ctor(System.Nullable{Remora.Rest.Core.Snowflake},System.String)
+  id: '#ctor(System.Nullable{Remora.Rest.Core.Snowflake},System.String)'
+  parent: Remora.Discord.API.Objects.DefaultReaction
+  langs:
+  - csharp
+  - vb
+  name: DefaultReaction(Snowflake?, string?)
+  nameWithType: DefaultReaction.DefaultReaction(Snowflake?, string?)
+  fullName: Remora.Discord.API.Objects.DefaultReaction.DefaultReaction(Remora.Rest.Core.Snowflake?, string?)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Channels\DefaultReaction.cs
+    startLine: 29
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  example: []
+  syntax:
+    content: public DefaultReaction(Snowflake? EmojiID = null, string? EmojiName = null)
+    parameters:
+    - id: EmojiID
+      type: System.Nullable{Remora.Rest.Core.Snowflake}
+    - id: EmojiName
+      type: System.String
+    content.vb: Public Sub New(EmojiID As Snowflake? = Nothing, EmojiName As String = Nothing)
+  overload: Remora.Discord.API.Objects.DefaultReaction.#ctor*
+  nameWithType.vb: DefaultReaction.New(Snowflake?, String)
+  fullName.vb: Remora.Discord.API.Objects.DefaultReaction.New(Remora.Rest.Core.Snowflake?, String)
+  name.vb: New(Snowflake?, String)
+- uid: Remora.Discord.API.Objects.DefaultReaction.EmojiID
+  commentId: P:Remora.Discord.API.Objects.DefaultReaction.EmojiID
+  id: EmojiID
+  parent: Remora.Discord.API.Objects.DefaultReaction
+  langs:
+  - csharp
+  - vb
+  name: EmojiID
+  nameWithType: DefaultReaction.EmojiID
+  fullName: Remora.Discord.API.Objects.DefaultReaction.EmojiID
+  type: Property
+  source:
+    id: EmojiID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Channels\DefaultReaction.cs
+    startLine: 30
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the ID of the custom guild emoji to use.
+  example: []
+  syntax:
+    content: public Snowflake? EmojiID { get; init; }
+    parameters: []
+    return:
+      type: System.Nullable{Remora.Rest.Core.Snowflake}
+    content.vb: Public Property EmojiID As Snowflake?
+  overload: Remora.Discord.API.Objects.DefaultReaction.EmojiID*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IDefaultReaction.EmojiID
+- uid: Remora.Discord.API.Objects.DefaultReaction.EmojiName
+  commentId: P:Remora.Discord.API.Objects.DefaultReaction.EmojiName
+  id: EmojiName
+  parent: Remora.Discord.API.Objects.DefaultReaction
+  langs:
+  - csharp
+  - vb
+  name: EmojiName
+  nameWithType: DefaultReaction.EmojiName
+  fullName: Remora.Discord.API.Objects.DefaultReaction.EmojiName
+  type: Property
+  source:
+    id: EmojiName
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Channels\DefaultReaction.cs
+    startLine: 30
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the unicode string of the emoji to use.
+  example: []
+  syntax:
+    content: public string? EmojiName { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property EmojiName As String
+  overload: Remora.Discord.API.Objects.DefaultReaction.EmojiName*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IDefaultReaction.EmojiName
+references:
+- uid: Remora.Discord.API.Objects
+  commentId: N:Remora.Discord.API.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Objects
+  nameWithType: Remora.Discord.API.Objects
+  fullName: Remora.Discord.API.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Objects
+    name: Objects
+    href: Remora.Discord.API.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Objects
+    name: Objects
+    href: Remora.Discord.API.Objects.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Remora.Discord.API.Abstractions.Objects.IDefaultReaction
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IDefaultReaction
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IDefaultReaction.html
+  name: IDefaultReaction
+  nameWithType: IDefaultReaction
+  fullName: Remora.Discord.API.Abstractions.Objects.IDefaultReaction
+- uid: System.IEquatable{Remora.Discord.API.Objects.DefaultReaction}
+  commentId: T:System.IEquatable{Remora.Discord.API.Objects.DefaultReaction}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<DefaultReaction>
+  nameWithType: IEquatable<DefaultReaction>
+  fullName: System.IEquatable<Remora.Discord.API.Objects.DefaultReaction>
+  nameWithType.vb: IEquatable(Of DefaultReaction)
+  fullName.vb: System.IEquatable(Of Remora.Discord.API.Objects.DefaultReaction)
+  name.vb: IEquatable(Of DefaultReaction)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Remora.Discord.API.Objects.DefaultReaction
+    name: DefaultReaction
+    href: Remora.Discord.API.Objects.DefaultReaction.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Objects.DefaultReaction
+    name: DefaultReaction
+    href: Remora.Discord.API.Objects.DefaultReaction.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.API.Abstractions.Objects
+  commentId: N:Remora.Discord.API.Abstractions.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Objects
+  nameWithType: Remora.Discord.API.Abstractions.Objects
+  fullName: Remora.Discord.API.Abstractions.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Remora.Discord.API.Objects.DefaultReaction.#ctor*
+  commentId: Overload:Remora.Discord.API.Objects.DefaultReaction.#ctor
+  href: Remora.Discord.API.Objects.DefaultReaction.html#Remora_Discord_API_Objects_DefaultReaction__ctor_System_Nullable_Remora_Rest_Core_Snowflake__System_String_
+  name: DefaultReaction
+  nameWithType: DefaultReaction.DefaultReaction
+  fullName: Remora.Discord.API.Objects.DefaultReaction.DefaultReaction
+  nameWithType.vb: DefaultReaction.New
+  fullName.vb: Remora.Discord.API.Objects.DefaultReaction.New
+  name.vb: New
+- uid: System.Nullable{Remora.Rest.Core.Snowflake}
+  commentId: T:System.Nullable{Remora.Rest.Core.Snowflake}
+  parent: System
+  definition: System.Nullable`1
+  name: Snowflake?
+  nameWithType: Snowflake?
+  fullName: Remora.Rest.Core.Snowflake?
+  spec.csharp:
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '?'
+  spec.vb:
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '?'
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Remora.Discord.API.Objects.DefaultReaction.EmojiID*
+  commentId: Overload:Remora.Discord.API.Objects.DefaultReaction.EmojiID
+  href: Remora.Discord.API.Objects.DefaultReaction.html#Remora_Discord_API_Objects_DefaultReaction_EmojiID
+  name: EmojiID
+  nameWithType: DefaultReaction.EmojiID
+  fullName: Remora.Discord.API.Objects.DefaultReaction.EmojiID
+- uid: Remora.Discord.API.Abstractions.Objects.IDefaultReaction.EmojiID
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IDefaultReaction.EmojiID
+  parent: Remora.Discord.API.Abstractions.Objects.IDefaultReaction
+  href: Remora.Discord.API.Abstractions.Objects.IDefaultReaction.html#Remora_Discord_API_Abstractions_Objects_IDefaultReaction_EmojiID
+  name: EmojiID
+  nameWithType: IDefaultReaction.EmojiID
+  fullName: Remora.Discord.API.Abstractions.Objects.IDefaultReaction.EmojiID
+- uid: Remora.Discord.API.Objects.DefaultReaction.EmojiName*
+  commentId: Overload:Remora.Discord.API.Objects.DefaultReaction.EmojiName
+  href: Remora.Discord.API.Objects.DefaultReaction.html#Remora_Discord_API_Objects_DefaultReaction_EmojiName
+  name: EmojiName
+  nameWithType: DefaultReaction.EmojiName
+  fullName: Remora.Discord.API.Objects.DefaultReaction.EmojiName
+- uid: Remora.Discord.API.Abstractions.Objects.IDefaultReaction.EmojiName
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IDefaultReaction.EmojiName
+  parent: Remora.Discord.API.Abstractions.Objects.IDefaultReaction
+  href: Remora.Discord.API.Abstractions.Objects.IDefaultReaction.html#Remora_Discord_API_Abstractions_Objects_IDefaultReaction_EmojiName
+  name: EmojiName
+  nameWithType: IDefaultReaction.EmojiName
+  fullName: Remora.Discord.API.Abstractions.Objects.IDefaultReaction.EmojiName

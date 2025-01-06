@@ -1,0 +1,811 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.Gateway.DiscordGatewayClientOptions
+  commentId: T:Remora.Discord.Gateway.DiscordGatewayClientOptions
+  id: DiscordGatewayClientOptions
+  parent: Remora.Discord.Gateway
+  children:
+  - Remora.Discord.Gateway.DiscordGatewayClientOptions.CommandBurstRate
+  - Remora.Discord.Gateway.DiscordGatewayClientOptions.ConnectionProperties
+  - Remora.Discord.Gateway.DiscordGatewayClientOptions.GetTrueHeartbeatSafetyMargin(System.TimeSpan)
+  - Remora.Discord.Gateway.DiscordGatewayClientOptions.HeartbeatHeadroom
+  - Remora.Discord.Gateway.DiscordGatewayClientOptions.HeartbeatSafetyMargin
+  - Remora.Discord.Gateway.DiscordGatewayClientOptions.Intents
+  - Remora.Discord.Gateway.DiscordGatewayClientOptions.LargeThreshold
+  - Remora.Discord.Gateway.DiscordGatewayClientOptions.MinimumSafetyMargin
+  - Remora.Discord.Gateway.DiscordGatewayClientOptions.Presence
+  - Remora.Discord.Gateway.DiscordGatewayClientOptions.ShardIdentification
+  langs:
+  - csharp
+  - vb
+  name: DiscordGatewayClientOptions
+  nameWithType: DiscordGatewayClientOptions
+  fullName: Remora.Discord.Gateway.DiscordGatewayClientOptions
+  type: Class
+  source:
+    id: DiscordGatewayClientOptions
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Gateway\DiscordGatewayClientOptions.cs
+    startLine: 32
+  assemblies:
+  - Remora.Discord.Gateway
+  namespace: Remora.Discord.Gateway
+  summary: Holds various client options for use in the gateway client.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public class DiscordGatewayClientOptions
+    content.vb: >-
+      <PublicAPI>
+
+      Public Class DiscordGatewayClientOptions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.Gateway.DiscordGatewayClientOptions.HeartbeatSafetyMargin
+  commentId: P:Remora.Discord.Gateway.DiscordGatewayClientOptions.HeartbeatSafetyMargin
+  id: HeartbeatSafetyMargin
+  parent: Remora.Discord.Gateway.DiscordGatewayClientOptions
+  langs:
+  - csharp
+  - vb
+  name: HeartbeatSafetyMargin
+  nameWithType: DiscordGatewayClientOptions.HeartbeatSafetyMargin
+  fullName: Remora.Discord.Gateway.DiscordGatewayClientOptions.HeartbeatSafetyMargin
+  type: Property
+  source:
+    id: HeartbeatSafetyMargin
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Gateway\DiscordGatewayClientOptions.cs
+    startLine: 40
+  assemblies:
+  - Remora.Discord.Gateway
+  namespace: Remora.Discord.Gateway
+  summary: >-
+    Gets or sets the safety margin for the heartbeat interval. The client will aim to send a heartbeat within
+
+    this time before the actual interval. The actual safety margin will never exceed 10% of the total interval,
+
+    and will never be less than <xref href="Remora.Discord.Gateway.DiscordGatewayClientOptions.MinimumSafetyMargin" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public TimeSpan HeartbeatSafetyMargin { get; set; }
+    parameters: []
+    return:
+      type: System.TimeSpan
+    content.vb: Public Property HeartbeatSafetyMargin As TimeSpan
+  overload: Remora.Discord.Gateway.DiscordGatewayClientOptions.HeartbeatSafetyMargin*
+- uid: Remora.Discord.Gateway.DiscordGatewayClientOptions.MinimumSafetyMargin
+  commentId: P:Remora.Discord.Gateway.DiscordGatewayClientOptions.MinimumSafetyMargin
+  id: MinimumSafetyMargin
+  parent: Remora.Discord.Gateway.DiscordGatewayClientOptions
+  langs:
+  - csharp
+  - vb
+  name: MinimumSafetyMargin
+  nameWithType: DiscordGatewayClientOptions.MinimumSafetyMargin
+  fullName: Remora.Discord.Gateway.DiscordGatewayClientOptions.MinimumSafetyMargin
+  type: Property
+  source:
+    id: MinimumSafetyMargin
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Gateway\DiscordGatewayClientOptions.cs
+    startLine: 45
+  assemblies:
+  - Remora.Discord.Gateway
+  namespace: Remora.Discord.Gateway
+  summary: Gets or sets the minimum safety margin.
+  example: []
+  syntax:
+    content: public TimeSpan MinimumSafetyMargin { get; set; }
+    parameters: []
+    return:
+      type: System.TimeSpan
+    content.vb: Public Property MinimumSafetyMargin As TimeSpan
+  overload: Remora.Discord.Gateway.DiscordGatewayClientOptions.MinimumSafetyMargin*
+- uid: Remora.Discord.Gateway.DiscordGatewayClientOptions.ConnectionProperties
+  commentId: P:Remora.Discord.Gateway.DiscordGatewayClientOptions.ConnectionProperties
+  id: ConnectionProperties
+  parent: Remora.Discord.Gateway.DiscordGatewayClientOptions
+  langs:
+  - csharp
+  - vb
+  name: ConnectionProperties
+  nameWithType: DiscordGatewayClientOptions.ConnectionProperties
+  fullName: Remora.Discord.Gateway.DiscordGatewayClientOptions.ConnectionProperties
+  type: Property
+  source:
+    id: ConnectionProperties
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Gateway\DiscordGatewayClientOptions.cs
+    startLine: 52
+  assemblies:
+  - Remora.Discord.Gateway
+  namespace: Remora.Discord.Gateway
+  summary: >-
+    Gets or sets the connection properties that identify the connecting client or library code. By default,
+
+    this is the information about Remora.Discord itself. You may, optionally, override this to present your
+
+    own information.
+  example: []
+  syntax:
+    content: public IIdentifyConnectionProperties ConnectionProperties { get; set; }
+    parameters: []
+    return:
+      type: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentifyConnectionProperties
+    content.vb: Public Property ConnectionProperties As IIdentifyConnectionProperties
+  overload: Remora.Discord.Gateway.DiscordGatewayClientOptions.ConnectionProperties*
+- uid: Remora.Discord.Gateway.DiscordGatewayClientOptions.LargeThreshold
+  commentId: P:Remora.Discord.Gateway.DiscordGatewayClientOptions.LargeThreshold
+  id: LargeThreshold
+  parent: Remora.Discord.Gateway.DiscordGatewayClientOptions
+  langs:
+  - csharp
+  - vb
+  name: LargeThreshold
+  nameWithType: DiscordGatewayClientOptions.LargeThreshold
+  fullName: Remora.Discord.Gateway.DiscordGatewayClientOptions.LargeThreshold
+  type: Property
+  source:
+    id: LargeThreshold
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Gateway\DiscordGatewayClientOptions.cs
+    startLine: 61
+  assemblies:
+  - Remora.Discord.Gateway
+  namespace: Remora.Discord.Gateway
+  summary: >-
+    Gets or sets the large threshold for the gateway.
+
+    For guilds with members that exceed the threshold, offline members will be omitted.
+  remarks: Defaults to 50, max of 250.
+  example: []
+  syntax:
+    content: public byte LargeThreshold { get; set; }
+    parameters: []
+    return:
+      type: System.Byte
+    content.vb: Public Property LargeThreshold As Byte
+  overload: Remora.Discord.Gateway.DiscordGatewayClientOptions.LargeThreshold*
+- uid: Remora.Discord.Gateway.DiscordGatewayClientOptions.ShardIdentification
+  commentId: P:Remora.Discord.Gateway.DiscordGatewayClientOptions.ShardIdentification
+  id: ShardIdentification
+  parent: Remora.Discord.Gateway.DiscordGatewayClientOptions
+  langs:
+  - csharp
+  - vb
+  name: ShardIdentification
+  nameWithType: DiscordGatewayClientOptions.ShardIdentification
+  fullName: Remora.Discord.Gateway.DiscordGatewayClientOptions.ShardIdentification
+  type: Property
+  source:
+    id: ShardIdentification
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Gateway\DiscordGatewayClientOptions.cs
+    startLine: 67
+  assemblies:
+  - Remora.Discord.Gateway
+  namespace: Remora.Discord.Gateway
+  summary: >-
+    Gets or sets the shard identification information. This is used to connect the client as a sharded
+
+    connection, where events are distributed over a set of active connections.
+  example: []
+  syntax:
+    content: public IShardIdentification? ShardIdentification { get; set; }
+    parameters: []
+    return:
+      type: Remora.Discord.API.Abstractions.Gateway.Commands.IShardIdentification
+    content.vb: Public Property ShardIdentification As IShardIdentification
+  overload: Remora.Discord.Gateway.DiscordGatewayClientOptions.ShardIdentification*
+- uid: Remora.Discord.Gateway.DiscordGatewayClientOptions.Presence
+  commentId: P:Remora.Discord.Gateway.DiscordGatewayClientOptions.Presence
+  id: Presence
+  parent: Remora.Discord.Gateway.DiscordGatewayClientOptions
+  langs:
+  - csharp
+  - vb
+  name: Presence
+  nameWithType: DiscordGatewayClientOptions.Presence
+  fullName: Remora.Discord.Gateway.DiscordGatewayClientOptions.Presence
+  type: Property
+  source:
+    id: Presence
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Gateway\DiscordGatewayClientOptions.cs
+    startLine: 72
+  assemblies:
+  - Remora.Discord.Gateway
+  namespace: Remora.Discord.Gateway
+  summary: Gets or sets the initial presence when the bot connects.
+  example: []
+  syntax:
+    content: public IUpdatePresence? Presence { get; set; }
+    parameters: []
+    return:
+      type: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence
+    content.vb: Public Property Presence As IUpdatePresence
+  overload: Remora.Discord.Gateway.DiscordGatewayClientOptions.Presence*
+- uid: Remora.Discord.Gateway.DiscordGatewayClientOptions.Intents
+  commentId: P:Remora.Discord.Gateway.DiscordGatewayClientOptions.Intents
+  id: Intents
+  parent: Remora.Discord.Gateway.DiscordGatewayClientOptions
+  langs:
+  - csharp
+  - vb
+  name: Intents
+  nameWithType: DiscordGatewayClientOptions.Intents
+  fullName: Remora.Discord.Gateway.DiscordGatewayClientOptions.Intents
+  type: Property
+  source:
+    id: Intents
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Gateway\DiscordGatewayClientOptions.cs
+    startLine: 78
+  assemblies:
+  - Remora.Discord.Gateway
+  namespace: Remora.Discord.Gateway
+  summary: >-
+    Gets or sets the gateway intents to subscribe to. By default, this is a limited set of intents (guilds and
+
+    their messages).
+  example: []
+  syntax:
+    content: public GatewayIntents Intents { get; set; }
+    parameters: []
+    return:
+      type: Remora.Discord.API.Abstractions.Gateway.Commands.GatewayIntents
+    content.vb: Public Property Intents As GatewayIntents
+  overload: Remora.Discord.Gateway.DiscordGatewayClientOptions.Intents*
+- uid: Remora.Discord.Gateway.DiscordGatewayClientOptions.CommandBurstRate
+  commentId: P:Remora.Discord.Gateway.DiscordGatewayClientOptions.CommandBurstRate
+  id: CommandBurstRate
+  parent: Remora.Discord.Gateway.DiscordGatewayClientOptions
+  langs:
+  - csharp
+  - vb
+  name: CommandBurstRate
+  nameWithType: DiscordGatewayClientOptions.CommandBurstRate
+  fullName: Remora.Discord.Gateway.DiscordGatewayClientOptions.CommandBurstRate
+  type: Property
+  source:
+    id: CommandBurstRate
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Gateway\DiscordGatewayClientOptions.cs
+    startLine: 89
+  assemblies:
+  - Remora.Discord.Gateway
+  namespace: Remora.Discord.Gateway
+  summary: >-
+    Gets or sets the number of commands that may be sent as a burst within the gateway's rate limit window. A burst
+
+    of 60, for example, would allow 60 commands to be sent within the first time slot in the window while the
+
+    remaining commands allowed within the window would be evenly spaced across the remaining slots.
+  remarks: >-
+    The default value is relatively conservative, and can most likely be increased to at least 100. You should,
+
+    however, avoid setting this at or near the actual rate limit.
+  example: []
+  syntax:
+    content: public byte CommandBurstRate { get; set; }
+    parameters: []
+    return:
+      type: System.Byte
+    content.vb: Public Property CommandBurstRate As Byte
+  overload: Remora.Discord.Gateway.DiscordGatewayClientOptions.CommandBurstRate*
+- uid: Remora.Discord.Gateway.DiscordGatewayClientOptions.HeartbeatHeadroom
+  commentId: P:Remora.Discord.Gateway.DiscordGatewayClientOptions.HeartbeatHeadroom
+  id: HeartbeatHeadroom
+  parent: Remora.Discord.Gateway.DiscordGatewayClientOptions
+  langs:
+  - csharp
+  - vb
+  name: HeartbeatHeadroom
+  nameWithType: DiscordGatewayClientOptions.HeartbeatHeadroom
+  fullName: Remora.Discord.Gateway.DiscordGatewayClientOptions.HeartbeatHeadroom
+  type: Property
+  source:
+    id: HeartbeatHeadroom
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Gateway\DiscordGatewayClientOptions.cs
+    startLine: 103
+  assemblies:
+  - Remora.Discord.Gateway
+  namespace: Remora.Discord.Gateway
+  summary: >-
+    Gets or sets the number of extra rate limit slots that should be taken up by the heartbeat function (beyond the
+
+    ones strictly required based on the heartbeat interval and rate limit window).
+
+
+    For example, if the rate limit window is 60 seconds, and the heartbeat interval is 2 seconds, the number of
+
+    strictly required slots would be 30. Adding a headroom of 2 to this would result in 32 reserved slots within the
+
+    rate limit window for heartbeats, leaving 88 slots for user-submitted events.
+
+
+    This value is primarily used to take up the slack of any rounding errors in the calculations, as well as
+
+    potential timing issues since few if any bots run on hard realtime systems. The default value of 2 has been
+
+    arbitrarily picked, but should suffice for most use cases.
+  example: []
+  syntax:
+    content: public byte HeartbeatHeadroom { get; set; }
+    parameters: []
+    return:
+      type: System.Byte
+    content.vb: Public Property HeartbeatHeadroom As Byte
+  overload: Remora.Discord.Gateway.DiscordGatewayClientOptions.HeartbeatHeadroom*
+- uid: Remora.Discord.Gateway.DiscordGatewayClientOptions.GetTrueHeartbeatSafetyMargin(System.TimeSpan)
+  commentId: M:Remora.Discord.Gateway.DiscordGatewayClientOptions.GetTrueHeartbeatSafetyMargin(System.TimeSpan)
+  id: GetTrueHeartbeatSafetyMargin(System.TimeSpan)
+  parent: Remora.Discord.Gateway.DiscordGatewayClientOptions
+  langs:
+  - csharp
+  - vb
+  name: GetTrueHeartbeatSafetyMargin(TimeSpan)
+  nameWithType: DiscordGatewayClientOptions.GetTrueHeartbeatSafetyMargin(TimeSpan)
+  fullName: Remora.Discord.Gateway.DiscordGatewayClientOptions.GetTrueHeartbeatSafetyMargin(System.TimeSpan)
+  type: Method
+  source:
+    id: GetTrueHeartbeatSafetyMargin
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Gateway\DiscordGatewayClientOptions.cs
+    startLine: 110
+  assemblies:
+  - Remora.Discord.Gateway
+  namespace: Remora.Discord.Gateway
+  summary: Calculates the true heartbeat safety margin, based on the heartbeat interval.
+  example: []
+  syntax:
+    content: public TimeSpan GetTrueHeartbeatSafetyMargin(TimeSpan heartbeatInterval)
+    parameters:
+    - id: heartbeatInterval
+      type: System.TimeSpan
+      description: The heartbeat interval.
+    return:
+      type: System.TimeSpan
+      description: The true safety margin.
+    content.vb: Public Function GetTrueHeartbeatSafetyMargin(heartbeatInterval As TimeSpan) As TimeSpan
+  overload: Remora.Discord.Gateway.DiscordGatewayClientOptions.GetTrueHeartbeatSafetyMargin*
+references:
+- uid: Remora.Discord.Gateway
+  commentId: N:Remora.Discord.Gateway
+  href: Remora.html
+  name: Remora.Discord.Gateway
+  nameWithType: Remora.Discord.Gateway
+  fullName: Remora.Discord.Gateway
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Gateway
+    name: Gateway
+    href: Remora.Discord.Gateway.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Gateway
+    name: Gateway
+    href: Remora.Discord.Gateway.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.Gateway.DiscordGatewayClientOptions.MinimumSafetyMargin
+  commentId: P:Remora.Discord.Gateway.DiscordGatewayClientOptions.MinimumSafetyMargin
+  href: Remora.Discord.Gateway.DiscordGatewayClientOptions.html#Remora_Discord_Gateway_DiscordGatewayClientOptions_MinimumSafetyMargin
+  name: MinimumSafetyMargin
+  nameWithType: DiscordGatewayClientOptions.MinimumSafetyMargin
+  fullName: Remora.Discord.Gateway.DiscordGatewayClientOptions.MinimumSafetyMargin
+- uid: Remora.Discord.Gateway.DiscordGatewayClientOptions.HeartbeatSafetyMargin*
+  commentId: Overload:Remora.Discord.Gateway.DiscordGatewayClientOptions.HeartbeatSafetyMargin
+  href: Remora.Discord.Gateway.DiscordGatewayClientOptions.html#Remora_Discord_Gateway_DiscordGatewayClientOptions_HeartbeatSafetyMargin
+  name: HeartbeatSafetyMargin
+  nameWithType: DiscordGatewayClientOptions.HeartbeatSafetyMargin
+  fullName: Remora.Discord.Gateway.DiscordGatewayClientOptions.HeartbeatSafetyMargin
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.timespan
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: Remora.Discord.Gateway.DiscordGatewayClientOptions.MinimumSafetyMargin*
+  commentId: Overload:Remora.Discord.Gateway.DiscordGatewayClientOptions.MinimumSafetyMargin
+  href: Remora.Discord.Gateway.DiscordGatewayClientOptions.html#Remora_Discord_Gateway_DiscordGatewayClientOptions_MinimumSafetyMargin
+  name: MinimumSafetyMargin
+  nameWithType: DiscordGatewayClientOptions.MinimumSafetyMargin
+  fullName: Remora.Discord.Gateway.DiscordGatewayClientOptions.MinimumSafetyMargin
+- uid: Remora.Discord.Gateway.DiscordGatewayClientOptions.ConnectionProperties*
+  commentId: Overload:Remora.Discord.Gateway.DiscordGatewayClientOptions.ConnectionProperties
+  href: Remora.Discord.Gateway.DiscordGatewayClientOptions.html#Remora_Discord_Gateway_DiscordGatewayClientOptions_ConnectionProperties
+  name: ConnectionProperties
+  nameWithType: DiscordGatewayClientOptions.ConnectionProperties
+  fullName: Remora.Discord.Gateway.DiscordGatewayClientOptions.ConnectionProperties
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentifyConnectionProperties
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.Commands.IIdentifyConnectionProperties
+  parent: Remora.Discord.API.Abstractions.Gateway.Commands
+  href: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentifyConnectionProperties.html
+  name: IIdentifyConnectionProperties
+  nameWithType: IIdentifyConnectionProperties
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentifyConnectionProperties
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands
+  commentId: N:Remora.Discord.API.Abstractions.Gateway.Commands
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Gateway.Commands
+  nameWithType: Remora.Discord.API.Abstractions.Gateway.Commands
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway.Commands
+    name: Commands
+    href: Remora.Discord.API.Abstractions.Gateway.Commands.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway.Commands
+    name: Commands
+    href: Remora.Discord.API.Abstractions.Gateway.Commands.html
+- uid: Remora.Discord.Gateway.DiscordGatewayClientOptions.LargeThreshold*
+  commentId: Overload:Remora.Discord.Gateway.DiscordGatewayClientOptions.LargeThreshold
+  href: Remora.Discord.Gateway.DiscordGatewayClientOptions.html#Remora_Discord_Gateway_DiscordGatewayClientOptions_LargeThreshold
+  name: LargeThreshold
+  nameWithType: DiscordGatewayClientOptions.LargeThreshold
+  fullName: Remora.Discord.Gateway.DiscordGatewayClientOptions.LargeThreshold
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte
+  nameWithType: byte
+  fullName: byte
+  nameWithType.vb: Byte
+  fullName.vb: Byte
+  name.vb: Byte
+- uid: Remora.Discord.Gateway.DiscordGatewayClientOptions.ShardIdentification*
+  commentId: Overload:Remora.Discord.Gateway.DiscordGatewayClientOptions.ShardIdentification
+  href: Remora.Discord.Gateway.DiscordGatewayClientOptions.html#Remora_Discord_Gateway_DiscordGatewayClientOptions_ShardIdentification
+  name: ShardIdentification
+  nameWithType: DiscordGatewayClientOptions.ShardIdentification
+  fullName: Remora.Discord.Gateway.DiscordGatewayClientOptions.ShardIdentification
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IShardIdentification
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.Commands.IShardIdentification
+  parent: Remora.Discord.API.Abstractions.Gateway.Commands
+  href: Remora.Discord.API.Abstractions.Gateway.Commands.IShardIdentification.html
+  name: IShardIdentification
+  nameWithType: IShardIdentification
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IShardIdentification
+- uid: Remora.Discord.Gateway.DiscordGatewayClientOptions.Presence*
+  commentId: Overload:Remora.Discord.Gateway.DiscordGatewayClientOptions.Presence
+  href: Remora.Discord.Gateway.DiscordGatewayClientOptions.html#Remora_Discord_Gateway_DiscordGatewayClientOptions_Presence
+  name: Presence
+  nameWithType: DiscordGatewayClientOptions.Presence
+  fullName: Remora.Discord.Gateway.DiscordGatewayClientOptions.Presence
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence
+  parent: Remora.Discord.API.Abstractions.Gateway.Commands
+  href: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence.html
+  name: IUpdatePresence
+  nameWithType: IUpdatePresence
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence
+- uid: Remora.Discord.Gateway.DiscordGatewayClientOptions.Intents*
+  commentId: Overload:Remora.Discord.Gateway.DiscordGatewayClientOptions.Intents
+  href: Remora.Discord.Gateway.DiscordGatewayClientOptions.html#Remora_Discord_Gateway_DiscordGatewayClientOptions_Intents
+  name: Intents
+  nameWithType: DiscordGatewayClientOptions.Intents
+  fullName: Remora.Discord.Gateway.DiscordGatewayClientOptions.Intents
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.GatewayIntents
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.Commands.GatewayIntents
+  parent: Remora.Discord.API.Abstractions.Gateway.Commands
+  href: Remora.Discord.API.Abstractions.Gateway.Commands.GatewayIntents.html
+  name: GatewayIntents
+  nameWithType: GatewayIntents
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.GatewayIntents
+- uid: Remora.Discord.Gateway.DiscordGatewayClientOptions.CommandBurstRate*
+  commentId: Overload:Remora.Discord.Gateway.DiscordGatewayClientOptions.CommandBurstRate
+  href: Remora.Discord.Gateway.DiscordGatewayClientOptions.html#Remora_Discord_Gateway_DiscordGatewayClientOptions_CommandBurstRate
+  name: CommandBurstRate
+  nameWithType: DiscordGatewayClientOptions.CommandBurstRate
+  fullName: Remora.Discord.Gateway.DiscordGatewayClientOptions.CommandBurstRate
+- uid: Remora.Discord.Gateway.DiscordGatewayClientOptions.HeartbeatHeadroom*
+  commentId: Overload:Remora.Discord.Gateway.DiscordGatewayClientOptions.HeartbeatHeadroom
+  href: Remora.Discord.Gateway.DiscordGatewayClientOptions.html#Remora_Discord_Gateway_DiscordGatewayClientOptions_HeartbeatHeadroom
+  name: HeartbeatHeadroom
+  nameWithType: DiscordGatewayClientOptions.HeartbeatHeadroom
+  fullName: Remora.Discord.Gateway.DiscordGatewayClientOptions.HeartbeatHeadroom
+- uid: Remora.Discord.Gateway.DiscordGatewayClientOptions.GetTrueHeartbeatSafetyMargin*
+  commentId: Overload:Remora.Discord.Gateway.DiscordGatewayClientOptions.GetTrueHeartbeatSafetyMargin
+  href: Remora.Discord.Gateway.DiscordGatewayClientOptions.html#Remora_Discord_Gateway_DiscordGatewayClientOptions_GetTrueHeartbeatSafetyMargin_System_TimeSpan_
+  name: GetTrueHeartbeatSafetyMargin
+  nameWithType: DiscordGatewayClientOptions.GetTrueHeartbeatSafetyMargin
+  fullName: Remora.Discord.Gateway.DiscordGatewayClientOptions.GetTrueHeartbeatSafetyMargin

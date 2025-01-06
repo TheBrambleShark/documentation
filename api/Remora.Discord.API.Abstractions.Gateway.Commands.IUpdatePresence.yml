@@ -1,0 +1,444 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence
+  id: IUpdatePresence
+  parent: Remora.Discord.API.Abstractions.Gateway.Commands
+  children:
+  - Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence.Activities
+  - Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence.IsAFK
+  - Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence.Since
+  - Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence.Status
+  langs:
+  - csharp
+  - vb
+  name: IUpdatePresence
+  nameWithType: IUpdatePresence
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence
+  type: Interface
+  source:
+    id: IUpdatePresence
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Commands\IUpdatePresence.cs
+    startLine: 32
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Commands
+  summary: Represents a command to update the presence of a user.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public interface IUpdatePresence : IGatewayCommand, IGatewayPayloadData
+    content.vb: >-
+      <PublicAPI>
+
+      Public Interface IUpdatePresence Inherits IGatewayCommand, IGatewayPayloadData
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence.Since
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence.Since
+  id: Since
+  parent: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence
+  langs:
+  - csharp
+  - vb
+  name: Since
+  nameWithType: IUpdatePresence.Since
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence.Since
+  type: Property
+  source:
+    id: Since
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Commands\IUpdatePresence.cs
+    startLine: 38
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Commands
+  summary: Gets the unix time in milliseconds of when the client went idle, or null if the client is not idle.
+  example: []
+  syntax:
+    content: DateTimeOffset? Since { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTimeOffset}
+    content.vb: ReadOnly Property Since As DateTimeOffset?
+  overload: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence.Since*
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence.Activities
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence.Activities
+  id: Activities
+  parent: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence
+  langs:
+  - csharp
+  - vb
+  name: Activities
+  nameWithType: IUpdatePresence.Activities
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence.Activities
+  type: Property
+  source:
+    id: Activities
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Commands\IUpdatePresence.cs
+    startLine: 43
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Commands
+  summary: Gets the user's new activities.
+  example: []
+  syntax:
+    content: IReadOnlyList<IActivity> Activities { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IActivity}
+    content.vb: ReadOnly Property Activities As IReadOnlyList(Of IActivity)
+  overload: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence.Activities*
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence.Status
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence.Status
+  id: Status
+  parent: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence
+  langs:
+  - csharp
+  - vb
+  name: Status
+  nameWithType: IUpdatePresence.Status
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence.Status
+  type: Property
+  source:
+    id: Status
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Commands\IUpdatePresence.cs
+    startLine: 48
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Commands
+  summary: Gets the user's status.
+  example: []
+  syntax:
+    content: UserStatus Status { get; }
+    parameters: []
+    return:
+      type: Remora.Discord.API.Abstractions.Objects.UserStatus
+    content.vb: ReadOnly Property Status As UserStatus
+  overload: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence.Status*
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence.IsAFK
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence.IsAFK
+  id: IsAFK
+  parent: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence
+  langs:
+  - csharp
+  - vb
+  name: IsAFK
+  nameWithType: IUpdatePresence.IsAFK
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence.IsAFK
+  type: Property
+  source:
+    id: IsAFK
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Commands\IUpdatePresence.cs
+    startLine: 53
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Commands
+  summary: Gets a value indicating whether the user is AFK.
+  example: []
+  syntax:
+    content: bool IsAFK { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsAFK As Boolean
+  overload: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence.IsAFK*
+references:
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands
+  commentId: N:Remora.Discord.API.Abstractions.Gateway.Commands
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Gateway.Commands
+  nameWithType: Remora.Discord.API.Abstractions.Gateway.Commands
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway.Commands
+    name: Commands
+    href: Remora.Discord.API.Abstractions.Gateway.Commands.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway.Commands
+    name: Commands
+    href: Remora.Discord.API.Abstractions.Gateway.Commands.html
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence.Since*
+  commentId: Overload:Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence.Since
+  href: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence.html#Remora_Discord_API_Abstractions_Gateway_Commands_IUpdatePresence_Since
+  name: Since
+  nameWithType: IUpdatePresence.Since
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence.Since
+- uid: System.Nullable{System.DateTimeOffset}
+  commentId: T:System.Nullable{System.DateTimeOffset}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  name: DateTimeOffset?
+  nameWithType: DateTimeOffset?
+  fullName: System.DateTimeOffset?
+  spec.csharp:
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  - name: '?'
+  spec.vb:
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence.Activities*
+  commentId: Overload:Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence.Activities
+  href: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence.html#Remora_Discord_API_Abstractions_Gateway_Commands_IUpdatePresence_Activities
+  name: Activities
+  nameWithType: IUpdatePresence.Activities
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence.Activities
+- uid: System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IActivity}
+  commentId: T:System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IActivity}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<IActivity>
+  nameWithType: IReadOnlyList<IActivity>
+  fullName: System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.IActivity>
+  nameWithType.vb: IReadOnlyList(Of IActivity)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.IActivity)
+  name.vb: IReadOnlyList(Of IActivity)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IActivity
+    name: IActivity
+    href: Remora.Discord.API.Abstractions.Objects.IActivity.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IActivity
+    name: IActivity
+    href: Remora.Discord.API.Abstractions.Objects.IActivity.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence.Status*
+  commentId: Overload:Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence.Status
+  href: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence.html#Remora_Discord_API_Abstractions_Gateway_Commands_IUpdatePresence_Status
+  name: Status
+  nameWithType: IUpdatePresence.Status
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence.Status
+- uid: Remora.Discord.API.Abstractions.Objects.UserStatus
+  commentId: T:Remora.Discord.API.Abstractions.Objects.UserStatus
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.UserStatus.html
+  name: UserStatus
+  nameWithType: UserStatus
+  fullName: Remora.Discord.API.Abstractions.Objects.UserStatus
+- uid: Remora.Discord.API.Abstractions.Objects
+  commentId: N:Remora.Discord.API.Abstractions.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Objects
+  nameWithType: Remora.Discord.API.Abstractions.Objects
+  fullName: Remora.Discord.API.Abstractions.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence.IsAFK*
+  commentId: Overload:Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence.IsAFK
+  href: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence.html#Remora_Discord_API_Abstractions_Gateway_Commands_IUpdatePresence_IsAFK
+  name: IsAFK
+  nameWithType: IUpdatePresence.IsAFK
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence.IsAFK
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

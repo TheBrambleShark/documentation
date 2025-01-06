@@ -1,0 +1,668 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestStageInstanceAPI
+  commentId: T:Remora.Discord.API.Abstractions.Rest.IDiscordRestStageInstanceAPI
+  id: IDiscordRestStageInstanceAPI
+  parent: Remora.Discord.API.Abstractions.Rest
+  children:
+  - Remora.Discord.API.Abstractions.Rest.IDiscordRestStageInstanceAPI.CreateStageInstanceAsync(Remora.Rest.Core.Snowflake,System.String,Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.StagePrivacyLevel},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{System.String},System.Threading.CancellationToken)
+  - Remora.Discord.API.Abstractions.Rest.IDiscordRestStageInstanceAPI.DeleteStageInstance(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{System.String},System.Threading.CancellationToken)
+  - Remora.Discord.API.Abstractions.Rest.IDiscordRestStageInstanceAPI.GetStageInstanceAsync(Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  - Remora.Discord.API.Abstractions.Rest.IDiscordRestStageInstanceAPI.ModifyStageInstanceAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.StagePrivacyLevel},Remora.Rest.Core.Optional{System.String},System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IDiscordRestStageInstanceAPI
+  nameWithType: IDiscordRestStageInstanceAPI
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestStageInstanceAPI
+  type: Interface
+  source:
+    id: IDiscordRestStageInstanceAPI
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Rest\IDiscordRestStageInstanceAPI.cs
+    startLine: 34
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Rest
+  summary: Represents the Discord Stage Instance API.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public interface IDiscordRestStageInstanceAPI
+    content.vb: >-
+      <PublicAPI>
+
+      Public Interface IDiscordRestStageInstanceAPI
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestStageInstanceAPI.CreateStageInstanceAsync(Remora.Rest.Core.Snowflake,System.String,Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.StagePrivacyLevel},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{System.String},System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.API.Abstractions.Rest.IDiscordRestStageInstanceAPI.CreateStageInstanceAsync(Remora.Rest.Core.Snowflake,System.String,Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.StagePrivacyLevel},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{System.String},System.Threading.CancellationToken)
+  id: CreateStageInstanceAsync(Remora.Rest.Core.Snowflake,System.String,Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.StagePrivacyLevel},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{System.String},System.Threading.CancellationToken)
+  parent: Remora.Discord.API.Abstractions.Rest.IDiscordRestStageInstanceAPI
+  langs:
+  - csharp
+  - vb
+  name: CreateStageInstanceAsync(Snowflake, string, Optional<StagePrivacyLevel>, Optional<bool>, Optional<Snowflake>, Optional<string>, CancellationToken)
+  nameWithType: IDiscordRestStageInstanceAPI.CreateStageInstanceAsync(Snowflake, string, Optional<StagePrivacyLevel>, Optional<bool>, Optional<Snowflake>, Optional<string>, CancellationToken)
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestStageInstanceAPI.CreateStageInstanceAsync(Remora.Rest.Core.Snowflake, string, Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.StagePrivacyLevel>, Remora.Rest.Core.Optional<bool>, Remora.Rest.Core.Optional<Remora.Rest.Core.Snowflake>, Remora.Rest.Core.Optional<string>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: CreateStageInstanceAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Rest\IDiscordRestStageInstanceAPI.cs
+    startLine: 50
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Rest
+  summary: Creates a new stage instance associated with the given stage channel.
+  example: []
+  syntax:
+    content: Task<Result<IStageInstance>> CreateStageInstanceAsync(Snowflake channelID, string topic, Optional<StagePrivacyLevel> privacyLevel = default, Optional<bool> sendStartNotification = default, Optional<Snowflake> guildScheduledEventID = default, Optional<string> reason = default, CancellationToken ct = default)
+    parameters:
+    - id: channelID
+      type: Remora.Rest.Core.Snowflake
+      description: The ID of the stage channel.
+    - id: topic
+      type: System.String
+      description: The topic of the stage instance (1-120 characters).
+    - id: privacyLevel
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.StagePrivacyLevel}
+      description: The privacy level of the stage instance.
+    - id: sendStartNotification
+      type: Remora.Rest.Core.Optional{System.Boolean}
+      description: Indicates whether @everyone should be notified that a stage instance has started.
+    - id: guildScheduledEventID
+      type: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+      description: The scheduled event associated with this stage instance.
+    - id: reason
+      type: Remora.Rest.Core.Optional{System.String}
+      description: The reason to mark the action in the audit log with.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IStageInstance}}
+      description: A result which may or may not have succeeded.
+    content.vb: Function CreateStageInstanceAsync(channelID As Snowflake, topic As String, privacyLevel As [Optional](Of StagePrivacyLevel) = Nothing, sendStartNotification As [Optional](Of Boolean) = Nothing, guildScheduledEventID As [Optional](Of Snowflake) = Nothing, reason As [Optional](Of String) = Nothing, ct As CancellationToken = Nothing) As Task(Of Result(Of IStageInstance))
+  overload: Remora.Discord.API.Abstractions.Rest.IDiscordRestStageInstanceAPI.CreateStageInstanceAsync*
+  nameWithType.vb: IDiscordRestStageInstanceAPI.CreateStageInstanceAsync(Snowflake, String, Optional(Of StagePrivacyLevel), Optional(Of Boolean), Optional(Of Snowflake), Optional(Of String), CancellationToken)
+  fullName.vb: Remora.Discord.API.Abstractions.Rest.IDiscordRestStageInstanceAPI.CreateStageInstanceAsync(Remora.Rest.Core.Snowflake, String, Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.StagePrivacyLevel), Remora.Rest.Core.Optional(Of Boolean), Remora.Rest.Core.Optional(Of Remora.Rest.Core.Snowflake), Remora.Rest.Core.Optional(Of String), System.Threading.CancellationToken)
+  name.vb: CreateStageInstanceAsync(Snowflake, String, Optional(Of StagePrivacyLevel), Optional(Of Boolean), Optional(Of Snowflake), Optional(Of String), CancellationToken)
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestStageInstanceAPI.GetStageInstanceAsync(Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.API.Abstractions.Rest.IDiscordRestStageInstanceAPI.GetStageInstanceAsync(Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  id: GetStageInstanceAsync(Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  parent: Remora.Discord.API.Abstractions.Rest.IDiscordRestStageInstanceAPI
+  langs:
+  - csharp
+  - vb
+  name: GetStageInstanceAsync(Snowflake, CancellationToken)
+  nameWithType: IDiscordRestStageInstanceAPI.GetStageInstanceAsync(Snowflake, CancellationToken)
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestStageInstanceAPI.GetStageInstanceAsync(Remora.Rest.Core.Snowflake, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: GetStageInstanceAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Rest\IDiscordRestStageInstanceAPI.cs
+    startLine: 67
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Rest
+  summary: Gets the stage instance associated with the given stage channel.
+  example: []
+  syntax:
+    content: Task<Result<IStageInstance>> GetStageInstanceAsync(Snowflake channelID, CancellationToken ct = default)
+    parameters:
+    - id: channelID
+      type: Remora.Rest.Core.Snowflake
+      description: The ID of the stage channel.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IStageInstance}}
+      description: A result which may or may not have succeeded.
+    content.vb: Function GetStageInstanceAsync(channelID As Snowflake, ct As CancellationToken = Nothing) As Task(Of Result(Of IStageInstance))
+  overload: Remora.Discord.API.Abstractions.Rest.IDiscordRestStageInstanceAPI.GetStageInstanceAsync*
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestStageInstanceAPI.ModifyStageInstanceAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.StagePrivacyLevel},Remora.Rest.Core.Optional{System.String},System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.API.Abstractions.Rest.IDiscordRestStageInstanceAPI.ModifyStageInstanceAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.StagePrivacyLevel},Remora.Rest.Core.Optional{System.String},System.Threading.CancellationToken)
+  id: ModifyStageInstanceAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.StagePrivacyLevel},Remora.Rest.Core.Optional{System.String},System.Threading.CancellationToken)
+  parent: Remora.Discord.API.Abstractions.Rest.IDiscordRestStageInstanceAPI
+  langs:
+  - csharp
+  - vb
+  name: ModifyStageInstanceAsync(Snowflake, Optional<string>, Optional<StagePrivacyLevel>, Optional<string>, CancellationToken)
+  nameWithType: IDiscordRestStageInstanceAPI.ModifyStageInstanceAsync(Snowflake, Optional<string>, Optional<StagePrivacyLevel>, Optional<string>, CancellationToken)
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestStageInstanceAPI.ModifyStageInstanceAsync(Remora.Rest.Core.Snowflake, Remora.Rest.Core.Optional<string>, Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.StagePrivacyLevel>, Remora.Rest.Core.Optional<string>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: ModifyStageInstanceAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Rest\IDiscordRestStageInstanceAPI.cs
+    startLine: 78
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Rest
+  summary: Modifies the stage instance of the given stage channel.
+  example: []
+  syntax:
+    content: Task<Result<IStageInstance>> ModifyStageInstanceAsync(Snowflake channelID, Optional<string> topic = default, Optional<StagePrivacyLevel> privacyLevel = default, Optional<string> reason = default, CancellationToken ct = default)
+    parameters:
+    - id: channelID
+      type: Remora.Rest.Core.Snowflake
+      description: The ID of the stage channel.
+    - id: topic
+      type: Remora.Rest.Core.Optional{System.String}
+      description: The topic of the stage instance (1-120 characters).
+    - id: privacyLevel
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.StagePrivacyLevel}
+      description: The privacy level of the stage instance.
+    - id: reason
+      type: Remora.Rest.Core.Optional{System.String}
+      description: The reason to mark the action in the audit log with.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IStageInstance}}
+      description: A result which may or may not have succeeded.
+    content.vb: Function ModifyStageInstanceAsync(channelID As Snowflake, topic As [Optional](Of String) = Nothing, privacyLevel As [Optional](Of StagePrivacyLevel) = Nothing, reason As [Optional](Of String) = Nothing, ct As CancellationToken = Nothing) As Task(Of Result(Of IStageInstance))
+  overload: Remora.Discord.API.Abstractions.Rest.IDiscordRestStageInstanceAPI.ModifyStageInstanceAsync*
+  nameWithType.vb: IDiscordRestStageInstanceAPI.ModifyStageInstanceAsync(Snowflake, Optional(Of String), Optional(Of StagePrivacyLevel), Optional(Of String), CancellationToken)
+  fullName.vb: Remora.Discord.API.Abstractions.Rest.IDiscordRestStageInstanceAPI.ModifyStageInstanceAsync(Remora.Rest.Core.Snowflake, Remora.Rest.Core.Optional(Of String), Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.StagePrivacyLevel), Remora.Rest.Core.Optional(Of String), System.Threading.CancellationToken)
+  name.vb: ModifyStageInstanceAsync(Snowflake, Optional(Of String), Optional(Of StagePrivacyLevel), Optional(Of String), CancellationToken)
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestStageInstanceAPI.DeleteStageInstance(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{System.String},System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.API.Abstractions.Rest.IDiscordRestStageInstanceAPI.DeleteStageInstance(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{System.String},System.Threading.CancellationToken)
+  id: DeleteStageInstance(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{System.String},System.Threading.CancellationToken)
+  parent: Remora.Discord.API.Abstractions.Rest.IDiscordRestStageInstanceAPI
+  langs:
+  - csharp
+  - vb
+  name: DeleteStageInstance(Snowflake, Optional<string>, CancellationToken)
+  nameWithType: IDiscordRestStageInstanceAPI.DeleteStageInstance(Snowflake, Optional<string>, CancellationToken)
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestStageInstanceAPI.DeleteStageInstance(Remora.Rest.Core.Snowflake, Remora.Rest.Core.Optional<string>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: DeleteStageInstance
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Rest\IDiscordRestStageInstanceAPI.cs
+    startLine: 94
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Rest
+  summary: Deletes the stage instance associated with the given stage channel.
+  example: []
+  syntax:
+    content: Task<Result> DeleteStageInstance(Snowflake channelID, Optional<string> reason = default, CancellationToken ct = default)
+    parameters:
+    - id: channelID
+      type: Remora.Rest.Core.Snowflake
+      description: The ID of the stage channel.
+    - id: reason
+      type: Remora.Rest.Core.Optional{System.String}
+      description: The reason to mark the action in the audit log with.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result}
+      description: A result which may or may not have succeeded.
+    content.vb: Function DeleteStageInstance(channelID As Snowflake, reason As [Optional](Of String) = Nothing, ct As CancellationToken = Nothing) As Task(Of Result)
+  overload: Remora.Discord.API.Abstractions.Rest.IDiscordRestStageInstanceAPI.DeleteStageInstance*
+  nameWithType.vb: IDiscordRestStageInstanceAPI.DeleteStageInstance(Snowflake, Optional(Of String), CancellationToken)
+  fullName.vb: Remora.Discord.API.Abstractions.Rest.IDiscordRestStageInstanceAPI.DeleteStageInstance(Remora.Rest.Core.Snowflake, Remora.Rest.Core.Optional(Of String), System.Threading.CancellationToken)
+  name.vb: DeleteStageInstance(Snowflake, Optional(Of String), CancellationToken)
+references:
+- uid: Remora.Discord.API.Abstractions.Rest
+  commentId: N:Remora.Discord.API.Abstractions.Rest
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Rest
+  nameWithType: Remora.Discord.API.Abstractions.Rest
+  fullName: Remora.Discord.API.Abstractions.Rest
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Rest
+    name: Rest
+    href: Remora.Discord.API.Abstractions.Rest.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Rest
+    name: Rest
+    href: Remora.Discord.API.Abstractions.Rest.html
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestStageInstanceAPI.CreateStageInstanceAsync*
+  commentId: Overload:Remora.Discord.API.Abstractions.Rest.IDiscordRestStageInstanceAPI.CreateStageInstanceAsync
+  href: Remora.Discord.API.Abstractions.Rest.IDiscordRestStageInstanceAPI.html#Remora_Discord_API_Abstractions_Rest_IDiscordRestStageInstanceAPI_CreateStageInstanceAsync_Remora_Rest_Core_Snowflake_System_String_Remora_Rest_Core_Optional_Remora_Discord_API_Abstractions_Objects_StagePrivacyLevel__Remora_Rest_Core_Optional_System_Boolean__Remora_Rest_Core_Optional_Remora_Rest_Core_Snowflake__Remora_Rest_Core_Optional_System_String__System_Threading_CancellationToken_
+  name: CreateStageInstanceAsync
+  nameWithType: IDiscordRestStageInstanceAPI.CreateStageInstanceAsync
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestStageInstanceAPI.CreateStageInstanceAsync
+- uid: Remora.Rest.Core.Snowflake
+  commentId: T:Remora.Rest.Core.Snowflake
+  parent: Remora.Rest.Core
+  isExternal: true
+  name: Snowflake
+  nameWithType: Snowflake
+  fullName: Remora.Rest.Core.Snowflake
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.StagePrivacyLevel}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.StagePrivacyLevel}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: Remora.Discord.API.Abstractions.Objects.StagePrivacyLevel.html
+  name: Optional<StagePrivacyLevel>
+  nameWithType: Optional<StagePrivacyLevel>
+  fullName: Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.StagePrivacyLevel>
+  nameWithType.vb: Optional(Of StagePrivacyLevel)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.StagePrivacyLevel)
+  name.vb: Optional(Of StagePrivacyLevel)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.StagePrivacyLevel
+    name: StagePrivacyLevel
+    href: Remora.Discord.API.Abstractions.Objects.StagePrivacyLevel.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.StagePrivacyLevel
+    name: StagePrivacyLevel
+    href: Remora.Discord.API.Abstractions.Objects.StagePrivacyLevel.html
+  - name: )
+- uid: Remora.Rest.Core.Optional{System.Boolean}
+  commentId: T:Remora.Rest.Core.Optional{System.Boolean}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: Optional<bool>
+  nameWithType: Optional<bool>
+  fullName: Remora.Rest.Core.Optional<bool>
+  nameWithType.vb: Optional(Of Boolean)
+  fullName.vb: Remora.Rest.Core.Optional(Of Boolean)
+  name.vb: Optional(Of Boolean)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  name: Optional<Snowflake>
+  nameWithType: Optional<Snowflake>
+  fullName: Remora.Rest.Core.Optional<Remora.Rest.Core.Snowflake>
+  nameWithType.vb: Optional(Of Snowflake)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Rest.Core.Snowflake)
+  name.vb: Optional(Of Snowflake)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+- uid: Remora.Rest.Core.Optional{System.String}
+  commentId: T:Remora.Rest.Core.Optional{System.String}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Optional<string>
+  nameWithType: Optional<string>
+  fullName: Remora.Rest.Core.Optional<string>
+  nameWithType.vb: Optional(Of String)
+  fullName.vb: Remora.Rest.Core.Optional(Of String)
+  name.vb: Optional(Of String)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IStageInstance}}
+  commentId: T:System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IStageInstance}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Result<IStageInstance>>
+  nameWithType: Task<Result<IStageInstance>>
+  fullName: System.Threading.Tasks.Task<Remora.Results.Result<Remora.Discord.API.Abstractions.Objects.IStageInstance>>
+  nameWithType.vb: Task(Of Result(Of IStageInstance))
+  fullName.vb: System.Threading.Tasks.Task(Of Remora.Results.Result(Of Remora.Discord.API.Abstractions.Objects.IStageInstance))
+  name.vb: Task(Of Result(Of IStageInstance))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Remora.Results.Result`1
+    name: Result
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IStageInstance
+    name: IStageInstance
+    href: Remora.Discord.API.Abstractions.Objects.IStageInstance.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Results.Result`1
+    name: Result
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IStageInstance
+    name: IStageInstance
+    href: Remora.Discord.API.Abstractions.Objects.IStageInstance.html
+  - name: )
+  - name: )
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Rest.Core.Optional`1
+  commentId: T:Remora.Rest.Core.Optional`1
+  isExternal: true
+  name: Optional<TValue>
+  nameWithType: Optional<TValue>
+  fullName: Remora.Rest.Core.Optional<TValue>
+  nameWithType.vb: Optional(Of TValue)
+  fullName.vb: Remora.Rest.Core.Optional(Of TValue)
+  name.vb: Optional(Of TValue)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestStageInstanceAPI.GetStageInstanceAsync*
+  commentId: Overload:Remora.Discord.API.Abstractions.Rest.IDiscordRestStageInstanceAPI.GetStageInstanceAsync
+  href: Remora.Discord.API.Abstractions.Rest.IDiscordRestStageInstanceAPI.html#Remora_Discord_API_Abstractions_Rest_IDiscordRestStageInstanceAPI_GetStageInstanceAsync_Remora_Rest_Core_Snowflake_System_Threading_CancellationToken_
+  name: GetStageInstanceAsync
+  nameWithType: IDiscordRestStageInstanceAPI.GetStageInstanceAsync
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestStageInstanceAPI.GetStageInstanceAsync
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestStageInstanceAPI.ModifyStageInstanceAsync*
+  commentId: Overload:Remora.Discord.API.Abstractions.Rest.IDiscordRestStageInstanceAPI.ModifyStageInstanceAsync
+  href: Remora.Discord.API.Abstractions.Rest.IDiscordRestStageInstanceAPI.html#Remora_Discord_API_Abstractions_Rest_IDiscordRestStageInstanceAPI_ModifyStageInstanceAsync_Remora_Rest_Core_Snowflake_Remora_Rest_Core_Optional_System_String__Remora_Rest_Core_Optional_Remora_Discord_API_Abstractions_Objects_StagePrivacyLevel__Remora_Rest_Core_Optional_System_String__System_Threading_CancellationToken_
+  name: ModifyStageInstanceAsync
+  nameWithType: IDiscordRestStageInstanceAPI.ModifyStageInstanceAsync
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestStageInstanceAPI.ModifyStageInstanceAsync
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestStageInstanceAPI.DeleteStageInstance*
+  commentId: Overload:Remora.Discord.API.Abstractions.Rest.IDiscordRestStageInstanceAPI.DeleteStageInstance
+  href: Remora.Discord.API.Abstractions.Rest.IDiscordRestStageInstanceAPI.html#Remora_Discord_API_Abstractions_Rest_IDiscordRestStageInstanceAPI_DeleteStageInstance_Remora_Rest_Core_Snowflake_Remora_Rest_Core_Optional_System_String__System_Threading_CancellationToken_
+  name: DeleteStageInstance
+  nameWithType: IDiscordRestStageInstanceAPI.DeleteStageInstance
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestStageInstanceAPI.DeleteStageInstance
+- uid: System.Threading.Tasks.Task{Remora.Results.Result}
+  commentId: T:System.Threading.Tasks.Task{Remora.Results.Result}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Result>
+  nameWithType: Task<Result>
+  fullName: System.Threading.Tasks.Task<Remora.Results.Result>
+  nameWithType.vb: Task(Of Result)
+  fullName.vb: System.Threading.Tasks.Task(Of Remora.Results.Result)
+  name.vb: Task(Of Result)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Remora.Results.Result
+    name: Result
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Results.Result
+    name: Result
+    isExternal: true
+  - name: )

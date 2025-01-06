@@ -1,0 +1,808 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Objects.SKU
+  commentId: T:Remora.Discord.API.Objects.SKU
+  id: SKU
+  parent: Remora.Discord.API.Objects
+  children:
+  - Remora.Discord.API.Objects.SKU.#ctor(Remora.Rest.Core.Snowflake,Remora.Discord.API.Abstractions.Objects.SKUType,Remora.Rest.Core.Snowflake,System.String,System.String,Remora.Discord.API.Abstractions.Objects.SKUFlags)
+  - Remora.Discord.API.Objects.SKU.ApplicationID
+  - Remora.Discord.API.Objects.SKU.Flags
+  - Remora.Discord.API.Objects.SKU.ID
+  - Remora.Discord.API.Objects.SKU.Name
+  - Remora.Discord.API.Objects.SKU.Slug
+  - Remora.Discord.API.Objects.SKU.Type
+  langs:
+  - csharp
+  - vb
+  name: SKU
+  nameWithType: SKU
+  fullName: Remora.Discord.API.Objects.SKU
+  type: Class
+  source:
+    id: SKU
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Monetization\SKU.cs
+    startLine: 29
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Supports all classes in the .NET class hierarchy and provides low-level services to derived classes. This is the ultimate base class of all .NET classes; it is the root of the type hierarchy.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public record SKU : ISKU, IEquatable<SKU>
+    content.vb: >-
+      <PublicAPI>
+
+      Public Class SKU Implements ISKU, IEquatable(Of SKU)
+  inheritance:
+  - System.Object
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.ISKU
+  - System.IEquatable{Remora.Discord.API.Objects.SKU}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Objects.SKU.#ctor(Remora.Rest.Core.Snowflake,Remora.Discord.API.Abstractions.Objects.SKUType,Remora.Rest.Core.Snowflake,System.String,System.String,Remora.Discord.API.Abstractions.Objects.SKUFlags)
+  commentId: M:Remora.Discord.API.Objects.SKU.#ctor(Remora.Rest.Core.Snowflake,Remora.Discord.API.Abstractions.Objects.SKUType,Remora.Rest.Core.Snowflake,System.String,System.String,Remora.Discord.API.Abstractions.Objects.SKUFlags)
+  id: '#ctor(Remora.Rest.Core.Snowflake,Remora.Discord.API.Abstractions.Objects.SKUType,Remora.Rest.Core.Snowflake,System.String,System.String,Remora.Discord.API.Abstractions.Objects.SKUFlags)'
+  parent: Remora.Discord.API.Objects.SKU
+  langs:
+  - csharp
+  - vb
+  name: SKU(Snowflake, SKUType, Snowflake, string, string, SKUFlags)
+  nameWithType: SKU.SKU(Snowflake, SKUType, Snowflake, string, string, SKUFlags)
+  fullName: Remora.Discord.API.Objects.SKU.SKU(Remora.Rest.Core.Snowflake, Remora.Discord.API.Abstractions.Objects.SKUType, Remora.Rest.Core.Snowflake, string, string, Remora.Discord.API.Abstractions.Objects.SKUFlags)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Monetization\SKU.cs
+    startLine: 29
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  example: []
+  syntax:
+    content: public SKU(Snowflake ID, SKUType Type, Snowflake ApplicationID, string Name, string Slug, SKUFlags Flags)
+    parameters:
+    - id: ID
+      type: Remora.Rest.Core.Snowflake
+    - id: Type
+      type: Remora.Discord.API.Abstractions.Objects.SKUType
+    - id: ApplicationID
+      type: Remora.Rest.Core.Snowflake
+    - id: Name
+      type: System.String
+    - id: Slug
+      type: System.String
+    - id: Flags
+      type: Remora.Discord.API.Abstractions.Objects.SKUFlags
+    content.vb: Public Sub New(ID As Snowflake, Type As SKUType, ApplicationID As Snowflake, Name As String, Slug As String, Flags As SKUFlags)
+  overload: Remora.Discord.API.Objects.SKU.#ctor*
+  nameWithType.vb: SKU.New(Snowflake, SKUType, Snowflake, String, String, SKUFlags)
+  fullName.vb: Remora.Discord.API.Objects.SKU.New(Remora.Rest.Core.Snowflake, Remora.Discord.API.Abstractions.Objects.SKUType, Remora.Rest.Core.Snowflake, String, String, Remora.Discord.API.Abstractions.Objects.SKUFlags)
+  name.vb: New(Snowflake, SKUType, Snowflake, String, String, SKUFlags)
+- uid: Remora.Discord.API.Objects.SKU.ID
+  commentId: P:Remora.Discord.API.Objects.SKU.ID
+  id: ID
+  parent: Remora.Discord.API.Objects.SKU
+  langs:
+  - csharp
+  - vb
+  name: ID
+  nameWithType: SKU.ID
+  fullName: Remora.Discord.API.Objects.SKU.ID
+  type: Property
+  source:
+    id: ID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Monetization\SKU.cs
+    startLine: 30
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the ID of the SKU.
+  example: []
+  syntax:
+    content: public Snowflake ID { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Snowflake
+    content.vb: Public Property ID As Snowflake
+  overload: Remora.Discord.API.Objects.SKU.ID*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.ISKU.ID
+- uid: Remora.Discord.API.Objects.SKU.Type
+  commentId: P:Remora.Discord.API.Objects.SKU.Type
+  id: Type
+  parent: Remora.Discord.API.Objects.SKU
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: SKU.Type
+  fullName: Remora.Discord.API.Objects.SKU.Type
+  type: Property
+  source:
+    id: Type
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Monetization\SKU.cs
+    startLine: 30
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the type of the SKU.
+  example: []
+  syntax:
+    content: public SKUType Type { get; init; }
+    parameters: []
+    return:
+      type: Remora.Discord.API.Abstractions.Objects.SKUType
+    content.vb: Public Property Type As SKUType
+  overload: Remora.Discord.API.Objects.SKU.Type*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.ISKU.Type
+- uid: Remora.Discord.API.Objects.SKU.ApplicationID
+  commentId: P:Remora.Discord.API.Objects.SKU.ApplicationID
+  id: ApplicationID
+  parent: Remora.Discord.API.Objects.SKU
+  langs:
+  - csharp
+  - vb
+  name: ApplicationID
+  nameWithType: SKU.ApplicationID
+  fullName: Remora.Discord.API.Objects.SKU.ApplicationID
+  type: Property
+  source:
+    id: ApplicationID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Monetization\SKU.cs
+    startLine: 30
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the ID of the parent application.
+  example: []
+  syntax:
+    content: public Snowflake ApplicationID { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Snowflake
+    content.vb: Public Property ApplicationID As Snowflake
+  overload: Remora.Discord.API.Objects.SKU.ApplicationID*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.ISKU.ApplicationID
+- uid: Remora.Discord.API.Objects.SKU.Name
+  commentId: P:Remora.Discord.API.Objects.SKU.Name
+  id: Name
+  parent: Remora.Discord.API.Objects.SKU
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: SKU.Name
+  fullName: Remora.Discord.API.Objects.SKU.Name
+  type: Property
+  source:
+    id: Name
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Monetization\SKU.cs
+    startLine: 30
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the customer-facing name of the premium offering.
+  example: []
+  syntax:
+    content: public string Name { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: Remora.Discord.API.Objects.SKU.Name*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.ISKU.Name
+- uid: Remora.Discord.API.Objects.SKU.Slug
+  commentId: P:Remora.Discord.API.Objects.SKU.Slug
+  id: Slug
+  parent: Remora.Discord.API.Objects.SKU
+  langs:
+  - csharp
+  - vb
+  name: Slug
+  nameWithType: SKU.Slug
+  fullName: Remora.Discord.API.Objects.SKU.Slug
+  type: Property
+  source:
+    id: Slug
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Monetization\SKU.cs
+    startLine: 30
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the system-generated URL slug based on the SKU's name.
+  example: []
+  syntax:
+    content: public string Slug { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Slug As String
+  overload: Remora.Discord.API.Objects.SKU.Slug*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.ISKU.Slug
+- uid: Remora.Discord.API.Objects.SKU.Flags
+  commentId: P:Remora.Discord.API.Objects.SKU.Flags
+  id: Flags
+  parent: Remora.Discord.API.Objects.SKU
+  langs:
+  - csharp
+  - vb
+  name: Flags
+  nameWithType: SKU.Flags
+  fullName: Remora.Discord.API.Objects.SKU.Flags
+  type: Property
+  source:
+    id: Flags
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Monetization\SKU.cs
+    startLine: 30
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the flags for this SKU.
+  example: []
+  syntax:
+    content: public SKUFlags Flags { get; init; }
+    parameters: []
+    return:
+      type: Remora.Discord.API.Abstractions.Objects.SKUFlags
+    content.vb: Public Property Flags As SKUFlags
+  overload: Remora.Discord.API.Objects.SKU.Flags*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.ISKU.Flags
+references:
+- uid: Remora.Discord.API.Objects
+  commentId: N:Remora.Discord.API.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Objects
+  nameWithType: Remora.Discord.API.Objects
+  fullName: Remora.Discord.API.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Objects
+    name: Objects
+    href: Remora.Discord.API.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Objects
+    name: Objects
+    href: Remora.Discord.API.Objects.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Remora.Discord.API.Abstractions.Objects.ISKU
+  commentId: T:Remora.Discord.API.Abstractions.Objects.ISKU
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.ISKU.html
+  name: ISKU
+  nameWithType: ISKU
+  fullName: Remora.Discord.API.Abstractions.Objects.ISKU
+- uid: System.IEquatable{Remora.Discord.API.Objects.SKU}
+  commentId: T:System.IEquatable{Remora.Discord.API.Objects.SKU}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<SKU>
+  nameWithType: IEquatable<SKU>
+  fullName: System.IEquatable<Remora.Discord.API.Objects.SKU>
+  nameWithType.vb: IEquatable(Of SKU)
+  fullName.vb: System.IEquatable(Of Remora.Discord.API.Objects.SKU)
+  name.vb: IEquatable(Of SKU)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Remora.Discord.API.Objects.SKU
+    name: SKU
+    href: Remora.Discord.API.Objects.SKU.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Objects.SKU
+    name: SKU
+    href: Remora.Discord.API.Objects.SKU.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.API.Abstractions.Objects
+  commentId: N:Remora.Discord.API.Abstractions.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Objects
+  nameWithType: Remora.Discord.API.Abstractions.Objects
+  fullName: Remora.Discord.API.Abstractions.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Remora.Discord.API.Objects.SKU.#ctor*
+  commentId: Overload:Remora.Discord.API.Objects.SKU.#ctor
+  href: Remora.Discord.API.Objects.SKU.html#Remora_Discord_API_Objects_SKU__ctor_Remora_Rest_Core_Snowflake_Remora_Discord_API_Abstractions_Objects_SKUType_Remora_Rest_Core_Snowflake_System_String_System_String_Remora_Discord_API_Abstractions_Objects_SKUFlags_
+  name: SKU
+  nameWithType: SKU.SKU
+  fullName: Remora.Discord.API.Objects.SKU.SKU
+  nameWithType.vb: SKU.New
+  fullName.vb: Remora.Discord.API.Objects.SKU.New
+  name.vb: New
+- uid: Remora.Rest.Core.Snowflake
+  commentId: T:Remora.Rest.Core.Snowflake
+  parent: Remora.Rest.Core
+  isExternal: true
+  name: Snowflake
+  nameWithType: Snowflake
+  fullName: Remora.Rest.Core.Snowflake
+- uid: Remora.Discord.API.Abstractions.Objects.SKUType
+  commentId: T:Remora.Discord.API.Abstractions.Objects.SKUType
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.SKUType.html
+  name: SKUType
+  nameWithType: SKUType
+  fullName: Remora.Discord.API.Abstractions.Objects.SKUType
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Remora.Discord.API.Abstractions.Objects.SKUFlags
+  commentId: T:Remora.Discord.API.Abstractions.Objects.SKUFlags
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.SKUFlags.html
+  name: SKUFlags
+  nameWithType: SKUFlags
+  fullName: Remora.Discord.API.Abstractions.Objects.SKUFlags
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+- uid: Remora.Discord.API.Objects.SKU.ID*
+  commentId: Overload:Remora.Discord.API.Objects.SKU.ID
+  href: Remora.Discord.API.Objects.SKU.html#Remora_Discord_API_Objects_SKU_ID
+  name: ID
+  nameWithType: SKU.ID
+  fullName: Remora.Discord.API.Objects.SKU.ID
+- uid: Remora.Discord.API.Abstractions.Objects.ISKU.ID
+  commentId: P:Remora.Discord.API.Abstractions.Objects.ISKU.ID
+  parent: Remora.Discord.API.Abstractions.Objects.ISKU
+  href: Remora.Discord.API.Abstractions.Objects.ISKU.html#Remora_Discord_API_Abstractions_Objects_ISKU_ID
+  name: ID
+  nameWithType: ISKU.ID
+  fullName: Remora.Discord.API.Abstractions.Objects.ISKU.ID
+- uid: Remora.Discord.API.Objects.SKU.Type*
+  commentId: Overload:Remora.Discord.API.Objects.SKU.Type
+  href: Remora.Discord.API.Objects.SKU.html#Remora_Discord_API_Objects_SKU_Type
+  name: Type
+  nameWithType: SKU.Type
+  fullName: Remora.Discord.API.Objects.SKU.Type
+- uid: Remora.Discord.API.Abstractions.Objects.ISKU.Type
+  commentId: P:Remora.Discord.API.Abstractions.Objects.ISKU.Type
+  parent: Remora.Discord.API.Abstractions.Objects.ISKU
+  href: Remora.Discord.API.Abstractions.Objects.ISKU.html#Remora_Discord_API_Abstractions_Objects_ISKU_Type
+  name: Type
+  nameWithType: ISKU.Type
+  fullName: Remora.Discord.API.Abstractions.Objects.ISKU.Type
+- uid: Remora.Discord.API.Objects.SKU.ApplicationID*
+  commentId: Overload:Remora.Discord.API.Objects.SKU.ApplicationID
+  href: Remora.Discord.API.Objects.SKU.html#Remora_Discord_API_Objects_SKU_ApplicationID
+  name: ApplicationID
+  nameWithType: SKU.ApplicationID
+  fullName: Remora.Discord.API.Objects.SKU.ApplicationID
+- uid: Remora.Discord.API.Abstractions.Objects.ISKU.ApplicationID
+  commentId: P:Remora.Discord.API.Abstractions.Objects.ISKU.ApplicationID
+  parent: Remora.Discord.API.Abstractions.Objects.ISKU
+  href: Remora.Discord.API.Abstractions.Objects.ISKU.html#Remora_Discord_API_Abstractions_Objects_ISKU_ApplicationID
+  name: ApplicationID
+  nameWithType: ISKU.ApplicationID
+  fullName: Remora.Discord.API.Abstractions.Objects.ISKU.ApplicationID
+- uid: Remora.Discord.API.Objects.SKU.Name*
+  commentId: Overload:Remora.Discord.API.Objects.SKU.Name
+  href: Remora.Discord.API.Objects.SKU.html#Remora_Discord_API_Objects_SKU_Name
+  name: Name
+  nameWithType: SKU.Name
+  fullName: Remora.Discord.API.Objects.SKU.Name
+- uid: Remora.Discord.API.Abstractions.Objects.ISKU.Name
+  commentId: P:Remora.Discord.API.Abstractions.Objects.ISKU.Name
+  parent: Remora.Discord.API.Abstractions.Objects.ISKU
+  href: Remora.Discord.API.Abstractions.Objects.ISKU.html#Remora_Discord_API_Abstractions_Objects_ISKU_Name
+  name: Name
+  nameWithType: ISKU.Name
+  fullName: Remora.Discord.API.Abstractions.Objects.ISKU.Name
+- uid: Remora.Discord.API.Objects.SKU.Slug*
+  commentId: Overload:Remora.Discord.API.Objects.SKU.Slug
+  href: Remora.Discord.API.Objects.SKU.html#Remora_Discord_API_Objects_SKU_Slug
+  name: Slug
+  nameWithType: SKU.Slug
+  fullName: Remora.Discord.API.Objects.SKU.Slug
+- uid: Remora.Discord.API.Abstractions.Objects.ISKU.Slug
+  commentId: P:Remora.Discord.API.Abstractions.Objects.ISKU.Slug
+  parent: Remora.Discord.API.Abstractions.Objects.ISKU
+  href: Remora.Discord.API.Abstractions.Objects.ISKU.html#Remora_Discord_API_Abstractions_Objects_ISKU_Slug
+  name: Slug
+  nameWithType: ISKU.Slug
+  fullName: Remora.Discord.API.Abstractions.Objects.ISKU.Slug
+- uid: Remora.Discord.API.Objects.SKU.Flags*
+  commentId: Overload:Remora.Discord.API.Objects.SKU.Flags
+  href: Remora.Discord.API.Objects.SKU.html#Remora_Discord_API_Objects_SKU_Flags
+  name: Flags
+  nameWithType: SKU.Flags
+  fullName: Remora.Discord.API.Objects.SKU.Flags
+- uid: Remora.Discord.API.Abstractions.Objects.ISKU.Flags
+  commentId: P:Remora.Discord.API.Abstractions.Objects.ISKU.Flags
+  parent: Remora.Discord.API.Abstractions.Objects.ISKU
+  href: Remora.Discord.API.Abstractions.Objects.ISKU.html#Remora_Discord_API_Abstractions_Objects_ISKU_Flags
+  name: Flags
+  nameWithType: ISKU.Flags
+  fullName: Remora.Discord.API.Abstractions.Objects.ISKU.Flags

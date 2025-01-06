@@ -1,0 +1,513 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.Caching.Abstractions.Services.ICacheProvider
+  commentId: T:Remora.Discord.Caching.Abstractions.Services.ICacheProvider
+  id: ICacheProvider
+  parent: Remora.Discord.Caching.Abstractions.Services
+  children:
+  - Remora.Discord.Caching.Abstractions.Services.ICacheProvider.CacheAsync``1(Remora.Discord.Caching.Abstractions.CacheKey,``0,Remora.Discord.Caching.Abstractions.CacheEntryOptions,System.Threading.CancellationToken)
+  - Remora.Discord.Caching.Abstractions.Services.ICacheProvider.EvictAsync(Remora.Discord.Caching.Abstractions.CacheKey,System.Threading.CancellationToken)
+  - Remora.Discord.Caching.Abstractions.Services.ICacheProvider.EvictAsync``1(Remora.Discord.Caching.Abstractions.CacheKey,System.Threading.CancellationToken)
+  - Remora.Discord.Caching.Abstractions.Services.ICacheProvider.RetrieveAsync``1(Remora.Discord.Caching.Abstractions.CacheKey,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: ICacheProvider
+  nameWithType: ICacheProvider
+  fullName: Remora.Discord.Caching.Abstractions.Services.ICacheProvider
+  type: Interface
+  source:
+    id: ICacheProvider
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Caching.Abstractions\Services\ICacheProvider.cs
+    startLine: 32
+  assemblies:
+  - Remora.Discord.Caching.Abstractions
+  namespace: Remora.Discord.Caching.Abstractions.Services
+  summary: Represents an abstraction between a cache service and it's backing store.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public interface ICacheProvider
+    content.vb: >-
+      <PublicAPI>
+
+      Public Interface ICacheProvider
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.Caching.Abstractions.Services.ICacheProvider.CacheAsync``1(Remora.Discord.Caching.Abstractions.CacheKey,``0,Remora.Discord.Caching.Abstractions.CacheEntryOptions,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Caching.Abstractions.Services.ICacheProvider.CacheAsync``1(Remora.Discord.Caching.Abstractions.CacheKey,``0,Remora.Discord.Caching.Abstractions.CacheEntryOptions,System.Threading.CancellationToken)
+  id: CacheAsync``1(Remora.Discord.Caching.Abstractions.CacheKey,``0,Remora.Discord.Caching.Abstractions.CacheEntryOptions,System.Threading.CancellationToken)
+  parent: Remora.Discord.Caching.Abstractions.Services.ICacheProvider
+  langs:
+  - csharp
+  - vb
+  name: CacheAsync<TInstance>(CacheKey, TInstance, CacheEntryOptions, CancellationToken)
+  nameWithType: ICacheProvider.CacheAsync<TInstance>(CacheKey, TInstance, CacheEntryOptions, CancellationToken)
+  fullName: Remora.Discord.Caching.Abstractions.Services.ICacheProvider.CacheAsync<TInstance>(Remora.Discord.Caching.Abstractions.CacheKey, TInstance, Remora.Discord.Caching.Abstractions.CacheEntryOptions, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: CacheAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Caching.Abstractions\Services\ICacheProvider.cs
+    startLine: 47
+  assemblies:
+  - Remora.Discord.Caching.Abstractions
+  namespace: Remora.Discord.Caching.Abstractions.Services
+  summary: Caches a value in the backing store.
+  remarks: >-
+    Absolute and sliding expirations may be handled differently (or not at all)
+        depending on the implementation, and are simply a hint to the implementation that the
+        value should have a pre-determined lifetime in it's backing-store.
+  example: []
+  syntax:
+    content: 'ValueTask CacheAsync<TInstance>(CacheKey key, TInstance instance, CacheEntryOptions options, CancellationToken ct = default) where TInstance : class'
+    parameters:
+    - id: key
+      type: Remora.Discord.Caching.Abstractions.CacheKey
+      description: The key to cache the value with.
+    - id: instance
+      type: '{TInstance}'
+      description: The instance of the object to cache.
+    - id: options
+      type: Remora.Discord.Caching.Abstractions.CacheEntryOptions
+      description: The options of the value to cache.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: A cancellation token to cancel the operation.
+    typeParameters:
+    - id: TInstance
+      description: The type to cache.
+    return:
+      type: System.Threading.Tasks.ValueTask
+      description: A <xref href="System.Threading.Tasks.ValueTask" data-throw-if-not-resolved="false"></xref> representing the result of the potentially asynchronous operation.
+    content.vb: Function CacheAsync(Of TInstance As Class)(key As CacheKey, instance As TInstance, options As CacheEntryOptions, ct As CancellationToken = Nothing) As ValueTask
+  overload: Remora.Discord.Caching.Abstractions.Services.ICacheProvider.CacheAsync*
+  nameWithType.vb: ICacheProvider.CacheAsync(Of TInstance)(CacheKey, TInstance, CacheEntryOptions, CancellationToken)
+  fullName.vb: Remora.Discord.Caching.Abstractions.Services.ICacheProvider.CacheAsync(Of TInstance)(Remora.Discord.Caching.Abstractions.CacheKey, TInstance, Remora.Discord.Caching.Abstractions.CacheEntryOptions, System.Threading.CancellationToken)
+  name.vb: CacheAsync(Of TInstance)(CacheKey, TInstance, CacheEntryOptions, CancellationToken)
+- uid: Remora.Discord.Caching.Abstractions.Services.ICacheProvider.RetrieveAsync``1(Remora.Discord.Caching.Abstractions.CacheKey,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Caching.Abstractions.Services.ICacheProvider.RetrieveAsync``1(Remora.Discord.Caching.Abstractions.CacheKey,System.Threading.CancellationToken)
+  id: RetrieveAsync``1(Remora.Discord.Caching.Abstractions.CacheKey,System.Threading.CancellationToken)
+  parent: Remora.Discord.Caching.Abstractions.Services.ICacheProvider
+  langs:
+  - csharp
+  - vb
+  name: RetrieveAsync<TInstance>(CacheKey, CancellationToken)
+  nameWithType: ICacheProvider.RetrieveAsync<TInstance>(CacheKey, CancellationToken)
+  fullName: Remora.Discord.Caching.Abstractions.Services.ICacheProvider.RetrieveAsync<TInstance>(Remora.Discord.Caching.Abstractions.CacheKey, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: RetrieveAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Caching.Abstractions\Services\ICacheProvider.cs
+    startLine: 63
+  assemblies:
+  - Remora.Discord.Caching.Abstractions
+  namespace: Remora.Discord.Caching.Abstractions.Services
+  summary: Retrieves a value from the backing store.
+  example: []
+  syntax:
+    content: 'ValueTask<Result<TInstance>> RetrieveAsync<TInstance>(CacheKey key, CancellationToken ct = default) where TInstance : class'
+    parameters:
+    - id: key
+      type: Remora.Discord.Caching.Abstractions.CacheKey
+      description: The key to retrieve a potential value from the backing store.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: A cancellation token to cancel the operation.
+    typeParameters:
+    - id: TInstance
+      description: The type to return from the backing store, if it exists.
+    return:
+      type: System.Threading.Tasks.ValueTask{Remora.Results.Result{{TInstance}}}
+      description: A <xref href="System.Threading.Tasks.ValueTask" data-throw-if-not-resolved="false"></xref> representing the result of the potentially asynchronous action.
+    content.vb: Function RetrieveAsync(Of TInstance As Class)(key As CacheKey, ct As CancellationToken = Nothing) As ValueTask(Of Result(Of TInstance))
+  overload: Remora.Discord.Caching.Abstractions.Services.ICacheProvider.RetrieveAsync*
+  nameWithType.vb: ICacheProvider.RetrieveAsync(Of TInstance)(CacheKey, CancellationToken)
+  fullName.vb: Remora.Discord.Caching.Abstractions.Services.ICacheProvider.RetrieveAsync(Of TInstance)(Remora.Discord.Caching.Abstractions.CacheKey, System.Threading.CancellationToken)
+  name.vb: RetrieveAsync(Of TInstance)(CacheKey, CancellationToken)
+- uid: Remora.Discord.Caching.Abstractions.Services.ICacheProvider.EvictAsync(Remora.Discord.Caching.Abstractions.CacheKey,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Caching.Abstractions.Services.ICacheProvider.EvictAsync(Remora.Discord.Caching.Abstractions.CacheKey,System.Threading.CancellationToken)
+  id: EvictAsync(Remora.Discord.Caching.Abstractions.CacheKey,System.Threading.CancellationToken)
+  parent: Remora.Discord.Caching.Abstractions.Services.ICacheProvider
+  langs:
+  - csharp
+  - vb
+  name: EvictAsync(CacheKey, CancellationToken)
+  nameWithType: ICacheProvider.EvictAsync(CacheKey, CancellationToken)
+  fullName: Remora.Discord.Caching.Abstractions.Services.ICacheProvider.EvictAsync(Remora.Discord.Caching.Abstractions.CacheKey, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: EvictAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Caching.Abstractions\Services\ICacheProvider.cs
+    startLine: 72
+  assemblies:
+  - Remora.Discord.Caching.Abstractions
+  namespace: Remora.Discord.Caching.Abstractions.Services
+  summary: Evicts a key from the backing store.
+  example: []
+  syntax:
+    content: ValueTask<Result> EvictAsync(CacheKey key, CancellationToken ct = default)
+    parameters:
+    - id: key
+      type: Remora.Discord.Caching.Abstractions.CacheKey
+      description: The key to evict from the backing store.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: A cancellation token to cancel the operation.
+    return:
+      type: System.Threading.Tasks.ValueTask{Remora.Results.Result}
+      description: A <xref href="System.Threading.Tasks.ValueTask" data-throw-if-not-resolved="false"></xref> representing the result of the potentially asynchronous action.
+    content.vb: Function EvictAsync(key As CacheKey, ct As CancellationToken = Nothing) As ValueTask(Of Result)
+  overload: Remora.Discord.Caching.Abstractions.Services.ICacheProvider.EvictAsync*
+- uid: Remora.Discord.Caching.Abstractions.Services.ICacheProvider.EvictAsync``1(Remora.Discord.Caching.Abstractions.CacheKey,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Caching.Abstractions.Services.ICacheProvider.EvictAsync``1(Remora.Discord.Caching.Abstractions.CacheKey,System.Threading.CancellationToken)
+  id: EvictAsync``1(Remora.Discord.Caching.Abstractions.CacheKey,System.Threading.CancellationToken)
+  parent: Remora.Discord.Caching.Abstractions.Services.ICacheProvider
+  langs:
+  - csharp
+  - vb
+  name: EvictAsync<TInstance>(CacheKey, CancellationToken)
+  nameWithType: ICacheProvider.EvictAsync<TInstance>(CacheKey, CancellationToken)
+  fullName: Remora.Discord.Caching.Abstractions.Services.ICacheProvider.EvictAsync<TInstance>(Remora.Discord.Caching.Abstractions.CacheKey, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: EvictAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Caching.Abstractions\Services\ICacheProvider.cs
+    startLine: 81
+  assemblies:
+  - Remora.Discord.Caching.Abstractions
+  namespace: Remora.Discord.Caching.Abstractions.Services
+  summary: Evicts a key from the backing store, returning its current value if it exists.
+  example: []
+  syntax:
+    content: 'ValueTask<Result<TInstance>> EvictAsync<TInstance>(CacheKey key, CancellationToken ct = default) where TInstance : class'
+    parameters:
+    - id: key
+      type: Remora.Discord.Caching.Abstractions.CacheKey
+      description: The key to evict from the backing store.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: A cancellation token to cancel the operation.
+    typeParameters:
+    - id: TInstance
+      description: The type to return from the backing store, if it exists.
+    return:
+      type: System.Threading.Tasks.ValueTask{Remora.Results.Result{{TInstance}}}
+      description: A <xref href="System.Threading.Tasks.ValueTask" data-throw-if-not-resolved="false"></xref> representing the result of the potentially asynchronous action.
+    content.vb: Function EvictAsync(Of TInstance As Class)(key As CacheKey, ct As CancellationToken = Nothing) As ValueTask(Of Result(Of TInstance))
+  overload: Remora.Discord.Caching.Abstractions.Services.ICacheProvider.EvictAsync*
+  nameWithType.vb: ICacheProvider.EvictAsync(Of TInstance)(CacheKey, CancellationToken)
+  fullName.vb: Remora.Discord.Caching.Abstractions.Services.ICacheProvider.EvictAsync(Of TInstance)(Remora.Discord.Caching.Abstractions.CacheKey, System.Threading.CancellationToken)
+  name.vb: EvictAsync(Of TInstance)(CacheKey, CancellationToken)
+references:
+- uid: Remora.Discord.Caching.Abstractions.Services
+  commentId: N:Remora.Discord.Caching.Abstractions.Services
+  href: Remora.html
+  name: Remora.Discord.Caching.Abstractions.Services
+  nameWithType: Remora.Discord.Caching.Abstractions.Services
+  fullName: Remora.Discord.Caching.Abstractions.Services
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Caching
+    name: Caching
+    href: Remora.Discord.Caching.html
+  - name: .
+  - uid: Remora.Discord.Caching.Abstractions
+    name: Abstractions
+    href: Remora.Discord.Caching.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.Caching.Abstractions.Services
+    name: Services
+    href: Remora.Discord.Caching.Abstractions.Services.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Caching
+    name: Caching
+    href: Remora.Discord.Caching.html
+  - name: .
+  - uid: Remora.Discord.Caching.Abstractions
+    name: Abstractions
+    href: Remora.Discord.Caching.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.Caching.Abstractions.Services
+    name: Services
+    href: Remora.Discord.Caching.Abstractions.Services.html
+- uid: System.Threading.Tasks.ValueTask
+  commentId: T:System.Threading.Tasks.ValueTask
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask
+  name: ValueTask
+  nameWithType: ValueTask
+  fullName: System.Threading.Tasks.ValueTask
+- uid: Remora.Discord.Caching.Abstractions.Services.ICacheProvider.CacheAsync*
+  commentId: Overload:Remora.Discord.Caching.Abstractions.Services.ICacheProvider.CacheAsync
+  href: Remora.Discord.Caching.Abstractions.Services.ICacheProvider.html#Remora_Discord_Caching_Abstractions_Services_ICacheProvider_CacheAsync__1_Remora_Discord_Caching_Abstractions_CacheKey___0_Remora_Discord_Caching_Abstractions_CacheEntryOptions_System_Threading_CancellationToken_
+  name: CacheAsync
+  nameWithType: ICacheProvider.CacheAsync
+  fullName: Remora.Discord.Caching.Abstractions.Services.ICacheProvider.CacheAsync
+- uid: Remora.Discord.Caching.Abstractions.CacheKey
+  commentId: T:Remora.Discord.Caching.Abstractions.CacheKey
+  parent: Remora.Discord.Caching.Abstractions
+  href: Remora.Discord.Caching.Abstractions.CacheKey.html
+  name: CacheKey
+  nameWithType: CacheKey
+  fullName: Remora.Discord.Caching.Abstractions.CacheKey
+- uid: '{TInstance}'
+  commentId: '!:TInstance'
+  definition: TInstance
+  name: TInstance
+  nameWithType: TInstance
+  fullName: TInstance
+- uid: Remora.Discord.Caching.Abstractions.CacheEntryOptions
+  commentId: T:Remora.Discord.Caching.Abstractions.CacheEntryOptions
+  parent: Remora.Discord.Caching.Abstractions
+  href: Remora.Discord.Caching.Abstractions.CacheEntryOptions.html
+  name: CacheEntryOptions
+  nameWithType: CacheEntryOptions
+  fullName: Remora.Discord.Caching.Abstractions.CacheEntryOptions
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Remora.Discord.Caching.Abstractions
+  commentId: N:Remora.Discord.Caching.Abstractions
+  href: Remora.html
+  name: Remora.Discord.Caching.Abstractions
+  nameWithType: Remora.Discord.Caching.Abstractions
+  fullName: Remora.Discord.Caching.Abstractions
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Caching
+    name: Caching
+    href: Remora.Discord.Caching.html
+  - name: .
+  - uid: Remora.Discord.Caching.Abstractions
+    name: Abstractions
+    href: Remora.Discord.Caching.Abstractions.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Caching
+    name: Caching
+    href: Remora.Discord.Caching.html
+  - name: .
+  - uid: Remora.Discord.Caching.Abstractions
+    name: Abstractions
+    href: Remora.Discord.Caching.Abstractions.html
+- uid: TInstance
+  name: TInstance
+  nameWithType: TInstance
+  fullName: TInstance
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: Remora.Discord.Caching.Abstractions.Services.ICacheProvider.RetrieveAsync*
+  commentId: Overload:Remora.Discord.Caching.Abstractions.Services.ICacheProvider.RetrieveAsync
+  href: Remora.Discord.Caching.Abstractions.Services.ICacheProvider.html#Remora_Discord_Caching_Abstractions_Services_ICacheProvider_RetrieveAsync__1_Remora_Discord_Caching_Abstractions_CacheKey_System_Threading_CancellationToken_
+  name: RetrieveAsync
+  nameWithType: ICacheProvider.RetrieveAsync
+  fullName: Remora.Discord.Caching.Abstractions.Services.ICacheProvider.RetrieveAsync
+- uid: System.Threading.Tasks.ValueTask{Remora.Results.Result{{TInstance}}}
+  commentId: T:System.Threading.Tasks.ValueTask{Remora.Results.Result{``0}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.ValueTask`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  name: ValueTask<Result<TInstance>>
+  nameWithType: ValueTask<Result<TInstance>>
+  fullName: System.Threading.Tasks.ValueTask<Remora.Results.Result<TInstance>>
+  nameWithType.vb: ValueTask(Of Result(Of TInstance))
+  fullName.vb: System.Threading.Tasks.ValueTask(Of Remora.Results.Result(Of TInstance))
+  name.vb: ValueTask(Of Result(Of TInstance))
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - uid: Remora.Results.Result`1
+    name: Result
+    isExternal: true
+  - name: <
+  - name: TInstance
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Results.Result`1
+    name: Result
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TInstance
+  - name: )
+  - name: )
+- uid: System.Threading.Tasks.ValueTask`1
+  commentId: T:System.Threading.Tasks.ValueTask`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  name: ValueTask<TResult>
+  nameWithType: ValueTask<TResult>
+  fullName: System.Threading.Tasks.ValueTask<TResult>
+  nameWithType.vb: ValueTask(Of TResult)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult)
+  name.vb: ValueTask(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Remora.Discord.Caching.Abstractions.Services.ICacheProvider.EvictAsync*
+  commentId: Overload:Remora.Discord.Caching.Abstractions.Services.ICacheProvider.EvictAsync
+  href: Remora.Discord.Caching.Abstractions.Services.ICacheProvider.html#Remora_Discord_Caching_Abstractions_Services_ICacheProvider_EvictAsync_Remora_Discord_Caching_Abstractions_CacheKey_System_Threading_CancellationToken_
+  name: EvictAsync
+  nameWithType: ICacheProvider.EvictAsync
+  fullName: Remora.Discord.Caching.Abstractions.Services.ICacheProvider.EvictAsync
+- uid: System.Threading.Tasks.ValueTask{Remora.Results.Result}
+  commentId: T:System.Threading.Tasks.ValueTask{Remora.Results.Result}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.ValueTask`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  name: ValueTask<Result>
+  nameWithType: ValueTask<Result>
+  fullName: System.Threading.Tasks.ValueTask<Remora.Results.Result>
+  nameWithType.vb: ValueTask(Of Result)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of Remora.Results.Result)
+  name.vb: ValueTask(Of Result)
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - uid: Remora.Results.Result
+    name: Result
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Results.Result
+    name: Result
+    isExternal: true
+  - name: )

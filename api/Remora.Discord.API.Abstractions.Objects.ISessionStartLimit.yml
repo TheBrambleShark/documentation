@@ -1,0 +1,262 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Abstractions.Objects.ISessionStartLimit
+  commentId: T:Remora.Discord.API.Abstractions.Objects.ISessionStartLimit
+  id: ISessionStartLimit
+  parent: Remora.Discord.API.Abstractions.Objects
+  children:
+  - Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.MaxConcurrency
+  - Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.Remaining
+  - Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.ResetAfter
+  - Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.Total
+  langs:
+  - csharp
+  - vb
+  name: ISessionStartLimit
+  nameWithType: ISessionStartLimit
+  fullName: Remora.Discord.API.Abstractions.Objects.ISessionStartLimit
+  type: Interface
+  source:
+    id: ISessionStartLimit
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Gateway\ISessionStartLimit.cs
+    startLine: 30
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Represents information about session start limits.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public interface ISessionStartLimit
+    content.vb: >-
+      <PublicAPI>
+
+      Public Interface ISessionStartLimit
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.Total
+  commentId: P:Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.Total
+  id: Total
+  parent: Remora.Discord.API.Abstractions.Objects.ISessionStartLimit
+  langs:
+  - csharp
+  - vb
+  name: Total
+  nameWithType: ISessionStartLimit.Total
+  fullName: Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.Total
+  type: Property
+  source:
+    id: Total
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Gateway\ISessionStartLimit.cs
+    startLine: 36
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the total number of session starts the user is allowed.
+  example: []
+  syntax:
+    content: int Total { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property Total As Integer
+  overload: Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.Total*
+- uid: Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.Remaining
+  commentId: P:Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.Remaining
+  id: Remaining
+  parent: Remora.Discord.API.Abstractions.Objects.ISessionStartLimit
+  langs:
+  - csharp
+  - vb
+  name: Remaining
+  nameWithType: ISessionStartLimit.Remaining
+  fullName: Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.Remaining
+  type: Property
+  source:
+    id: Remaining
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Gateway\ISessionStartLimit.cs
+    startLine: 41
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the remaining number of session starts the user is allowed.
+  example: []
+  syntax:
+    content: int Remaining { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property Remaining As Integer
+  overload: Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.Remaining*
+- uid: Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.ResetAfter
+  commentId: P:Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.ResetAfter
+  id: ResetAfter
+  parent: Remora.Discord.API.Abstractions.Objects.ISessionStartLimit
+  langs:
+  - csharp
+  - vb
+  name: ResetAfter
+  nameWithType: ISessionStartLimit.ResetAfter
+  fullName: Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.ResetAfter
+  type: Property
+  source:
+    id: ResetAfter
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Gateway\ISessionStartLimit.cs
+    startLine: 46
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the time (in milliseconds) after which the limit resets.
+  example: []
+  syntax:
+    content: TimeSpan ResetAfter { get; }
+    parameters: []
+    return:
+      type: System.TimeSpan
+    content.vb: ReadOnly Property ResetAfter As TimeSpan
+  overload: Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.ResetAfter*
+- uid: Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.MaxConcurrency
+  commentId: P:Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.MaxConcurrency
+  id: MaxConcurrency
+  parent: Remora.Discord.API.Abstractions.Objects.ISessionStartLimit
+  langs:
+  - csharp
+  - vb
+  name: MaxConcurrency
+  nameWithType: ISessionStartLimit.MaxConcurrency
+  fullName: Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.MaxConcurrency
+  type: Property
+  source:
+    id: MaxConcurrency
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Gateway\ISessionStartLimit.cs
+    startLine: 62
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: >-
+    Gets the maximum number of concurrent identify messages that may be sent if the bot is sharded.
+
+
+    The logic behind this value is slightly complex. Given a maximum concurrency of 16 and 16 shards, all 16
+
+    shards may identify concurrently. However, given a maximum concurrency of 16 and 32 shards, the batching
+
+    properties of this value come into play. Concurrently identifying shards 0 through 15 would be allowed, but
+
+    not shards 0 through 8 and 16 through 24.
+
+
+    Effectively, only shards with different rate limit keys may concurrently identify, where the key is
+
+    calculated as follows.
+
+    <pre><code class="lang-csharp">rate_limit_key = shard_id % max_concurrency</code></pre>
+  example: []
+  syntax:
+    content: int MaxConcurrency { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property MaxConcurrency As Integer
+  overload: Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.MaxConcurrency*
+references:
+- uid: Remora.Discord.API.Abstractions.Objects
+  commentId: N:Remora.Discord.API.Abstractions.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Objects
+  nameWithType: Remora.Discord.API.Abstractions.Objects
+  fullName: Remora.Discord.API.Abstractions.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+- uid: Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.Total*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.Total
+  href: Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.html#Remora_Discord_API_Abstractions_Objects_ISessionStartLimit_Total
+  name: Total
+  nameWithType: ISessionStartLimit.Total
+  fullName: Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.Total
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.Remaining*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.Remaining
+  href: Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.html#Remora_Discord_API_Abstractions_Objects_ISessionStartLimit_Remaining
+  name: Remaining
+  nameWithType: ISessionStartLimit.Remaining
+  fullName: Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.Remaining
+- uid: Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.ResetAfter*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.ResetAfter
+  href: Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.html#Remora_Discord_API_Abstractions_Objects_ISessionStartLimit_ResetAfter
+  name: ResetAfter
+  nameWithType: ISessionStartLimit.ResetAfter
+  fullName: Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.ResetAfter
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.timespan
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.MaxConcurrency*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.MaxConcurrency
+  href: Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.html#Remora_Discord_API_Abstractions_Objects_ISessionStartLimit_MaxConcurrency
+  name: MaxConcurrency
+  nameWithType: ISessionStartLimit.MaxConcurrency
+  fullName: Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.MaxConcurrency

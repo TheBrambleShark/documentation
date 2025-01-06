@@ -1,0 +1,970 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.Commands.Services.SlashService
+  commentId: T:Remora.Discord.Commands.Services.SlashService
+  id: SlashService
+  parent: Remora.Discord.Commands.Services
+  children:
+  - Remora.Discord.Commands.Services.SlashService.#ctor(Remora.Commands.Services.CommandTreeAccessor,Remora.Discord.API.Abstractions.Rest.IDiscordRestOAuth2API,Remora.Discord.API.Abstractions.Rest.IDiscordRestApplicationAPI,Remora.Discord.Commands.Services.ILocalizationProvider)
+  - Remora.Discord.Commands.Services.SlashService.CommandMap
+  - Remora.Discord.Commands.Services.SlashService.UpdateSlashCommandsAsync(System.Nullable{Remora.Rest.Core.Snowflake},System.String,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: SlashService
+  nameWithType: SlashService
+  fullName: Remora.Discord.Commands.Services.SlashService
+  type: Class
+  source:
+    id: SlashService
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Remora.Discord.Commands\Services\SlashService.cs
+    startLine: 40
+  assemblies:
+  - Remora.Discord.Commands
+  namespace: Remora.Discord.Commands.Services
+  summary: Handles updating and verifying of slash commands.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public class SlashService
+    content.vb: >-
+      <PublicAPI>
+
+      Public Class SlashService
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.Commands.Services.SlashService.CommandMap
+  commentId: P:Remora.Discord.Commands.Services.SlashService.CommandMap
+  id: CommandMap
+  parent: Remora.Discord.Commands.Services.SlashService
+  langs:
+  - csharp
+  - vb
+  name: CommandMap
+  nameWithType: SlashService.CommandMap
+  fullName: Remora.Discord.Commands.Services.SlashService.CommandMap
+  type: Property
+  source:
+    id: CommandMap
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Remora.Discord.Commands\Services\SlashService.cs
+    startLine: 56
+  assemblies:
+  - Remora.Discord.Commands
+  namespace: Remora.Discord.Commands.Services
+  summary: Gets a mapping of Discord's assigned snowflakes to their corresponding command nodes.
+  remarks: >-
+    The snowflake maps to the top-level entity, which may be a group or a command. If the top-level entity is
+
+    a group, then any subcommands in that group will be provided in a sub-dictionary, with keys in the form
+
+    <returns>subgroup-name::command-name</returns>, nested as required.
+  example: []
+  syntax:
+    content: public IReadOnlyDictionary<(Optional<Snowflake> GuildID, Snowflake CommandID), OneOf<IReadOnlyDictionary<string, CommandNode>, CommandNode>> CommandMap { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyDictionary{System.ValueTuple{Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Snowflake},OneOf.OneOf{System.Collections.Generic.IReadOnlyDictionary{System.String,Remora.Commands.Trees.Nodes.CommandNode},Remora.Commands.Trees.Nodes.CommandNode}}
+    content.vb: Public Property CommandMap As IReadOnlyDictionary(Of (GuildID As [Optional](Of Snowflake), CommandID As Snowflake), OneOf(Of IReadOnlyDictionary(Of String, CommandNode), CommandNode))
+  overload: Remora.Discord.Commands.Services.SlashService.CommandMap*
+- uid: Remora.Discord.Commands.Services.SlashService.#ctor(Remora.Commands.Services.CommandTreeAccessor,Remora.Discord.API.Abstractions.Rest.IDiscordRestOAuth2API,Remora.Discord.API.Abstractions.Rest.IDiscordRestApplicationAPI,Remora.Discord.Commands.Services.ILocalizationProvider)
+  commentId: M:Remora.Discord.Commands.Services.SlashService.#ctor(Remora.Commands.Services.CommandTreeAccessor,Remora.Discord.API.Abstractions.Rest.IDiscordRestOAuth2API,Remora.Discord.API.Abstractions.Rest.IDiscordRestApplicationAPI,Remora.Discord.Commands.Services.ILocalizationProvider)
+  id: '#ctor(Remora.Commands.Services.CommandTreeAccessor,Remora.Discord.API.Abstractions.Rest.IDiscordRestOAuth2API,Remora.Discord.API.Abstractions.Rest.IDiscordRestApplicationAPI,Remora.Discord.Commands.Services.ILocalizationProvider)'
+  parent: Remora.Discord.Commands.Services.SlashService
+  langs:
+  - csharp
+  - vb
+  name: SlashService(CommandTreeAccessor, IDiscordRestOAuth2API, IDiscordRestApplicationAPI, ILocalizationProvider)
+  nameWithType: SlashService.SlashService(CommandTreeAccessor, IDiscordRestOAuth2API, IDiscordRestApplicationAPI, ILocalizationProvider)
+  fullName: Remora.Discord.Commands.Services.SlashService.SlashService(Remora.Commands.Services.CommandTreeAccessor, Remora.Discord.API.Abstractions.Rest.IDiscordRestOAuth2API, Remora.Discord.API.Abstractions.Rest.IDiscordRestApplicationAPI, Remora.Discord.Commands.Services.ILocalizationProvider)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Remora.Discord.Commands\Services\SlashService.cs
+    startLine: 69
+  assemblies:
+  - Remora.Discord.Commands
+  namespace: Remora.Discord.Commands.Services
+  summary: Initializes a new instance of the <xref href="Remora.Discord.Commands.Services.SlashService" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public SlashService(CommandTreeAccessor commandTreeAccessor, IDiscordRestOAuth2API oauth2API, IDiscordRestApplicationAPI applicationAPI, ILocalizationProvider localizationProvider)
+    parameters:
+    - id: commandTreeAccessor
+      type: Remora.Commands.Services.CommandTreeAccessor
+      description: The command tree accessor.
+    - id: oauth2API
+      type: Remora.Discord.API.Abstractions.Rest.IDiscordRestOAuth2API
+      description: The OAuth2 API.
+    - id: applicationAPI
+      type: Remora.Discord.API.Abstractions.Rest.IDiscordRestApplicationAPI
+      description: The application API.
+    - id: localizationProvider
+      type: Remora.Discord.Commands.Services.ILocalizationProvider
+      description: The localization provider.
+    content.vb: Public Sub New(commandTreeAccessor As CommandTreeAccessor, oauth2API As IDiscordRestOAuth2API, applicationAPI As IDiscordRestApplicationAPI, localizationProvider As ILocalizationProvider)
+  overload: Remora.Discord.Commands.Services.SlashService.#ctor*
+  nameWithType.vb: SlashService.New(CommandTreeAccessor, IDiscordRestOAuth2API, IDiscordRestApplicationAPI, ILocalizationProvider)
+  fullName.vb: Remora.Discord.Commands.Services.SlashService.New(Remora.Commands.Services.CommandTreeAccessor, Remora.Discord.API.Abstractions.Rest.IDiscordRestOAuth2API, Remora.Discord.API.Abstractions.Rest.IDiscordRestApplicationAPI, Remora.Discord.Commands.Services.ILocalizationProvider)
+  name.vb: New(CommandTreeAccessor, IDiscordRestOAuth2API, IDiscordRestApplicationAPI, ILocalizationProvider)
+- uid: Remora.Discord.Commands.Services.SlashService.UpdateSlashCommandsAsync(System.Nullable{Remora.Rest.Core.Snowflake},System.String,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Commands.Services.SlashService.UpdateSlashCommandsAsync(System.Nullable{Remora.Rest.Core.Snowflake},System.String,System.Threading.CancellationToken)
+  id: UpdateSlashCommandsAsync(System.Nullable{Remora.Rest.Core.Snowflake},System.String,System.Threading.CancellationToken)
+  parent: Remora.Discord.Commands.Services.SlashService
+  langs:
+  - csharp
+  - vb
+  name: UpdateSlashCommandsAsync(Snowflake?, string?, CancellationToken)
+  nameWithType: SlashService.UpdateSlashCommandsAsync(Snowflake?, string?, CancellationToken)
+  fullName: Remora.Discord.Commands.Services.SlashService.UpdateSlashCommandsAsync(Remora.Rest.Core.Snowflake?, string?, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: UpdateSlashCommandsAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Remora.Discord.Commands\Services\SlashService.cs
+    startLine: 99
+  assemblies:
+  - Remora.Discord.Commands
+  namespace: Remora.Discord.Commands.Services
+  summary: Updates the application's slash commands.
+  example: []
+  syntax:
+    content: public Task<Result> UpdateSlashCommandsAsync(Snowflake? guildID = null, string? treeName = null, CancellationToken ct = default)
+    parameters:
+    - id: guildID
+      type: System.Nullable{Remora.Rest.Core.Snowflake}
+      description: The ID of the guild to update slash commands in, if any.
+    - id: treeName
+      type: System.String
+      description: >-
+        The name of the tree to update Discord with. Note that whatever is currently configured (either globally or on
+
+        the provided guild) will be completely replaced by this tree.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result}
+      description: A result which may or may not have succeeded.
+    content.vb: Public Function UpdateSlashCommandsAsync(guildID As Snowflake? = Nothing, treeName As String = Nothing, ct As CancellationToken = Nothing) As Task(Of Result)
+  overload: Remora.Discord.Commands.Services.SlashService.UpdateSlashCommandsAsync*
+  nameWithType.vb: SlashService.UpdateSlashCommandsAsync(Snowflake?, String, CancellationToken)
+  fullName.vb: Remora.Discord.Commands.Services.SlashService.UpdateSlashCommandsAsync(Remora.Rest.Core.Snowflake?, String, System.Threading.CancellationToken)
+  name.vb: UpdateSlashCommandsAsync(Snowflake?, String, CancellationToken)
+references:
+- uid: Remora.Discord.Commands.Services
+  commentId: N:Remora.Discord.Commands.Services
+  href: Remora.html
+  name: Remora.Discord.Commands.Services
+  nameWithType: Remora.Discord.Commands.Services
+  fullName: Remora.Discord.Commands.Services
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Commands
+    name: Commands
+    href: Remora.Discord.Commands.html
+  - name: .
+  - uid: Remora.Discord.Commands.Services
+    name: Services
+    href: Remora.Discord.Commands.Services.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Commands
+    name: Commands
+    href: Remora.Discord.Commands.html
+  - name: .
+  - uid: Remora.Discord.Commands.Services
+    name: Services
+    href: Remora.Discord.Commands.Services.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.Commands.Services.SlashService.CommandMap*
+  commentId: Overload:Remora.Discord.Commands.Services.SlashService.CommandMap
+  href: Remora.Discord.Commands.Services.SlashService.html#Remora_Discord_Commands_Services_SlashService_CommandMap
+  name: CommandMap
+  nameWithType: SlashService.CommandMap
+  fullName: Remora.Discord.Commands.Services.SlashService.CommandMap
+- uid: System.Collections.Generic.IReadOnlyDictionary{System.ValueTuple{Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Snowflake},OneOf.OneOf{System.Collections.Generic.IReadOnlyDictionary{System.String,Remora.Commands.Trees.Nodes.CommandNode},Remora.Commands.Trees.Nodes.CommandNode}}
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary{System.ValueTuple{Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Snowflake},OneOf.OneOf{System.Collections.Generic.IReadOnlyDictionary{System.String,Remora.Commands.Trees.Nodes.CommandNode},Remora.Commands.Trees.Nodes.CommandNode}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<(Optional<Snowflake> GuildID, Snowflake CommandID), OneOf<IReadOnlyDictionary<string, CommandNode>, CommandNode>>
+  nameWithType: IReadOnlyDictionary<(Optional<Snowflake> GuildID, Snowflake CommandID), OneOf<IReadOnlyDictionary<string, CommandNode>, CommandNode>>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<(Remora.Rest.Core.Optional<Remora.Rest.Core.Snowflake> GuildID, Remora.Rest.Core.Snowflake CommandID), OneOf.OneOf<System.Collections.Generic.IReadOnlyDictionary<string, Remora.Commands.Trees.Nodes.CommandNode>, Remora.Commands.Trees.Nodes.CommandNode>>
+  nameWithType.vb: IReadOnlyDictionary(Of (GuildID As Optional(Of Snowflake), CommandID As Snowflake), OneOf(Of IReadOnlyDictionary(Of String, CommandNode), CommandNode))
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of (GuildID As Remora.Rest.Core.Optional(Of Remora.Rest.Core.Snowflake), CommandID As Remora.Rest.Core.Snowflake), OneOf.OneOf(Of System.Collections.Generic.IReadOnlyDictionary(Of String, Remora.Commands.Trees.Nodes.CommandNode), Remora.Commands.Trees.Nodes.CommandNode))
+  name.vb: IReadOnlyDictionary(Of (GuildID As Optional(Of Snowflake), CommandID As Snowflake), OneOf(Of IReadOnlyDictionary(Of String, CommandNode), CommandNode))
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - name: (
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '>'
+  - name: " "
+  - uid: System.ValueTuple{Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Snowflake}.GuildID
+    name: GuildID
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-remora.rest.core.optional-remora.rest.core.snowflake-,remora.rest.core.snowflake-.guildid
+  - name: ','
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: " "
+  - uid: System.ValueTuple{Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Snowflake}.CommandID
+    name: CommandID
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-remora.rest.core.optional-remora.rest.core.snowflake-,remora.rest.core.snowflake-.commandid
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: OneOf.OneOf`2
+    name: OneOf
+    isExternal: true
+  - name: <
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Remora.Commands.Trees.Nodes.CommandNode
+    name: CommandNode
+    isExternal: true
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: Remora.Commands.Trees.Nodes.CommandNode
+    name: CommandNode
+    isExternal: true
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: (
+  - uid: System.ValueTuple{Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Snowflake}.GuildID
+    name: GuildID
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-remora.rest.core.optional-remora.rest.core.snowflake-,remora.rest.core.snowflake-.guildid
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Snowflake}.CommandID
+    name: CommandID
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-remora.rest.core.optional-remora.rest.core.snowflake-,remora.rest.core.snowflake-.commandid
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: OneOf.OneOf`2
+    name: OneOf
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Remora.Commands.Trees.Nodes.CommandNode
+    name: CommandNode
+    isExternal: true
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: Remora.Commands.Trees.Nodes.CommandNode
+    name: CommandNode
+    isExternal: true
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyDictionary`2
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<TKey, TValue>
+  nameWithType: IReadOnlyDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<TKey, TValue>
+  nameWithType.vb: IReadOnlyDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of TKey, TValue)
+  name.vb: IReadOnlyDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Remora.Discord.Commands.Services.SlashService
+  commentId: T:Remora.Discord.Commands.Services.SlashService
+  parent: Remora.Discord.Commands.Services
+  href: Remora.Discord.Commands.Services.SlashService.html
+  name: SlashService
+  nameWithType: SlashService
+  fullName: Remora.Discord.Commands.Services.SlashService
+- uid: Remora.Discord.Commands.Services.SlashService.#ctor*
+  commentId: Overload:Remora.Discord.Commands.Services.SlashService.#ctor
+  href: Remora.Discord.Commands.Services.SlashService.html#Remora_Discord_Commands_Services_SlashService__ctor_Remora_Commands_Services_CommandTreeAccessor_Remora_Discord_API_Abstractions_Rest_IDiscordRestOAuth2API_Remora_Discord_API_Abstractions_Rest_IDiscordRestApplicationAPI_Remora_Discord_Commands_Services_ILocalizationProvider_
+  name: SlashService
+  nameWithType: SlashService.SlashService
+  fullName: Remora.Discord.Commands.Services.SlashService.SlashService
+  nameWithType.vb: SlashService.New
+  fullName.vb: Remora.Discord.Commands.Services.SlashService.New
+  name.vb: New
+- uid: Remora.Commands.Services.CommandTreeAccessor
+  commentId: T:Remora.Commands.Services.CommandTreeAccessor
+  parent: Remora.Commands.Services
+  isExternal: true
+  name: CommandTreeAccessor
+  nameWithType: CommandTreeAccessor
+  fullName: Remora.Commands.Services.CommandTreeAccessor
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestOAuth2API
+  commentId: T:Remora.Discord.API.Abstractions.Rest.IDiscordRestOAuth2API
+  parent: Remora.Discord.API.Abstractions.Rest
+  href: Remora.Discord.API.Abstractions.Rest.IDiscordRestOAuth2API.html
+  name: IDiscordRestOAuth2API
+  nameWithType: IDiscordRestOAuth2API
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestOAuth2API
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestApplicationAPI
+  commentId: T:Remora.Discord.API.Abstractions.Rest.IDiscordRestApplicationAPI
+  parent: Remora.Discord.API.Abstractions.Rest
+  href: Remora.Discord.API.Abstractions.Rest.IDiscordRestApplicationAPI.html
+  name: IDiscordRestApplicationAPI
+  nameWithType: IDiscordRestApplicationAPI
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestApplicationAPI
+- uid: Remora.Discord.Commands.Services.ILocalizationProvider
+  commentId: T:Remora.Discord.Commands.Services.ILocalizationProvider
+  parent: Remora.Discord.Commands.Services
+  href: Remora.Discord.Commands.Services.ILocalizationProvider.html
+  name: ILocalizationProvider
+  nameWithType: ILocalizationProvider
+  fullName: Remora.Discord.Commands.Services.ILocalizationProvider
+- uid: Remora.Commands.Services
+  commentId: N:Remora.Commands.Services
+  isExternal: true
+  name: Remora.Commands.Services
+  nameWithType: Remora.Commands.Services
+  fullName: Remora.Commands.Services
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Commands
+    name: Commands
+    isExternal: true
+  - name: .
+  - uid: Remora.Commands.Services
+    name: Services
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Commands
+    name: Commands
+    isExternal: true
+  - name: .
+  - uid: Remora.Commands.Services
+    name: Services
+    isExternal: true
+- uid: Remora.Discord.API.Abstractions.Rest
+  commentId: N:Remora.Discord.API.Abstractions.Rest
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Rest
+  nameWithType: Remora.Discord.API.Abstractions.Rest
+  fullName: Remora.Discord.API.Abstractions.Rest
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Rest
+    name: Rest
+    href: Remora.Discord.API.Abstractions.Rest.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Rest
+    name: Rest
+    href: Remora.Discord.API.Abstractions.Rest.html
+- uid: Remora.Discord.Commands.Services.SlashService.UpdateSlashCommandsAsync*
+  commentId: Overload:Remora.Discord.Commands.Services.SlashService.UpdateSlashCommandsAsync
+  href: Remora.Discord.Commands.Services.SlashService.html#Remora_Discord_Commands_Services_SlashService_UpdateSlashCommandsAsync_System_Nullable_Remora_Rest_Core_Snowflake__System_String_System_Threading_CancellationToken_
+  name: UpdateSlashCommandsAsync
+  nameWithType: SlashService.UpdateSlashCommandsAsync
+  fullName: Remora.Discord.Commands.Services.SlashService.UpdateSlashCommandsAsync
+- uid: System.Nullable{Remora.Rest.Core.Snowflake}
+  commentId: T:System.Nullable{Remora.Rest.Core.Snowflake}
+  parent: System
+  definition: System.Nullable`1
+  name: Snowflake?
+  nameWithType: Snowflake?
+  fullName: Remora.Rest.Core.Snowflake?
+  spec.csharp:
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '?'
+  spec.vb:
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '?'
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Remora.Results.Result}
+  commentId: T:System.Threading.Tasks.Task{Remora.Results.Result}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Result>
+  nameWithType: Task<Result>
+  fullName: System.Threading.Tasks.Task<Remora.Results.Result>
+  nameWithType.vb: Task(Of Result)
+  fullName.vb: System.Threading.Tasks.Task(Of Remora.Results.Result)
+  name.vb: Task(Of Result)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Remora.Results.Result
+    name: Result
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Results.Result
+    name: Result
+    isExternal: true
+  - name: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

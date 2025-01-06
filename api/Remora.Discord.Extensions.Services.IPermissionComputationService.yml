@@ -1,0 +1,590 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.Extensions.Services.IPermissionComputationService
+  commentId: T:Remora.Discord.Extensions.Services.IPermissionComputationService
+  id: IPermissionComputationService
+  parent: Remora.Discord.Extensions.Services
+  children:
+  - Remora.Discord.Extensions.Services.IPermissionComputationService.ComputeContextualMemberPermissions(Remora.Rest.Core.Snowflake,System.Boolean,System.Threading.CancellationToken)
+  - Remora.Discord.Extensions.Services.IPermissionComputationService.ComputeContextualRolePermissions(Remora.Rest.Core.Snowflake,System.Boolean,System.Threading.CancellationToken)
+  - Remora.Discord.Extensions.Services.IPermissionComputationService.ComputeMemberPermissions(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,System.Nullable{Remora.Rest.Core.Snowflake},System.Threading.CancellationToken)
+  - Remora.Discord.Extensions.Services.IPermissionComputationService.ComputeRolePermissions(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,System.Nullable{Remora.Rest.Core.Snowflake},System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IPermissionComputationService
+  nameWithType: IPermissionComputationService
+  fullName: Remora.Discord.Extensions.Services.IPermissionComputationService
+  type: Interface
+  source:
+    id: IPermissionComputationService
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Remora.Discord.Extensions\Services\IPermissionComputationService.cs
+    startLine: 41
+  assemblies:
+  - Remora.Discord.Extensions
+  namespace: Remora.Discord.Extensions.Services
+  summary: Computes permission sets based on available data.
+  remarks: >-
+    Note that since this service typically accesses data via the Discord API in order to gather enough information to
+
+    perform its calculations, caching could result in it taking some time for the values produced by this service to
+
+    reflect reality. Normally, this isn't a problem, but be aware of it and program accordingly.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public interface IPermissionComputationService
+    content.vb: >-
+      <PublicAPI>
+
+      Public Interface IPermissionComputationService
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.Extensions.Services.IPermissionComputationService.ComputeMemberPermissions(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,System.Nullable{Remora.Rest.Core.Snowflake},System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Extensions.Services.IPermissionComputationService.ComputeMemberPermissions(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,System.Nullable{Remora.Rest.Core.Snowflake},System.Threading.CancellationToken)
+  id: ComputeMemberPermissions(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,System.Nullable{Remora.Rest.Core.Snowflake},System.Threading.CancellationToken)
+  parent: Remora.Discord.Extensions.Services.IPermissionComputationService
+  langs:
+  - csharp
+  - vb
+  name: ComputeMemberPermissions(Snowflake, Snowflake, Snowflake?, CancellationToken)
+  nameWithType: IPermissionComputationService.ComputeMemberPermissions(Snowflake, Snowflake, Snowflake?, CancellationToken)
+  fullName: Remora.Discord.Extensions.Services.IPermissionComputationService.ComputeMemberPermissions(Remora.Rest.Core.Snowflake, Remora.Rest.Core.Snowflake, Remora.Rest.Core.Snowflake?, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: ComputeMemberPermissions
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Remora.Discord.Extensions\Services\IPermissionComputationService.cs
+    startLine: 60
+  assemblies:
+  - Remora.Discord.Extensions
+  namespace: Remora.Discord.Extensions.Services
+  summary: Computes the effective permissions for the user with the given ID.
+  remarks: >-
+    <code class="paramref">channelID</code> controls whether permission overwrite in any particular channel are taken into
+     account. If it is omitted, the computed permissions are valid anywhere in the server where a permission
+     overwrite does not otherwise modify the permissions.
+
+     If you want to compute effective permissions for some kind of user action, it's likely that you want to set this
+     parameter to an appropriate value.
+  example: []
+  syntax:
+    content: Task<Result<IDiscordPermissionSet>> ComputeMemberPermissions(Snowflake userID, Snowflake guildID, Snowflake? channelID = null, CancellationToken ct = default)
+    parameters:
+    - id: userID
+      type: Remora.Rest.Core.Snowflake
+      description: The ID of the user.
+    - id: guildID
+      type: Remora.Rest.Core.Snowflake
+      description: The ID of the guild the user is in.
+    - id: channelID
+      type: System.Nullable{Remora.Rest.Core.Snowflake}
+      description: The ID of the channel the user is in.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet}}
+      description: The computed permissions.
+    content.vb: Function ComputeMemberPermissions(userID As Snowflake, guildID As Snowflake, channelID As Snowflake? = Nothing, ct As CancellationToken = Nothing) As Task(Of Result(Of IDiscordPermissionSet))
+  overload: Remora.Discord.Extensions.Services.IPermissionComputationService.ComputeMemberPermissions*
+- uid: Remora.Discord.Extensions.Services.IPermissionComputationService.ComputeContextualMemberPermissions(Remora.Rest.Core.Snowflake,System.Boolean,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Extensions.Services.IPermissionComputationService.ComputeContextualMemberPermissions(Remora.Rest.Core.Snowflake,System.Boolean,System.Threading.CancellationToken)
+  id: ComputeContextualMemberPermissions(Remora.Rest.Core.Snowflake,System.Boolean,System.Threading.CancellationToken)
+  parent: Remora.Discord.Extensions.Services.IPermissionComputationService
+  langs:
+  - csharp
+  - vb
+  name: ComputeContextualMemberPermissions(Snowflake, bool, CancellationToken)
+  nameWithType: IPermissionComputationService.ComputeContextualMemberPermissions(Snowflake, bool, CancellationToken)
+  fullName: Remora.Discord.Extensions.Services.IPermissionComputationService.ComputeContextualMemberPermissions(Remora.Rest.Core.Snowflake, bool, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: ComputeContextualMemberPermissions
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Remora.Discord.Extensions\Services\IPermissionComputationService.cs
+    startLine: 81
+  assemblies:
+  - Remora.Discord.Extensions
+  namespace: Remora.Discord.Extensions.Services
+  summary: Computes the effective permissions for the user with the given ID in the context of the current operation.
+  remarks: This method uses the guild and channel ID from an available <xref href="Remora.Discord.Commands.Contexts.IOperationContext" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: Task<Result<IDiscordPermissionSet>> ComputeContextualMemberPermissions(Snowflake userID, bool inChannel = true, CancellationToken ct = default)
+    parameters:
+    - id: userID
+      type: Remora.Rest.Core.Snowflake
+      description: The ID of the user.
+    - id: inChannel
+      type: System.Boolean
+      description: Whether the computation should use the channel ID from the context.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet}}
+      description: The computed permissions.
+    content.vb: Function ComputeContextualMemberPermissions(userID As Snowflake, inChannel As Boolean = True, ct As CancellationToken = Nothing) As Task(Of Result(Of IDiscordPermissionSet))
+  overload: Remora.Discord.Extensions.Services.IPermissionComputationService.ComputeContextualMemberPermissions*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: Thrown if no context is available or it does not have the required information.
+  nameWithType.vb: IPermissionComputationService.ComputeContextualMemberPermissions(Snowflake, Boolean, CancellationToken)
+  fullName.vb: Remora.Discord.Extensions.Services.IPermissionComputationService.ComputeContextualMemberPermissions(Remora.Rest.Core.Snowflake, Boolean, System.Threading.CancellationToken)
+  name.vb: ComputeContextualMemberPermissions(Snowflake, Boolean, CancellationToken)
+- uid: Remora.Discord.Extensions.Services.IPermissionComputationService.ComputeRolePermissions(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,System.Nullable{Remora.Rest.Core.Snowflake},System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Extensions.Services.IPermissionComputationService.ComputeRolePermissions(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,System.Nullable{Remora.Rest.Core.Snowflake},System.Threading.CancellationToken)
+  id: ComputeRolePermissions(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,System.Nullable{Remora.Rest.Core.Snowflake},System.Threading.CancellationToken)
+  parent: Remora.Discord.Extensions.Services.IPermissionComputationService
+  langs:
+  - csharp
+  - vb
+  name: ComputeRolePermissions(Snowflake, Snowflake, Snowflake?, CancellationToken)
+  nameWithType: IPermissionComputationService.ComputeRolePermissions(Snowflake, Snowflake, Snowflake?, CancellationToken)
+  fullName: Remora.Discord.Extensions.Services.IPermissionComputationService.ComputeRolePermissions(Remora.Rest.Core.Snowflake, Remora.Rest.Core.Snowflake, Remora.Rest.Core.Snowflake?, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: ComputeRolePermissions
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Remora.Discord.Extensions\Services\IPermissionComputationService.cs
+    startLine: 104
+  assemblies:
+  - Remora.Discord.Extensions
+  namespace: Remora.Discord.Extensions.Services
+  summary: Computes the effective permissions for the role with the given ID.
+  remarks: >-
+    <code class="paramref">channelID</code> controls whether permission overwrite in any particular channel are taken into
+     account. If it is omitted, the computed permissions are valid anywhere in the server where a permission
+     overwrite does not otherwise modify the permissions.
+
+     If you want to compute effective permissions for some kind of user action, it's likely that you want to set this
+     parameter to an appropriate value.
+  example: []
+  syntax:
+    content: Task<Result<IDiscordPermissionSet>> ComputeRolePermissions(Snowflake roleID, Snowflake guildID, Snowflake? channelID = null, CancellationToken ct = default)
+    parameters:
+    - id: roleID
+      type: Remora.Rest.Core.Snowflake
+      description: The ID of the role.
+    - id: guildID
+      type: Remora.Rest.Core.Snowflake
+      description: The ID of the guild the user is in.
+    - id: channelID
+      type: System.Nullable{Remora.Rest.Core.Snowflake}
+      description: The ID of the channel the user is in.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet}}
+      description: The computed permissions.
+    content.vb: Function ComputeRolePermissions(roleID As Snowflake, guildID As Snowflake, channelID As Snowflake? = Nothing, ct As CancellationToken = Nothing) As Task(Of Result(Of IDiscordPermissionSet))
+  overload: Remora.Discord.Extensions.Services.IPermissionComputationService.ComputeRolePermissions*
+- uid: Remora.Discord.Extensions.Services.IPermissionComputationService.ComputeContextualRolePermissions(Remora.Rest.Core.Snowflake,System.Boolean,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Extensions.Services.IPermissionComputationService.ComputeContextualRolePermissions(Remora.Rest.Core.Snowflake,System.Boolean,System.Threading.CancellationToken)
+  id: ComputeContextualRolePermissions(Remora.Rest.Core.Snowflake,System.Boolean,System.Threading.CancellationToken)
+  parent: Remora.Discord.Extensions.Services.IPermissionComputationService
+  langs:
+  - csharp
+  - vb
+  name: ComputeContextualRolePermissions(Snowflake, bool, CancellationToken)
+  nameWithType: IPermissionComputationService.ComputeContextualRolePermissions(Snowflake, bool, CancellationToken)
+  fullName: Remora.Discord.Extensions.Services.IPermissionComputationService.ComputeContextualRolePermissions(Remora.Rest.Core.Snowflake, bool, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: ComputeContextualRolePermissions
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Remora.Discord.Extensions\Services\IPermissionComputationService.cs
+    startLine: 125
+  assemblies:
+  - Remora.Discord.Extensions
+  namespace: Remora.Discord.Extensions.Services
+  summary: Computes the effective permissions for the role with the given ID in the context of the current operation.
+  remarks: This method uses the guild and channel ID from an available <xref href="Remora.Discord.Commands.Contexts.IOperationContext" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: Task<Result<IDiscordPermissionSet>> ComputeContextualRolePermissions(Snowflake roleID, bool inChannel = true, CancellationToken ct = default)
+    parameters:
+    - id: roleID
+      type: Remora.Rest.Core.Snowflake
+      description: The ID of the role.
+    - id: inChannel
+      type: System.Boolean
+      description: Whether the computation should use the channel ID from the context.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet}}
+      description: The computed permissions.
+    content.vb: Function ComputeContextualRolePermissions(roleID As Snowflake, inChannel As Boolean = True, ct As CancellationToken = Nothing) As Task(Of Result(Of IDiscordPermissionSet))
+  overload: Remora.Discord.Extensions.Services.IPermissionComputationService.ComputeContextualRolePermissions*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: Thrown if no context is available or it does not have the required information.
+  nameWithType.vb: IPermissionComputationService.ComputeContextualRolePermissions(Snowflake, Boolean, CancellationToken)
+  fullName.vb: Remora.Discord.Extensions.Services.IPermissionComputationService.ComputeContextualRolePermissions(Remora.Rest.Core.Snowflake, Boolean, System.Threading.CancellationToken)
+  name.vb: ComputeContextualRolePermissions(Snowflake, Boolean, CancellationToken)
+references:
+- uid: Remora.Discord.Extensions.Services
+  commentId: N:Remora.Discord.Extensions.Services
+  href: Remora.html
+  name: Remora.Discord.Extensions.Services
+  nameWithType: Remora.Discord.Extensions.Services
+  fullName: Remora.Discord.Extensions.Services
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Extensions
+    name: Extensions
+    href: Remora.Discord.Extensions.html
+  - name: .
+  - uid: Remora.Discord.Extensions.Services
+    name: Services
+    href: Remora.Discord.Extensions.Services.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Extensions
+    name: Extensions
+    href: Remora.Discord.Extensions.html
+  - name: .
+  - uid: Remora.Discord.Extensions.Services
+    name: Services
+    href: Remora.Discord.Extensions.Services.html
+- uid: Remora.Discord.Extensions.Services.IPermissionComputationService.ComputeMemberPermissions*
+  commentId: Overload:Remora.Discord.Extensions.Services.IPermissionComputationService.ComputeMemberPermissions
+  href: Remora.Discord.Extensions.Services.IPermissionComputationService.html#Remora_Discord_Extensions_Services_IPermissionComputationService_ComputeMemberPermissions_Remora_Rest_Core_Snowflake_Remora_Rest_Core_Snowflake_System_Nullable_Remora_Rest_Core_Snowflake__System_Threading_CancellationToken_
+  name: ComputeMemberPermissions
+  nameWithType: IPermissionComputationService.ComputeMemberPermissions
+  fullName: Remora.Discord.Extensions.Services.IPermissionComputationService.ComputeMemberPermissions
+- uid: Remora.Rest.Core.Snowflake
+  commentId: T:Remora.Rest.Core.Snowflake
+  parent: Remora.Rest.Core
+  isExternal: true
+  name: Snowflake
+  nameWithType: Snowflake
+  fullName: Remora.Rest.Core.Snowflake
+- uid: System.Nullable{Remora.Rest.Core.Snowflake}
+  commentId: T:System.Nullable{Remora.Rest.Core.Snowflake}
+  parent: System
+  definition: System.Nullable`1
+  name: Snowflake?
+  nameWithType: Snowflake?
+  fullName: Remora.Rest.Core.Snowflake?
+  spec.csharp:
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '?'
+  spec.vb:
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '?'
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet}}
+  commentId: T:System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Result<IDiscordPermissionSet>>
+  nameWithType: Task<Result<IDiscordPermissionSet>>
+  fullName: System.Threading.Tasks.Task<Remora.Results.Result<Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet>>
+  nameWithType.vb: Task(Of Result(Of IDiscordPermissionSet))
+  fullName.vb: System.Threading.Tasks.Task(Of Remora.Results.Result(Of Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet))
+  name.vb: Task(Of Result(Of IDiscordPermissionSet))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Remora.Results.Result`1
+    name: Result
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet
+    name: IDiscordPermissionSet
+    href: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Results.Result`1
+    name: Result
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet
+    name: IDiscordPermissionSet
+    href: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet.html
+  - name: )
+  - name: )
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Remora.Discord.Commands.Contexts.IOperationContext
+  commentId: T:Remora.Discord.Commands.Contexts.IOperationContext
+  parent: Remora.Discord.Commands.Contexts
+  href: Remora.Discord.Commands.Contexts.IOperationContext.html
+  name: IOperationContext
+  nameWithType: IOperationContext
+  fullName: Remora.Discord.Commands.Contexts.IOperationContext
+- uid: System.InvalidOperationException
+  commentId: T:System.InvalidOperationException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+  name: InvalidOperationException
+  nameWithType: InvalidOperationException
+  fullName: System.InvalidOperationException
+- uid: Remora.Discord.Extensions.Services.IPermissionComputationService.ComputeContextualMemberPermissions*
+  commentId: Overload:Remora.Discord.Extensions.Services.IPermissionComputationService.ComputeContextualMemberPermissions
+  href: Remora.Discord.Extensions.Services.IPermissionComputationService.html#Remora_Discord_Extensions_Services_IPermissionComputationService_ComputeContextualMemberPermissions_Remora_Rest_Core_Snowflake_System_Boolean_System_Threading_CancellationToken_
+  name: ComputeContextualMemberPermissions
+  nameWithType: IPermissionComputationService.ComputeContextualMemberPermissions
+  fullName: Remora.Discord.Extensions.Services.IPermissionComputationService.ComputeContextualMemberPermissions
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Remora.Discord.Commands.Contexts
+  commentId: N:Remora.Discord.Commands.Contexts
+  href: Remora.html
+  name: Remora.Discord.Commands.Contexts
+  nameWithType: Remora.Discord.Commands.Contexts
+  fullName: Remora.Discord.Commands.Contexts
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Commands
+    name: Commands
+    href: Remora.Discord.Commands.html
+  - name: .
+  - uid: Remora.Discord.Commands.Contexts
+    name: Contexts
+    href: Remora.Discord.Commands.Contexts.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Commands
+    name: Commands
+    href: Remora.Discord.Commands.html
+  - name: .
+  - uid: Remora.Discord.Commands.Contexts
+    name: Contexts
+    href: Remora.Discord.Commands.Contexts.html
+- uid: Remora.Discord.Extensions.Services.IPermissionComputationService.ComputeRolePermissions*
+  commentId: Overload:Remora.Discord.Extensions.Services.IPermissionComputationService.ComputeRolePermissions
+  href: Remora.Discord.Extensions.Services.IPermissionComputationService.html#Remora_Discord_Extensions_Services_IPermissionComputationService_ComputeRolePermissions_Remora_Rest_Core_Snowflake_Remora_Rest_Core_Snowflake_System_Nullable_Remora_Rest_Core_Snowflake__System_Threading_CancellationToken_
+  name: ComputeRolePermissions
+  nameWithType: IPermissionComputationService.ComputeRolePermissions
+  fullName: Remora.Discord.Extensions.Services.IPermissionComputationService.ComputeRolePermissions
+- uid: Remora.Discord.Extensions.Services.IPermissionComputationService.ComputeContextualRolePermissions*
+  commentId: Overload:Remora.Discord.Extensions.Services.IPermissionComputationService.ComputeContextualRolePermissions
+  href: Remora.Discord.Extensions.Services.IPermissionComputationService.html#Remora_Discord_Extensions_Services_IPermissionComputationService_ComputeContextualRolePermissions_Remora_Rest_Core_Snowflake_System_Boolean_System_Threading_CancellationToken_
+  name: ComputeContextualRolePermissions
+  nameWithType: IPermissionComputationService.ComputeContextualRolePermissions
+  fullName: Remora.Discord.Extensions.Services.IPermissionComputationService.ComputeContextualRolePermissions

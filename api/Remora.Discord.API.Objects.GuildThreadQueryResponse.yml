@@ -1,0 +1,698 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Objects.GuildThreadQueryResponse
+  commentId: T:Remora.Discord.API.Objects.GuildThreadQueryResponse
+  id: GuildThreadQueryResponse
+  parent: Remora.Discord.API.Objects
+  children:
+  - Remora.Discord.API.Objects.GuildThreadQueryResponse.#ctor(System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IChannel},System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IThreadMember})
+  - Remora.Discord.API.Objects.GuildThreadQueryResponse.Members
+  - Remora.Discord.API.Objects.GuildThreadQueryResponse.Threads
+  langs:
+  - csharp
+  - vb
+  name: GuildThreadQueryResponse
+  nameWithType: GuildThreadQueryResponse
+  fullName: Remora.Discord.API.Objects.GuildThreadQueryResponse
+  type: Class
+  source:
+    id: GuildThreadQueryResponse
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Guilds\GuildThreadQueryResponse.cs
+    startLine: 29
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Represents a response object from the Guild REST API regarding a thread query.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public record GuildThreadQueryResponse : IGuildThreadQueryResponse, IEquatable<GuildThreadQueryResponse>
+    content.vb: >-
+      <PublicAPI>
+
+      Public Class GuildThreadQueryResponse Implements IGuildThreadQueryResponse, IEquatable(Of GuildThreadQueryResponse)
+  inheritance:
+  - System.Object
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IGuildThreadQueryResponse
+  - System.IEquatable{Remora.Discord.API.Objects.GuildThreadQueryResponse}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Objects.GuildThreadQueryResponse.#ctor(System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IChannel},System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IThreadMember})
+  commentId: M:Remora.Discord.API.Objects.GuildThreadQueryResponse.#ctor(System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IChannel},System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IThreadMember})
+  id: '#ctor(System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IChannel},System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IThreadMember})'
+  parent: Remora.Discord.API.Objects.GuildThreadQueryResponse
+  langs:
+  - csharp
+  - vb
+  name: GuildThreadQueryResponse(IReadOnlyList<IChannel>, IReadOnlyList<IThreadMember>)
+  nameWithType: GuildThreadQueryResponse.GuildThreadQueryResponse(IReadOnlyList<IChannel>, IReadOnlyList<IThreadMember>)
+  fullName: Remora.Discord.API.Objects.GuildThreadQueryResponse.GuildThreadQueryResponse(System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.IChannel>, System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.IThreadMember>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Guilds\GuildThreadQueryResponse.cs
+    startLine: 29
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Represents a response object from the Guild REST API regarding a thread query.
+  example: []
+  syntax:
+    content: public GuildThreadQueryResponse(IReadOnlyList<IChannel> Threads, IReadOnlyList<IThreadMember> Members)
+    parameters:
+    - id: Threads
+      type: System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IChannel}
+    - id: Members
+      type: System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IThreadMember}
+    content.vb: Public Sub New(Threads As IReadOnlyList(Of IChannel), Members As IReadOnlyList(Of IThreadMember))
+  overload: Remora.Discord.API.Objects.GuildThreadQueryResponse.#ctor*
+  nameWithType.vb: GuildThreadQueryResponse.New(IReadOnlyList(Of IChannel), IReadOnlyList(Of IThreadMember))
+  fullName.vb: Remora.Discord.API.Objects.GuildThreadQueryResponse.New(System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.IChannel), System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.IThreadMember))
+  name.vb: New(IReadOnlyList(Of IChannel), IReadOnlyList(Of IThreadMember))
+- uid: Remora.Discord.API.Objects.GuildThreadQueryResponse.Threads
+  commentId: P:Remora.Discord.API.Objects.GuildThreadQueryResponse.Threads
+  id: Threads
+  parent: Remora.Discord.API.Objects.GuildThreadQueryResponse
+  langs:
+  - csharp
+  - vb
+  name: Threads
+  nameWithType: GuildThreadQueryResponse.Threads
+  fullName: Remora.Discord.API.Objects.GuildThreadQueryResponse.Threads
+  type: Property
+  source:
+    id: Threads
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Guilds\GuildThreadQueryResponse.cs
+    startLine: 32
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the threads returned by the query.
+  example: []
+  syntax:
+    content: public IReadOnlyList<IChannel> Threads { get; init; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IChannel}
+    content.vb: Public Property Threads As IReadOnlyList(Of IChannel)
+  overload: Remora.Discord.API.Objects.GuildThreadQueryResponse.Threads*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IGuildThreadQueryResponse.Threads
+- uid: Remora.Discord.API.Objects.GuildThreadQueryResponse.Members
+  commentId: P:Remora.Discord.API.Objects.GuildThreadQueryResponse.Members
+  id: Members
+  parent: Remora.Discord.API.Objects.GuildThreadQueryResponse
+  langs:
+  - csharp
+  - vb
+  name: Members
+  nameWithType: GuildThreadQueryResponse.Members
+  fullName: Remora.Discord.API.Objects.GuildThreadQueryResponse.Members
+  type: Property
+  source:
+    id: Members
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Guilds\GuildThreadQueryResponse.cs
+    startLine: 33
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets a set of member objects that map to the returned threads the current user has joined.
+  example: []
+  syntax:
+    content: public IReadOnlyList<IThreadMember> Members { get; init; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IThreadMember}
+    content.vb: Public Property Members As IReadOnlyList(Of IThreadMember)
+  overload: Remora.Discord.API.Objects.GuildThreadQueryResponse.Members*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IGuildThreadQueryResponse.Members
+references:
+- uid: Remora.Discord.API.Objects
+  commentId: N:Remora.Discord.API.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Objects
+  nameWithType: Remora.Discord.API.Objects
+  fullName: Remora.Discord.API.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Objects
+    name: Objects
+    href: Remora.Discord.API.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Objects
+    name: Objects
+    href: Remora.Discord.API.Objects.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Remora.Discord.API.Abstractions.Objects.IGuildThreadQueryResponse
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IGuildThreadQueryResponse
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IGuildThreadQueryResponse.html
+  name: IGuildThreadQueryResponse
+  nameWithType: IGuildThreadQueryResponse
+  fullName: Remora.Discord.API.Abstractions.Objects.IGuildThreadQueryResponse
+- uid: System.IEquatable{Remora.Discord.API.Objects.GuildThreadQueryResponse}
+  commentId: T:System.IEquatable{Remora.Discord.API.Objects.GuildThreadQueryResponse}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<GuildThreadQueryResponse>
+  nameWithType: IEquatable<GuildThreadQueryResponse>
+  fullName: System.IEquatable<Remora.Discord.API.Objects.GuildThreadQueryResponse>
+  nameWithType.vb: IEquatable(Of GuildThreadQueryResponse)
+  fullName.vb: System.IEquatable(Of Remora.Discord.API.Objects.GuildThreadQueryResponse)
+  name.vb: IEquatable(Of GuildThreadQueryResponse)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Remora.Discord.API.Objects.GuildThreadQueryResponse
+    name: GuildThreadQueryResponse
+    href: Remora.Discord.API.Objects.GuildThreadQueryResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Objects.GuildThreadQueryResponse
+    name: GuildThreadQueryResponse
+    href: Remora.Discord.API.Objects.GuildThreadQueryResponse.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.API.Abstractions.Objects
+  commentId: N:Remora.Discord.API.Abstractions.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Objects
+  nameWithType: Remora.Discord.API.Abstractions.Objects
+  fullName: Remora.Discord.API.Abstractions.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Remora.Discord.API.Objects.GuildThreadQueryResponse.#ctor*
+  commentId: Overload:Remora.Discord.API.Objects.GuildThreadQueryResponse.#ctor
+  href: Remora.Discord.API.Objects.GuildThreadQueryResponse.html#Remora_Discord_API_Objects_GuildThreadQueryResponse__ctor_System_Collections_Generic_IReadOnlyList_Remora_Discord_API_Abstractions_Objects_IChannel__System_Collections_Generic_IReadOnlyList_Remora_Discord_API_Abstractions_Objects_IThreadMember__
+  name: GuildThreadQueryResponse
+  nameWithType: GuildThreadQueryResponse.GuildThreadQueryResponse
+  fullName: Remora.Discord.API.Objects.GuildThreadQueryResponse.GuildThreadQueryResponse
+  nameWithType.vb: GuildThreadQueryResponse.New
+  fullName.vb: Remora.Discord.API.Objects.GuildThreadQueryResponse.New
+  name.vb: New
+- uid: System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IChannel}
+  commentId: T:System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IChannel}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<IChannel>
+  nameWithType: IReadOnlyList<IChannel>
+  fullName: System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.IChannel>
+  nameWithType.vb: IReadOnlyList(Of IChannel)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.IChannel)
+  name.vb: IReadOnlyList(Of IChannel)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IChannel
+    name: IChannel
+    href: Remora.Discord.API.Abstractions.Objects.IChannel.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IChannel
+    name: IChannel
+    href: Remora.Discord.API.Abstractions.Objects.IChannel.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IThreadMember}
+  commentId: T:System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IThreadMember}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<IThreadMember>
+  nameWithType: IReadOnlyList<IThreadMember>
+  fullName: System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.IThreadMember>
+  nameWithType.vb: IReadOnlyList(Of IThreadMember)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.IThreadMember)
+  name.vb: IReadOnlyList(Of IThreadMember)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IThreadMember
+    name: IThreadMember
+    href: Remora.Discord.API.Abstractions.Objects.IThreadMember.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IThreadMember
+    name: IThreadMember
+    href: Remora.Discord.API.Abstractions.Objects.IThreadMember.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Remora.Discord.API.Objects.GuildThreadQueryResponse.Threads*
+  commentId: Overload:Remora.Discord.API.Objects.GuildThreadQueryResponse.Threads
+  href: Remora.Discord.API.Objects.GuildThreadQueryResponse.html#Remora_Discord_API_Objects_GuildThreadQueryResponse_Threads
+  name: Threads
+  nameWithType: GuildThreadQueryResponse.Threads
+  fullName: Remora.Discord.API.Objects.GuildThreadQueryResponse.Threads
+- uid: Remora.Discord.API.Abstractions.Objects.IGuildThreadQueryResponse.Threads
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IGuildThreadQueryResponse.Threads
+  parent: Remora.Discord.API.Abstractions.Objects.IGuildThreadQueryResponse
+  href: Remora.Discord.API.Abstractions.Objects.IGuildThreadQueryResponse.html#Remora_Discord_API_Abstractions_Objects_IGuildThreadQueryResponse_Threads
+  name: Threads
+  nameWithType: IGuildThreadQueryResponse.Threads
+  fullName: Remora.Discord.API.Abstractions.Objects.IGuildThreadQueryResponse.Threads
+- uid: Remora.Discord.API.Objects.GuildThreadQueryResponse.Members*
+  commentId: Overload:Remora.Discord.API.Objects.GuildThreadQueryResponse.Members
+  href: Remora.Discord.API.Objects.GuildThreadQueryResponse.html#Remora_Discord_API_Objects_GuildThreadQueryResponse_Members
+  name: Members
+  nameWithType: GuildThreadQueryResponse.Members
+  fullName: Remora.Discord.API.Objects.GuildThreadQueryResponse.Members
+- uid: Remora.Discord.API.Abstractions.Objects.IGuildThreadQueryResponse.Members
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IGuildThreadQueryResponse.Members
+  parent: Remora.Discord.API.Abstractions.Objects.IGuildThreadQueryResponse
+  href: Remora.Discord.API.Abstractions.Objects.IGuildThreadQueryResponse.html#Remora_Discord_API_Abstractions_Objects_IGuildThreadQueryResponse_Members
+  name: Members
+  nameWithType: IGuildThreadQueryResponse.Members
+  fullName: Remora.Discord.API.Abstractions.Objects.IGuildThreadQueryResponse.Members

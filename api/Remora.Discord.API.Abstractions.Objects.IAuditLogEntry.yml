@@ -1,0 +1,562 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Abstractions.Objects.IAuditLogEntry
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IAuditLogEntry
+  id: IAuditLogEntry
+  parent: Remora.Discord.API.Abstractions.Objects
+  children:
+  - Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.ActionType
+  - Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.Changes
+  - Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.ID
+  - Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.Options
+  - Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.Reason
+  - Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.TargetID
+  - Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.UserID
+  langs:
+  - csharp
+  - vb
+  name: IAuditLogEntry
+  nameWithType: IAuditLogEntry
+  fullName: Remora.Discord.API.Abstractions.Objects.IAuditLogEntry
+  type: Interface
+  source:
+    id: IAuditLogEntry
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\AuditLogs\IAuditLogEntry.cs
+    startLine: 31
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Represents an entry in the audit log.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public interface IAuditLogEntry
+    content.vb: >-
+      <PublicAPI>
+
+      Public Interface IAuditLogEntry
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.TargetID
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.TargetID
+  id: TargetID
+  parent: Remora.Discord.API.Abstractions.Objects.IAuditLogEntry
+  langs:
+  - csharp
+  - vb
+  name: TargetID
+  nameWithType: IAuditLogEntry.TargetID
+  fullName: Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.TargetID
+  type: Property
+  source:
+    id: TargetID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\AuditLogs\IAuditLogEntry.cs
+    startLine: 37
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the ID of the log entry target. Typically, this is a snowflake.
+  example: []
+  syntax:
+    content: string? TargetID { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property TargetID As String
+  overload: Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.TargetID*
+- uid: Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.Changes
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.Changes
+  id: Changes
+  parent: Remora.Discord.API.Abstractions.Objects.IAuditLogEntry
+  langs:
+  - csharp
+  - vb
+  name: Changes
+  nameWithType: IAuditLogEntry.Changes
+  fullName: Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.Changes
+  type: Property
+  source:
+    id: Changes
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\AuditLogs\IAuditLogEntry.cs
+    startLine: 42
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets a list of audit log changes.
+  example: []
+  syntax:
+    content: Optional<IReadOnlyList<IAuditLogChange>> Changes { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IAuditLogChange}}
+    content.vb: ReadOnly Property Changes As [Optional](Of IReadOnlyList(Of IAuditLogChange))
+  overload: Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.Changes*
+- uid: Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.UserID
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.UserID
+  id: UserID
+  parent: Remora.Discord.API.Abstractions.Objects.IAuditLogEntry
+  langs:
+  - csharp
+  - vb
+  name: UserID
+  nameWithType: IAuditLogEntry.UserID
+  fullName: Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.UserID
+  type: Property
+  source:
+    id: UserID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\AuditLogs\IAuditLogEntry.cs
+    startLine: 47
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the user who made the changes.
+  example: []
+  syntax:
+    content: Snowflake? UserID { get; }
+    parameters: []
+    return:
+      type: System.Nullable{Remora.Rest.Core.Snowflake}
+    content.vb: ReadOnly Property UserID As Snowflake?
+  overload: Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.UserID*
+- uid: Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.ID
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.ID
+  id: ID
+  parent: Remora.Discord.API.Abstractions.Objects.IAuditLogEntry
+  langs:
+  - csharp
+  - vb
+  name: ID
+  nameWithType: IAuditLogEntry.ID
+  fullName: Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.ID
+  type: Property
+  source:
+    id: ID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\AuditLogs\IAuditLogEntry.cs
+    startLine: 52
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the ID of the entry.
+  example: []
+  syntax:
+    content: Snowflake ID { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Snowflake
+    content.vb: ReadOnly Property ID As Snowflake
+  overload: Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.ID*
+- uid: Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.ActionType
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.ActionType
+  id: ActionType
+  parent: Remora.Discord.API.Abstractions.Objects.IAuditLogEntry
+  langs:
+  - csharp
+  - vb
+  name: ActionType
+  nameWithType: IAuditLogEntry.ActionType
+  fullName: Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.ActionType
+  type: Property
+  source:
+    id: ActionType
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\AuditLogs\IAuditLogEntry.cs
+    startLine: 57
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the type of action that occurred.
+  example: []
+  syntax:
+    content: AuditLogEvent ActionType { get; }
+    parameters: []
+    return:
+      type: Remora.Discord.API.Abstractions.Objects.AuditLogEvent
+    content.vb: ReadOnly Property ActionType As AuditLogEvent
+  overload: Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.ActionType*
+- uid: Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.Options
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.Options
+  id: Options
+  parent: Remora.Discord.API.Abstractions.Objects.IAuditLogEntry
+  langs:
+  - csharp
+  - vb
+  name: Options
+  nameWithType: IAuditLogEntry.Options
+  fullName: Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.Options
+  type: Property
+  source:
+    id: Options
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\AuditLogs\IAuditLogEntry.cs
+    startLine: 62
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets additional info for certain action types.
+  example: []
+  syntax:
+    content: Optional<IOptionalAuditEntryInfo> Options { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo}
+    content.vb: ReadOnly Property Options As [Optional](Of IOptionalAuditEntryInfo)
+  overload: Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.Options*
+- uid: Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.Reason
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.Reason
+  id: Reason
+  parent: Remora.Discord.API.Abstractions.Objects.IAuditLogEntry
+  langs:
+  - csharp
+  - vb
+  name: Reason
+  nameWithType: IAuditLogEntry.Reason
+  fullName: Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.Reason
+  type: Property
+  source:
+    id: Reason
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\AuditLogs\IAuditLogEntry.cs
+    startLine: 67
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the reason for the change (0-512 characters).
+  example: []
+  syntax:
+    content: Optional<string> Reason { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.String}
+    content.vb: ReadOnly Property Reason As [Optional](Of String)
+  overload: Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.Reason*
+references:
+- uid: Remora.Discord.API.Abstractions.Objects
+  commentId: N:Remora.Discord.API.Abstractions.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Objects
+  nameWithType: Remora.Discord.API.Abstractions.Objects
+  fullName: Remora.Discord.API.Abstractions.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+- uid: Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.TargetID*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.TargetID
+  href: Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.html#Remora_Discord_API_Abstractions_Objects_IAuditLogEntry_TargetID
+  name: TargetID
+  nameWithType: IAuditLogEntry.TargetID
+  fullName: Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.TargetID
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.Changes*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.Changes
+  href: Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.html#Remora_Discord_API_Abstractions_Objects_IAuditLogEntry_Changes
+  name: Changes
+  nameWithType: IAuditLogEntry.Changes
+  fullName: Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.Changes
+- uid: Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IAuditLogChange}}
+  commentId: T:Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IAuditLogChange}}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: Optional<IReadOnlyList<IAuditLogChange>>
+  nameWithType: Optional<IReadOnlyList<IAuditLogChange>>
+  fullName: Remora.Rest.Core.Optional<System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.IAuditLogChange>>
+  nameWithType.vb: Optional(Of IReadOnlyList(Of IAuditLogChange))
+  fullName.vb: Remora.Rest.Core.Optional(Of System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.IAuditLogChange))
+  name.vb: Optional(Of IReadOnlyList(Of IAuditLogChange))
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IAuditLogChange
+    name: IAuditLogChange
+    href: Remora.Discord.API.Abstractions.Objects.IAuditLogChange.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IAuditLogChange
+    name: IAuditLogChange
+    href: Remora.Discord.API.Abstractions.Objects.IAuditLogChange.html
+  - name: )
+  - name: )
+- uid: Remora.Rest.Core.Optional`1
+  commentId: T:Remora.Rest.Core.Optional`1
+  isExternal: true
+  name: Optional<TValue>
+  nameWithType: Optional<TValue>
+  fullName: Remora.Rest.Core.Optional<TValue>
+  nameWithType.vb: Optional(Of TValue)
+  fullName.vb: Remora.Rest.Core.Optional(Of TValue)
+  name.vb: Optional(Of TValue)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+- uid: Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.UserID*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.UserID
+  href: Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.html#Remora_Discord_API_Abstractions_Objects_IAuditLogEntry_UserID
+  name: UserID
+  nameWithType: IAuditLogEntry.UserID
+  fullName: Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.UserID
+- uid: System.Nullable{Remora.Rest.Core.Snowflake}
+  commentId: T:System.Nullable{Remora.Rest.Core.Snowflake}
+  parent: System
+  definition: System.Nullable`1
+  name: Snowflake?
+  nameWithType: Snowflake?
+  fullName: Remora.Rest.Core.Snowflake?
+  spec.csharp:
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '?'
+  spec.vb:
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.ID*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.ID
+  href: Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.html#Remora_Discord_API_Abstractions_Objects_IAuditLogEntry_ID
+  name: ID
+  nameWithType: IAuditLogEntry.ID
+  fullName: Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.ID
+- uid: Remora.Rest.Core.Snowflake
+  commentId: T:Remora.Rest.Core.Snowflake
+  parent: Remora.Rest.Core
+  isExternal: true
+  name: Snowflake
+  nameWithType: Snowflake
+  fullName: Remora.Rest.Core.Snowflake
+- uid: Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.ActionType*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.ActionType
+  href: Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.html#Remora_Discord_API_Abstractions_Objects_IAuditLogEntry_ActionType
+  name: ActionType
+  nameWithType: IAuditLogEntry.ActionType
+  fullName: Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.ActionType
+- uid: Remora.Discord.API.Abstractions.Objects.AuditLogEvent
+  commentId: T:Remora.Discord.API.Abstractions.Objects.AuditLogEvent
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.html
+  name: AuditLogEvent
+  nameWithType: AuditLogEvent
+  fullName: Remora.Discord.API.Abstractions.Objects.AuditLogEvent
+- uid: Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.Options*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.Options
+  href: Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.html#Remora_Discord_API_Abstractions_Objects_IAuditLogEntry_Options
+  name: Options
+  nameWithType: IAuditLogEntry.Options
+  fullName: Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.Options
+- uid: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.html
+  name: Optional<IOptionalAuditEntryInfo>
+  nameWithType: Optional<IOptionalAuditEntryInfo>
+  fullName: Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo>
+  nameWithType.vb: Optional(Of IOptionalAuditEntryInfo)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo)
+  name.vb: Optional(Of IOptionalAuditEntryInfo)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo
+    name: IOptionalAuditEntryInfo
+    href: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo
+    name: IOptionalAuditEntryInfo
+    href: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.html
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.Reason*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.Reason
+  href: Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.html#Remora_Discord_API_Abstractions_Objects_IAuditLogEntry_Reason
+  name: Reason
+  nameWithType: IAuditLogEntry.Reason
+  fullName: Remora.Discord.API.Abstractions.Objects.IAuditLogEntry.Reason
+- uid: Remora.Rest.Core.Optional{System.String}
+  commentId: T:Remora.Rest.Core.Optional{System.String}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Optional<string>
+  nameWithType: Optional<string>
+  fullName: Remora.Rest.Core.Optional<string>
+  nameWithType.vb: Optional(Of String)
+  fullName.vb: Remora.Rest.Core.Optional(Of String)
+  name.vb: Optional(Of String)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )

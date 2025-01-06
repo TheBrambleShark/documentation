@@ -1,0 +1,705 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.Samples.Interactivity.Interactions.StatefulInteractions
+  commentId: T:Remora.Discord.Samples.Interactivity.Interactions.StatefulInteractions
+  id: StatefulInteractions
+  parent: Remora.Discord.Samples.Interactivity.Interactions
+  children:
+  - Remora.Discord.Samples.Interactivity.Interactions.StatefulInteractions.#ctor(Microsoft.Extensions.Logging.ILogger{Remora.Discord.Samples.Interactivity.Interactions.StatefulInteractions})
+  - Remora.Discord.Samples.Interactivity.Interactions.StatefulInteractions.OnStatefulButtonClicked(System.String)
+  langs:
+  - csharp
+  - vb
+  name: StatefulInteractions
+  nameWithType: StatefulInteractions
+  fullName: Remora.Discord.Samples.Interactivity.Interactions.StatefulInteractions
+  type: Class
+  source:
+    id: StatefulInteractions
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Samples\Interactivity\Interactions\StatefulInteractions.cs
+    startLine: 16
+  assemblies:
+  - Interactivity
+  namespace: Remora.Discord.Samples.Interactivity.Interactions
+  summary: Handles stateful interactions.
+  example: []
+  syntax:
+    content: 'public class StatefulInteractions : InteractionGroup'
+    content.vb: Public Class StatefulInteractions Inherits InteractionGroup
+  inheritance:
+  - System.Object
+  - Remora.Commands.Groups.CommandGroup
+  - Remora.Discord.Interactivity.InteractionGroup
+  inheritedMembers:
+  - Remora.Commands.Groups.CommandGroup.CancellationToken
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Remora.Discord.Samples.Interactivity.Interactions.StatefulInteractions.#ctor(Microsoft.Extensions.Logging.ILogger{Remora.Discord.Samples.Interactivity.Interactions.StatefulInteractions})
+  commentId: M:Remora.Discord.Samples.Interactivity.Interactions.StatefulInteractions.#ctor(Microsoft.Extensions.Logging.ILogger{Remora.Discord.Samples.Interactivity.Interactions.StatefulInteractions})
+  id: '#ctor(Microsoft.Extensions.Logging.ILogger{Remora.Discord.Samples.Interactivity.Interactions.StatefulInteractions})'
+  parent: Remora.Discord.Samples.Interactivity.Interactions.StatefulInteractions
+  langs:
+  - csharp
+  - vb
+  name: StatefulInteractions(ILogger<StatefulInteractions>)
+  nameWithType: StatefulInteractions.StatefulInteractions(ILogger<StatefulInteractions>)
+  fullName: Remora.Discord.Samples.Interactivity.Interactions.StatefulInteractions.StatefulInteractions(Microsoft.Extensions.Logging.ILogger<Remora.Discord.Samples.Interactivity.Interactions.StatefulInteractions>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Samples\Interactivity\Interactions\StatefulInteractions.cs
+    startLine: 24
+  assemblies:
+  - Interactivity
+  namespace: Remora.Discord.Samples.Interactivity.Interactions
+  summary: Initializes a new instance of the <xref href="Remora.Discord.Samples.Interactivity.Interactions.StatefulInteractions" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public StatefulInteractions(ILogger<StatefulInteractions> log)
+    parameters:
+    - id: log
+      type: Microsoft.Extensions.Logging.ILogger{Remora.Discord.Samples.Interactivity.Interactions.StatefulInteractions}
+      description: The logging instance for this type.
+    content.vb: Public Sub New(log As ILogger(Of StatefulInteractions))
+  overload: Remora.Discord.Samples.Interactivity.Interactions.StatefulInteractions.#ctor*
+  nameWithType.vb: StatefulInteractions.New(ILogger(Of StatefulInteractions))
+  fullName.vb: Remora.Discord.Samples.Interactivity.Interactions.StatefulInteractions.New(Microsoft.Extensions.Logging.ILogger(Of Remora.Discord.Samples.Interactivity.Interactions.StatefulInteractions))
+  name.vb: New(ILogger(Of StatefulInteractions))
+- uid: Remora.Discord.Samples.Interactivity.Interactions.StatefulInteractions.OnStatefulButtonClicked(System.String)
+  commentId: M:Remora.Discord.Samples.Interactivity.Interactions.StatefulInteractions.OnStatefulButtonClicked(System.String)
+  id: OnStatefulButtonClicked(System.String)
+  parent: Remora.Discord.Samples.Interactivity.Interactions.StatefulInteractions
+  langs:
+  - csharp
+  - vb
+  name: OnStatefulButtonClicked(string?)
+  nameWithType: StatefulInteractions.OnStatefulButtonClicked(string?)
+  fullName: Remora.Discord.Samples.Interactivity.Interactions.StatefulInteractions.OnStatefulButtonClicked(string?)
+  type: Method
+  source:
+    id: OnStatefulButtonClicked
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Samples\Interactivity\Interactions\StatefulInteractions.cs
+    startLine: 34
+  assemblies:
+  - Interactivity
+  namespace: Remora.Discord.Samples.Interactivity.Interactions
+  summary: Logs the state associated with the button.
+  example: []
+  syntax:
+    content: >-
+      [Button("stateful-button", new string[] { })]
+
+      public Task<Result> OnStatefulButtonClicked(string? state = null)
+    parameters:
+    - id: state
+      type: System.String
+      description: The state passed along with the button, if any.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result}
+      description: A result which may or may not have succeeded.
+    content.vb: >-
+      <Button("stateful-button", New String() { })>
+
+      Public Function OnStatefulButtonClicked(state As String = Nothing) As Task(Of Result)
+  overload: Remora.Discord.Samples.Interactivity.Interactions.StatefulInteractions.OnStatefulButtonClicked*
+  nameWithType.vb: StatefulInteractions.OnStatefulButtonClicked(String)
+  fullName.vb: Remora.Discord.Samples.Interactivity.Interactions.StatefulInteractions.OnStatefulButtonClicked(String)
+  name.vb: OnStatefulButtonClicked(String)
+references:
+- uid: Remora.Discord.Samples.Interactivity.Interactions
+  commentId: N:Remora.Discord.Samples.Interactivity.Interactions
+  href: Remora.html
+  name: Remora.Discord.Samples.Interactivity.Interactions
+  nameWithType: Remora.Discord.Samples.Interactivity.Interactions
+  fullName: Remora.Discord.Samples.Interactivity.Interactions
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Samples
+    name: Samples
+    href: Remora.Discord.Samples.html
+  - name: .
+  - uid: Remora.Discord.Samples.Interactivity
+    name: Interactivity
+    href: Remora.Discord.Samples.Interactivity.html
+  - name: .
+  - uid: Remora.Discord.Samples.Interactivity.Interactions
+    name: Interactions
+    href: Remora.Discord.Samples.Interactivity.Interactions.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Samples
+    name: Samples
+    href: Remora.Discord.Samples.html
+  - name: .
+  - uid: Remora.Discord.Samples.Interactivity
+    name: Interactivity
+    href: Remora.Discord.Samples.Interactivity.html
+  - name: .
+  - uid: Remora.Discord.Samples.Interactivity.Interactions
+    name: Interactions
+    href: Remora.Discord.Samples.Interactivity.Interactions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Remora.Commands.Groups.CommandGroup
+  commentId: T:Remora.Commands.Groups.CommandGroup
+  parent: Remora.Commands.Groups
+  isExternal: true
+  name: CommandGroup
+  nameWithType: CommandGroup
+  fullName: Remora.Commands.Groups.CommandGroup
+- uid: Remora.Discord.Interactivity.InteractionGroup
+  commentId: T:Remora.Discord.Interactivity.InteractionGroup
+  parent: Remora.Discord.Interactivity
+  href: Remora.Discord.Interactivity.InteractionGroup.html
+  name: InteractionGroup
+  nameWithType: InteractionGroup
+  fullName: Remora.Discord.Interactivity.InteractionGroup
+- uid: Remora.Commands.Groups.CommandGroup.CancellationToken
+  commentId: P:Remora.Commands.Groups.CommandGroup.CancellationToken
+  parent: Remora.Commands.Groups.CommandGroup
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CommandGroup.CancellationToken
+  fullName: Remora.Commands.Groups.CommandGroup.CancellationToken
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Commands.Groups
+  commentId: N:Remora.Commands.Groups
+  isExternal: true
+  name: Remora.Commands.Groups
+  nameWithType: Remora.Commands.Groups
+  fullName: Remora.Commands.Groups
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Commands
+    name: Commands
+    isExternal: true
+  - name: .
+  - uid: Remora.Commands.Groups
+    name: Groups
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Commands
+    name: Commands
+    isExternal: true
+  - name: .
+  - uid: Remora.Commands.Groups
+    name: Groups
+    isExternal: true
+- uid: Remora.Discord.Interactivity
+  commentId: N:Remora.Discord.Interactivity
+  href: Remora.html
+  name: Remora.Discord.Interactivity
+  nameWithType: Remora.Discord.Interactivity
+  fullName: Remora.Discord.Interactivity
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Interactivity
+    name: Interactivity
+    href: Remora.Discord.Interactivity.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Interactivity
+    name: Interactivity
+    href: Remora.Discord.Interactivity.html
+- uid: Remora.Discord.Samples.Interactivity.Interactions.StatefulInteractions
+  commentId: T:Remora.Discord.Samples.Interactivity.Interactions.StatefulInteractions
+  href: Remora.Discord.Samples.Interactivity.Interactions.StatefulInteractions.html
+  name: StatefulInteractions
+  nameWithType: StatefulInteractions
+  fullName: Remora.Discord.Samples.Interactivity.Interactions.StatefulInteractions
+- uid: Remora.Discord.Samples.Interactivity.Interactions.StatefulInteractions.#ctor*
+  commentId: Overload:Remora.Discord.Samples.Interactivity.Interactions.StatefulInteractions.#ctor
+  href: Remora.Discord.Samples.Interactivity.Interactions.StatefulInteractions.html#Remora_Discord_Samples_Interactivity_Interactions_StatefulInteractions__ctor_Microsoft_Extensions_Logging_ILogger_Remora_Discord_Samples_Interactivity_Interactions_StatefulInteractions__
+  name: StatefulInteractions
+  nameWithType: StatefulInteractions.StatefulInteractions
+  fullName: Remora.Discord.Samples.Interactivity.Interactions.StatefulInteractions.StatefulInteractions
+  nameWithType.vb: StatefulInteractions.New
+  fullName.vb: Remora.Discord.Samples.Interactivity.Interactions.StatefulInteractions.New
+  name.vb: New
+- uid: Microsoft.Extensions.Logging.ILogger{Remora.Discord.Samples.Interactivity.Interactions.StatefulInteractions}
+  commentId: T:Microsoft.Extensions.Logging.ILogger{Remora.Discord.Samples.Interactivity.Interactions.StatefulInteractions}
+  parent: Microsoft.Extensions.Logging
+  definition: Microsoft.Extensions.Logging.ILogger`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<StatefulInteractions>
+  nameWithType: ILogger<StatefulInteractions>
+  fullName: Microsoft.Extensions.Logging.ILogger<Remora.Discord.Samples.Interactivity.Interactions.StatefulInteractions>
+  nameWithType.vb: ILogger(Of StatefulInteractions)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of Remora.Discord.Samples.Interactivity.Interactions.StatefulInteractions)
+  name.vb: ILogger(Of StatefulInteractions)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - uid: Remora.Discord.Samples.Interactivity.Interactions.StatefulInteractions
+    name: StatefulInteractions
+    href: Remora.Discord.Samples.Interactivity.Interactions.StatefulInteractions.html
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.Samples.Interactivity.Interactions.StatefulInteractions
+    name: StatefulInteractions
+    href: Remora.Discord.Samples.Interactivity.Interactions.StatefulInteractions.html
+  - name: )
+- uid: Microsoft.Extensions.Logging.ILogger`1
+  commentId: T:Microsoft.Extensions.Logging.ILogger`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<TCategoryName>
+  nameWithType: ILogger<TCategoryName>
+  fullName: Microsoft.Extensions.Logging.ILogger<TCategoryName>
+  nameWithType.vb: ILogger(Of TCategoryName)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of TCategoryName)
+  name.vb: ILogger(Of TCategoryName)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - name: TCategoryName
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCategoryName
+  - name: )
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+- uid: Remora.Discord.Samples.Interactivity.Interactions.StatefulInteractions.OnStatefulButtonClicked*
+  commentId: Overload:Remora.Discord.Samples.Interactivity.Interactions.StatefulInteractions.OnStatefulButtonClicked
+  href: Remora.Discord.Samples.Interactivity.Interactions.StatefulInteractions.html#Remora_Discord_Samples_Interactivity_Interactions_StatefulInteractions_OnStatefulButtonClicked_System_String_
+  name: OnStatefulButtonClicked
+  nameWithType: StatefulInteractions.OnStatefulButtonClicked
+  fullName: Remora.Discord.Samples.Interactivity.Interactions.StatefulInteractions.OnStatefulButtonClicked
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task{Remora.Results.Result}
+  commentId: T:System.Threading.Tasks.Task{Remora.Results.Result}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Result>
+  nameWithType: Task<Result>
+  fullName: System.Threading.Tasks.Task<Remora.Results.Result>
+  nameWithType.vb: Task(Of Result)
+  fullName.vb: System.Threading.Tasks.Task(Of Remora.Results.Result)
+  name.vb: Task(Of Result)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Remora.Results.Result
+    name: Result
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Results.Result
+    name: Result
+    isExternal: true
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

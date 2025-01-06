@@ -1,0 +1,738 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.Commands.Tests.Conditions.RequireContextConditionTests
+  commentId: T:Remora.Discord.Commands.Tests.Conditions.RequireContextConditionTests
+  id: RequireContextConditionTests
+  parent: Remora.Discord.Commands.Tests.Conditions
+  children:
+  - Remora.Discord.Commands.Tests.Conditions.RequireContextConditionTests.CanCheckMultipleContexts
+  - Remora.Discord.Commands.Tests.Conditions.RequireContextConditionTests.CanCheckMultipleTypes
+  - Remora.Discord.Commands.Tests.Conditions.RequireContextConditionTests.ReturnsCorrectResultForContext(Remora.Discord.Commands.Conditions.ChannelContext,Remora.Discord.API.Abstractions.Objects.ChannelType,System.Boolean)
+  - Remora.Discord.Commands.Tests.Conditions.RequireContextConditionTests.ReturnsCorrectResultForType(Remora.Discord.API.Abstractions.Objects.ChannelType,Remora.Discord.API.Abstractions.Objects.ChannelType,System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: RequireContextConditionTests
+  nameWithType: RequireContextConditionTests
+  fullName: Remora.Discord.Commands.Tests.Conditions.RequireContextConditionTests
+  type: Class
+  source:
+    id: RequireContextConditionTests
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Tests\Remora.Discord.Commands.Tests\Conditions\RequireContextConditionTests.cs
+    startLine: 40
+  assemblies:
+  - Remora.Discord.Commands.Tests
+  namespace: Remora.Discord.Commands.Tests.Conditions
+  summary: Tests the <xref href="Remora.Discord.Commands.Conditions.RequireContextCondition" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public class RequireContextConditionTests
+    content.vb: Public Class RequireContextConditionTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Remora.Discord.Commands.Tests.Conditions.RequireContextConditionTests.ReturnsCorrectResultForContext(Remora.Discord.Commands.Conditions.ChannelContext,Remora.Discord.API.Abstractions.Objects.ChannelType,System.Boolean)
+  commentId: M:Remora.Discord.Commands.Tests.Conditions.RequireContextConditionTests.ReturnsCorrectResultForContext(Remora.Discord.Commands.Conditions.ChannelContext,Remora.Discord.API.Abstractions.Objects.ChannelType,System.Boolean)
+  id: ReturnsCorrectResultForContext(Remora.Discord.Commands.Conditions.ChannelContext,Remora.Discord.API.Abstractions.Objects.ChannelType,System.Boolean)
+  parent: Remora.Discord.Commands.Tests.Conditions.RequireContextConditionTests
+  langs:
+  - csharp
+  - vb
+  name: ReturnsCorrectResultForContext(ChannelContext, ChannelType, bool)
+  nameWithType: RequireContextConditionTests.ReturnsCorrectResultForContext(ChannelContext, ChannelType, bool)
+  fullName: Remora.Discord.Commands.Tests.Conditions.RequireContextConditionTests.ReturnsCorrectResultForContext(Remora.Discord.Commands.Conditions.ChannelContext, Remora.Discord.API.Abstractions.Objects.ChannelType, bool)
+  type: Method
+  source:
+    id: ReturnsCorrectResultForContext
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Tests\Remora.Discord.Commands.Tests\Conditions\RequireContextConditionTests.cs
+    startLine: 49
+  assemblies:
+  - Remora.Discord.Commands.Tests
+  namespace: Remora.Discord.Commands.Tests.Conditions
+  summary: Tests that the condition behaves correctly when constrained to a context.
+  example: []
+  syntax:
+    content: >-
+      [Theory]
+
+      [InlineData(new object[] { ChannelContext.Guild, ChannelType.GuildText, true })]
+
+      [InlineData(new object[] { ChannelContext.Guild, ChannelType.DM, false })]
+
+      [InlineData(new object[] { ChannelContext.Guild, ChannelType.GuildVoice, true })]
+
+      [InlineData(new object[] { ChannelContext.Guild, ChannelType.GroupDM, false })]
+
+      [InlineData(new object[] { ChannelContext.Guild, ChannelType.GuildCategory, true })]
+
+      [InlineData(new object[] { ChannelContext.Guild, ChannelType.GuildAnnouncement, true })]
+
+      [InlineData(new object[] { ChannelContext.Guild, ChannelType.AnnouncementThread, true })]
+
+      [InlineData(new object[] { ChannelContext.Guild, ChannelType.PublicThread, true })]
+
+      [InlineData(new object[] { ChannelContext.Guild, ChannelType.PrivateThread, true })]
+
+      [InlineData(new object[] { ChannelContext.Guild, ChannelType.GuildStageVoice, true })]
+
+      [InlineData(new object[] { ChannelContext.DM, ChannelType.DM, true })]
+
+      [InlineData(new object[] { ChannelContext.GroupDM, ChannelType.GroupDM, true })]
+
+      public Task ReturnsCorrectResultForContext(ChannelContext context, ChannelType channelType, bool expected)
+    parameters:
+    - id: context
+      type: Remora.Discord.Commands.Conditions.ChannelContext
+      description: The channel context.
+    - id: channelType
+      type: Remora.Discord.API.Abstractions.Objects.ChannelType
+      description: The channel type to test.
+    - id: expected
+      type: System.Boolean
+      description: The expected result.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A <xref href="System.Threading.Tasks.Task" data-throw-if-not-resolved="false"></xref> representing the asynchronous unit test.
+    content.vb: >-
+      <Theory>
+
+      <InlineData(New Object() { ChannelContext.Guild, ChannelType.GuildText, True })>
+
+      <InlineData(New Object() { ChannelContext.Guild, ChannelType.DM, False })>
+
+      <InlineData(New Object() { ChannelContext.Guild, ChannelType.GuildVoice, True })>
+
+      <InlineData(New Object() { ChannelContext.Guild, ChannelType.GroupDM, False })>
+
+      <InlineData(New Object() { ChannelContext.Guild, ChannelType.GuildCategory, True })>
+
+      <InlineData(New Object() { ChannelContext.Guild, ChannelType.GuildAnnouncement, True })>
+
+      <InlineData(New Object() { ChannelContext.Guild, ChannelType.AnnouncementThread, True })>
+
+      <InlineData(New Object() { ChannelContext.Guild, ChannelType.PublicThread, True })>
+
+      <InlineData(New Object() { ChannelContext.Guild, ChannelType.PrivateThread, True })>
+
+      <InlineData(New Object() { ChannelContext.Guild, ChannelType.GuildStageVoice, True })>
+
+      <InlineData(New Object() { ChannelContext.DM, ChannelType.DM, True })>
+
+      <InlineData(New Object() { ChannelContext.GroupDM, ChannelType.GroupDM, True })>
+
+      Public Function ReturnsCorrectResultForContext(context As ChannelContext, channelType As ChannelType, expected As Boolean) As Task
+  overload: Remora.Discord.Commands.Tests.Conditions.RequireContextConditionTests.ReturnsCorrectResultForContext*
+  attributes:
+  - type: Xunit.TheoryAttribute
+    ctor: Xunit.TheoryAttribute.#ctor
+    arguments: []
+  nameWithType.vb: RequireContextConditionTests.ReturnsCorrectResultForContext(ChannelContext, ChannelType, Boolean)
+  fullName.vb: Remora.Discord.Commands.Tests.Conditions.RequireContextConditionTests.ReturnsCorrectResultForContext(Remora.Discord.Commands.Conditions.ChannelContext, Remora.Discord.API.Abstractions.Objects.ChannelType, Boolean)
+  name.vb: ReturnsCorrectResultForContext(ChannelContext, ChannelType, Boolean)
+- uid: Remora.Discord.Commands.Tests.Conditions.RequireContextConditionTests.ReturnsCorrectResultForType(Remora.Discord.API.Abstractions.Objects.ChannelType,Remora.Discord.API.Abstractions.Objects.ChannelType,System.Boolean)
+  commentId: M:Remora.Discord.Commands.Tests.Conditions.RequireContextConditionTests.ReturnsCorrectResultForType(Remora.Discord.API.Abstractions.Objects.ChannelType,Remora.Discord.API.Abstractions.Objects.ChannelType,System.Boolean)
+  id: ReturnsCorrectResultForType(Remora.Discord.API.Abstractions.Objects.ChannelType,Remora.Discord.API.Abstractions.Objects.ChannelType,System.Boolean)
+  parent: Remora.Discord.Commands.Tests.Conditions.RequireContextConditionTests
+  langs:
+  - csharp
+  - vb
+  name: ReturnsCorrectResultForType(ChannelType, ChannelType, bool)
+  nameWithType: RequireContextConditionTests.ReturnsCorrectResultForType(ChannelType, ChannelType, bool)
+  fullName: Remora.Discord.Commands.Tests.Conditions.RequireContextConditionTests.ReturnsCorrectResultForType(Remora.Discord.API.Abstractions.Objects.ChannelType, Remora.Discord.API.Abstractions.Objects.ChannelType, bool)
+  type: Method
+  source:
+    id: ReturnsCorrectResultForType
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Tests\Remora.Discord.Commands.Tests\Conditions\RequireContextConditionTests.cs
+    startLine: 94
+  assemblies:
+  - Remora.Discord.Commands.Tests
+  namespace: Remora.Discord.Commands.Tests.Conditions
+  summary: Tests that the condition behaves correctly when constrained to a type.
+  example: []
+  syntax:
+    content: >-
+      [Theory]
+
+      [InlineData(new object[] { ChannelType.GuildText, ChannelType.GuildText, true })]
+
+      [InlineData(new object[] { ChannelType.GuildText, ChannelType.GuildVoice, false })]
+
+      public Task ReturnsCorrectResultForType(ChannelType required, ChannelType actual, bool expected)
+    parameters:
+    - id: required
+      type: Remora.Discord.API.Abstractions.Objects.ChannelType
+      description: The required channel type.
+    - id: actual
+      type: Remora.Discord.API.Abstractions.Objects.ChannelType
+      description: The actual channel type.
+    - id: expected
+      type: System.Boolean
+      description: The expected result.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A <xref href="System.Threading.Tasks.Task" data-throw-if-not-resolved="false"></xref> representing the asynchronous unit test.
+    content.vb: >-
+      <Theory>
+
+      <InlineData(New Object() { ChannelType.GuildText, ChannelType.GuildText, True })>
+
+      <InlineData(New Object() { ChannelType.GuildText, ChannelType.GuildVoice, False })>
+
+      Public Function ReturnsCorrectResultForType(required As ChannelType, actual As ChannelType, expected As Boolean) As Task
+  overload: Remora.Discord.Commands.Tests.Conditions.RequireContextConditionTests.ReturnsCorrectResultForType*
+  attributes:
+  - type: Xunit.TheoryAttribute
+    ctor: Xunit.TheoryAttribute.#ctor
+    arguments: []
+  nameWithType.vb: RequireContextConditionTests.ReturnsCorrectResultForType(ChannelType, ChannelType, Boolean)
+  fullName.vb: Remora.Discord.Commands.Tests.Conditions.RequireContextConditionTests.ReturnsCorrectResultForType(Remora.Discord.API.Abstractions.Objects.ChannelType, Remora.Discord.API.Abstractions.Objects.ChannelType, Boolean)
+  name.vb: ReturnsCorrectResultForType(ChannelType, ChannelType, Boolean)
+- uid: Remora.Discord.Commands.Tests.Conditions.RequireContextConditionTests.CanCheckMultipleContexts
+  commentId: M:Remora.Discord.Commands.Tests.Conditions.RequireContextConditionTests.CanCheckMultipleContexts
+  id: CanCheckMultipleContexts
+  parent: Remora.Discord.Commands.Tests.Conditions.RequireContextConditionTests
+  langs:
+  - csharp
+  - vb
+  name: CanCheckMultipleContexts()
+  nameWithType: RequireContextConditionTests.CanCheckMultipleContexts()
+  fullName: Remora.Discord.Commands.Tests.Conditions.RequireContextConditionTests.CanCheckMultipleContexts()
+  type: Method
+  source:
+    id: CanCheckMultipleContexts
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Tests\Remora.Discord.Commands.Tests\Conditions\RequireContextConditionTests.cs
+    startLine: 126
+  assemblies:
+  - Remora.Discord.Commands.Tests
+  namespace: Remora.Discord.Commands.Tests.Conditions
+  summary: Tests whether the condition can check multiple channel contexts.
+  example: []
+  syntax:
+    content: >-
+      [Fact]
+
+      public Task CanCheckMultipleContexts()
+    return:
+      type: System.Threading.Tasks.Task
+      description: A <xref href="System.Threading.Tasks.Task" data-throw-if-not-resolved="false"></xref> representing the asynchronous unit test.
+    content.vb: >-
+      <Fact>
+
+      Public Function CanCheckMultipleContexts() As Task
+  overload: Remora.Discord.Commands.Tests.Conditions.RequireContextConditionTests.CanCheckMultipleContexts*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.Commands.Tests.Conditions.RequireContextConditionTests.CanCheckMultipleTypes
+  commentId: M:Remora.Discord.Commands.Tests.Conditions.RequireContextConditionTests.CanCheckMultipleTypes
+  id: CanCheckMultipleTypes
+  parent: Remora.Discord.Commands.Tests.Conditions.RequireContextConditionTests
+  langs:
+  - csharp
+  - vb
+  name: CanCheckMultipleTypes()
+  nameWithType: RequireContextConditionTests.CanCheckMultipleTypes()
+  fullName: Remora.Discord.Commands.Tests.Conditions.RequireContextConditionTests.CanCheckMultipleTypes()
+  type: Method
+  source:
+    id: CanCheckMultipleTypes
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Tests\Remora.Discord.Commands.Tests\Conditions\RequireContextConditionTests.cs
+    startLine: 179
+  assemblies:
+  - Remora.Discord.Commands.Tests
+  namespace: Remora.Discord.Commands.Tests.Conditions
+  summary: Tests whether the condition can check multiple channel types.
+  example: []
+  syntax:
+    content: >-
+      [Fact]
+
+      public Task CanCheckMultipleTypes()
+    return:
+      type: System.Threading.Tasks.Task
+      description: A <xref href="System.Threading.Tasks.Task" data-throw-if-not-resolved="false"></xref> representing the asynchronous unit test.
+    content.vb: >-
+      <Fact>
+
+      Public Function CanCheckMultipleTypes() As Task
+  overload: Remora.Discord.Commands.Tests.Conditions.RequireContextConditionTests.CanCheckMultipleTypes*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+references:
+- uid: Remora.Discord.Commands.Conditions.RequireContextCondition
+  commentId: T:Remora.Discord.Commands.Conditions.RequireContextCondition
+  href: Remora.Discord.Commands.Conditions.RequireContextCondition.html
+  name: RequireContextCondition
+  nameWithType: RequireContextCondition
+  fullName: Remora.Discord.Commands.Conditions.RequireContextCondition
+- uid: Remora.Discord.Commands.Tests.Conditions
+  commentId: N:Remora.Discord.Commands.Tests.Conditions
+  href: Remora.html
+  name: Remora.Discord.Commands.Tests.Conditions
+  nameWithType: Remora.Discord.Commands.Tests.Conditions
+  fullName: Remora.Discord.Commands.Tests.Conditions
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Commands
+    name: Commands
+    href: Remora.Discord.Commands.html
+  - name: .
+  - uid: Remora.Discord.Commands.Tests
+    name: Tests
+    href: Remora.Discord.Commands.Tests.html
+  - name: .
+  - uid: Remora.Discord.Commands.Tests.Conditions
+    name: Conditions
+    href: Remora.Discord.Commands.Tests.Conditions.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Commands
+    name: Commands
+    href: Remora.Discord.Commands.html
+  - name: .
+  - uid: Remora.Discord.Commands.Tests
+    name: Tests
+    href: Remora.Discord.Commands.Tests.html
+  - name: .
+  - uid: Remora.Discord.Commands.Tests.Conditions
+    name: Conditions
+    href: Remora.Discord.Commands.Tests.Conditions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Remora.Discord.Commands.Tests.Conditions.RequireContextConditionTests.ReturnsCorrectResultForContext*
+  commentId: Overload:Remora.Discord.Commands.Tests.Conditions.RequireContextConditionTests.ReturnsCorrectResultForContext
+  href: Remora.Discord.Commands.Tests.Conditions.RequireContextConditionTests.html#Remora_Discord_Commands_Tests_Conditions_RequireContextConditionTests_ReturnsCorrectResultForContext_Remora_Discord_Commands_Conditions_ChannelContext_Remora_Discord_API_Abstractions_Objects_ChannelType_System_Boolean_
+  name: ReturnsCorrectResultForContext
+  nameWithType: RequireContextConditionTests.ReturnsCorrectResultForContext
+  fullName: Remora.Discord.Commands.Tests.Conditions.RequireContextConditionTests.ReturnsCorrectResultForContext
+- uid: Remora.Discord.Commands.Conditions.ChannelContext
+  commentId: T:Remora.Discord.Commands.Conditions.ChannelContext
+  parent: Remora.Discord.Commands.Conditions
+  href: Remora.Discord.Commands.Conditions.ChannelContext.html
+  name: ChannelContext
+  nameWithType: ChannelContext
+  fullName: Remora.Discord.Commands.Conditions.ChannelContext
+- uid: Remora.Discord.API.Abstractions.Objects.ChannelType
+  commentId: T:Remora.Discord.API.Abstractions.Objects.ChannelType
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.ChannelType.html
+  name: ChannelType
+  nameWithType: ChannelType
+  fullName: Remora.Discord.API.Abstractions.Objects.ChannelType
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Remora.Discord.Commands.Conditions
+  commentId: N:Remora.Discord.Commands.Conditions
+  href: Remora.html
+  name: Remora.Discord.Commands.Conditions
+  nameWithType: Remora.Discord.Commands.Conditions
+  fullName: Remora.Discord.Commands.Conditions
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Commands
+    name: Commands
+    href: Remora.Discord.Commands.html
+  - name: .
+  - uid: Remora.Discord.Commands.Conditions
+    name: Conditions
+    href: Remora.Discord.Commands.Conditions.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Commands
+    name: Commands
+    href: Remora.Discord.Commands.html
+  - name: .
+  - uid: Remora.Discord.Commands.Conditions
+    name: Conditions
+    href: Remora.Discord.Commands.Conditions.html
+- uid: Remora.Discord.API.Abstractions.Objects
+  commentId: N:Remora.Discord.API.Abstractions.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Objects
+  nameWithType: Remora.Discord.API.Abstractions.Objects
+  fullName: Remora.Discord.API.Abstractions.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+- uid: Remora.Discord.Commands.Tests.Conditions.RequireContextConditionTests.ReturnsCorrectResultForType*
+  commentId: Overload:Remora.Discord.Commands.Tests.Conditions.RequireContextConditionTests.ReturnsCorrectResultForType
+  href: Remora.Discord.Commands.Tests.Conditions.RequireContextConditionTests.html#Remora_Discord_Commands_Tests_Conditions_RequireContextConditionTests_ReturnsCorrectResultForType_Remora_Discord_API_Abstractions_Objects_ChannelType_Remora_Discord_API_Abstractions_Objects_ChannelType_System_Boolean_
+  name: ReturnsCorrectResultForType
+  nameWithType: RequireContextConditionTests.ReturnsCorrectResultForType
+  fullName: Remora.Discord.Commands.Tests.Conditions.RequireContextConditionTests.ReturnsCorrectResultForType
+- uid: Remora.Discord.Commands.Tests.Conditions.RequireContextConditionTests.CanCheckMultipleContexts*
+  commentId: Overload:Remora.Discord.Commands.Tests.Conditions.RequireContextConditionTests.CanCheckMultipleContexts
+  href: Remora.Discord.Commands.Tests.Conditions.RequireContextConditionTests.html#Remora_Discord_Commands_Tests_Conditions_RequireContextConditionTests_CanCheckMultipleContexts
+  name: CanCheckMultipleContexts
+  nameWithType: RequireContextConditionTests.CanCheckMultipleContexts
+  fullName: Remora.Discord.Commands.Tests.Conditions.RequireContextConditionTests.CanCheckMultipleContexts
+- uid: Remora.Discord.Commands.Tests.Conditions.RequireContextConditionTests.CanCheckMultipleTypes*
+  commentId: Overload:Remora.Discord.Commands.Tests.Conditions.RequireContextConditionTests.CanCheckMultipleTypes
+  href: Remora.Discord.Commands.Tests.Conditions.RequireContextConditionTests.html#Remora_Discord_Commands_Tests_Conditions_RequireContextConditionTests_CanCheckMultipleTypes
+  name: CanCheckMultipleTypes
+  nameWithType: RequireContextConditionTests.CanCheckMultipleTypes
+  fullName: Remora.Discord.Commands.Tests.Conditions.RequireContextConditionTests.CanCheckMultipleTypes

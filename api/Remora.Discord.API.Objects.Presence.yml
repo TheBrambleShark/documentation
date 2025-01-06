@@ -1,0 +1,866 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Objects.Presence
+  commentId: T:Remora.Discord.API.Objects.Presence
+  id: Presence
+  parent: Remora.Discord.API.Objects
+  children:
+  - Remora.Discord.API.Objects.Presence.#ctor(Remora.Discord.API.Abstractions.Objects.IPartialUser,Remora.Rest.Core.Snowflake,Remora.Discord.API.Abstractions.Objects.UserStatus,System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IActivity},Remora.Discord.API.Abstractions.Objects.IClientStatus)
+  - Remora.Discord.API.Objects.Presence.Activities
+  - Remora.Discord.API.Objects.Presence.ClientStatus
+  - Remora.Discord.API.Objects.Presence.GuildID
+  - Remora.Discord.API.Objects.Presence.Status
+  - Remora.Discord.API.Objects.Presence.User
+  langs:
+  - csharp
+  - vb
+  name: Presence
+  nameWithType: Presence
+  fullName: Remora.Discord.API.Objects.Presence
+  type: Class
+  source:
+    id: Presence
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Presences\Presence.cs
+    startLine: 32
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Represents a user's presence.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public record Presence : IPresence, IPartialPresence, IEquatable<Presence>
+    content.vb: >-
+      <PublicAPI>
+
+      Public Class Presence Implements IPresence, IPartialPresence, IEquatable(Of Presence)
+  inheritance:
+  - System.Object
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPresence
+  - Remora.Discord.API.Abstractions.Objects.IPartialPresence
+  - System.IEquatable{Remora.Discord.API.Objects.Presence}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Objects.Presence.#ctor(Remora.Discord.API.Abstractions.Objects.IPartialUser,Remora.Rest.Core.Snowflake,Remora.Discord.API.Abstractions.Objects.UserStatus,System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IActivity},Remora.Discord.API.Abstractions.Objects.IClientStatus)
+  commentId: M:Remora.Discord.API.Objects.Presence.#ctor(Remora.Discord.API.Abstractions.Objects.IPartialUser,Remora.Rest.Core.Snowflake,Remora.Discord.API.Abstractions.Objects.UserStatus,System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IActivity},Remora.Discord.API.Abstractions.Objects.IClientStatus)
+  id: '#ctor(Remora.Discord.API.Abstractions.Objects.IPartialUser,Remora.Rest.Core.Snowflake,Remora.Discord.API.Abstractions.Objects.UserStatus,System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IActivity},Remora.Discord.API.Abstractions.Objects.IClientStatus)'
+  parent: Remora.Discord.API.Objects.Presence
+  langs:
+  - csharp
+  - vb
+  name: Presence(IPartialUser, Snowflake, UserStatus, IReadOnlyList<IActivity>?, IClientStatus)
+  nameWithType: Presence.Presence(IPartialUser, Snowflake, UserStatus, IReadOnlyList<IActivity>?, IClientStatus)
+  fullName: Remora.Discord.API.Objects.Presence.Presence(Remora.Discord.API.Abstractions.Objects.IPartialUser, Remora.Rest.Core.Snowflake, Remora.Discord.API.Abstractions.Objects.UserStatus, System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.IActivity>?, Remora.Discord.API.Abstractions.Objects.IClientStatus)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Presences\Presence.cs
+    startLine: 32
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Represents a user's presence.
+  example: []
+  syntax:
+    content: public Presence(IPartialUser User, Snowflake GuildID, UserStatus Status, IReadOnlyList<IActivity>? Activities, IClientStatus ClientStatus)
+    parameters:
+    - id: User
+      type: Remora.Discord.API.Abstractions.Objects.IPartialUser
+    - id: GuildID
+      type: Remora.Rest.Core.Snowflake
+    - id: Status
+      type: Remora.Discord.API.Abstractions.Objects.UserStatus
+    - id: Activities
+      type: System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IActivity}
+    - id: ClientStatus
+      type: Remora.Discord.API.Abstractions.Objects.IClientStatus
+    content.vb: Public Sub New(User As IPartialUser, GuildID As Snowflake, Status As UserStatus, Activities As IReadOnlyList(Of IActivity), ClientStatus As IClientStatus)
+  overload: Remora.Discord.API.Objects.Presence.#ctor*
+  nameWithType.vb: Presence.New(IPartialUser, Snowflake, UserStatus, IReadOnlyList(Of IActivity), IClientStatus)
+  fullName.vb: Remora.Discord.API.Objects.Presence.New(Remora.Discord.API.Abstractions.Objects.IPartialUser, Remora.Rest.Core.Snowflake, Remora.Discord.API.Abstractions.Objects.UserStatus, System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.IActivity), Remora.Discord.API.Abstractions.Objects.IClientStatus)
+  name.vb: New(IPartialUser, Snowflake, UserStatus, IReadOnlyList(Of IActivity), IClientStatus)
+- uid: Remora.Discord.API.Objects.Presence.User
+  commentId: P:Remora.Discord.API.Objects.Presence.User
+  id: User
+  parent: Remora.Discord.API.Objects.Presence
+  langs:
+  - csharp
+  - vb
+  name: User
+  nameWithType: Presence.User
+  fullName: Remora.Discord.API.Objects.Presence.User
+  type: Property
+  source:
+    id: User
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Presences\Presence.cs
+    startLine: 35
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the user the presence is being updated for.
+  example: []
+  syntax:
+    content: public IPartialUser User { get; init; }
+    parameters: []
+    return:
+      type: Remora.Discord.API.Abstractions.Objects.IPartialUser
+    content.vb: Public Property User As IPartialUser
+  overload: Remora.Discord.API.Objects.Presence.User*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPresence.User
+- uid: Remora.Discord.API.Objects.Presence.GuildID
+  commentId: P:Remora.Discord.API.Objects.Presence.GuildID
+  id: GuildID
+  parent: Remora.Discord.API.Objects.Presence
+  langs:
+  - csharp
+  - vb
+  name: GuildID
+  nameWithType: Presence.GuildID
+  fullName: Remora.Discord.API.Objects.Presence.GuildID
+  type: Property
+  source:
+    id: GuildID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Presences\Presence.cs
+    startLine: 36
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the ID of the guild.
+  example: []
+  syntax:
+    content: public Snowflake GuildID { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Snowflake
+    content.vb: Public Property GuildID As Snowflake
+  overload: Remora.Discord.API.Objects.Presence.GuildID*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPresence.GuildID
+- uid: Remora.Discord.API.Objects.Presence.Status
+  commentId: P:Remora.Discord.API.Objects.Presence.Status
+  id: Status
+  parent: Remora.Discord.API.Objects.Presence
+  langs:
+  - csharp
+  - vb
+  name: Status
+  nameWithType: Presence.Status
+  fullName: Remora.Discord.API.Objects.Presence.Status
+  type: Property
+  source:
+    id: Status
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Presences\Presence.cs
+    startLine: 37
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the current status of the user.
+  example: []
+  syntax:
+    content: public UserStatus Status { get; init; }
+    parameters: []
+    return:
+      type: Remora.Discord.API.Abstractions.Objects.UserStatus
+    content.vb: Public Property Status As UserStatus
+  overload: Remora.Discord.API.Objects.Presence.Status*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPresence.Status
+- uid: Remora.Discord.API.Objects.Presence.Activities
+  commentId: P:Remora.Discord.API.Objects.Presence.Activities
+  id: Activities
+  parent: Remora.Discord.API.Objects.Presence
+  langs:
+  - csharp
+  - vb
+  name: Activities
+  nameWithType: Presence.Activities
+  fullName: Remora.Discord.API.Objects.Presence.Activities
+  type: Property
+  source:
+    id: Activities
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Presences\Presence.cs
+    startLine: 38
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the user's current activities.
+  example: []
+  syntax:
+    content: public IReadOnlyList<IActivity>? Activities { get; init; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IActivity}
+    content.vb: Public Property Activities As IReadOnlyList(Of IActivity)
+  overload: Remora.Discord.API.Objects.Presence.Activities*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPresence.Activities
+- uid: Remora.Discord.API.Objects.Presence.ClientStatus
+  commentId: P:Remora.Discord.API.Objects.Presence.ClientStatus
+  id: ClientStatus
+  parent: Remora.Discord.API.Objects.Presence
+  langs:
+  - csharp
+  - vb
+  name: ClientStatus
+  nameWithType: Presence.ClientStatus
+  fullName: Remora.Discord.API.Objects.Presence.ClientStatus
+  type: Property
+  source:
+    id: ClientStatus
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Presences\Presence.cs
+    startLine: 39
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the user's platform-dependent status.
+  example: []
+  syntax:
+    content: public IClientStatus ClientStatus { get; init; }
+    parameters: []
+    return:
+      type: Remora.Discord.API.Abstractions.Objects.IClientStatus
+    content.vb: Public Property ClientStatus As IClientStatus
+  overload: Remora.Discord.API.Objects.Presence.ClientStatus*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPresence.ClientStatus
+references:
+- uid: Remora.Discord.API.Objects
+  commentId: N:Remora.Discord.API.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Objects
+  nameWithType: Remora.Discord.API.Objects
+  fullName: Remora.Discord.API.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Objects
+    name: Objects
+    href: Remora.Discord.API.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Objects
+    name: Objects
+    href: Remora.Discord.API.Objects.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Remora.Discord.API.Abstractions.Objects.IPresence
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IPresence
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IPresence.html
+  name: IPresence
+  nameWithType: IPresence
+  fullName: Remora.Discord.API.Abstractions.Objects.IPresence
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialPresence
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IPartialPresence
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IPartialPresence.html
+  name: IPartialPresence
+  nameWithType: IPartialPresence
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialPresence
+- uid: System.IEquatable{Remora.Discord.API.Objects.Presence}
+  commentId: T:System.IEquatable{Remora.Discord.API.Objects.Presence}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<Presence>
+  nameWithType: IEquatable<Presence>
+  fullName: System.IEquatable<Remora.Discord.API.Objects.Presence>
+  nameWithType.vb: IEquatable(Of Presence)
+  fullName.vb: System.IEquatable(Of Remora.Discord.API.Objects.Presence)
+  name.vb: IEquatable(Of Presence)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Remora.Discord.API.Objects.Presence
+    name: Presence
+    href: Remora.Discord.API.Objects.Presence.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Objects.Presence
+    name: Presence
+    href: Remora.Discord.API.Objects.Presence.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.API.Abstractions.Objects
+  commentId: N:Remora.Discord.API.Abstractions.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Objects
+  nameWithType: Remora.Discord.API.Abstractions.Objects
+  fullName: Remora.Discord.API.Abstractions.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Remora.Discord.API.Objects.Presence.#ctor*
+  commentId: Overload:Remora.Discord.API.Objects.Presence.#ctor
+  href: Remora.Discord.API.Objects.Presence.html#Remora_Discord_API_Objects_Presence__ctor_Remora_Discord_API_Abstractions_Objects_IPartialUser_Remora_Rest_Core_Snowflake_Remora_Discord_API_Abstractions_Objects_UserStatus_System_Collections_Generic_IReadOnlyList_Remora_Discord_API_Abstractions_Objects_IActivity__Remora_Discord_API_Abstractions_Objects_IClientStatus_
+  name: Presence
+  nameWithType: Presence.Presence
+  fullName: Remora.Discord.API.Objects.Presence.Presence
+  nameWithType.vb: Presence.New
+  fullName.vb: Remora.Discord.API.Objects.Presence.New
+  name.vb: New
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialUser
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IPartialUser
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IPartialUser.html
+  name: IPartialUser
+  nameWithType: IPartialUser
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialUser
+- uid: Remora.Rest.Core.Snowflake
+  commentId: T:Remora.Rest.Core.Snowflake
+  parent: Remora.Rest.Core
+  isExternal: true
+  name: Snowflake
+  nameWithType: Snowflake
+  fullName: Remora.Rest.Core.Snowflake
+- uid: Remora.Discord.API.Abstractions.Objects.UserStatus
+  commentId: T:Remora.Discord.API.Abstractions.Objects.UserStatus
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.UserStatus.html
+  name: UserStatus
+  nameWithType: UserStatus
+  fullName: Remora.Discord.API.Abstractions.Objects.UserStatus
+- uid: System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IActivity}
+  commentId: T:System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IActivity}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<IActivity>
+  nameWithType: IReadOnlyList<IActivity>
+  fullName: System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.IActivity>
+  nameWithType.vb: IReadOnlyList(Of IActivity)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.IActivity)
+  name.vb: IReadOnlyList(Of IActivity)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IActivity
+    name: IActivity
+    href: Remora.Discord.API.Abstractions.Objects.IActivity.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IActivity
+    name: IActivity
+    href: Remora.Discord.API.Abstractions.Objects.IActivity.html
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Objects.IClientStatus
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IClientStatus
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IClientStatus.html
+  name: IClientStatus
+  nameWithType: IClientStatus
+  fullName: Remora.Discord.API.Abstractions.Objects.IClientStatus
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Remora.Discord.API.Objects.Presence.User*
+  commentId: Overload:Remora.Discord.API.Objects.Presence.User
+  href: Remora.Discord.API.Objects.Presence.html#Remora_Discord_API_Objects_Presence_User
+  name: User
+  nameWithType: Presence.User
+  fullName: Remora.Discord.API.Objects.Presence.User
+- uid: Remora.Discord.API.Abstractions.Objects.IPresence.User
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPresence.User
+  parent: Remora.Discord.API.Abstractions.Objects.IPresence
+  href: Remora.Discord.API.Abstractions.Objects.IPresence.html#Remora_Discord_API_Abstractions_Objects_IPresence_User
+  name: User
+  nameWithType: IPresence.User
+  fullName: Remora.Discord.API.Abstractions.Objects.IPresence.User
+- uid: Remora.Discord.API.Objects.Presence.GuildID*
+  commentId: Overload:Remora.Discord.API.Objects.Presence.GuildID
+  href: Remora.Discord.API.Objects.Presence.html#Remora_Discord_API_Objects_Presence_GuildID
+  name: GuildID
+  nameWithType: Presence.GuildID
+  fullName: Remora.Discord.API.Objects.Presence.GuildID
+- uid: Remora.Discord.API.Abstractions.Objects.IPresence.GuildID
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPresence.GuildID
+  parent: Remora.Discord.API.Abstractions.Objects.IPresence
+  href: Remora.Discord.API.Abstractions.Objects.IPresence.html#Remora_Discord_API_Abstractions_Objects_IPresence_GuildID
+  name: GuildID
+  nameWithType: IPresence.GuildID
+  fullName: Remora.Discord.API.Abstractions.Objects.IPresence.GuildID
+- uid: Remora.Discord.API.Objects.Presence.Status*
+  commentId: Overload:Remora.Discord.API.Objects.Presence.Status
+  href: Remora.Discord.API.Objects.Presence.html#Remora_Discord_API_Objects_Presence_Status
+  name: Status
+  nameWithType: Presence.Status
+  fullName: Remora.Discord.API.Objects.Presence.Status
+- uid: Remora.Discord.API.Abstractions.Objects.IPresence.Status
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPresence.Status
+  parent: Remora.Discord.API.Abstractions.Objects.IPresence
+  href: Remora.Discord.API.Abstractions.Objects.IPresence.html#Remora_Discord_API_Abstractions_Objects_IPresence_Status
+  name: Status
+  nameWithType: IPresence.Status
+  fullName: Remora.Discord.API.Abstractions.Objects.IPresence.Status
+- uid: Remora.Discord.API.Objects.Presence.Activities*
+  commentId: Overload:Remora.Discord.API.Objects.Presence.Activities
+  href: Remora.Discord.API.Objects.Presence.html#Remora_Discord_API_Objects_Presence_Activities
+  name: Activities
+  nameWithType: Presence.Activities
+  fullName: Remora.Discord.API.Objects.Presence.Activities
+- uid: Remora.Discord.API.Abstractions.Objects.IPresence.Activities
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPresence.Activities
+  parent: Remora.Discord.API.Abstractions.Objects.IPresence
+  href: Remora.Discord.API.Abstractions.Objects.IPresence.html#Remora_Discord_API_Abstractions_Objects_IPresence_Activities
+  name: Activities
+  nameWithType: IPresence.Activities
+  fullName: Remora.Discord.API.Abstractions.Objects.IPresence.Activities
+- uid: Remora.Discord.API.Objects.Presence.ClientStatus*
+  commentId: Overload:Remora.Discord.API.Objects.Presence.ClientStatus
+  href: Remora.Discord.API.Objects.Presence.html#Remora_Discord_API_Objects_Presence_ClientStatus
+  name: ClientStatus
+  nameWithType: Presence.ClientStatus
+  fullName: Remora.Discord.API.Objects.Presence.ClientStatus
+- uid: Remora.Discord.API.Abstractions.Objects.IPresence.ClientStatus
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPresence.ClientStatus
+  parent: Remora.Discord.API.Abstractions.Objects.IPresence
+  href: Remora.Discord.API.Abstractions.Objects.IPresence.html#Remora_Discord_API_Abstractions_Objects_IPresence_ClientStatus
+  name: ClientStatus
+  nameWithType: IPresence.ClientStatus
+  fullName: Remora.Discord.API.Abstractions.Objects.IPresence.ClientStatus

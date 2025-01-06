@@ -1,0 +1,1043 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate
+  commentId: T:Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate
+  id: StageInstanceUpdate
+  parent: Remora.Discord.API.Gateway.Events.Channels
+  children:
+  - Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.#ctor(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,System.String,Remora.Discord.API.Abstractions.Objects.StagePrivacyLevel,System.Boolean,System.Nullable{Remora.Rest.Core.Snowflake})
+  - Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.ChannelID
+  - Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.GuildID
+  - Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.GuildScheduledEventID
+  - Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.ID
+  - Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.IsDiscoveryDisabled
+  - Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.PrivacyLevel
+  - Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.Topic
+  langs:
+  - csharp
+  - vb
+  name: StageInstanceUpdate
+  nameWithType: StageInstanceUpdate
+  fullName: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate
+  type: Class
+  source:
+    id: StageInstanceUpdate
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Channels\StageInstanceUpdate.cs
+    startLine: 30
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events.Channels
+  summary: Represents an update of a stage instance.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public record StageInstanceUpdate : IStageInstanceUpdate, IStageInstance, IGatewayEvent, IGatewayPayloadData, IEquatable<StageInstanceUpdate>
+    content.vb: >-
+      <PublicAPI>
+
+      Public Class StageInstanceUpdate Implements IStageInstanceUpdate, IStageInstance, IGatewayEvent, IGatewayPayloadData, IEquatable(Of StageInstanceUpdate)
+  inheritance:
+  - System.Object
+  implements:
+  - Remora.Discord.API.Abstractions.Gateway.Events.IStageInstanceUpdate
+  - Remora.Discord.API.Abstractions.Objects.IStageInstance
+  - Remora.Discord.API.Abstractions.Gateway.Events.IGatewayEvent
+  - Remora.Discord.API.Abstractions.Gateway.IGatewayPayloadData
+  - System.IEquatable{Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.#ctor(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,System.String,Remora.Discord.API.Abstractions.Objects.StagePrivacyLevel,System.Boolean,System.Nullable{Remora.Rest.Core.Snowflake})
+  commentId: M:Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.#ctor(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,System.String,Remora.Discord.API.Abstractions.Objects.StagePrivacyLevel,System.Boolean,System.Nullable{Remora.Rest.Core.Snowflake})
+  id: '#ctor(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,System.String,Remora.Discord.API.Abstractions.Objects.StagePrivacyLevel,System.Boolean,System.Nullable{Remora.Rest.Core.Snowflake})'
+  parent: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate
+  langs:
+  - csharp
+  - vb
+  name: StageInstanceUpdate(Snowflake, Snowflake, Snowflake, string, StagePrivacyLevel, bool, Snowflake?)
+  nameWithType: StageInstanceUpdate.StageInstanceUpdate(Snowflake, Snowflake, Snowflake, string, StagePrivacyLevel, bool, Snowflake?)
+  fullName: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.StageInstanceUpdate(Remora.Rest.Core.Snowflake, Remora.Rest.Core.Snowflake, Remora.Rest.Core.Snowflake, string, Remora.Discord.API.Abstractions.Objects.StagePrivacyLevel, bool, Remora.Rest.Core.Snowflake?)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Channels\StageInstanceUpdate.cs
+    startLine: 30
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events.Channels
+  summary: Represents an update of a stage instance.
+  example: []
+  syntax:
+    content: public StageInstanceUpdate(Snowflake ID, Snowflake GuildID, Snowflake ChannelID, string Topic, StagePrivacyLevel PrivacyLevel, bool IsDiscoveryDisabled, Snowflake? GuildScheduledEventID)
+    parameters:
+    - id: ID
+      type: Remora.Rest.Core.Snowflake
+    - id: GuildID
+      type: Remora.Rest.Core.Snowflake
+    - id: ChannelID
+      type: Remora.Rest.Core.Snowflake
+    - id: Topic
+      type: System.String
+    - id: PrivacyLevel
+      type: Remora.Discord.API.Abstractions.Objects.StagePrivacyLevel
+    - id: IsDiscoveryDisabled
+      type: System.Boolean
+    - id: GuildScheduledEventID
+      type: System.Nullable{Remora.Rest.Core.Snowflake}
+    content.vb: Public Sub New(ID As Snowflake, GuildID As Snowflake, ChannelID As Snowflake, Topic As String, PrivacyLevel As StagePrivacyLevel, IsDiscoveryDisabled As Boolean, GuildScheduledEventID As Snowflake?)
+  overload: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.#ctor*
+  nameWithType.vb: StageInstanceUpdate.New(Snowflake, Snowflake, Snowflake, String, StagePrivacyLevel, Boolean, Snowflake?)
+  fullName.vb: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.New(Remora.Rest.Core.Snowflake, Remora.Rest.Core.Snowflake, Remora.Rest.Core.Snowflake, String, Remora.Discord.API.Abstractions.Objects.StagePrivacyLevel, Boolean, Remora.Rest.Core.Snowflake?)
+  name.vb: New(Snowflake, Snowflake, Snowflake, String, StagePrivacyLevel, Boolean, Snowflake?)
+- uid: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.ID
+  commentId: P:Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.ID
+  id: ID
+  parent: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate
+  langs:
+  - csharp
+  - vb
+  name: ID
+  nameWithType: StageInstanceUpdate.ID
+  fullName: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.ID
+  type: Property
+  source:
+    id: ID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Channels\StageInstanceUpdate.cs
+    startLine: 33
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events.Channels
+  summary: Gets the ID of the stage instance.
+  example: []
+  syntax:
+    content: public Snowflake ID { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Snowflake
+    content.vb: Public Property ID As Snowflake
+  overload: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.ID*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IStageInstance.ID
+- uid: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.GuildID
+  commentId: P:Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.GuildID
+  id: GuildID
+  parent: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate
+  langs:
+  - csharp
+  - vb
+  name: GuildID
+  nameWithType: StageInstanceUpdate.GuildID
+  fullName: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.GuildID
+  type: Property
+  source:
+    id: GuildID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Channels\StageInstanceUpdate.cs
+    startLine: 34
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events.Channels
+  summary: Gets the ID of the guild the instance is in.
+  example: []
+  syntax:
+    content: public Snowflake GuildID { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Snowflake
+    content.vb: Public Property GuildID As Snowflake
+  overload: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.GuildID*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IStageInstance.GuildID
+- uid: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.ChannelID
+  commentId: P:Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.ChannelID
+  id: ChannelID
+  parent: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate
+  langs:
+  - csharp
+  - vb
+  name: ChannelID
+  nameWithType: StageInstanceUpdate.ChannelID
+  fullName: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.ChannelID
+  type: Property
+  source:
+    id: ChannelID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Channels\StageInstanceUpdate.cs
+    startLine: 35
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events.Channels
+  summary: Gets the ID of the stage channel the instance is associated with.
+  example: []
+  syntax:
+    content: public Snowflake ChannelID { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Snowflake
+    content.vb: Public Property ChannelID As Snowflake
+  overload: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.ChannelID*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IStageInstance.ChannelID
+- uid: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.Topic
+  commentId: P:Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.Topic
+  id: Topic
+  parent: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate
+  langs:
+  - csharp
+  - vb
+  name: Topic
+  nameWithType: StageInstanceUpdate.Topic
+  fullName: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.Topic
+  type: Property
+  source:
+    id: Topic
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Channels\StageInstanceUpdate.cs
+    startLine: 36
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events.Channels
+  summary: Gets the topic of the instance.
+  example: []
+  syntax:
+    content: public string Topic { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Topic As String
+  overload: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.Topic*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IStageInstance.Topic
+- uid: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.PrivacyLevel
+  commentId: P:Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.PrivacyLevel
+  id: PrivacyLevel
+  parent: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate
+  langs:
+  - csharp
+  - vb
+  name: PrivacyLevel
+  nameWithType: StageInstanceUpdate.PrivacyLevel
+  fullName: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.PrivacyLevel
+  type: Property
+  source:
+    id: PrivacyLevel
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Channels\StageInstanceUpdate.cs
+    startLine: 37
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events.Channels
+  summary: Gets the privacy level of the instance.
+  example: []
+  syntax:
+    content: public StagePrivacyLevel PrivacyLevel { get; init; }
+    parameters: []
+    return:
+      type: Remora.Discord.API.Abstractions.Objects.StagePrivacyLevel
+    content.vb: Public Property PrivacyLevel As StagePrivacyLevel
+  overload: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.PrivacyLevel*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IStageInstance.PrivacyLevel
+- uid: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.IsDiscoveryDisabled
+  commentId: P:Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.IsDiscoveryDisabled
+  id: IsDiscoveryDisabled
+  parent: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate
+  langs:
+  - csharp
+  - vb
+  name: IsDiscoveryDisabled
+  nameWithType: StageInstanceUpdate.IsDiscoveryDisabled
+  fullName: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.IsDiscoveryDisabled
+  type: Property
+  source:
+    id: IsDiscoveryDisabled
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Channels\StageInstanceUpdate.cs
+    startLine: 38
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events.Channels
+  summary: Gets a value indicating whether stage discovery is disabled for the instance.
+  example: []
+  syntax:
+    content: public bool IsDiscoveryDisabled { get; init; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsDiscoveryDisabled As Boolean
+  overload: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.IsDiscoveryDisabled*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IStageInstance.IsDiscoveryDisabled
+- uid: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.GuildScheduledEventID
+  commentId: P:Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.GuildScheduledEventID
+  id: GuildScheduledEventID
+  parent: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate
+  langs:
+  - csharp
+  - vb
+  name: GuildScheduledEventID
+  nameWithType: StageInstanceUpdate.GuildScheduledEventID
+  fullName: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.GuildScheduledEventID
+  type: Property
+  source:
+    id: GuildScheduledEventID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Channels\StageInstanceUpdate.cs
+    startLine: 39
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events.Channels
+  summary: Gets the ID of the scheduled event for this stage instance.
+  example: []
+  syntax:
+    content: public Snowflake? GuildScheduledEventID { get; init; }
+    parameters: []
+    return:
+      type: System.Nullable{Remora.Rest.Core.Snowflake}
+    content.vb: Public Property GuildScheduledEventID As Snowflake?
+  overload: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.GuildScheduledEventID*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IStageInstance.GuildScheduledEventID
+references:
+- uid: Remora.Discord.API.Gateway.Events.Channels
+  commentId: N:Remora.Discord.API.Gateway.Events.Channels
+  href: Remora.html
+  name: Remora.Discord.API.Gateway.Events.Channels
+  nameWithType: Remora.Discord.API.Gateway.Events.Channels
+  fullName: Remora.Discord.API.Gateway.Events.Channels
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Gateway.Events
+    name: Events
+    href: Remora.Discord.API.Gateway.Events.html
+  - name: .
+  - uid: Remora.Discord.API.Gateway.Events.Channels
+    name: Channels
+    href: Remora.Discord.API.Gateway.Events.Channels.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Gateway.Events
+    name: Events
+    href: Remora.Discord.API.Gateway.Events.html
+  - name: .
+  - uid: Remora.Discord.API.Gateway.Events.Channels
+    name: Channels
+    href: Remora.Discord.API.Gateway.Events.Channels.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IStageInstanceUpdate
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.Events.IStageInstanceUpdate
+  parent: Remora.Discord.API.Abstractions.Gateway.Events
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IStageInstanceUpdate.html
+  name: IStageInstanceUpdate
+  nameWithType: IStageInstanceUpdate
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IStageInstanceUpdate
+- uid: Remora.Discord.API.Abstractions.Objects.IStageInstance
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IStageInstance
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IStageInstance.html
+  name: IStageInstance
+  nameWithType: IStageInstance
+  fullName: Remora.Discord.API.Abstractions.Objects.IStageInstance
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IGatewayEvent
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.Events.IGatewayEvent
+  parent: Remora.Discord.API.Abstractions.Gateway.Events
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IGatewayEvent.html
+  name: IGatewayEvent
+  nameWithType: IGatewayEvent
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IGatewayEvent
+- uid: Remora.Discord.API.Abstractions.Gateway.IGatewayPayloadData
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.IGatewayPayloadData
+  parent: Remora.Discord.API.Abstractions.Gateway
+  href: Remora.Discord.API.Abstractions.Gateway.IGatewayPayloadData.html
+  name: IGatewayPayloadData
+  nameWithType: IGatewayPayloadData
+  fullName: Remora.Discord.API.Abstractions.Gateway.IGatewayPayloadData
+- uid: System.IEquatable{Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate}
+  commentId: T:System.IEquatable{Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<StageInstanceUpdate>
+  nameWithType: IEquatable<StageInstanceUpdate>
+  fullName: System.IEquatable<Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate>
+  nameWithType.vb: IEquatable(Of StageInstanceUpdate)
+  fullName.vb: System.IEquatable(Of Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate)
+  name.vb: IEquatable(Of StageInstanceUpdate)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate
+    name: StageInstanceUpdate
+    href: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate
+    name: StageInstanceUpdate
+    href: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.API.Abstractions.Gateway.Events
+  commentId: N:Remora.Discord.API.Abstractions.Gateway.Events
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Gateway.Events
+  nameWithType: Remora.Discord.API.Abstractions.Gateway.Events
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events
+    name: Events
+    href: Remora.Discord.API.Abstractions.Gateway.Events.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events
+    name: Events
+    href: Remora.Discord.API.Abstractions.Gateway.Events.html
+- uid: Remora.Discord.API.Abstractions.Objects
+  commentId: N:Remora.Discord.API.Abstractions.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Objects
+  nameWithType: Remora.Discord.API.Abstractions.Objects
+  fullName: Remora.Discord.API.Abstractions.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+- uid: Remora.Discord.API.Abstractions.Gateway
+  commentId: N:Remora.Discord.API.Abstractions.Gateway
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Gateway
+  nameWithType: Remora.Discord.API.Abstractions.Gateway
+  fullName: Remora.Discord.API.Abstractions.Gateway
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.#ctor*
+  commentId: Overload:Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.#ctor
+  href: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.html#Remora_Discord_API_Gateway_Events_Channels_StageInstanceUpdate__ctor_Remora_Rest_Core_Snowflake_Remora_Rest_Core_Snowflake_Remora_Rest_Core_Snowflake_System_String_Remora_Discord_API_Abstractions_Objects_StagePrivacyLevel_System_Boolean_System_Nullable_Remora_Rest_Core_Snowflake__
+  name: StageInstanceUpdate
+  nameWithType: StageInstanceUpdate.StageInstanceUpdate
+  fullName: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.StageInstanceUpdate
+  nameWithType.vb: StageInstanceUpdate.New
+  fullName.vb: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.New
+  name.vb: New
+- uid: Remora.Rest.Core.Snowflake
+  commentId: T:Remora.Rest.Core.Snowflake
+  parent: Remora.Rest.Core
+  isExternal: true
+  name: Snowflake
+  nameWithType: Snowflake
+  fullName: Remora.Rest.Core.Snowflake
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Remora.Discord.API.Abstractions.Objects.StagePrivacyLevel
+  commentId: T:Remora.Discord.API.Abstractions.Objects.StagePrivacyLevel
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.StagePrivacyLevel.html
+  name: StagePrivacyLevel
+  nameWithType: StagePrivacyLevel
+  fullName: Remora.Discord.API.Abstractions.Objects.StagePrivacyLevel
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Nullable{Remora.Rest.Core.Snowflake}
+  commentId: T:System.Nullable{Remora.Rest.Core.Snowflake}
+  parent: System
+  definition: System.Nullable`1
+  name: Snowflake?
+  nameWithType: Snowflake?
+  fullName: Remora.Rest.Core.Snowflake?
+  spec.csharp:
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '?'
+  spec.vb:
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '?'
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.ID*
+  commentId: Overload:Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.ID
+  href: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.html#Remora_Discord_API_Gateway_Events_Channels_StageInstanceUpdate_ID
+  name: ID
+  nameWithType: StageInstanceUpdate.ID
+  fullName: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.ID
+- uid: Remora.Discord.API.Abstractions.Objects.IStageInstance.ID
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IStageInstance.ID
+  parent: Remora.Discord.API.Abstractions.Objects.IStageInstance
+  href: Remora.Discord.API.Abstractions.Objects.IStageInstance.html#Remora_Discord_API_Abstractions_Objects_IStageInstance_ID
+  name: ID
+  nameWithType: IStageInstance.ID
+  fullName: Remora.Discord.API.Abstractions.Objects.IStageInstance.ID
+- uid: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.GuildID*
+  commentId: Overload:Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.GuildID
+  href: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.html#Remora_Discord_API_Gateway_Events_Channels_StageInstanceUpdate_GuildID
+  name: GuildID
+  nameWithType: StageInstanceUpdate.GuildID
+  fullName: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.GuildID
+- uid: Remora.Discord.API.Abstractions.Objects.IStageInstance.GuildID
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IStageInstance.GuildID
+  parent: Remora.Discord.API.Abstractions.Objects.IStageInstance
+  href: Remora.Discord.API.Abstractions.Objects.IStageInstance.html#Remora_Discord_API_Abstractions_Objects_IStageInstance_GuildID
+  name: GuildID
+  nameWithType: IStageInstance.GuildID
+  fullName: Remora.Discord.API.Abstractions.Objects.IStageInstance.GuildID
+- uid: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.ChannelID*
+  commentId: Overload:Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.ChannelID
+  href: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.html#Remora_Discord_API_Gateway_Events_Channels_StageInstanceUpdate_ChannelID
+  name: ChannelID
+  nameWithType: StageInstanceUpdate.ChannelID
+  fullName: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.ChannelID
+- uid: Remora.Discord.API.Abstractions.Objects.IStageInstance.ChannelID
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IStageInstance.ChannelID
+  parent: Remora.Discord.API.Abstractions.Objects.IStageInstance
+  href: Remora.Discord.API.Abstractions.Objects.IStageInstance.html#Remora_Discord_API_Abstractions_Objects_IStageInstance_ChannelID
+  name: ChannelID
+  nameWithType: IStageInstance.ChannelID
+  fullName: Remora.Discord.API.Abstractions.Objects.IStageInstance.ChannelID
+- uid: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.Topic*
+  commentId: Overload:Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.Topic
+  href: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.html#Remora_Discord_API_Gateway_Events_Channels_StageInstanceUpdate_Topic
+  name: Topic
+  nameWithType: StageInstanceUpdate.Topic
+  fullName: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.Topic
+- uid: Remora.Discord.API.Abstractions.Objects.IStageInstance.Topic
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IStageInstance.Topic
+  parent: Remora.Discord.API.Abstractions.Objects.IStageInstance
+  href: Remora.Discord.API.Abstractions.Objects.IStageInstance.html#Remora_Discord_API_Abstractions_Objects_IStageInstance_Topic
+  name: Topic
+  nameWithType: IStageInstance.Topic
+  fullName: Remora.Discord.API.Abstractions.Objects.IStageInstance.Topic
+- uid: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.PrivacyLevel*
+  commentId: Overload:Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.PrivacyLevel
+  href: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.html#Remora_Discord_API_Gateway_Events_Channels_StageInstanceUpdate_PrivacyLevel
+  name: PrivacyLevel
+  nameWithType: StageInstanceUpdate.PrivacyLevel
+  fullName: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.PrivacyLevel
+- uid: Remora.Discord.API.Abstractions.Objects.IStageInstance.PrivacyLevel
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IStageInstance.PrivacyLevel
+  parent: Remora.Discord.API.Abstractions.Objects.IStageInstance
+  href: Remora.Discord.API.Abstractions.Objects.IStageInstance.html#Remora_Discord_API_Abstractions_Objects_IStageInstance_PrivacyLevel
+  name: PrivacyLevel
+  nameWithType: IStageInstance.PrivacyLevel
+  fullName: Remora.Discord.API.Abstractions.Objects.IStageInstance.PrivacyLevel
+- uid: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.IsDiscoveryDisabled*
+  commentId: Overload:Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.IsDiscoveryDisabled
+  href: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.html#Remora_Discord_API_Gateway_Events_Channels_StageInstanceUpdate_IsDiscoveryDisabled
+  name: IsDiscoveryDisabled
+  nameWithType: StageInstanceUpdate.IsDiscoveryDisabled
+  fullName: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.IsDiscoveryDisabled
+- uid: Remora.Discord.API.Abstractions.Objects.IStageInstance.IsDiscoveryDisabled
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IStageInstance.IsDiscoveryDisabled
+  parent: Remora.Discord.API.Abstractions.Objects.IStageInstance
+  href: Remora.Discord.API.Abstractions.Objects.IStageInstance.html#Remora_Discord_API_Abstractions_Objects_IStageInstance_IsDiscoveryDisabled
+  name: IsDiscoveryDisabled
+  nameWithType: IStageInstance.IsDiscoveryDisabled
+  fullName: Remora.Discord.API.Abstractions.Objects.IStageInstance.IsDiscoveryDisabled
+- uid: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.GuildScheduledEventID*
+  commentId: Overload:Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.GuildScheduledEventID
+  href: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.html#Remora_Discord_API_Gateway_Events_Channels_StageInstanceUpdate_GuildScheduledEventID
+  name: GuildScheduledEventID
+  nameWithType: StageInstanceUpdate.GuildScheduledEventID
+  fullName: Remora.Discord.API.Gateway.Events.Channels.StageInstanceUpdate.GuildScheduledEventID
+- uid: Remora.Discord.API.Abstractions.Objects.IStageInstance.GuildScheduledEventID
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IStageInstance.GuildScheduledEventID
+  parent: Remora.Discord.API.Abstractions.Objects.IStageInstance
+  href: Remora.Discord.API.Abstractions.Objects.IStageInstance.html#Remora_Discord_API_Abstractions_Objects_IStageInstance_GuildScheduledEventID
+  name: GuildScheduledEventID
+  nameWithType: IStageInstance.GuildScheduledEventID
+  fullName: Remora.Discord.API.Abstractions.Objects.IStageInstance.GuildScheduledEventID

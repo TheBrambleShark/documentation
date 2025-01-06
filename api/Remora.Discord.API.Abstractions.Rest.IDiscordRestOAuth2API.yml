@@ -1,0 +1,349 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestOAuth2API
+  commentId: T:Remora.Discord.API.Abstractions.Rest.IDiscordRestOAuth2API
+  id: IDiscordRestOAuth2API
+  parent: Remora.Discord.API.Abstractions.Rest
+  children:
+  - Remora.Discord.API.Abstractions.Rest.IDiscordRestOAuth2API.GetCurrentAuthorizationInformationAsync(System.Threading.CancellationToken)
+  - Remora.Discord.API.Abstractions.Rest.IDiscordRestOAuth2API.GetCurrentBotApplicationInformationAsync(System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IDiscordRestOAuth2API
+  nameWithType: IDiscordRestOAuth2API
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestOAuth2API
+  type: Interface
+  source:
+    id: IDiscordRestOAuth2API
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Rest\IDiscordRestOAuth2API.cs
+    startLine: 33
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Rest
+  summary: Represents the Discord OAuth2 API.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public interface IDiscordRestOAuth2API
+    content.vb: >-
+      <PublicAPI>
+
+      Public Interface IDiscordRestOAuth2API
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestOAuth2API.GetCurrentBotApplicationInformationAsync(System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.API.Abstractions.Rest.IDiscordRestOAuth2API.GetCurrentBotApplicationInformationAsync(System.Threading.CancellationToken)
+  id: GetCurrentBotApplicationInformationAsync(System.Threading.CancellationToken)
+  parent: Remora.Discord.API.Abstractions.Rest.IDiscordRestOAuth2API
+  langs:
+  - csharp
+  - vb
+  name: GetCurrentBotApplicationInformationAsync(CancellationToken)
+  nameWithType: IDiscordRestOAuth2API.GetCurrentBotApplicationInformationAsync(CancellationToken)
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestOAuth2API.GetCurrentBotApplicationInformationAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: GetCurrentBotApplicationInformationAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Rest\IDiscordRestOAuth2API.cs
+    startLine: 41
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Rest
+  summary: Gets the bot's OAuth2 application object. Flags are typically not included.
+  example: []
+  syntax:
+    content: Task<Result<IApplication>> GetCurrentBotApplicationInformationAsync(CancellationToken ct = default)
+    parameters:
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IApplication}}
+      description: A retrieval result which may or may not have succeeded.
+    content.vb: Function GetCurrentBotApplicationInformationAsync(ct As CancellationToken = Nothing) As Task(Of Result(Of IApplication))
+  overload: Remora.Discord.API.Abstractions.Rest.IDiscordRestOAuth2API.GetCurrentBotApplicationInformationAsync*
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestOAuth2API.GetCurrentAuthorizationInformationAsync(System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.API.Abstractions.Rest.IDiscordRestOAuth2API.GetCurrentAuthorizationInformationAsync(System.Threading.CancellationToken)
+  id: GetCurrentAuthorizationInformationAsync(System.Threading.CancellationToken)
+  parent: Remora.Discord.API.Abstractions.Rest.IDiscordRestOAuth2API
+  langs:
+  - csharp
+  - vb
+  name: GetCurrentAuthorizationInformationAsync(CancellationToken)
+  nameWithType: IDiscordRestOAuth2API.GetCurrentAuthorizationInformationAsync(CancellationToken)
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestOAuth2API.GetCurrentAuthorizationInformationAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: GetCurrentAuthorizationInformationAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Rest\IDiscordRestOAuth2API.cs
+    startLine: 51
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Rest
+  summary: Gets information about the bot's current authorizations.
+  example: []
+  syntax:
+    content: Task<Result<IAuthorizationInformation>> GetCurrentAuthorizationInformationAsync(CancellationToken ct = default)
+    parameters:
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IAuthorizationInformation}}
+      description: A retrieval result which may or may not have succeeded.
+    content.vb: Function GetCurrentAuthorizationInformationAsync(ct As CancellationToken = Nothing) As Task(Of Result(Of IAuthorizationInformation))
+  overload: Remora.Discord.API.Abstractions.Rest.IDiscordRestOAuth2API.GetCurrentAuthorizationInformationAsync*
+references:
+- uid: Remora.Discord.API.Abstractions.Rest
+  commentId: N:Remora.Discord.API.Abstractions.Rest
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Rest
+  nameWithType: Remora.Discord.API.Abstractions.Rest
+  fullName: Remora.Discord.API.Abstractions.Rest
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Rest
+    name: Rest
+    href: Remora.Discord.API.Abstractions.Rest.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Rest
+    name: Rest
+    href: Remora.Discord.API.Abstractions.Rest.html
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestOAuth2API.GetCurrentBotApplicationInformationAsync*
+  commentId: Overload:Remora.Discord.API.Abstractions.Rest.IDiscordRestOAuth2API.GetCurrentBotApplicationInformationAsync
+  href: Remora.Discord.API.Abstractions.Rest.IDiscordRestOAuth2API.html#Remora_Discord_API_Abstractions_Rest_IDiscordRestOAuth2API_GetCurrentBotApplicationInformationAsync_System_Threading_CancellationToken_
+  name: GetCurrentBotApplicationInformationAsync
+  nameWithType: IDiscordRestOAuth2API.GetCurrentBotApplicationInformationAsync
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestOAuth2API.GetCurrentBotApplicationInformationAsync
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IApplication}}
+  commentId: T:System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IApplication}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Result<IApplication>>
+  nameWithType: Task<Result<IApplication>>
+  fullName: System.Threading.Tasks.Task<Remora.Results.Result<Remora.Discord.API.Abstractions.Objects.IApplication>>
+  nameWithType.vb: Task(Of Result(Of IApplication))
+  fullName.vb: System.Threading.Tasks.Task(Of Remora.Results.Result(Of Remora.Discord.API.Abstractions.Objects.IApplication))
+  name.vb: Task(Of Result(Of IApplication))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Remora.Results.Result`1
+    name: Result
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IApplication
+    name: IApplication
+    href: Remora.Discord.API.Abstractions.Objects.IApplication.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Results.Result`1
+    name: Result
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IApplication
+    name: IApplication
+    href: Remora.Discord.API.Abstractions.Objects.IApplication.html
+  - name: )
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestOAuth2API.GetCurrentAuthorizationInformationAsync*
+  commentId: Overload:Remora.Discord.API.Abstractions.Rest.IDiscordRestOAuth2API.GetCurrentAuthorizationInformationAsync
+  href: Remora.Discord.API.Abstractions.Rest.IDiscordRestOAuth2API.html#Remora_Discord_API_Abstractions_Rest_IDiscordRestOAuth2API_GetCurrentAuthorizationInformationAsync_System_Threading_CancellationToken_
+  name: GetCurrentAuthorizationInformationAsync
+  nameWithType: IDiscordRestOAuth2API.GetCurrentAuthorizationInformationAsync
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestOAuth2API.GetCurrentAuthorizationInformationAsync
+- uid: System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IAuthorizationInformation}}
+  commentId: T:System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IAuthorizationInformation}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Result<IAuthorizationInformation>>
+  nameWithType: Task<Result<IAuthorizationInformation>>
+  fullName: System.Threading.Tasks.Task<Remora.Results.Result<Remora.Discord.API.Abstractions.Objects.IAuthorizationInformation>>
+  nameWithType.vb: Task(Of Result(Of IAuthorizationInformation))
+  fullName.vb: System.Threading.Tasks.Task(Of Remora.Results.Result(Of Remora.Discord.API.Abstractions.Objects.IAuthorizationInformation))
+  name.vb: Task(Of Result(Of IAuthorizationInformation))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Remora.Results.Result`1
+    name: Result
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IAuthorizationInformation
+    name: IAuthorizationInformation
+    href: Remora.Discord.API.Abstractions.Objects.IAuthorizationInformation.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Results.Result`1
+    name: Result
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IAuthorizationInformation
+    name: IAuthorizationInformation
+    href: Remora.Discord.API.Abstractions.Objects.IAuthorizationInformation.html
+  - name: )
+  - name: )

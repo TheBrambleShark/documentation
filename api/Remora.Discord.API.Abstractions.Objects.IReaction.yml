@@ -1,0 +1,430 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Abstractions.Objects.IReaction
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IReaction
+  id: IReaction
+  parent: Remora.Discord.API.Abstractions.Objects
+  children:
+  - Remora.Discord.API.Abstractions.Objects.IReaction.BurstColours
+  - Remora.Discord.API.Abstractions.Objects.IReaction.Count
+  - Remora.Discord.API.Abstractions.Objects.IReaction.CountDetails
+  - Remora.Discord.API.Abstractions.Objects.IReaction.Emoji
+  - Remora.Discord.API.Abstractions.Objects.IReaction.HasCurrentUserBurstReacted
+  - Remora.Discord.API.Abstractions.Objects.IReaction.HasCurrentUserReacted
+  langs:
+  - csharp
+  - vb
+  name: IReaction
+  nameWithType: IReaction
+  fullName: Remora.Discord.API.Abstractions.Objects.IReaction
+  type: Interface
+  source:
+    id: IReaction
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Reactions\IReaction.cs
+    startLine: 31
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Represents a reaction to a message.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public interface IReaction
+    content.vb: >-
+      <PublicAPI>
+
+      Public Interface IReaction
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Abstractions.Objects.IReaction.Count
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IReaction.Count
+  id: Count
+  parent: Remora.Discord.API.Abstractions.Objects.IReaction
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: IReaction.Count
+  fullName: Remora.Discord.API.Abstractions.Objects.IReaction.Count
+  type: Property
+  source:
+    id: Count
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Reactions\IReaction.cs
+    startLine: 37
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the total number of times this emoji has been used to react, including burst (super) reactions.
+  example: []
+  syntax:
+    content: int Count { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property Count As Integer
+  overload: Remora.Discord.API.Abstractions.Objects.IReaction.Count*
+- uid: Remora.Discord.API.Abstractions.Objects.IReaction.CountDetails
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IReaction.CountDetails
+  id: CountDetails
+  parent: Remora.Discord.API.Abstractions.Objects.IReaction
+  langs:
+  - csharp
+  - vb
+  name: CountDetails
+  nameWithType: IReaction.CountDetails
+  fullName: Remora.Discord.API.Abstractions.Objects.IReaction.CountDetails
+  type: Property
+  source:
+    id: CountDetails
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Reactions\IReaction.cs
+    startLine: 42
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets detailed information about the reaction counts.
+  example: []
+  syntax:
+    content: IReactionCountDetails CountDetails { get; }
+    parameters: []
+    return:
+      type: Remora.Discord.API.Abstractions.Objects.IReactionCountDetails
+    content.vb: ReadOnly Property CountDetails As IReactionCountDetails
+  overload: Remora.Discord.API.Abstractions.Objects.IReaction.CountDetails*
+- uid: Remora.Discord.API.Abstractions.Objects.IReaction.HasCurrentUserReacted
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IReaction.HasCurrentUserReacted
+  id: HasCurrentUserReacted
+  parent: Remora.Discord.API.Abstractions.Objects.IReaction
+  langs:
+  - csharp
+  - vb
+  name: HasCurrentUserReacted
+  nameWithType: IReaction.HasCurrentUserReacted
+  fullName: Remora.Discord.API.Abstractions.Objects.IReaction.HasCurrentUserReacted
+  type: Property
+  source:
+    id: HasCurrentUserReacted
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Reactions\IReaction.cs
+    startLine: 47
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets a value indicating whether the current user has added a reaction using this emoji.
+  example: []
+  syntax:
+    content: bool HasCurrentUserReacted { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property HasCurrentUserReacted As Boolean
+  overload: Remora.Discord.API.Abstractions.Objects.IReaction.HasCurrentUserReacted*
+- uid: Remora.Discord.API.Abstractions.Objects.IReaction.HasCurrentUserBurstReacted
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IReaction.HasCurrentUserBurstReacted
+  id: HasCurrentUserBurstReacted
+  parent: Remora.Discord.API.Abstractions.Objects.IReaction
+  langs:
+  - csharp
+  - vb
+  name: HasCurrentUserBurstReacted
+  nameWithType: IReaction.HasCurrentUserBurstReacted
+  fullName: Remora.Discord.API.Abstractions.Objects.IReaction.HasCurrentUserBurstReacted
+  type: Property
+  source:
+    id: HasCurrentUserBurstReacted
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Reactions\IReaction.cs
+    startLine: 52
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets a value indicating whether the current user has added a burst (super) reaction using this emoji.
+  example: []
+  syntax:
+    content: bool HasCurrentUserBurstReacted { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property HasCurrentUserBurstReacted As Boolean
+  overload: Remora.Discord.API.Abstractions.Objects.IReaction.HasCurrentUserBurstReacted*
+- uid: Remora.Discord.API.Abstractions.Objects.IReaction.Emoji
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IReaction.Emoji
+  id: Emoji
+  parent: Remora.Discord.API.Abstractions.Objects.IReaction
+  langs:
+  - csharp
+  - vb
+  name: Emoji
+  nameWithType: IReaction.Emoji
+  fullName: Remora.Discord.API.Abstractions.Objects.IReaction.Emoji
+  type: Property
+  source:
+    id: Emoji
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Reactions\IReaction.cs
+    startLine: 57
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the partial emoji information.
+  example: []
+  syntax:
+    content: IPartialEmoji Emoji { get; }
+    parameters: []
+    return:
+      type: Remora.Discord.API.Abstractions.Objects.IPartialEmoji
+    content.vb: ReadOnly Property Emoji As IPartialEmoji
+  overload: Remora.Discord.API.Abstractions.Objects.IReaction.Emoji*
+- uid: Remora.Discord.API.Abstractions.Objects.IReaction.BurstColours
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IReaction.BurstColours
+  id: BurstColours
+  parent: Remora.Discord.API.Abstractions.Objects.IReaction
+  langs:
+  - csharp
+  - vb
+  name: BurstColours
+  nameWithType: IReaction.BurstColours
+  fullName: Remora.Discord.API.Abstractions.Objects.IReaction.BurstColours
+  type: Property
+  source:
+    id: BurstColours
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Reactions\IReaction.cs
+    startLine: 62
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the colors used for the super reaction.
+  example: []
+  syntax:
+    content: IReadOnlyList<Color> BurstColours { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{System.Drawing.Color}
+    content.vb: ReadOnly Property BurstColours As IReadOnlyList(Of Color)
+  overload: Remora.Discord.API.Abstractions.Objects.IReaction.BurstColours*
+references:
+- uid: Remora.Discord.API.Abstractions.Objects
+  commentId: N:Remora.Discord.API.Abstractions.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Objects
+  nameWithType: Remora.Discord.API.Abstractions.Objects
+  fullName: Remora.Discord.API.Abstractions.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+- uid: Remora.Discord.API.Abstractions.Objects.IReaction.Count*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IReaction.Count
+  href: Remora.Discord.API.Abstractions.Objects.IReaction.html#Remora_Discord_API_Abstractions_Objects_IReaction_Count
+  name: Count
+  nameWithType: IReaction.Count
+  fullName: Remora.Discord.API.Abstractions.Objects.IReaction.Count
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.API.Abstractions.Objects.IReaction.CountDetails*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IReaction.CountDetails
+  href: Remora.Discord.API.Abstractions.Objects.IReaction.html#Remora_Discord_API_Abstractions_Objects_IReaction_CountDetails
+  name: CountDetails
+  nameWithType: IReaction.CountDetails
+  fullName: Remora.Discord.API.Abstractions.Objects.IReaction.CountDetails
+- uid: Remora.Discord.API.Abstractions.Objects.IReactionCountDetails
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IReactionCountDetails
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IReactionCountDetails.html
+  name: IReactionCountDetails
+  nameWithType: IReactionCountDetails
+  fullName: Remora.Discord.API.Abstractions.Objects.IReactionCountDetails
+- uid: Remora.Discord.API.Abstractions.Objects.IReaction.HasCurrentUserReacted*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IReaction.HasCurrentUserReacted
+  href: Remora.Discord.API.Abstractions.Objects.IReaction.html#Remora_Discord_API_Abstractions_Objects_IReaction_HasCurrentUserReacted
+  name: HasCurrentUserReacted
+  nameWithType: IReaction.HasCurrentUserReacted
+  fullName: Remora.Discord.API.Abstractions.Objects.IReaction.HasCurrentUserReacted
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Remora.Discord.API.Abstractions.Objects.IReaction.HasCurrentUserBurstReacted*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IReaction.HasCurrentUserBurstReacted
+  href: Remora.Discord.API.Abstractions.Objects.IReaction.html#Remora_Discord_API_Abstractions_Objects_IReaction_HasCurrentUserBurstReacted
+  name: HasCurrentUserBurstReacted
+  nameWithType: IReaction.HasCurrentUserBurstReacted
+  fullName: Remora.Discord.API.Abstractions.Objects.IReaction.HasCurrentUserBurstReacted
+- uid: Remora.Discord.API.Abstractions.Objects.IReaction.Emoji*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IReaction.Emoji
+  href: Remora.Discord.API.Abstractions.Objects.IReaction.html#Remora_Discord_API_Abstractions_Objects_IReaction_Emoji
+  name: Emoji
+  nameWithType: IReaction.Emoji
+  fullName: Remora.Discord.API.Abstractions.Objects.IReaction.Emoji
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialEmoji
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IPartialEmoji
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IPartialEmoji.html
+  name: IPartialEmoji
+  nameWithType: IPartialEmoji
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialEmoji
+- uid: Remora.Discord.API.Abstractions.Objects.IReaction.BurstColours*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IReaction.BurstColours
+  href: Remora.Discord.API.Abstractions.Objects.IReaction.html#Remora_Discord_API_Abstractions_Objects_IReaction_BurstColours
+  name: BurstColours
+  nameWithType: IReaction.BurstColours
+  fullName: Remora.Discord.API.Abstractions.Objects.IReaction.BurstColours
+- uid: System.Collections.Generic.IReadOnlyList{System.Drawing.Color}
+  commentId: T:System.Collections.Generic.IReadOnlyList{System.Drawing.Color}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<Color>
+  nameWithType: IReadOnlyList<Color>
+  fullName: System.Collections.Generic.IReadOnlyList<System.Drawing.Color>
+  nameWithType.vb: IReadOnlyList(Of Color)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of System.Drawing.Color)
+  name.vb: IReadOnlyList(Of Color)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: System.Drawing.Color
+    name: Color
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.color
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Drawing.Color
+    name: Color
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.color
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

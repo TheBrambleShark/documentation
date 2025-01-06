@@ -1,0 +1,745 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Objects.ActivityAssets
+  commentId: T:Remora.Discord.API.Objects.ActivityAssets
+  id: ActivityAssets
+  parent: Remora.Discord.API.Objects
+  children:
+  - Remora.Discord.API.Objects.ActivityAssets.#ctor(Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String})
+  - Remora.Discord.API.Objects.ActivityAssets.LargeImage
+  - Remora.Discord.API.Objects.ActivityAssets.LargeText
+  - Remora.Discord.API.Objects.ActivityAssets.SmallImage
+  - Remora.Discord.API.Objects.ActivityAssets.SmallText
+  langs:
+  - csharp
+  - vb
+  name: ActivityAssets
+  nameWithType: ActivityAssets
+  fullName: Remora.Discord.API.Objects.ActivityAssets
+  type: Class
+  source:
+    id: ActivityAssets
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Activities\ActivityAssets.cs
+    startLine: 31
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Represents a set of descriptive assets related to an activity.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public record ActivityAssets : IActivityAssets, IEquatable<ActivityAssets>
+    content.vb: >-
+      <PublicAPI>
+
+      Public Class ActivityAssets Implements IActivityAssets, IEquatable(Of ActivityAssets)
+  inheritance:
+  - System.Object
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IActivityAssets
+  - System.IEquatable{Remora.Discord.API.Objects.ActivityAssets}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Objects.ActivityAssets.#ctor(Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String})
+  commentId: M:Remora.Discord.API.Objects.ActivityAssets.#ctor(Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String})
+  id: '#ctor(Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String})'
+  parent: Remora.Discord.API.Objects.ActivityAssets
+  langs:
+  - csharp
+  - vb
+  name: ActivityAssets(Optional<string>, Optional<string>, Optional<string>, Optional<string>)
+  nameWithType: ActivityAssets.ActivityAssets(Optional<string>, Optional<string>, Optional<string>, Optional<string>)
+  fullName: Remora.Discord.API.Objects.ActivityAssets.ActivityAssets(Remora.Rest.Core.Optional<string>, Remora.Rest.Core.Optional<string>, Remora.Rest.Core.Optional<string>, Remora.Rest.Core.Optional<string>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Activities\ActivityAssets.cs
+    startLine: 31
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Represents a set of descriptive assets related to an activity.
+  example: []
+  syntax:
+    content: public ActivityAssets(Optional<string> LargeImage = default, Optional<string> LargeText = default, Optional<string> SmallImage = default, Optional<string> SmallText = default)
+    parameters:
+    - id: LargeImage
+      type: Remora.Rest.Core.Optional{System.String}
+    - id: LargeText
+      type: Remora.Rest.Core.Optional{System.String}
+    - id: SmallImage
+      type: Remora.Rest.Core.Optional{System.String}
+    - id: SmallText
+      type: Remora.Rest.Core.Optional{System.String}
+    content.vb: Public Sub New(LargeImage As [Optional](Of String) = Nothing, LargeText As [Optional](Of String) = Nothing, SmallImage As [Optional](Of String) = Nothing, SmallText As [Optional](Of String) = Nothing)
+  overload: Remora.Discord.API.Objects.ActivityAssets.#ctor*
+  nameWithType.vb: ActivityAssets.New(Optional(Of String), Optional(Of String), Optional(Of String), Optional(Of String))
+  fullName.vb: Remora.Discord.API.Objects.ActivityAssets.New(Remora.Rest.Core.Optional(Of String), Remora.Rest.Core.Optional(Of String), Remora.Rest.Core.Optional(Of String), Remora.Rest.Core.Optional(Of String))
+  name.vb: New(Optional(Of String), Optional(Of String), Optional(Of String), Optional(Of String))
+- uid: Remora.Discord.API.Objects.ActivityAssets.LargeImage
+  commentId: P:Remora.Discord.API.Objects.ActivityAssets.LargeImage
+  id: LargeImage
+  parent: Remora.Discord.API.Objects.ActivityAssets
+  langs:
+  - csharp
+  - vb
+  name: LargeImage
+  nameWithType: ActivityAssets.LargeImage
+  fullName: Remora.Discord.API.Objects.ActivityAssets.LargeImage
+  type: Property
+  source:
+    id: LargeImage
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Activities\ActivityAssets.cs
+    startLine: 34
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the ID for a large image related to the activity. Usually, this is a snowflake.
+  example: []
+  syntax:
+    content: public Optional<string> LargeImage { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.String}
+    content.vb: Public Property LargeImage As [Optional](Of String)
+  overload: Remora.Discord.API.Objects.ActivityAssets.LargeImage*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IActivityAssets.LargeImage
+- uid: Remora.Discord.API.Objects.ActivityAssets.LargeText
+  commentId: P:Remora.Discord.API.Objects.ActivityAssets.LargeText
+  id: LargeText
+  parent: Remora.Discord.API.Objects.ActivityAssets
+  langs:
+  - csharp
+  - vb
+  name: LargeText
+  nameWithType: ActivityAssets.LargeText
+  fullName: Remora.Discord.API.Objects.ActivityAssets.LargeText
+  type: Property
+  source:
+    id: LargeText
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Activities\ActivityAssets.cs
+    startLine: 35
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the text displayed when hovering over the large image.
+  example: []
+  syntax:
+    content: public Optional<string> LargeText { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.String}
+    content.vb: Public Property LargeText As [Optional](Of String)
+  overload: Remora.Discord.API.Objects.ActivityAssets.LargeText*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IActivityAssets.LargeText
+- uid: Remora.Discord.API.Objects.ActivityAssets.SmallImage
+  commentId: P:Remora.Discord.API.Objects.ActivityAssets.SmallImage
+  id: SmallImage
+  parent: Remora.Discord.API.Objects.ActivityAssets
+  langs:
+  - csharp
+  - vb
+  name: SmallImage
+  nameWithType: ActivityAssets.SmallImage
+  fullName: Remora.Discord.API.Objects.ActivityAssets.SmallImage
+  type: Property
+  source:
+    id: SmallImage
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Activities\ActivityAssets.cs
+    startLine: 36
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the ID for a small image related to the activity. Usually, this is a snowflake.
+  example: []
+  syntax:
+    content: public Optional<string> SmallImage { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.String}
+    content.vb: Public Property SmallImage As [Optional](Of String)
+  overload: Remora.Discord.API.Objects.ActivityAssets.SmallImage*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IActivityAssets.SmallImage
+- uid: Remora.Discord.API.Objects.ActivityAssets.SmallText
+  commentId: P:Remora.Discord.API.Objects.ActivityAssets.SmallText
+  id: SmallText
+  parent: Remora.Discord.API.Objects.ActivityAssets
+  langs:
+  - csharp
+  - vb
+  name: SmallText
+  nameWithType: ActivityAssets.SmallText
+  fullName: Remora.Discord.API.Objects.ActivityAssets.SmallText
+  type: Property
+  source:
+    id: SmallText
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Activities\ActivityAssets.cs
+    startLine: 37
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the text displayed when hovering over the small image.
+  example: []
+  syntax:
+    content: public Optional<string> SmallText { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.String}
+    content.vb: Public Property SmallText As [Optional](Of String)
+  overload: Remora.Discord.API.Objects.ActivityAssets.SmallText*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IActivityAssets.SmallText
+references:
+- uid: Remora.Discord.API.Objects
+  commentId: N:Remora.Discord.API.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Objects
+  nameWithType: Remora.Discord.API.Objects
+  fullName: Remora.Discord.API.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Objects
+    name: Objects
+    href: Remora.Discord.API.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Objects
+    name: Objects
+    href: Remora.Discord.API.Objects.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Remora.Discord.API.Abstractions.Objects.IActivityAssets
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IActivityAssets
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IActivityAssets.html
+  name: IActivityAssets
+  nameWithType: IActivityAssets
+  fullName: Remora.Discord.API.Abstractions.Objects.IActivityAssets
+- uid: System.IEquatable{Remora.Discord.API.Objects.ActivityAssets}
+  commentId: T:System.IEquatable{Remora.Discord.API.Objects.ActivityAssets}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<ActivityAssets>
+  nameWithType: IEquatable<ActivityAssets>
+  fullName: System.IEquatable<Remora.Discord.API.Objects.ActivityAssets>
+  nameWithType.vb: IEquatable(Of ActivityAssets)
+  fullName.vb: System.IEquatable(Of Remora.Discord.API.Objects.ActivityAssets)
+  name.vb: IEquatable(Of ActivityAssets)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Remora.Discord.API.Objects.ActivityAssets
+    name: ActivityAssets
+    href: Remora.Discord.API.Objects.ActivityAssets.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Objects.ActivityAssets
+    name: ActivityAssets
+    href: Remora.Discord.API.Objects.ActivityAssets.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.API.Abstractions.Objects
+  commentId: N:Remora.Discord.API.Abstractions.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Objects
+  nameWithType: Remora.Discord.API.Abstractions.Objects
+  fullName: Remora.Discord.API.Abstractions.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Remora.Discord.API.Objects.ActivityAssets.#ctor*
+  commentId: Overload:Remora.Discord.API.Objects.ActivityAssets.#ctor
+  href: Remora.Discord.API.Objects.ActivityAssets.html#Remora_Discord_API_Objects_ActivityAssets__ctor_Remora_Rest_Core_Optional_System_String__Remora_Rest_Core_Optional_System_String__Remora_Rest_Core_Optional_System_String__Remora_Rest_Core_Optional_System_String__
+  name: ActivityAssets
+  nameWithType: ActivityAssets.ActivityAssets
+  fullName: Remora.Discord.API.Objects.ActivityAssets.ActivityAssets
+  nameWithType.vb: ActivityAssets.New
+  fullName.vb: Remora.Discord.API.Objects.ActivityAssets.New
+  name.vb: New
+- uid: Remora.Rest.Core.Optional{System.String}
+  commentId: T:Remora.Rest.Core.Optional{System.String}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Optional<string>
+  nameWithType: Optional<string>
+  fullName: Remora.Rest.Core.Optional<string>
+  nameWithType.vb: Optional(Of String)
+  fullName.vb: Remora.Rest.Core.Optional(Of String)
+  name.vb: Optional(Of String)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Remora.Rest.Core.Optional`1
+  commentId: T:Remora.Rest.Core.Optional`1
+  isExternal: true
+  name: Optional<TValue>
+  nameWithType: Optional<TValue>
+  fullName: Remora.Rest.Core.Optional<TValue>
+  nameWithType.vb: Optional(Of TValue)
+  fullName.vb: Remora.Rest.Core.Optional(Of TValue)
+  name.vb: Optional(Of TValue)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+- uid: Remora.Discord.API.Objects.ActivityAssets.LargeImage*
+  commentId: Overload:Remora.Discord.API.Objects.ActivityAssets.LargeImage
+  href: Remora.Discord.API.Objects.ActivityAssets.html#Remora_Discord_API_Objects_ActivityAssets_LargeImage
+  name: LargeImage
+  nameWithType: ActivityAssets.LargeImage
+  fullName: Remora.Discord.API.Objects.ActivityAssets.LargeImage
+- uid: Remora.Discord.API.Abstractions.Objects.IActivityAssets.LargeImage
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IActivityAssets.LargeImage
+  parent: Remora.Discord.API.Abstractions.Objects.IActivityAssets
+  href: Remora.Discord.API.Abstractions.Objects.IActivityAssets.html#Remora_Discord_API_Abstractions_Objects_IActivityAssets_LargeImage
+  name: LargeImage
+  nameWithType: IActivityAssets.LargeImage
+  fullName: Remora.Discord.API.Abstractions.Objects.IActivityAssets.LargeImage
+- uid: Remora.Discord.API.Objects.ActivityAssets.LargeText*
+  commentId: Overload:Remora.Discord.API.Objects.ActivityAssets.LargeText
+  href: Remora.Discord.API.Objects.ActivityAssets.html#Remora_Discord_API_Objects_ActivityAssets_LargeText
+  name: LargeText
+  nameWithType: ActivityAssets.LargeText
+  fullName: Remora.Discord.API.Objects.ActivityAssets.LargeText
+- uid: Remora.Discord.API.Abstractions.Objects.IActivityAssets.LargeText
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IActivityAssets.LargeText
+  parent: Remora.Discord.API.Abstractions.Objects.IActivityAssets
+  href: Remora.Discord.API.Abstractions.Objects.IActivityAssets.html#Remora_Discord_API_Abstractions_Objects_IActivityAssets_LargeText
+  name: LargeText
+  nameWithType: IActivityAssets.LargeText
+  fullName: Remora.Discord.API.Abstractions.Objects.IActivityAssets.LargeText
+- uid: Remora.Discord.API.Objects.ActivityAssets.SmallImage*
+  commentId: Overload:Remora.Discord.API.Objects.ActivityAssets.SmallImage
+  href: Remora.Discord.API.Objects.ActivityAssets.html#Remora_Discord_API_Objects_ActivityAssets_SmallImage
+  name: SmallImage
+  nameWithType: ActivityAssets.SmallImage
+  fullName: Remora.Discord.API.Objects.ActivityAssets.SmallImage
+- uid: Remora.Discord.API.Abstractions.Objects.IActivityAssets.SmallImage
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IActivityAssets.SmallImage
+  parent: Remora.Discord.API.Abstractions.Objects.IActivityAssets
+  href: Remora.Discord.API.Abstractions.Objects.IActivityAssets.html#Remora_Discord_API_Abstractions_Objects_IActivityAssets_SmallImage
+  name: SmallImage
+  nameWithType: IActivityAssets.SmallImage
+  fullName: Remora.Discord.API.Abstractions.Objects.IActivityAssets.SmallImage
+- uid: Remora.Discord.API.Objects.ActivityAssets.SmallText*
+  commentId: Overload:Remora.Discord.API.Objects.ActivityAssets.SmallText
+  href: Remora.Discord.API.Objects.ActivityAssets.html#Remora_Discord_API_Objects_ActivityAssets_SmallText
+  name: SmallText
+  nameWithType: ActivityAssets.SmallText
+  fullName: Remora.Discord.API.Objects.ActivityAssets.SmallText
+- uid: Remora.Discord.API.Abstractions.Objects.IActivityAssets.SmallText
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IActivityAssets.SmallText
+  parent: Remora.Discord.API.Abstractions.Objects.IActivityAssets
+  href: Remora.Discord.API.Abstractions.Objects.IActivityAssets.html#Remora_Discord_API_Abstractions_Objects_IActivityAssets_SmallText
+  name: SmallText
+  nameWithType: IActivityAssets.SmallText
+  fullName: Remora.Discord.API.Abstractions.Objects.IActivityAssets.SmallText
