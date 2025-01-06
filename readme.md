@@ -2,7 +2,17 @@
 
 This repository contains the documentation, both guides and .NET API docs, for Remora projects.
 
-## Adding a project
+## Contribution
+
+To get started with contribution, follow the steps below:
+
+1. Fork this repository.
+1. `git clone` your fork with the `--recurse-submodules` parameter
+1. Navigate to `templates/discordfx/discordfx/` and rename `toc.html.tmlp` to `toc.html.primary.tmpl`
+
+After this is complete, you may follow the instructions below to add additional documentation.
+
+### Adding a project
 
 1. Under /docs, create a new directory with the name of the Remora project. We'll use Remora.MyProject for this guide.
 1. Under /docs/Remora.MyProject, create a new file called toc.yml. This will be the toc file for all pages under this section. Add the following code:
@@ -20,7 +30,7 @@ items:
   href: Remora.MyProject/remora.myproject.yml
 ```
 
-## Updating the API docs for a project
+### Updating the API docs for a project
 
 1. Open the git console.
 1. Navigate to the submodule directory: `cd src/Remora.MyProject`

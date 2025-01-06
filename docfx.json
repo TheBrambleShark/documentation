@@ -5,7 +5,13 @@
         {
           "src": "src",
           "files": [
-            "**/*.csproj"
+            "**/*.csproj",
+            "**/*.msbuildproj"
+          ],
+          "exclude": [
+            "**/test/**",
+            "**/tests/**",
+            "**/docfx/**"
           ]
         }
       ],
@@ -17,18 +23,19 @@
     "content": [
       {
         "files": [
-          "index.md"
+          "index.md",
+          "toc.yml"
         ]
       },
       {
         "files": [
           "docs/**/*.{md,yml}"
-        ],
-        "dest": "docs/"
+        ]
       },
       {
-        "files": [ "api/*.yml" ],
-        "dest": "api/"
+        "files": [
+          "api/**/*.{md,yml}"
+        ]
       }
     ],
     "resource": [
