@@ -1,0 +1,465 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IThreadListSync
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.Events.IThreadListSync
+  id: IThreadListSync
+  parent: Remora.Discord.API.Abstractions.Gateway.Events
+  children:
+  - Remora.Discord.API.Abstractions.Gateway.Events.IThreadListSync.ChannelIDs
+  - Remora.Discord.API.Abstractions.Gateway.Events.IThreadListSync.GuildID
+  - Remora.Discord.API.Abstractions.Gateway.Events.IThreadListSync.Members
+  - Remora.Discord.API.Abstractions.Gateway.Events.IThreadListSync.Threads
+  langs:
+  - csharp
+  - vb
+  name: IThreadListSync
+  nameWithType: IThreadListSync
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IThreadListSync
+  type: Interface
+  source:
+    id: IThreadListSync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Events\Channels\IThreadListSync.cs
+    startLine: 32
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Events
+  summary: Sent when the current user gains access to a thread channel.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public interface IThreadListSync : IGatewayEvent, IGatewayPayloadData
+    content.vb: >-
+      <PublicAPI>
+
+      Public Interface IThreadListSync Inherits IGatewayEvent, IGatewayPayloadData
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IThreadListSync.GuildID
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Events.IThreadListSync.GuildID
+  id: GuildID
+  parent: Remora.Discord.API.Abstractions.Gateway.Events.IThreadListSync
+  langs:
+  - csharp
+  - vb
+  name: GuildID
+  nameWithType: IThreadListSync.GuildID
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IThreadListSync.GuildID
+  type: Property
+  source:
+    id: GuildID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Events\Channels\IThreadListSync.cs
+    startLine: 38
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Events
+  summary: Gets the ID of the guild that the thread is synchronizing on.
+  example: []
+  syntax:
+    content: Snowflake GuildID { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Snowflake
+    content.vb: ReadOnly Property GuildID As Snowflake
+  overload: Remora.Discord.API.Abstractions.Gateway.Events.IThreadListSync.GuildID*
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IThreadListSync.ChannelIDs
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Events.IThreadListSync.ChannelIDs
+  id: ChannelIDs
+  parent: Remora.Discord.API.Abstractions.Gateway.Events.IThreadListSync
+  langs:
+  - csharp
+  - vb
+  name: ChannelIDs
+  nameWithType: IThreadListSync.ChannelIDs
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IThreadListSync.ChannelIDs
+  type: Property
+  source:
+    id: ChannelIDs
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Events\Channels\IThreadListSync.cs
+    startLine: 43
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Events
+  summary: Gets the parent channel IDs whose threads are being synced.
+  example: []
+  syntax:
+    content: Optional<IReadOnlyList<Snowflake>> ChannelIDs { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}}
+    content.vb: ReadOnly Property ChannelIDs As [Optional](Of IReadOnlyList(Of Snowflake))
+  overload: Remora.Discord.API.Abstractions.Gateway.Events.IThreadListSync.ChannelIDs*
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IThreadListSync.Threads
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Events.IThreadListSync.Threads
+  id: Threads
+  parent: Remora.Discord.API.Abstractions.Gateway.Events.IThreadListSync
+  langs:
+  - csharp
+  - vb
+  name: Threads
+  nameWithType: IThreadListSync.Threads
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IThreadListSync.Threads
+  type: Property
+  source:
+    id: Threads
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Events\Channels\IThreadListSync.cs
+    startLine: 48
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Events
+  summary: Gets all active threads that the current user can access.
+  example: []
+  syntax:
+    content: IReadOnlyList<IChannel> Threads { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IChannel}
+    content.vb: ReadOnly Property Threads As IReadOnlyList(Of IChannel)
+  overload: Remora.Discord.API.Abstractions.Gateway.Events.IThreadListSync.Threads*
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IThreadListSync.Members
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Events.IThreadListSync.Members
+  id: Members
+  parent: Remora.Discord.API.Abstractions.Gateway.Events.IThreadListSync
+  langs:
+  - csharp
+  - vb
+  name: Members
+  nameWithType: IThreadListSync.Members
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IThreadListSync.Members
+  type: Property
+  source:
+    id: Members
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Events\Channels\IThreadListSync.cs
+    startLine: 53
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Events
+  summary: Gets all thread member objects from the synchronized threads.
+  example: []
+  syntax:
+    content: IReadOnlyList<IThreadMember> Members { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IThreadMember}
+    content.vb: ReadOnly Property Members As IReadOnlyList(Of IThreadMember)
+  overload: Remora.Discord.API.Abstractions.Gateway.Events.IThreadListSync.Members*
+references:
+- uid: Remora.Discord.API.Abstractions.Gateway.Events
+  commentId: N:Remora.Discord.API.Abstractions.Gateway.Events
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Gateway.Events
+  nameWithType: Remora.Discord.API.Abstractions.Gateway.Events
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events
+    name: Events
+    href: Remora.Discord.API.Abstractions.Gateway.Events.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events
+    name: Events
+    href: Remora.Discord.API.Abstractions.Gateway.Events.html
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IThreadListSync.GuildID*
+  commentId: Overload:Remora.Discord.API.Abstractions.Gateway.Events.IThreadListSync.GuildID
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IThreadListSync.html#Remora_Discord_API_Abstractions_Gateway_Events_IThreadListSync_GuildID
+  name: GuildID
+  nameWithType: IThreadListSync.GuildID
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IThreadListSync.GuildID
+- uid: Remora.Rest.Core.Snowflake
+  commentId: T:Remora.Rest.Core.Snowflake
+  parent: Remora.Rest.Core
+  isExternal: true
+  name: Snowflake
+  nameWithType: Snowflake
+  fullName: Remora.Rest.Core.Snowflake
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IThreadListSync.ChannelIDs*
+  commentId: Overload:Remora.Discord.API.Abstractions.Gateway.Events.IThreadListSync.ChannelIDs
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IThreadListSync.html#Remora_Discord_API_Abstractions_Gateway_Events_IThreadListSync_ChannelIDs
+  name: ChannelIDs
+  nameWithType: IThreadListSync.ChannelIDs
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IThreadListSync.ChannelIDs
+- uid: Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}}
+  commentId: T:Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: Optional<IReadOnlyList<Snowflake>>
+  nameWithType: Optional<IReadOnlyList<Snowflake>>
+  fullName: Remora.Rest.Core.Optional<System.Collections.Generic.IReadOnlyList<Remora.Rest.Core.Snowflake>>
+  nameWithType.vb: Optional(Of IReadOnlyList(Of Snowflake))
+  fullName.vb: Remora.Rest.Core.Optional(Of System.Collections.Generic.IReadOnlyList(Of Remora.Rest.Core.Snowflake))
+  name.vb: Optional(Of IReadOnlyList(Of Snowflake))
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+  - name: )
+- uid: Remora.Rest.Core.Optional`1
+  commentId: T:Remora.Rest.Core.Optional`1
+  isExternal: true
+  name: Optional<TValue>
+  nameWithType: Optional<TValue>
+  fullName: Remora.Rest.Core.Optional<TValue>
+  nameWithType.vb: Optional(Of TValue)
+  fullName.vb: Remora.Rest.Core.Optional(Of TValue)
+  name.vb: Optional(Of TValue)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IThreadListSync.Threads*
+  commentId: Overload:Remora.Discord.API.Abstractions.Gateway.Events.IThreadListSync.Threads
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IThreadListSync.html#Remora_Discord_API_Abstractions_Gateway_Events_IThreadListSync_Threads
+  name: Threads
+  nameWithType: IThreadListSync.Threads
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IThreadListSync.Threads
+- uid: System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IChannel}
+  commentId: T:System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IChannel}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<IChannel>
+  nameWithType: IReadOnlyList<IChannel>
+  fullName: System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.IChannel>
+  nameWithType.vb: IReadOnlyList(Of IChannel)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.IChannel)
+  name.vb: IReadOnlyList(Of IChannel)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IChannel
+    name: IChannel
+    href: Remora.Discord.API.Abstractions.Objects.IChannel.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IChannel
+    name: IChannel
+    href: Remora.Discord.API.Abstractions.Objects.IChannel.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IThreadListSync.Members*
+  commentId: Overload:Remora.Discord.API.Abstractions.Gateway.Events.IThreadListSync.Members
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IThreadListSync.html#Remora_Discord_API_Abstractions_Gateway_Events_IThreadListSync_Members
+  name: Members
+  nameWithType: IThreadListSync.Members
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IThreadListSync.Members
+- uid: System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IThreadMember}
+  commentId: T:System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IThreadMember}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<IThreadMember>
+  nameWithType: IReadOnlyList<IThreadMember>
+  fullName: System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.IThreadMember>
+  nameWithType.vb: IReadOnlyList(Of IThreadMember)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.IThreadMember)
+  name.vb: IReadOnlyList(Of IThreadMember)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IThreadMember
+    name: IThreadMember
+    href: Remora.Discord.API.Abstractions.Objects.IThreadMember.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IThreadMember
+    name: IThreadMember
+    href: Remora.Discord.API.Abstractions.Objects.IThreadMember.html
+  - name: )

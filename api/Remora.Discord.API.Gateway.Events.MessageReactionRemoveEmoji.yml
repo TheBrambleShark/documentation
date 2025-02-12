@@ -1,0 +1,880 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji
+  commentId: T:Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji
+  id: MessageReactionRemoveEmoji
+  parent: Remora.Discord.API.Gateway.Events
+  children:
+  - Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji.#ctor(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Discord.API.Abstractions.Objects.IPartialEmoji)
+  - Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji.ChannelID
+  - Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji.Emoji
+  - Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji.GuildID
+  - Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji.MessageID
+  langs:
+  - csharp
+  - vb
+  name: MessageReactionRemoveEmoji
+  nameWithType: MessageReactionRemoveEmoji
+  fullName: Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji
+  type: Class
+  source:
+    id: MessageReactionRemoveEmoji
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Messages\MessageReactionRemoveEmoji.cs
+    startLine: 32
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events
+  summary: Represents the removal of all instances of a given emoji from a message.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public record MessageReactionRemoveEmoji : IMessageReactionRemoveEmoji, IGatewayEvent, IGatewayPayloadData, IEquatable<MessageReactionRemoveEmoji>
+    content.vb: >-
+      <PublicAPI>
+
+      Public Class MessageReactionRemoveEmoji Implements IMessageReactionRemoveEmoji, IGatewayEvent, IGatewayPayloadData, IEquatable(Of MessageReactionRemoveEmoji)
+  inheritance:
+  - System.Object
+  implements:
+  - Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionRemoveEmoji
+  - Remora.Discord.API.Abstractions.Gateway.Events.IGatewayEvent
+  - Remora.Discord.API.Abstractions.Gateway.IGatewayPayloadData
+  - System.IEquatable{Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji.#ctor(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Discord.API.Abstractions.Objects.IPartialEmoji)
+  commentId: M:Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji.#ctor(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Discord.API.Abstractions.Objects.IPartialEmoji)
+  id: '#ctor(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Discord.API.Abstractions.Objects.IPartialEmoji)'
+  parent: Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji
+  langs:
+  - csharp
+  - vb
+  name: MessageReactionRemoveEmoji(Snowflake, Snowflake, Optional<Snowflake>, IPartialEmoji)
+  nameWithType: MessageReactionRemoveEmoji.MessageReactionRemoveEmoji(Snowflake, Snowflake, Optional<Snowflake>, IPartialEmoji)
+  fullName: Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji.MessageReactionRemoveEmoji(Remora.Rest.Core.Snowflake, Remora.Rest.Core.Snowflake, Remora.Rest.Core.Optional<Remora.Rest.Core.Snowflake>, Remora.Discord.API.Abstractions.Objects.IPartialEmoji)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Messages\MessageReactionRemoveEmoji.cs
+    startLine: 32
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events
+  summary: Represents the removal of all instances of a given emoji from a message.
+  example: []
+  syntax:
+    content: public MessageReactionRemoveEmoji(Snowflake ChannelID, Snowflake MessageID, Optional<Snowflake> GuildID, IPartialEmoji Emoji)
+    parameters:
+    - id: ChannelID
+      type: Remora.Rest.Core.Snowflake
+    - id: MessageID
+      type: Remora.Rest.Core.Snowflake
+    - id: GuildID
+      type: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+    - id: Emoji
+      type: Remora.Discord.API.Abstractions.Objects.IPartialEmoji
+    content.vb: Public Sub New(ChannelID As Snowflake, MessageID As Snowflake, GuildID As [Optional](Of Snowflake), Emoji As IPartialEmoji)
+  overload: Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji.#ctor*
+  nameWithType.vb: MessageReactionRemoveEmoji.New(Snowflake, Snowflake, Optional(Of Snowflake), IPartialEmoji)
+  fullName.vb: Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji.New(Remora.Rest.Core.Snowflake, Remora.Rest.Core.Snowflake, Remora.Rest.Core.Optional(Of Remora.Rest.Core.Snowflake), Remora.Discord.API.Abstractions.Objects.IPartialEmoji)
+  name.vb: New(Snowflake, Snowflake, Optional(Of Snowflake), IPartialEmoji)
+- uid: Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji.ChannelID
+  commentId: P:Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji.ChannelID
+  id: ChannelID
+  parent: Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji
+  langs:
+  - csharp
+  - vb
+  name: ChannelID
+  nameWithType: MessageReactionRemoveEmoji.ChannelID
+  fullName: Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji.ChannelID
+  type: Property
+  source:
+    id: ChannelID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Messages\MessageReactionRemoveEmoji.cs
+    startLine: 35
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events
+  summary: Gets the ID of the channel.
+  example: []
+  syntax:
+    content: public Snowflake ChannelID { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Snowflake
+    content.vb: Public Property ChannelID As Snowflake
+  overload: Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji.ChannelID*
+  implements:
+  - Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionRemoveEmoji.ChannelID
+- uid: Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji.MessageID
+  commentId: P:Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji.MessageID
+  id: MessageID
+  parent: Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji
+  langs:
+  - csharp
+  - vb
+  name: MessageID
+  nameWithType: MessageReactionRemoveEmoji.MessageID
+  fullName: Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji.MessageID
+  type: Property
+  source:
+    id: MessageID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Messages\MessageReactionRemoveEmoji.cs
+    startLine: 36
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events
+  summary: Gets the ID of the message.
+  example: []
+  syntax:
+    content: public Snowflake MessageID { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Snowflake
+    content.vb: Public Property MessageID As Snowflake
+  overload: Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji.MessageID*
+  implements:
+  - Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionRemoveEmoji.MessageID
+- uid: Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji.GuildID
+  commentId: P:Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji.GuildID
+  id: GuildID
+  parent: Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji
+  langs:
+  - csharp
+  - vb
+  name: GuildID
+  nameWithType: MessageReactionRemoveEmoji.GuildID
+  fullName: Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji.GuildID
+  type: Property
+  source:
+    id: GuildID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Messages\MessageReactionRemoveEmoji.cs
+    startLine: 37
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events
+  summary: Gets the ID of the guild.
+  example: []
+  syntax:
+    content: public Optional<Snowflake> GuildID { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+    content.vb: Public Property GuildID As [Optional](Of Snowflake)
+  overload: Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji.GuildID*
+  implements:
+  - Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionRemoveEmoji.GuildID
+- uid: Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji.Emoji
+  commentId: P:Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji.Emoji
+  id: Emoji
+  parent: Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji
+  langs:
+  - csharp
+  - vb
+  name: Emoji
+  nameWithType: MessageReactionRemoveEmoji.Emoji
+  fullName: Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji.Emoji
+  type: Property
+  source:
+    id: Emoji
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Messages\MessageReactionRemoveEmoji.cs
+    startLine: 38
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events
+  summary: Gets the emoji.
+  example: []
+  syntax:
+    content: public IPartialEmoji Emoji { get; init; }
+    parameters: []
+    return:
+      type: Remora.Discord.API.Abstractions.Objects.IPartialEmoji
+    content.vb: Public Property Emoji As IPartialEmoji
+  overload: Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji.Emoji*
+  implements:
+  - Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionRemoveEmoji.Emoji
+references:
+- uid: Remora.Discord.API.Gateway.Events
+  commentId: N:Remora.Discord.API.Gateway.Events
+  href: Remora.html
+  name: Remora.Discord.API.Gateway.Events
+  nameWithType: Remora.Discord.API.Gateway.Events
+  fullName: Remora.Discord.API.Gateway.Events
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Gateway.Events
+    name: Events
+    href: Remora.Discord.API.Gateway.Events.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Gateway.Events
+    name: Events
+    href: Remora.Discord.API.Gateway.Events.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionRemoveEmoji
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionRemoveEmoji
+  parent: Remora.Discord.API.Abstractions.Gateway.Events
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionRemoveEmoji.html
+  name: IMessageReactionRemoveEmoji
+  nameWithType: IMessageReactionRemoveEmoji
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionRemoveEmoji
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IGatewayEvent
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.Events.IGatewayEvent
+  parent: Remora.Discord.API.Abstractions.Gateway.Events
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IGatewayEvent.html
+  name: IGatewayEvent
+  nameWithType: IGatewayEvent
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IGatewayEvent
+- uid: Remora.Discord.API.Abstractions.Gateway.IGatewayPayloadData
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.IGatewayPayloadData
+  parent: Remora.Discord.API.Abstractions.Gateway
+  href: Remora.Discord.API.Abstractions.Gateway.IGatewayPayloadData.html
+  name: IGatewayPayloadData
+  nameWithType: IGatewayPayloadData
+  fullName: Remora.Discord.API.Abstractions.Gateway.IGatewayPayloadData
+- uid: System.IEquatable{Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji}
+  commentId: T:System.IEquatable{Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<MessageReactionRemoveEmoji>
+  nameWithType: IEquatable<MessageReactionRemoveEmoji>
+  fullName: System.IEquatable<Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji>
+  nameWithType.vb: IEquatable(Of MessageReactionRemoveEmoji)
+  fullName.vb: System.IEquatable(Of Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji)
+  name.vb: IEquatable(Of MessageReactionRemoveEmoji)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji
+    name: MessageReactionRemoveEmoji
+    href: Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji
+    name: MessageReactionRemoveEmoji
+    href: Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.API.Abstractions.Gateway.Events
+  commentId: N:Remora.Discord.API.Abstractions.Gateway.Events
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Gateway.Events
+  nameWithType: Remora.Discord.API.Abstractions.Gateway.Events
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events
+    name: Events
+    href: Remora.Discord.API.Abstractions.Gateway.Events.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events
+    name: Events
+    href: Remora.Discord.API.Abstractions.Gateway.Events.html
+- uid: Remora.Discord.API.Abstractions.Gateway
+  commentId: N:Remora.Discord.API.Abstractions.Gateway
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Gateway
+  nameWithType: Remora.Discord.API.Abstractions.Gateway
+  fullName: Remora.Discord.API.Abstractions.Gateway
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji.#ctor*
+  commentId: Overload:Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji.#ctor
+  href: Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji.html#Remora_Discord_API_Gateway_Events_MessageReactionRemoveEmoji__ctor_Remora_Rest_Core_Snowflake_Remora_Rest_Core_Snowflake_Remora_Rest_Core_Optional_Remora_Rest_Core_Snowflake__Remora_Discord_API_Abstractions_Objects_IPartialEmoji_
+  name: MessageReactionRemoveEmoji
+  nameWithType: MessageReactionRemoveEmoji.MessageReactionRemoveEmoji
+  fullName: Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji.MessageReactionRemoveEmoji
+  nameWithType.vb: MessageReactionRemoveEmoji.New
+  fullName.vb: Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji.New
+  name.vb: New
+- uid: Remora.Rest.Core.Snowflake
+  commentId: T:Remora.Rest.Core.Snowflake
+  parent: Remora.Rest.Core
+  isExternal: true
+  name: Snowflake
+  nameWithType: Snowflake
+  fullName: Remora.Rest.Core.Snowflake
+- uid: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  name: Optional<Snowflake>
+  nameWithType: Optional<Snowflake>
+  fullName: Remora.Rest.Core.Optional<Remora.Rest.Core.Snowflake>
+  nameWithType.vb: Optional(Of Snowflake)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Rest.Core.Snowflake)
+  name.vb: Optional(Of Snowflake)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialEmoji
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IPartialEmoji
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IPartialEmoji.html
+  name: IPartialEmoji
+  nameWithType: IPartialEmoji
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialEmoji
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+- uid: Remora.Rest.Core.Optional`1
+  commentId: T:Remora.Rest.Core.Optional`1
+  isExternal: true
+  name: Optional<TValue>
+  nameWithType: Optional<TValue>
+  fullName: Remora.Rest.Core.Optional<TValue>
+  nameWithType.vb: Optional(Of TValue)
+  fullName.vb: Remora.Rest.Core.Optional(Of TValue)
+  name.vb: Optional(Of TValue)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Objects
+  commentId: N:Remora.Discord.API.Abstractions.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Objects
+  nameWithType: Remora.Discord.API.Abstractions.Objects
+  fullName: Remora.Discord.API.Abstractions.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+- uid: Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji.ChannelID*
+  commentId: Overload:Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji.ChannelID
+  href: Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji.html#Remora_Discord_API_Gateway_Events_MessageReactionRemoveEmoji_ChannelID
+  name: ChannelID
+  nameWithType: MessageReactionRemoveEmoji.ChannelID
+  fullName: Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji.ChannelID
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionRemoveEmoji.ChannelID
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionRemoveEmoji.ChannelID
+  parent: Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionRemoveEmoji
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionRemoveEmoji.html#Remora_Discord_API_Abstractions_Gateway_Events_IMessageReactionRemoveEmoji_ChannelID
+  name: ChannelID
+  nameWithType: IMessageReactionRemoveEmoji.ChannelID
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionRemoveEmoji.ChannelID
+- uid: Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji.MessageID*
+  commentId: Overload:Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji.MessageID
+  href: Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji.html#Remora_Discord_API_Gateway_Events_MessageReactionRemoveEmoji_MessageID
+  name: MessageID
+  nameWithType: MessageReactionRemoveEmoji.MessageID
+  fullName: Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji.MessageID
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionRemoveEmoji.MessageID
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionRemoveEmoji.MessageID
+  parent: Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionRemoveEmoji
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionRemoveEmoji.html#Remora_Discord_API_Abstractions_Gateway_Events_IMessageReactionRemoveEmoji_MessageID
+  name: MessageID
+  nameWithType: IMessageReactionRemoveEmoji.MessageID
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionRemoveEmoji.MessageID
+- uid: Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji.GuildID*
+  commentId: Overload:Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji.GuildID
+  href: Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji.html#Remora_Discord_API_Gateway_Events_MessageReactionRemoveEmoji_GuildID
+  name: GuildID
+  nameWithType: MessageReactionRemoveEmoji.GuildID
+  fullName: Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji.GuildID
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionRemoveEmoji.GuildID
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionRemoveEmoji.GuildID
+  parent: Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionRemoveEmoji
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionRemoveEmoji.html#Remora_Discord_API_Abstractions_Gateway_Events_IMessageReactionRemoveEmoji_GuildID
+  name: GuildID
+  nameWithType: IMessageReactionRemoveEmoji.GuildID
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionRemoveEmoji.GuildID
+- uid: Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji.Emoji*
+  commentId: Overload:Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji.Emoji
+  href: Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji.html#Remora_Discord_API_Gateway_Events_MessageReactionRemoveEmoji_Emoji
+  name: Emoji
+  nameWithType: MessageReactionRemoveEmoji.Emoji
+  fullName: Remora.Discord.API.Gateway.Events.MessageReactionRemoveEmoji.Emoji
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionRemoveEmoji.Emoji
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionRemoveEmoji.Emoji
+  parent: Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionRemoveEmoji
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionRemoveEmoji.html#Remora_Discord_API_Abstractions_Gateway_Events_IMessageReactionRemoveEmoji_Emoji
+  name: Emoji
+  nameWithType: IMessageReactionRemoveEmoji.Emoji
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IMessageReactionRemoveEmoji.Emoji

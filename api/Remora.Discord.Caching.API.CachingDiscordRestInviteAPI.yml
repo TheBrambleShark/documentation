@@ -1,0 +1,1275 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.Caching.API.CachingDiscordRestInviteAPI
+  commentId: T:Remora.Discord.Caching.API.CachingDiscordRestInviteAPI
+  id: CachingDiscordRestInviteAPI
+  parent: Remora.Discord.Caching.API
+  children:
+  - Remora.Discord.Caching.API.CachingDiscordRestInviteAPI.#ctor(Remora.Discord.API.Abstractions.Rest.IDiscordRestInviteAPI,Remora.Discord.Caching.Services.CacheService)
+  - Remora.Discord.Caching.API.CachingDiscordRestInviteAPI.DeleteInviteAsync(System.String,Remora.Rest.Core.Optional{System.String},System.Threading.CancellationToken)
+  - Remora.Discord.Caching.API.CachingDiscordRestInviteAPI.GetInviteAsync(System.String,Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},System.Threading.CancellationToken)
+  - Remora.Discord.Caching.API.CachingDiscordRestInviteAPI.WithCustomization(System.Action{Remora.Rest.RestRequestBuilder})
+  langs:
+  - csharp
+  - vb
+  name: CachingDiscordRestInviteAPI
+  nameWithType: CachingDiscordRestInviteAPI
+  fullName: Remora.Discord.Caching.API.CachingDiscordRestInviteAPI
+  type: Class
+  source:
+    id: CachingDiscordRestInviteAPI
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Caching\API\CachingDiscordRestInviteAPI.Delegations.cs
+    startLine: 27
+  assemblies:
+  - Remora.Discord.Caching
+  namespace: Remora.Discord.Caching.API
+  summary: Decorates the registered invite API with caching functionality.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public class CachingDiscordRestInviteAPI : IDiscordRestInviteAPI, IRestCustomizable
+    content.vb: >-
+      <PublicAPI>
+
+      Public Class CachingDiscordRestInviteAPI Implements IDiscordRestInviteAPI, IRestCustomizable
+  inheritance:
+  - System.Object
+  implements:
+  - Remora.Discord.API.Abstractions.Rest.IDiscordRestInviteAPI
+  - Remora.Rest.IRestCustomizable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.Caching.API.CachingDiscordRestInviteAPI.#ctor(Remora.Discord.API.Abstractions.Rest.IDiscordRestInviteAPI,Remora.Discord.Caching.Services.CacheService)
+  commentId: M:Remora.Discord.Caching.API.CachingDiscordRestInviteAPI.#ctor(Remora.Discord.API.Abstractions.Rest.IDiscordRestInviteAPI,Remora.Discord.Caching.Services.CacheService)
+  id: '#ctor(Remora.Discord.API.Abstractions.Rest.IDiscordRestInviteAPI,Remora.Discord.Caching.Services.CacheService)'
+  parent: Remora.Discord.Caching.API.CachingDiscordRestInviteAPI
+  langs:
+  - csharp
+  - vb
+  name: CachingDiscordRestInviteAPI(IDiscordRestInviteAPI, CacheService)
+  nameWithType: CachingDiscordRestInviteAPI.CachingDiscordRestInviteAPI(IDiscordRestInviteAPI, CacheService)
+  fullName: Remora.Discord.Caching.API.CachingDiscordRestInviteAPI.CachingDiscordRestInviteAPI(Remora.Discord.API.Abstractions.Rest.IDiscordRestInviteAPI, Remora.Discord.Caching.Services.CacheService)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Caching\API\CachingDiscordRestInviteAPI.cs
+    startLine: 48
+  assemblies:
+  - Remora.Discord.Caching
+  namespace: Remora.Discord.Caching.API
+  summary: Initializes a new instance of the <xref href="Remora.Discord.Caching.API.CachingDiscordRestInviteAPI" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public CachingDiscordRestInviteAPI(IDiscordRestInviteAPI actual, CacheService cacheService)
+    parameters:
+    - id: actual
+      type: Remora.Discord.API.Abstractions.Rest.IDiscordRestInviteAPI
+      description: The decorated instance.
+    - id: cacheService
+      type: Remora.Discord.Caching.Services.CacheService
+      description: The cache service.
+    content.vb: Public Sub New(actual As IDiscordRestInviteAPI, cacheService As CacheService)
+  overload: Remora.Discord.Caching.API.CachingDiscordRestInviteAPI.#ctor*
+  nameWithType.vb: CachingDiscordRestInviteAPI.New(IDiscordRestInviteAPI, CacheService)
+  fullName.vb: Remora.Discord.Caching.API.CachingDiscordRestInviteAPI.New(Remora.Discord.API.Abstractions.Rest.IDiscordRestInviteAPI, Remora.Discord.Caching.Services.CacheService)
+  name.vb: New(IDiscordRestInviteAPI, CacheService)
+- uid: Remora.Discord.Caching.API.CachingDiscordRestInviteAPI.GetInviteAsync(System.String,Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Caching.API.CachingDiscordRestInviteAPI.GetInviteAsync(System.String,Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},System.Threading.CancellationToken)
+  id: GetInviteAsync(System.String,Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},System.Threading.CancellationToken)
+  parent: Remora.Discord.Caching.API.CachingDiscordRestInviteAPI
+  langs:
+  - csharp
+  - vb
+  name: GetInviteAsync(string, Optional<bool>, Optional<bool>, Optional<Snowflake>, CancellationToken)
+  nameWithType: CachingDiscordRestInviteAPI.GetInviteAsync(string, Optional<bool>, Optional<bool>, Optional<Snowflake>, CancellationToken)
+  fullName: Remora.Discord.Caching.API.CachingDiscordRestInviteAPI.GetInviteAsync(string, Remora.Rest.Core.Optional<bool>, Remora.Rest.Core.Optional<bool>, Remora.Rest.Core.Optional<Remora.Rest.Core.Snowflake>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: GetInviteAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Caching\API\CachingDiscordRestInviteAPI.cs
+    startLine: 59
+  assemblies:
+  - Remora.Discord.Caching
+  namespace: Remora.Discord.Caching.API
+  summary: Gets an invite object for the given code.
+  example: []
+  syntax:
+    content: public Task<Result<IInvite>> GetInviteAsync(string inviteCode, Optional<bool> withCounts = default, Optional<bool> withExpiration = default, Optional<Snowflake> guildScheduledEventID = default, CancellationToken ct = default)
+    parameters:
+    - id: inviteCode
+      type: System.String
+      description: The invite code.
+    - id: withCounts
+      type: Remora.Rest.Core.Optional{System.Boolean}
+      description: Whether the invite should contain approximate member counts.
+    - id: withExpiration
+      type: Remora.Rest.Core.Optional{System.Boolean}
+      description: Whether the invite should contain the expiration date.
+    - id: guildScheduledEventID
+      type: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+      description: The scheduled event to include with the invite.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IInvite}}
+      description: A retrieval result which may or may not have succeeded.
+    content.vb: Public Function GetInviteAsync(inviteCode As String, withCounts As [Optional](Of Boolean) = Nothing, withExpiration As [Optional](Of Boolean) = Nothing, guildScheduledEventID As [Optional](Of Snowflake) = Nothing, ct As CancellationToken = Nothing) As Task(Of Result(Of IInvite))
+  overload: Remora.Discord.Caching.API.CachingDiscordRestInviteAPI.GetInviteAsync*
+  implements:
+  - Remora.Discord.API.Abstractions.Rest.IDiscordRestInviteAPI.GetInviteAsync(System.String,Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},System.Threading.CancellationToken)
+  nameWithType.vb: CachingDiscordRestInviteAPI.GetInviteAsync(String, Optional(Of Boolean), Optional(Of Boolean), Optional(Of Snowflake), CancellationToken)
+  fullName.vb: Remora.Discord.Caching.API.CachingDiscordRestInviteAPI.GetInviteAsync(String, Remora.Rest.Core.Optional(Of Boolean), Remora.Rest.Core.Optional(Of Boolean), Remora.Rest.Core.Optional(Of Remora.Rest.Core.Snowflake), System.Threading.CancellationToken)
+  name.vb: GetInviteAsync(String, Optional(Of Boolean), Optional(Of Boolean), Optional(Of Snowflake), CancellationToken)
+- uid: Remora.Discord.Caching.API.CachingDiscordRestInviteAPI.DeleteInviteAsync(System.String,Remora.Rest.Core.Optional{System.String},System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Caching.API.CachingDiscordRestInviteAPI.DeleteInviteAsync(System.String,Remora.Rest.Core.Optional{System.String},System.Threading.CancellationToken)
+  id: DeleteInviteAsync(System.String,Remora.Rest.Core.Optional{System.String},System.Threading.CancellationToken)
+  parent: Remora.Discord.Caching.API.CachingDiscordRestInviteAPI
+  langs:
+  - csharp
+  - vb
+  name: DeleteInviteAsync(string, Optional<string>, CancellationToken)
+  nameWithType: CachingDiscordRestInviteAPI.DeleteInviteAsync(string, Optional<string>, CancellationToken)
+  fullName: Remora.Discord.Caching.API.CachingDiscordRestInviteAPI.DeleteInviteAsync(string, Remora.Rest.Core.Optional<string>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: DeleteInviteAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Caching\API\CachingDiscordRestInviteAPI.cs
+    startLine: 97
+  assemblies:
+  - Remora.Discord.Caching
+  namespace: Remora.Discord.Caching.API
+  summary: Deletes the given invite code.
+  example: []
+  syntax:
+    content: public Task<Result<IInvite>> DeleteInviteAsync(string inviteCode, Optional<string> reason = default, CancellationToken ct = default)
+    parameters:
+    - id: inviteCode
+      type: System.String
+      description: The invite code.
+    - id: reason
+      type: Remora.Rest.Core.Optional{System.String}
+      description: The reason to mark the action in the audit log with.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IInvite}}
+      description: A deletion result which may or may not have succeeded.
+    content.vb: Public Function DeleteInviteAsync(inviteCode As String, reason As [Optional](Of String) = Nothing, ct As CancellationToken = Nothing) As Task(Of Result(Of IInvite))
+  overload: Remora.Discord.Caching.API.CachingDiscordRestInviteAPI.DeleteInviteAsync*
+  implements:
+  - Remora.Discord.API.Abstractions.Rest.IDiscordRestInviteAPI.DeleteInviteAsync(System.String,Remora.Rest.Core.Optional{System.String},System.Threading.CancellationToken)
+  nameWithType.vb: CachingDiscordRestInviteAPI.DeleteInviteAsync(String, Optional(Of String), CancellationToken)
+  fullName.vb: Remora.Discord.Caching.API.CachingDiscordRestInviteAPI.DeleteInviteAsync(String, Remora.Rest.Core.Optional(Of String), System.Threading.CancellationToken)
+  name.vb: DeleteInviteAsync(String, Optional(Of String), CancellationToken)
+- uid: Remora.Discord.Caching.API.CachingDiscordRestInviteAPI.WithCustomization(System.Action{Remora.Rest.RestRequestBuilder})
+  commentId: M:Remora.Discord.Caching.API.CachingDiscordRestInviteAPI.WithCustomization(System.Action{Remora.Rest.RestRequestBuilder})
+  id: WithCustomization(System.Action{Remora.Rest.RestRequestBuilder})
+  parent: Remora.Discord.Caching.API.CachingDiscordRestInviteAPI
+  langs:
+  - csharp
+  - vb
+  name: WithCustomization(Action<RestRequestBuilder>)
+  nameWithType: CachingDiscordRestInviteAPI.WithCustomization(Action<RestRequestBuilder>)
+  fullName: Remora.Discord.Caching.API.CachingDiscordRestInviteAPI.WithCustomization(System.Action<Remora.Rest.RestRequestBuilder>)
+  type: Method
+  source:
+    id: WithCustomization
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Caching\API\CachingDiscordRestInviteAPI.Delegations.cs
+    startLine: 30
+  assemblies:
+  - Remora.Discord.Caching
+  namespace: Remora.Discord.Caching.API
+  summary: >-
+    Creates a customization that will be applied to all requests made by the
+
+    <xref href="Remora.Rest.RestHttpClient%601" data-throw-if-not-resolved="false"></xref>. The customization is removed when it is disposed.
+  example: []
+  syntax:
+    content: public RestRequestCustomization WithCustomization(Action<RestRequestBuilder> requestCustomizer)
+    parameters:
+    - id: requestCustomizer
+      type: System.Action{Remora.Rest.RestRequestBuilder}
+      description: The action that customizes the request.
+    return:
+      type: Remora.Rest.RestRequestCustomization
+      description: The created customization.
+    content.vb: Public Function WithCustomization(requestCustomizer As Action(Of RestRequestBuilder)) As RestRequestCustomization
+  overload: Remora.Discord.Caching.API.CachingDiscordRestInviteAPI.WithCustomization*
+  implements:
+  - Remora.Rest.IRestCustomizable.WithCustomization(System.Action{Remora.Rest.RestRequestBuilder})
+  nameWithType.vb: CachingDiscordRestInviteAPI.WithCustomization(Action(Of RestRequestBuilder))
+  fullName.vb: Remora.Discord.Caching.API.CachingDiscordRestInviteAPI.WithCustomization(System.Action(Of Remora.Rest.RestRequestBuilder))
+  name.vb: WithCustomization(Action(Of RestRequestBuilder))
+references:
+- uid: Remora.Discord.Caching.API
+  commentId: N:Remora.Discord.Caching.API
+  href: Remora.html
+  name: Remora.Discord.Caching.API
+  nameWithType: Remora.Discord.Caching.API
+  fullName: Remora.Discord.Caching.API
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Caching
+    name: Caching
+    href: Remora.Discord.Caching.html
+  - name: .
+  - uid: Remora.Discord.Caching.API
+    name: API
+    href: Remora.Discord.Caching.API.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Caching
+    name: Caching
+    href: Remora.Discord.Caching.html
+  - name: .
+  - uid: Remora.Discord.Caching.API
+    name: API
+    href: Remora.Discord.Caching.API.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestInviteAPI
+  commentId: T:Remora.Discord.API.Abstractions.Rest.IDiscordRestInviteAPI
+  parent: Remora.Discord.API.Abstractions.Rest
+  href: Remora.Discord.API.Abstractions.Rest.IDiscordRestInviteAPI.html
+  name: IDiscordRestInviteAPI
+  nameWithType: IDiscordRestInviteAPI
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestInviteAPI
+- uid: Remora.Rest.IRestCustomizable
+  commentId: T:Remora.Rest.IRestCustomizable
+  parent: Remora.Rest
+  isExternal: true
+  name: IRestCustomizable
+  nameWithType: IRestCustomizable
+  fullName: Remora.Rest.IRestCustomizable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.API.Abstractions.Rest
+  commentId: N:Remora.Discord.API.Abstractions.Rest
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Rest
+  nameWithType: Remora.Discord.API.Abstractions.Rest
+  fullName: Remora.Discord.API.Abstractions.Rest
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Rest
+    name: Rest
+    href: Remora.Discord.API.Abstractions.Rest.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Rest
+    name: Rest
+    href: Remora.Discord.API.Abstractions.Rest.html
+- uid: Remora.Rest
+  commentId: N:Remora.Rest
+  isExternal: true
+  name: Remora.Rest
+  nameWithType: Remora.Rest
+  fullName: Remora.Rest
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+- uid: Remora.Discord.Caching.API.CachingDiscordRestInviteAPI
+  commentId: T:Remora.Discord.Caching.API.CachingDiscordRestInviteAPI
+  href: Remora.Discord.Caching.API.CachingDiscordRestInviteAPI.html
+  name: CachingDiscordRestInviteAPI
+  nameWithType: CachingDiscordRestInviteAPI
+  fullName: Remora.Discord.Caching.API.CachingDiscordRestInviteAPI
+- uid: Remora.Discord.Caching.API.CachingDiscordRestInviteAPI.#ctor*
+  commentId: Overload:Remora.Discord.Caching.API.CachingDiscordRestInviteAPI.#ctor
+  href: Remora.Discord.Caching.API.CachingDiscordRestInviteAPI.html#Remora_Discord_Caching_API_CachingDiscordRestInviteAPI__ctor_Remora_Discord_API_Abstractions_Rest_IDiscordRestInviteAPI_Remora_Discord_Caching_Services_CacheService_
+  name: CachingDiscordRestInviteAPI
+  nameWithType: CachingDiscordRestInviteAPI.CachingDiscordRestInviteAPI
+  fullName: Remora.Discord.Caching.API.CachingDiscordRestInviteAPI.CachingDiscordRestInviteAPI
+  nameWithType.vb: CachingDiscordRestInviteAPI.New
+  fullName.vb: Remora.Discord.Caching.API.CachingDiscordRestInviteAPI.New
+  name.vb: New
+- uid: Remora.Discord.Caching.Services.CacheService
+  commentId: T:Remora.Discord.Caching.Services.CacheService
+  parent: Remora.Discord.Caching.Services
+  href: Remora.Discord.Caching.Services.CacheService.html
+  name: CacheService
+  nameWithType: CacheService
+  fullName: Remora.Discord.Caching.Services.CacheService
+- uid: Remora.Discord.Caching.Services
+  commentId: N:Remora.Discord.Caching.Services
+  href: Remora.html
+  name: Remora.Discord.Caching.Services
+  nameWithType: Remora.Discord.Caching.Services
+  fullName: Remora.Discord.Caching.Services
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Caching
+    name: Caching
+    href: Remora.Discord.Caching.html
+  - name: .
+  - uid: Remora.Discord.Caching.Services
+    name: Services
+    href: Remora.Discord.Caching.Services.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Caching
+    name: Caching
+    href: Remora.Discord.Caching.html
+  - name: .
+  - uid: Remora.Discord.Caching.Services
+    name: Services
+    href: Remora.Discord.Caching.Services.html
+- uid: Remora.Discord.Caching.API.CachingDiscordRestInviteAPI.GetInviteAsync*
+  commentId: Overload:Remora.Discord.Caching.API.CachingDiscordRestInviteAPI.GetInviteAsync
+  href: Remora.Discord.Caching.API.CachingDiscordRestInviteAPI.html#Remora_Discord_Caching_API_CachingDiscordRestInviteAPI_GetInviteAsync_System_String_Remora_Rest_Core_Optional_System_Boolean__Remora_Rest_Core_Optional_System_Boolean__Remora_Rest_Core_Optional_Remora_Rest_Core_Snowflake__System_Threading_CancellationToken_
+  name: GetInviteAsync
+  nameWithType: CachingDiscordRestInviteAPI.GetInviteAsync
+  fullName: Remora.Discord.Caching.API.CachingDiscordRestInviteAPI.GetInviteAsync
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestInviteAPI.GetInviteAsync(System.String,Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.API.Abstractions.Rest.IDiscordRestInviteAPI.GetInviteAsync(System.String,Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},System.Threading.CancellationToken)
+  parent: Remora.Discord.API.Abstractions.Rest.IDiscordRestInviteAPI
+  isExternal: true
+  href: Remora.Discord.API.Abstractions.Rest.IDiscordRestInviteAPI.html#Remora_Discord_API_Abstractions_Rest_IDiscordRestInviteAPI_GetInviteAsync_System_String_Remora_Rest_Core_Optional_System_Boolean__Remora_Rest_Core_Optional_System_Boolean__Remora_Rest_Core_Optional_Remora_Rest_Core_Snowflake__System_Threading_CancellationToken_
+  name: GetInviteAsync(string, Optional<bool>, Optional<bool>, Optional<Snowflake>, CancellationToken)
+  nameWithType: IDiscordRestInviteAPI.GetInviteAsync(string, Optional<bool>, Optional<bool>, Optional<Snowflake>, CancellationToken)
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestInviteAPI.GetInviteAsync(string, Remora.Rest.Core.Optional<bool>, Remora.Rest.Core.Optional<bool>, Remora.Rest.Core.Optional<Remora.Rest.Core.Snowflake>, System.Threading.CancellationToken)
+  nameWithType.vb: IDiscordRestInviteAPI.GetInviteAsync(String, Optional(Of Boolean), Optional(Of Boolean), Optional(Of Snowflake), CancellationToken)
+  fullName.vb: Remora.Discord.API.Abstractions.Rest.IDiscordRestInviteAPI.GetInviteAsync(String, Remora.Rest.Core.Optional(Of Boolean), Remora.Rest.Core.Optional(Of Boolean), Remora.Rest.Core.Optional(Of Remora.Rest.Core.Snowflake), System.Threading.CancellationToken)
+  name.vb: GetInviteAsync(String, Optional(Of Boolean), Optional(Of Boolean), Optional(Of Snowflake), CancellationToken)
+  spec.csharp:
+  - uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestInviteAPI.GetInviteAsync(System.String,Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},System.Threading.CancellationToken)
+    name: GetInviteAsync
+    href: Remora.Discord.API.Abstractions.Rest.IDiscordRestInviteAPI.html#Remora_Discord_API_Abstractions_Rest_IDiscordRestInviteAPI_GetInviteAsync_System_String_Remora_Rest_Core_Optional_System_Boolean__Remora_Rest_Core_Optional_System_Boolean__Remora_Rest_Core_Optional_Remora_Rest_Core_Snowflake__System_Threading_CancellationToken_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestInviteAPI.GetInviteAsync(System.String,Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},System.Threading.CancellationToken)
+    name: GetInviteAsync
+    href: Remora.Discord.API.Abstractions.Rest.IDiscordRestInviteAPI.html#Remora_Discord_API_Abstractions_Rest_IDiscordRestInviteAPI_GetInviteAsync_System_String_Remora_Rest_Core_Optional_System_Boolean__Remora_Rest_Core_Optional_System_Boolean__Remora_Rest_Core_Optional_Remora_Rest_Core_Snowflake__System_Threading_CancellationToken_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Remora.Rest.Core.Optional{System.Boolean}
+  commentId: T:Remora.Rest.Core.Optional{System.Boolean}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: Optional<bool>
+  nameWithType: Optional<bool>
+  fullName: Remora.Rest.Core.Optional<bool>
+  nameWithType.vb: Optional(Of Boolean)
+  fullName.vb: Remora.Rest.Core.Optional(Of Boolean)
+  name.vb: Optional(Of Boolean)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  name: Optional<Snowflake>
+  nameWithType: Optional<Snowflake>
+  fullName: Remora.Rest.Core.Optional<Remora.Rest.Core.Snowflake>
+  nameWithType.vb: Optional(Of Snowflake)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Rest.Core.Snowflake)
+  name.vb: Optional(Of Snowflake)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IInvite}}
+  commentId: T:System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IInvite}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Result<IInvite>>
+  nameWithType: Task<Result<IInvite>>
+  fullName: System.Threading.Tasks.Task<Remora.Results.Result<Remora.Discord.API.Abstractions.Objects.IInvite>>
+  nameWithType.vb: Task(Of Result(Of IInvite))
+  fullName.vb: System.Threading.Tasks.Task(Of Remora.Results.Result(Of Remora.Discord.API.Abstractions.Objects.IInvite))
+  name.vb: Task(Of Result(Of IInvite))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Remora.Results.Result`1
+    name: Result
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IInvite
+    name: IInvite
+    href: Remora.Discord.API.Abstractions.Objects.IInvite.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Results.Result`1
+    name: Result
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IInvite
+    name: IInvite
+    href: Remora.Discord.API.Abstractions.Objects.IInvite.html
+  - name: )
+  - name: )
+- uid: Remora.Rest.Core.Optional`1
+  commentId: T:Remora.Rest.Core.Optional`1
+  isExternal: true
+  name: Optional<TValue>
+  nameWithType: Optional<TValue>
+  fullName: Remora.Rest.Core.Optional<TValue>
+  nameWithType.vb: Optional(Of TValue)
+  fullName.vb: Remora.Rest.Core.Optional(Of TValue)
+  name.vb: Optional(Of TValue)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Remora.Discord.Caching.API.CachingDiscordRestInviteAPI.DeleteInviteAsync*
+  commentId: Overload:Remora.Discord.Caching.API.CachingDiscordRestInviteAPI.DeleteInviteAsync
+  href: Remora.Discord.Caching.API.CachingDiscordRestInviteAPI.html#Remora_Discord_Caching_API_CachingDiscordRestInviteAPI_DeleteInviteAsync_System_String_Remora_Rest_Core_Optional_System_String__System_Threading_CancellationToken_
+  name: DeleteInviteAsync
+  nameWithType: CachingDiscordRestInviteAPI.DeleteInviteAsync
+  fullName: Remora.Discord.Caching.API.CachingDiscordRestInviteAPI.DeleteInviteAsync
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestInviteAPI.DeleteInviteAsync(System.String,Remora.Rest.Core.Optional{System.String},System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.API.Abstractions.Rest.IDiscordRestInviteAPI.DeleteInviteAsync(System.String,Remora.Rest.Core.Optional{System.String},System.Threading.CancellationToken)
+  parent: Remora.Discord.API.Abstractions.Rest.IDiscordRestInviteAPI
+  isExternal: true
+  href: Remora.Discord.API.Abstractions.Rest.IDiscordRestInviteAPI.html#Remora_Discord_API_Abstractions_Rest_IDiscordRestInviteAPI_DeleteInviteAsync_System_String_Remora_Rest_Core_Optional_System_String__System_Threading_CancellationToken_
+  name: DeleteInviteAsync(string, Optional<string>, CancellationToken)
+  nameWithType: IDiscordRestInviteAPI.DeleteInviteAsync(string, Optional<string>, CancellationToken)
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestInviteAPI.DeleteInviteAsync(string, Remora.Rest.Core.Optional<string>, System.Threading.CancellationToken)
+  nameWithType.vb: IDiscordRestInviteAPI.DeleteInviteAsync(String, Optional(Of String), CancellationToken)
+  fullName.vb: Remora.Discord.API.Abstractions.Rest.IDiscordRestInviteAPI.DeleteInviteAsync(String, Remora.Rest.Core.Optional(Of String), System.Threading.CancellationToken)
+  name.vb: DeleteInviteAsync(String, Optional(Of String), CancellationToken)
+  spec.csharp:
+  - uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestInviteAPI.DeleteInviteAsync(System.String,Remora.Rest.Core.Optional{System.String},System.Threading.CancellationToken)
+    name: DeleteInviteAsync
+    href: Remora.Discord.API.Abstractions.Rest.IDiscordRestInviteAPI.html#Remora_Discord_API_Abstractions_Rest_IDiscordRestInviteAPI_DeleteInviteAsync_System_String_Remora_Rest_Core_Optional_System_String__System_Threading_CancellationToken_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestInviteAPI.DeleteInviteAsync(System.String,Remora.Rest.Core.Optional{System.String},System.Threading.CancellationToken)
+    name: DeleteInviteAsync
+    href: Remora.Discord.API.Abstractions.Rest.IDiscordRestInviteAPI.html#Remora_Discord_API_Abstractions_Rest_IDiscordRestInviteAPI_DeleteInviteAsync_System_String_Remora_Rest_Core_Optional_System_String__System_Threading_CancellationToken_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Remora.Rest.Core.Optional{System.String}
+  commentId: T:Remora.Rest.Core.Optional{System.String}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Optional<string>
+  nameWithType: Optional<string>
+  fullName: Remora.Rest.Core.Optional<string>
+  nameWithType.vb: Optional(Of String)
+  fullName.vb: Remora.Rest.Core.Optional(Of String)
+  name.vb: Optional(Of String)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Remora.Rest.RestHttpClient`1
+  commentId: T:Remora.Rest.RestHttpClient`1
+  isExternal: true
+  name: RestHttpClient<TError>
+  nameWithType: RestHttpClient<TError>
+  fullName: Remora.Rest.RestHttpClient<TError>
+  nameWithType.vb: RestHttpClient(Of TError)
+  fullName.vb: Remora.Rest.RestHttpClient(Of TError)
+  name.vb: RestHttpClient(Of TError)
+  spec.csharp:
+  - uid: Remora.Rest.RestHttpClient`1
+    name: RestHttpClient
+    isExternal: true
+  - name: <
+  - name: TError
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.RestHttpClient`1
+    name: RestHttpClient
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TError
+  - name: )
+- uid: Remora.Discord.Caching.API.CachingDiscordRestInviteAPI.WithCustomization*
+  commentId: Overload:Remora.Discord.Caching.API.CachingDiscordRestInviteAPI.WithCustomization
+  href: Remora.Discord.Caching.API.CachingDiscordRestInviteAPI.html#Remora_Discord_Caching_API_CachingDiscordRestInviteAPI_WithCustomization_System_Action_Remora_Rest_RestRequestBuilder__
+  name: WithCustomization
+  nameWithType: CachingDiscordRestInviteAPI.WithCustomization
+  fullName: Remora.Discord.Caching.API.CachingDiscordRestInviteAPI.WithCustomization
+- uid: Remora.Rest.IRestCustomizable.WithCustomization(System.Action{Remora.Rest.RestRequestBuilder})
+  commentId: M:Remora.Rest.IRestCustomizable.WithCustomization(System.Action{Remora.Rest.RestRequestBuilder})
+  parent: Remora.Rest.IRestCustomizable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: WithCustomization(Action<RestRequestBuilder>)
+  nameWithType: IRestCustomizable.WithCustomization(Action<RestRequestBuilder>)
+  fullName: Remora.Rest.IRestCustomizable.WithCustomization(System.Action<Remora.Rest.RestRequestBuilder>)
+  nameWithType.vb: IRestCustomizable.WithCustomization(Action(Of RestRequestBuilder))
+  fullName.vb: Remora.Rest.IRestCustomizable.WithCustomization(System.Action(Of Remora.Rest.RestRequestBuilder))
+  name.vb: WithCustomization(Action(Of RestRequestBuilder))
+  spec.csharp:
+  - uid: Remora.Rest.IRestCustomizable.WithCustomization(System.Action{Remora.Rest.RestRequestBuilder})
+    name: WithCustomization
+    isExternal: true
+  - name: (
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Remora.Rest.RestRequestBuilder
+    name: RestRequestBuilder
+    isExternal: true
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Remora.Rest.IRestCustomizable.WithCustomization(System.Action{Remora.Rest.RestRequestBuilder})
+    name: WithCustomization
+    isExternal: true
+  - name: (
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Rest.RestRequestBuilder
+    name: RestRequestBuilder
+    isExternal: true
+  - name: )
+  - name: )
+- uid: System.Action{Remora.Rest.RestRequestBuilder}
+  commentId: T:System.Action{Remora.Rest.RestRequestBuilder}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<RestRequestBuilder>
+  nameWithType: Action<RestRequestBuilder>
+  fullName: System.Action<Remora.Rest.RestRequestBuilder>
+  nameWithType.vb: Action(Of RestRequestBuilder)
+  fullName.vb: System.Action(Of Remora.Rest.RestRequestBuilder)
+  name.vb: Action(Of RestRequestBuilder)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Remora.Rest.RestRequestBuilder
+    name: RestRequestBuilder
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Rest.RestRequestBuilder
+    name: RestRequestBuilder
+    isExternal: true
+  - name: )
+- uid: Remora.Rest.RestRequestCustomization
+  commentId: T:Remora.Rest.RestRequestCustomization
+  parent: Remora.Rest
+  isExternal: true
+  name: RestRequestCustomization
+  nameWithType: RestRequestCustomization
+  fullName: Remora.Rest.RestRequestCustomization
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

@@ -1,0 +1,550 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify
+  id: IIdentify
+  parent: Remora.Discord.API.Abstractions.Gateway.Commands
+  children:
+  - Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.Compress
+  - Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.Intents
+  - Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.LargeThreshold
+  - Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.Presence
+  - Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.Properties
+  - Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.Shard
+  - Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.Token
+  langs:
+  - csharp
+  - vb
+  name: IIdentify
+  nameWithType: IIdentify
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify
+  type: Interface
+  source:
+    id: IIdentify
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Commands\IIdentify.cs
+    startLine: 30
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Commands
+  summary: Represents an identification command sent to the Discord gateway.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public interface IIdentify : IGatewayCommand, IGatewayPayloadData
+    content.vb: >-
+      <PublicAPI>
+
+      Public Interface IIdentify Inherits IGatewayCommand, IGatewayPayloadData
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.Token
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.Token
+  id: Token
+  parent: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify
+  langs:
+  - csharp
+  - vb
+  name: Token
+  nameWithType: IIdentify.Token
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.Token
+  type: Property
+  source:
+    id: Token
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Commands\IIdentify.cs
+    startLine: 36
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Commands
+  summary: Gets the authentication token.
+  example: []
+  syntax:
+    content: string Token { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property Token As String
+  overload: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.Token*
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.Properties
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.Properties
+  id: Properties
+  parent: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify
+  langs:
+  - csharp
+  - vb
+  name: Properties
+  nameWithType: IIdentify.Properties
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.Properties
+  type: Property
+  source:
+    id: Properties
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Commands\IIdentify.cs
+    startLine: 41
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Commands
+  summary: Gets the connection properties.
+  example: []
+  syntax:
+    content: IIdentifyConnectionProperties Properties { get; }
+    parameters: []
+    return:
+      type: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentifyConnectionProperties
+    content.vb: ReadOnly Property Properties As IIdentifyConnectionProperties
+  overload: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.Properties*
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.Compress
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.Compress
+  id: Compress
+  parent: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify
+  langs:
+  - csharp
+  - vb
+  name: Compress
+  nameWithType: IIdentify.Compress
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.Compress
+  type: Property
+  source:
+    id: Compress
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Commands\IIdentify.cs
+    startLine: 47
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Commands
+  summary: >-
+    Gets an optional field, containing a value that indicates whether the connection supports compressed
+
+    packets.
+  example: []
+  syntax:
+    content: Optional<bool> Compress { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Boolean}
+    content.vb: ReadOnly Property Compress As [Optional](Of Boolean)
+  overload: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.Compress*
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.LargeThreshold
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.LargeThreshold
+  id: LargeThreshold
+  parent: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify
+  langs:
+  - csharp
+  - vb
+  name: LargeThreshold
+  nameWithType: IIdentify.LargeThreshold
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.LargeThreshold
+  type: Property
+  source:
+    id: LargeThreshold
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Commands\IIdentify.cs
+    startLine: 53
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Commands
+  summary: >-
+    Gets an optional field, containing the threshold value of total guild members before a guild is considered
+
+    large, and offline members will not automatically be sent.
+  example: []
+  syntax:
+    content: Optional<byte> LargeThreshold { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Byte}
+    content.vb: ReadOnly Property LargeThreshold As [Optional](Of Byte)
+  overload: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.LargeThreshold*
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.Shard
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.Shard
+  id: Shard
+  parent: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify
+  langs:
+  - csharp
+  - vb
+  name: Shard
+  nameWithType: IIdentify.Shard
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.Shard
+  type: Property
+  source:
+    id: Shard
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Commands\IIdentify.cs
+    startLine: 58
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Commands
+  summary: Gets an optional field, containing the sharding ID for this connection.
+  example: []
+  syntax:
+    content: Optional<IShardIdentification> Shard { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Gateway.Commands.IShardIdentification}
+    content.vb: ReadOnly Property Shard As [Optional](Of IShardIdentification)
+  overload: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.Shard*
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.Presence
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.Presence
+  id: Presence
+  parent: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify
+  langs:
+  - csharp
+  - vb
+  name: Presence
+  nameWithType: IIdentify.Presence
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.Presence
+  type: Property
+  source:
+    id: Presence
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Commands\IIdentify.cs
+    startLine: 63
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Commands
+  summary: Gets an optional field, containing initial presence information.
+  example: []
+  syntax:
+    content: Optional<IUpdatePresence> Presence { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence}
+    content.vb: ReadOnly Property Presence As [Optional](Of IUpdatePresence)
+  overload: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.Presence*
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.Intents
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.Intents
+  id: Intents
+  parent: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify
+  langs:
+  - csharp
+  - vb
+  name: Intents
+  nameWithType: IIdentify.Intents
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.Intents
+  type: Property
+  source:
+    id: Intents
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Commands\IIdentify.cs
+    startLine: 68
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Commands
+  summary: Gets an optional field, containing the gateway intents the connection wants to receive.
+  example: []
+  syntax:
+    content: GatewayIntents Intents { get; }
+    parameters: []
+    return:
+      type: Remora.Discord.API.Abstractions.Gateway.Commands.GatewayIntents
+    content.vb: ReadOnly Property Intents As GatewayIntents
+  overload: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.Intents*
+references:
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands
+  commentId: N:Remora.Discord.API.Abstractions.Gateway.Commands
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Gateway.Commands
+  nameWithType: Remora.Discord.API.Abstractions.Gateway.Commands
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway.Commands
+    name: Commands
+    href: Remora.Discord.API.Abstractions.Gateway.Commands.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway.Commands
+    name: Commands
+    href: Remora.Discord.API.Abstractions.Gateway.Commands.html
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.Token*
+  commentId: Overload:Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.Token
+  href: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.html#Remora_Discord_API_Abstractions_Gateway_Commands_IIdentify_Token
+  name: Token
+  nameWithType: IIdentify.Token
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.Token
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.Properties*
+  commentId: Overload:Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.Properties
+  href: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.html#Remora_Discord_API_Abstractions_Gateway_Commands_IIdentify_Properties
+  name: Properties
+  nameWithType: IIdentify.Properties
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.Properties
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentifyConnectionProperties
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.Commands.IIdentifyConnectionProperties
+  parent: Remora.Discord.API.Abstractions.Gateway.Commands
+  href: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentifyConnectionProperties.html
+  name: IIdentifyConnectionProperties
+  nameWithType: IIdentifyConnectionProperties
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentifyConnectionProperties
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.Compress*
+  commentId: Overload:Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.Compress
+  href: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.html#Remora_Discord_API_Abstractions_Gateway_Commands_IIdentify_Compress
+  name: Compress
+  nameWithType: IIdentify.Compress
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.Compress
+- uid: Remora.Rest.Core.Optional{System.Boolean}
+  commentId: T:Remora.Rest.Core.Optional{System.Boolean}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: Optional<bool>
+  nameWithType: Optional<bool>
+  fullName: Remora.Rest.Core.Optional<bool>
+  nameWithType.vb: Optional(Of Boolean)
+  fullName.vb: Remora.Rest.Core.Optional(Of Boolean)
+  name.vb: Optional(Of Boolean)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Remora.Rest.Core.Optional`1
+  commentId: T:Remora.Rest.Core.Optional`1
+  isExternal: true
+  name: Optional<TValue>
+  nameWithType: Optional<TValue>
+  fullName: Remora.Rest.Core.Optional<TValue>
+  nameWithType.vb: Optional(Of TValue)
+  fullName.vb: Remora.Rest.Core.Optional(Of TValue)
+  name.vb: Optional(Of TValue)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.LargeThreshold*
+  commentId: Overload:Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.LargeThreshold
+  href: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.html#Remora_Discord_API_Abstractions_Gateway_Commands_IIdentify_LargeThreshold
+  name: LargeThreshold
+  nameWithType: IIdentify.LargeThreshold
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.LargeThreshold
+- uid: Remora.Rest.Core.Optional{System.Byte}
+  commentId: T:Remora.Rest.Core.Optional{System.Byte}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: Optional<byte>
+  nameWithType: Optional<byte>
+  fullName: Remora.Rest.Core.Optional<byte>
+  nameWithType.vb: Optional(Of Byte)
+  fullName.vb: Remora.Rest.Core.Optional(Of Byte)
+  name.vb: Optional(Of Byte)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.Shard*
+  commentId: Overload:Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.Shard
+  href: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.html#Remora_Discord_API_Abstractions_Gateway_Commands_IIdentify_Shard
+  name: Shard
+  nameWithType: IIdentify.Shard
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.Shard
+- uid: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Gateway.Commands.IShardIdentification}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Gateway.Commands.IShardIdentification}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: Remora.Discord.API.Abstractions.Gateway.Commands.IShardIdentification.html
+  name: Optional<IShardIdentification>
+  nameWithType: Optional<IShardIdentification>
+  fullName: Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Gateway.Commands.IShardIdentification>
+  nameWithType.vb: Optional(Of IShardIdentification)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Gateway.Commands.IShardIdentification)
+  name.vb: Optional(Of IShardIdentification)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Gateway.Commands.IShardIdentification
+    name: IShardIdentification
+    href: Remora.Discord.API.Abstractions.Gateway.Commands.IShardIdentification.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Gateway.Commands.IShardIdentification
+    name: IShardIdentification
+    href: Remora.Discord.API.Abstractions.Gateway.Commands.IShardIdentification.html
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.Presence*
+  commentId: Overload:Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.Presence
+  href: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.html#Remora_Discord_API_Abstractions_Gateway_Commands_IIdentify_Presence
+  name: Presence
+  nameWithType: IIdentify.Presence
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.Presence
+- uid: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence.html
+  name: Optional<IUpdatePresence>
+  nameWithType: Optional<IUpdatePresence>
+  fullName: Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence>
+  nameWithType.vb: Optional(Of IUpdatePresence)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence)
+  name.vb: Optional(Of IUpdatePresence)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence
+    name: IUpdatePresence
+    href: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence
+    name: IUpdatePresence
+    href: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdatePresence.html
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.Intents*
+  commentId: Overload:Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.Intents
+  href: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.html#Remora_Discord_API_Abstractions_Gateway_Commands_IIdentify_Intents
+  name: Intents
+  nameWithType: IIdentify.Intents
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IIdentify.Intents
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.GatewayIntents
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.Commands.GatewayIntents
+  parent: Remora.Discord.API.Abstractions.Gateway.Commands
+  href: Remora.Discord.API.Abstractions.Gateway.Commands.GatewayIntents.html
+  name: GatewayIntents
+  nameWithType: GatewayIntents
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.GatewayIntents

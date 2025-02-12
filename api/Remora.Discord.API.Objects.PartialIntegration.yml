@@ -1,0 +1,1618 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Objects.PartialIntegration
+  commentId: T:Remora.Discord.API.Objects.PartialIntegration
+  id: PartialIntegration
+  parent: Remora.Discord.API.Objects
+  children:
+  - Remora.Discord.API.Objects.PartialIntegration.#ctor(Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IntegrationExpireBehaviour},Remora.Rest.Core.Optional{System.TimeSpan},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IUser},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IIntegrationAccount},Remora.Rest.Core.Optional{System.DateTimeOffset},Remora.Rest.Core.Optional{System.Int32},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IIntegrationApplication},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{System.String}})
+  - Remora.Discord.API.Objects.PartialIntegration.Account
+  - Remora.Discord.API.Objects.PartialIntegration.Application
+  - Remora.Discord.API.Objects.PartialIntegration.EnableEmoticons
+  - Remora.Discord.API.Objects.PartialIntegration.ExpireBehaviour
+  - Remora.Discord.API.Objects.PartialIntegration.ExpireGracePeriod
+  - Remora.Discord.API.Objects.PartialIntegration.ID
+  - Remora.Discord.API.Objects.PartialIntegration.IsEnabled
+  - Remora.Discord.API.Objects.PartialIntegration.IsRevoked
+  - Remora.Discord.API.Objects.PartialIntegration.IsSyncing
+  - Remora.Discord.API.Objects.PartialIntegration.Name
+  - Remora.Discord.API.Objects.PartialIntegration.RoleID
+  - Remora.Discord.API.Objects.PartialIntegration.Scopes
+  - Remora.Discord.API.Objects.PartialIntegration.SubscriberCount
+  - Remora.Discord.API.Objects.PartialIntegration.SyncedAt
+  - Remora.Discord.API.Objects.PartialIntegration.Type
+  - Remora.Discord.API.Objects.PartialIntegration.User
+  langs:
+  - csharp
+  - vb
+  name: PartialIntegration
+  nameWithType: PartialIntegration
+  fullName: Remora.Discord.API.Objects.PartialIntegration
+  type: Class
+  source:
+    id: PartialIntegration
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Integrations\PartialIntegration.cs
+    startLine: 33
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Represents a partial integration object.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public record PartialIntegration : IPartialIntegration, IEquatable<PartialIntegration>
+    content.vb: >-
+      <PublicAPI>
+
+      Public Class PartialIntegration Implements IPartialIntegration, IEquatable(Of PartialIntegration)
+  inheritance:
+  - System.Object
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialIntegration
+  - System.IEquatable{Remora.Discord.API.Objects.PartialIntegration}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Objects.PartialIntegration.#ctor(Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IntegrationExpireBehaviour},Remora.Rest.Core.Optional{System.TimeSpan},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IUser},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IIntegrationAccount},Remora.Rest.Core.Optional{System.DateTimeOffset},Remora.Rest.Core.Optional{System.Int32},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IIntegrationApplication},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{System.String}})
+  commentId: M:Remora.Discord.API.Objects.PartialIntegration.#ctor(Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IntegrationExpireBehaviour},Remora.Rest.Core.Optional{System.TimeSpan},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IUser},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IIntegrationAccount},Remora.Rest.Core.Optional{System.DateTimeOffset},Remora.Rest.Core.Optional{System.Int32},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IIntegrationApplication},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{System.String}})
+  id: '#ctor(Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IntegrationExpireBehaviour},Remora.Rest.Core.Optional{System.TimeSpan},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IUser},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IIntegrationAccount},Remora.Rest.Core.Optional{System.DateTimeOffset},Remora.Rest.Core.Optional{System.Int32},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IIntegrationApplication},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{System.String}})'
+  parent: Remora.Discord.API.Objects.PartialIntegration
+  langs:
+  - csharp
+  - vb
+  name: PartialIntegration(Optional<Snowflake>, Optional<string>, Optional<string>, Optional<bool>, Optional<bool>, Optional<Snowflake>, Optional<bool>, Optional<IntegrationExpireBehaviour>, Optional<TimeSpan>, Optional<IUser>, Optional<IIntegrationAccount>, Optional<DateTimeOffset>, Optional<int>, Optional<bool>, Optional<IIntegrationApplication>, Optional<IReadOnlyList<string>>)
+  nameWithType: PartialIntegration.PartialIntegration(Optional<Snowflake>, Optional<string>, Optional<string>, Optional<bool>, Optional<bool>, Optional<Snowflake>, Optional<bool>, Optional<IntegrationExpireBehaviour>, Optional<TimeSpan>, Optional<IUser>, Optional<IIntegrationAccount>, Optional<DateTimeOffset>, Optional<int>, Optional<bool>, Optional<IIntegrationApplication>, Optional<IReadOnlyList<string>>)
+  fullName: Remora.Discord.API.Objects.PartialIntegration.PartialIntegration(Remora.Rest.Core.Optional<Remora.Rest.Core.Snowflake>, Remora.Rest.Core.Optional<string>, Remora.Rest.Core.Optional<string>, Remora.Rest.Core.Optional<bool>, Remora.Rest.Core.Optional<bool>, Remora.Rest.Core.Optional<Remora.Rest.Core.Snowflake>, Remora.Rest.Core.Optional<bool>, Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IntegrationExpireBehaviour>, Remora.Rest.Core.Optional<System.TimeSpan>, Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IUser>, Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IIntegrationAccount>, Remora.Rest.Core.Optional<System.DateTimeOffset>, Remora.Rest.Core.Optional<int>, Remora.Rest.Core.Optional<bool>, Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IIntegrationApplication>, Remora.Rest.Core.Optional<System.Collections.Generic.IReadOnlyList<string>>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Integrations\PartialIntegration.cs
+    startLine: 33
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Represents a partial integration object.
+  example: []
+  syntax:
+    content: public PartialIntegration(Optional<Snowflake> ID = default, Optional<string> Name = default, Optional<string> Type = default, Optional<bool> IsEnabled = default, Optional<bool> IsSyncing = default, Optional<Snowflake> RoleID = default, Optional<bool> EnableEmoticons = default, Optional<IntegrationExpireBehaviour> ExpireBehaviour = default, Optional<TimeSpan> ExpireGracePeriod = default, Optional<IUser> User = default, Optional<IIntegrationAccount> Account = default, Optional<DateTimeOffset> SyncedAt = default, Optional<int> SubscriberCount = default, Optional<bool> IsRevoked = default, Optional<IIntegrationApplication> Application = default, Optional<IReadOnlyList<string>> Scopes = default)
+    parameters:
+    - id: ID
+      type: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+    - id: Name
+      type: Remora.Rest.Core.Optional{System.String}
+    - id: Type
+      type: Remora.Rest.Core.Optional{System.String}
+    - id: IsEnabled
+      type: Remora.Rest.Core.Optional{System.Boolean}
+    - id: IsSyncing
+      type: Remora.Rest.Core.Optional{System.Boolean}
+    - id: RoleID
+      type: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+    - id: EnableEmoticons
+      type: Remora.Rest.Core.Optional{System.Boolean}
+    - id: ExpireBehaviour
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IntegrationExpireBehaviour}
+    - id: ExpireGracePeriod
+      type: Remora.Rest.Core.Optional{System.TimeSpan}
+    - id: User
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IUser}
+    - id: Account
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IIntegrationAccount}
+    - id: SyncedAt
+      type: Remora.Rest.Core.Optional{System.DateTimeOffset}
+    - id: SubscriberCount
+      type: Remora.Rest.Core.Optional{System.Int32}
+    - id: IsRevoked
+      type: Remora.Rest.Core.Optional{System.Boolean}
+    - id: Application
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IIntegrationApplication}
+    - id: Scopes
+      type: Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{System.String}}
+    content.vb: Public Sub New(ID As [Optional](Of Snowflake) = Nothing, Name As [Optional](Of String) = Nothing, Type As [Optional](Of String) = Nothing, IsEnabled As [Optional](Of Boolean) = Nothing, IsSyncing As [Optional](Of Boolean) = Nothing, RoleID As [Optional](Of Snowflake) = Nothing, EnableEmoticons As [Optional](Of Boolean) = Nothing, ExpireBehaviour As [Optional](Of IntegrationExpireBehaviour) = Nothing, ExpireGracePeriod As [Optional](Of TimeSpan) = Nothing, User As [Optional](Of IUser) = Nothing, Account As [Optional](Of IIntegrationAccount) = Nothing, SyncedAt As [Optional](Of DateTimeOffset) = Nothing, SubscriberCount As [Optional](Of Integer) = Nothing, IsRevoked As [Optional](Of Boolean) = Nothing, Application As [Optional](Of IIntegrationApplication) = Nothing, Scopes As [Optional](Of IReadOnlyList(Of String)) = Nothing)
+  overload: Remora.Discord.API.Objects.PartialIntegration.#ctor*
+  nameWithType.vb: PartialIntegration.New(Optional(Of Snowflake), Optional(Of String), Optional(Of String), Optional(Of Boolean), Optional(Of Boolean), Optional(Of Snowflake), Optional(Of Boolean), Optional(Of IntegrationExpireBehaviour), Optional(Of TimeSpan), Optional(Of IUser), Optional(Of IIntegrationAccount), Optional(Of DateTimeOffset), Optional(Of Integer), Optional(Of Boolean), Optional(Of IIntegrationApplication), Optional(Of IReadOnlyList(Of String)))
+  fullName.vb: Remora.Discord.API.Objects.PartialIntegration.New(Remora.Rest.Core.Optional(Of Remora.Rest.Core.Snowflake), Remora.Rest.Core.Optional(Of String), Remora.Rest.Core.Optional(Of String), Remora.Rest.Core.Optional(Of Boolean), Remora.Rest.Core.Optional(Of Boolean), Remora.Rest.Core.Optional(Of Remora.Rest.Core.Snowflake), Remora.Rest.Core.Optional(Of Boolean), Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IntegrationExpireBehaviour), Remora.Rest.Core.Optional(Of System.TimeSpan), Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IUser), Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IIntegrationAccount), Remora.Rest.Core.Optional(Of System.DateTimeOffset), Remora.Rest.Core.Optional(Of Integer), Remora.Rest.Core.Optional(Of Boolean), Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IIntegrationApplication), Remora.Rest.Core.Optional(Of System.Collections.Generic.IReadOnlyList(Of String)))
+  name.vb: New(Optional(Of Snowflake), Optional(Of String), Optional(Of String), Optional(Of Boolean), Optional(Of Boolean), Optional(Of Snowflake), Optional(Of Boolean), Optional(Of IntegrationExpireBehaviour), Optional(Of TimeSpan), Optional(Of IUser), Optional(Of IIntegrationAccount), Optional(Of DateTimeOffset), Optional(Of Integer), Optional(Of Boolean), Optional(Of IIntegrationApplication), Optional(Of IReadOnlyList(Of String)))
+- uid: Remora.Discord.API.Objects.PartialIntegration.ID
+  commentId: P:Remora.Discord.API.Objects.PartialIntegration.ID
+  id: ID
+  parent: Remora.Discord.API.Objects.PartialIntegration
+  langs:
+  - csharp
+  - vb
+  name: ID
+  nameWithType: PartialIntegration.ID
+  fullName: Remora.Discord.API.Objects.PartialIntegration.ID
+  type: Property
+  source:
+    id: ID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Integrations\PartialIntegration.cs
+    startLine: 36
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the ID of the integration.
+  example: []
+  syntax:
+    content: public Optional<Snowflake> ID { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+    content.vb: Public Property ID As [Optional](Of Snowflake)
+  overload: Remora.Discord.API.Objects.PartialIntegration.ID*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialIntegration.ID
+- uid: Remora.Discord.API.Objects.PartialIntegration.Name
+  commentId: P:Remora.Discord.API.Objects.PartialIntegration.Name
+  id: Name
+  parent: Remora.Discord.API.Objects.PartialIntegration
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: PartialIntegration.Name
+  fullName: Remora.Discord.API.Objects.PartialIntegration.Name
+  type: Property
+  source:
+    id: Name
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Integrations\PartialIntegration.cs
+    startLine: 37
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the name of the integration.
+  example: []
+  syntax:
+    content: public Optional<string> Name { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.String}
+    content.vb: Public Property Name As [Optional](Of String)
+  overload: Remora.Discord.API.Objects.PartialIntegration.Name*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialIntegration.Name
+- uid: Remora.Discord.API.Objects.PartialIntegration.Type
+  commentId: P:Remora.Discord.API.Objects.PartialIntegration.Type
+  id: Type
+  parent: Remora.Discord.API.Objects.PartialIntegration
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: PartialIntegration.Type
+  fullName: Remora.Discord.API.Objects.PartialIntegration.Type
+  type: Property
+  source:
+    id: Type
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Integrations\PartialIntegration.cs
+    startLine: 38
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the type of integration.
+  example: []
+  syntax:
+    content: public Optional<string> Type { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.String}
+    content.vb: Public Property Type As [Optional](Of String)
+  overload: Remora.Discord.API.Objects.PartialIntegration.Type*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialIntegration.Type
+- uid: Remora.Discord.API.Objects.PartialIntegration.IsEnabled
+  commentId: P:Remora.Discord.API.Objects.PartialIntegration.IsEnabled
+  id: IsEnabled
+  parent: Remora.Discord.API.Objects.PartialIntegration
+  langs:
+  - csharp
+  - vb
+  name: IsEnabled
+  nameWithType: PartialIntegration.IsEnabled
+  fullName: Remora.Discord.API.Objects.PartialIntegration.IsEnabled
+  type: Property
+  source:
+    id: IsEnabled
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Integrations\PartialIntegration.cs
+    startLine: 39
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets a value indicating whether the integration is enabled.
+  example: []
+  syntax:
+    content: public Optional<bool> IsEnabled { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Boolean}
+    content.vb: Public Property IsEnabled As [Optional](Of Boolean)
+  overload: Remora.Discord.API.Objects.PartialIntegration.IsEnabled*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialIntegration.IsEnabled
+- uid: Remora.Discord.API.Objects.PartialIntegration.IsSyncing
+  commentId: P:Remora.Discord.API.Objects.PartialIntegration.IsSyncing
+  id: IsSyncing
+  parent: Remora.Discord.API.Objects.PartialIntegration
+  langs:
+  - csharp
+  - vb
+  name: IsSyncing
+  nameWithType: PartialIntegration.IsSyncing
+  fullName: Remora.Discord.API.Objects.PartialIntegration.IsSyncing
+  type: Property
+  source:
+    id: IsSyncing
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Integrations\PartialIntegration.cs
+    startLine: 40
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets a value indicating whether the integration is syncing.
+  example: []
+  syntax:
+    content: public Optional<bool> IsSyncing { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Boolean}
+    content.vb: Public Property IsSyncing As [Optional](Of Boolean)
+  overload: Remora.Discord.API.Objects.PartialIntegration.IsSyncing*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialIntegration.IsSyncing
+- uid: Remora.Discord.API.Objects.PartialIntegration.RoleID
+  commentId: P:Remora.Discord.API.Objects.PartialIntegration.RoleID
+  id: RoleID
+  parent: Remora.Discord.API.Objects.PartialIntegration
+  langs:
+  - csharp
+  - vb
+  name: RoleID
+  nameWithType: PartialIntegration.RoleID
+  fullName: Remora.Discord.API.Objects.PartialIntegration.RoleID
+  type: Property
+  source:
+    id: RoleID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Integrations\PartialIntegration.cs
+    startLine: 41
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the ID of the role that this integration uses for subscribers.
+  example: []
+  syntax:
+    content: public Optional<Snowflake> RoleID { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+    content.vb: Public Property RoleID As [Optional](Of Snowflake)
+  overload: Remora.Discord.API.Objects.PartialIntegration.RoleID*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialIntegration.RoleID
+- uid: Remora.Discord.API.Objects.PartialIntegration.EnableEmoticons
+  commentId: P:Remora.Discord.API.Objects.PartialIntegration.EnableEmoticons
+  id: EnableEmoticons
+  parent: Remora.Discord.API.Objects.PartialIntegration
+  langs:
+  - csharp
+  - vb
+  name: EnableEmoticons
+  nameWithType: PartialIntegration.EnableEmoticons
+  fullName: Remora.Discord.API.Objects.PartialIntegration.EnableEmoticons
+  type: Property
+  source:
+    id: EnableEmoticons
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Integrations\PartialIntegration.cs
+    startLine: 42
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets a value indicating whether emoticons should be synced for this integration (twitch only, currently).
+  example: []
+  syntax:
+    content: public Optional<bool> EnableEmoticons { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Boolean}
+    content.vb: Public Property EnableEmoticons As [Optional](Of Boolean)
+  overload: Remora.Discord.API.Objects.PartialIntegration.EnableEmoticons*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialIntegration.EnableEmoticons
+- uid: Remora.Discord.API.Objects.PartialIntegration.ExpireBehaviour
+  commentId: P:Remora.Discord.API.Objects.PartialIntegration.ExpireBehaviour
+  id: ExpireBehaviour
+  parent: Remora.Discord.API.Objects.PartialIntegration
+  langs:
+  - csharp
+  - vb
+  name: ExpireBehaviour
+  nameWithType: PartialIntegration.ExpireBehaviour
+  fullName: Remora.Discord.API.Objects.PartialIntegration.ExpireBehaviour
+  type: Property
+  source:
+    id: ExpireBehaviour
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Integrations\PartialIntegration.cs
+    startLine: 43
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the behaviour of expiring subscribers.
+  example: []
+  syntax:
+    content: public Optional<IntegrationExpireBehaviour> ExpireBehaviour { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IntegrationExpireBehaviour}
+    content.vb: Public Property ExpireBehaviour As [Optional](Of IntegrationExpireBehaviour)
+  overload: Remora.Discord.API.Objects.PartialIntegration.ExpireBehaviour*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialIntegration.ExpireBehaviour
+- uid: Remora.Discord.API.Objects.PartialIntegration.ExpireGracePeriod
+  commentId: P:Remora.Discord.API.Objects.PartialIntegration.ExpireGracePeriod
+  id: ExpireGracePeriod
+  parent: Remora.Discord.API.Objects.PartialIntegration
+  langs:
+  - csharp
+  - vb
+  name: ExpireGracePeriod
+  nameWithType: PartialIntegration.ExpireGracePeriod
+  fullName: Remora.Discord.API.Objects.PartialIntegration.ExpireGracePeriod
+  type: Property
+  source:
+    id: ExpireGracePeriod
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Integrations\PartialIntegration.cs
+    startLine: 44
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the grace period (in days) before expiring subscribers.
+  example: []
+  syntax:
+    content: public Optional<TimeSpan> ExpireGracePeriod { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.TimeSpan}
+    content.vb: Public Property ExpireGracePeriod As [Optional](Of TimeSpan)
+  overload: Remora.Discord.API.Objects.PartialIntegration.ExpireGracePeriod*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialIntegration.ExpireGracePeriod
+- uid: Remora.Discord.API.Objects.PartialIntegration.User
+  commentId: P:Remora.Discord.API.Objects.PartialIntegration.User
+  id: User
+  parent: Remora.Discord.API.Objects.PartialIntegration
+  langs:
+  - csharp
+  - vb
+  name: User
+  nameWithType: PartialIntegration.User
+  fullName: Remora.Discord.API.Objects.PartialIntegration.User
+  type: Property
+  source:
+    id: User
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Integrations\PartialIntegration.cs
+    startLine: 45
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the user for this integration.
+  example: []
+  syntax:
+    content: public Optional<IUser> User { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IUser}
+    content.vb: Public Property User As [Optional](Of IUser)
+  overload: Remora.Discord.API.Objects.PartialIntegration.User*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialIntegration.User
+- uid: Remora.Discord.API.Objects.PartialIntegration.Account
+  commentId: P:Remora.Discord.API.Objects.PartialIntegration.Account
+  id: Account
+  parent: Remora.Discord.API.Objects.PartialIntegration
+  langs:
+  - csharp
+  - vb
+  name: Account
+  nameWithType: PartialIntegration.Account
+  fullName: Remora.Discord.API.Objects.PartialIntegration.Account
+  type: Property
+  source:
+    id: Account
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Integrations\PartialIntegration.cs
+    startLine: 46
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the integration's account information.
+  example: []
+  syntax:
+    content: public Optional<IIntegrationAccount> Account { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IIntegrationAccount}
+    content.vb: Public Property Account As [Optional](Of IIntegrationAccount)
+  overload: Remora.Discord.API.Objects.PartialIntegration.Account*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialIntegration.Account
+- uid: Remora.Discord.API.Objects.PartialIntegration.SyncedAt
+  commentId: P:Remora.Discord.API.Objects.PartialIntegration.SyncedAt
+  id: SyncedAt
+  parent: Remora.Discord.API.Objects.PartialIntegration
+  langs:
+  - csharp
+  - vb
+  name: SyncedAt
+  nameWithType: PartialIntegration.SyncedAt
+  fullName: Remora.Discord.API.Objects.PartialIntegration.SyncedAt
+  type: Property
+  source:
+    id: SyncedAt
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Integrations\PartialIntegration.cs
+    startLine: 47
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the time when the integration was last synced.
+  example: []
+  syntax:
+    content: public Optional<DateTimeOffset> SyncedAt { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.DateTimeOffset}
+    content.vb: Public Property SyncedAt As [Optional](Of DateTimeOffset)
+  overload: Remora.Discord.API.Objects.PartialIntegration.SyncedAt*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialIntegration.SyncedAt
+- uid: Remora.Discord.API.Objects.PartialIntegration.SubscriberCount
+  commentId: P:Remora.Discord.API.Objects.PartialIntegration.SubscriberCount
+  id: SubscriberCount
+  parent: Remora.Discord.API.Objects.PartialIntegration
+  langs:
+  - csharp
+  - vb
+  name: SubscriberCount
+  nameWithType: PartialIntegration.SubscriberCount
+  fullName: Remora.Discord.API.Objects.PartialIntegration.SubscriberCount
+  type: Property
+  source:
+    id: SubscriberCount
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Integrations\PartialIntegration.cs
+    startLine: 48
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the number of subscribers this integration has.
+  example: []
+  syntax:
+    content: public Optional<int> SubscriberCount { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Int32}
+    content.vb: Public Property SubscriberCount As [Optional](Of Integer)
+  overload: Remora.Discord.API.Objects.PartialIntegration.SubscriberCount*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialIntegration.SubscriberCount
+- uid: Remora.Discord.API.Objects.PartialIntegration.IsRevoked
+  commentId: P:Remora.Discord.API.Objects.PartialIntegration.IsRevoked
+  id: IsRevoked
+  parent: Remora.Discord.API.Objects.PartialIntegration
+  langs:
+  - csharp
+  - vb
+  name: IsRevoked
+  nameWithType: PartialIntegration.IsRevoked
+  fullName: Remora.Discord.API.Objects.PartialIntegration.IsRevoked
+  type: Property
+  source:
+    id: IsRevoked
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Integrations\PartialIntegration.cs
+    startLine: 49
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets a value indicating whether this integration has been revoked.
+  example: []
+  syntax:
+    content: public Optional<bool> IsRevoked { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Boolean}
+    content.vb: Public Property IsRevoked As [Optional](Of Boolean)
+  overload: Remora.Discord.API.Objects.PartialIntegration.IsRevoked*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialIntegration.IsRevoked
+- uid: Remora.Discord.API.Objects.PartialIntegration.Application
+  commentId: P:Remora.Discord.API.Objects.PartialIntegration.Application
+  id: Application
+  parent: Remora.Discord.API.Objects.PartialIntegration
+  langs:
+  - csharp
+  - vb
+  name: Application
+  nameWithType: PartialIntegration.Application
+  fullName: Remora.Discord.API.Objects.PartialIntegration.Application
+  type: Property
+  source:
+    id: Application
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Integrations\PartialIntegration.cs
+    startLine: 50
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the bot/OAuth2 application for Discord integrations.
+  example: []
+  syntax:
+    content: public Optional<IIntegrationApplication> Application { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IIntegrationApplication}
+    content.vb: Public Property Application As [Optional](Of IIntegrationApplication)
+  overload: Remora.Discord.API.Objects.PartialIntegration.Application*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialIntegration.Application
+- uid: Remora.Discord.API.Objects.PartialIntegration.Scopes
+  commentId: P:Remora.Discord.API.Objects.PartialIntegration.Scopes
+  id: Scopes
+  parent: Remora.Discord.API.Objects.PartialIntegration
+  langs:
+  - csharp
+  - vb
+  name: Scopes
+  nameWithType: PartialIntegration.Scopes
+  fullName: Remora.Discord.API.Objects.PartialIntegration.Scopes
+  type: Property
+  source:
+    id: Scopes
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Integrations\PartialIntegration.cs
+    startLine: 51
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the OAuth2 scopes the integration has been authorized for.
+  example: []
+  syntax:
+    content: public Optional<IReadOnlyList<string>> Scopes { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{System.String}}
+    content.vb: Public Property Scopes As [Optional](Of IReadOnlyList(Of String))
+  overload: Remora.Discord.API.Objects.PartialIntegration.Scopes*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialIntegration.Scopes
+references:
+- uid: Remora.Discord.API.Objects
+  commentId: N:Remora.Discord.API.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Objects
+  nameWithType: Remora.Discord.API.Objects
+  fullName: Remora.Discord.API.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Objects
+    name: Objects
+    href: Remora.Discord.API.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Objects
+    name: Objects
+    href: Remora.Discord.API.Objects.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialIntegration
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IPartialIntegration
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IPartialIntegration.html
+  name: IPartialIntegration
+  nameWithType: IPartialIntegration
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialIntegration
+- uid: System.IEquatable{Remora.Discord.API.Objects.PartialIntegration}
+  commentId: T:System.IEquatable{Remora.Discord.API.Objects.PartialIntegration}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<PartialIntegration>
+  nameWithType: IEquatable<PartialIntegration>
+  fullName: System.IEquatable<Remora.Discord.API.Objects.PartialIntegration>
+  nameWithType.vb: IEquatable(Of PartialIntegration)
+  fullName.vb: System.IEquatable(Of Remora.Discord.API.Objects.PartialIntegration)
+  name.vb: IEquatable(Of PartialIntegration)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Remora.Discord.API.Objects.PartialIntegration
+    name: PartialIntegration
+    href: Remora.Discord.API.Objects.PartialIntegration.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Objects.PartialIntegration
+    name: PartialIntegration
+    href: Remora.Discord.API.Objects.PartialIntegration.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.API.Abstractions.Objects
+  commentId: N:Remora.Discord.API.Abstractions.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Objects
+  nameWithType: Remora.Discord.API.Abstractions.Objects
+  fullName: Remora.Discord.API.Abstractions.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Remora.Discord.API.Objects.PartialIntegration.#ctor*
+  commentId: Overload:Remora.Discord.API.Objects.PartialIntegration.#ctor
+  href: Remora.Discord.API.Objects.PartialIntegration.html#Remora_Discord_API_Objects_PartialIntegration__ctor_Remora_Rest_Core_Optional_Remora_Rest_Core_Snowflake__Remora_Rest_Core_Optional_System_String__Remora_Rest_Core_Optional_System_String__Remora_Rest_Core_Optional_System_Boolean__Remora_Rest_Core_Optional_System_Boolean__Remora_Rest_Core_Optional_Remora_Rest_Core_Snowflake__Remora_Rest_Core_Optional_System_Boolean__Remora_Rest_Core_Optional_Remora_Discord_API_Abstractions_Objects_IntegrationExpireBehaviour__Remora_Rest_Core_Optional_System_TimeSpan__Remora_Rest_Core_Optional_Remora_Discord_API_Abstractions_Objects_IUser__Remora_Rest_Core_Optional_Remora_Discord_API_Abstractions_Objects_IIntegrationAccount__Remora_Rest_Core_Optional_System_DateTimeOffset__Remora_Rest_Core_Optional_System_Int32__Remora_Rest_Core_Optional_System_Boolean__Remora_Rest_Core_Optional_Remora_Discord_API_Abstractions_Objects_IIntegrationApplication__Remora_Rest_Core_Optional_System_Collections_Generic_IReadOnlyList_System_String___
+  name: PartialIntegration
+  nameWithType: PartialIntegration.PartialIntegration
+  fullName: Remora.Discord.API.Objects.PartialIntegration.PartialIntegration
+  nameWithType.vb: PartialIntegration.New
+  fullName.vb: Remora.Discord.API.Objects.PartialIntegration.New
+  name.vb: New
+- uid: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  name: Optional<Snowflake>
+  nameWithType: Optional<Snowflake>
+  fullName: Remora.Rest.Core.Optional<Remora.Rest.Core.Snowflake>
+  nameWithType.vb: Optional(Of Snowflake)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Rest.Core.Snowflake)
+  name.vb: Optional(Of Snowflake)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+- uid: Remora.Rest.Core.Optional{System.String}
+  commentId: T:Remora.Rest.Core.Optional{System.String}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Optional<string>
+  nameWithType: Optional<string>
+  fullName: Remora.Rest.Core.Optional<string>
+  nameWithType.vb: Optional(Of String)
+  fullName.vb: Remora.Rest.Core.Optional(Of String)
+  name.vb: Optional(Of String)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Remora.Rest.Core.Optional{System.Boolean}
+  commentId: T:Remora.Rest.Core.Optional{System.Boolean}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: Optional<bool>
+  nameWithType: Optional<bool>
+  fullName: Remora.Rest.Core.Optional<bool>
+  nameWithType.vb: Optional(Of Boolean)
+  fullName.vb: Remora.Rest.Core.Optional(Of Boolean)
+  name.vb: Optional(Of Boolean)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IntegrationExpireBehaviour}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IntegrationExpireBehaviour}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: Remora.Discord.API.Abstractions.Objects.IntegrationExpireBehaviour.html
+  name: Optional<IntegrationExpireBehaviour>
+  nameWithType: Optional<IntegrationExpireBehaviour>
+  fullName: Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IntegrationExpireBehaviour>
+  nameWithType.vb: Optional(Of IntegrationExpireBehaviour)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IntegrationExpireBehaviour)
+  name.vb: Optional(Of IntegrationExpireBehaviour)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IntegrationExpireBehaviour
+    name: IntegrationExpireBehaviour
+    href: Remora.Discord.API.Abstractions.Objects.IntegrationExpireBehaviour.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IntegrationExpireBehaviour
+    name: IntegrationExpireBehaviour
+    href: Remora.Discord.API.Abstractions.Objects.IntegrationExpireBehaviour.html
+  - name: )
+- uid: Remora.Rest.Core.Optional{System.TimeSpan}
+  commentId: T:Remora.Rest.Core.Optional{System.TimeSpan}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.timespan
+  name: Optional<TimeSpan>
+  nameWithType: Optional<TimeSpan>
+  fullName: Remora.Rest.Core.Optional<System.TimeSpan>
+  nameWithType.vb: Optional(Of TimeSpan)
+  fullName.vb: Remora.Rest.Core.Optional(Of System.TimeSpan)
+  name.vb: Optional(Of TimeSpan)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: )
+- uid: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IUser}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IUser}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: Remora.Discord.API.Abstractions.Objects.IUser.html
+  name: Optional<IUser>
+  nameWithType: Optional<IUser>
+  fullName: Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IUser>
+  nameWithType.vb: Optional(Of IUser)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IUser)
+  name.vb: Optional(Of IUser)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IUser
+    name: IUser
+    href: Remora.Discord.API.Abstractions.Objects.IUser.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IUser
+    name: IUser
+    href: Remora.Discord.API.Abstractions.Objects.IUser.html
+  - name: )
+- uid: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IIntegrationAccount}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IIntegrationAccount}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: Remora.Discord.API.Abstractions.Objects.IIntegrationAccount.html
+  name: Optional<IIntegrationAccount>
+  nameWithType: Optional<IIntegrationAccount>
+  fullName: Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IIntegrationAccount>
+  nameWithType.vb: Optional(Of IIntegrationAccount)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IIntegrationAccount)
+  name.vb: Optional(Of IIntegrationAccount)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IIntegrationAccount
+    name: IIntegrationAccount
+    href: Remora.Discord.API.Abstractions.Objects.IIntegrationAccount.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IIntegrationAccount
+    name: IIntegrationAccount
+    href: Remora.Discord.API.Abstractions.Objects.IIntegrationAccount.html
+  - name: )
+- uid: Remora.Rest.Core.Optional{System.DateTimeOffset}
+  commentId: T:Remora.Rest.Core.Optional{System.DateTimeOffset}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  name: Optional<DateTimeOffset>
+  nameWithType: Optional<DateTimeOffset>
+  fullName: Remora.Rest.Core.Optional<System.DateTimeOffset>
+  nameWithType.vb: Optional(Of DateTimeOffset)
+  fullName.vb: Remora.Rest.Core.Optional(Of System.DateTimeOffset)
+  name.vb: Optional(Of DateTimeOffset)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  - name: )
+- uid: Remora.Rest.Core.Optional{System.Int32}
+  commentId: T:Remora.Rest.Core.Optional{System.Int32}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: Optional<int>
+  nameWithType: Optional<int>
+  fullName: Remora.Rest.Core.Optional<int>
+  nameWithType.vb: Optional(Of Integer)
+  fullName.vb: Remora.Rest.Core.Optional(Of Integer)
+  name.vb: Optional(Of Integer)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IIntegrationApplication}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IIntegrationApplication}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: Remora.Discord.API.Abstractions.Objects.IIntegrationApplication.html
+  name: Optional<IIntegrationApplication>
+  nameWithType: Optional<IIntegrationApplication>
+  fullName: Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IIntegrationApplication>
+  nameWithType.vb: Optional(Of IIntegrationApplication)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IIntegrationApplication)
+  name.vb: Optional(Of IIntegrationApplication)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IIntegrationApplication
+    name: IIntegrationApplication
+    href: Remora.Discord.API.Abstractions.Objects.IIntegrationApplication.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IIntegrationApplication
+    name: IIntegrationApplication
+    href: Remora.Discord.API.Abstractions.Objects.IIntegrationApplication.html
+  - name: )
+- uid: Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{System.String}}
+  commentId: T:Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{System.String}}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: Optional<IReadOnlyList<string>>
+  nameWithType: Optional<IReadOnlyList<string>>
+  fullName: Remora.Rest.Core.Optional<System.Collections.Generic.IReadOnlyList<string>>
+  nameWithType.vb: Optional(Of IReadOnlyList(Of String))
+  fullName.vb: Remora.Rest.Core.Optional(Of System.Collections.Generic.IReadOnlyList(Of String))
+  name.vb: Optional(Of IReadOnlyList(Of String))
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )
+- uid: Remora.Rest.Core.Optional`1
+  commentId: T:Remora.Rest.Core.Optional`1
+  isExternal: true
+  name: Optional<TValue>
+  nameWithType: Optional<TValue>
+  fullName: Remora.Rest.Core.Optional<TValue>
+  nameWithType.vb: Optional(Of TValue)
+  fullName.vb: Remora.Rest.Core.Optional(Of TValue)
+  name.vb: Optional(Of TValue)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+- uid: Remora.Discord.API.Objects.PartialIntegration.ID*
+  commentId: Overload:Remora.Discord.API.Objects.PartialIntegration.ID
+  href: Remora.Discord.API.Objects.PartialIntegration.html#Remora_Discord_API_Objects_PartialIntegration_ID
+  name: ID
+  nameWithType: PartialIntegration.ID
+  fullName: Remora.Discord.API.Objects.PartialIntegration.ID
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialIntegration.ID
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialIntegration.ID
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialIntegration
+  href: Remora.Discord.API.Abstractions.Objects.IPartialIntegration.html#Remora_Discord_API_Abstractions_Objects_IPartialIntegration_ID
+  name: ID
+  nameWithType: IPartialIntegration.ID
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialIntegration.ID
+- uid: Remora.Discord.API.Objects.PartialIntegration.Name*
+  commentId: Overload:Remora.Discord.API.Objects.PartialIntegration.Name
+  href: Remora.Discord.API.Objects.PartialIntegration.html#Remora_Discord_API_Objects_PartialIntegration_Name
+  name: Name
+  nameWithType: PartialIntegration.Name
+  fullName: Remora.Discord.API.Objects.PartialIntegration.Name
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialIntegration.Name
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialIntegration.Name
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialIntegration
+  href: Remora.Discord.API.Abstractions.Objects.IPartialIntegration.html#Remora_Discord_API_Abstractions_Objects_IPartialIntegration_Name
+  name: Name
+  nameWithType: IPartialIntegration.Name
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialIntegration.Name
+- uid: Remora.Discord.API.Objects.PartialIntegration.Type*
+  commentId: Overload:Remora.Discord.API.Objects.PartialIntegration.Type
+  href: Remora.Discord.API.Objects.PartialIntegration.html#Remora_Discord_API_Objects_PartialIntegration_Type
+  name: Type
+  nameWithType: PartialIntegration.Type
+  fullName: Remora.Discord.API.Objects.PartialIntegration.Type
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialIntegration.Type
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialIntegration.Type
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialIntegration
+  href: Remora.Discord.API.Abstractions.Objects.IPartialIntegration.html#Remora_Discord_API_Abstractions_Objects_IPartialIntegration_Type
+  name: Type
+  nameWithType: IPartialIntegration.Type
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialIntegration.Type
+- uid: Remora.Discord.API.Objects.PartialIntegration.IsEnabled*
+  commentId: Overload:Remora.Discord.API.Objects.PartialIntegration.IsEnabled
+  href: Remora.Discord.API.Objects.PartialIntegration.html#Remora_Discord_API_Objects_PartialIntegration_IsEnabled
+  name: IsEnabled
+  nameWithType: PartialIntegration.IsEnabled
+  fullName: Remora.Discord.API.Objects.PartialIntegration.IsEnabled
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialIntegration.IsEnabled
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialIntegration.IsEnabled
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialIntegration
+  href: Remora.Discord.API.Abstractions.Objects.IPartialIntegration.html#Remora_Discord_API_Abstractions_Objects_IPartialIntegration_IsEnabled
+  name: IsEnabled
+  nameWithType: IPartialIntegration.IsEnabled
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialIntegration.IsEnabled
+- uid: Remora.Discord.API.Objects.PartialIntegration.IsSyncing*
+  commentId: Overload:Remora.Discord.API.Objects.PartialIntegration.IsSyncing
+  href: Remora.Discord.API.Objects.PartialIntegration.html#Remora_Discord_API_Objects_PartialIntegration_IsSyncing
+  name: IsSyncing
+  nameWithType: PartialIntegration.IsSyncing
+  fullName: Remora.Discord.API.Objects.PartialIntegration.IsSyncing
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialIntegration.IsSyncing
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialIntegration.IsSyncing
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialIntegration
+  href: Remora.Discord.API.Abstractions.Objects.IPartialIntegration.html#Remora_Discord_API_Abstractions_Objects_IPartialIntegration_IsSyncing
+  name: IsSyncing
+  nameWithType: IPartialIntegration.IsSyncing
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialIntegration.IsSyncing
+- uid: Remora.Discord.API.Objects.PartialIntegration.RoleID*
+  commentId: Overload:Remora.Discord.API.Objects.PartialIntegration.RoleID
+  href: Remora.Discord.API.Objects.PartialIntegration.html#Remora_Discord_API_Objects_PartialIntegration_RoleID
+  name: RoleID
+  nameWithType: PartialIntegration.RoleID
+  fullName: Remora.Discord.API.Objects.PartialIntegration.RoleID
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialIntegration.RoleID
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialIntegration.RoleID
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialIntegration
+  href: Remora.Discord.API.Abstractions.Objects.IPartialIntegration.html#Remora_Discord_API_Abstractions_Objects_IPartialIntegration_RoleID
+  name: RoleID
+  nameWithType: IPartialIntegration.RoleID
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialIntegration.RoleID
+- uid: Remora.Discord.API.Objects.PartialIntegration.EnableEmoticons*
+  commentId: Overload:Remora.Discord.API.Objects.PartialIntegration.EnableEmoticons
+  href: Remora.Discord.API.Objects.PartialIntegration.html#Remora_Discord_API_Objects_PartialIntegration_EnableEmoticons
+  name: EnableEmoticons
+  nameWithType: PartialIntegration.EnableEmoticons
+  fullName: Remora.Discord.API.Objects.PartialIntegration.EnableEmoticons
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialIntegration.EnableEmoticons
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialIntegration.EnableEmoticons
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialIntegration
+  href: Remora.Discord.API.Abstractions.Objects.IPartialIntegration.html#Remora_Discord_API_Abstractions_Objects_IPartialIntegration_EnableEmoticons
+  name: EnableEmoticons
+  nameWithType: IPartialIntegration.EnableEmoticons
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialIntegration.EnableEmoticons
+- uid: Remora.Discord.API.Objects.PartialIntegration.ExpireBehaviour*
+  commentId: Overload:Remora.Discord.API.Objects.PartialIntegration.ExpireBehaviour
+  href: Remora.Discord.API.Objects.PartialIntegration.html#Remora_Discord_API_Objects_PartialIntegration_ExpireBehaviour
+  name: ExpireBehaviour
+  nameWithType: PartialIntegration.ExpireBehaviour
+  fullName: Remora.Discord.API.Objects.PartialIntegration.ExpireBehaviour
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialIntegration.ExpireBehaviour
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialIntegration.ExpireBehaviour
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialIntegration
+  href: Remora.Discord.API.Abstractions.Objects.IPartialIntegration.html#Remora_Discord_API_Abstractions_Objects_IPartialIntegration_ExpireBehaviour
+  name: ExpireBehaviour
+  nameWithType: IPartialIntegration.ExpireBehaviour
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialIntegration.ExpireBehaviour
+- uid: Remora.Discord.API.Objects.PartialIntegration.ExpireGracePeriod*
+  commentId: Overload:Remora.Discord.API.Objects.PartialIntegration.ExpireGracePeriod
+  href: Remora.Discord.API.Objects.PartialIntegration.html#Remora_Discord_API_Objects_PartialIntegration_ExpireGracePeriod
+  name: ExpireGracePeriod
+  nameWithType: PartialIntegration.ExpireGracePeriod
+  fullName: Remora.Discord.API.Objects.PartialIntegration.ExpireGracePeriod
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialIntegration.ExpireGracePeriod
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialIntegration.ExpireGracePeriod
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialIntegration
+  href: Remora.Discord.API.Abstractions.Objects.IPartialIntegration.html#Remora_Discord_API_Abstractions_Objects_IPartialIntegration_ExpireGracePeriod
+  name: ExpireGracePeriod
+  nameWithType: IPartialIntegration.ExpireGracePeriod
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialIntegration.ExpireGracePeriod
+- uid: Remora.Discord.API.Objects.PartialIntegration.User*
+  commentId: Overload:Remora.Discord.API.Objects.PartialIntegration.User
+  href: Remora.Discord.API.Objects.PartialIntegration.html#Remora_Discord_API_Objects_PartialIntegration_User
+  name: User
+  nameWithType: PartialIntegration.User
+  fullName: Remora.Discord.API.Objects.PartialIntegration.User
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialIntegration.User
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialIntegration.User
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialIntegration
+  href: Remora.Discord.API.Abstractions.Objects.IPartialIntegration.html#Remora_Discord_API_Abstractions_Objects_IPartialIntegration_User
+  name: User
+  nameWithType: IPartialIntegration.User
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialIntegration.User
+- uid: Remora.Discord.API.Objects.PartialIntegration.Account*
+  commentId: Overload:Remora.Discord.API.Objects.PartialIntegration.Account
+  href: Remora.Discord.API.Objects.PartialIntegration.html#Remora_Discord_API_Objects_PartialIntegration_Account
+  name: Account
+  nameWithType: PartialIntegration.Account
+  fullName: Remora.Discord.API.Objects.PartialIntegration.Account
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialIntegration.Account
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialIntegration.Account
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialIntegration
+  href: Remora.Discord.API.Abstractions.Objects.IPartialIntegration.html#Remora_Discord_API_Abstractions_Objects_IPartialIntegration_Account
+  name: Account
+  nameWithType: IPartialIntegration.Account
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialIntegration.Account
+- uid: Remora.Discord.API.Objects.PartialIntegration.SyncedAt*
+  commentId: Overload:Remora.Discord.API.Objects.PartialIntegration.SyncedAt
+  href: Remora.Discord.API.Objects.PartialIntegration.html#Remora_Discord_API_Objects_PartialIntegration_SyncedAt
+  name: SyncedAt
+  nameWithType: PartialIntegration.SyncedAt
+  fullName: Remora.Discord.API.Objects.PartialIntegration.SyncedAt
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialIntegration.SyncedAt
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialIntegration.SyncedAt
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialIntegration
+  href: Remora.Discord.API.Abstractions.Objects.IPartialIntegration.html#Remora_Discord_API_Abstractions_Objects_IPartialIntegration_SyncedAt
+  name: SyncedAt
+  nameWithType: IPartialIntegration.SyncedAt
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialIntegration.SyncedAt
+- uid: Remora.Discord.API.Objects.PartialIntegration.SubscriberCount*
+  commentId: Overload:Remora.Discord.API.Objects.PartialIntegration.SubscriberCount
+  href: Remora.Discord.API.Objects.PartialIntegration.html#Remora_Discord_API_Objects_PartialIntegration_SubscriberCount
+  name: SubscriberCount
+  nameWithType: PartialIntegration.SubscriberCount
+  fullName: Remora.Discord.API.Objects.PartialIntegration.SubscriberCount
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialIntegration.SubscriberCount
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialIntegration.SubscriberCount
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialIntegration
+  href: Remora.Discord.API.Abstractions.Objects.IPartialIntegration.html#Remora_Discord_API_Abstractions_Objects_IPartialIntegration_SubscriberCount
+  name: SubscriberCount
+  nameWithType: IPartialIntegration.SubscriberCount
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialIntegration.SubscriberCount
+- uid: Remora.Discord.API.Objects.PartialIntegration.IsRevoked*
+  commentId: Overload:Remora.Discord.API.Objects.PartialIntegration.IsRevoked
+  href: Remora.Discord.API.Objects.PartialIntegration.html#Remora_Discord_API_Objects_PartialIntegration_IsRevoked
+  name: IsRevoked
+  nameWithType: PartialIntegration.IsRevoked
+  fullName: Remora.Discord.API.Objects.PartialIntegration.IsRevoked
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialIntegration.IsRevoked
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialIntegration.IsRevoked
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialIntegration
+  href: Remora.Discord.API.Abstractions.Objects.IPartialIntegration.html#Remora_Discord_API_Abstractions_Objects_IPartialIntegration_IsRevoked
+  name: IsRevoked
+  nameWithType: IPartialIntegration.IsRevoked
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialIntegration.IsRevoked
+- uid: Remora.Discord.API.Objects.PartialIntegration.Application*
+  commentId: Overload:Remora.Discord.API.Objects.PartialIntegration.Application
+  href: Remora.Discord.API.Objects.PartialIntegration.html#Remora_Discord_API_Objects_PartialIntegration_Application
+  name: Application
+  nameWithType: PartialIntegration.Application
+  fullName: Remora.Discord.API.Objects.PartialIntegration.Application
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialIntegration.Application
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialIntegration.Application
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialIntegration
+  href: Remora.Discord.API.Abstractions.Objects.IPartialIntegration.html#Remora_Discord_API_Abstractions_Objects_IPartialIntegration_Application
+  name: Application
+  nameWithType: IPartialIntegration.Application
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialIntegration.Application
+- uid: Remora.Discord.API.Objects.PartialIntegration.Scopes*
+  commentId: Overload:Remora.Discord.API.Objects.PartialIntegration.Scopes
+  href: Remora.Discord.API.Objects.PartialIntegration.html#Remora_Discord_API_Objects_PartialIntegration_Scopes
+  name: Scopes
+  nameWithType: PartialIntegration.Scopes
+  fullName: Remora.Discord.API.Objects.PartialIntegration.Scopes
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialIntegration.Scopes
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialIntegration.Scopes
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialIntegration
+  href: Remora.Discord.API.Abstractions.Objects.IPartialIntegration.html#Remora_Discord_API_Abstractions_Objects_IPartialIntegration_Scopes
+  name: Scopes
+  nameWithType: IPartialIntegration.Scopes
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialIntegration.Scopes

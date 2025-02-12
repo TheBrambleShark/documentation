@@ -1,0 +1,540 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.Commands.Contexts.IInteractionContext
+  commentId: T:Remora.Discord.Commands.Contexts.IInteractionContext
+  id: IInteractionContext
+  parent: Remora.Discord.Commands.Contexts
+  children:
+  - Remora.Discord.Commands.Contexts.IInteractionContext.HasRespondedToInteraction
+  - Remora.Discord.Commands.Contexts.IInteractionContext.Interaction
+  - Remora.Discord.Commands.Contexts.IInteractionContext.IsOriginalEphemeral
+  langs:
+  - csharp
+  - vb
+  name: IInteractionContext
+  nameWithType: IInteractionContext
+  fullName: Remora.Discord.Commands.Contexts.IInteractionContext
+  type: Interface
+  source:
+    id: IInteractionContext
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Remora.Discord.Commands\Contexts\Interfaces\IInteractionContext.cs
+    startLine: 30
+  assemblies:
+  - Remora.Discord.Commands
+  namespace: Remora.Discord.Commands.Contexts
+  summary: Represents contextual information about an ongoing operation on an interaction.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public interface IInteractionContext : IOperationContext
+    content.vb: >-
+      <PublicAPI>
+
+      Public Interface IInteractionContext Inherits IOperationContext
+  extensionMethods:
+  - Remora.Discord.Commands.Contexts.IOperationContext.Remora.Discord.Commands.Extensions.OperationContextExtensions.TryGetChannelID(Remora.Rest.Core.Snowflake@)
+  - Remora.Discord.Commands.Contexts.IOperationContext.Remora.Discord.Commands.Extensions.OperationContextExtensions.TryGetGuildID(Remora.Rest.Core.Snowflake@)
+  - Remora.Discord.Commands.Contexts.IOperationContext.Remora.Discord.Commands.Extensions.OperationContextExtensions.TryGetUserID(Remora.Rest.Core.Snowflake@)
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.Commands.Contexts.IInteractionContext.HasRespondedToInteraction
+  commentId: P:Remora.Discord.Commands.Contexts.IInteractionContext.HasRespondedToInteraction
+  id: HasRespondedToInteraction
+  parent: Remora.Discord.Commands.Contexts.IInteractionContext
+  langs:
+  - csharp
+  - vb
+  name: HasRespondedToInteraction
+  nameWithType: IInteractionContext.HasRespondedToInteraction
+  fullName: Remora.Discord.Commands.Contexts.IInteractionContext.HasRespondedToInteraction
+  type: Property
+  source:
+    id: HasRespondedToInteraction
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Remora.Discord.Commands\Contexts\Interfaces\IInteractionContext.cs
+    startLine: 36
+  assemblies:
+  - Remora.Discord.Commands
+  namespace: Remora.Discord.Commands.Contexts
+  summary: Gets or sets a value indicating whether the interaction has been responded to.
+  example: []
+  syntax:
+    content: bool HasRespondedToInteraction { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property HasRespondedToInteraction As Boolean
+  overload: Remora.Discord.Commands.Contexts.IInteractionContext.HasRespondedToInteraction*
+- uid: Remora.Discord.Commands.Contexts.IInteractionContext.IsOriginalEphemeral
+  commentId: P:Remora.Discord.Commands.Contexts.IInteractionContext.IsOriginalEphemeral
+  id: IsOriginalEphemeral
+  parent: Remora.Discord.Commands.Contexts.IInteractionContext
+  langs:
+  - csharp
+  - vb
+  name: IsOriginalEphemeral
+  nameWithType: IInteractionContext.IsOriginalEphemeral
+  fullName: Remora.Discord.Commands.Contexts.IInteractionContext.IsOriginalEphemeral
+  type: Property
+  source:
+    id: IsOriginalEphemeral
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Remora.Discord.Commands\Contexts\Interfaces\IInteractionContext.cs
+    startLine: 41
+  assemblies:
+  - Remora.Discord.Commands
+  namespace: Remora.Discord.Commands.Contexts
+  summary: Gets or sets a value indicating whether the original response was ephemeral.
+  example: []
+  syntax:
+    content: bool IsOriginalEphemeral { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property IsOriginalEphemeral As Boolean
+  overload: Remora.Discord.Commands.Contexts.IInteractionContext.IsOriginalEphemeral*
+- uid: Remora.Discord.Commands.Contexts.IInteractionContext.Interaction
+  commentId: P:Remora.Discord.Commands.Contexts.IInteractionContext.Interaction
+  id: Interaction
+  parent: Remora.Discord.Commands.Contexts.IInteractionContext
+  langs:
+  - csharp
+  - vb
+  name: Interaction
+  nameWithType: IInteractionContext.Interaction
+  fullName: Remora.Discord.Commands.Contexts.IInteractionContext.Interaction
+  type: Property
+  source:
+    id: Interaction
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Remora.Discord.Commands\Contexts\Interfaces\IInteractionContext.cs
+    startLine: 46
+  assemblies:
+  - Remora.Discord.Commands
+  namespace: Remora.Discord.Commands.Contexts
+  summary: Gets the interaction.
+  example: []
+  syntax:
+    content: IInteraction Interaction { get; }
+    parameters: []
+    return:
+      type: Remora.Discord.API.Abstractions.Objects.IInteraction
+    content.vb: ReadOnly Property Interaction As IInteraction
+  overload: Remora.Discord.Commands.Contexts.IInteractionContext.Interaction*
+references:
+- uid: Remora.Discord.Commands.Contexts
+  commentId: N:Remora.Discord.Commands.Contexts
+  href: Remora.html
+  name: Remora.Discord.Commands.Contexts
+  nameWithType: Remora.Discord.Commands.Contexts
+  fullName: Remora.Discord.Commands.Contexts
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Commands
+    name: Commands
+    href: Remora.Discord.Commands.html
+  - name: .
+  - uid: Remora.Discord.Commands.Contexts
+    name: Contexts
+    href: Remora.Discord.Commands.Contexts.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Commands
+    name: Commands
+    href: Remora.Discord.Commands.html
+  - name: .
+  - uid: Remora.Discord.Commands.Contexts
+    name: Contexts
+    href: Remora.Discord.Commands.Contexts.html
+- uid: Remora.Discord.Commands.Contexts.IOperationContext.Remora.Discord.Commands.Extensions.OperationContextExtensions.TryGetChannelID(Remora.Rest.Core.Snowflake@)
+  commentId: M:Remora.Discord.Commands.Extensions.OperationContextExtensions.TryGetChannelID(Remora.Discord.Commands.Contexts.IOperationContext,Remora.Rest.Core.Snowflake@)
+  parent: Remora.Discord.Commands.Extensions.OperationContextExtensions
+  definition: Remora.Discord.Commands.Extensions.OperationContextExtensions.TryGetChannelID(Remora.Discord.Commands.Contexts.IOperationContext,Remora.Rest.Core.Snowflake@)
+  href: Remora.Discord.Commands.Extensions.OperationContextExtensions.html#Remora_Discord_Commands_Extensions_OperationContextExtensions_TryGetChannelID_Remora_Discord_Commands_Contexts_IOperationContext_Remora_Rest_Core_Snowflake__
+  name: TryGetChannelID(IOperationContext, out Snowflake)
+  nameWithType: OperationContextExtensions.TryGetChannelID(IOperationContext, out Snowflake)
+  fullName: Remora.Discord.Commands.Extensions.OperationContextExtensions.TryGetChannelID(Remora.Discord.Commands.Contexts.IOperationContext, out Remora.Rest.Core.Snowflake)
+  nameWithType.vb: OperationContextExtensions.TryGetChannelID(IOperationContext, Snowflake)
+  fullName.vb: Remora.Discord.Commands.Extensions.OperationContextExtensions.TryGetChannelID(Remora.Discord.Commands.Contexts.IOperationContext, Remora.Rest.Core.Snowflake)
+  name.vb: TryGetChannelID(IOperationContext, Snowflake)
+  spec.csharp:
+  - uid: Remora.Discord.Commands.Extensions.OperationContextExtensions.TryGetChannelID(Remora.Discord.Commands.Contexts.IOperationContext,Remora.Rest.Core.Snowflake@)
+    name: TryGetChannelID
+    href: Remora.Discord.Commands.Extensions.OperationContextExtensions.html#Remora_Discord_Commands_Extensions_OperationContextExtensions_TryGetChannelID_Remora_Discord_Commands_Contexts_IOperationContext_Remora_Rest_Core_Snowflake__
+  - name: (
+  - uid: Remora.Discord.Commands.Contexts.IOperationContext
+    name: IOperationContext
+    href: Remora.Discord.Commands.Contexts.IOperationContext.html
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Commands.Extensions.OperationContextExtensions.TryGetChannelID(Remora.Discord.Commands.Contexts.IOperationContext,Remora.Rest.Core.Snowflake@)
+    name: TryGetChannelID
+    href: Remora.Discord.Commands.Extensions.OperationContextExtensions.html#Remora_Discord_Commands_Extensions_OperationContextExtensions_TryGetChannelID_Remora_Discord_Commands_Contexts_IOperationContext_Remora_Rest_Core_Snowflake__
+  - name: (
+  - uid: Remora.Discord.Commands.Contexts.IOperationContext
+    name: IOperationContext
+    href: Remora.Discord.Commands.Contexts.IOperationContext.html
+  - name: ','
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+- uid: Remora.Discord.Commands.Contexts.IOperationContext.Remora.Discord.Commands.Extensions.OperationContextExtensions.TryGetGuildID(Remora.Rest.Core.Snowflake@)
+  commentId: M:Remora.Discord.Commands.Extensions.OperationContextExtensions.TryGetGuildID(Remora.Discord.Commands.Contexts.IOperationContext,Remora.Rest.Core.Snowflake@)
+  parent: Remora.Discord.Commands.Extensions.OperationContextExtensions
+  definition: Remora.Discord.Commands.Extensions.OperationContextExtensions.TryGetGuildID(Remora.Discord.Commands.Contexts.IOperationContext,Remora.Rest.Core.Snowflake@)
+  href: Remora.Discord.Commands.Extensions.OperationContextExtensions.html#Remora_Discord_Commands_Extensions_OperationContextExtensions_TryGetGuildID_Remora_Discord_Commands_Contexts_IOperationContext_Remora_Rest_Core_Snowflake__
+  name: TryGetGuildID(IOperationContext, out Snowflake)
+  nameWithType: OperationContextExtensions.TryGetGuildID(IOperationContext, out Snowflake)
+  fullName: Remora.Discord.Commands.Extensions.OperationContextExtensions.TryGetGuildID(Remora.Discord.Commands.Contexts.IOperationContext, out Remora.Rest.Core.Snowflake)
+  nameWithType.vb: OperationContextExtensions.TryGetGuildID(IOperationContext, Snowflake)
+  fullName.vb: Remora.Discord.Commands.Extensions.OperationContextExtensions.TryGetGuildID(Remora.Discord.Commands.Contexts.IOperationContext, Remora.Rest.Core.Snowflake)
+  name.vb: TryGetGuildID(IOperationContext, Snowflake)
+  spec.csharp:
+  - uid: Remora.Discord.Commands.Extensions.OperationContextExtensions.TryGetGuildID(Remora.Discord.Commands.Contexts.IOperationContext,Remora.Rest.Core.Snowflake@)
+    name: TryGetGuildID
+    href: Remora.Discord.Commands.Extensions.OperationContextExtensions.html#Remora_Discord_Commands_Extensions_OperationContextExtensions_TryGetGuildID_Remora_Discord_Commands_Contexts_IOperationContext_Remora_Rest_Core_Snowflake__
+  - name: (
+  - uid: Remora.Discord.Commands.Contexts.IOperationContext
+    name: IOperationContext
+    href: Remora.Discord.Commands.Contexts.IOperationContext.html
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Commands.Extensions.OperationContextExtensions.TryGetGuildID(Remora.Discord.Commands.Contexts.IOperationContext,Remora.Rest.Core.Snowflake@)
+    name: TryGetGuildID
+    href: Remora.Discord.Commands.Extensions.OperationContextExtensions.html#Remora_Discord_Commands_Extensions_OperationContextExtensions_TryGetGuildID_Remora_Discord_Commands_Contexts_IOperationContext_Remora_Rest_Core_Snowflake__
+  - name: (
+  - uid: Remora.Discord.Commands.Contexts.IOperationContext
+    name: IOperationContext
+    href: Remora.Discord.Commands.Contexts.IOperationContext.html
+  - name: ','
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+- uid: Remora.Discord.Commands.Contexts.IOperationContext.Remora.Discord.Commands.Extensions.OperationContextExtensions.TryGetUserID(Remora.Rest.Core.Snowflake@)
+  commentId: M:Remora.Discord.Commands.Extensions.OperationContextExtensions.TryGetUserID(Remora.Discord.Commands.Contexts.IOperationContext,Remora.Rest.Core.Snowflake@)
+  parent: Remora.Discord.Commands.Extensions.OperationContextExtensions
+  definition: Remora.Discord.Commands.Extensions.OperationContextExtensions.TryGetUserID(Remora.Discord.Commands.Contexts.IOperationContext,Remora.Rest.Core.Snowflake@)
+  href: Remora.Discord.Commands.Extensions.OperationContextExtensions.html#Remora_Discord_Commands_Extensions_OperationContextExtensions_TryGetUserID_Remora_Discord_Commands_Contexts_IOperationContext_Remora_Rest_Core_Snowflake__
+  name: TryGetUserID(IOperationContext, out Snowflake)
+  nameWithType: OperationContextExtensions.TryGetUserID(IOperationContext, out Snowflake)
+  fullName: Remora.Discord.Commands.Extensions.OperationContextExtensions.TryGetUserID(Remora.Discord.Commands.Contexts.IOperationContext, out Remora.Rest.Core.Snowflake)
+  nameWithType.vb: OperationContextExtensions.TryGetUserID(IOperationContext, Snowflake)
+  fullName.vb: Remora.Discord.Commands.Extensions.OperationContextExtensions.TryGetUserID(Remora.Discord.Commands.Contexts.IOperationContext, Remora.Rest.Core.Snowflake)
+  name.vb: TryGetUserID(IOperationContext, Snowflake)
+  spec.csharp:
+  - uid: Remora.Discord.Commands.Extensions.OperationContextExtensions.TryGetUserID(Remora.Discord.Commands.Contexts.IOperationContext,Remora.Rest.Core.Snowflake@)
+    name: TryGetUserID
+    href: Remora.Discord.Commands.Extensions.OperationContextExtensions.html#Remora_Discord_Commands_Extensions_OperationContextExtensions_TryGetUserID_Remora_Discord_Commands_Contexts_IOperationContext_Remora_Rest_Core_Snowflake__
+  - name: (
+  - uid: Remora.Discord.Commands.Contexts.IOperationContext
+    name: IOperationContext
+    href: Remora.Discord.Commands.Contexts.IOperationContext.html
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Commands.Extensions.OperationContextExtensions.TryGetUserID(Remora.Discord.Commands.Contexts.IOperationContext,Remora.Rest.Core.Snowflake@)
+    name: TryGetUserID
+    href: Remora.Discord.Commands.Extensions.OperationContextExtensions.html#Remora_Discord_Commands_Extensions_OperationContextExtensions_TryGetUserID_Remora_Discord_Commands_Contexts_IOperationContext_Remora_Rest_Core_Snowflake__
+  - name: (
+  - uid: Remora.Discord.Commands.Contexts.IOperationContext
+    name: IOperationContext
+    href: Remora.Discord.Commands.Contexts.IOperationContext.html
+  - name: ','
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+- uid: Remora.Discord.Commands.Extensions.OperationContextExtensions.TryGetChannelID(Remora.Discord.Commands.Contexts.IOperationContext,Remora.Rest.Core.Snowflake@)
+  commentId: M:Remora.Discord.Commands.Extensions.OperationContextExtensions.TryGetChannelID(Remora.Discord.Commands.Contexts.IOperationContext,Remora.Rest.Core.Snowflake@)
+  isExternal: true
+  href: Remora.Discord.Commands.Extensions.OperationContextExtensions.html#Remora_Discord_Commands_Extensions_OperationContextExtensions_TryGetChannelID_Remora_Discord_Commands_Contexts_IOperationContext_Remora_Rest_Core_Snowflake__
+  name: TryGetChannelID(IOperationContext, out Snowflake)
+  nameWithType: OperationContextExtensions.TryGetChannelID(IOperationContext, out Snowflake)
+  fullName: Remora.Discord.Commands.Extensions.OperationContextExtensions.TryGetChannelID(Remora.Discord.Commands.Contexts.IOperationContext, out Remora.Rest.Core.Snowflake)
+  nameWithType.vb: OperationContextExtensions.TryGetChannelID(IOperationContext, Snowflake)
+  fullName.vb: Remora.Discord.Commands.Extensions.OperationContextExtensions.TryGetChannelID(Remora.Discord.Commands.Contexts.IOperationContext, Remora.Rest.Core.Snowflake)
+  name.vb: TryGetChannelID(IOperationContext, Snowflake)
+  spec.csharp:
+  - uid: Remora.Discord.Commands.Extensions.OperationContextExtensions.TryGetChannelID(Remora.Discord.Commands.Contexts.IOperationContext,Remora.Rest.Core.Snowflake@)
+    name: TryGetChannelID
+    href: Remora.Discord.Commands.Extensions.OperationContextExtensions.html#Remora_Discord_Commands_Extensions_OperationContextExtensions_TryGetChannelID_Remora_Discord_Commands_Contexts_IOperationContext_Remora_Rest_Core_Snowflake__
+  - name: (
+  - uid: Remora.Discord.Commands.Contexts.IOperationContext
+    name: IOperationContext
+    href: Remora.Discord.Commands.Contexts.IOperationContext.html
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Commands.Extensions.OperationContextExtensions.TryGetChannelID(Remora.Discord.Commands.Contexts.IOperationContext,Remora.Rest.Core.Snowflake@)
+    name: TryGetChannelID
+    href: Remora.Discord.Commands.Extensions.OperationContextExtensions.html#Remora_Discord_Commands_Extensions_OperationContextExtensions_TryGetChannelID_Remora_Discord_Commands_Contexts_IOperationContext_Remora_Rest_Core_Snowflake__
+  - name: (
+  - uid: Remora.Discord.Commands.Contexts.IOperationContext
+    name: IOperationContext
+    href: Remora.Discord.Commands.Contexts.IOperationContext.html
+  - name: ','
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+- uid: Remora.Discord.Commands.Extensions.OperationContextExtensions
+  commentId: T:Remora.Discord.Commands.Extensions.OperationContextExtensions
+  parent: Remora.Discord.Commands.Extensions
+  href: Remora.Discord.Commands.Extensions.OperationContextExtensions.html
+  name: OperationContextExtensions
+  nameWithType: OperationContextExtensions
+  fullName: Remora.Discord.Commands.Extensions.OperationContextExtensions
+- uid: Remora.Discord.Commands.Extensions.OperationContextExtensions.TryGetGuildID(Remora.Discord.Commands.Contexts.IOperationContext,Remora.Rest.Core.Snowflake@)
+  commentId: M:Remora.Discord.Commands.Extensions.OperationContextExtensions.TryGetGuildID(Remora.Discord.Commands.Contexts.IOperationContext,Remora.Rest.Core.Snowflake@)
+  isExternal: true
+  href: Remora.Discord.Commands.Extensions.OperationContextExtensions.html#Remora_Discord_Commands_Extensions_OperationContextExtensions_TryGetGuildID_Remora_Discord_Commands_Contexts_IOperationContext_Remora_Rest_Core_Snowflake__
+  name: TryGetGuildID(IOperationContext, out Snowflake)
+  nameWithType: OperationContextExtensions.TryGetGuildID(IOperationContext, out Snowflake)
+  fullName: Remora.Discord.Commands.Extensions.OperationContextExtensions.TryGetGuildID(Remora.Discord.Commands.Contexts.IOperationContext, out Remora.Rest.Core.Snowflake)
+  nameWithType.vb: OperationContextExtensions.TryGetGuildID(IOperationContext, Snowflake)
+  fullName.vb: Remora.Discord.Commands.Extensions.OperationContextExtensions.TryGetGuildID(Remora.Discord.Commands.Contexts.IOperationContext, Remora.Rest.Core.Snowflake)
+  name.vb: TryGetGuildID(IOperationContext, Snowflake)
+  spec.csharp:
+  - uid: Remora.Discord.Commands.Extensions.OperationContextExtensions.TryGetGuildID(Remora.Discord.Commands.Contexts.IOperationContext,Remora.Rest.Core.Snowflake@)
+    name: TryGetGuildID
+    href: Remora.Discord.Commands.Extensions.OperationContextExtensions.html#Remora_Discord_Commands_Extensions_OperationContextExtensions_TryGetGuildID_Remora_Discord_Commands_Contexts_IOperationContext_Remora_Rest_Core_Snowflake__
+  - name: (
+  - uid: Remora.Discord.Commands.Contexts.IOperationContext
+    name: IOperationContext
+    href: Remora.Discord.Commands.Contexts.IOperationContext.html
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Commands.Extensions.OperationContextExtensions.TryGetGuildID(Remora.Discord.Commands.Contexts.IOperationContext,Remora.Rest.Core.Snowflake@)
+    name: TryGetGuildID
+    href: Remora.Discord.Commands.Extensions.OperationContextExtensions.html#Remora_Discord_Commands_Extensions_OperationContextExtensions_TryGetGuildID_Remora_Discord_Commands_Contexts_IOperationContext_Remora_Rest_Core_Snowflake__
+  - name: (
+  - uid: Remora.Discord.Commands.Contexts.IOperationContext
+    name: IOperationContext
+    href: Remora.Discord.Commands.Contexts.IOperationContext.html
+  - name: ','
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+- uid: Remora.Discord.Commands.Extensions.OperationContextExtensions.TryGetUserID(Remora.Discord.Commands.Contexts.IOperationContext,Remora.Rest.Core.Snowflake@)
+  commentId: M:Remora.Discord.Commands.Extensions.OperationContextExtensions.TryGetUserID(Remora.Discord.Commands.Contexts.IOperationContext,Remora.Rest.Core.Snowflake@)
+  isExternal: true
+  href: Remora.Discord.Commands.Extensions.OperationContextExtensions.html#Remora_Discord_Commands_Extensions_OperationContextExtensions_TryGetUserID_Remora_Discord_Commands_Contexts_IOperationContext_Remora_Rest_Core_Snowflake__
+  name: TryGetUserID(IOperationContext, out Snowflake)
+  nameWithType: OperationContextExtensions.TryGetUserID(IOperationContext, out Snowflake)
+  fullName: Remora.Discord.Commands.Extensions.OperationContextExtensions.TryGetUserID(Remora.Discord.Commands.Contexts.IOperationContext, out Remora.Rest.Core.Snowflake)
+  nameWithType.vb: OperationContextExtensions.TryGetUserID(IOperationContext, Snowflake)
+  fullName.vb: Remora.Discord.Commands.Extensions.OperationContextExtensions.TryGetUserID(Remora.Discord.Commands.Contexts.IOperationContext, Remora.Rest.Core.Snowflake)
+  name.vb: TryGetUserID(IOperationContext, Snowflake)
+  spec.csharp:
+  - uid: Remora.Discord.Commands.Extensions.OperationContextExtensions.TryGetUserID(Remora.Discord.Commands.Contexts.IOperationContext,Remora.Rest.Core.Snowflake@)
+    name: TryGetUserID
+    href: Remora.Discord.Commands.Extensions.OperationContextExtensions.html#Remora_Discord_Commands_Extensions_OperationContextExtensions_TryGetUserID_Remora_Discord_Commands_Contexts_IOperationContext_Remora_Rest_Core_Snowflake__
+  - name: (
+  - uid: Remora.Discord.Commands.Contexts.IOperationContext
+    name: IOperationContext
+    href: Remora.Discord.Commands.Contexts.IOperationContext.html
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Commands.Extensions.OperationContextExtensions.TryGetUserID(Remora.Discord.Commands.Contexts.IOperationContext,Remora.Rest.Core.Snowflake@)
+    name: TryGetUserID
+    href: Remora.Discord.Commands.Extensions.OperationContextExtensions.html#Remora_Discord_Commands_Extensions_OperationContextExtensions_TryGetUserID_Remora_Discord_Commands_Contexts_IOperationContext_Remora_Rest_Core_Snowflake__
+  - name: (
+  - uid: Remora.Discord.Commands.Contexts.IOperationContext
+    name: IOperationContext
+    href: Remora.Discord.Commands.Contexts.IOperationContext.html
+  - name: ','
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+- uid: Remora.Discord.Commands.Extensions
+  commentId: N:Remora.Discord.Commands.Extensions
+  href: Remora.html
+  name: Remora.Discord.Commands.Extensions
+  nameWithType: Remora.Discord.Commands.Extensions
+  fullName: Remora.Discord.Commands.Extensions
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Commands
+    name: Commands
+    href: Remora.Discord.Commands.html
+  - name: .
+  - uid: Remora.Discord.Commands.Extensions
+    name: Extensions
+    href: Remora.Discord.Commands.Extensions.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Commands
+    name: Commands
+    href: Remora.Discord.Commands.html
+  - name: .
+  - uid: Remora.Discord.Commands.Extensions
+    name: Extensions
+    href: Remora.Discord.Commands.Extensions.html
+- uid: Remora.Discord.Commands.Contexts.IInteractionContext.HasRespondedToInteraction*
+  commentId: Overload:Remora.Discord.Commands.Contexts.IInteractionContext.HasRespondedToInteraction
+  href: Remora.Discord.Commands.Contexts.IInteractionContext.html#Remora_Discord_Commands_Contexts_IInteractionContext_HasRespondedToInteraction
+  name: HasRespondedToInteraction
+  nameWithType: IInteractionContext.HasRespondedToInteraction
+  fullName: Remora.Discord.Commands.Contexts.IInteractionContext.HasRespondedToInteraction
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.Commands.Contexts.IInteractionContext.IsOriginalEphemeral*
+  commentId: Overload:Remora.Discord.Commands.Contexts.IInteractionContext.IsOriginalEphemeral
+  href: Remora.Discord.Commands.Contexts.IInteractionContext.html#Remora_Discord_Commands_Contexts_IInteractionContext_IsOriginalEphemeral
+  name: IsOriginalEphemeral
+  nameWithType: IInteractionContext.IsOriginalEphemeral
+  fullName: Remora.Discord.Commands.Contexts.IInteractionContext.IsOriginalEphemeral
+- uid: Remora.Discord.Commands.Contexts.IInteractionContext.Interaction*
+  commentId: Overload:Remora.Discord.Commands.Contexts.IInteractionContext.Interaction
+  href: Remora.Discord.Commands.Contexts.IInteractionContext.html#Remora_Discord_Commands_Contexts_IInteractionContext_Interaction
+  name: Interaction
+  nameWithType: IInteractionContext.Interaction
+  fullName: Remora.Discord.Commands.Contexts.IInteractionContext.Interaction
+- uid: Remora.Discord.API.Abstractions.Objects.IInteraction
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IInteraction
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IInteraction.html
+  name: IInteraction
+  nameWithType: IInteraction
+  fullName: Remora.Discord.API.Abstractions.Objects.IInteraction
+- uid: Remora.Discord.API.Abstractions.Objects
+  commentId: N:Remora.Discord.API.Abstractions.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Objects
+  nameWithType: Remora.Discord.API.Abstractions.Objects
+  fullName: Remora.Discord.API.Abstractions.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html

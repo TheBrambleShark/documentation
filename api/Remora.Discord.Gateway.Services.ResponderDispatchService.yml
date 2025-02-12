@@ -1,0 +1,948 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.Gateway.Services.ResponderDispatchService
+  commentId: T:Remora.Discord.Gateway.Services.ResponderDispatchService
+  id: ResponderDispatchService
+  parent: Remora.Discord.Gateway.Services
+  children:
+  - Remora.Discord.Gateway.Services.ResponderDispatchService.#ctor(System.IServiceProvider,Remora.Discord.Gateway.Services.IResponderTypeRepository,Microsoft.Extensions.Logging.ILogger{Remora.Discord.Gateway.Services.ResponderDispatchService},Microsoft.Extensions.Options.IOptions{Remora.Discord.Gateway.ResponderDispatchOptions})
+  - Remora.Discord.Gateway.Services.ResponderDispatchService.DispatchAsync(Remora.Discord.API.Abstractions.Gateway.IPayload,System.Threading.CancellationToken)
+  - Remora.Discord.Gateway.Services.ResponderDispatchService.DisposeAsync
+  langs:
+  - csharp
+  - vb
+  name: ResponderDispatchService
+  nameWithType: ResponderDispatchService
+  fullName: Remora.Discord.Gateway.Services.ResponderDispatchService
+  type: Class
+  source:
+    id: ResponderDispatchService
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Gateway\Services\ResponderDispatchService.cs
+    startLine: 42
+  assemblies:
+  - Remora.Discord.Gateway
+  namespace: Remora.Discord.Gateway.Services
+  summary: Manages dispatch and processing of gateway payloads.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public class ResponderDispatchService : IAsyncDisposable, IResponderDispatchService
+    content.vb: >-
+      <PublicAPI>
+
+      Public Class ResponderDispatchService Implements IAsyncDisposable, IResponderDispatchService
+  inheritance:
+  - System.Object
+  implements:
+  - System.IAsyncDisposable
+  - Remora.Discord.Gateway.Services.IResponderDispatchService
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.Gateway.Services.ResponderDispatchService.#ctor(System.IServiceProvider,Remora.Discord.Gateway.Services.IResponderTypeRepository,Microsoft.Extensions.Logging.ILogger{Remora.Discord.Gateway.Services.ResponderDispatchService},Microsoft.Extensions.Options.IOptions{Remora.Discord.Gateway.ResponderDispatchOptions})
+  commentId: M:Remora.Discord.Gateway.Services.ResponderDispatchService.#ctor(System.IServiceProvider,Remora.Discord.Gateway.Services.IResponderTypeRepository,Microsoft.Extensions.Logging.ILogger{Remora.Discord.Gateway.Services.ResponderDispatchService},Microsoft.Extensions.Options.IOptions{Remora.Discord.Gateway.ResponderDispatchOptions})
+  id: '#ctor(System.IServiceProvider,Remora.Discord.Gateway.Services.IResponderTypeRepository,Microsoft.Extensions.Logging.ILogger{Remora.Discord.Gateway.Services.ResponderDispatchService},Microsoft.Extensions.Options.IOptions{Remora.Discord.Gateway.ResponderDispatchOptions})'
+  parent: Remora.Discord.Gateway.Services.ResponderDispatchService
+  langs:
+  - csharp
+  - vb
+  name: ResponderDispatchService(IServiceProvider, IResponderTypeRepository, ILogger<ResponderDispatchService>, IOptions<ResponderDispatchOptions>)
+  nameWithType: ResponderDispatchService.ResponderDispatchService(IServiceProvider, IResponderTypeRepository, ILogger<ResponderDispatchService>, IOptions<ResponderDispatchOptions>)
+  fullName: Remora.Discord.Gateway.Services.ResponderDispatchService.ResponderDispatchService(System.IServiceProvider, Remora.Discord.Gateway.Services.IResponderTypeRepository, Microsoft.Extensions.Logging.ILogger<Remora.Discord.Gateway.Services.ResponderDispatchService>, Microsoft.Extensions.Options.IOptions<Remora.Discord.Gateway.ResponderDispatchOptions>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Gateway\Services\ResponderDispatchService.cs
+    startLine: 72
+  assemblies:
+  - Remora.Discord.Gateway
+  namespace: Remora.Discord.Gateway.Services
+  summary: Initializes a new instance of the <xref href="Remora.Discord.Gateway.Services.ResponderDispatchService" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public ResponderDispatchService(IServiceProvider services, IResponderTypeRepository responderTypeRepository, ILogger<ResponderDispatchService> log, IOptions<ResponderDispatchOptions> options)
+    parameters:
+    - id: services
+      type: System.IServiceProvider
+      description: The available services.
+    - id: responderTypeRepository
+      type: Remora.Discord.Gateway.Services.IResponderTypeRepository
+      description: The responder type repository.
+    - id: log
+      type: Microsoft.Extensions.Logging.ILogger{Remora.Discord.Gateway.Services.ResponderDispatchService}
+      description: The logging instance for this type.
+    - id: options
+      type: Microsoft.Extensions.Options.IOptions{Remora.Discord.Gateway.ResponderDispatchOptions}
+      description: Options for dispatch.
+    content.vb: Public Sub New(services As IServiceProvider, responderTypeRepository As IResponderTypeRepository, log As ILogger(Of ResponderDispatchService), options As IOptions(Of ResponderDispatchOptions))
+  overload: Remora.Discord.Gateway.Services.ResponderDispatchService.#ctor*
+  nameWithType.vb: ResponderDispatchService.New(IServiceProvider, IResponderTypeRepository, ILogger(Of ResponderDispatchService), IOptions(Of ResponderDispatchOptions))
+  fullName.vb: Remora.Discord.Gateway.Services.ResponderDispatchService.New(System.IServiceProvider, Remora.Discord.Gateway.Services.IResponderTypeRepository, Microsoft.Extensions.Logging.ILogger(Of Remora.Discord.Gateway.Services.ResponderDispatchService), Microsoft.Extensions.Options.IOptions(Of Remora.Discord.Gateway.ResponderDispatchOptions))
+  name.vb: New(IServiceProvider, IResponderTypeRepository, ILogger(Of ResponderDispatchService), IOptions(Of ResponderDispatchOptions))
+- uid: Remora.Discord.Gateway.Services.ResponderDispatchService.DispatchAsync(Remora.Discord.API.Abstractions.Gateway.IPayload,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Gateway.Services.ResponderDispatchService.DispatchAsync(Remora.Discord.API.Abstractions.Gateway.IPayload,System.Threading.CancellationToken)
+  id: DispatchAsync(Remora.Discord.API.Abstractions.Gateway.IPayload,System.Threading.CancellationToken)
+  parent: Remora.Discord.Gateway.Services.ResponderDispatchService
+  langs:
+  - csharp
+  - vb
+  name: DispatchAsync(IPayload, CancellationToken)
+  nameWithType: ResponderDispatchService.DispatchAsync(IPayload, CancellationToken)
+  fullName: Remora.Discord.Gateway.Services.ResponderDispatchService.DispatchAsync(Remora.Discord.API.Abstractions.Gateway.IPayload, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: DispatchAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Gateway\Services\ResponderDispatchService.cs
+    startLine: 121
+  assemblies:
+  - Remora.Discord.Gateway
+  namespace: Remora.Discord.Gateway.Services
+  summary: >-
+    Dispatches the given payload to interested responders. If the service is stopped with pending dispatches, the
+
+    pending payloads will be dropped. Any payloads that have been dispatched (that is, a call to this method has
+
+    returned a successful result) will be allowed to run to completion.
+  example: []
+  syntax:
+    content: public Task<Result> DispatchAsync(IPayload payload, CancellationToken ct = default)
+    parameters:
+    - id: payload
+      type: Remora.Discord.API.Abstractions.Gateway.IPayload
+      description: The payload to dispatch.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: >-
+        The cancellation token for this operation. Note that this is *not* the cancellation token which will be passed
+
+        to any instantiated responders.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result}
+      description: A result which may or may not have succeeded.
+    content.vb: Public Function DispatchAsync(payload As IPayload, ct As CancellationToken = Nothing) As Task(Of Result)
+  overload: Remora.Discord.Gateway.Services.ResponderDispatchService.DispatchAsync*
+  implements:
+  - Remora.Discord.Gateway.Services.IResponderDispatchService.DispatchAsync(Remora.Discord.API.Abstractions.Gateway.IPayload,System.Threading.CancellationToken)
+- uid: Remora.Discord.Gateway.Services.ResponderDispatchService.DisposeAsync
+  commentId: M:Remora.Discord.Gateway.Services.ResponderDispatchService.DisposeAsync
+  id: DisposeAsync
+  parent: Remora.Discord.Gateway.Services.ResponderDispatchService
+  langs:
+  - csharp
+  - vb
+  name: DisposeAsync()
+  nameWithType: ResponderDispatchService.DisposeAsync()
+  fullName: Remora.Discord.Gateway.Services.ResponderDispatchService.DisposeAsync()
+  type: Method
+  source:
+    id: DisposeAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Gateway\Services\ResponderDispatchService.cs
+    startLine: 414
+  assemblies:
+  - Remora.Discord.Gateway
+  namespace: Remora.Discord.Gateway.Services
+  summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources asynchronously.
+  example: []
+  syntax:
+    content: public ValueTask DisposeAsync()
+    return:
+      type: System.Threading.Tasks.ValueTask
+      description: A task that represents the asynchronous dispose operation.
+    content.vb: Public Function DisposeAsync() As ValueTask
+  overload: Remora.Discord.Gateway.Services.ResponderDispatchService.DisposeAsync*
+  implements:
+  - System.IAsyncDisposable.DisposeAsync
+references:
+- uid: Remora.Discord.Gateway.Services
+  commentId: N:Remora.Discord.Gateway.Services
+  href: Remora.html
+  name: Remora.Discord.Gateway.Services
+  nameWithType: Remora.Discord.Gateway.Services
+  fullName: Remora.Discord.Gateway.Services
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Gateway
+    name: Gateway
+    href: Remora.Discord.Gateway.html
+  - name: .
+  - uid: Remora.Discord.Gateway.Services
+    name: Services
+    href: Remora.Discord.Gateway.Services.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Gateway
+    name: Gateway
+    href: Remora.Discord.Gateway.html
+  - name: .
+  - uid: Remora.Discord.Gateway.Services
+    name: Services
+    href: Remora.Discord.Gateway.Services.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IAsyncDisposable
+  commentId: T:System.IAsyncDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable
+  name: IAsyncDisposable
+  nameWithType: IAsyncDisposable
+  fullName: System.IAsyncDisposable
+- uid: Remora.Discord.Gateway.Services.IResponderDispatchService
+  commentId: T:Remora.Discord.Gateway.Services.IResponderDispatchService
+  parent: Remora.Discord.Gateway.Services
+  href: Remora.Discord.Gateway.Services.IResponderDispatchService.html
+  name: IResponderDispatchService
+  nameWithType: IResponderDispatchService
+  fullName: Remora.Discord.Gateway.Services.IResponderDispatchService
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.Gateway.Services.ResponderDispatchService
+  commentId: T:Remora.Discord.Gateway.Services.ResponderDispatchService
+  href: Remora.Discord.Gateway.Services.ResponderDispatchService.html
+  name: ResponderDispatchService
+  nameWithType: ResponderDispatchService
+  fullName: Remora.Discord.Gateway.Services.ResponderDispatchService
+- uid: Remora.Discord.Gateway.Services.ResponderDispatchService.#ctor*
+  commentId: Overload:Remora.Discord.Gateway.Services.ResponderDispatchService.#ctor
+  href: Remora.Discord.Gateway.Services.ResponderDispatchService.html#Remora_Discord_Gateway_Services_ResponderDispatchService__ctor_System_IServiceProvider_Remora_Discord_Gateway_Services_IResponderTypeRepository_Microsoft_Extensions_Logging_ILogger_Remora_Discord_Gateway_Services_ResponderDispatchService__Microsoft_Extensions_Options_IOptions_Remora_Discord_Gateway_ResponderDispatchOptions__
+  name: ResponderDispatchService
+  nameWithType: ResponderDispatchService.ResponderDispatchService
+  fullName: Remora.Discord.Gateway.Services.ResponderDispatchService.ResponderDispatchService
+  nameWithType.vb: ResponderDispatchService.New
+  fullName.vb: Remora.Discord.Gateway.Services.ResponderDispatchService.New
+  name.vb: New
+- uid: System.IServiceProvider
+  commentId: T:System.IServiceProvider
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iserviceprovider
+  name: IServiceProvider
+  nameWithType: IServiceProvider
+  fullName: System.IServiceProvider
+- uid: Remora.Discord.Gateway.Services.IResponderTypeRepository
+  commentId: T:Remora.Discord.Gateway.Services.IResponderTypeRepository
+  parent: Remora.Discord.Gateway.Services
+  href: Remora.Discord.Gateway.Services.IResponderTypeRepository.html
+  name: IResponderTypeRepository
+  nameWithType: IResponderTypeRepository
+  fullName: Remora.Discord.Gateway.Services.IResponderTypeRepository
+- uid: Microsoft.Extensions.Logging.ILogger{Remora.Discord.Gateway.Services.ResponderDispatchService}
+  commentId: T:Microsoft.Extensions.Logging.ILogger{Remora.Discord.Gateway.Services.ResponderDispatchService}
+  parent: Microsoft.Extensions.Logging
+  definition: Microsoft.Extensions.Logging.ILogger`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<ResponderDispatchService>
+  nameWithType: ILogger<ResponderDispatchService>
+  fullName: Microsoft.Extensions.Logging.ILogger<Remora.Discord.Gateway.Services.ResponderDispatchService>
+  nameWithType.vb: ILogger(Of ResponderDispatchService)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of Remora.Discord.Gateway.Services.ResponderDispatchService)
+  name.vb: ILogger(Of ResponderDispatchService)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - uid: Remora.Discord.Gateway.Services.ResponderDispatchService
+    name: ResponderDispatchService
+    href: Remora.Discord.Gateway.Services.ResponderDispatchService.html
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.Gateway.Services.ResponderDispatchService
+    name: ResponderDispatchService
+    href: Remora.Discord.Gateway.Services.ResponderDispatchService.html
+  - name: )
+- uid: Microsoft.Extensions.Options.IOptions{Remora.Discord.Gateway.ResponderDispatchOptions}
+  commentId: T:Microsoft.Extensions.Options.IOptions{Remora.Discord.Gateway.ResponderDispatchOptions}
+  parent: Microsoft.Extensions.Options
+  definition: Microsoft.Extensions.Options.IOptions`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  name: IOptions<ResponderDispatchOptions>
+  nameWithType: IOptions<ResponderDispatchOptions>
+  fullName: Microsoft.Extensions.Options.IOptions<Remora.Discord.Gateway.ResponderDispatchOptions>
+  nameWithType.vb: IOptions(Of ResponderDispatchOptions)
+  fullName.vb: Microsoft.Extensions.Options.IOptions(Of Remora.Discord.Gateway.ResponderDispatchOptions)
+  name.vb: IOptions(Of ResponderDispatchOptions)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: <
+  - uid: Remora.Discord.Gateway.ResponderDispatchOptions
+    name: ResponderDispatchOptions
+    href: Remora.Discord.Gateway.ResponderDispatchOptions.html
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.Gateway.ResponderDispatchOptions
+    name: ResponderDispatchOptions
+    href: Remora.Discord.Gateway.ResponderDispatchOptions.html
+  - name: )
+- uid: Microsoft.Extensions.Logging.ILogger`1
+  commentId: T:Microsoft.Extensions.Logging.ILogger`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<TCategoryName>
+  nameWithType: ILogger<TCategoryName>
+  fullName: Microsoft.Extensions.Logging.ILogger<TCategoryName>
+  nameWithType.vb: ILogger(Of TCategoryName)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of TCategoryName)
+  name.vb: ILogger(Of TCategoryName)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - name: TCategoryName
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCategoryName
+  - name: )
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+- uid: Microsoft.Extensions.Options.IOptions`1
+  commentId: T:Microsoft.Extensions.Options.IOptions`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  name: IOptions<TOptions>
+  nameWithType: IOptions<TOptions>
+  fullName: Microsoft.Extensions.Options.IOptions<TOptions>
+  nameWithType.vb: IOptions(Of TOptions)
+  fullName.vb: Microsoft.Extensions.Options.IOptions(Of TOptions)
+  name.vb: IOptions(Of TOptions)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: <
+  - name: TOptions
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TOptions
+  - name: )
+- uid: Microsoft.Extensions.Options
+  commentId: N:Microsoft.Extensions.Options
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Options
+  nameWithType: Microsoft.Extensions.Options
+  fullName: Microsoft.Extensions.Options
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Options
+    name: Options
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Options
+    name: Options
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options
+- uid: Remora.Discord.Gateway.Services.ResponderDispatchService.DispatchAsync*
+  commentId: Overload:Remora.Discord.Gateway.Services.ResponderDispatchService.DispatchAsync
+  href: Remora.Discord.Gateway.Services.ResponderDispatchService.html#Remora_Discord_Gateway_Services_ResponderDispatchService_DispatchAsync_Remora_Discord_API_Abstractions_Gateway_IPayload_System_Threading_CancellationToken_
+  name: DispatchAsync
+  nameWithType: ResponderDispatchService.DispatchAsync
+  fullName: Remora.Discord.Gateway.Services.ResponderDispatchService.DispatchAsync
+- uid: Remora.Discord.Gateway.Services.IResponderDispatchService.DispatchAsync(Remora.Discord.API.Abstractions.Gateway.IPayload,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Gateway.Services.IResponderDispatchService.DispatchAsync(Remora.Discord.API.Abstractions.Gateway.IPayload,System.Threading.CancellationToken)
+  parent: Remora.Discord.Gateway.Services.IResponderDispatchService
+  isExternal: true
+  href: Remora.Discord.Gateway.Services.IResponderDispatchService.html#Remora_Discord_Gateway_Services_IResponderDispatchService_DispatchAsync_Remora_Discord_API_Abstractions_Gateway_IPayload_System_Threading_CancellationToken_
+  name: DispatchAsync(IPayload, CancellationToken)
+  nameWithType: IResponderDispatchService.DispatchAsync(IPayload, CancellationToken)
+  fullName: Remora.Discord.Gateway.Services.IResponderDispatchService.DispatchAsync(Remora.Discord.API.Abstractions.Gateway.IPayload, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Remora.Discord.Gateway.Services.IResponderDispatchService.DispatchAsync(Remora.Discord.API.Abstractions.Gateway.IPayload,System.Threading.CancellationToken)
+    name: DispatchAsync
+    href: Remora.Discord.Gateway.Services.IResponderDispatchService.html#Remora_Discord_Gateway_Services_IResponderDispatchService_DispatchAsync_Remora_Discord_API_Abstractions_Gateway_IPayload_System_Threading_CancellationToken_
+  - name: (
+  - uid: Remora.Discord.API.Abstractions.Gateway.IPayload
+    name: IPayload
+    href: Remora.Discord.API.Abstractions.Gateway.IPayload.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Gateway.Services.IResponderDispatchService.DispatchAsync(Remora.Discord.API.Abstractions.Gateway.IPayload,System.Threading.CancellationToken)
+    name: DispatchAsync
+    href: Remora.Discord.Gateway.Services.IResponderDispatchService.html#Remora_Discord_Gateway_Services_IResponderDispatchService_DispatchAsync_Remora_Discord_API_Abstractions_Gateway_IPayload_System_Threading_CancellationToken_
+  - name: (
+  - uid: Remora.Discord.API.Abstractions.Gateway.IPayload
+    name: IPayload
+    href: Remora.Discord.API.Abstractions.Gateway.IPayload.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Gateway.IPayload
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.IPayload
+  parent: Remora.Discord.API.Abstractions.Gateway
+  href: Remora.Discord.API.Abstractions.Gateway.IPayload.html
+  name: IPayload
+  nameWithType: IPayload
+  fullName: Remora.Discord.API.Abstractions.Gateway.IPayload
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Remora.Results.Result}
+  commentId: T:System.Threading.Tasks.Task{Remora.Results.Result}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Result>
+  nameWithType: Task<Result>
+  fullName: System.Threading.Tasks.Task<Remora.Results.Result>
+  nameWithType.vb: Task(Of Result)
+  fullName.vb: System.Threading.Tasks.Task(Of Remora.Results.Result)
+  name.vb: Task(Of Result)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Remora.Results.Result
+    name: Result
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Results.Result
+    name: Result
+    isExternal: true
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Gateway
+  commentId: N:Remora.Discord.API.Abstractions.Gateway
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Gateway
+  nameWithType: Remora.Discord.API.Abstractions.Gateway
+  fullName: Remora.Discord.API.Abstractions.Gateway
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Remora.Discord.Gateway.Services.ResponderDispatchService.DisposeAsync*
+  commentId: Overload:Remora.Discord.Gateway.Services.ResponderDispatchService.DisposeAsync
+  href: Remora.Discord.Gateway.Services.ResponderDispatchService.html#Remora_Discord_Gateway_Services_ResponderDispatchService_DisposeAsync
+  name: DisposeAsync
+  nameWithType: ResponderDispatchService.DisposeAsync
+  fullName: Remora.Discord.Gateway.Services.ResponderDispatchService.DisposeAsync
+- uid: System.IAsyncDisposable.DisposeAsync
+  commentId: M:System.IAsyncDisposable.DisposeAsync
+  parent: System.IAsyncDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  name: DisposeAsync()
+  nameWithType: IAsyncDisposable.DisposeAsync()
+  fullName: System.IAsyncDisposable.DisposeAsync()
+  spec.csharp:
+  - uid: System.IAsyncDisposable.DisposeAsync
+    name: DisposeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IAsyncDisposable.DisposeAsync
+    name: DisposeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  - name: (
+  - name: )
+- uid: System.Threading.Tasks.ValueTask
+  commentId: T:System.Threading.Tasks.ValueTask
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask
+  name: ValueTask
+  nameWithType: ValueTask
+  fullName: System.Threading.Tasks.ValueTask

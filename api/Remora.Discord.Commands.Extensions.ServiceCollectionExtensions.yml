@@ -1,0 +1,937 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions
+  commentId: T:Remora.Discord.Commands.Extensions.ServiceCollectionExtensions
+  id: ServiceCollectionExtensions
+  parent: Remora.Discord.Commands.Extensions
+  children:
+  - Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddAutocompleteProvider(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type)
+  - Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddAutocompleteProvider``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  - Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddCommandResponder(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  - Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddDiscordCommands(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Boolean,System.Boolean,System.Boolean)
+  - Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddExecutionEvent``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  - Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddInteractionResponder(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Remora.Discord.Commands.Responders.InteractionResponderOptions})
+  - Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddNGetTextLocalizations(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Reflection.Assembly)
+  - Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddPostExecutionEvent``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  - Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddPreExecutionEvent``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  - Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddPreparationErrorEvent``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  langs:
+  - csharp
+  - vb
+  name: ServiceCollectionExtensions
+  nameWithType: ServiceCollectionExtensions
+  fullName: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions
+  type: Class
+  source:
+    id: ServiceCollectionExtensions
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Remora.Discord.Commands\Extensions\ServiceCollectionExtensions.cs
+    startLine: 53
+  assemblies:
+  - Remora.Discord.Commands
+  namespace: Remora.Discord.Commands.Extensions
+  summary: Defines extension methods for the <xref href="Microsoft.Extensions.DependencyInjection.IServiceCollection" data-throw-if-not-resolved="false"></xref> interface.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public static class ServiceCollectionExtensions
+    content.vb: >-
+      <PublicAPI>
+
+      Public Module ServiceCollectionExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddNGetTextLocalizations(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Reflection.Assembly)
+  commentId: M:Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddNGetTextLocalizations(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Reflection.Assembly)
+  id: AddNGetTextLocalizations(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Reflection.Assembly)
+  isExtensionMethod: true
+  parent: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddNGetTextLocalizations(IServiceCollection, string, Assembly?)
+  nameWithType: ServiceCollectionExtensions.AddNGetTextLocalizations(IServiceCollection, string, Assembly?)
+  fullName: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddNGetTextLocalizations(Microsoft.Extensions.DependencyInjection.IServiceCollection, string, System.Reflection.Assembly?)
+  type: Method
+  source:
+    id: AddNGetTextLocalizations
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Remora.Discord.Commands\Extensions\ServiceCollectionExtensions.cs
+    startLine: 63
+  assemblies:
+  - Remora.Discord.Commands
+  namespace: Remora.Discord.Commands.Extensions
+  summary: Adds NGetText localization information from the given assembly to the service provider.
+  example: []
+  syntax:
+    content: public static IServiceCollection AddNGetTextLocalizations(this IServiceCollection serviceCollection, string localizationDirectory = ".remora.locales.", Assembly? localizationAssembly = null)
+    parameters:
+    - id: serviceCollection
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: The service collection.
+    - id: localizationDirectory
+      type: System.String
+      description: The resource directory where localizations are stored.
+    - id: localizationAssembly
+      type: System.Reflection.Assembly
+      description: The assembly to load localizations from.
+    return:
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: The service collection, with localizations added.
+    content.vb: Public Shared Function AddNGetTextLocalizations(serviceCollection As IServiceCollection, localizationDirectory As String = ".remora.locales.", localizationAssembly As Assembly = Nothing) As IServiceCollection
+  overload: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddNGetTextLocalizations*
+  nameWithType.vb: ServiceCollectionExtensions.AddNGetTextLocalizations(IServiceCollection, String, Assembly)
+  fullName.vb: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddNGetTextLocalizations(Microsoft.Extensions.DependencyInjection.IServiceCollection, String, System.Reflection.Assembly)
+  name.vb: AddNGetTextLocalizations(IServiceCollection, String, Assembly)
+- uid: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddDiscordCommands(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Boolean,System.Boolean,System.Boolean)
+  commentId: M:Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddDiscordCommands(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Boolean,System.Boolean,System.Boolean)
+  id: AddDiscordCommands(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Boolean,System.Boolean,System.Boolean)
+  isExtensionMethod: true
+  parent: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddDiscordCommands(IServiceCollection, bool, bool, bool)
+  nameWithType: ServiceCollectionExtensions.AddDiscordCommands(IServiceCollection, bool, bool, bool)
+  fullName: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddDiscordCommands(Microsoft.Extensions.DependencyInjection.IServiceCollection, bool, bool, bool)
+  type: Method
+  source:
+    id: AddDiscordCommands
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Remora.Discord.Commands\Extensions\ServiceCollectionExtensions.cs
+    startLine: 119
+  assemblies:
+  - Remora.Discord.Commands
+  namespace: Remora.Discord.Commands.Extensions
+  summary: Adds all services required for Discord-integrated commands.
+  example: []
+  syntax:
+    content: public static IServiceCollection AddDiscordCommands(this IServiceCollection serviceCollection, bool enableSlash = false, bool useDefaultCommandResponder = true, bool useDefaultInteractionResponder = true)
+    parameters:
+    - id: serviceCollection
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: The service collection.
+    - id: enableSlash
+      type: System.Boolean
+      description: Whether to enable slash commands.
+    - id: useDefaultCommandResponder
+      type: System.Boolean
+      description: Whether to add a default command responder.
+    - id: useDefaultInteractionResponder
+      type: System.Boolean
+      description: Whether to add a default interaction responder.
+    return:
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: The service collection, with slash commands.
+    content.vb: Public Shared Function AddDiscordCommands(serviceCollection As IServiceCollection, enableSlash As Boolean = False, useDefaultCommandResponder As Boolean = True, useDefaultInteractionResponder As Boolean = True) As IServiceCollection
+  overload: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddDiscordCommands*
+  nameWithType.vb: ServiceCollectionExtensions.AddDiscordCommands(IServiceCollection, Boolean, Boolean, Boolean)
+  fullName.vb: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddDiscordCommands(Microsoft.Extensions.DependencyInjection.IServiceCollection, Boolean, Boolean, Boolean)
+  name.vb: AddDiscordCommands(IServiceCollection, Boolean, Boolean, Boolean)
+- uid: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddCommandResponder(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  commentId: M:Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddCommandResponder(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  id: AddCommandResponder(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  isExtensionMethod: true
+  parent: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddCommandResponder(IServiceCollection)
+  nameWithType: ServiceCollectionExtensions.AddCommandResponder(IServiceCollection)
+  fullName: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddCommandResponder(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  type: Method
+  source:
+    id: AddCommandResponder
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Remora.Discord.Commands\Extensions\ServiceCollectionExtensions.cs
+    startLine: 279
+  assemblies:
+  - Remora.Discord.Commands
+  namespace: Remora.Discord.Commands.Extensions
+  summary: Adds the command responder to the system.
+  example: []
+  syntax:
+    content: public static IServiceCollection AddCommandResponder(this IServiceCollection serviceCollection)
+    parameters:
+    - id: serviceCollection
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: The service collection.
+    return:
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: The collection, with the command responder.
+    content.vb: Public Shared Function AddCommandResponder(serviceCollection As IServiceCollection) As IServiceCollection
+  overload: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddCommandResponder*
+- uid: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddInteractionResponder(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Remora.Discord.Commands.Responders.InteractionResponderOptions})
+  commentId: M:Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddInteractionResponder(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Remora.Discord.Commands.Responders.InteractionResponderOptions})
+  id: AddInteractionResponder(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Remora.Discord.Commands.Responders.InteractionResponderOptions})
+  isExtensionMethod: true
+  parent: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddInteractionResponder(IServiceCollection, Action<InteractionResponderOptions>?)
+  nameWithType: ServiceCollectionExtensions.AddInteractionResponder(IServiceCollection, Action<InteractionResponderOptions>?)
+  fullName: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddInteractionResponder(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action<Remora.Discord.Commands.Responders.InteractionResponderOptions>?)
+  type: Method
+  source:
+    id: AddInteractionResponder
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Remora.Discord.Commands\Extensions\ServiceCollectionExtensions.cs
+    startLine: 294
+  assemblies:
+  - Remora.Discord.Commands
+  namespace: Remora.Discord.Commands.Extensions
+  summary: Adds the interaction responder to the system.
+  example: []
+  syntax:
+    content: public static IServiceCollection AddInteractionResponder(this IServiceCollection serviceCollection, Action<InteractionResponderOptions>? optionsConfigurator = null)
+    parameters:
+    - id: serviceCollection
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: The service collection.
+    - id: optionsConfigurator
+      type: System.Action{Remora.Discord.Commands.Responders.InteractionResponderOptions}
+      description: The option configurator.
+    return:
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: The collection, with the interaction responder.
+    content.vb: Public Shared Function AddInteractionResponder(serviceCollection As IServiceCollection, optionsConfigurator As Action(Of InteractionResponderOptions) = Nothing) As IServiceCollection
+  overload: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddInteractionResponder*
+  nameWithType.vb: ServiceCollectionExtensions.AddInteractionResponder(IServiceCollection, Action(Of InteractionResponderOptions))
+  fullName.vb: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddInteractionResponder(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action(Of Remora.Discord.Commands.Responders.InteractionResponderOptions))
+  name.vb: AddInteractionResponder(IServiceCollection, Action(Of InteractionResponderOptions))
+- uid: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddPreparationErrorEvent``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  commentId: M:Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddPreparationErrorEvent``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  id: AddPreparationErrorEvent``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  isExtensionMethod: true
+  parent: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddPreparationErrorEvent<TEvent>(IServiceCollection)
+  nameWithType: ServiceCollectionExtensions.AddPreparationErrorEvent<TEvent>(IServiceCollection)
+  fullName: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddPreparationErrorEvent<TEvent>(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  type: Method
+  source:
+    id: AddPreparationErrorEvent
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Remora.Discord.Commands\Extensions\ServiceCollectionExtensions.cs
+    startLine: 314
+  assemblies:
+  - Remora.Discord.Commands
+  namespace: Remora.Discord.Commands.Extensions
+  summary: Adds a preparation error event to the service collection.
+  example: []
+  syntax:
+    content: 'public static IServiceCollection AddPreparationErrorEvent<TEvent>(this IServiceCollection serviceCollection) where TEvent : class, IPreparationErrorEvent'
+    parameters:
+    - id: serviceCollection
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: The service collection.
+    typeParameters:
+    - id: TEvent
+      description: The event type.
+    return:
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: The collection, with the event.
+    content.vb: Public Shared Function AddPreparationErrorEvent(Of TEvent As {Class, IPreparationErrorEvent})(serviceCollection As IServiceCollection) As IServiceCollection
+  overload: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddPreparationErrorEvent*
+  nameWithType.vb: ServiceCollectionExtensions.AddPreparationErrorEvent(Of TEvent)(IServiceCollection)
+  fullName.vb: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddPreparationErrorEvent(Of TEvent)(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name.vb: AddPreparationErrorEvent(Of TEvent)(IServiceCollection)
+- uid: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddPreExecutionEvent``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  commentId: M:Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddPreExecutionEvent``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  id: AddPreExecutionEvent``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  isExtensionMethod: true
+  parent: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddPreExecutionEvent<TEvent>(IServiceCollection)
+  nameWithType: ServiceCollectionExtensions.AddPreExecutionEvent<TEvent>(IServiceCollection)
+  fullName: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddPreExecutionEvent<TEvent>(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  type: Method
+  source:
+    id: AddPreExecutionEvent
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Remora.Discord.Commands\Extensions\ServiceCollectionExtensions.cs
+    startLine: 331
+  assemblies:
+  - Remora.Discord.Commands
+  namespace: Remora.Discord.Commands.Extensions
+  summary: Adds a pre-execution event to the service collection.
+  example: []
+  syntax:
+    content: 'public static IServiceCollection AddPreExecutionEvent<TEvent>(this IServiceCollection serviceCollection) where TEvent : class, IPreExecutionEvent'
+    parameters:
+    - id: serviceCollection
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: The service collection.
+    typeParameters:
+    - id: TEvent
+      description: The event type.
+    return:
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: The collection, with the event.
+    content.vb: Public Shared Function AddPreExecutionEvent(Of TEvent As {Class, IPreExecutionEvent})(serviceCollection As IServiceCollection) As IServiceCollection
+  overload: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddPreExecutionEvent*
+  nameWithType.vb: ServiceCollectionExtensions.AddPreExecutionEvent(Of TEvent)(IServiceCollection)
+  fullName.vb: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddPreExecutionEvent(Of TEvent)(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name.vb: AddPreExecutionEvent(Of TEvent)(IServiceCollection)
+- uid: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddPostExecutionEvent``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  commentId: M:Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddPostExecutionEvent``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  id: AddPostExecutionEvent``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  isExtensionMethod: true
+  parent: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddPostExecutionEvent<TEvent>(IServiceCollection)
+  nameWithType: ServiceCollectionExtensions.AddPostExecutionEvent<TEvent>(IServiceCollection)
+  fullName: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddPostExecutionEvent<TEvent>(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  type: Method
+  source:
+    id: AddPostExecutionEvent
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Remora.Discord.Commands\Extensions\ServiceCollectionExtensions.cs
+    startLine: 348
+  assemblies:
+  - Remora.Discord.Commands
+  namespace: Remora.Discord.Commands.Extensions
+  summary: Adds a post-execution event to the service collection.
+  example: []
+  syntax:
+    content: 'public static IServiceCollection AddPostExecutionEvent<TEvent>(this IServiceCollection serviceCollection) where TEvent : class, IPostExecutionEvent'
+    parameters:
+    - id: serviceCollection
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: The service collection.
+    typeParameters:
+    - id: TEvent
+      description: The event type.
+    return:
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: The collection, with the event.
+    content.vb: Public Shared Function AddPostExecutionEvent(Of TEvent As {Class, IPostExecutionEvent})(serviceCollection As IServiceCollection) As IServiceCollection
+  overload: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddPostExecutionEvent*
+  nameWithType.vb: ServiceCollectionExtensions.AddPostExecutionEvent(Of TEvent)(IServiceCollection)
+  fullName.vb: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddPostExecutionEvent(Of TEvent)(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name.vb: AddPostExecutionEvent(Of TEvent)(IServiceCollection)
+- uid: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddExecutionEvent``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  commentId: M:Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddExecutionEvent``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  id: AddExecutionEvent``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  isExtensionMethod: true
+  parent: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddExecutionEvent<TEvent>(IServiceCollection)
+  nameWithType: ServiceCollectionExtensions.AddExecutionEvent<TEvent>(IServiceCollection)
+  fullName: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddExecutionEvent<TEvent>(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  type: Method
+  source:
+    id: AddExecutionEvent
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Remora.Discord.Commands\Extensions\ServiceCollectionExtensions.cs
+    startLine: 365
+  assemblies:
+  - Remora.Discord.Commands
+  namespace: Remora.Discord.Commands.Extensions
+  summary: Adds a pre- and post-execution event to the service collection.
+  example: []
+  syntax:
+    content: 'public static IServiceCollection AddExecutionEvent<TEvent>(this IServiceCollection serviceCollection) where TEvent : class, IPreExecutionEvent, IPostExecutionEvent'
+    parameters:
+    - id: serviceCollection
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: The service collection.
+    typeParameters:
+    - id: TEvent
+      description: The event type.
+    return:
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: The collection, with the event.
+    content.vb: Public Shared Function AddExecutionEvent(Of TEvent As {Class, IPreExecutionEvent, IPostExecutionEvent})(serviceCollection As IServiceCollection) As IServiceCollection
+  overload: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddExecutionEvent*
+  nameWithType.vb: ServiceCollectionExtensions.AddExecutionEvent(Of TEvent)(IServiceCollection)
+  fullName.vb: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddExecutionEvent(Of TEvent)(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name.vb: AddExecutionEvent(Of TEvent)(IServiceCollection)
+- uid: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddAutocompleteProvider``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  commentId: M:Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddAutocompleteProvider``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  id: AddAutocompleteProvider``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  isExtensionMethod: true
+  parent: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddAutocompleteProvider<TProvider>(IServiceCollection)
+  nameWithType: ServiceCollectionExtensions.AddAutocompleteProvider<TProvider>(IServiceCollection)
+  fullName: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddAutocompleteProvider<TProvider>(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  type: Method
+  source:
+    id: AddAutocompleteProvider
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Remora.Discord.Commands\Extensions\ServiceCollectionExtensions.cs
+    startLine: 385
+  assemblies:
+  - Remora.Discord.Commands
+  namespace: Remora.Discord.Commands.Extensions
+  summary: Adds an autocomplete provider to the service collection.
+  example: []
+  syntax:
+    content: 'public static IServiceCollection AddAutocompleteProvider<TProvider>(this IServiceCollection serviceCollection) where TProvider : class, IAutocompleteProvider'
+    parameters:
+    - id: serviceCollection
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: The service collection.
+    typeParameters:
+    - id: TProvider
+      description: The autocomplete provider.
+    return:
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: The collection, with the provider.
+    content.vb: Public Shared Function AddAutocompleteProvider(Of TProvider As {Class, IAutocompleteProvider})(serviceCollection As IServiceCollection) As IServiceCollection
+  overload: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddAutocompleteProvider*
+  nameWithType.vb: ServiceCollectionExtensions.AddAutocompleteProvider(Of TProvider)(IServiceCollection)
+  fullName.vb: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddAutocompleteProvider(Of TProvider)(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name.vb: AddAutocompleteProvider(Of TProvider)(IServiceCollection)
+- uid: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddAutocompleteProvider(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type)
+  commentId: M:Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddAutocompleteProvider(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type)
+  id: AddAutocompleteProvider(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type)
+  isExtensionMethod: true
+  parent: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddAutocompleteProvider(IServiceCollection, Type)
+  nameWithType: ServiceCollectionExtensions.AddAutocompleteProvider(IServiceCollection, Type)
+  fullName: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddAutocompleteProvider(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Type)
+  type: Method
+  source:
+    id: AddAutocompleteProvider
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Remora.Discord.Commands\Extensions\ServiceCollectionExtensions.cs
+    startLine: 401
+  assemblies:
+  - Remora.Discord.Commands
+  namespace: Remora.Discord.Commands.Extensions
+  summary: Adds an autocomplete provider to the service collection.
+  example: []
+  syntax:
+    content: public static IServiceCollection AddAutocompleteProvider(this IServiceCollection serviceCollection, Type providerType)
+    parameters:
+    - id: serviceCollection
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: The service collection.
+    - id: providerType
+      type: System.Type
+      description: The autocomplete provider type.
+    return:
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: The collection, with the provider.
+    content.vb: Public Shared Function AddAutocompleteProvider(serviceCollection As IServiceCollection, providerType As Type) As IServiceCollection
+  overload: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddAutocompleteProvider*
+references:
+- uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
+  commentId: T:Microsoft.Extensions.DependencyInjection.IServiceCollection
+  parent: Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection
+  name: IServiceCollection
+  nameWithType: IServiceCollection
+  fullName: Microsoft.Extensions.DependencyInjection.IServiceCollection
+- uid: Remora.Discord.Commands.Extensions
+  commentId: N:Remora.Discord.Commands.Extensions
+  href: Remora.html
+  name: Remora.Discord.Commands.Extensions
+  nameWithType: Remora.Discord.Commands.Extensions
+  fullName: Remora.Discord.Commands.Extensions
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Commands
+    name: Commands
+    href: Remora.Discord.Commands.html
+  - name: .
+  - uid: Remora.Discord.Commands.Extensions
+    name: Extensions
+    href: Remora.Discord.Commands.Extensions.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Commands
+    name: Commands
+    href: Remora.Discord.Commands.html
+  - name: .
+  - uid: Remora.Discord.Commands.Extensions
+    name: Extensions
+    href: Remora.Discord.Commands.Extensions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: Microsoft.Extensions.DependencyInjection
+  commentId: N:Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.DependencyInjection
+  nameWithType: Microsoft.Extensions.DependencyInjection
+  fullName: Microsoft.Extensions.DependencyInjection
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.DependencyInjection
+    name: DependencyInjection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.DependencyInjection
+    name: DependencyInjection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddNGetTextLocalizations*
+  commentId: Overload:Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddNGetTextLocalizations
+  href: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.html#Remora_Discord_Commands_Extensions_ServiceCollectionExtensions_AddNGetTextLocalizations_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_String_System_Reflection_Assembly_
+  name: AddNGetTextLocalizations
+  nameWithType: ServiceCollectionExtensions.AddNGetTextLocalizations
+  fullName: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddNGetTextLocalizations
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Reflection.Assembly
+  commentId: T:System.Reflection.Assembly
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.assembly
+  name: Assembly
+  nameWithType: Assembly
+  fullName: System.Reflection.Assembly
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+- uid: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddDiscordCommands*
+  commentId: Overload:Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddDiscordCommands
+  href: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.html#Remora_Discord_Commands_Extensions_ServiceCollectionExtensions_AddDiscordCommands_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Boolean_System_Boolean_System_Boolean_
+  name: AddDiscordCommands
+  nameWithType: ServiceCollectionExtensions.AddDiscordCommands
+  fullName: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddDiscordCommands
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddCommandResponder*
+  commentId: Overload:Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddCommandResponder
+  href: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.html#Remora_Discord_Commands_Extensions_ServiceCollectionExtensions_AddCommandResponder_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  name: AddCommandResponder
+  nameWithType: ServiceCollectionExtensions.AddCommandResponder
+  fullName: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddCommandResponder
+- uid: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddInteractionResponder*
+  commentId: Overload:Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddInteractionResponder
+  href: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.html#Remora_Discord_Commands_Extensions_ServiceCollectionExtensions_AddInteractionResponder_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Action_Remora_Discord_Commands_Responders_InteractionResponderOptions__
+  name: AddInteractionResponder
+  nameWithType: ServiceCollectionExtensions.AddInteractionResponder
+  fullName: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddInteractionResponder
+- uid: System.Action{Remora.Discord.Commands.Responders.InteractionResponderOptions}
+  commentId: T:System.Action{Remora.Discord.Commands.Responders.InteractionResponderOptions}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<InteractionResponderOptions>
+  nameWithType: Action<InteractionResponderOptions>
+  fullName: System.Action<Remora.Discord.Commands.Responders.InteractionResponderOptions>
+  nameWithType.vb: Action(Of InteractionResponderOptions)
+  fullName.vb: System.Action(Of Remora.Discord.Commands.Responders.InteractionResponderOptions)
+  name.vb: Action(Of InteractionResponderOptions)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Remora.Discord.Commands.Responders.InteractionResponderOptions
+    name: InteractionResponderOptions
+    href: Remora.Discord.Commands.Responders.InteractionResponderOptions.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.Commands.Responders.InteractionResponderOptions
+    name: InteractionResponderOptions
+    href: Remora.Discord.Commands.Responders.InteractionResponderOptions.html
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddPreparationErrorEvent*
+  commentId: Overload:Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddPreparationErrorEvent
+  href: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.html#Remora_Discord_Commands_Extensions_ServiceCollectionExtensions_AddPreparationErrorEvent__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  name: AddPreparationErrorEvent
+  nameWithType: ServiceCollectionExtensions.AddPreparationErrorEvent
+  fullName: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddPreparationErrorEvent
+- uid: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddPreExecutionEvent*
+  commentId: Overload:Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddPreExecutionEvent
+  href: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.html#Remora_Discord_Commands_Extensions_ServiceCollectionExtensions_AddPreExecutionEvent__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  name: AddPreExecutionEvent
+  nameWithType: ServiceCollectionExtensions.AddPreExecutionEvent
+  fullName: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddPreExecutionEvent
+- uid: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddPostExecutionEvent*
+  commentId: Overload:Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddPostExecutionEvent
+  href: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.html#Remora_Discord_Commands_Extensions_ServiceCollectionExtensions_AddPostExecutionEvent__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  name: AddPostExecutionEvent
+  nameWithType: ServiceCollectionExtensions.AddPostExecutionEvent
+  fullName: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddPostExecutionEvent
+- uid: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddExecutionEvent*
+  commentId: Overload:Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddExecutionEvent
+  href: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.html#Remora_Discord_Commands_Extensions_ServiceCollectionExtensions_AddExecutionEvent__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  name: AddExecutionEvent
+  nameWithType: ServiceCollectionExtensions.AddExecutionEvent
+  fullName: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddExecutionEvent
+- uid: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddAutocompleteProvider*
+  commentId: Overload:Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddAutocompleteProvider
+  href: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.html#Remora_Discord_Commands_Extensions_ServiceCollectionExtensions_AddAutocompleteProvider__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  name: AddAutocompleteProvider
+  nameWithType: ServiceCollectionExtensions.AddAutocompleteProvider
+  fullName: Remora.Discord.Commands.Extensions.ServiceCollectionExtensions.AddAutocompleteProvider
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type

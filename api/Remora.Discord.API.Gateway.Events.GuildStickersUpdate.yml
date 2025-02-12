@@ -1,0 +1,780 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Gateway.Events.GuildStickersUpdate
+  commentId: T:Remora.Discord.API.Gateway.Events.GuildStickersUpdate
+  id: GuildStickersUpdate
+  parent: Remora.Discord.API.Gateway.Events
+  children:
+  - Remora.Discord.API.Gateway.Events.GuildStickersUpdate.#ctor(Remora.Rest.Core.Snowflake,System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.ISticker})
+  - Remora.Discord.API.Gateway.Events.GuildStickersUpdate.GuildID
+  - Remora.Discord.API.Gateway.Events.GuildStickersUpdate.Stickers
+  langs:
+  - csharp
+  - vb
+  name: GuildStickersUpdate
+  nameWithType: GuildStickersUpdate
+  fullName: Remora.Discord.API.Gateway.Events.GuildStickersUpdate
+  type: Class
+  source:
+    id: GuildStickersUpdate
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Guilds\GuildStickersUpdate.cs
+    startLine: 31
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events
+  summary: Represents a change to the stickers in a guild.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public record GuildStickersUpdate : IGuildStickersUpdate, IGatewayEvent, IGatewayPayloadData, IEquatable<GuildStickersUpdate>
+    content.vb: >-
+      <PublicAPI>
+
+      Public Class GuildStickersUpdate Implements IGuildStickersUpdate, IGatewayEvent, IGatewayPayloadData, IEquatable(Of GuildStickersUpdate)
+  inheritance:
+  - System.Object
+  implements:
+  - Remora.Discord.API.Abstractions.Gateway.Events.IGuildStickersUpdate
+  - Remora.Discord.API.Abstractions.Gateway.Events.IGatewayEvent
+  - Remora.Discord.API.Abstractions.Gateway.IGatewayPayloadData
+  - System.IEquatable{Remora.Discord.API.Gateway.Events.GuildStickersUpdate}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Gateway.Events.GuildStickersUpdate.#ctor(Remora.Rest.Core.Snowflake,System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.ISticker})
+  commentId: M:Remora.Discord.API.Gateway.Events.GuildStickersUpdate.#ctor(Remora.Rest.Core.Snowflake,System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.ISticker})
+  id: '#ctor(Remora.Rest.Core.Snowflake,System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.ISticker})'
+  parent: Remora.Discord.API.Gateway.Events.GuildStickersUpdate
+  langs:
+  - csharp
+  - vb
+  name: GuildStickersUpdate(Snowflake, IReadOnlyList<ISticker>)
+  nameWithType: GuildStickersUpdate.GuildStickersUpdate(Snowflake, IReadOnlyList<ISticker>)
+  fullName: Remora.Discord.API.Gateway.Events.GuildStickersUpdate.GuildStickersUpdate(Remora.Rest.Core.Snowflake, System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.ISticker>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Guilds\GuildStickersUpdate.cs
+    startLine: 31
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events
+  summary: Represents a change to the stickers in a guild.
+  example: []
+  syntax:
+    content: public GuildStickersUpdate(Snowflake GuildID, IReadOnlyList<ISticker> Stickers)
+    parameters:
+    - id: GuildID
+      type: Remora.Rest.Core.Snowflake
+    - id: Stickers
+      type: System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.ISticker}
+    content.vb: Public Sub New(GuildID As Snowflake, Stickers As IReadOnlyList(Of ISticker))
+  overload: Remora.Discord.API.Gateway.Events.GuildStickersUpdate.#ctor*
+  nameWithType.vb: GuildStickersUpdate.New(Snowflake, IReadOnlyList(Of ISticker))
+  fullName.vb: Remora.Discord.API.Gateway.Events.GuildStickersUpdate.New(Remora.Rest.Core.Snowflake, System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.ISticker))
+  name.vb: New(Snowflake, IReadOnlyList(Of ISticker))
+- uid: Remora.Discord.API.Gateway.Events.GuildStickersUpdate.GuildID
+  commentId: P:Remora.Discord.API.Gateway.Events.GuildStickersUpdate.GuildID
+  id: GuildID
+  parent: Remora.Discord.API.Gateway.Events.GuildStickersUpdate
+  langs:
+  - csharp
+  - vb
+  name: GuildID
+  nameWithType: GuildStickersUpdate.GuildID
+  fullName: Remora.Discord.API.Gateway.Events.GuildStickersUpdate.GuildID
+  type: Property
+  source:
+    id: GuildID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Guilds\GuildStickersUpdate.cs
+    startLine: 32
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events
+  summary: Gets the ID of the guild that the update occurred in.
+  example: []
+  syntax:
+    content: public Snowflake GuildID { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Snowflake
+    content.vb: Public Property GuildID As Snowflake
+  overload: Remora.Discord.API.Gateway.Events.GuildStickersUpdate.GuildID*
+  implements:
+  - Remora.Discord.API.Abstractions.Gateway.Events.IGuildStickersUpdate.GuildID
+- uid: Remora.Discord.API.Gateway.Events.GuildStickersUpdate.Stickers
+  commentId: P:Remora.Discord.API.Gateway.Events.GuildStickersUpdate.Stickers
+  id: Stickers
+  parent: Remora.Discord.API.Gateway.Events.GuildStickersUpdate
+  langs:
+  - csharp
+  - vb
+  name: Stickers
+  nameWithType: GuildStickersUpdate.Stickers
+  fullName: Remora.Discord.API.Gateway.Events.GuildStickersUpdate.Stickers
+  type: Property
+  source:
+    id: Stickers
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Guilds\GuildStickersUpdate.cs
+    startLine: 32
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events
+  summary: Gets the new set of stickers available to the guild.
+  example: []
+  syntax:
+    content: public IReadOnlyList<ISticker> Stickers { get; init; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.ISticker}
+    content.vb: Public Property Stickers As IReadOnlyList(Of ISticker)
+  overload: Remora.Discord.API.Gateway.Events.GuildStickersUpdate.Stickers*
+  implements:
+  - Remora.Discord.API.Abstractions.Gateway.Events.IGuildStickersUpdate.Stickers
+references:
+- uid: Remora.Discord.API.Gateway.Events
+  commentId: N:Remora.Discord.API.Gateway.Events
+  href: Remora.html
+  name: Remora.Discord.API.Gateway.Events
+  nameWithType: Remora.Discord.API.Gateway.Events
+  fullName: Remora.Discord.API.Gateway.Events
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Gateway.Events
+    name: Events
+    href: Remora.Discord.API.Gateway.Events.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Gateway.Events
+    name: Events
+    href: Remora.Discord.API.Gateway.Events.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildStickersUpdate
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.Events.IGuildStickersUpdate
+  parent: Remora.Discord.API.Abstractions.Gateway.Events
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildStickersUpdate.html
+  name: IGuildStickersUpdate
+  nameWithType: IGuildStickersUpdate
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IGuildStickersUpdate
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IGatewayEvent
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.Events.IGatewayEvent
+  parent: Remora.Discord.API.Abstractions.Gateway.Events
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IGatewayEvent.html
+  name: IGatewayEvent
+  nameWithType: IGatewayEvent
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IGatewayEvent
+- uid: Remora.Discord.API.Abstractions.Gateway.IGatewayPayloadData
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.IGatewayPayloadData
+  parent: Remora.Discord.API.Abstractions.Gateway
+  href: Remora.Discord.API.Abstractions.Gateway.IGatewayPayloadData.html
+  name: IGatewayPayloadData
+  nameWithType: IGatewayPayloadData
+  fullName: Remora.Discord.API.Abstractions.Gateway.IGatewayPayloadData
+- uid: System.IEquatable{Remora.Discord.API.Gateway.Events.GuildStickersUpdate}
+  commentId: T:System.IEquatable{Remora.Discord.API.Gateway.Events.GuildStickersUpdate}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<GuildStickersUpdate>
+  nameWithType: IEquatable<GuildStickersUpdate>
+  fullName: System.IEquatable<Remora.Discord.API.Gateway.Events.GuildStickersUpdate>
+  nameWithType.vb: IEquatable(Of GuildStickersUpdate)
+  fullName.vb: System.IEquatable(Of Remora.Discord.API.Gateway.Events.GuildStickersUpdate)
+  name.vb: IEquatable(Of GuildStickersUpdate)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Remora.Discord.API.Gateway.Events.GuildStickersUpdate
+    name: GuildStickersUpdate
+    href: Remora.Discord.API.Gateway.Events.GuildStickersUpdate.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Gateway.Events.GuildStickersUpdate
+    name: GuildStickersUpdate
+    href: Remora.Discord.API.Gateway.Events.GuildStickersUpdate.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.API.Abstractions.Gateway.Events
+  commentId: N:Remora.Discord.API.Abstractions.Gateway.Events
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Gateway.Events
+  nameWithType: Remora.Discord.API.Abstractions.Gateway.Events
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events
+    name: Events
+    href: Remora.Discord.API.Abstractions.Gateway.Events.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events
+    name: Events
+    href: Remora.Discord.API.Abstractions.Gateway.Events.html
+- uid: Remora.Discord.API.Abstractions.Gateway
+  commentId: N:Remora.Discord.API.Abstractions.Gateway
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Gateway
+  nameWithType: Remora.Discord.API.Abstractions.Gateway
+  fullName: Remora.Discord.API.Abstractions.Gateway
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Remora.Discord.API.Gateway.Events.GuildStickersUpdate.#ctor*
+  commentId: Overload:Remora.Discord.API.Gateway.Events.GuildStickersUpdate.#ctor
+  href: Remora.Discord.API.Gateway.Events.GuildStickersUpdate.html#Remora_Discord_API_Gateway_Events_GuildStickersUpdate__ctor_Remora_Rest_Core_Snowflake_System_Collections_Generic_IReadOnlyList_Remora_Discord_API_Abstractions_Objects_ISticker__
+  name: GuildStickersUpdate
+  nameWithType: GuildStickersUpdate.GuildStickersUpdate
+  fullName: Remora.Discord.API.Gateway.Events.GuildStickersUpdate.GuildStickersUpdate
+  nameWithType.vb: GuildStickersUpdate.New
+  fullName.vb: Remora.Discord.API.Gateway.Events.GuildStickersUpdate.New
+  name.vb: New
+- uid: Remora.Rest.Core.Snowflake
+  commentId: T:Remora.Rest.Core.Snowflake
+  parent: Remora.Rest.Core
+  isExternal: true
+  name: Snowflake
+  nameWithType: Snowflake
+  fullName: Remora.Rest.Core.Snowflake
+- uid: System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.ISticker}
+  commentId: T:System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.ISticker}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<ISticker>
+  nameWithType: IReadOnlyList<ISticker>
+  fullName: System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.ISticker>
+  nameWithType.vb: IReadOnlyList(Of ISticker)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.ISticker)
+  name.vb: IReadOnlyList(Of ISticker)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.ISticker
+    name: ISticker
+    href: Remora.Discord.API.Abstractions.Objects.ISticker.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.ISticker
+    name: ISticker
+    href: Remora.Discord.API.Abstractions.Objects.ISticker.html
+  - name: )
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Remora.Discord.API.Gateway.Events.GuildStickersUpdate.GuildID*
+  commentId: Overload:Remora.Discord.API.Gateway.Events.GuildStickersUpdate.GuildID
+  href: Remora.Discord.API.Gateway.Events.GuildStickersUpdate.html#Remora_Discord_API_Gateway_Events_GuildStickersUpdate_GuildID
+  name: GuildID
+  nameWithType: GuildStickersUpdate.GuildID
+  fullName: Remora.Discord.API.Gateway.Events.GuildStickersUpdate.GuildID
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildStickersUpdate.GuildID
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Events.IGuildStickersUpdate.GuildID
+  parent: Remora.Discord.API.Abstractions.Gateway.Events.IGuildStickersUpdate
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildStickersUpdate.html#Remora_Discord_API_Abstractions_Gateway_Events_IGuildStickersUpdate_GuildID
+  name: GuildID
+  nameWithType: IGuildStickersUpdate.GuildID
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IGuildStickersUpdate.GuildID
+- uid: Remora.Discord.API.Gateway.Events.GuildStickersUpdate.Stickers*
+  commentId: Overload:Remora.Discord.API.Gateway.Events.GuildStickersUpdate.Stickers
+  href: Remora.Discord.API.Gateway.Events.GuildStickersUpdate.html#Remora_Discord_API_Gateway_Events_GuildStickersUpdate_Stickers
+  name: Stickers
+  nameWithType: GuildStickersUpdate.Stickers
+  fullName: Remora.Discord.API.Gateway.Events.GuildStickersUpdate.Stickers
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildStickersUpdate.Stickers
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Events.IGuildStickersUpdate.Stickers
+  parent: Remora.Discord.API.Abstractions.Gateway.Events.IGuildStickersUpdate
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildStickersUpdate.html#Remora_Discord_API_Abstractions_Gateway_Events_IGuildStickersUpdate_Stickers
+  name: Stickers
+  nameWithType: IGuildStickersUpdate.Stickers
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IGuildStickersUpdate.Stickers

@@ -1,0 +1,646 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution
+  id: IAutoModerationActionExecution
+  parent: Remora.Discord.API.Abstractions.Gateway.Events
+  children:
+  - Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.Action
+  - Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.AlertSystemMessageID
+  - Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.ChannelID
+  - Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.Content
+  - Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.GuildID
+  - Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.MatchedContent
+  - Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.MatchedKeyword
+  - Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.MessageID
+  - Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.RuleID
+  - Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.RuleTriggerType
+  - Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.UserID
+  langs:
+  - csharp
+  - vb
+  name: IAutoModerationActionExecution
+  nameWithType: IAutoModerationActionExecution
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution
+  type: Interface
+  source:
+    id: IAutoModerationActionExecution
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Events\AutoModeration\IAutoModerationActionExecution.cs
+    startLine: 31
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Events
+  summary: Represents the execution of an auto moderation action.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public interface IAutoModerationActionExecution : IGatewayEvent, IGatewayPayloadData
+    content.vb: >-
+      <PublicAPI>
+
+      Public Interface IAutoModerationActionExecution Inherits IGatewayEvent, IGatewayPayloadData
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.GuildID
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.GuildID
+  id: GuildID
+  parent: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution
+  langs:
+  - csharp
+  - vb
+  name: GuildID
+  nameWithType: IAutoModerationActionExecution.GuildID
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.GuildID
+  type: Property
+  source:
+    id: GuildID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Events\AutoModeration\IAutoModerationActionExecution.cs
+    startLine: 37
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Events
+  summary: Gets the ID of the guild in which action was executed.
+  example: []
+  syntax:
+    content: Snowflake GuildID { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Snowflake
+    content.vb: ReadOnly Property GuildID As Snowflake
+  overload: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.GuildID*
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.Action
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.Action
+  id: Action
+  parent: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution
+  langs:
+  - csharp
+  - vb
+  name: Action
+  nameWithType: IAutoModerationActionExecution.Action
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.Action
+  type: Property
+  source:
+    id: Action
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Events\AutoModeration\IAutoModerationActionExecution.cs
+    startLine: 42
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Events
+  summary: Gets the action which was executed.
+  example: []
+  syntax:
+    content: IAutoModerationAction Action { get; }
+    parameters: []
+    return:
+      type: Remora.Discord.API.Abstractions.Objects.IAutoModerationAction
+    content.vb: ReadOnly Property Action As IAutoModerationAction
+  overload: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.Action*
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.RuleID
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.RuleID
+  id: RuleID
+  parent: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution
+  langs:
+  - csharp
+  - vb
+  name: RuleID
+  nameWithType: IAutoModerationActionExecution.RuleID
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.RuleID
+  type: Property
+  source:
+    id: RuleID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Events\AutoModeration\IAutoModerationActionExecution.cs
+    startLine: 47
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Events
+  summary: Gets the ID of the rule which action belongs to.
+  example: []
+  syntax:
+    content: Snowflake RuleID { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Snowflake
+    content.vb: ReadOnly Property RuleID As Snowflake
+  overload: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.RuleID*
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.RuleTriggerType
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.RuleTriggerType
+  id: RuleTriggerType
+  parent: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution
+  langs:
+  - csharp
+  - vb
+  name: RuleTriggerType
+  nameWithType: IAutoModerationActionExecution.RuleTriggerType
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.RuleTriggerType
+  type: Property
+  source:
+    id: RuleTriggerType
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Events\AutoModeration\IAutoModerationActionExecution.cs
+    startLine: 52
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Events
+  summary: Gets the trigger type of rule which was triggered.
+  example: []
+  syntax:
+    content: AutoModerationTriggerType RuleTriggerType { get; }
+    parameters: []
+    return:
+      type: Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType
+    content.vb: ReadOnly Property RuleTriggerType As AutoModerationTriggerType
+  overload: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.RuleTriggerType*
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.UserID
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.UserID
+  id: UserID
+  parent: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution
+  langs:
+  - csharp
+  - vb
+  name: UserID
+  nameWithType: IAutoModerationActionExecution.UserID
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.UserID
+  type: Property
+  source:
+    id: UserID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Events\AutoModeration\IAutoModerationActionExecution.cs
+    startLine: 57
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Events
+  summary: Gets the ID of the user which generated the content which triggered the rule.
+  example: []
+  syntax:
+    content: Snowflake UserID { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Snowflake
+    content.vb: ReadOnly Property UserID As Snowflake
+  overload: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.UserID*
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.ChannelID
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.ChannelID
+  id: ChannelID
+  parent: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution
+  langs:
+  - csharp
+  - vb
+  name: ChannelID
+  nameWithType: IAutoModerationActionExecution.ChannelID
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.ChannelID
+  type: Property
+  source:
+    id: ChannelID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Events\AutoModeration\IAutoModerationActionExecution.cs
+    startLine: 62
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Events
+  summary: Gets the ID of the channel in which user content was posted.
+  example: []
+  syntax:
+    content: Optional<Snowflake> ChannelID { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+    content.vb: ReadOnly Property ChannelID As [Optional](Of Snowflake)
+  overload: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.ChannelID*
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.MessageID
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.MessageID
+  id: MessageID
+  parent: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution
+  langs:
+  - csharp
+  - vb
+  name: MessageID
+  nameWithType: IAutoModerationActionExecution.MessageID
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.MessageID
+  type: Property
+  source:
+    id: MessageID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Events\AutoModeration\IAutoModerationActionExecution.cs
+    startLine: 70
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Events
+  summary: Gets the ID of any user message which content belongs to.
+  remarks: This property will not exist if message was blocked by Automod or if the content was not part of any message.
+  example: []
+  syntax:
+    content: Optional<Snowflake> MessageID { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+    content.vb: ReadOnly Property MessageID As [Optional](Of Snowflake)
+  overload: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.MessageID*
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.AlertSystemMessageID
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.AlertSystemMessageID
+  id: AlertSystemMessageID
+  parent: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution
+  langs:
+  - csharp
+  - vb
+  name: AlertSystemMessageID
+  nameWithType: IAutoModerationActionExecution.AlertSystemMessageID
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.AlertSystemMessageID
+  type: Property
+  source:
+    id: AlertSystemMessageID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Events\AutoModeration\IAutoModerationActionExecution.cs
+    startLine: 79
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Events
+  summary: Gets the ID of any system auto moderation messages posted as a result of this action.
+  remarks: >-
+    This will not exist if this event does not correspond to an action with type
+
+    <xref href="Remora.Discord.API.Abstractions.Objects.AutoModerationActionType.SendAlertMessage" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: Optional<Snowflake> AlertSystemMessageID { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+    content.vb: ReadOnly Property AlertSystemMessageID As [Optional](Of Snowflake)
+  overload: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.AlertSystemMessageID*
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.Content
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.Content
+  id: Content
+  parent: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution
+  langs:
+  - csharp
+  - vb
+  name: Content
+  nameWithType: IAutoModerationActionExecution.Content
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.Content
+  type: Property
+  source:
+    id: Content
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Events\AutoModeration\IAutoModerationActionExecution.cs
+    startLine: 84
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Events
+  summary: Gets the user generated text content.
+  example: []
+  syntax:
+    content: string Content { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property Content As String
+  overload: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.Content*
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.MatchedKeyword
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.MatchedKeyword
+  id: MatchedKeyword
+  parent: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution
+  langs:
+  - csharp
+  - vb
+  name: MatchedKeyword
+  nameWithType: IAutoModerationActionExecution.MatchedKeyword
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.MatchedKeyword
+  type: Property
+  source:
+    id: MatchedKeyword
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Events\AutoModeration\IAutoModerationActionExecution.cs
+    startLine: 89
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Events
+  summary: Gets the word or phrase configured in the rule that triggered the rule.
+  example: []
+  syntax:
+    content: string? MatchedKeyword { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property MatchedKeyword As String
+  overload: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.MatchedKeyword*
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.MatchedContent
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.MatchedContent
+  id: MatchedContent
+  parent: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution
+  langs:
+  - csharp
+  - vb
+  name: MatchedContent
+  nameWithType: IAutoModerationActionExecution.MatchedContent
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.MatchedContent
+  type: Property
+  source:
+    id: MatchedContent
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Events\AutoModeration\IAutoModerationActionExecution.cs
+    startLine: 94
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Events
+  summary: Gets the substring in content that triggered the rule.
+  example: []
+  syntax:
+    content: string? MatchedContent { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property MatchedContent As String
+  overload: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.MatchedContent*
+references:
+- uid: Remora.Discord.API.Abstractions.Gateway.Events
+  commentId: N:Remora.Discord.API.Abstractions.Gateway.Events
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Gateway.Events
+  nameWithType: Remora.Discord.API.Abstractions.Gateway.Events
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events
+    name: Events
+    href: Remora.Discord.API.Abstractions.Gateway.Events.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events
+    name: Events
+    href: Remora.Discord.API.Abstractions.Gateway.Events.html
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.GuildID*
+  commentId: Overload:Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.GuildID
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.html#Remora_Discord_API_Abstractions_Gateway_Events_IAutoModerationActionExecution_GuildID
+  name: GuildID
+  nameWithType: IAutoModerationActionExecution.GuildID
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.GuildID
+- uid: Remora.Rest.Core.Snowflake
+  commentId: T:Remora.Rest.Core.Snowflake
+  parent: Remora.Rest.Core
+  isExternal: true
+  name: Snowflake
+  nameWithType: Snowflake
+  fullName: Remora.Rest.Core.Snowflake
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.Action*
+  commentId: Overload:Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.Action
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.html#Remora_Discord_API_Abstractions_Gateway_Events_IAutoModerationActionExecution_Action
+  name: Action
+  nameWithType: IAutoModerationActionExecution.Action
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.Action
+- uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationAction
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IAutoModerationAction
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IAutoModerationAction.html
+  name: IAutoModerationAction
+  nameWithType: IAutoModerationAction
+  fullName: Remora.Discord.API.Abstractions.Objects.IAutoModerationAction
+- uid: Remora.Discord.API.Abstractions.Objects
+  commentId: N:Remora.Discord.API.Abstractions.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Objects
+  nameWithType: Remora.Discord.API.Abstractions.Objects
+  fullName: Remora.Discord.API.Abstractions.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.RuleID*
+  commentId: Overload:Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.RuleID
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.html#Remora_Discord_API_Abstractions_Gateway_Events_IAutoModerationActionExecution_RuleID
+  name: RuleID
+  nameWithType: IAutoModerationActionExecution.RuleID
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.RuleID
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.RuleTriggerType*
+  commentId: Overload:Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.RuleTriggerType
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.html#Remora_Discord_API_Abstractions_Gateway_Events_IAutoModerationActionExecution_RuleTriggerType
+  name: RuleTriggerType
+  nameWithType: IAutoModerationActionExecution.RuleTriggerType
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.RuleTriggerType
+- uid: Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType
+  commentId: T:Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType.html
+  name: AutoModerationTriggerType
+  nameWithType: AutoModerationTriggerType
+  fullName: Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.UserID*
+  commentId: Overload:Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.UserID
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.html#Remora_Discord_API_Abstractions_Gateway_Events_IAutoModerationActionExecution_UserID
+  name: UserID
+  nameWithType: IAutoModerationActionExecution.UserID
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.UserID
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.ChannelID*
+  commentId: Overload:Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.ChannelID
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.html#Remora_Discord_API_Abstractions_Gateway_Events_IAutoModerationActionExecution_ChannelID
+  name: ChannelID
+  nameWithType: IAutoModerationActionExecution.ChannelID
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.ChannelID
+- uid: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  name: Optional<Snowflake>
+  nameWithType: Optional<Snowflake>
+  fullName: Remora.Rest.Core.Optional<Remora.Rest.Core.Snowflake>
+  nameWithType.vb: Optional(Of Snowflake)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Rest.Core.Snowflake)
+  name.vb: Optional(Of Snowflake)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+- uid: Remora.Rest.Core.Optional`1
+  commentId: T:Remora.Rest.Core.Optional`1
+  isExternal: true
+  name: Optional<TValue>
+  nameWithType: Optional<TValue>
+  fullName: Remora.Rest.Core.Optional<TValue>
+  nameWithType.vb: Optional(Of TValue)
+  fullName.vb: Remora.Rest.Core.Optional(Of TValue)
+  name.vb: Optional(Of TValue)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.MessageID*
+  commentId: Overload:Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.MessageID
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.html#Remora_Discord_API_Abstractions_Gateway_Events_IAutoModerationActionExecution_MessageID
+  name: MessageID
+  nameWithType: IAutoModerationActionExecution.MessageID
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.MessageID
+- uid: Remora.Discord.API.Abstractions.Objects.AutoModerationActionType.SendAlertMessage
+  commentId: F:Remora.Discord.API.Abstractions.Objects.AutoModerationActionType.SendAlertMessage
+  href: Remora.Discord.API.Abstractions.Objects.AutoModerationActionType.html#Remora_Discord_API_Abstractions_Objects_AutoModerationActionType_SendAlertMessage
+  name: SendAlertMessage
+  nameWithType: AutoModerationActionType.SendAlertMessage
+  fullName: Remora.Discord.API.Abstractions.Objects.AutoModerationActionType.SendAlertMessage
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.AlertSystemMessageID*
+  commentId: Overload:Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.AlertSystemMessageID
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.html#Remora_Discord_API_Abstractions_Gateway_Events_IAutoModerationActionExecution_AlertSystemMessageID
+  name: AlertSystemMessageID
+  nameWithType: IAutoModerationActionExecution.AlertSystemMessageID
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.AlertSystemMessageID
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.Content*
+  commentId: Overload:Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.Content
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.html#Remora_Discord_API_Abstractions_Gateway_Events_IAutoModerationActionExecution_Content
+  name: Content
+  nameWithType: IAutoModerationActionExecution.Content
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.Content
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.MatchedKeyword*
+  commentId: Overload:Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.MatchedKeyword
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.html#Remora_Discord_API_Abstractions_Gateway_Events_IAutoModerationActionExecution_MatchedKeyword
+  name: MatchedKeyword
+  nameWithType: IAutoModerationActionExecution.MatchedKeyword
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.MatchedKeyword
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.MatchedContent*
+  commentId: Overload:Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.MatchedContent
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.html#Remora_Discord_API_Abstractions_Gateway_Events_IAutoModerationActionExecution_MatchedContent
+  name: MatchedContent
+  nameWithType: IAutoModerationActionExecution.MatchedContent
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IAutoModerationActionExecution.MatchedContent

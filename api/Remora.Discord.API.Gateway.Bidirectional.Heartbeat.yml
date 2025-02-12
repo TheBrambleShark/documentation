@@ -1,0 +1,767 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Gateway.Bidirectional.Heartbeat
+  commentId: T:Remora.Discord.API.Gateway.Bidirectional.Heartbeat
+  id: Heartbeat
+  parent: Remora.Discord.API.Gateway.Bidirectional
+  children:
+  - Remora.Discord.API.Gateway.Bidirectional.Heartbeat.#ctor(System.Nullable{System.Int64})
+  - Remora.Discord.API.Gateway.Bidirectional.Heartbeat.LastSequenceNumber
+  langs:
+  - csharp
+  - vb
+  name: Heartbeat
+  nameWithType: Heartbeat
+  fullName: Remora.Discord.API.Gateway.Bidirectional.Heartbeat
+  type: Class
+  source:
+    id: Heartbeat
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Bidirectional\Heartbeat.cs
+    startLine: 32
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Bidirectional
+  summary: Represents a heartbeat command to or from Discord.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public record Heartbeat : IHeartbeat, IGatewayCommand, IGatewayEvent, IGatewayPayloadData, IEquatable<Heartbeat>
+    content.vb: >-
+      <PublicAPI>
+
+      Public Class Heartbeat Implements IHeartbeat, IGatewayCommand, IGatewayEvent, IGatewayPayloadData, IEquatable(Of Heartbeat)
+  inheritance:
+  - System.Object
+  implements:
+  - Remora.Discord.API.Abstractions.Gateway.Bidirectional.IHeartbeat
+  - Remora.Discord.API.Abstractions.Gateway.Commands.IGatewayCommand
+  - Remora.Discord.API.Abstractions.Gateway.Events.IGatewayEvent
+  - Remora.Discord.API.Abstractions.Gateway.IGatewayPayloadData
+  - System.IEquatable{Remora.Discord.API.Gateway.Bidirectional.Heartbeat}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Gateway.Bidirectional.Heartbeat.#ctor(System.Nullable{System.Int64})
+  commentId: M:Remora.Discord.API.Gateway.Bidirectional.Heartbeat.#ctor(System.Nullable{System.Int64})
+  id: '#ctor(System.Nullable{System.Int64})'
+  parent: Remora.Discord.API.Gateway.Bidirectional.Heartbeat
+  langs:
+  - csharp
+  - vb
+  name: Heartbeat(long?)
+  nameWithType: Heartbeat.Heartbeat(long?)
+  fullName: Remora.Discord.API.Gateway.Bidirectional.Heartbeat.Heartbeat(long?)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Bidirectional\Heartbeat.cs
+    startLine: 32
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Bidirectional
+  summary: Represents a heartbeat command to or from Discord.
+  example: []
+  syntax:
+    content: public Heartbeat(long? LastSequenceNumber)
+    parameters:
+    - id: LastSequenceNumber
+      type: System.Nullable{System.Int64}
+    content.vb: Public Sub New(LastSequenceNumber As Long?)
+  overload: Remora.Discord.API.Gateway.Bidirectional.Heartbeat.#ctor*
+  nameWithType.vb: Heartbeat.New(Long?)
+  fullName.vb: Remora.Discord.API.Gateway.Bidirectional.Heartbeat.New(Long?)
+  name.vb: New(Long?)
+- uid: Remora.Discord.API.Gateway.Bidirectional.Heartbeat.LastSequenceNumber
+  commentId: P:Remora.Discord.API.Gateway.Bidirectional.Heartbeat.LastSequenceNumber
+  id: LastSequenceNumber
+  parent: Remora.Discord.API.Gateway.Bidirectional.Heartbeat
+  langs:
+  - csharp
+  - vb
+  name: LastSequenceNumber
+  nameWithType: Heartbeat.LastSequenceNumber
+  fullName: Remora.Discord.API.Gateway.Bidirectional.Heartbeat.LastSequenceNumber
+  type: Property
+  source:
+    id: LastSequenceNumber
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Bidirectional\Heartbeat.cs
+    startLine: 33
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Bidirectional
+  summary: Gets the last sequence number received by the client.
+  example: []
+  syntax:
+    content: public long? LastSequenceNumber { get; init; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int64}
+    content.vb: Public Property LastSequenceNumber As Long?
+  overload: Remora.Discord.API.Gateway.Bidirectional.Heartbeat.LastSequenceNumber*
+  implements:
+  - Remora.Discord.API.Abstractions.Gateway.Bidirectional.IHeartbeat.LastSequenceNumber
+references:
+- uid: Remora.Discord.API.Gateway.Bidirectional
+  commentId: N:Remora.Discord.API.Gateway.Bidirectional
+  href: Remora.html
+  name: Remora.Discord.API.Gateway.Bidirectional
+  nameWithType: Remora.Discord.API.Gateway.Bidirectional
+  fullName: Remora.Discord.API.Gateway.Bidirectional
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Gateway.Bidirectional
+    name: Bidirectional
+    href: Remora.Discord.API.Gateway.Bidirectional.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Gateway.Bidirectional
+    name: Bidirectional
+    href: Remora.Discord.API.Gateway.Bidirectional.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Remora.Discord.API.Abstractions.Gateway.Bidirectional.IHeartbeat
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.Bidirectional.IHeartbeat
+  parent: Remora.Discord.API.Abstractions.Gateway.Bidirectional
+  href: Remora.Discord.API.Abstractions.Gateway.Bidirectional.IHeartbeat.html
+  name: IHeartbeat
+  nameWithType: IHeartbeat
+  fullName: Remora.Discord.API.Abstractions.Gateway.Bidirectional.IHeartbeat
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IGatewayCommand
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.Commands.IGatewayCommand
+  parent: Remora.Discord.API.Abstractions.Gateway.Commands
+  href: Remora.Discord.API.Abstractions.Gateway.Commands.IGatewayCommand.html
+  name: IGatewayCommand
+  nameWithType: IGatewayCommand
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IGatewayCommand
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IGatewayEvent
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.Events.IGatewayEvent
+  parent: Remora.Discord.API.Abstractions.Gateway.Events
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IGatewayEvent.html
+  name: IGatewayEvent
+  nameWithType: IGatewayEvent
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IGatewayEvent
+- uid: Remora.Discord.API.Abstractions.Gateway.IGatewayPayloadData
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.IGatewayPayloadData
+  parent: Remora.Discord.API.Abstractions.Gateway
+  href: Remora.Discord.API.Abstractions.Gateway.IGatewayPayloadData.html
+  name: IGatewayPayloadData
+  nameWithType: IGatewayPayloadData
+  fullName: Remora.Discord.API.Abstractions.Gateway.IGatewayPayloadData
+- uid: System.IEquatable{Remora.Discord.API.Gateway.Bidirectional.Heartbeat}
+  commentId: T:System.IEquatable{Remora.Discord.API.Gateway.Bidirectional.Heartbeat}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<Heartbeat>
+  nameWithType: IEquatable<Heartbeat>
+  fullName: System.IEquatable<Remora.Discord.API.Gateway.Bidirectional.Heartbeat>
+  nameWithType.vb: IEquatable(Of Heartbeat)
+  fullName.vb: System.IEquatable(Of Remora.Discord.API.Gateway.Bidirectional.Heartbeat)
+  name.vb: IEquatable(Of Heartbeat)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Remora.Discord.API.Gateway.Bidirectional.Heartbeat
+    name: Heartbeat
+    href: Remora.Discord.API.Gateway.Bidirectional.Heartbeat.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Gateway.Bidirectional.Heartbeat
+    name: Heartbeat
+    href: Remora.Discord.API.Gateway.Bidirectional.Heartbeat.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.API.Abstractions.Gateway.Bidirectional
+  commentId: N:Remora.Discord.API.Abstractions.Gateway.Bidirectional
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Gateway.Bidirectional
+  nameWithType: Remora.Discord.API.Abstractions.Gateway.Bidirectional
+  fullName: Remora.Discord.API.Abstractions.Gateway.Bidirectional
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway.Bidirectional
+    name: Bidirectional
+    href: Remora.Discord.API.Abstractions.Gateway.Bidirectional.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway.Bidirectional
+    name: Bidirectional
+    href: Remora.Discord.API.Abstractions.Gateway.Bidirectional.html
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands
+  commentId: N:Remora.Discord.API.Abstractions.Gateway.Commands
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Gateway.Commands
+  nameWithType: Remora.Discord.API.Abstractions.Gateway.Commands
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway.Commands
+    name: Commands
+    href: Remora.Discord.API.Abstractions.Gateway.Commands.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway.Commands
+    name: Commands
+    href: Remora.Discord.API.Abstractions.Gateway.Commands.html
+- uid: Remora.Discord.API.Abstractions.Gateway.Events
+  commentId: N:Remora.Discord.API.Abstractions.Gateway.Events
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Gateway.Events
+  nameWithType: Remora.Discord.API.Abstractions.Gateway.Events
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events
+    name: Events
+    href: Remora.Discord.API.Abstractions.Gateway.Events.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events
+    name: Events
+    href: Remora.Discord.API.Abstractions.Gateway.Events.html
+- uid: Remora.Discord.API.Abstractions.Gateway
+  commentId: N:Remora.Discord.API.Abstractions.Gateway
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Gateway
+  nameWithType: Remora.Discord.API.Abstractions.Gateway
+  fullName: Remora.Discord.API.Abstractions.Gateway
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Remora.Discord.API.Gateway.Bidirectional.Heartbeat.#ctor*
+  commentId: Overload:Remora.Discord.API.Gateway.Bidirectional.Heartbeat.#ctor
+  href: Remora.Discord.API.Gateway.Bidirectional.Heartbeat.html#Remora_Discord_API_Gateway_Bidirectional_Heartbeat__ctor_System_Nullable_System_Int64__
+  name: Heartbeat
+  nameWithType: Heartbeat.Heartbeat
+  fullName: Remora.Discord.API.Gateway.Bidirectional.Heartbeat.Heartbeat
+  nameWithType.vb: Heartbeat.New
+  fullName.vb: Remora.Discord.API.Gateway.Bidirectional.Heartbeat.New
+  name.vb: New
+- uid: System.Nullable{System.Int64}
+  commentId: T:System.Nullable{System.Int64}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long?
+  nameWithType: long?
+  fullName: long?
+  nameWithType.vb: Long?
+  fullName.vb: Long?
+  name.vb: Long?
+  spec.csharp:
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: '?'
+  spec.vb:
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Remora.Discord.API.Gateway.Bidirectional.Heartbeat.LastSequenceNumber*
+  commentId: Overload:Remora.Discord.API.Gateway.Bidirectional.Heartbeat.LastSequenceNumber
+  href: Remora.Discord.API.Gateway.Bidirectional.Heartbeat.html#Remora_Discord_API_Gateway_Bidirectional_Heartbeat_LastSequenceNumber
+  name: LastSequenceNumber
+  nameWithType: Heartbeat.LastSequenceNumber
+  fullName: Remora.Discord.API.Gateway.Bidirectional.Heartbeat.LastSequenceNumber
+- uid: Remora.Discord.API.Abstractions.Gateway.Bidirectional.IHeartbeat.LastSequenceNumber
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Bidirectional.IHeartbeat.LastSequenceNumber
+  parent: Remora.Discord.API.Abstractions.Gateway.Bidirectional.IHeartbeat
+  href: Remora.Discord.API.Abstractions.Gateway.Bidirectional.IHeartbeat.html#Remora_Discord_API_Abstractions_Gateway_Bidirectional_IHeartbeat_LastSequenceNumber
+  name: LastSequenceNumber
+  nameWithType: IHeartbeat.LastSequenceNumber
+  fullName: Remora.Discord.API.Abstractions.Gateway.Bidirectional.IHeartbeat.LastSequenceNumber

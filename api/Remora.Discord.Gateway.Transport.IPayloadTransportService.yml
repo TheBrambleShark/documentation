@@ -1,0 +1,679 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.Gateway.Transport.IPayloadTransportService
+  commentId: T:Remora.Discord.Gateway.Transport.IPayloadTransportService
+  id: IPayloadTransportService
+  parent: Remora.Discord.Gateway.Transport
+  children:
+  - Remora.Discord.Gateway.Transport.IPayloadTransportService.ConnectAsync(System.Uri,System.Threading.CancellationToken)
+  - Remora.Discord.Gateway.Transport.IPayloadTransportService.DisconnectAsync(System.Boolean,System.Threading.CancellationToken)
+  - Remora.Discord.Gateway.Transport.IPayloadTransportService.IsConnected
+  - Remora.Discord.Gateway.Transport.IPayloadTransportService.ReceivePayloadAsync(System.Threading.CancellationToken)
+  - Remora.Discord.Gateway.Transport.IPayloadTransportService.SendPayloadAsync(Remora.Discord.API.Abstractions.Gateway.IPayload,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IPayloadTransportService
+  nameWithType: IPayloadTransportService
+  fullName: Remora.Discord.Gateway.Transport.IPayloadTransportService
+  type: Interface
+  source:
+    id: IPayloadTransportService
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Gateway\Transport\IPayloadTransportService.cs
+    startLine: 43
+  assemblies:
+  - Remora.Discord.Gateway
+  namespace: Remora.Discord.Gateway.Transport
+  summary: Represents an arbitrary transport service for <xref href="Remora.Discord.API.Abstractions.Gateway.IPayload" data-throw-if-not-resolved="false"></xref> instances.
+  remarks: >-
+    This interface defines the public API surface for a type that the gateway client can use to send and receive
+
+    payloads from the Discord gateway. It is not specifically concerned with the actual protocol used underneath the
+
+    hood, and instead only presents abstract I/O operations.
+
+
+    Some assumptions are made in regards to endpoints and availability of operations (one is expected to be able to
+
+    connect and disconnect separately from sending and receiving, for example), but generally, it is kept to a
+
+    minimum.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public interface IPayloadTransportService
+    content.vb: >-
+      <PublicAPI>
+
+      Public Interface IPayloadTransportService
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.Gateway.Transport.IPayloadTransportService.IsConnected
+  commentId: P:Remora.Discord.Gateway.Transport.IPayloadTransportService.IsConnected
+  id: IsConnected
+  parent: Remora.Discord.Gateway.Transport.IPayloadTransportService
+  langs:
+  - csharp
+  - vb
+  name: IsConnected
+  nameWithType: IPayloadTransportService.IsConnected
+  fullName: Remora.Discord.Gateway.Transport.IPayloadTransportService.IsConnected
+  type: Property
+  source:
+    id: IsConnected
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Gateway\Transport\IPayloadTransportService.cs
+    startLine: 49
+  assemblies:
+  - Remora.Discord.Gateway
+  namespace: Remora.Discord.Gateway.Transport
+  summary: Gets a value indicating whether the service has successfully connected.
+  example: []
+  syntax:
+    content: bool IsConnected { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsConnected As Boolean
+  overload: Remora.Discord.Gateway.Transport.IPayloadTransportService.IsConnected*
+- uid: Remora.Discord.Gateway.Transport.IPayloadTransportService.ConnectAsync(System.Uri,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Gateway.Transport.IPayloadTransportService.ConnectAsync(System.Uri,System.Threading.CancellationToken)
+  id: ConnectAsync(System.Uri,System.Threading.CancellationToken)
+  parent: Remora.Discord.Gateway.Transport.IPayloadTransportService
+  langs:
+  - csharp
+  - vb
+  name: ConnectAsync(Uri, CancellationToken)
+  nameWithType: IPayloadTransportService.ConnectAsync(Uri, CancellationToken)
+  fullName: Remora.Discord.Gateway.Transport.IPayloadTransportService.ConnectAsync(System.Uri, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: ConnectAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Gateway\Transport\IPayloadTransportService.cs
+    startLine: 57
+  assemblies:
+  - Remora.Discord.Gateway
+  namespace: Remora.Discord.Gateway.Transport
+  summary: Connects to the transport endpoint, enabling I/O operations.
+  example: []
+  syntax:
+    content: Task<Result> ConnectAsync(Uri endpoint, CancellationToken ct = default)
+    parameters:
+    - id: endpoint
+      type: System.Uri
+      description: The endpoint to connect to.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result}
+      description: A connection result which may or may not have succeeded.
+    content.vb: Function ConnectAsync(endpoint As Uri, ct As CancellationToken = Nothing) As Task(Of Result)
+  overload: Remora.Discord.Gateway.Transport.IPayloadTransportService.ConnectAsync*
+- uid: Remora.Discord.Gateway.Transport.IPayloadTransportService.SendPayloadAsync(Remora.Discord.API.Abstractions.Gateway.IPayload,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Gateway.Transport.IPayloadTransportService.SendPayloadAsync(Remora.Discord.API.Abstractions.Gateway.IPayload,System.Threading.CancellationToken)
+  id: SendPayloadAsync(Remora.Discord.API.Abstractions.Gateway.IPayload,System.Threading.CancellationToken)
+  parent: Remora.Discord.Gateway.Transport.IPayloadTransportService
+  langs:
+  - csharp
+  - vb
+  name: SendPayloadAsync(IPayload, CancellationToken)
+  nameWithType: IPayloadTransportService.SendPayloadAsync(IPayload, CancellationToken)
+  fullName: Remora.Discord.Gateway.Transport.IPayloadTransportService.SendPayloadAsync(Remora.Discord.API.Abstractions.Gateway.IPayload, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: SendPayloadAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Gateway\Transport\IPayloadTransportService.cs
+    startLine: 68
+  assemblies:
+  - Remora.Discord.Gateway
+  namespace: Remora.Discord.Gateway.Transport
+  summary: Asynchronously sends a payload.
+  remarks: This method should be thread-safe in conjunction with <xref href="Remora.Discord.Gateway.Transport.IPayloadTransportService.ReceivePayloadAsync(System.Threading.CancellationToken)" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: ValueTask<Result> SendPayloadAsync(IPayload payload, CancellationToken ct = default)
+    parameters:
+    - id: payload
+      type: Remora.Discord.API.Abstractions.Gateway.IPayload
+      description: The payload.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.ValueTask{Remora.Results.Result}
+      description: A send result which may or may not have succeeded.
+    content.vb: Function SendPayloadAsync(payload As IPayload, ct As CancellationToken = Nothing) As ValueTask(Of Result)
+  overload: Remora.Discord.Gateway.Transport.IPayloadTransportService.SendPayloadAsync*
+- uid: Remora.Discord.Gateway.Transport.IPayloadTransportService.ReceivePayloadAsync(System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Gateway.Transport.IPayloadTransportService.ReceivePayloadAsync(System.Threading.CancellationToken)
+  id: ReceivePayloadAsync(System.Threading.CancellationToken)
+  parent: Remora.Discord.Gateway.Transport.IPayloadTransportService
+  langs:
+  - csharp
+  - vb
+  name: ReceivePayloadAsync(CancellationToken)
+  nameWithType: IPayloadTransportService.ReceivePayloadAsync(CancellationToken)
+  fullName: Remora.Discord.Gateway.Transport.IPayloadTransportService.ReceivePayloadAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: ReceivePayloadAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Gateway\Transport\IPayloadTransportService.cs
+    startLine: 78
+  assemblies:
+  - Remora.Discord.Gateway
+  namespace: Remora.Discord.Gateway.Transport
+  summary: Asynchronously receives a payload.
+  remarks: This method should be thread-safe in conjunction with <xref href="Remora.Discord.Gateway.Transport.IPayloadTransportService.SendPayloadAsync(Remora.Discord.API.Abstractions.Gateway.IPayload%2cSystem.Threading.CancellationToken)" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: ValueTask<Result<IPayload>> ReceivePayloadAsync(CancellationToken ct = default)
+    parameters:
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.ValueTask{Remora.Results.Result{Remora.Discord.API.Abstractions.Gateway.IPayload}}
+      description: A receive result which may or may not have succeeded.
+    content.vb: Function ReceivePayloadAsync(ct As CancellationToken = Nothing) As ValueTask(Of Result(Of IPayload))
+  overload: Remora.Discord.Gateway.Transport.IPayloadTransportService.ReceivePayloadAsync*
+- uid: Remora.Discord.Gateway.Transport.IPayloadTransportService.DisconnectAsync(System.Boolean,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Gateway.Transport.IPayloadTransportService.DisconnectAsync(System.Boolean,System.Threading.CancellationToken)
+  id: DisconnectAsync(System.Boolean,System.Threading.CancellationToken)
+  parent: Remora.Discord.Gateway.Transport.IPayloadTransportService
+  langs:
+  - csharp
+  - vb
+  name: DisconnectAsync(bool, CancellationToken)
+  nameWithType: IPayloadTransportService.DisconnectAsync(bool, CancellationToken)
+  fullName: Remora.Discord.Gateway.Transport.IPayloadTransportService.DisconnectAsync(bool, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: DisconnectAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Gateway\Transport\IPayloadTransportService.cs
+    startLine: 86
+  assemblies:
+  - Remora.Discord.Gateway
+  namespace: Remora.Discord.Gateway.Transport
+  summary: Disconnects from the transport endpoint.
+  example: []
+  syntax:
+    content: Task<Result> DisconnectAsync(bool reconnectionIntended, CancellationToken ct = default)
+    parameters:
+    - id: reconnectionIntended
+      type: System.Boolean
+      description: Whether reconnection is intended.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result}
+      description: A connection result which may or may not have succeeded.
+    content.vb: Function DisconnectAsync(reconnectionIntended As Boolean, ct As CancellationToken = Nothing) As Task(Of Result)
+  overload: Remora.Discord.Gateway.Transport.IPayloadTransportService.DisconnectAsync*
+  nameWithType.vb: IPayloadTransportService.DisconnectAsync(Boolean, CancellationToken)
+  fullName.vb: Remora.Discord.Gateway.Transport.IPayloadTransportService.DisconnectAsync(Boolean, System.Threading.CancellationToken)
+  name.vb: DisconnectAsync(Boolean, CancellationToken)
+references:
+- uid: Remora.Discord.API.Abstractions.Gateway.IPayload
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.IPayload
+  parent: Remora.Discord.API.Abstractions.Gateway
+  href: Remora.Discord.API.Abstractions.Gateway.IPayload.html
+  name: IPayload
+  nameWithType: IPayload
+  fullName: Remora.Discord.API.Abstractions.Gateway.IPayload
+- uid: Remora.Discord.Gateway.Transport
+  commentId: N:Remora.Discord.Gateway.Transport
+  href: Remora.html
+  name: Remora.Discord.Gateway.Transport
+  nameWithType: Remora.Discord.Gateway.Transport
+  fullName: Remora.Discord.Gateway.Transport
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Gateway
+    name: Gateway
+    href: Remora.Discord.Gateway.html
+  - name: .
+  - uid: Remora.Discord.Gateway.Transport
+    name: Transport
+    href: Remora.Discord.Gateway.Transport.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Gateway
+    name: Gateway
+    href: Remora.Discord.Gateway.html
+  - name: .
+  - uid: Remora.Discord.Gateway.Transport
+    name: Transport
+    href: Remora.Discord.Gateway.Transport.html
+- uid: Remora.Discord.API.Abstractions.Gateway
+  commentId: N:Remora.Discord.API.Abstractions.Gateway
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Gateway
+  nameWithType: Remora.Discord.API.Abstractions.Gateway
+  fullName: Remora.Discord.API.Abstractions.Gateway
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+- uid: Remora.Discord.Gateway.Transport.IPayloadTransportService.IsConnected*
+  commentId: Overload:Remora.Discord.Gateway.Transport.IPayloadTransportService.IsConnected
+  href: Remora.Discord.Gateway.Transport.IPayloadTransportService.html#Remora_Discord_Gateway_Transport_IPayloadTransportService_IsConnected
+  name: IsConnected
+  nameWithType: IPayloadTransportService.IsConnected
+  fullName: Remora.Discord.Gateway.Transport.IPayloadTransportService.IsConnected
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.Gateway.Transport.IPayloadTransportService.ConnectAsync*
+  commentId: Overload:Remora.Discord.Gateway.Transport.IPayloadTransportService.ConnectAsync
+  href: Remora.Discord.Gateway.Transport.IPayloadTransportService.html#Remora_Discord_Gateway_Transport_IPayloadTransportService_ConnectAsync_System_Uri_System_Threading_CancellationToken_
+  name: ConnectAsync
+  nameWithType: IPayloadTransportService.ConnectAsync
+  fullName: Remora.Discord.Gateway.Transport.IPayloadTransportService.ConnectAsync
+- uid: System.Uri
+  commentId: T:System.Uri
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uri
+  name: Uri
+  nameWithType: Uri
+  fullName: System.Uri
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Remora.Results.Result}
+  commentId: T:System.Threading.Tasks.Task{Remora.Results.Result}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Result>
+  nameWithType: Task<Result>
+  fullName: System.Threading.Tasks.Task<Remora.Results.Result>
+  nameWithType.vb: Task(Of Result)
+  fullName.vb: System.Threading.Tasks.Task(Of Remora.Results.Result)
+  name.vb: Task(Of Result)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Remora.Results.Result
+    name: Result
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Results.Result
+    name: Result
+    isExternal: true
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Remora.Discord.Gateway.Transport.IPayloadTransportService.ReceivePayloadAsync(System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Gateway.Transport.IPayloadTransportService.ReceivePayloadAsync(System.Threading.CancellationToken)
+  parent: Remora.Discord.Gateway.Transport.IPayloadTransportService
+  isExternal: true
+  href: Remora.Discord.Gateway.Transport.IPayloadTransportService.html#Remora_Discord_Gateway_Transport_IPayloadTransportService_ReceivePayloadAsync_System_Threading_CancellationToken_
+  name: ReceivePayloadAsync(CancellationToken)
+  nameWithType: IPayloadTransportService.ReceivePayloadAsync(CancellationToken)
+  fullName: Remora.Discord.Gateway.Transport.IPayloadTransportService.ReceivePayloadAsync(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Remora.Discord.Gateway.Transport.IPayloadTransportService.ReceivePayloadAsync(System.Threading.CancellationToken)
+    name: ReceivePayloadAsync
+    href: Remora.Discord.Gateway.Transport.IPayloadTransportService.html#Remora_Discord_Gateway_Transport_IPayloadTransportService_ReceivePayloadAsync_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Gateway.Transport.IPayloadTransportService.ReceivePayloadAsync(System.Threading.CancellationToken)
+    name: ReceivePayloadAsync
+    href: Remora.Discord.Gateway.Transport.IPayloadTransportService.html#Remora_Discord_Gateway_Transport_IPayloadTransportService_ReceivePayloadAsync_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Remora.Discord.Gateway.Transport.IPayloadTransportService.SendPayloadAsync*
+  commentId: Overload:Remora.Discord.Gateway.Transport.IPayloadTransportService.SendPayloadAsync
+  href: Remora.Discord.Gateway.Transport.IPayloadTransportService.html#Remora_Discord_Gateway_Transport_IPayloadTransportService_SendPayloadAsync_Remora_Discord_API_Abstractions_Gateway_IPayload_System_Threading_CancellationToken_
+  name: SendPayloadAsync
+  nameWithType: IPayloadTransportService.SendPayloadAsync
+  fullName: Remora.Discord.Gateway.Transport.IPayloadTransportService.SendPayloadAsync
+- uid: System.Threading.Tasks.ValueTask{Remora.Results.Result}
+  commentId: T:System.Threading.Tasks.ValueTask{Remora.Results.Result}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.ValueTask`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  name: ValueTask<Result>
+  nameWithType: ValueTask<Result>
+  fullName: System.Threading.Tasks.ValueTask<Remora.Results.Result>
+  nameWithType.vb: ValueTask(Of Result)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of Remora.Results.Result)
+  name.vb: ValueTask(Of Result)
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - uid: Remora.Results.Result
+    name: Result
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Results.Result
+    name: Result
+    isExternal: true
+  - name: )
+- uid: Remora.Discord.Gateway.Transport.IPayloadTransportService
+  commentId: T:Remora.Discord.Gateway.Transport.IPayloadTransportService
+  parent: Remora.Discord.Gateway.Transport
+  href: Remora.Discord.Gateway.Transport.IPayloadTransportService.html
+  name: IPayloadTransportService
+  nameWithType: IPayloadTransportService
+  fullName: Remora.Discord.Gateway.Transport.IPayloadTransportService
+- uid: System.Threading.Tasks.ValueTask`1
+  commentId: T:System.Threading.Tasks.ValueTask`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  name: ValueTask<TResult>
+  nameWithType: ValueTask<TResult>
+  fullName: System.Threading.Tasks.ValueTask<TResult>
+  nameWithType.vb: ValueTask(Of TResult)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult)
+  name.vb: ValueTask(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Remora.Discord.Gateway.Transport.IPayloadTransportService.SendPayloadAsync(Remora.Discord.API.Abstractions.Gateway.IPayload,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Gateway.Transport.IPayloadTransportService.SendPayloadAsync(Remora.Discord.API.Abstractions.Gateway.IPayload,System.Threading.CancellationToken)
+  parent: Remora.Discord.Gateway.Transport.IPayloadTransportService
+  isExternal: true
+  href: Remora.Discord.Gateway.Transport.IPayloadTransportService.html#Remora_Discord_Gateway_Transport_IPayloadTransportService_SendPayloadAsync_Remora_Discord_API_Abstractions_Gateway_IPayload_System_Threading_CancellationToken_
+  name: SendPayloadAsync(IPayload, CancellationToken)
+  nameWithType: IPayloadTransportService.SendPayloadAsync(IPayload, CancellationToken)
+  fullName: Remora.Discord.Gateway.Transport.IPayloadTransportService.SendPayloadAsync(Remora.Discord.API.Abstractions.Gateway.IPayload, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Remora.Discord.Gateway.Transport.IPayloadTransportService.SendPayloadAsync(Remora.Discord.API.Abstractions.Gateway.IPayload,System.Threading.CancellationToken)
+    name: SendPayloadAsync
+    href: Remora.Discord.Gateway.Transport.IPayloadTransportService.html#Remora_Discord_Gateway_Transport_IPayloadTransportService_SendPayloadAsync_Remora_Discord_API_Abstractions_Gateway_IPayload_System_Threading_CancellationToken_
+  - name: (
+  - uid: Remora.Discord.API.Abstractions.Gateway.IPayload
+    name: IPayload
+    href: Remora.Discord.API.Abstractions.Gateway.IPayload.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Gateway.Transport.IPayloadTransportService.SendPayloadAsync(Remora.Discord.API.Abstractions.Gateway.IPayload,System.Threading.CancellationToken)
+    name: SendPayloadAsync
+    href: Remora.Discord.Gateway.Transport.IPayloadTransportService.html#Remora_Discord_Gateway_Transport_IPayloadTransportService_SendPayloadAsync_Remora_Discord_API_Abstractions_Gateway_IPayload_System_Threading_CancellationToken_
+  - name: (
+  - uid: Remora.Discord.API.Abstractions.Gateway.IPayload
+    name: IPayload
+    href: Remora.Discord.API.Abstractions.Gateway.IPayload.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Remora.Discord.Gateway.Transport.IPayloadTransportService.ReceivePayloadAsync*
+  commentId: Overload:Remora.Discord.Gateway.Transport.IPayloadTransportService.ReceivePayloadAsync
+  href: Remora.Discord.Gateway.Transport.IPayloadTransportService.html#Remora_Discord_Gateway_Transport_IPayloadTransportService_ReceivePayloadAsync_System_Threading_CancellationToken_
+  name: ReceivePayloadAsync
+  nameWithType: IPayloadTransportService.ReceivePayloadAsync
+  fullName: Remora.Discord.Gateway.Transport.IPayloadTransportService.ReceivePayloadAsync
+- uid: System.Threading.Tasks.ValueTask{Remora.Results.Result{Remora.Discord.API.Abstractions.Gateway.IPayload}}
+  commentId: T:System.Threading.Tasks.ValueTask{Remora.Results.Result{Remora.Discord.API.Abstractions.Gateway.IPayload}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.ValueTask`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  name: ValueTask<Result<IPayload>>
+  nameWithType: ValueTask<Result<IPayload>>
+  fullName: System.Threading.Tasks.ValueTask<Remora.Results.Result<Remora.Discord.API.Abstractions.Gateway.IPayload>>
+  nameWithType.vb: ValueTask(Of Result(Of IPayload))
+  fullName.vb: System.Threading.Tasks.ValueTask(Of Remora.Results.Result(Of Remora.Discord.API.Abstractions.Gateway.IPayload))
+  name.vb: ValueTask(Of Result(Of IPayload))
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - uid: Remora.Results.Result`1
+    name: Result
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Gateway.IPayload
+    name: IPayload
+    href: Remora.Discord.API.Abstractions.Gateway.IPayload.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Results.Result`1
+    name: Result
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Gateway.IPayload
+    name: IPayload
+    href: Remora.Discord.API.Abstractions.Gateway.IPayload.html
+  - name: )
+  - name: )
+- uid: Remora.Discord.Gateway.Transport.IPayloadTransportService.DisconnectAsync*
+  commentId: Overload:Remora.Discord.Gateway.Transport.IPayloadTransportService.DisconnectAsync
+  href: Remora.Discord.Gateway.Transport.IPayloadTransportService.html#Remora_Discord_Gateway_Transport_IPayloadTransportService_DisconnectAsync_System_Boolean_System_Threading_CancellationToken_
+  name: DisconnectAsync
+  nameWithType: IPayloadTransportService.DisconnectAsync
+  fullName: Remora.Discord.Gateway.Transport.IPayloadTransportService.DisconnectAsync

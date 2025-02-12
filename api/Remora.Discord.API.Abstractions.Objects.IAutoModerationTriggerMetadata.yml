@@ -1,0 +1,549 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata
+  id: IAutoModerationTriggerMetadata
+  parent: Remora.Discord.API.Abstractions.Objects
+  children:
+  - Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.AllowList
+  - Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.KeywordFilter
+  - Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.MentionRaidProtectionEnabled
+  - Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.MentionTotalLimit
+  - Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.Presets
+  - Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.RegexPatterns
+  langs:
+  - csharp
+  - vb
+  name: IAutoModerationTriggerMetadata
+  nameWithType: IAutoModerationTriggerMetadata
+  fullName: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata
+  type: Interface
+  source:
+    id: IAutoModerationTriggerMetadata
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\AutoModeration\IAutoModerationTriggerMetadata.cs
+    startLine: 32
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: >-
+    Additional data used to determine whether a rule should be triggered. Different fields are relevant based
+
+    on the value of <xref href="Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public interface IAutoModerationTriggerMetadata
+    content.vb: >-
+      <PublicAPI>
+
+      Public Interface IAutoModerationTriggerMetadata
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.KeywordFilter
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.KeywordFilter
+  id: KeywordFilter
+  parent: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata
+  langs:
+  - csharp
+  - vb
+  name: KeywordFilter
+  nameWithType: IAutoModerationTriggerMetadata.KeywordFilter
+  fullName: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.KeywordFilter
+  type: Property
+  source:
+    id: KeywordFilter
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\AutoModeration\IAutoModerationTriggerMetadata.cs
+    startLine: 42
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets substrings which will be searched for in content.
+  remarks: >-
+    This property's associated trigger type is <xref href="Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType.Keyword" data-throw-if-not-resolved="false"></xref>.
+
+    Max 1000 elements.
+  example: []
+  syntax:
+    content: Optional<IReadOnlyList<string>> KeywordFilter { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{System.String}}
+    content.vb: ReadOnly Property KeywordFilter As [Optional](Of IReadOnlyList(Of String))
+  overload: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.KeywordFilter*
+- uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.RegexPatterns
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.RegexPatterns
+  id: RegexPatterns
+  parent: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata
+  langs:
+  - csharp
+  - vb
+  name: RegexPatterns
+  nameWithType: IAutoModerationTriggerMetadata.RegexPatterns
+  fullName: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.RegexPatterns
+  type: Property
+  source:
+    id: RegexPatterns
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\AutoModeration\IAutoModerationTriggerMetadata.cs
+    startLine: 52
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets regular expression patterns which will be matched against the content.
+  remarks: >-
+    This property's associated trigger type is <xref href="Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType.Keyword" data-throw-if-not-resolved="false"></xref>.
+
+    Only Rust-flavoured regex is supported.
+
+    Max 10 elements.
+  example: []
+  syntax:
+    content: Optional<IReadOnlyList<string>> RegexPatterns { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{System.String}}
+    content.vb: ReadOnly Property RegexPatterns As [Optional](Of IReadOnlyList(Of String))
+  overload: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.RegexPatterns*
+- uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.Presets
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.Presets
+  id: Presets
+  parent: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata
+  langs:
+  - csharp
+  - vb
+  name: Presets
+  nameWithType: IAutoModerationTriggerMetadata.Presets
+  fullName: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.Presets
+  type: Property
+  source:
+    id: Presets
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\AutoModeration\IAutoModerationTriggerMetadata.cs
+    startLine: 60
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the internally pre-defined word sets which will be searched for in content.
+  remarks: This property's associated trigger type is <xref href="Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType.KeywordPreset" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: Optional<IReadOnlyList<AutoModerationKeywordPresetType>> Presets { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.AutoModerationKeywordPresetType}}
+    content.vb: ReadOnly Property Presets As [Optional](Of IReadOnlyList(Of AutoModerationKeywordPresetType))
+  overload: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.Presets*
+- uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.AllowList
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.AllowList
+  id: AllowList
+  parent: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata
+  langs:
+  - csharp
+  - vb
+  name: AllowList
+  nameWithType: IAutoModerationTriggerMetadata.AllowList
+  fullName: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.AllowList
+  type: Property
+  source:
+    id: AllowList
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\AutoModeration\IAutoModerationTriggerMetadata.cs
+    startLine: 70
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets substrings which will be exempt from triggering the preset trigger type.
+  remarks: >-
+    This property's associated trigger types are <xref href="Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType.Keyword" data-throw-if-not-resolved="false"></xref> and
+
+    <xref href="Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType.KeywordPreset" data-throw-if-not-resolved="false"></xref>.
+
+    Max 1000 elements.
+  example: []
+  syntax:
+    content: Optional<IReadOnlyList<string>> AllowList { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{System.String}}
+    content.vb: ReadOnly Property AllowList As [Optional](Of IReadOnlyList(Of String))
+  overload: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.AllowList*
+- uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.MentionTotalLimit
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.MentionTotalLimit
+  id: MentionTotalLimit
+  parent: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata
+  langs:
+  - csharp
+  - vb
+  name: MentionTotalLimit
+  nameWithType: IAutoModerationTriggerMetadata.MentionTotalLimit
+  fullName: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.MentionTotalLimit
+  type: Property
+  source:
+    id: MentionTotalLimit
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\AutoModeration\IAutoModerationTriggerMetadata.cs
+    startLine: 79
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the total number of unique allowed user and role mentions per message.
+  remarks: >-
+    This property's associated trigger type is <xref href="Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType.MentionSpam" data-throw-if-not-resolved="false"></xref>.
+
+    Max 50.
+  example: []
+  syntax:
+    content: Optional<byte> MentionTotalLimit { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Byte}
+    content.vb: ReadOnly Property MentionTotalLimit As [Optional](Of Byte)
+  overload: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.MentionTotalLimit*
+- uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.MentionRaidProtectionEnabled
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.MentionRaidProtectionEnabled
+  id: MentionRaidProtectionEnabled
+  parent: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata
+  langs:
+  - csharp
+  - vb
+  name: MentionRaidProtectionEnabled
+  nameWithType: IAutoModerationTriggerMetadata.MentionRaidProtectionEnabled
+  fullName: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.MentionRaidProtectionEnabled
+  type: Property
+  source:
+    id: MentionRaidProtectionEnabled
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\AutoModeration\IAutoModerationTriggerMetadata.cs
+    startLine: 84
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets a value indicating whether to automatically detect mention raids.
+  example: []
+  syntax:
+    content: Optional<bool> MentionRaidProtectionEnabled { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Boolean}
+    content.vb: ReadOnly Property MentionRaidProtectionEnabled As [Optional](Of Boolean)
+  overload: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.MentionRaidProtectionEnabled*
+references:
+- uid: Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType
+  commentId: T:Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType.html
+  name: AutoModerationTriggerType
+  nameWithType: AutoModerationTriggerType
+  fullName: Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType
+- uid: Remora.Discord.API.Abstractions.Objects
+  commentId: N:Remora.Discord.API.Abstractions.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Objects
+  nameWithType: Remora.Discord.API.Abstractions.Objects
+  fullName: Remora.Discord.API.Abstractions.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+- uid: Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType.Keyword
+  commentId: F:Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType.Keyword
+  href: Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType.html#Remora_Discord_API_Abstractions_Objects_AutoModerationTriggerType_Keyword
+  name: Keyword
+  nameWithType: AutoModerationTriggerType.Keyword
+  fullName: Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType.Keyword
+- uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.KeywordFilter*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.KeywordFilter
+  href: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.html#Remora_Discord_API_Abstractions_Objects_IAutoModerationTriggerMetadata_KeywordFilter
+  name: KeywordFilter
+  nameWithType: IAutoModerationTriggerMetadata.KeywordFilter
+  fullName: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.KeywordFilter
+- uid: Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{System.String}}
+  commentId: T:Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{System.String}}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: Optional<IReadOnlyList<string>>
+  nameWithType: Optional<IReadOnlyList<string>>
+  fullName: Remora.Rest.Core.Optional<System.Collections.Generic.IReadOnlyList<string>>
+  nameWithType.vb: Optional(Of IReadOnlyList(Of String))
+  fullName.vb: Remora.Rest.Core.Optional(Of System.Collections.Generic.IReadOnlyList(Of String))
+  name.vb: Optional(Of IReadOnlyList(Of String))
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )
+- uid: Remora.Rest.Core.Optional`1
+  commentId: T:Remora.Rest.Core.Optional`1
+  isExternal: true
+  name: Optional<TValue>
+  nameWithType: Optional<TValue>
+  fullName: Remora.Rest.Core.Optional<TValue>
+  nameWithType.vb: Optional(Of TValue)
+  fullName.vb: Remora.Rest.Core.Optional(Of TValue)
+  name.vb: Optional(Of TValue)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+- uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.RegexPatterns*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.RegexPatterns
+  href: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.html#Remora_Discord_API_Abstractions_Objects_IAutoModerationTriggerMetadata_RegexPatterns
+  name: RegexPatterns
+  nameWithType: IAutoModerationTriggerMetadata.RegexPatterns
+  fullName: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.RegexPatterns
+- uid: Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType.KeywordPreset
+  commentId: F:Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType.KeywordPreset
+  href: Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType.html#Remora_Discord_API_Abstractions_Objects_AutoModerationTriggerType_KeywordPreset
+  name: KeywordPreset
+  nameWithType: AutoModerationTriggerType.KeywordPreset
+  fullName: Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType.KeywordPreset
+- uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.Presets*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.Presets
+  href: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.html#Remora_Discord_API_Abstractions_Objects_IAutoModerationTriggerMetadata_Presets
+  name: Presets
+  nameWithType: IAutoModerationTriggerMetadata.Presets
+  fullName: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.Presets
+- uid: Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.AutoModerationKeywordPresetType}}
+  commentId: T:Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.AutoModerationKeywordPresetType}}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: Optional<IReadOnlyList<AutoModerationKeywordPresetType>>
+  nameWithType: Optional<IReadOnlyList<AutoModerationKeywordPresetType>>
+  fullName: Remora.Rest.Core.Optional<System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.AutoModerationKeywordPresetType>>
+  nameWithType.vb: Optional(Of IReadOnlyList(Of AutoModerationKeywordPresetType))
+  fullName.vb: Remora.Rest.Core.Optional(Of System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.AutoModerationKeywordPresetType))
+  name.vb: Optional(Of IReadOnlyList(Of AutoModerationKeywordPresetType))
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.AutoModerationKeywordPresetType
+    name: AutoModerationKeywordPresetType
+    href: Remora.Discord.API.Abstractions.Objects.AutoModerationKeywordPresetType.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.AutoModerationKeywordPresetType
+    name: AutoModerationKeywordPresetType
+    href: Remora.Discord.API.Abstractions.Objects.AutoModerationKeywordPresetType.html
+  - name: )
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.AllowList*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.AllowList
+  href: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.html#Remora_Discord_API_Abstractions_Objects_IAutoModerationTriggerMetadata_AllowList
+  name: AllowList
+  nameWithType: IAutoModerationTriggerMetadata.AllowList
+  fullName: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.AllowList
+- uid: Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType.MentionSpam
+  commentId: F:Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType.MentionSpam
+  href: Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType.html#Remora_Discord_API_Abstractions_Objects_AutoModerationTriggerType_MentionSpam
+  name: MentionSpam
+  nameWithType: AutoModerationTriggerType.MentionSpam
+  fullName: Remora.Discord.API.Abstractions.Objects.AutoModerationTriggerType.MentionSpam
+- uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.MentionTotalLimit*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.MentionTotalLimit
+  href: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.html#Remora_Discord_API_Abstractions_Objects_IAutoModerationTriggerMetadata_MentionTotalLimit
+  name: MentionTotalLimit
+  nameWithType: IAutoModerationTriggerMetadata.MentionTotalLimit
+  fullName: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.MentionTotalLimit
+- uid: Remora.Rest.Core.Optional{System.Byte}
+  commentId: T:Remora.Rest.Core.Optional{System.Byte}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: Optional<byte>
+  nameWithType: Optional<byte>
+  fullName: Remora.Rest.Core.Optional<byte>
+  nameWithType.vb: Optional(Of Byte)
+  fullName.vb: Remora.Rest.Core.Optional(Of Byte)
+  name.vb: Optional(Of Byte)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.MentionRaidProtectionEnabled*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.MentionRaidProtectionEnabled
+  href: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.html#Remora_Discord_API_Abstractions_Objects_IAutoModerationTriggerMetadata_MentionRaidProtectionEnabled
+  name: MentionRaidProtectionEnabled
+  nameWithType: IAutoModerationTriggerMetadata.MentionRaidProtectionEnabled
+  fullName: Remora.Discord.API.Abstractions.Objects.IAutoModerationTriggerMetadata.MentionRaidProtectionEnabled
+- uid: Remora.Rest.Core.Optional{System.Boolean}
+  commentId: T:Remora.Rest.Core.Optional{System.Boolean}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: Optional<bool>
+  nameWithType: Optional<bool>
+  fullName: Remora.Rest.Core.Optional<bool>
+  nameWithType.vb: Optional(Of Boolean)
+  fullName.vb: Remora.Rest.Core.Optional(Of Boolean)
+  name.vb: Optional(Of Boolean)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )

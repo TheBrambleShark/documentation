@@ -1,0 +1,67 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "src": "src",
+          "files": [
+            "**/*.csproj",
+            "**/*.msbuildproj"
+          ],
+          "exclude": [
+            "**/test/**",
+            "**/tests/**",
+            "**/docfx/**"
+          ]
+        }
+      ],
+      "dest": "api/"
+    }
+  ],
+  "build": {
+    "xrefService": "https://xref.docs.microsoft.com/query?uid={uid}",
+    "content": [
+      {
+        "files": [
+          "index.md",
+          "toc.yml"
+        ]
+      },
+      {
+        "files": [
+          "docs/**/*.{md,yml}"
+        ]
+      },
+      {
+        "files": [
+          "api/**/*.{md,yml}"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**",
+          "docs/**/images/**"
+        ]
+      }
+    ],
+    "output": "_site",
+    "template": [
+      "default",
+      "templates/discordfx/discordfx",
+      "templates/shortanchor/templates",
+      "templates/remora"
+    ],
+    "globalMetadata": {
+      "_appName": "Remora Documentation",
+      "_appTitle": "Remora Documentation",
+      "_enableSearch": true,
+      "pdf": true
+    },
+    "markdownEngineProperties": {
+      "markdigExtensions": [
+      ]
+    }
+  }
+}

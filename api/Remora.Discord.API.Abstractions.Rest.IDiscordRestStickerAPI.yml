@@ -1,0 +1,821 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI
+  commentId: T:Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI
+  id: IDiscordRestStickerAPI
+  parent: Remora.Discord.API.Abstractions.Rest
+  children:
+  - Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.CreateGuildStickerAsync(Remora.Rest.Core.Snowflake,System.String,System.String,System.String,Remora.Discord.API.Abstractions.Rest.FileData,Remora.Rest.Core.Optional{System.String},System.Threading.CancellationToken)
+  - Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.DeleteGuildStickerAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{System.String},System.Threading.CancellationToken)
+  - Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.GetGuildStickerAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  - Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.GetStickerAsync(Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  - Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.ListGuildStickersAsync(Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  - Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.ListNitroStickerPacksAsync(System.Threading.CancellationToken)
+  - Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.ModifyGuildStickerAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String},System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IDiscordRestStickerAPI
+  nameWithType: IDiscordRestStickerAPI
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI
+  type: Interface
+  source:
+    id: IDiscordRestStickerAPI
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Rest\IDiscordRestStickerAPI.cs
+    startLine: 35
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Rest
+  summary: Represents the Discord Sticker API.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public interface IDiscordRestStickerAPI
+    content.vb: >-
+      <PublicAPI>
+
+      Public Interface IDiscordRestStickerAPI
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.GetStickerAsync(Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.GetStickerAsync(Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  id: GetStickerAsync(Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  parent: Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI
+  langs:
+  - csharp
+  - vb
+  name: GetStickerAsync(Snowflake, CancellationToken)
+  nameWithType: IDiscordRestStickerAPI.GetStickerAsync(Snowflake, CancellationToken)
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.GetStickerAsync(Remora.Rest.Core.Snowflake, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: GetStickerAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Rest\IDiscordRestStickerAPI.cs
+    startLine: 44
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Rest
+  summary: Gets the sticker for the given ID.
+  example: []
+  syntax:
+    content: Task<Result<ISticker>> GetStickerAsync(Snowflake stickerID, CancellationToken ct = default)
+    parameters:
+    - id: stickerID
+      type: Remora.Rest.Core.Snowflake
+      description: The ID of the sticker.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for the operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.ISticker}}
+      description: A retrieval result which may or may not have succeeded.
+    content.vb: Function GetStickerAsync(stickerID As Snowflake, ct As CancellationToken = Nothing) As Task(Of Result(Of ISticker))
+  overload: Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.GetStickerAsync*
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.ListNitroStickerPacksAsync(System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.ListNitroStickerPacksAsync(System.Threading.CancellationToken)
+  id: ListNitroStickerPacksAsync(System.Threading.CancellationToken)
+  parent: Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI
+  langs:
+  - csharp
+  - vb
+  name: ListNitroStickerPacksAsync(CancellationToken)
+  nameWithType: IDiscordRestStickerAPI.ListNitroStickerPacksAsync(CancellationToken)
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.ListNitroStickerPacksAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: ListNitroStickerPacksAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Rest\IDiscordRestStickerAPI.cs
+    startLine: 51
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Rest
+  summary: Gets a list of sticker packs available to Nitro subscribers.
+  example: []
+  syntax:
+    content: Task<Result<INitroStickerPacks>> ListNitroStickerPacksAsync(CancellationToken ct = default)
+    parameters:
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for the operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.INitroStickerPacks}}
+      description: A retrieval result which may or may not have succeeded.
+    content.vb: Function ListNitroStickerPacksAsync(ct As CancellationToken = Nothing) As Task(Of Result(Of INitroStickerPacks))
+  overload: Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.ListNitroStickerPacksAsync*
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.ListGuildStickersAsync(Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.ListGuildStickersAsync(Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  id: ListGuildStickersAsync(Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  parent: Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI
+  langs:
+  - csharp
+  - vb
+  name: ListGuildStickersAsync(Snowflake, CancellationToken)
+  nameWithType: IDiscordRestStickerAPI.ListGuildStickersAsync(Snowflake, CancellationToken)
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.ListGuildStickersAsync(Remora.Rest.Core.Snowflake, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: ListGuildStickersAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Rest\IDiscordRestStickerAPI.cs
+    startLine: 59
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Rest
+  summary: Gets a list of stickers belonging to the given guild.
+  example: []
+  syntax:
+    content: Task<Result<IReadOnlyList<ISticker>>> ListGuildStickersAsync(Snowflake guildID, CancellationToken ct = default)
+    parameters:
+    - id: guildID
+      type: Remora.Rest.Core.Snowflake
+      description: The ID of the guild.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for the operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.ISticker}}}
+      description: A retrieval result which may or may not have succeeded.
+    content.vb: Function ListGuildStickersAsync(guildID As Snowflake, ct As CancellationToken = Nothing) As Task(Of Result(Of IReadOnlyList(Of ISticker)))
+  overload: Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.ListGuildStickersAsync*
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.GetGuildStickerAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.GetGuildStickerAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  id: GetGuildStickerAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  parent: Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI
+  langs:
+  - csharp
+  - vb
+  name: GetGuildStickerAsync(Snowflake, Snowflake, CancellationToken)
+  nameWithType: IDiscordRestStickerAPI.GetGuildStickerAsync(Snowflake, Snowflake, CancellationToken)
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.GetGuildStickerAsync(Remora.Rest.Core.Snowflake, Remora.Rest.Core.Snowflake, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: GetGuildStickerAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Rest\IDiscordRestStickerAPI.cs
+    startLine: 68
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Rest
+  summary: Gets a specific sticker from a guild.
+  example: []
+  syntax:
+    content: Task<Result<ISticker>> GetGuildStickerAsync(Snowflake guildID, Snowflake stickerID, CancellationToken ct = default)
+    parameters:
+    - id: guildID
+      type: Remora.Rest.Core.Snowflake
+      description: The ID of the guild.
+    - id: stickerID
+      type: Remora.Rest.Core.Snowflake
+      description: The ID of the sticker.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for the operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.ISticker}}
+      description: A retrieval result which may or may not have succeeded.
+    content.vb: Function GetGuildStickerAsync(guildID As Snowflake, stickerID As Snowflake, ct As CancellationToken = Nothing) As Task(Of Result(Of ISticker))
+  overload: Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.GetGuildStickerAsync*
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.CreateGuildStickerAsync(Remora.Rest.Core.Snowflake,System.String,System.String,System.String,Remora.Discord.API.Abstractions.Rest.FileData,Remora.Rest.Core.Optional{System.String},System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.CreateGuildStickerAsync(Remora.Rest.Core.Snowflake,System.String,System.String,System.String,Remora.Discord.API.Abstractions.Rest.FileData,Remora.Rest.Core.Optional{System.String},System.Threading.CancellationToken)
+  id: CreateGuildStickerAsync(Remora.Rest.Core.Snowflake,System.String,System.String,System.String,Remora.Discord.API.Abstractions.Rest.FileData,Remora.Rest.Core.Optional{System.String},System.Threading.CancellationToken)
+  parent: Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI
+  langs:
+  - csharp
+  - vb
+  name: CreateGuildStickerAsync(Snowflake, string, string, string, FileData, Optional<string>, CancellationToken)
+  nameWithType: IDiscordRestStickerAPI.CreateGuildStickerAsync(Snowflake, string, string, string, FileData, Optional<string>, CancellationToken)
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.CreateGuildStickerAsync(Remora.Rest.Core.Snowflake, string, string, string, Remora.Discord.API.Abstractions.Rest.FileData, Remora.Rest.Core.Optional<string>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: CreateGuildStickerAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Rest\IDiscordRestStickerAPI.cs
+    startLine: 92
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Rest
+  summary: Creates a new sticker in the given guild.
+  remarks: >-
+    Any streams passed to this method will be disposed of at the end of the call. If you want to reuse the streams
+
+    afterwards, ensure that what you pass is a copy that the method can take ownership of.
+  example: []
+  syntax:
+    content: Task<Result<ISticker>> CreateGuildStickerAsync(Snowflake guildID, string name, string description, string tags, FileData file, Optional<string> reason = default, CancellationToken ct = default)
+    parameters:
+    - id: guildID
+      type: Remora.Rest.Core.Snowflake
+      description: The ID of the guild.
+    - id: name
+      type: System.String
+      description: The name of the new sticker.
+    - id: description
+      type: System.String
+      description: The description of the new sticker.
+    - id: tags
+      type: System.String
+      description: The tags related to the expression of the sticker. Typically, one would use a single unicode emoji.
+    - id: file
+      type: Remora.Discord.API.Abstractions.Rest.FileData
+      description: The file contents.
+    - id: reason
+      type: Remora.Rest.Core.Optional{System.String}
+      description: The reason to mark the action in the audit log with.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for the operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.ISticker}}
+      description: A creation result which may or may not have succeeded.
+    content.vb: Function CreateGuildStickerAsync(guildID As Snowflake, name As String, description As String, tags As String, file As FileData, reason As [Optional](Of String) = Nothing, ct As CancellationToken = Nothing) As Task(Of Result(Of ISticker))
+  overload: Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.CreateGuildStickerAsync*
+  nameWithType.vb: IDiscordRestStickerAPI.CreateGuildStickerAsync(Snowflake, String, String, String, FileData, Optional(Of String), CancellationToken)
+  fullName.vb: Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.CreateGuildStickerAsync(Remora.Rest.Core.Snowflake, String, String, String, Remora.Discord.API.Abstractions.Rest.FileData, Remora.Rest.Core.Optional(Of String), System.Threading.CancellationToken)
+  name.vb: CreateGuildStickerAsync(Snowflake, String, String, String, FileData, Optional(Of String), CancellationToken)
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.ModifyGuildStickerAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String},System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.ModifyGuildStickerAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String},System.Threading.CancellationToken)
+  id: ModifyGuildStickerAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String},System.Threading.CancellationToken)
+  parent: Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI
+  langs:
+  - csharp
+  - vb
+  name: ModifyGuildStickerAsync(Snowflake, Snowflake, Optional<string>, Optional<string?>, Optional<string>, Optional<string>, CancellationToken)
+  nameWithType: IDiscordRestStickerAPI.ModifyGuildStickerAsync(Snowflake, Snowflake, Optional<string>, Optional<string?>, Optional<string>, Optional<string>, CancellationToken)
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.ModifyGuildStickerAsync(Remora.Rest.Core.Snowflake, Remora.Rest.Core.Snowflake, Remora.Rest.Core.Optional<string>, Remora.Rest.Core.Optional<string?>, Remora.Rest.Core.Optional<string>, Remora.Rest.Core.Optional<string>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: ModifyGuildStickerAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Rest\IDiscordRestStickerAPI.cs
+    startLine: 114
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Rest
+  summary: Modifies the given sticker in the given guild.
+  example: []
+  syntax:
+    content: Task<Result<ISticker>> ModifyGuildStickerAsync(Snowflake guildID, Snowflake stickerID, Optional<string> name = default, Optional<string?> description = default, Optional<string> tags = default, Optional<string> reason = default, CancellationToken ct = default)
+    parameters:
+    - id: guildID
+      type: Remora.Rest.Core.Snowflake
+      description: The ID of the guild.
+    - id: stickerID
+      type: Remora.Rest.Core.Snowflake
+      description: The ID of the sticker.
+    - id: name
+      type: Remora.Rest.Core.Optional{System.String}
+      description: The new name, if any.
+    - id: description
+      type: Remora.Rest.Core.Optional{System.String}
+      description: The new description, if any.
+    - id: tags
+      type: Remora.Rest.Core.Optional{System.String}
+      description: The new tags, if any.
+    - id: reason
+      type: Remora.Rest.Core.Optional{System.String}
+      description: The reason to mark the action in the audit log with.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for the operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.ISticker}}
+      description: A modification result which may or may not have succeeded.
+    content.vb: Function ModifyGuildStickerAsync(guildID As Snowflake, stickerID As Snowflake, name As [Optional](Of String) = Nothing, description As [Optional](Of String) = Nothing, tags As [Optional](Of String) = Nothing, reason As [Optional](Of String) = Nothing, ct As CancellationToken = Nothing) As Task(Of Result(Of ISticker))
+  overload: Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.ModifyGuildStickerAsync*
+  nameWithType.vb: IDiscordRestStickerAPI.ModifyGuildStickerAsync(Snowflake, Snowflake, Optional(Of String), Optional(Of String), Optional(Of String), Optional(Of String), CancellationToken)
+  fullName.vb: Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.ModifyGuildStickerAsync(Remora.Rest.Core.Snowflake, Remora.Rest.Core.Snowflake, Remora.Rest.Core.Optional(Of String), Remora.Rest.Core.Optional(Of String), Remora.Rest.Core.Optional(Of String), Remora.Rest.Core.Optional(Of String), System.Threading.CancellationToken)
+  name.vb: ModifyGuildStickerAsync(Snowflake, Snowflake, Optional(Of String), Optional(Of String), Optional(Of String), Optional(Of String), CancellationToken)
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.DeleteGuildStickerAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{System.String},System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.DeleteGuildStickerAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{System.String},System.Threading.CancellationToken)
+  id: DeleteGuildStickerAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{System.String},System.Threading.CancellationToken)
+  parent: Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI
+  langs:
+  - csharp
+  - vb
+  name: DeleteGuildStickerAsync(Snowflake, Snowflake, Optional<string>, CancellationToken)
+  nameWithType: IDiscordRestStickerAPI.DeleteGuildStickerAsync(Snowflake, Snowflake, Optional<string>, CancellationToken)
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.DeleteGuildStickerAsync(Remora.Rest.Core.Snowflake, Remora.Rest.Core.Snowflake, Remora.Rest.Core.Optional<string>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: DeleteGuildStickerAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Rest\IDiscordRestStickerAPI.cs
+    startLine: 133
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Rest
+  summary: Deletes the given sticker in the given guild.
+  example: []
+  syntax:
+    content: Task<Result> DeleteGuildStickerAsync(Snowflake guildID, Snowflake stickerID, Optional<string> reason = default, CancellationToken ct = default)
+    parameters:
+    - id: guildID
+      type: Remora.Rest.Core.Snowflake
+      description: The ID of the guild.
+    - id: stickerID
+      type: Remora.Rest.Core.Snowflake
+      description: The ID of the sticker.
+    - id: reason
+      type: Remora.Rest.Core.Optional{System.String}
+      description: The reason to mark the action in the audit log with.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for the operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result}
+      description: A deletion result which may or may not have succeeded.
+    content.vb: Function DeleteGuildStickerAsync(guildID As Snowflake, stickerID As Snowflake, reason As [Optional](Of String) = Nothing, ct As CancellationToken = Nothing) As Task(Of Result)
+  overload: Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.DeleteGuildStickerAsync*
+  nameWithType.vb: IDiscordRestStickerAPI.DeleteGuildStickerAsync(Snowflake, Snowflake, Optional(Of String), CancellationToken)
+  fullName.vb: Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.DeleteGuildStickerAsync(Remora.Rest.Core.Snowflake, Remora.Rest.Core.Snowflake, Remora.Rest.Core.Optional(Of String), System.Threading.CancellationToken)
+  name.vb: DeleteGuildStickerAsync(Snowflake, Snowflake, Optional(Of String), CancellationToken)
+references:
+- uid: Remora.Discord.API.Abstractions.Rest
+  commentId: N:Remora.Discord.API.Abstractions.Rest
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Rest
+  nameWithType: Remora.Discord.API.Abstractions.Rest
+  fullName: Remora.Discord.API.Abstractions.Rest
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Rest
+    name: Rest
+    href: Remora.Discord.API.Abstractions.Rest.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Rest
+    name: Rest
+    href: Remora.Discord.API.Abstractions.Rest.html
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.GetStickerAsync*
+  commentId: Overload:Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.GetStickerAsync
+  href: Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.html#Remora_Discord_API_Abstractions_Rest_IDiscordRestStickerAPI_GetStickerAsync_Remora_Rest_Core_Snowflake_System_Threading_CancellationToken_
+  name: GetStickerAsync
+  nameWithType: IDiscordRestStickerAPI.GetStickerAsync
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.GetStickerAsync
+- uid: Remora.Rest.Core.Snowflake
+  commentId: T:Remora.Rest.Core.Snowflake
+  parent: Remora.Rest.Core
+  isExternal: true
+  name: Snowflake
+  nameWithType: Snowflake
+  fullName: Remora.Rest.Core.Snowflake
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.ISticker}}
+  commentId: T:System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.ISticker}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Result<ISticker>>
+  nameWithType: Task<Result<ISticker>>
+  fullName: System.Threading.Tasks.Task<Remora.Results.Result<Remora.Discord.API.Abstractions.Objects.ISticker>>
+  nameWithType.vb: Task(Of Result(Of ISticker))
+  fullName.vb: System.Threading.Tasks.Task(Of Remora.Results.Result(Of Remora.Discord.API.Abstractions.Objects.ISticker))
+  name.vb: Task(Of Result(Of ISticker))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Remora.Results.Result`1
+    name: Result
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.ISticker
+    name: ISticker
+    href: Remora.Discord.API.Abstractions.Objects.ISticker.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Results.Result`1
+    name: Result
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.ISticker
+    name: ISticker
+    href: Remora.Discord.API.Abstractions.Objects.ISticker.html
+  - name: )
+  - name: )
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.ListNitroStickerPacksAsync*
+  commentId: Overload:Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.ListNitroStickerPacksAsync
+  href: Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.html#Remora_Discord_API_Abstractions_Rest_IDiscordRestStickerAPI_ListNitroStickerPacksAsync_System_Threading_CancellationToken_
+  name: ListNitroStickerPacksAsync
+  nameWithType: IDiscordRestStickerAPI.ListNitroStickerPacksAsync
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.ListNitroStickerPacksAsync
+- uid: System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.INitroStickerPacks}}
+  commentId: T:System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.INitroStickerPacks}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Result<INitroStickerPacks>>
+  nameWithType: Task<Result<INitroStickerPacks>>
+  fullName: System.Threading.Tasks.Task<Remora.Results.Result<Remora.Discord.API.Abstractions.Objects.INitroStickerPacks>>
+  nameWithType.vb: Task(Of Result(Of INitroStickerPacks))
+  fullName.vb: System.Threading.Tasks.Task(Of Remora.Results.Result(Of Remora.Discord.API.Abstractions.Objects.INitroStickerPacks))
+  name.vb: Task(Of Result(Of INitroStickerPacks))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Remora.Results.Result`1
+    name: Result
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.INitroStickerPacks
+    name: INitroStickerPacks
+    href: Remora.Discord.API.Abstractions.Objects.INitroStickerPacks.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Results.Result`1
+    name: Result
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.INitroStickerPacks
+    name: INitroStickerPacks
+    href: Remora.Discord.API.Abstractions.Objects.INitroStickerPacks.html
+  - name: )
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.ListGuildStickersAsync*
+  commentId: Overload:Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.ListGuildStickersAsync
+  href: Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.html#Remora_Discord_API_Abstractions_Rest_IDiscordRestStickerAPI_ListGuildStickersAsync_Remora_Rest_Core_Snowflake_System_Threading_CancellationToken_
+  name: ListGuildStickersAsync
+  nameWithType: IDiscordRestStickerAPI.ListGuildStickersAsync
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.ListGuildStickersAsync
+- uid: System.Threading.Tasks.Task{Remora.Results.Result{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.ISticker}}}
+  commentId: T:System.Threading.Tasks.Task{Remora.Results.Result{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.ISticker}}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Result<IReadOnlyList<ISticker>>>
+  nameWithType: Task<Result<IReadOnlyList<ISticker>>>
+  fullName: System.Threading.Tasks.Task<Remora.Results.Result<System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.ISticker>>>
+  nameWithType.vb: Task(Of Result(Of IReadOnlyList(Of ISticker)))
+  fullName.vb: System.Threading.Tasks.Task(Of Remora.Results.Result(Of System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.ISticker)))
+  name.vb: Task(Of Result(Of IReadOnlyList(Of ISticker)))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Remora.Results.Result`1
+    name: Result
+    isExternal: true
+  - name: <
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.ISticker
+    name: ISticker
+    href: Remora.Discord.API.Abstractions.Objects.ISticker.html
+  - name: '>'
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Results.Result`1
+    name: Result
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.ISticker
+    name: ISticker
+    href: Remora.Discord.API.Abstractions.Objects.ISticker.html
+  - name: )
+  - name: )
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.GetGuildStickerAsync*
+  commentId: Overload:Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.GetGuildStickerAsync
+  href: Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.html#Remora_Discord_API_Abstractions_Rest_IDiscordRestStickerAPI_GetGuildStickerAsync_Remora_Rest_Core_Snowflake_Remora_Rest_Core_Snowflake_System_Threading_CancellationToken_
+  name: GetGuildStickerAsync
+  nameWithType: IDiscordRestStickerAPI.GetGuildStickerAsync
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.GetGuildStickerAsync
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.CreateGuildStickerAsync*
+  commentId: Overload:Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.CreateGuildStickerAsync
+  href: Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.html#Remora_Discord_API_Abstractions_Rest_IDiscordRestStickerAPI_CreateGuildStickerAsync_Remora_Rest_Core_Snowflake_System_String_System_String_System_String_Remora_Discord_API_Abstractions_Rest_FileData_Remora_Rest_Core_Optional_System_String__System_Threading_CancellationToken_
+  name: CreateGuildStickerAsync
+  nameWithType: IDiscordRestStickerAPI.CreateGuildStickerAsync
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.CreateGuildStickerAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Remora.Discord.API.Abstractions.Rest.FileData
+  commentId: T:Remora.Discord.API.Abstractions.Rest.FileData
+  parent: Remora.Discord.API.Abstractions.Rest
+  href: Remora.Discord.API.Abstractions.Rest.FileData.html
+  name: FileData
+  nameWithType: FileData
+  fullName: Remora.Discord.API.Abstractions.Rest.FileData
+- uid: Remora.Rest.Core.Optional{System.String}
+  commentId: T:Remora.Rest.Core.Optional{System.String}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Optional<string>
+  nameWithType: Optional<string>
+  fullName: Remora.Rest.Core.Optional<string>
+  nameWithType.vb: Optional(Of String)
+  fullName.vb: Remora.Rest.Core.Optional(Of String)
+  name.vb: Optional(Of String)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Rest.Core.Optional`1
+  commentId: T:Remora.Rest.Core.Optional`1
+  isExternal: true
+  name: Optional<TValue>
+  nameWithType: Optional<TValue>
+  fullName: Remora.Rest.Core.Optional<TValue>
+  nameWithType.vb: Optional(Of TValue)
+  fullName.vb: Remora.Rest.Core.Optional(Of TValue)
+  name.vb: Optional(Of TValue)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.ModifyGuildStickerAsync*
+  commentId: Overload:Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.ModifyGuildStickerAsync
+  href: Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.html#Remora_Discord_API_Abstractions_Rest_IDiscordRestStickerAPI_ModifyGuildStickerAsync_Remora_Rest_Core_Snowflake_Remora_Rest_Core_Snowflake_Remora_Rest_Core_Optional_System_String__Remora_Rest_Core_Optional_System_String__Remora_Rest_Core_Optional_System_String__Remora_Rest_Core_Optional_System_String__System_Threading_CancellationToken_
+  name: ModifyGuildStickerAsync
+  nameWithType: IDiscordRestStickerAPI.ModifyGuildStickerAsync
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.ModifyGuildStickerAsync
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.DeleteGuildStickerAsync*
+  commentId: Overload:Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.DeleteGuildStickerAsync
+  href: Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.html#Remora_Discord_API_Abstractions_Rest_IDiscordRestStickerAPI_DeleteGuildStickerAsync_Remora_Rest_Core_Snowflake_Remora_Rest_Core_Snowflake_Remora_Rest_Core_Optional_System_String__System_Threading_CancellationToken_
+  name: DeleteGuildStickerAsync
+  nameWithType: IDiscordRestStickerAPI.DeleteGuildStickerAsync
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestStickerAPI.DeleteGuildStickerAsync
+- uid: System.Threading.Tasks.Task{Remora.Results.Result}
+  commentId: T:System.Threading.Tasks.Task{Remora.Results.Result}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Result>
+  nameWithType: Task<Result>
+  fullName: System.Threading.Tasks.Task<Remora.Results.Result>
+  nameWithType.vb: Task(Of Result)
+  fullName.vb: System.Threading.Tasks.Task(Of Remora.Results.Result)
+  name.vb: Task(Of Result)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Remora.Results.Result
+    name: Result
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Results.Result
+    name: Result
+    isExternal: true
+  - name: )

@@ -1,0 +1,847 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo
+  id: IOptionalAuditEntryInfo
+  parent: Remora.Discord.API.Abstractions.Objects
+  children:
+  - Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.ApplicationID
+  - Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.AutoModerationRuleName
+  - Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.AutoModerationRuleTriggerType
+  - Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.ChannelID
+  - Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.Count
+  - Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.DeleteMemberDays
+  - Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.ID
+  - Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.IntegrationType
+  - Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.MembersRemoved
+  - Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.MessageID
+  - Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.RoleName
+  - Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.Type
+  langs:
+  - csharp
+  - vb
+  name: IOptionalAuditEntryInfo
+  nameWithType: IOptionalAuditEntryInfo
+  fullName: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo
+  type: Interface
+  source:
+    id: IOptionalAuditEntryInfo
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\AuditLogs\IOptionalAuditEntryInfo.cs
+    startLine: 30
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Represents optional audit log information.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public interface IOptionalAuditEntryInfo
+    content.vb: >-
+      <PublicAPI>
+
+      Public Interface IOptionalAuditEntryInfo
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.ApplicationID
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.ApplicationID
+  id: ApplicationID
+  parent: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo
+  langs:
+  - csharp
+  - vb
+  name: ApplicationID
+  nameWithType: IOptionalAuditEntryInfo.ApplicationID
+  fullName: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.ApplicationID
+  type: Property
+  source:
+    id: ApplicationID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\AuditLogs\IOptionalAuditEntryInfo.cs
+    startLine: 39
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the application for which entities were targeted.
+  remarks: Relevant for <xref href="Remora.Discord.API.Abstractions.Objects.AuditLogEvent.ApplicationCommandPermissionUpdate" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: Optional<Snowflake> ApplicationID { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+    content.vb: ReadOnly Property ApplicationID As [Optional](Of Snowflake)
+  overload: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.ApplicationID*
+- uid: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.AutoModerationRuleName
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.AutoModerationRuleName
+  id: AutoModerationRuleName
+  parent: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo
+  langs:
+  - csharp
+  - vb
+  name: AutoModerationRuleName
+  nameWithType: IOptionalAuditEntryInfo.AutoModerationRuleName
+  fullName: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.AutoModerationRuleName
+  type: Property
+  source:
+    id: AutoModerationRuleName
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\AuditLogs\IOptionalAuditEntryInfo.cs
+    startLine: 49
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the name of the triggered auto-moderation rule.
+  remarks: >-
+    Relevant for <xref href="Remora.Discord.API.Abstractions.Objects.AuditLogEvent.AutoModerationBlockMessage" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="Remora.Discord.API.Abstractions.Objects.AuditLogEvent.AutoModerationFlagToChannel" data-throw-if-not-resolved="false"></xref> and
+
+    <xref href="Remora.Discord.API.Abstractions.Objects.AuditLogEvent.AutoModerationUserCommunicationDisabled" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: Optional<string> AutoModerationRuleName { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.String}
+    content.vb: ReadOnly Property AutoModerationRuleName As [Optional](Of String)
+  overload: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.AutoModerationRuleName*
+- uid: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.AutoModerationRuleTriggerType
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.AutoModerationRuleTriggerType
+  id: AutoModerationRuleTriggerType
+  parent: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo
+  langs:
+  - csharp
+  - vb
+  name: AutoModerationRuleTriggerType
+  nameWithType: IOptionalAuditEntryInfo.AutoModerationRuleTriggerType
+  fullName: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.AutoModerationRuleTriggerType
+  type: Property
+  source:
+    id: AutoModerationRuleTriggerType
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\AuditLogs\IOptionalAuditEntryInfo.cs
+    startLine: 59
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the trigger type of the auto-moderation rule that was triggered.
+  remarks: >-
+    Relevant for <xref href="Remora.Discord.API.Abstractions.Objects.AuditLogEvent.AutoModerationBlockMessage" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="Remora.Discord.API.Abstractions.Objects.AuditLogEvent.AutoModerationFlagToChannel" data-throw-if-not-resolved="false"></xref> and
+
+    <xref href="Remora.Discord.API.Abstractions.Objects.AuditLogEvent.AutoModerationUserCommunicationDisabled" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: Optional<string> AutoModerationRuleTriggerType { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.String}
+    content.vb: ReadOnly Property AutoModerationRuleTriggerType As [Optional](Of String)
+  overload: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.AutoModerationRuleTriggerType*
+- uid: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.ChannelID
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.ChannelID
+  id: ChannelID
+  parent: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo
+  langs:
+  - csharp
+  - vb
+  name: ChannelID
+  nameWithType: IOptionalAuditEntryInfo.ChannelID
+  fullName: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.ChannelID
+  type: Property
+  source:
+    id: ChannelID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\AuditLogs\IOptionalAuditEntryInfo.cs
+    startLine: 69
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: >-
+    Gets the channel in which the entities were targeted.
+
+    <remarks>
+
+    Relevant for <xref href="Remora.Discord.API.Abstractions.Objects.AuditLogEvent.MemberMove" data-throw-if-not-resolved="false"></xref>, <xref href="Remora.Discord.API.Abstractions.Objects.AuditLogEvent.MessagePin" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="Remora.Discord.API.Abstractions.Objects.AuditLogEvent.MessageUnpin" data-throw-if-not-resolved="false"></xref>, <xref href="Remora.Discord.API.Abstractions.Objects.AuditLogEvent.MessageDelete" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="Remora.Discord.API.Abstractions.Objects.AuditLogEvent.StageInstanceCreate" data-throw-if-not-resolved="false"></xref>, <xref href="Remora.Discord.API.Abstractions.Objects.AuditLogEvent.StageInstanceUpdate" data-throw-if-not-resolved="false"></xref>, and
+
+    <xref href="Remora.Discord.API.Abstractions.Objects.AuditLogEvent.StageInstanceDelete" data-throw-if-not-resolved="false"></xref>.</remarks>
+  example: []
+  syntax:
+    content: Optional<Snowflake> ChannelID { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+    content.vb: ReadOnly Property ChannelID As [Optional](Of Snowflake)
+  overload: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.ChannelID*
+- uid: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.Count
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.Count
+  id: Count
+  parent: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: IOptionalAuditEntryInfo.Count
+  fullName: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.Count
+  type: Property
+  source:
+    id: Count
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\AuditLogs\IOptionalAuditEntryInfo.cs
+    startLine: 78
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: >-
+    Gets the number of entities that were targeted.
+
+    <remarks>
+
+    Relevant for <xref href="Remora.Discord.API.Abstractions.Objects.AuditLogEvent.MessageDelete" data-throw-if-not-resolved="false"></xref>, <xref href="Remora.Discord.API.Abstractions.Objects.AuditLogEvent.MessageBulkDelete" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="Remora.Discord.API.Abstractions.Objects.AuditLogEvent.MemberDisconnect" data-throw-if-not-resolved="false"></xref>, and <xref href="Remora.Discord.API.Abstractions.Objects.AuditLogEvent.MemberMove" data-throw-if-not-resolved="false"></xref>.
+
+    </remarks>
+  example: []
+  syntax:
+    content: Optional<string> Count { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.String}
+    content.vb: ReadOnly Property Count As [Optional](Of String)
+  overload: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.Count*
+- uid: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.DeleteMemberDays
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.DeleteMemberDays
+  id: DeleteMemberDays
+  parent: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo
+  langs:
+  - csharp
+  - vb
+  name: DeleteMemberDays
+  nameWithType: IOptionalAuditEntryInfo.DeleteMemberDays
+  fullName: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.DeleteMemberDays
+  type: Property
+  source:
+    id: DeleteMemberDays
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\AuditLogs\IOptionalAuditEntryInfo.cs
+    startLine: 84
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: >-
+    Gets the number of days after which inactive members were kicked.
+
+    <remarks>Relevant for <xref href="Remora.Discord.API.Abstractions.Objects.AuditLogEvent.MemberPrune" data-throw-if-not-resolved="false"></xref>.</remarks>
+  example: []
+  syntax:
+    content: Optional<string> DeleteMemberDays { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.String}
+    content.vb: ReadOnly Property DeleteMemberDays As [Optional](Of String)
+  overload: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.DeleteMemberDays*
+- uid: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.ID
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.ID
+  id: ID
+  parent: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo
+  langs:
+  - csharp
+  - vb
+  name: ID
+  nameWithType: IOptionalAuditEntryInfo.ID
+  fullName: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.ID
+  type: Property
+  source:
+    id: ID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\AuditLogs\IOptionalAuditEntryInfo.cs
+    startLine: 93
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: >-
+    Gets the ID of the overwritten entity.
+
+    <remarks>
+
+    Relevant for <xref href="Remora.Discord.API.Abstractions.Objects.AuditLogEvent.ChannelOverwriteCreate" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="Remora.Discord.API.Abstractions.Objects.AuditLogEvent.ChannelOverwriteUpdate" data-throw-if-not-resolved="false"></xref>, and <xref href="Remora.Discord.API.Abstractions.Objects.AuditLogEvent.ChannelOverwriteDelete" data-throw-if-not-resolved="false"></xref>.
+
+    </remarks>
+  example: []
+  syntax:
+    content: Optional<Snowflake> ID { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+    content.vb: ReadOnly Property ID As [Optional](Of Snowflake)
+  overload: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.ID*
+- uid: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.MembersRemoved
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.MembersRemoved
+  id: MembersRemoved
+  parent: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo
+  langs:
+  - csharp
+  - vb
+  name: MembersRemoved
+  nameWithType: IOptionalAuditEntryInfo.MembersRemoved
+  fullName: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.MembersRemoved
+  type: Property
+  source:
+    id: MembersRemoved
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\AuditLogs\IOptionalAuditEntryInfo.cs
+    startLine: 99
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: >-
+    Gets the number of members removed by the prune.
+
+    <remarks>Relevant for <xref href="Remora.Discord.API.Abstractions.Objects.AuditLogEvent.MemberPrune" data-throw-if-not-resolved="false"></xref>.</remarks>
+  example: []
+  syntax:
+    content: Optional<string> MembersRemoved { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.String}
+    content.vb: ReadOnly Property MembersRemoved As [Optional](Of String)
+  overload: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.MembersRemoved*
+- uid: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.MessageID
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.MessageID
+  id: MessageID
+  parent: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo
+  langs:
+  - csharp
+  - vb
+  name: MessageID
+  nameWithType: IOptionalAuditEntryInfo.MessageID
+  fullName: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.MessageID
+  type: Property
+  source:
+    id: MessageID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\AuditLogs\IOptionalAuditEntryInfo.cs
+    startLine: 107
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: >-
+    Gets the ID of the message that was targeted.
+
+    <remarks>
+
+    Relevant for <xref href="Remora.Discord.API.Abstractions.Objects.AuditLogEvent.MessagePin" data-throw-if-not-resolved="false"></xref> and <xref href="Remora.Discord.API.Abstractions.Objects.AuditLogEvent.MessageUnpin" data-throw-if-not-resolved="false"></xref>.
+
+    </remarks>
+  example: []
+  syntax:
+    content: Optional<Snowflake> MessageID { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+    content.vb: ReadOnly Property MessageID As [Optional](Of Snowflake)
+  overload: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.MessageID*
+- uid: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.RoleName
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.RoleName
+  id: RoleName
+  parent: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo
+  langs:
+  - csharp
+  - vb
+  name: RoleName
+  nameWithType: IOptionalAuditEntryInfo.RoleName
+  fullName: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.RoleName
+  type: Property
+  source:
+    id: RoleName
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\AuditLogs\IOptionalAuditEntryInfo.cs
+    startLine: 116
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: >-
+    Gets the name of the overwritten role, if <xref href="Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.Type" data-throw-if-not-resolved="false"></xref> is "role".
+
+    <remarks>
+
+    Relevant for <xref href="Remora.Discord.API.Abstractions.Objects.AuditLogEvent.ChannelOverwriteCreate" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="Remora.Discord.API.Abstractions.Objects.AuditLogEvent.ChannelOverwriteUpdate" data-throw-if-not-resolved="false"></xref>, and <xref href="Remora.Discord.API.Abstractions.Objects.AuditLogEvent.ChannelOverwriteDelete" data-throw-if-not-resolved="false"></xref>.
+
+    </remarks>
+  example: []
+  syntax:
+    content: Optional<string> RoleName { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.String}
+    content.vb: ReadOnly Property RoleName As [Optional](Of String)
+  overload: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.RoleName*
+- uid: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.Type
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.Type
+  id: Type
+  parent: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: IOptionalAuditEntryInfo.Type
+  fullName: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.Type
+  type: Property
+  source:
+    id: Type
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\AuditLogs\IOptionalAuditEntryInfo.cs
+    startLine: 125
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: >-
+    Gets the type of the overwritten entity. This can be either "0" for roles, or "1" for members.
+
+    <remarks>
+
+    Relevant for <xref href="Remora.Discord.API.Abstractions.Objects.AuditLogEvent.ChannelOverwriteCreate" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="Remora.Discord.API.Abstractions.Objects.AuditLogEvent.ChannelOverwriteUpdate" data-throw-if-not-resolved="false"></xref>, and <xref href="Remora.Discord.API.Abstractions.Objects.AuditLogEvent.ChannelOverwriteDelete" data-throw-if-not-resolved="false"></xref>.
+
+    </remarks>
+  example: []
+  syntax:
+    content: Optional<PermissionOverwriteType> Type { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.PermissionOverwriteType}
+    content.vb: ReadOnly Property Type As [Optional](Of PermissionOverwriteType)
+  overload: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.Type*
+- uid: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.IntegrationType
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.IntegrationType
+  id: IntegrationType
+  parent: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo
+  langs:
+  - csharp
+  - vb
+  name: IntegrationType
+  nameWithType: IOptionalAuditEntryInfo.IntegrationType
+  fullName: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.IntegrationType
+  type: Property
+  source:
+    id: IntegrationType
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\AuditLogs\IOptionalAuditEntryInfo.cs
+    startLine: 134
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the type of integration which performed the action.
+  remarks: >-
+    This is a strangely documented property from Discord, but corresponds to the <xref href="Remora.Discord.API.Abstractions.Objects.IIntegration.Type" data-throw-if-not-resolved="false"></xref>
+
+    property.
+  example: []
+  syntax:
+    content: Optional<string> IntegrationType { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.String}
+    content.vb: ReadOnly Property IntegrationType As [Optional](Of String)
+  overload: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.IntegrationType*
+references:
+- uid: Remora.Discord.API.Abstractions.Objects
+  commentId: N:Remora.Discord.API.Abstractions.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Objects
+  nameWithType: Remora.Discord.API.Abstractions.Objects
+  fullName: Remora.Discord.API.Abstractions.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+- uid: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.ApplicationCommandPermissionUpdate
+  commentId: F:Remora.Discord.API.Abstractions.Objects.AuditLogEvent.ApplicationCommandPermissionUpdate
+  href: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.html#Remora_Discord_API_Abstractions_Objects_AuditLogEvent_ApplicationCommandPermissionUpdate
+  name: ApplicationCommandPermissionUpdate
+  nameWithType: AuditLogEvent.ApplicationCommandPermissionUpdate
+  fullName: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.ApplicationCommandPermissionUpdate
+- uid: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.ApplicationID*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.ApplicationID
+  href: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.html#Remora_Discord_API_Abstractions_Objects_IOptionalAuditEntryInfo_ApplicationID
+  name: ApplicationID
+  nameWithType: IOptionalAuditEntryInfo.ApplicationID
+  fullName: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.ApplicationID
+- uid: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  name: Optional<Snowflake>
+  nameWithType: Optional<Snowflake>
+  fullName: Remora.Rest.Core.Optional<Remora.Rest.Core.Snowflake>
+  nameWithType.vb: Optional(Of Snowflake)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Rest.Core.Snowflake)
+  name.vb: Optional(Of Snowflake)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+- uid: Remora.Rest.Core.Optional`1
+  commentId: T:Remora.Rest.Core.Optional`1
+  isExternal: true
+  name: Optional<TValue>
+  nameWithType: Optional<TValue>
+  fullName: Remora.Rest.Core.Optional<TValue>
+  nameWithType.vb: Optional(Of TValue)
+  fullName.vb: Remora.Rest.Core.Optional(Of TValue)
+  name.vb: Optional(Of TValue)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+- uid: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.AutoModerationBlockMessage
+  commentId: F:Remora.Discord.API.Abstractions.Objects.AuditLogEvent.AutoModerationBlockMessage
+  href: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.html#Remora_Discord_API_Abstractions_Objects_AuditLogEvent_AutoModerationBlockMessage
+  name: AutoModerationBlockMessage
+  nameWithType: AuditLogEvent.AutoModerationBlockMessage
+  fullName: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.AutoModerationBlockMessage
+- uid: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.AutoModerationFlagToChannel
+  commentId: F:Remora.Discord.API.Abstractions.Objects.AuditLogEvent.AutoModerationFlagToChannel
+  href: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.html#Remora_Discord_API_Abstractions_Objects_AuditLogEvent_AutoModerationFlagToChannel
+  name: AutoModerationFlagToChannel
+  nameWithType: AuditLogEvent.AutoModerationFlagToChannel
+  fullName: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.AutoModerationFlagToChannel
+- uid: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.AutoModerationUserCommunicationDisabled
+  commentId: F:Remora.Discord.API.Abstractions.Objects.AuditLogEvent.AutoModerationUserCommunicationDisabled
+  href: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.html#Remora_Discord_API_Abstractions_Objects_AuditLogEvent_AutoModerationUserCommunicationDisabled
+  name: AutoModerationUserCommunicationDisabled
+  nameWithType: AuditLogEvent.AutoModerationUserCommunicationDisabled
+  fullName: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.AutoModerationUserCommunicationDisabled
+- uid: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.AutoModerationRuleName*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.AutoModerationRuleName
+  href: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.html#Remora_Discord_API_Abstractions_Objects_IOptionalAuditEntryInfo_AutoModerationRuleName
+  name: AutoModerationRuleName
+  nameWithType: IOptionalAuditEntryInfo.AutoModerationRuleName
+  fullName: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.AutoModerationRuleName
+- uid: Remora.Rest.Core.Optional{System.String}
+  commentId: T:Remora.Rest.Core.Optional{System.String}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Optional<string>
+  nameWithType: Optional<string>
+  fullName: Remora.Rest.Core.Optional<string>
+  nameWithType.vb: Optional(Of String)
+  fullName.vb: Remora.Rest.Core.Optional(Of String)
+  name.vb: Optional(Of String)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.AutoModerationRuleTriggerType*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.AutoModerationRuleTriggerType
+  href: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.html#Remora_Discord_API_Abstractions_Objects_IOptionalAuditEntryInfo_AutoModerationRuleTriggerType
+  name: AutoModerationRuleTriggerType
+  nameWithType: IOptionalAuditEntryInfo.AutoModerationRuleTriggerType
+  fullName: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.AutoModerationRuleTriggerType
+- uid: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.MemberMove
+  commentId: F:Remora.Discord.API.Abstractions.Objects.AuditLogEvent.MemberMove
+  href: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.html#Remora_Discord_API_Abstractions_Objects_AuditLogEvent_MemberMove
+  name: MemberMove
+  nameWithType: AuditLogEvent.MemberMove
+  fullName: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.MemberMove
+- uid: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.MessagePin
+  commentId: F:Remora.Discord.API.Abstractions.Objects.AuditLogEvent.MessagePin
+  href: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.html#Remora_Discord_API_Abstractions_Objects_AuditLogEvent_MessagePin
+  name: MessagePin
+  nameWithType: AuditLogEvent.MessagePin
+  fullName: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.MessagePin
+- uid: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.MessageUnpin
+  commentId: F:Remora.Discord.API.Abstractions.Objects.AuditLogEvent.MessageUnpin
+  href: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.html#Remora_Discord_API_Abstractions_Objects_AuditLogEvent_MessageUnpin
+  name: MessageUnpin
+  nameWithType: AuditLogEvent.MessageUnpin
+  fullName: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.MessageUnpin
+- uid: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.MessageDelete
+  commentId: F:Remora.Discord.API.Abstractions.Objects.AuditLogEvent.MessageDelete
+  href: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.html#Remora_Discord_API_Abstractions_Objects_AuditLogEvent_MessageDelete
+  name: MessageDelete
+  nameWithType: AuditLogEvent.MessageDelete
+  fullName: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.MessageDelete
+- uid: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.StageInstanceCreate
+  commentId: F:Remora.Discord.API.Abstractions.Objects.AuditLogEvent.StageInstanceCreate
+  href: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.html#Remora_Discord_API_Abstractions_Objects_AuditLogEvent_StageInstanceCreate
+  name: StageInstanceCreate
+  nameWithType: AuditLogEvent.StageInstanceCreate
+  fullName: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.StageInstanceCreate
+- uid: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.StageInstanceUpdate
+  commentId: F:Remora.Discord.API.Abstractions.Objects.AuditLogEvent.StageInstanceUpdate
+  href: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.html#Remora_Discord_API_Abstractions_Objects_AuditLogEvent_StageInstanceUpdate
+  name: StageInstanceUpdate
+  nameWithType: AuditLogEvent.StageInstanceUpdate
+  fullName: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.StageInstanceUpdate
+- uid: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.StageInstanceDelete
+  commentId: F:Remora.Discord.API.Abstractions.Objects.AuditLogEvent.StageInstanceDelete
+  href: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.html#Remora_Discord_API_Abstractions_Objects_AuditLogEvent_StageInstanceDelete
+  name: StageInstanceDelete
+  nameWithType: AuditLogEvent.StageInstanceDelete
+  fullName: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.StageInstanceDelete
+- uid: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.ChannelID*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.ChannelID
+  href: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.html#Remora_Discord_API_Abstractions_Objects_IOptionalAuditEntryInfo_ChannelID
+  name: ChannelID
+  nameWithType: IOptionalAuditEntryInfo.ChannelID
+  fullName: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.ChannelID
+- uid: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.MessageBulkDelete
+  commentId: F:Remora.Discord.API.Abstractions.Objects.AuditLogEvent.MessageBulkDelete
+  href: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.html#Remora_Discord_API_Abstractions_Objects_AuditLogEvent_MessageBulkDelete
+  name: MessageBulkDelete
+  nameWithType: AuditLogEvent.MessageBulkDelete
+  fullName: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.MessageBulkDelete
+- uid: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.MemberDisconnect
+  commentId: F:Remora.Discord.API.Abstractions.Objects.AuditLogEvent.MemberDisconnect
+  href: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.html#Remora_Discord_API_Abstractions_Objects_AuditLogEvent_MemberDisconnect
+  name: MemberDisconnect
+  nameWithType: AuditLogEvent.MemberDisconnect
+  fullName: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.MemberDisconnect
+- uid: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.Count*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.Count
+  href: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.html#Remora_Discord_API_Abstractions_Objects_IOptionalAuditEntryInfo_Count
+  name: Count
+  nameWithType: IOptionalAuditEntryInfo.Count
+  fullName: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.Count
+- uid: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.MemberPrune
+  commentId: F:Remora.Discord.API.Abstractions.Objects.AuditLogEvent.MemberPrune
+  href: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.html#Remora_Discord_API_Abstractions_Objects_AuditLogEvent_MemberPrune
+  name: MemberPrune
+  nameWithType: AuditLogEvent.MemberPrune
+  fullName: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.MemberPrune
+- uid: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.DeleteMemberDays*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.DeleteMemberDays
+  href: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.html#Remora_Discord_API_Abstractions_Objects_IOptionalAuditEntryInfo_DeleteMemberDays
+  name: DeleteMemberDays
+  nameWithType: IOptionalAuditEntryInfo.DeleteMemberDays
+  fullName: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.DeleteMemberDays
+- uid: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.ChannelOverwriteCreate
+  commentId: F:Remora.Discord.API.Abstractions.Objects.AuditLogEvent.ChannelOverwriteCreate
+  href: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.html#Remora_Discord_API_Abstractions_Objects_AuditLogEvent_ChannelOverwriteCreate
+  name: ChannelOverwriteCreate
+  nameWithType: AuditLogEvent.ChannelOverwriteCreate
+  fullName: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.ChannelOverwriteCreate
+- uid: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.ChannelOverwriteUpdate
+  commentId: F:Remora.Discord.API.Abstractions.Objects.AuditLogEvent.ChannelOverwriteUpdate
+  href: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.html#Remora_Discord_API_Abstractions_Objects_AuditLogEvent_ChannelOverwriteUpdate
+  name: ChannelOverwriteUpdate
+  nameWithType: AuditLogEvent.ChannelOverwriteUpdate
+  fullName: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.ChannelOverwriteUpdate
+- uid: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.ChannelOverwriteDelete
+  commentId: F:Remora.Discord.API.Abstractions.Objects.AuditLogEvent.ChannelOverwriteDelete
+  href: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.html#Remora_Discord_API_Abstractions_Objects_AuditLogEvent_ChannelOverwriteDelete
+  name: ChannelOverwriteDelete
+  nameWithType: AuditLogEvent.ChannelOverwriteDelete
+  fullName: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.ChannelOverwriteDelete
+- uid: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.ID*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.ID
+  href: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.html#Remora_Discord_API_Abstractions_Objects_IOptionalAuditEntryInfo_ID
+  name: ID
+  nameWithType: IOptionalAuditEntryInfo.ID
+  fullName: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.ID
+- uid: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.MembersRemoved*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.MembersRemoved
+  href: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.html#Remora_Discord_API_Abstractions_Objects_IOptionalAuditEntryInfo_MembersRemoved
+  name: MembersRemoved
+  nameWithType: IOptionalAuditEntryInfo.MembersRemoved
+  fullName: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.MembersRemoved
+- uid: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.MessageID*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.MessageID
+  href: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.html#Remora_Discord_API_Abstractions_Objects_IOptionalAuditEntryInfo_MessageID
+  name: MessageID
+  nameWithType: IOptionalAuditEntryInfo.MessageID
+  fullName: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.MessageID
+- uid: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.Type
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.Type
+  parent: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo
+  href: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.html#Remora_Discord_API_Abstractions_Objects_IOptionalAuditEntryInfo_Type
+  name: Type
+  nameWithType: IOptionalAuditEntryInfo.Type
+  fullName: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.Type
+- uid: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.RoleName*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.RoleName
+  href: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.html#Remora_Discord_API_Abstractions_Objects_IOptionalAuditEntryInfo_RoleName
+  name: RoleName
+  nameWithType: IOptionalAuditEntryInfo.RoleName
+  fullName: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.RoleName
+- uid: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.html
+  name: IOptionalAuditEntryInfo
+  nameWithType: IOptionalAuditEntryInfo
+  fullName: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo
+- uid: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.Type*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.Type
+  href: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.html#Remora_Discord_API_Abstractions_Objects_IOptionalAuditEntryInfo_Type
+  name: Type
+  nameWithType: IOptionalAuditEntryInfo.Type
+  fullName: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.Type
+- uid: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.PermissionOverwriteType}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.PermissionOverwriteType}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: Remora.Discord.API.Abstractions.Objects.PermissionOverwriteType.html
+  name: Optional<PermissionOverwriteType>
+  nameWithType: Optional<PermissionOverwriteType>
+  fullName: Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.PermissionOverwriteType>
+  nameWithType.vb: Optional(Of PermissionOverwriteType)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.PermissionOverwriteType)
+  name.vb: Optional(Of PermissionOverwriteType)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.PermissionOverwriteType
+    name: PermissionOverwriteType
+    href: Remora.Discord.API.Abstractions.Objects.PermissionOverwriteType.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.PermissionOverwriteType
+    name: PermissionOverwriteType
+    href: Remora.Discord.API.Abstractions.Objects.PermissionOverwriteType.html
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Objects.IIntegration.Type
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IIntegration.Type
+  parent: Remora.Discord.API.Abstractions.Objects.IIntegration
+  href: Remora.Discord.API.Abstractions.Objects.IIntegration.html#Remora_Discord_API_Abstractions_Objects_IIntegration_Type
+  name: Type
+  nameWithType: IIntegration.Type
+  fullName: Remora.Discord.API.Abstractions.Objects.IIntegration.Type
+- uid: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.IntegrationType*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.IntegrationType
+  href: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.html#Remora_Discord_API_Abstractions_Objects_IOptionalAuditEntryInfo_IntegrationType
+  name: IntegrationType
+  nameWithType: IOptionalAuditEntryInfo.IntegrationType
+  fullName: Remora.Discord.API.Abstractions.Objects.IOptionalAuditEntryInfo.IntegrationType
+- uid: Remora.Discord.API.Abstractions.Objects.IIntegration
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IIntegration
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IIntegration.html
+  name: IIntegration
+  nameWithType: IIntegration
+  fullName: Remora.Discord.API.Abstractions.Objects.IIntegration

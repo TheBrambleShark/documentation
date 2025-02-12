@@ -1,0 +1,957 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Objects.OnboardingPrompt
+  commentId: T:Remora.Discord.API.Objects.OnboardingPrompt
+  id: OnboardingPrompt
+  parent: Remora.Discord.API.Objects
+  children:
+  - Remora.Discord.API.Objects.OnboardingPrompt.#ctor(Remora.Rest.Core.Snowflake,Remora.Discord.API.Abstractions.Objects.PromptType,System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IPromptOption},System.String,System.Boolean,System.Boolean,System.Boolean)
+  - Remora.Discord.API.Objects.OnboardingPrompt.ID
+  - Remora.Discord.API.Objects.OnboardingPrompt.IsInOnboarding
+  - Remora.Discord.API.Objects.OnboardingPrompt.IsRequired
+  - Remora.Discord.API.Objects.OnboardingPrompt.IsSingleSelect
+  - Remora.Discord.API.Objects.OnboardingPrompt.Options
+  - Remora.Discord.API.Objects.OnboardingPrompt.Title
+  - Remora.Discord.API.Objects.OnboardingPrompt.Type
+  langs:
+  - csharp
+  - vb
+  name: OnboardingPrompt
+  nameWithType: OnboardingPrompt
+  fullName: Remora.Discord.API.Objects.OnboardingPrompt
+  type: Class
+  source:
+    id: OnboardingPrompt
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Guilds\OnboardingPrompt.cs
+    startLine: 30
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Represents a prompt shown during onboarding.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public record OnboardingPrompt : IOnboardingPrompt, IEquatable<OnboardingPrompt>
+    content.vb: >-
+      <PublicAPI>
+
+      Public Class OnboardingPrompt Implements IOnboardingPrompt, IEquatable(Of OnboardingPrompt)
+  inheritance:
+  - System.Object
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IOnboardingPrompt
+  - System.IEquatable{Remora.Discord.API.Objects.OnboardingPrompt}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Objects.OnboardingPrompt.#ctor(Remora.Rest.Core.Snowflake,Remora.Discord.API.Abstractions.Objects.PromptType,System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IPromptOption},System.String,System.Boolean,System.Boolean,System.Boolean)
+  commentId: M:Remora.Discord.API.Objects.OnboardingPrompt.#ctor(Remora.Rest.Core.Snowflake,Remora.Discord.API.Abstractions.Objects.PromptType,System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IPromptOption},System.String,System.Boolean,System.Boolean,System.Boolean)
+  id: '#ctor(Remora.Rest.Core.Snowflake,Remora.Discord.API.Abstractions.Objects.PromptType,System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IPromptOption},System.String,System.Boolean,System.Boolean,System.Boolean)'
+  parent: Remora.Discord.API.Objects.OnboardingPrompt
+  langs:
+  - csharp
+  - vb
+  name: OnboardingPrompt(Snowflake, PromptType, IReadOnlyList<IPromptOption>, string, bool, bool, bool)
+  nameWithType: OnboardingPrompt.OnboardingPrompt(Snowflake, PromptType, IReadOnlyList<IPromptOption>, string, bool, bool, bool)
+  fullName: Remora.Discord.API.Objects.OnboardingPrompt.OnboardingPrompt(Remora.Rest.Core.Snowflake, Remora.Discord.API.Abstractions.Objects.PromptType, System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.IPromptOption>, string, bool, bool, bool)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Guilds\OnboardingPrompt.cs
+    startLine: 30
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Represents a prompt shown during onboarding.
+  example: []
+  syntax:
+    content: public OnboardingPrompt(Snowflake ID, PromptType Type, IReadOnlyList<IPromptOption> Options, string Title, bool IsSingleSelect, bool IsRequired, bool IsInOnboarding)
+    parameters:
+    - id: ID
+      type: Remora.Rest.Core.Snowflake
+    - id: Type
+      type: Remora.Discord.API.Abstractions.Objects.PromptType
+    - id: Options
+      type: System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IPromptOption}
+    - id: Title
+      type: System.String
+    - id: IsSingleSelect
+      type: System.Boolean
+    - id: IsRequired
+      type: System.Boolean
+    - id: IsInOnboarding
+      type: System.Boolean
+    content.vb: Public Sub New(ID As Snowflake, Type As PromptType, Options As IReadOnlyList(Of IPromptOption), Title As String, IsSingleSelect As Boolean, IsRequired As Boolean, IsInOnboarding As Boolean)
+  overload: Remora.Discord.API.Objects.OnboardingPrompt.#ctor*
+  nameWithType.vb: OnboardingPrompt.New(Snowflake, PromptType, IReadOnlyList(Of IPromptOption), String, Boolean, Boolean, Boolean)
+  fullName.vb: Remora.Discord.API.Objects.OnboardingPrompt.New(Remora.Rest.Core.Snowflake, Remora.Discord.API.Abstractions.Objects.PromptType, System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.IPromptOption), String, Boolean, Boolean, Boolean)
+  name.vb: New(Snowflake, PromptType, IReadOnlyList(Of IPromptOption), String, Boolean, Boolean, Boolean)
+- uid: Remora.Discord.API.Objects.OnboardingPrompt.ID
+  commentId: P:Remora.Discord.API.Objects.OnboardingPrompt.ID
+  id: ID
+  parent: Remora.Discord.API.Objects.OnboardingPrompt
+  langs:
+  - csharp
+  - vb
+  name: ID
+  nameWithType: OnboardingPrompt.ID
+  fullName: Remora.Discord.API.Objects.OnboardingPrompt.ID
+  type: Property
+  source:
+    id: ID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Guilds\OnboardingPrompt.cs
+    startLine: 33
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the ID of the prompt.
+  example: []
+  syntax:
+    content: public Snowflake ID { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Snowflake
+    content.vb: Public Property ID As Snowflake
+  overload: Remora.Discord.API.Objects.OnboardingPrompt.ID*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IOnboardingPrompt.ID
+- uid: Remora.Discord.API.Objects.OnboardingPrompt.Type
+  commentId: P:Remora.Discord.API.Objects.OnboardingPrompt.Type
+  id: Type
+  parent: Remora.Discord.API.Objects.OnboardingPrompt
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: OnboardingPrompt.Type
+  fullName: Remora.Discord.API.Objects.OnboardingPrompt.Type
+  type: Property
+  source:
+    id: Type
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Guilds\OnboardingPrompt.cs
+    startLine: 34
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the type of the prompt.
+  example: []
+  syntax:
+    content: public PromptType Type { get; init; }
+    parameters: []
+    return:
+      type: Remora.Discord.API.Abstractions.Objects.PromptType
+    content.vb: Public Property Type As PromptType
+  overload: Remora.Discord.API.Objects.OnboardingPrompt.Type*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IOnboardingPrompt.Type
+- uid: Remora.Discord.API.Objects.OnboardingPrompt.Options
+  commentId: P:Remora.Discord.API.Objects.OnboardingPrompt.Options
+  id: Options
+  parent: Remora.Discord.API.Objects.OnboardingPrompt
+  langs:
+  - csharp
+  - vb
+  name: Options
+  nameWithType: OnboardingPrompt.Options
+  fullName: Remora.Discord.API.Objects.OnboardingPrompt.Options
+  type: Property
+  source:
+    id: Options
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Guilds\OnboardingPrompt.cs
+    startLine: 35
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets a list of available options within the prompt.
+  example: []
+  syntax:
+    content: public IReadOnlyList<IPromptOption> Options { get; init; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IPromptOption}
+    content.vb: Public Property Options As IReadOnlyList(Of IPromptOption)
+  overload: Remora.Discord.API.Objects.OnboardingPrompt.Options*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IOnboardingPrompt.Options
+- uid: Remora.Discord.API.Objects.OnboardingPrompt.Title
+  commentId: P:Remora.Discord.API.Objects.OnboardingPrompt.Title
+  id: Title
+  parent: Remora.Discord.API.Objects.OnboardingPrompt
+  langs:
+  - csharp
+  - vb
+  name: Title
+  nameWithType: OnboardingPrompt.Title
+  fullName: Remora.Discord.API.Objects.OnboardingPrompt.Title
+  type: Property
+  source:
+    id: Title
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Guilds\OnboardingPrompt.cs
+    startLine: 36
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the title of the prompt.
+  example: []
+  syntax:
+    content: public string Title { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Title As String
+  overload: Remora.Discord.API.Objects.OnboardingPrompt.Title*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IOnboardingPrompt.Title
+- uid: Remora.Discord.API.Objects.OnboardingPrompt.IsSingleSelect
+  commentId: P:Remora.Discord.API.Objects.OnboardingPrompt.IsSingleSelect
+  id: IsSingleSelect
+  parent: Remora.Discord.API.Objects.OnboardingPrompt
+  langs:
+  - csharp
+  - vb
+  name: IsSingleSelect
+  nameWithType: OnboardingPrompt.IsSingleSelect
+  fullName: Remora.Discord.API.Objects.OnboardingPrompt.IsSingleSelect
+  type: Property
+  source:
+    id: IsSingleSelect
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Guilds\OnboardingPrompt.cs
+    startLine: 37
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets a value indicating whether the users are limited to selecting one option for the prompt.
+  example: []
+  syntax:
+    content: public bool IsSingleSelect { get; init; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsSingleSelect As Boolean
+  overload: Remora.Discord.API.Objects.OnboardingPrompt.IsSingleSelect*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IOnboardingPrompt.IsSingleSelect
+- uid: Remora.Discord.API.Objects.OnboardingPrompt.IsRequired
+  commentId: P:Remora.Discord.API.Objects.OnboardingPrompt.IsRequired
+  id: IsRequired
+  parent: Remora.Discord.API.Objects.OnboardingPrompt
+  langs:
+  - csharp
+  - vb
+  name: IsRequired
+  nameWithType: OnboardingPrompt.IsRequired
+  fullName: Remora.Discord.API.Objects.OnboardingPrompt.IsRequired
+  type: Property
+  source:
+    id: IsRequired
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Guilds\OnboardingPrompt.cs
+    startLine: 38
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets a value indicating whether the prompt is required before a user completes the onboarding flow.
+  example: []
+  syntax:
+    content: public bool IsRequired { get; init; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsRequired As Boolean
+  overload: Remora.Discord.API.Objects.OnboardingPrompt.IsRequired*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IOnboardingPrompt.IsRequired
+- uid: Remora.Discord.API.Objects.OnboardingPrompt.IsInOnboarding
+  commentId: P:Remora.Discord.API.Objects.OnboardingPrompt.IsInOnboarding
+  id: IsInOnboarding
+  parent: Remora.Discord.API.Objects.OnboardingPrompt
+  langs:
+  - csharp
+  - vb
+  name: IsInOnboarding
+  nameWithType: OnboardingPrompt.IsInOnboarding
+  fullName: Remora.Discord.API.Objects.OnboardingPrompt.IsInOnboarding
+  type: Property
+  source:
+    id: IsInOnboarding
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Guilds\OnboardingPrompt.cs
+    startLine: 39
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets a value indicating whether the prompt is present in the onboarding flow.
+  remarks: If false, the prompt will only appear in the Channels &amp; Roles tab.
+  example: []
+  syntax:
+    content: public bool IsInOnboarding { get; init; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsInOnboarding As Boolean
+  overload: Remora.Discord.API.Objects.OnboardingPrompt.IsInOnboarding*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IOnboardingPrompt.IsInOnboarding
+references:
+- uid: Remora.Discord.API.Objects
+  commentId: N:Remora.Discord.API.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Objects
+  nameWithType: Remora.Discord.API.Objects
+  fullName: Remora.Discord.API.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Objects
+    name: Objects
+    href: Remora.Discord.API.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Objects
+    name: Objects
+    href: Remora.Discord.API.Objects.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Remora.Discord.API.Abstractions.Objects.IOnboardingPrompt
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IOnboardingPrompt
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IOnboardingPrompt.html
+  name: IOnboardingPrompt
+  nameWithType: IOnboardingPrompt
+  fullName: Remora.Discord.API.Abstractions.Objects.IOnboardingPrompt
+- uid: System.IEquatable{Remora.Discord.API.Objects.OnboardingPrompt}
+  commentId: T:System.IEquatable{Remora.Discord.API.Objects.OnboardingPrompt}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<OnboardingPrompt>
+  nameWithType: IEquatable<OnboardingPrompt>
+  fullName: System.IEquatable<Remora.Discord.API.Objects.OnboardingPrompt>
+  nameWithType.vb: IEquatable(Of OnboardingPrompt)
+  fullName.vb: System.IEquatable(Of Remora.Discord.API.Objects.OnboardingPrompt)
+  name.vb: IEquatable(Of OnboardingPrompt)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Remora.Discord.API.Objects.OnboardingPrompt
+    name: OnboardingPrompt
+    href: Remora.Discord.API.Objects.OnboardingPrompt.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Objects.OnboardingPrompt
+    name: OnboardingPrompt
+    href: Remora.Discord.API.Objects.OnboardingPrompt.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.API.Abstractions.Objects
+  commentId: N:Remora.Discord.API.Abstractions.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Objects
+  nameWithType: Remora.Discord.API.Abstractions.Objects
+  fullName: Remora.Discord.API.Abstractions.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Remora.Discord.API.Objects.OnboardingPrompt.#ctor*
+  commentId: Overload:Remora.Discord.API.Objects.OnboardingPrompt.#ctor
+  href: Remora.Discord.API.Objects.OnboardingPrompt.html#Remora_Discord_API_Objects_OnboardingPrompt__ctor_Remora_Rest_Core_Snowflake_Remora_Discord_API_Abstractions_Objects_PromptType_System_Collections_Generic_IReadOnlyList_Remora_Discord_API_Abstractions_Objects_IPromptOption__System_String_System_Boolean_System_Boolean_System_Boolean_
+  name: OnboardingPrompt
+  nameWithType: OnboardingPrompt.OnboardingPrompt
+  fullName: Remora.Discord.API.Objects.OnboardingPrompt.OnboardingPrompt
+  nameWithType.vb: OnboardingPrompt.New
+  fullName.vb: Remora.Discord.API.Objects.OnboardingPrompt.New
+  name.vb: New
+- uid: Remora.Rest.Core.Snowflake
+  commentId: T:Remora.Rest.Core.Snowflake
+  parent: Remora.Rest.Core
+  isExternal: true
+  name: Snowflake
+  nameWithType: Snowflake
+  fullName: Remora.Rest.Core.Snowflake
+- uid: Remora.Discord.API.Abstractions.Objects.PromptType
+  commentId: T:Remora.Discord.API.Abstractions.Objects.PromptType
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.PromptType.html
+  name: PromptType
+  nameWithType: PromptType
+  fullName: Remora.Discord.API.Abstractions.Objects.PromptType
+- uid: System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IPromptOption}
+  commentId: T:System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IPromptOption}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<IPromptOption>
+  nameWithType: IReadOnlyList<IPromptOption>
+  fullName: System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.IPromptOption>
+  nameWithType.vb: IReadOnlyList(Of IPromptOption)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.IPromptOption)
+  name.vb: IReadOnlyList(Of IPromptOption)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IPromptOption
+    name: IPromptOption
+    href: Remora.Discord.API.Abstractions.Objects.IPromptOption.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IPromptOption
+    name: IPromptOption
+    href: Remora.Discord.API.Abstractions.Objects.IPromptOption.html
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Remora.Discord.API.Objects.OnboardingPrompt.ID*
+  commentId: Overload:Remora.Discord.API.Objects.OnboardingPrompt.ID
+  href: Remora.Discord.API.Objects.OnboardingPrompt.html#Remora_Discord_API_Objects_OnboardingPrompt_ID
+  name: ID
+  nameWithType: OnboardingPrompt.ID
+  fullName: Remora.Discord.API.Objects.OnboardingPrompt.ID
+- uid: Remora.Discord.API.Abstractions.Objects.IOnboardingPrompt.ID
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IOnboardingPrompt.ID
+  parent: Remora.Discord.API.Abstractions.Objects.IOnboardingPrompt
+  href: Remora.Discord.API.Abstractions.Objects.IOnboardingPrompt.html#Remora_Discord_API_Abstractions_Objects_IOnboardingPrompt_ID
+  name: ID
+  nameWithType: IOnboardingPrompt.ID
+  fullName: Remora.Discord.API.Abstractions.Objects.IOnboardingPrompt.ID
+- uid: Remora.Discord.API.Objects.OnboardingPrompt.Type*
+  commentId: Overload:Remora.Discord.API.Objects.OnboardingPrompt.Type
+  href: Remora.Discord.API.Objects.OnboardingPrompt.html#Remora_Discord_API_Objects_OnboardingPrompt_Type
+  name: Type
+  nameWithType: OnboardingPrompt.Type
+  fullName: Remora.Discord.API.Objects.OnboardingPrompt.Type
+- uid: Remora.Discord.API.Abstractions.Objects.IOnboardingPrompt.Type
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IOnboardingPrompt.Type
+  parent: Remora.Discord.API.Abstractions.Objects.IOnboardingPrompt
+  href: Remora.Discord.API.Abstractions.Objects.IOnboardingPrompt.html#Remora_Discord_API_Abstractions_Objects_IOnboardingPrompt_Type
+  name: Type
+  nameWithType: IOnboardingPrompt.Type
+  fullName: Remora.Discord.API.Abstractions.Objects.IOnboardingPrompt.Type
+- uid: Remora.Discord.API.Objects.OnboardingPrompt.Options*
+  commentId: Overload:Remora.Discord.API.Objects.OnboardingPrompt.Options
+  href: Remora.Discord.API.Objects.OnboardingPrompt.html#Remora_Discord_API_Objects_OnboardingPrompt_Options
+  name: Options
+  nameWithType: OnboardingPrompt.Options
+  fullName: Remora.Discord.API.Objects.OnboardingPrompt.Options
+- uid: Remora.Discord.API.Abstractions.Objects.IOnboardingPrompt.Options
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IOnboardingPrompt.Options
+  parent: Remora.Discord.API.Abstractions.Objects.IOnboardingPrompt
+  href: Remora.Discord.API.Abstractions.Objects.IOnboardingPrompt.html#Remora_Discord_API_Abstractions_Objects_IOnboardingPrompt_Options
+  name: Options
+  nameWithType: IOnboardingPrompt.Options
+  fullName: Remora.Discord.API.Abstractions.Objects.IOnboardingPrompt.Options
+- uid: Remora.Discord.API.Objects.OnboardingPrompt.Title*
+  commentId: Overload:Remora.Discord.API.Objects.OnboardingPrompt.Title
+  href: Remora.Discord.API.Objects.OnboardingPrompt.html#Remora_Discord_API_Objects_OnboardingPrompt_Title
+  name: Title
+  nameWithType: OnboardingPrompt.Title
+  fullName: Remora.Discord.API.Objects.OnboardingPrompt.Title
+- uid: Remora.Discord.API.Abstractions.Objects.IOnboardingPrompt.Title
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IOnboardingPrompt.Title
+  parent: Remora.Discord.API.Abstractions.Objects.IOnboardingPrompt
+  href: Remora.Discord.API.Abstractions.Objects.IOnboardingPrompt.html#Remora_Discord_API_Abstractions_Objects_IOnboardingPrompt_Title
+  name: Title
+  nameWithType: IOnboardingPrompt.Title
+  fullName: Remora.Discord.API.Abstractions.Objects.IOnboardingPrompt.Title
+- uid: Remora.Discord.API.Objects.OnboardingPrompt.IsSingleSelect*
+  commentId: Overload:Remora.Discord.API.Objects.OnboardingPrompt.IsSingleSelect
+  href: Remora.Discord.API.Objects.OnboardingPrompt.html#Remora_Discord_API_Objects_OnboardingPrompt_IsSingleSelect
+  name: IsSingleSelect
+  nameWithType: OnboardingPrompt.IsSingleSelect
+  fullName: Remora.Discord.API.Objects.OnboardingPrompt.IsSingleSelect
+- uid: Remora.Discord.API.Abstractions.Objects.IOnboardingPrompt.IsSingleSelect
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IOnboardingPrompt.IsSingleSelect
+  parent: Remora.Discord.API.Abstractions.Objects.IOnboardingPrompt
+  href: Remora.Discord.API.Abstractions.Objects.IOnboardingPrompt.html#Remora_Discord_API_Abstractions_Objects_IOnboardingPrompt_IsSingleSelect
+  name: IsSingleSelect
+  nameWithType: IOnboardingPrompt.IsSingleSelect
+  fullName: Remora.Discord.API.Abstractions.Objects.IOnboardingPrompt.IsSingleSelect
+- uid: Remora.Discord.API.Objects.OnboardingPrompt.IsRequired*
+  commentId: Overload:Remora.Discord.API.Objects.OnboardingPrompt.IsRequired
+  href: Remora.Discord.API.Objects.OnboardingPrompt.html#Remora_Discord_API_Objects_OnboardingPrompt_IsRequired
+  name: IsRequired
+  nameWithType: OnboardingPrompt.IsRequired
+  fullName: Remora.Discord.API.Objects.OnboardingPrompt.IsRequired
+- uid: Remora.Discord.API.Abstractions.Objects.IOnboardingPrompt.IsRequired
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IOnboardingPrompt.IsRequired
+  parent: Remora.Discord.API.Abstractions.Objects.IOnboardingPrompt
+  href: Remora.Discord.API.Abstractions.Objects.IOnboardingPrompt.html#Remora_Discord_API_Abstractions_Objects_IOnboardingPrompt_IsRequired
+  name: IsRequired
+  nameWithType: IOnboardingPrompt.IsRequired
+  fullName: Remora.Discord.API.Abstractions.Objects.IOnboardingPrompt.IsRequired
+- uid: Remora.Discord.API.Objects.OnboardingPrompt.IsInOnboarding*
+  commentId: Overload:Remora.Discord.API.Objects.OnboardingPrompt.IsInOnboarding
+  href: Remora.Discord.API.Objects.OnboardingPrompt.html#Remora_Discord_API_Objects_OnboardingPrompt_IsInOnboarding
+  name: IsInOnboarding
+  nameWithType: OnboardingPrompt.IsInOnboarding
+  fullName: Remora.Discord.API.Objects.OnboardingPrompt.IsInOnboarding
+- uid: Remora.Discord.API.Abstractions.Objects.IOnboardingPrompt.IsInOnboarding
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IOnboardingPrompt.IsInOnboarding
+  parent: Remora.Discord.API.Abstractions.Objects.IOnboardingPrompt
+  href: Remora.Discord.API.Abstractions.Objects.IOnboardingPrompt.html#Remora_Discord_API_Abstractions_Objects_IOnboardingPrompt_IsInOnboarding
+  name: IsInOnboarding
+  nameWithType: IOnboardingPrompt.IsInOnboarding
+  fullName: Remora.Discord.API.Abstractions.Objects.IOnboardingPrompt.IsInOnboarding

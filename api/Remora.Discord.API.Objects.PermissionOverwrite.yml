@@ -1,0 +1,716 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Objects.PermissionOverwrite
+  commentId: T:Remora.Discord.API.Objects.PermissionOverwrite
+  id: PermissionOverwrite
+  parent: Remora.Discord.API.Objects
+  children:
+  - Remora.Discord.API.Objects.PermissionOverwrite.#ctor(Remora.Rest.Core.Snowflake,Remora.Discord.API.Abstractions.Objects.PermissionOverwriteType,Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet,Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet)
+  - Remora.Discord.API.Objects.PermissionOverwrite.Allow
+  - Remora.Discord.API.Objects.PermissionOverwrite.Deny
+  - Remora.Discord.API.Objects.PermissionOverwrite.ID
+  - Remora.Discord.API.Objects.PermissionOverwrite.Type
+  langs:
+  - csharp
+  - vb
+  name: PermissionOverwrite
+  nameWithType: PermissionOverwrite
+  fullName: Remora.Discord.API.Objects.PermissionOverwrite
+  type: Class
+  source:
+    id: PermissionOverwrite
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Permissions\PermissionOverwrite.cs
+    startLine: 31
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Represents a channel- or category-specific permission overwrite.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public record PermissionOverwrite : IPermissionOverwrite, IPartialPermissionOverwrite, IEquatable<PermissionOverwrite>
+    content.vb: >-
+      <PublicAPI>
+
+      Public Class PermissionOverwrite Implements IPermissionOverwrite, IPartialPermissionOverwrite, IEquatable(Of PermissionOverwrite)
+  inheritance:
+  - System.Object
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite
+  - Remora.Discord.API.Abstractions.Objects.IPartialPermissionOverwrite
+  - System.IEquatable{Remora.Discord.API.Objects.PermissionOverwrite}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Objects.PermissionOverwrite.#ctor(Remora.Rest.Core.Snowflake,Remora.Discord.API.Abstractions.Objects.PermissionOverwriteType,Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet,Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet)
+  commentId: M:Remora.Discord.API.Objects.PermissionOverwrite.#ctor(Remora.Rest.Core.Snowflake,Remora.Discord.API.Abstractions.Objects.PermissionOverwriteType,Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet,Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet)
+  id: '#ctor(Remora.Rest.Core.Snowflake,Remora.Discord.API.Abstractions.Objects.PermissionOverwriteType,Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet,Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet)'
+  parent: Remora.Discord.API.Objects.PermissionOverwrite
+  langs:
+  - csharp
+  - vb
+  name: PermissionOverwrite(Snowflake, PermissionOverwriteType, IDiscordPermissionSet, IDiscordPermissionSet)
+  nameWithType: PermissionOverwrite.PermissionOverwrite(Snowflake, PermissionOverwriteType, IDiscordPermissionSet, IDiscordPermissionSet)
+  fullName: Remora.Discord.API.Objects.PermissionOverwrite.PermissionOverwrite(Remora.Rest.Core.Snowflake, Remora.Discord.API.Abstractions.Objects.PermissionOverwriteType, Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet, Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Permissions\PermissionOverwrite.cs
+    startLine: 31
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Represents a channel- or category-specific permission overwrite.
+  example: []
+  syntax:
+    content: public PermissionOverwrite(Snowflake ID, PermissionOverwriteType Type, IDiscordPermissionSet Allow, IDiscordPermissionSet Deny)
+    parameters:
+    - id: ID
+      type: Remora.Rest.Core.Snowflake
+    - id: Type
+      type: Remora.Discord.API.Abstractions.Objects.PermissionOverwriteType
+    - id: Allow
+      type: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet
+    - id: Deny
+      type: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet
+    content.vb: Public Sub New(ID As Snowflake, Type As PermissionOverwriteType, Allow As IDiscordPermissionSet, Deny As IDiscordPermissionSet)
+  overload: Remora.Discord.API.Objects.PermissionOverwrite.#ctor*
+  nameWithType.vb: PermissionOverwrite.New(Snowflake, PermissionOverwriteType, IDiscordPermissionSet, IDiscordPermissionSet)
+  fullName.vb: Remora.Discord.API.Objects.PermissionOverwrite.New(Remora.Rest.Core.Snowflake, Remora.Discord.API.Abstractions.Objects.PermissionOverwriteType, Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet, Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet)
+  name.vb: New(Snowflake, PermissionOverwriteType, IDiscordPermissionSet, IDiscordPermissionSet)
+- uid: Remora.Discord.API.Objects.PermissionOverwrite.ID
+  commentId: P:Remora.Discord.API.Objects.PermissionOverwrite.ID
+  id: ID
+  parent: Remora.Discord.API.Objects.PermissionOverwrite
+  langs:
+  - csharp
+  - vb
+  name: ID
+  nameWithType: PermissionOverwrite.ID
+  fullName: Remora.Discord.API.Objects.PermissionOverwrite.ID
+  type: Property
+  source:
+    id: ID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Permissions\PermissionOverwrite.cs
+    startLine: 34
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the ID of the role or user ID that the overwrite affects.
+  example: []
+  syntax:
+    content: public Snowflake ID { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Snowflake
+    content.vb: Public Property ID As Snowflake
+  overload: Remora.Discord.API.Objects.PermissionOverwrite.ID*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.ID
+- uid: Remora.Discord.API.Objects.PermissionOverwrite.Type
+  commentId: P:Remora.Discord.API.Objects.PermissionOverwrite.Type
+  id: Type
+  parent: Remora.Discord.API.Objects.PermissionOverwrite
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: PermissionOverwrite.Type
+  fullName: Remora.Discord.API.Objects.PermissionOverwrite.Type
+  type: Property
+  source:
+    id: Type
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Permissions\PermissionOverwrite.cs
+    startLine: 35
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the type of the overwrite.
+  example: []
+  syntax:
+    content: public PermissionOverwriteType Type { get; init; }
+    parameters: []
+    return:
+      type: Remora.Discord.API.Abstractions.Objects.PermissionOverwriteType
+    content.vb: Public Property Type As PermissionOverwriteType
+  overload: Remora.Discord.API.Objects.PermissionOverwrite.Type*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.Type
+- uid: Remora.Discord.API.Objects.PermissionOverwrite.Allow
+  commentId: P:Remora.Discord.API.Objects.PermissionOverwrite.Allow
+  id: Allow
+  parent: Remora.Discord.API.Objects.PermissionOverwrite
+  langs:
+  - csharp
+  - vb
+  name: Allow
+  nameWithType: PermissionOverwrite.Allow
+  fullName: Remora.Discord.API.Objects.PermissionOverwrite.Allow
+  type: Property
+  source:
+    id: Allow
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Permissions\PermissionOverwrite.cs
+    startLine: 36
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the set of permissions that are explicitly allowed.
+  example: []
+  syntax:
+    content: public IDiscordPermissionSet Allow { get; init; }
+    parameters: []
+    return:
+      type: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet
+    content.vb: Public Property Allow As IDiscordPermissionSet
+  overload: Remora.Discord.API.Objects.PermissionOverwrite.Allow*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.Allow
+- uid: Remora.Discord.API.Objects.PermissionOverwrite.Deny
+  commentId: P:Remora.Discord.API.Objects.PermissionOverwrite.Deny
+  id: Deny
+  parent: Remora.Discord.API.Objects.PermissionOverwrite
+  langs:
+  - csharp
+  - vb
+  name: Deny
+  nameWithType: PermissionOverwrite.Deny
+  fullName: Remora.Discord.API.Objects.PermissionOverwrite.Deny
+  type: Property
+  source:
+    id: Deny
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Permissions\PermissionOverwrite.cs
+    startLine: 37
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the set of permissions that are explicitly denied.
+  example: []
+  syntax:
+    content: public IDiscordPermissionSet Deny { get; init; }
+    parameters: []
+    return:
+      type: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet
+    content.vb: Public Property Deny As IDiscordPermissionSet
+  overload: Remora.Discord.API.Objects.PermissionOverwrite.Deny*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.Deny
+references:
+- uid: Remora.Discord.API.Objects
+  commentId: N:Remora.Discord.API.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Objects
+  nameWithType: Remora.Discord.API.Objects
+  fullName: Remora.Discord.API.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Objects
+    name: Objects
+    href: Remora.Discord.API.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Objects
+    name: Objects
+    href: Remora.Discord.API.Objects.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.html
+  name: IPermissionOverwrite
+  nameWithType: IPermissionOverwrite
+  fullName: Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialPermissionOverwrite
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IPartialPermissionOverwrite
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IPartialPermissionOverwrite.html
+  name: IPartialPermissionOverwrite
+  nameWithType: IPartialPermissionOverwrite
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialPermissionOverwrite
+- uid: System.IEquatable{Remora.Discord.API.Objects.PermissionOverwrite}
+  commentId: T:System.IEquatable{Remora.Discord.API.Objects.PermissionOverwrite}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<PermissionOverwrite>
+  nameWithType: IEquatable<PermissionOverwrite>
+  fullName: System.IEquatable<Remora.Discord.API.Objects.PermissionOverwrite>
+  nameWithType.vb: IEquatable(Of PermissionOverwrite)
+  fullName.vb: System.IEquatable(Of Remora.Discord.API.Objects.PermissionOverwrite)
+  name.vb: IEquatable(Of PermissionOverwrite)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Remora.Discord.API.Objects.PermissionOverwrite
+    name: PermissionOverwrite
+    href: Remora.Discord.API.Objects.PermissionOverwrite.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Objects.PermissionOverwrite
+    name: PermissionOverwrite
+    href: Remora.Discord.API.Objects.PermissionOverwrite.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.API.Abstractions.Objects
+  commentId: N:Remora.Discord.API.Abstractions.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Objects
+  nameWithType: Remora.Discord.API.Abstractions.Objects
+  fullName: Remora.Discord.API.Abstractions.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Remora.Discord.API.Objects.PermissionOverwrite.#ctor*
+  commentId: Overload:Remora.Discord.API.Objects.PermissionOverwrite.#ctor
+  href: Remora.Discord.API.Objects.PermissionOverwrite.html#Remora_Discord_API_Objects_PermissionOverwrite__ctor_Remora_Rest_Core_Snowflake_Remora_Discord_API_Abstractions_Objects_PermissionOverwriteType_Remora_Discord_API_Abstractions_Objects_IDiscordPermissionSet_Remora_Discord_API_Abstractions_Objects_IDiscordPermissionSet_
+  name: PermissionOverwrite
+  nameWithType: PermissionOverwrite.PermissionOverwrite
+  fullName: Remora.Discord.API.Objects.PermissionOverwrite.PermissionOverwrite
+  nameWithType.vb: PermissionOverwrite.New
+  fullName.vb: Remora.Discord.API.Objects.PermissionOverwrite.New
+  name.vb: New
+- uid: Remora.Rest.Core.Snowflake
+  commentId: T:Remora.Rest.Core.Snowflake
+  parent: Remora.Rest.Core
+  isExternal: true
+  name: Snowflake
+  nameWithType: Snowflake
+  fullName: Remora.Rest.Core.Snowflake
+- uid: Remora.Discord.API.Abstractions.Objects.PermissionOverwriteType
+  commentId: T:Remora.Discord.API.Abstractions.Objects.PermissionOverwriteType
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.PermissionOverwriteType.html
+  name: PermissionOverwriteType
+  nameWithType: PermissionOverwriteType
+  fullName: Remora.Discord.API.Abstractions.Objects.PermissionOverwriteType
+- uid: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet.html
+  name: IDiscordPermissionSet
+  nameWithType: IDiscordPermissionSet
+  fullName: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+- uid: Remora.Discord.API.Objects.PermissionOverwrite.ID*
+  commentId: Overload:Remora.Discord.API.Objects.PermissionOverwrite.ID
+  href: Remora.Discord.API.Objects.PermissionOverwrite.html#Remora_Discord_API_Objects_PermissionOverwrite_ID
+  name: ID
+  nameWithType: PermissionOverwrite.ID
+  fullName: Remora.Discord.API.Objects.PermissionOverwrite.ID
+- uid: Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.ID
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.ID
+  parent: Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite
+  href: Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.html#Remora_Discord_API_Abstractions_Objects_IPermissionOverwrite_ID
+  name: ID
+  nameWithType: IPermissionOverwrite.ID
+  fullName: Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.ID
+- uid: Remora.Discord.API.Objects.PermissionOverwrite.Type*
+  commentId: Overload:Remora.Discord.API.Objects.PermissionOverwrite.Type
+  href: Remora.Discord.API.Objects.PermissionOverwrite.html#Remora_Discord_API_Objects_PermissionOverwrite_Type
+  name: Type
+  nameWithType: PermissionOverwrite.Type
+  fullName: Remora.Discord.API.Objects.PermissionOverwrite.Type
+- uid: Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.Type
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.Type
+  parent: Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite
+  href: Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.html#Remora_Discord_API_Abstractions_Objects_IPermissionOverwrite_Type
+  name: Type
+  nameWithType: IPermissionOverwrite.Type
+  fullName: Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.Type
+- uid: Remora.Discord.API.Objects.PermissionOverwrite.Allow*
+  commentId: Overload:Remora.Discord.API.Objects.PermissionOverwrite.Allow
+  href: Remora.Discord.API.Objects.PermissionOverwrite.html#Remora_Discord_API_Objects_PermissionOverwrite_Allow
+  name: Allow
+  nameWithType: PermissionOverwrite.Allow
+  fullName: Remora.Discord.API.Objects.PermissionOverwrite.Allow
+- uid: Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.Allow
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.Allow
+  parent: Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite
+  href: Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.html#Remora_Discord_API_Abstractions_Objects_IPermissionOverwrite_Allow
+  name: Allow
+  nameWithType: IPermissionOverwrite.Allow
+  fullName: Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.Allow
+- uid: Remora.Discord.API.Objects.PermissionOverwrite.Deny*
+  commentId: Overload:Remora.Discord.API.Objects.PermissionOverwrite.Deny
+  href: Remora.Discord.API.Objects.PermissionOverwrite.html#Remora_Discord_API_Objects_PermissionOverwrite_Deny
+  name: Deny
+  nameWithType: PermissionOverwrite.Deny
+  fullName: Remora.Discord.API.Objects.PermissionOverwrite.Deny
+- uid: Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.Deny
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.Deny
+  parent: Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite
+  href: Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.html#Remora_Discord_API_Abstractions_Objects_IPermissionOverwrite_Deny
+  name: Deny
+  nameWithType: IPermissionOverwrite.Deny
+  fullName: Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.Deny

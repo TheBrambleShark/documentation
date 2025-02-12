@@ -1,0 +1,943 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.Extensions.Embeds.EmbedFooterBuilder
+  commentId: T:Remora.Discord.Extensions.Embeds.EmbedFooterBuilder
+  id: EmbedFooterBuilder
+  parent: Remora.Discord.Extensions.Embeds
+  children:
+  - Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.#ctor(System.String,System.String)
+  - Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.Build
+  - Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.FromFooter(Remora.Discord.API.Abstractions.Objects.IEmbedFooter)
+  - Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.IconUrl
+  - Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.Text
+  - Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.Validate
+  langs:
+  - csharp
+  - vb
+  name: EmbedFooterBuilder
+  nameWithType: EmbedFooterBuilder
+  fullName: Remora.Discord.Extensions.Embeds.EmbedFooterBuilder
+  type: Class
+  source:
+    id: EmbedFooterBuilder
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Remora.Discord.Extensions\Embeds\EmbedFooterBuilder.cs
+    startLine: 34
+  assemblies:
+  - Remora.Discord.Extensions
+  namespace: Remora.Discord.Extensions.Embeds
+  summary: A builder which validates and builds an <xref href="Remora.Discord.API.Objects.EmbedFooter" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public sealed class EmbedFooterBuilder : BuilderBase<EmbedFooter>, IBuilder<EmbedFooter>
+    content.vb: >-
+      <PublicAPI>
+
+      Public NotInheritable Class EmbedFooterBuilder Inherits BuilderBase(Of EmbedFooter) Implements IBuilder(Of EmbedFooter)
+  inheritance:
+  - System.Object
+  - Remora.Discord.Extensions.Builder.BuilderBase{Remora.Discord.API.Objects.EmbedFooter}
+  implements:
+  - Remora.Discord.Extensions.Builder.IBuilder{Remora.Discord.API.Objects.EmbedFooter}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.Text
+  commentId: P:Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.Text
+  id: Text
+  parent: Remora.Discord.Extensions.Embeds.EmbedFooterBuilder
+  langs:
+  - csharp
+  - vb
+  name: Text
+  nameWithType: EmbedFooterBuilder.Text
+  fullName: Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.Text
+  type: Property
+  source:
+    id: Text
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Remora.Discord.Extensions\Embeds\EmbedFooterBuilder.cs
+    startLine: 41
+  assemblies:
+  - Remora.Discord.Extensions
+  namespace: Remora.Discord.Extensions.Embeds
+  summary: >-
+    Gets or sets the text of the footer. Must be shorter than or equal to
+
+    <xref href="Remora.Discord.Extensions.Embeds.EmbedConstants.MaxFooterTextLength" data-throw-if-not-resolved="false"></xref> in length.
+  example: []
+  syntax:
+    content: public string Text { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Text As String
+  overload: Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.Text*
+- uid: Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.IconUrl
+  commentId: P:Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.IconUrl
+  id: IconUrl
+  parent: Remora.Discord.Extensions.Embeds.EmbedFooterBuilder
+  langs:
+  - csharp
+  - vb
+  name: IconUrl
+  nameWithType: EmbedFooterBuilder.IconUrl
+  fullName: Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.IconUrl
+  type: Property
+  source:
+    id: IconUrl
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Remora.Discord.Extensions\Embeds\EmbedFooterBuilder.cs
+    startLine: 46
+  assemblies:
+  - Remora.Discord.Extensions
+  namespace: Remora.Discord.Extensions.Embeds
+  summary: Gets or sets the icon url of the footer. Provide <code>null</code> if no url is needed.
+  example: []
+  syntax:
+    content: >-
+      [UriString("GET")]
+
+      public string? IconUrl { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <UriString("GET")>
+
+      Public Property IconUrl As String
+  overload: Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.IconUrl*
+  attributes:
+  - type: JetBrains.Annotations.UriStringAttribute
+    ctor: JetBrains.Annotations.UriStringAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: GET
+- uid: Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.#ctor(System.String,System.String)
+  commentId: M:Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.#ctor(System.String,System.String)
+  id: '#ctor(System.String,System.String)'
+  parent: Remora.Discord.Extensions.Embeds.EmbedFooterBuilder
+  langs:
+  - csharp
+  - vb
+  name: EmbedFooterBuilder(string, string?)
+  nameWithType: EmbedFooterBuilder.EmbedFooterBuilder(string, string?)
+  fullName: Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.EmbedFooterBuilder(string, string?)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Remora.Discord.Extensions\Embeds\EmbedFooterBuilder.cs
+    startLine: 54
+  assemblies:
+  - Remora.Discord.Extensions
+  namespace: Remora.Discord.Extensions.Embeds
+  summary: Initializes a new instance of the <xref href="Remora.Discord.Extensions.Embeds.EmbedFooterBuilder" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public EmbedFooterBuilder(string text, string? iconUrl = null)
+    parameters:
+    - id: text
+      type: System.String
+      description: The text of the footer.
+    - id: iconUrl
+      type: System.String
+      description: The icon url of the footer.
+      attributes:
+      - type: JetBrains.Annotations.UriStringAttribute
+        ctor: JetBrains.Annotations.UriStringAttribute.#ctor(System.String)
+        arguments:
+        - type: System.String
+          value: GET
+    content.vb: Public Sub New(text As String, iconUrl As String = Nothing)
+  overload: Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.#ctor*
+  nameWithType.vb: EmbedFooterBuilder.New(String, String)
+  fullName.vb: Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.New(String, String)
+  name.vb: New(String, String)
+- uid: Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.Build
+  commentId: M:Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.Build
+  id: Build
+  parent: Remora.Discord.Extensions.Embeds.EmbedFooterBuilder
+  langs:
+  - csharp
+  - vb
+  name: Build()
+  nameWithType: EmbedFooterBuilder.Build()
+  fullName: Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.Build()
+  type: Method
+  source:
+    id: Build
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Remora.Discord.Extensions\Embeds\EmbedFooterBuilder.cs
+    startLine: 61
+  assemblies:
+  - Remora.Discord.Extensions
+  namespace: Remora.Discord.Extensions.Embeds
+  summary: Validates and then builds the model.
+  example: []
+  syntax:
+    content: public override Result<EmbedFooter> Build()
+    return:
+      type: Remora.Results.Result{Remora.Discord.API.Objects.EmbedFooter}
+      description: A <xref href="Remora.Results.Result%601" data-throw-if-not-resolved="false"></xref> containing the result of the build or the reason for failure.
+    content.vb: Public Overrides Function Build() As Result(Of EmbedFooter)
+  overridden: Remora.Discord.Extensions.Builder.BuilderBase{Remora.Discord.API.Objects.EmbedFooter}.Build
+  overload: Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.Build*
+- uid: Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.Validate
+  commentId: M:Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.Validate
+  id: Validate
+  parent: Remora.Discord.Extensions.Embeds.EmbedFooterBuilder
+  langs:
+  - csharp
+  - vb
+  name: Validate()
+  nameWithType: EmbedFooterBuilder.Validate()
+  fullName: Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.Validate()
+  type: Method
+  source:
+    id: Validate
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Remora.Discord.Extensions\Embeds\EmbedFooterBuilder.cs
+    startLine: 71
+  assemblies:
+  - Remora.Discord.Extensions
+  namespace: Remora.Discord.Extensions.Embeds
+  summary: Validate the model within specifications described by the model.
+  example: []
+  syntax:
+    content: public override Result Validate()
+    return:
+      type: Remora.Results.Result
+      description: A <xref href="Remora.Results.Result" data-throw-if-not-resolved="false"></xref> indicating the result of validation.
+    content.vb: Public Overrides Function Validate() As Result
+  overridden: Remora.Discord.Extensions.Builder.BuilderBase{Remora.Discord.API.Objects.EmbedFooter}.Validate
+  overload: Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.Validate*
+- uid: Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.FromFooter(Remora.Discord.API.Abstractions.Objects.IEmbedFooter)
+  commentId: M:Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.FromFooter(Remora.Discord.API.Abstractions.Objects.IEmbedFooter)
+  id: FromFooter(Remora.Discord.API.Abstractions.Objects.IEmbedFooter)
+  parent: Remora.Discord.Extensions.Embeds.EmbedFooterBuilder
+  langs:
+  - csharp
+  - vb
+  name: FromFooter(IEmbedFooter)
+  nameWithType: EmbedFooterBuilder.FromFooter(IEmbedFooter)
+  fullName: Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.FromFooter(Remora.Discord.API.Abstractions.Objects.IEmbedFooter)
+  type: Method
+  source:
+    id: FromFooter
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Remora.Discord.Extensions\Embeds\EmbedFooterBuilder.cs
+    startLine: 95
+  assemblies:
+  - Remora.Discord.Extensions
+  namespace: Remora.Discord.Extensions.Embeds
+  summary: Converts an existing embed footer into a footer builder.
+  example: []
+  syntax:
+    content: public static EmbedFooterBuilder FromFooter(IEmbedFooter footer)
+    parameters:
+    - id: footer
+      type: Remora.Discord.API.Abstractions.Objects.IEmbedFooter
+      description: The footer.
+    return:
+      type: Remora.Discord.Extensions.Embeds.EmbedFooterBuilder
+      description: A new <xref href="Remora.Discord.Extensions.Embeds.EmbedFooterBuilder" data-throw-if-not-resolved="false"></xref> based on the provided footer.
+    content.vb: Public Shared Function FromFooter(footer As IEmbedFooter) As EmbedFooterBuilder
+  overload: Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.FromFooter*
+references:
+- uid: Remora.Discord.API.Objects.EmbedFooter
+  commentId: T:Remora.Discord.API.Objects.EmbedFooter
+  href: Remora.Discord.API.Objects.EmbedFooter.html
+  name: EmbedFooter
+  nameWithType: EmbedFooter
+  fullName: Remora.Discord.API.Objects.EmbedFooter
+- uid: Remora.Discord.Extensions.Embeds
+  commentId: N:Remora.Discord.Extensions.Embeds
+  href: Remora.html
+  name: Remora.Discord.Extensions.Embeds
+  nameWithType: Remora.Discord.Extensions.Embeds
+  fullName: Remora.Discord.Extensions.Embeds
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Extensions
+    name: Extensions
+    href: Remora.Discord.Extensions.html
+  - name: .
+  - uid: Remora.Discord.Extensions.Embeds
+    name: Embeds
+    href: Remora.Discord.Extensions.Embeds.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Extensions
+    name: Extensions
+    href: Remora.Discord.Extensions.html
+  - name: .
+  - uid: Remora.Discord.Extensions.Embeds
+    name: Embeds
+    href: Remora.Discord.Extensions.Embeds.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Remora.Discord.Extensions.Builder.BuilderBase{Remora.Discord.API.Objects.EmbedFooter}
+  commentId: T:Remora.Discord.Extensions.Builder.BuilderBase{Remora.Discord.API.Objects.EmbedFooter}
+  parent: Remora.Discord.Extensions.Builder
+  definition: Remora.Discord.Extensions.Builder.BuilderBase`1
+  href: Remora.Discord.Extensions.Builder.BuilderBase-1.html
+  name: BuilderBase<EmbedFooter>
+  nameWithType: BuilderBase<EmbedFooter>
+  fullName: Remora.Discord.Extensions.Builder.BuilderBase<Remora.Discord.API.Objects.EmbedFooter>
+  nameWithType.vb: BuilderBase(Of EmbedFooter)
+  fullName.vb: Remora.Discord.Extensions.Builder.BuilderBase(Of Remora.Discord.API.Objects.EmbedFooter)
+  name.vb: BuilderBase(Of EmbedFooter)
+  spec.csharp:
+  - uid: Remora.Discord.Extensions.Builder.BuilderBase`1
+    name: BuilderBase
+    href: Remora.Discord.Extensions.Builder.BuilderBase-1.html
+  - name: <
+  - uid: Remora.Discord.API.Objects.EmbedFooter
+    name: EmbedFooter
+    href: Remora.Discord.API.Objects.EmbedFooter.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Discord.Extensions.Builder.BuilderBase`1
+    name: BuilderBase
+    href: Remora.Discord.Extensions.Builder.BuilderBase-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Objects.EmbedFooter
+    name: EmbedFooter
+    href: Remora.Discord.API.Objects.EmbedFooter.html
+  - name: )
+- uid: Remora.Discord.Extensions.Builder.IBuilder{Remora.Discord.API.Objects.EmbedFooter}
+  commentId: T:Remora.Discord.Extensions.Builder.IBuilder{Remora.Discord.API.Objects.EmbedFooter}
+  parent: Remora.Discord.Extensions.Builder
+  definition: Remora.Discord.Extensions.Builder.IBuilder`1
+  href: Remora.Discord.Extensions.Builder.IBuilder-1.html
+  name: IBuilder<EmbedFooter>
+  nameWithType: IBuilder<EmbedFooter>
+  fullName: Remora.Discord.Extensions.Builder.IBuilder<Remora.Discord.API.Objects.EmbedFooter>
+  nameWithType.vb: IBuilder(Of EmbedFooter)
+  fullName.vb: Remora.Discord.Extensions.Builder.IBuilder(Of Remora.Discord.API.Objects.EmbedFooter)
+  name.vb: IBuilder(Of EmbedFooter)
+  spec.csharp:
+  - uid: Remora.Discord.Extensions.Builder.IBuilder`1
+    name: IBuilder
+    href: Remora.Discord.Extensions.Builder.IBuilder-1.html
+  - name: <
+  - uid: Remora.Discord.API.Objects.EmbedFooter
+    name: EmbedFooter
+    href: Remora.Discord.API.Objects.EmbedFooter.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Discord.Extensions.Builder.IBuilder`1
+    name: IBuilder
+    href: Remora.Discord.Extensions.Builder.IBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Objects.EmbedFooter
+    name: EmbedFooter
+    href: Remora.Discord.API.Objects.EmbedFooter.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.Extensions.Builder.BuilderBase`1
+  commentId: T:Remora.Discord.Extensions.Builder.BuilderBase`1
+  href: Remora.Discord.Extensions.Builder.BuilderBase-1.html
+  name: BuilderBase<TEntity>
+  nameWithType: BuilderBase<TEntity>
+  fullName: Remora.Discord.Extensions.Builder.BuilderBase<TEntity>
+  nameWithType.vb: BuilderBase(Of TEntity)
+  fullName.vb: Remora.Discord.Extensions.Builder.BuilderBase(Of TEntity)
+  name.vb: BuilderBase(Of TEntity)
+  spec.csharp:
+  - uid: Remora.Discord.Extensions.Builder.BuilderBase`1
+    name: BuilderBase
+    href: Remora.Discord.Extensions.Builder.BuilderBase-1.html
+  - name: <
+  - name: TEntity
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Discord.Extensions.Builder.BuilderBase`1
+    name: BuilderBase
+    href: Remora.Discord.Extensions.Builder.BuilderBase-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+- uid: Remora.Discord.Extensions.Builder
+  commentId: N:Remora.Discord.Extensions.Builder
+  href: Remora.html
+  name: Remora.Discord.Extensions.Builder
+  nameWithType: Remora.Discord.Extensions.Builder
+  fullName: Remora.Discord.Extensions.Builder
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Extensions
+    name: Extensions
+    href: Remora.Discord.Extensions.html
+  - name: .
+  - uid: Remora.Discord.Extensions.Builder
+    name: Builder
+    href: Remora.Discord.Extensions.Builder.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Extensions
+    name: Extensions
+    href: Remora.Discord.Extensions.html
+  - name: .
+  - uid: Remora.Discord.Extensions.Builder
+    name: Builder
+    href: Remora.Discord.Extensions.Builder.html
+- uid: Remora.Discord.Extensions.Builder.IBuilder`1
+  commentId: T:Remora.Discord.Extensions.Builder.IBuilder`1
+  href: Remora.Discord.Extensions.Builder.IBuilder-1.html
+  name: IBuilder<TEntity>
+  nameWithType: IBuilder<TEntity>
+  fullName: Remora.Discord.Extensions.Builder.IBuilder<TEntity>
+  nameWithType.vb: IBuilder(Of TEntity)
+  fullName.vb: Remora.Discord.Extensions.Builder.IBuilder(Of TEntity)
+  name.vb: IBuilder(Of TEntity)
+  spec.csharp:
+  - uid: Remora.Discord.Extensions.Builder.IBuilder`1
+    name: IBuilder
+    href: Remora.Discord.Extensions.Builder.IBuilder-1.html
+  - name: <
+  - name: TEntity
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Discord.Extensions.Builder.IBuilder`1
+    name: IBuilder
+    href: Remora.Discord.Extensions.Builder.IBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+- uid: Remora.Discord.Extensions.Embeds.EmbedConstants.MaxFooterTextLength
+  commentId: F:Remora.Discord.Extensions.Embeds.EmbedConstants.MaxFooterTextLength
+  href: Remora.Discord.Extensions.Embeds.EmbedConstants.html#Remora_Discord_Extensions_Embeds_EmbedConstants_MaxFooterTextLength
+  name: MaxFooterTextLength
+  nameWithType: EmbedConstants.MaxFooterTextLength
+  fullName: Remora.Discord.Extensions.Embeds.EmbedConstants.MaxFooterTextLength
+- uid: Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.Text*
+  commentId: Overload:Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.Text
+  href: Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.html#Remora_Discord_Extensions_Embeds_EmbedFooterBuilder_Text
+  name: Text
+  nameWithType: EmbedFooterBuilder.Text
+  fullName: Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.Text
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.IconUrl*
+  commentId: Overload:Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.IconUrl
+  href: Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.html#Remora_Discord_Extensions_Embeds_EmbedFooterBuilder_IconUrl
+  name: IconUrl
+  nameWithType: EmbedFooterBuilder.IconUrl
+  fullName: Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.IconUrl
+- uid: Remora.Discord.Extensions.Embeds.EmbedFooterBuilder
+  commentId: T:Remora.Discord.Extensions.Embeds.EmbedFooterBuilder
+  parent: Remora.Discord.Extensions.Embeds
+  href: Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.html
+  name: EmbedFooterBuilder
+  nameWithType: EmbedFooterBuilder
+  fullName: Remora.Discord.Extensions.Embeds.EmbedFooterBuilder
+- uid: Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.#ctor*
+  commentId: Overload:Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.#ctor
+  href: Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.html#Remora_Discord_Extensions_Embeds_EmbedFooterBuilder__ctor_System_String_System_String_
+  name: EmbedFooterBuilder
+  nameWithType: EmbedFooterBuilder.EmbedFooterBuilder
+  fullName: Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.EmbedFooterBuilder
+  nameWithType.vb: EmbedFooterBuilder.New
+  fullName.vb: Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.New
+  name.vb: New
+- uid: Remora.Results.Result`1
+  commentId: T:Remora.Results.Result`1
+  isExternal: true
+  name: Result<TEntity>
+  nameWithType: Result<TEntity>
+  fullName: Remora.Results.Result<TEntity>
+  nameWithType.vb: Result(Of TEntity)
+  fullName.vb: Remora.Results.Result(Of TEntity)
+  name.vb: Result(Of TEntity)
+  spec.csharp:
+  - uid: Remora.Results.Result`1
+    name: Result
+    isExternal: true
+  - name: <
+  - name: TEntity
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Results.Result`1
+    name: Result
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+- uid: Remora.Discord.Extensions.Builder.BuilderBase{Remora.Discord.API.Objects.EmbedFooter}.Build
+  commentId: M:Remora.Discord.Extensions.Builder.BuilderBase{Remora.Discord.API.Objects.EmbedFooter}.Build
+  parent: Remora.Discord.Extensions.Builder.BuilderBase{Remora.Discord.API.Objects.EmbedFooter}
+  definition: Remora.Discord.Extensions.Builder.BuilderBase`1.Build
+  href: Remora.Discord.Extensions.Builder.BuilderBase-1.html#Remora_Discord_Extensions_Builder_BuilderBase_1_Build
+  name: Build()
+  nameWithType: BuilderBase<EmbedFooter>.Build()
+  fullName: Remora.Discord.Extensions.Builder.BuilderBase<Remora.Discord.API.Objects.EmbedFooter>.Build()
+  nameWithType.vb: BuilderBase(Of EmbedFooter).Build()
+  fullName.vb: Remora.Discord.Extensions.Builder.BuilderBase(Of Remora.Discord.API.Objects.EmbedFooter).Build()
+  spec.csharp:
+  - uid: Remora.Discord.Extensions.Builder.BuilderBase{Remora.Discord.API.Objects.EmbedFooter}.Build
+    name: Build
+    href: Remora.Discord.Extensions.Builder.BuilderBase-1.html#Remora_Discord_Extensions_Builder_BuilderBase_1_Build
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Extensions.Builder.BuilderBase{Remora.Discord.API.Objects.EmbedFooter}.Build
+    name: Build
+    href: Remora.Discord.Extensions.Builder.BuilderBase-1.html#Remora_Discord_Extensions_Builder_BuilderBase_1_Build
+  - name: (
+  - name: )
+- uid: Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.Build*
+  commentId: Overload:Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.Build
+  href: Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.html#Remora_Discord_Extensions_Embeds_EmbedFooterBuilder_Build
+  name: Build
+  nameWithType: EmbedFooterBuilder.Build
+  fullName: Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.Build
+- uid: Remora.Results.Result{Remora.Discord.API.Objects.EmbedFooter}
+  commentId: T:Remora.Results.Result{Remora.Discord.API.Objects.EmbedFooter}
+  parent: Remora.Results
+  definition: Remora.Results.Result`1
+  href: Remora.Discord.API.Objects.EmbedFooter.html
+  name: Result<EmbedFooter>
+  nameWithType: Result<EmbedFooter>
+  fullName: Remora.Results.Result<Remora.Discord.API.Objects.EmbedFooter>
+  nameWithType.vb: Result(Of EmbedFooter)
+  fullName.vb: Remora.Results.Result(Of Remora.Discord.API.Objects.EmbedFooter)
+  name.vb: Result(Of EmbedFooter)
+  spec.csharp:
+  - uid: Remora.Results.Result`1
+    name: Result
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Objects.EmbedFooter
+    name: EmbedFooter
+    href: Remora.Discord.API.Objects.EmbedFooter.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Results.Result`1
+    name: Result
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Objects.EmbedFooter
+    name: EmbedFooter
+    href: Remora.Discord.API.Objects.EmbedFooter.html
+  - name: )
+- uid: Remora.Discord.Extensions.Builder.BuilderBase`1.Build
+  commentId: M:Remora.Discord.Extensions.Builder.BuilderBase`1.Build
+  href: Remora.Discord.Extensions.Builder.BuilderBase-1.html#Remora_Discord_Extensions_Builder_BuilderBase_1_Build
+  name: Build()
+  nameWithType: BuilderBase<TEntity>.Build()
+  fullName: Remora.Discord.Extensions.Builder.BuilderBase<TEntity>.Build()
+  nameWithType.vb: BuilderBase(Of TEntity).Build()
+  fullName.vb: Remora.Discord.Extensions.Builder.BuilderBase(Of TEntity).Build()
+  spec.csharp:
+  - uid: Remora.Discord.Extensions.Builder.BuilderBase`1.Build
+    name: Build
+    href: Remora.Discord.Extensions.Builder.BuilderBase-1.html#Remora_Discord_Extensions_Builder_BuilderBase_1_Build
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Extensions.Builder.BuilderBase`1.Build
+    name: Build
+    href: Remora.Discord.Extensions.Builder.BuilderBase-1.html#Remora_Discord_Extensions_Builder_BuilderBase_1_Build
+  - name: (
+  - name: )
+- uid: Remora.Results
+  commentId: N:Remora.Results
+  isExternal: true
+  name: Remora.Results
+  nameWithType: Remora.Results
+  fullName: Remora.Results
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Results
+    name: Results
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Results
+    name: Results
+    isExternal: true
+- uid: Remora.Results.Result
+  commentId: T:Remora.Results.Result
+  parent: Remora.Results
+  isExternal: true
+  name: Result
+  nameWithType: Result
+  fullName: Remora.Results.Result
+- uid: Remora.Discord.Extensions.Builder.BuilderBase{Remora.Discord.API.Objects.EmbedFooter}.Validate
+  commentId: M:Remora.Discord.Extensions.Builder.BuilderBase{Remora.Discord.API.Objects.EmbedFooter}.Validate
+  parent: Remora.Discord.Extensions.Builder.BuilderBase{Remora.Discord.API.Objects.EmbedFooter}
+  definition: Remora.Discord.Extensions.Builder.BuilderBase`1.Validate
+  href: Remora.Discord.Extensions.Builder.BuilderBase-1.html#Remora_Discord_Extensions_Builder_BuilderBase_1_Validate
+  name: Validate()
+  nameWithType: BuilderBase<EmbedFooter>.Validate()
+  fullName: Remora.Discord.Extensions.Builder.BuilderBase<Remora.Discord.API.Objects.EmbedFooter>.Validate()
+  nameWithType.vb: BuilderBase(Of EmbedFooter).Validate()
+  fullName.vb: Remora.Discord.Extensions.Builder.BuilderBase(Of Remora.Discord.API.Objects.EmbedFooter).Validate()
+  spec.csharp:
+  - uid: Remora.Discord.Extensions.Builder.BuilderBase{Remora.Discord.API.Objects.EmbedFooter}.Validate
+    name: Validate
+    href: Remora.Discord.Extensions.Builder.BuilderBase-1.html#Remora_Discord_Extensions_Builder_BuilderBase_1_Validate
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Extensions.Builder.BuilderBase{Remora.Discord.API.Objects.EmbedFooter}.Validate
+    name: Validate
+    href: Remora.Discord.Extensions.Builder.BuilderBase-1.html#Remora_Discord_Extensions_Builder_BuilderBase_1_Validate
+  - name: (
+  - name: )
+- uid: Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.Validate*
+  commentId: Overload:Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.Validate
+  href: Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.html#Remora_Discord_Extensions_Embeds_EmbedFooterBuilder_Validate
+  name: Validate
+  nameWithType: EmbedFooterBuilder.Validate
+  fullName: Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.Validate
+- uid: Remora.Discord.Extensions.Builder.BuilderBase`1.Validate
+  commentId: M:Remora.Discord.Extensions.Builder.BuilderBase`1.Validate
+  href: Remora.Discord.Extensions.Builder.BuilderBase-1.html#Remora_Discord_Extensions_Builder_BuilderBase_1_Validate
+  name: Validate()
+  nameWithType: BuilderBase<TEntity>.Validate()
+  fullName: Remora.Discord.Extensions.Builder.BuilderBase<TEntity>.Validate()
+  nameWithType.vb: BuilderBase(Of TEntity).Validate()
+  fullName.vb: Remora.Discord.Extensions.Builder.BuilderBase(Of TEntity).Validate()
+  spec.csharp:
+  - uid: Remora.Discord.Extensions.Builder.BuilderBase`1.Validate
+    name: Validate
+    href: Remora.Discord.Extensions.Builder.BuilderBase-1.html#Remora_Discord_Extensions_Builder_BuilderBase_1_Validate
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Extensions.Builder.BuilderBase`1.Validate
+    name: Validate
+    href: Remora.Discord.Extensions.Builder.BuilderBase-1.html#Remora_Discord_Extensions_Builder_BuilderBase_1_Validate
+  - name: (
+  - name: )
+- uid: Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.FromFooter*
+  commentId: Overload:Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.FromFooter
+  href: Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.html#Remora_Discord_Extensions_Embeds_EmbedFooterBuilder_FromFooter_Remora_Discord_API_Abstractions_Objects_IEmbedFooter_
+  name: FromFooter
+  nameWithType: EmbedFooterBuilder.FromFooter
+  fullName: Remora.Discord.Extensions.Embeds.EmbedFooterBuilder.FromFooter
+- uid: Remora.Discord.API.Abstractions.Objects.IEmbedFooter
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IEmbedFooter
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IEmbedFooter.html
+  name: IEmbedFooter
+  nameWithType: IEmbedFooter
+  fullName: Remora.Discord.API.Abstractions.Objects.IEmbedFooter
+- uid: Remora.Discord.API.Abstractions.Objects
+  commentId: N:Remora.Discord.API.Abstractions.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Objects
+  nameWithType: Remora.Discord.API.Abstractions.Objects
+  fullName: Remora.Discord.API.Abstractions.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html

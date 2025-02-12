@@ -1,0 +1,223 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate
+  id: IGuildCreate
+  parent: Remora.Discord.API.Abstractions.Gateway.Events
+  children:
+  - Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate.Guild
+  langs:
+  - csharp
+  - vb
+  name: IGuildCreate
+  nameWithType: IGuildCreate
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate
+  type: Interface
+  source:
+    id: IGuildCreate
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Events\Guilds\IGuildCreate.cs
+    startLine: 38
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Events
+  summary: >-
+    Represents the creation of a guild. This event is sent in one of three scenarios:
+        1. When a user is initially connecting to lazily load and backfill information for all unavailable guilds
+           sent in the <xref href="Remora.Discord.API.Abstractions.Gateway.Events.IReady" data-throw-if-not-resolved="false"></xref> event.
+        2. When a guild becomes available again to the client.
+        3. When the current user joins a guild.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public interface IGuildCreate : IGatewayEvent, IGatewayPayloadData
+    content.vb: >-
+      <PublicAPI>
+
+      Public Interface IGuildCreate Inherits IGatewayEvent, IGatewayPayloadData
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate.Guild
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate.Guild
+  id: Guild
+  parent: Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate
+  langs:
+  - csharp
+  - vb
+  name: Guild
+  nameWithType: IGuildCreate.Guild
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate.Guild
+  type: Property
+  source:
+    id: Guild
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Events\Guilds\IGuildCreate.cs
+    startLine: 44
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Events
+  summary: Gets the created guild.
+  example: []
+  syntax:
+    content: OneOf<IGuildCreate.IAvailableGuild, IUnavailableGuild> Guild { get; }
+    parameters: []
+    return:
+      type: OneOf.OneOf{Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate.IAvailableGuild,Remora.Discord.API.Abstractions.Objects.IUnavailableGuild}
+    content.vb: ReadOnly Property Guild As OneOf(Of IGuildCreate.IAvailableGuild, IUnavailableGuild)
+  overload: Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate.Guild*
+references:
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IReady
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.Events.IReady
+  parent: Remora.Discord.API.Abstractions.Gateway.Events
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IReady.html
+  name: IReady
+  nameWithType: IReady
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IReady
+- uid: Remora.Discord.API.Abstractions.Gateway.Events
+  commentId: N:Remora.Discord.API.Abstractions.Gateway.Events
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Gateway.Events
+  nameWithType: Remora.Discord.API.Abstractions.Gateway.Events
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events
+    name: Events
+    href: Remora.Discord.API.Abstractions.Gateway.Events.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events
+    name: Events
+    href: Remora.Discord.API.Abstractions.Gateway.Events.html
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate.Guild*
+  commentId: Overload:Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate.Guild
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate.html#Remora_Discord_API_Abstractions_Gateway_Events_IGuildCreate_Guild
+  name: Guild
+  nameWithType: IGuildCreate.Guild
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate.Guild
+- uid: OneOf.OneOf{Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate.IAvailableGuild,Remora.Discord.API.Abstractions.Objects.IUnavailableGuild}
+  commentId: T:OneOf.OneOf{Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate.IAvailableGuild,Remora.Discord.API.Abstractions.Objects.IUnavailableGuild}
+  parent: OneOf
+  definition: OneOf.OneOf`2
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate.html
+  name: OneOf<IGuildCreate.IAvailableGuild, IUnavailableGuild>
+  nameWithType: OneOf<IGuildCreate.IAvailableGuild, IUnavailableGuild>
+  fullName: OneOf.OneOf<Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate.IAvailableGuild, Remora.Discord.API.Abstractions.Objects.IUnavailableGuild>
+  nameWithType.vb: OneOf(Of IGuildCreate.IAvailableGuild, IUnavailableGuild)
+  fullName.vb: OneOf.OneOf(Of Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate.IAvailableGuild, Remora.Discord.API.Abstractions.Objects.IUnavailableGuild)
+  name.vb: OneOf(Of IGuildCreate.IAvailableGuild, IUnavailableGuild)
+  spec.csharp:
+  - uid: OneOf.OneOf`2
+    name: OneOf
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate
+    name: IGuildCreate
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate.IAvailableGuild
+    name: IAvailableGuild
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate.IAvailableGuild.html
+  - name: ','
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IUnavailableGuild
+    name: IUnavailableGuild
+    href: Remora.Discord.API.Abstractions.Objects.IUnavailableGuild.html
+  - name: '>'
+  spec.vb:
+  - uid: OneOf.OneOf`2
+    name: OneOf
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate
+    name: IGuildCreate
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate.IAvailableGuild
+    name: IAvailableGuild
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildCreate.IAvailableGuild.html
+  - name: ','
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IUnavailableGuild
+    name: IUnavailableGuild
+    href: Remora.Discord.API.Abstractions.Objects.IUnavailableGuild.html
+  - name: )
+- uid: OneOf.OneOf`2
+  commentId: T:OneOf.OneOf`2
+  isExternal: true
+  name: OneOf<T0, T1>
+  nameWithType: OneOf<T0, T1>
+  fullName: OneOf.OneOf<T0, T1>
+  nameWithType.vb: OneOf(Of T0, T1)
+  fullName.vb: OneOf.OneOf(Of T0, T1)
+  name.vb: OneOf(Of T0, T1)
+  spec.csharp:
+  - uid: OneOf.OneOf`2
+    name: OneOf
+    isExternal: true
+  - name: <
+  - name: T0
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: '>'
+  spec.vb:
+  - uid: OneOf.OneOf`2
+    name: OneOf
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T0
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: )
+- uid: OneOf
+  commentId: N:OneOf
+  isExternal: true
+  name: OneOf
+  nameWithType: OneOf
+  fullName: OneOf

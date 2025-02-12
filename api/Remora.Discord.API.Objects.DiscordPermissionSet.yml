@@ -1,0 +1,1386 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Objects.DiscordPermissionSet
+  commentId: T:Remora.Discord.API.Objects.DiscordPermissionSet
+  id: DiscordPermissionSet
+  parent: Remora.Discord.API.Objects
+  children:
+  - Remora.Discord.API.Objects.DiscordPermissionSet.#ctor(Remora.Discord.API.Abstractions.Objects.DiscordPermission[])
+  - Remora.Discord.API.Objects.DiscordPermissionSet.#ctor(Remora.Discord.API.Abstractions.Objects.DiscordTextPermission[])
+  - Remora.Discord.API.Objects.DiscordPermissionSet.#ctor(Remora.Discord.API.Abstractions.Objects.DiscordVoicePermission[])
+  - Remora.Discord.API.Objects.DiscordPermissionSet.#ctor(System.Numerics.BigInteger)
+  - Remora.Discord.API.Objects.DiscordPermissionSet.ComputePermissions(Remora.Discord.API.Abstractions.Objects.IRole,Remora.Discord.API.Abstractions.Objects.IRole,System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite})
+  - Remora.Discord.API.Objects.DiscordPermissionSet.ComputePermissions(Remora.Rest.Core.Snowflake,Remora.Discord.API.Abstractions.Objects.IRole,System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IRole},System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite})
+  - Remora.Discord.API.Objects.DiscordPermissionSet.Empty
+  - Remora.Discord.API.Objects.DiscordPermissionSet.Equals(Remora.Discord.API.Objects.DiscordPermissionSet)
+  - Remora.Discord.API.Objects.DiscordPermissionSet.Equals(System.Object)
+  - Remora.Discord.API.Objects.DiscordPermissionSet.GetHashCode
+  - Remora.Discord.API.Objects.DiscordPermissionSet.GetPermissions
+  - Remora.Discord.API.Objects.DiscordPermissionSet.HasPermission(Remora.Discord.API.Abstractions.Objects.DiscordPermission)
+  - Remora.Discord.API.Objects.DiscordPermissionSet.HasPermission(Remora.Discord.API.Abstractions.Objects.DiscordTextPermission)
+  - Remora.Discord.API.Objects.DiscordPermissionSet.HasPermission(Remora.Discord.API.Abstractions.Objects.DiscordVoicePermission)
+  - Remora.Discord.API.Objects.DiscordPermissionSet.Value
+  langs:
+  - csharp
+  - vb
+  name: DiscordPermissionSet
+  nameWithType: DiscordPermissionSet
+  fullName: Remora.Discord.API.Objects.DiscordPermissionSet
+  type: Class
+  source:
+    id: DiscordPermissionSet
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Permissions\DiscordPermissionSet.cs
+    startLine: 33
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Supports all classes in the .NET class hierarchy and provides low-level services to derived classes. This is the ultimate base class of all .NET classes; it is the root of the type hierarchy.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public class DiscordPermissionSet : IDiscordPermissionSet
+    content.vb: >-
+      <PublicAPI>
+
+      Public Class DiscordPermissionSet Implements IDiscordPermissionSet
+  inheritance:
+  - System.Object
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Objects.DiscordPermissionSet.Empty
+  commentId: P:Remora.Discord.API.Objects.DiscordPermissionSet.Empty
+  id: Empty
+  parent: Remora.Discord.API.Objects.DiscordPermissionSet
+  langs:
+  - csharp
+  - vb
+  name: Empty
+  nameWithType: DiscordPermissionSet.Empty
+  fullName: Remora.Discord.API.Objects.DiscordPermissionSet.Empty
+  type: Property
+  source:
+    id: Empty
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Permissions\DiscordPermissionSet.cs
+    startLine: 39
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets an empty permission set.
+  example: []
+  syntax:
+    content: public static DiscordPermissionSet Empty { get; }
+    parameters: []
+    return:
+      type: Remora.Discord.API.Objects.DiscordPermissionSet
+    content.vb: Public Shared ReadOnly Property Empty As DiscordPermissionSet
+  overload: Remora.Discord.API.Objects.DiscordPermissionSet.Empty*
+- uid: Remora.Discord.API.Objects.DiscordPermissionSet.Value
+  commentId: P:Remora.Discord.API.Objects.DiscordPermissionSet.Value
+  id: Value
+  parent: Remora.Discord.API.Objects.DiscordPermissionSet
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: DiscordPermissionSet.Value
+  fullName: Remora.Discord.API.Objects.DiscordPermissionSet.Value
+  type: Property
+  source:
+    id: Value
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Permissions\DiscordPermissionSet.cs
+    startLine: 42
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the raw value of the permission set.
+  example: []
+  syntax:
+    content: public BigInteger Value { get; }
+    parameters: []
+    return:
+      type: System.Numerics.BigInteger
+    content.vb: Public ReadOnly Property Value As BigInteger
+  overload: Remora.Discord.API.Objects.DiscordPermissionSet.Value*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet.Value
+- uid: Remora.Discord.API.Objects.DiscordPermissionSet.#ctor(System.Numerics.BigInteger)
+  commentId: M:Remora.Discord.API.Objects.DiscordPermissionSet.#ctor(System.Numerics.BigInteger)
+  id: '#ctor(System.Numerics.BigInteger)'
+  parent: Remora.Discord.API.Objects.DiscordPermissionSet
+  langs:
+  - csharp
+  - vb
+  name: DiscordPermissionSet(BigInteger)
+  nameWithType: DiscordPermissionSet.DiscordPermissionSet(BigInteger)
+  fullName: Remora.Discord.API.Objects.DiscordPermissionSet.DiscordPermissionSet(System.Numerics.BigInteger)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Permissions\DiscordPermissionSet.cs
+    startLine: 48
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Initializes a new instance of the <xref href="Remora.Discord.API.Objects.DiscordPermissionSet" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public DiscordPermissionSet(BigInteger value)
+    parameters:
+    - id: value
+      type: System.Numerics.BigInteger
+      description: The value.
+    content.vb: Public Sub New(value As BigInteger)
+  overload: Remora.Discord.API.Objects.DiscordPermissionSet.#ctor*
+  nameWithType.vb: DiscordPermissionSet.New(BigInteger)
+  fullName.vb: Remora.Discord.API.Objects.DiscordPermissionSet.New(System.Numerics.BigInteger)
+  name.vb: New(BigInteger)
+- uid: Remora.Discord.API.Objects.DiscordPermissionSet.#ctor(Remora.Discord.API.Abstractions.Objects.DiscordPermission[])
+  commentId: M:Remora.Discord.API.Objects.DiscordPermissionSet.#ctor(Remora.Discord.API.Abstractions.Objects.DiscordPermission[])
+  id: '#ctor(Remora.Discord.API.Abstractions.Objects.DiscordPermission[])'
+  parent: Remora.Discord.API.Objects.DiscordPermissionSet
+  langs:
+  - csharp
+  - vb
+  name: DiscordPermissionSet(params DiscordPermission[])
+  nameWithType: DiscordPermissionSet.DiscordPermissionSet(params DiscordPermission[])
+  fullName: Remora.Discord.API.Objects.DiscordPermissionSet.DiscordPermissionSet(params Remora.Discord.API.Abstractions.Objects.DiscordPermission[])
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Permissions\DiscordPermissionSet.cs
+    startLine: 57
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Initializes a new instance of the <xref href="Remora.Discord.API.Objects.DiscordPermissionSet" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public DiscordPermissionSet(params DiscordPermission[] permissions)
+    parameters:
+    - id: permissions
+      type: Remora.Discord.API.Abstractions.Objects.DiscordPermission[]
+      description: The permissions in the set.
+    content.vb: Public Sub New(ParamArray permissions As DiscordPermission())
+  overload: Remora.Discord.API.Objects.DiscordPermissionSet.#ctor*
+  nameWithType.vb: DiscordPermissionSet.New(ParamArray DiscordPermission())
+  fullName.vb: Remora.Discord.API.Objects.DiscordPermissionSet.New(ParamArray Remora.Discord.API.Abstractions.Objects.DiscordPermission())
+  name.vb: New(ParamArray DiscordPermission())
+- uid: Remora.Discord.API.Objects.DiscordPermissionSet.#ctor(Remora.Discord.API.Abstractions.Objects.DiscordTextPermission[])
+  commentId: M:Remora.Discord.API.Objects.DiscordPermissionSet.#ctor(Remora.Discord.API.Abstractions.Objects.DiscordTextPermission[])
+  id: '#ctor(Remora.Discord.API.Abstractions.Objects.DiscordTextPermission[])'
+  parent: Remora.Discord.API.Objects.DiscordPermissionSet
+  langs:
+  - csharp
+  - vb
+  name: DiscordPermissionSet(params DiscordTextPermission[])
+  nameWithType: DiscordPermissionSet.DiscordPermissionSet(params DiscordTextPermission[])
+  fullName: Remora.Discord.API.Objects.DiscordPermissionSet.DiscordPermissionSet(params Remora.Discord.API.Abstractions.Objects.DiscordTextPermission[])
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Permissions\DiscordPermissionSet.cs
+    startLine: 95
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Initializes a new instance of the <xref href="Remora.Discord.API.Objects.DiscordPermissionSet" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public DiscordPermissionSet(params DiscordTextPermission[] permissions)
+    parameters:
+    - id: permissions
+      type: Remora.Discord.API.Abstractions.Objects.DiscordTextPermission[]
+      description: The permissions in the set.
+    content.vb: Public Sub New(ParamArray permissions As DiscordTextPermission())
+  overload: Remora.Discord.API.Objects.DiscordPermissionSet.#ctor*
+  nameWithType.vb: DiscordPermissionSet.New(ParamArray DiscordTextPermission())
+  fullName.vb: Remora.Discord.API.Objects.DiscordPermissionSet.New(ParamArray Remora.Discord.API.Abstractions.Objects.DiscordTextPermission())
+  name.vb: New(ParamArray DiscordTextPermission())
+- uid: Remora.Discord.API.Objects.DiscordPermissionSet.#ctor(Remora.Discord.API.Abstractions.Objects.DiscordVoicePermission[])
+  commentId: M:Remora.Discord.API.Objects.DiscordPermissionSet.#ctor(Remora.Discord.API.Abstractions.Objects.DiscordVoicePermission[])
+  id: '#ctor(Remora.Discord.API.Abstractions.Objects.DiscordVoicePermission[])'
+  parent: Remora.Discord.API.Objects.DiscordPermissionSet
+  langs:
+  - csharp
+  - vb
+  name: DiscordPermissionSet(params DiscordVoicePermission[])
+  nameWithType: DiscordPermissionSet.DiscordPermissionSet(params DiscordVoicePermission[])
+  fullName: Remora.Discord.API.Objects.DiscordPermissionSet.DiscordPermissionSet(params Remora.Discord.API.Abstractions.Objects.DiscordVoicePermission[])
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Permissions\DiscordPermissionSet.cs
+    startLine: 104
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Initializes a new instance of the <xref href="Remora.Discord.API.Objects.DiscordPermissionSet" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public DiscordPermissionSet(params DiscordVoicePermission[] permissions)
+    parameters:
+    - id: permissions
+      type: Remora.Discord.API.Abstractions.Objects.DiscordVoicePermission[]
+      description: The permissions in the set.
+    content.vb: Public Sub New(ParamArray permissions As DiscordVoicePermission())
+  overload: Remora.Discord.API.Objects.DiscordPermissionSet.#ctor*
+  nameWithType.vb: DiscordPermissionSet.New(ParamArray DiscordVoicePermission())
+  fullName.vb: Remora.Discord.API.Objects.DiscordPermissionSet.New(ParamArray Remora.Discord.API.Abstractions.Objects.DiscordVoicePermission())
+  name.vb: New(ParamArray DiscordVoicePermission())
+- uid: Remora.Discord.API.Objects.DiscordPermissionSet.HasPermission(Remora.Discord.API.Abstractions.Objects.DiscordPermission)
+  commentId: M:Remora.Discord.API.Objects.DiscordPermissionSet.HasPermission(Remora.Discord.API.Abstractions.Objects.DiscordPermission)
+  id: HasPermission(Remora.Discord.API.Abstractions.Objects.DiscordPermission)
+  parent: Remora.Discord.API.Objects.DiscordPermissionSet
+  langs:
+  - csharp
+  - vb
+  name: HasPermission(DiscordPermission)
+  nameWithType: DiscordPermissionSet.HasPermission(DiscordPermission)
+  fullName: Remora.Discord.API.Objects.DiscordPermissionSet.HasPermission(Remora.Discord.API.Abstractions.Objects.DiscordPermission)
+  type: Method
+  source:
+    id: HasPermission
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Permissions\DiscordPermissionSet.cs
+    startLine: 110
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Determines whether the set allows the given permission.
+  example: []
+  syntax:
+    content: public bool HasPermission(DiscordPermission permission)
+    parameters:
+    - id: permission
+      type: Remora.Discord.API.Abstractions.Objects.DiscordPermission
+      description: The permission.
+    return:
+      type: System.Boolean
+      description: true if the given permission is in the set; otherwise, false.
+    content.vb: Public Function HasPermission(permission As DiscordPermission) As Boolean
+  overload: Remora.Discord.API.Objects.DiscordPermissionSet.HasPermission*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet.HasPermission(Remora.Discord.API.Abstractions.Objects.DiscordPermission)
+- uid: Remora.Discord.API.Objects.DiscordPermissionSet.GetPermissions
+  commentId: M:Remora.Discord.API.Objects.DiscordPermissionSet.GetPermissions
+  id: GetPermissions
+  parent: Remora.Discord.API.Objects.DiscordPermissionSet
+  langs:
+  - csharp
+  - vb
+  name: GetPermissions()
+  nameWithType: DiscordPermissionSet.GetPermissions()
+  fullName: Remora.Discord.API.Objects.DiscordPermissionSet.GetPermissions()
+  type: Method
+  source:
+    id: GetPermissions
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Permissions\DiscordPermissionSet.cs
+    startLine: 135
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets a list of the <xref href="Remora.Discord.API.Abstractions.Objects.DiscordPermission" data-throw-if-not-resolved="false"></xref> values contained within the set.
+  example: []
+  syntax:
+    content: public IReadOnlyList<DiscordPermission> GetPermissions()
+    return:
+      type: System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.DiscordPermission}
+      description: A list of <xref href="Remora.Discord.API.Abstractions.Objects.DiscordPermission" data-throw-if-not-resolved="false"></xref> value.
+    content.vb: Public Function GetPermissions() As IReadOnlyList(Of DiscordPermission)
+  overload: Remora.Discord.API.Objects.DiscordPermissionSet.GetPermissions*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet.GetPermissions
+- uid: Remora.Discord.API.Objects.DiscordPermissionSet.ComputePermissions(Remora.Rest.Core.Snowflake,Remora.Discord.API.Abstractions.Objects.IRole,System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IRole},System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite})
+  commentId: M:Remora.Discord.API.Objects.DiscordPermissionSet.ComputePermissions(Remora.Rest.Core.Snowflake,Remora.Discord.API.Abstractions.Objects.IRole,System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IRole},System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite})
+  id: ComputePermissions(Remora.Rest.Core.Snowflake,Remora.Discord.API.Abstractions.Objects.IRole,System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IRole},System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite})
+  parent: Remora.Discord.API.Objects.DiscordPermissionSet
+  langs:
+  - csharp
+  - vb
+  name: ComputePermissions(Snowflake, IRole, IReadOnlyList<IRole>, IReadOnlyList<IPermissionOverwrite>?)
+  nameWithType: DiscordPermissionSet.ComputePermissions(Snowflake, IRole, IReadOnlyList<IRole>, IReadOnlyList<IPermissionOverwrite>?)
+  fullName: Remora.Discord.API.Objects.DiscordPermissionSet.ComputePermissions(Remora.Rest.Core.Snowflake, Remora.Discord.API.Abstractions.Objects.IRole, System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.IRole>, System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite>?)
+  type: Method
+  source:
+    id: ComputePermissions
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Permissions\DiscordPermissionSet.cs
+    startLine: 167
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Computes a full permission set for a user, taking roles and overwrites into account.
+  example: []
+  syntax:
+    content: public static IDiscordPermissionSet ComputePermissions(Snowflake memberID, IRole everyoneRole, IReadOnlyList<IRole> memberRoles, IReadOnlyList<IPermissionOverwrite>? overwrites = null)
+    parameters:
+    - id: memberID
+      type: Remora.Rest.Core.Snowflake
+      description: The ID of the member.
+    - id: everyoneRole
+      type: Remora.Discord.API.Abstractions.Objects.IRole
+      description: The @everyone role, assigned to every user.
+    - id: memberRoles
+      type: System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IRole}
+      description: The roles that the user has, if any.
+    - id: overwrites
+      type: System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite}
+      description: The channel overwrites currently in effect, if any.
+    return:
+      type: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet
+      description: The true permission set.
+    content.vb: Public Shared Function ComputePermissions(memberID As Snowflake, everyoneRole As IRole, memberRoles As IReadOnlyList(Of IRole), overwrites As IReadOnlyList(Of IPermissionOverwrite) = Nothing) As IDiscordPermissionSet
+  overload: Remora.Discord.API.Objects.DiscordPermissionSet.ComputePermissions*
+  nameWithType.vb: DiscordPermissionSet.ComputePermissions(Snowflake, IRole, IReadOnlyList(Of IRole), IReadOnlyList(Of IPermissionOverwrite))
+  fullName.vb: Remora.Discord.API.Objects.DiscordPermissionSet.ComputePermissions(Remora.Rest.Core.Snowflake, Remora.Discord.API.Abstractions.Objects.IRole, System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.IRole), System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite))
+  name.vb: ComputePermissions(Snowflake, IRole, IReadOnlyList(Of IRole), IReadOnlyList(Of IPermissionOverwrite))
+- uid: Remora.Discord.API.Objects.DiscordPermissionSet.ComputePermissions(Remora.Discord.API.Abstractions.Objects.IRole,Remora.Discord.API.Abstractions.Objects.IRole,System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite})
+  commentId: M:Remora.Discord.API.Objects.DiscordPermissionSet.ComputePermissions(Remora.Discord.API.Abstractions.Objects.IRole,Remora.Discord.API.Abstractions.Objects.IRole,System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite})
+  id: ComputePermissions(Remora.Discord.API.Abstractions.Objects.IRole,Remora.Discord.API.Abstractions.Objects.IRole,System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite})
+  parent: Remora.Discord.API.Objects.DiscordPermissionSet
+  langs:
+  - csharp
+  - vb
+  name: ComputePermissions(IRole, IRole, IReadOnlyList<IPermissionOverwrite>?)
+  nameWithType: DiscordPermissionSet.ComputePermissions(IRole, IRole, IReadOnlyList<IPermissionOverwrite>?)
+  fullName: Remora.Discord.API.Objects.DiscordPermissionSet.ComputePermissions(Remora.Discord.API.Abstractions.Objects.IRole, Remora.Discord.API.Abstractions.Objects.IRole, System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite>?)
+  type: Method
+  source:
+    id: ComputePermissions
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Permissions\DiscordPermissionSet.cs
+    startLine: 225
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Computes a full permission set for a role, taking overwrites into account.
+  example: []
+  syntax:
+    content: public static IDiscordPermissionSet ComputePermissions(IRole role, IRole everyoneRole, IReadOnlyList<IPermissionOverwrite>? overwrites = null)
+    parameters:
+    - id: role
+      type: Remora.Discord.API.Abstractions.Objects.IRole
+      description: The role.
+    - id: everyoneRole
+      type: Remora.Discord.API.Abstractions.Objects.IRole
+      description: The @everyone role, assigned to every user.
+    - id: overwrites
+      type: System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite}
+      description: The channel overwrites currently in effect, if any.
+    return:
+      type: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet
+      description: The true permission set.
+    content.vb: Public Shared Function ComputePermissions(role As IRole, everyoneRole As IRole, overwrites As IReadOnlyList(Of IPermissionOverwrite) = Nothing) As IDiscordPermissionSet
+  overload: Remora.Discord.API.Objects.DiscordPermissionSet.ComputePermissions*
+  nameWithType.vb: DiscordPermissionSet.ComputePermissions(IRole, IRole, IReadOnlyList(Of IPermissionOverwrite))
+  fullName.vb: Remora.Discord.API.Objects.DiscordPermissionSet.ComputePermissions(Remora.Discord.API.Abstractions.Objects.IRole, Remora.Discord.API.Abstractions.Objects.IRole, System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite))
+  name.vb: ComputePermissions(IRole, IRole, IReadOnlyList(Of IPermissionOverwrite))
+- uid: Remora.Discord.API.Objects.DiscordPermissionSet.HasPermission(Remora.Discord.API.Abstractions.Objects.DiscordTextPermission)
+  commentId: M:Remora.Discord.API.Objects.DiscordPermissionSet.HasPermission(Remora.Discord.API.Abstractions.Objects.DiscordTextPermission)
+  id: HasPermission(Remora.Discord.API.Abstractions.Objects.DiscordTextPermission)
+  parent: Remora.Discord.API.Objects.DiscordPermissionSet
+  langs:
+  - csharp
+  - vb
+  name: HasPermission(DiscordTextPermission)
+  nameWithType: DiscordPermissionSet.HasPermission(DiscordTextPermission)
+  fullName: Remora.Discord.API.Objects.DiscordPermissionSet.HasPermission(Remora.Discord.API.Abstractions.Objects.DiscordTextPermission)
+  type: Method
+  source:
+    id: HasPermission
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Permissions\DiscordPermissionSet.cs
+    startLine: 262
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Determines whether the set allows the given permission.
+  example: []
+  syntax:
+    content: public bool HasPermission(DiscordTextPermission permission)
+    parameters:
+    - id: permission
+      type: Remora.Discord.API.Abstractions.Objects.DiscordTextPermission
+      description: The permission.
+    return:
+      type: System.Boolean
+      description: true if the given permission is in the set; otherwise, false.
+    content.vb: Public Function HasPermission(permission As DiscordTextPermission) As Boolean
+  overload: Remora.Discord.API.Objects.DiscordPermissionSet.HasPermission*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet.HasPermission(Remora.Discord.API.Abstractions.Objects.DiscordTextPermission)
+- uid: Remora.Discord.API.Objects.DiscordPermissionSet.HasPermission(Remora.Discord.API.Abstractions.Objects.DiscordVoicePermission)
+  commentId: M:Remora.Discord.API.Objects.DiscordPermissionSet.HasPermission(Remora.Discord.API.Abstractions.Objects.DiscordVoicePermission)
+  id: HasPermission(Remora.Discord.API.Abstractions.Objects.DiscordVoicePermission)
+  parent: Remora.Discord.API.Objects.DiscordPermissionSet
+  langs:
+  - csharp
+  - vb
+  name: HasPermission(DiscordVoicePermission)
+  nameWithType: DiscordPermissionSet.HasPermission(DiscordVoicePermission)
+  fullName: Remora.Discord.API.Objects.DiscordPermissionSet.HasPermission(Remora.Discord.API.Abstractions.Objects.DiscordVoicePermission)
+  type: Method
+  source:
+    id: HasPermission
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Permissions\DiscordPermissionSet.cs
+    startLine: 265
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Determines whether the set allows the given permission.
+  example: []
+  syntax:
+    content: public bool HasPermission(DiscordVoicePermission permission)
+    parameters:
+    - id: permission
+      type: Remora.Discord.API.Abstractions.Objects.DiscordVoicePermission
+      description: The permission.
+    return:
+      type: System.Boolean
+      description: true if the given permission is in the set; otherwise, false.
+    content.vb: Public Function HasPermission(permission As DiscordVoicePermission) As Boolean
+  overload: Remora.Discord.API.Objects.DiscordPermissionSet.HasPermission*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet.HasPermission(Remora.Discord.API.Abstractions.Objects.DiscordVoicePermission)
+- uid: Remora.Discord.API.Objects.DiscordPermissionSet.Equals(Remora.Discord.API.Objects.DiscordPermissionSet)
+  commentId: M:Remora.Discord.API.Objects.DiscordPermissionSet.Equals(Remora.Discord.API.Objects.DiscordPermissionSet)
+  id: Equals(Remora.Discord.API.Objects.DiscordPermissionSet)
+  parent: Remora.Discord.API.Objects.DiscordPermissionSet
+  langs:
+  - csharp
+  - vb
+  name: Equals(DiscordPermissionSet)
+  nameWithType: DiscordPermissionSet.Equals(DiscordPermissionSet)
+  fullName: Remora.Discord.API.Objects.DiscordPermissionSet.Equals(Remora.Discord.API.Objects.DiscordPermissionSet)
+  type: Method
+  source:
+    id: Equals
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Permissions\DiscordPermissionSet.cs
+    startLine: 273
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Determines whether the specified object is equal to the current object.
+  example: []
+  syntax:
+    content: protected bool Equals(DiscordPermissionSet other)
+    parameters:
+    - id: other
+      type: Remora.Discord.API.Objects.DiscordPermissionSet
+      description: The object to compare with the current object.
+    return:
+      type: System.Boolean
+      description: >-
+        <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise,
+
+        <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Protected Function Equals(other As DiscordPermissionSet) As Boolean
+  overload: Remora.Discord.API.Objects.DiscordPermissionSet.Equals*
+- uid: Remora.Discord.API.Objects.DiscordPermissionSet.Equals(System.Object)
+  commentId: M:Remora.Discord.API.Objects.DiscordPermissionSet.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Remora.Discord.API.Objects.DiscordPermissionSet
+  langs:
+  - csharp
+  - vb
+  name: Equals(object?)
+  nameWithType: DiscordPermissionSet.Equals(object?)
+  fullName: Remora.Discord.API.Objects.DiscordPermissionSet.Equals(object?)
+  type: Method
+  source:
+    id: Equals
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Permissions\DiscordPermissionSet.cs
+    startLine: 279
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Determines whether the specified object is equal to the current object.
+  example: []
+  syntax:
+    content: public override bool Equals(object? obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: Remora.Discord.API.Objects.DiscordPermissionSet.Equals*
+  nameWithType.vb: DiscordPermissionSet.Equals(Object)
+  fullName.vb: Remora.Discord.API.Objects.DiscordPermissionSet.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Remora.Discord.API.Objects.DiscordPermissionSet.GetHashCode
+  commentId: M:Remora.Discord.API.Objects.DiscordPermissionSet.GetHashCode
+  id: GetHashCode
+  parent: Remora.Discord.API.Objects.DiscordPermissionSet
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: DiscordPermissionSet.GetHashCode()
+  fullName: Remora.Discord.API.Objects.DiscordPermissionSet.GetHashCode()
+  type: Method
+  source:
+    id: GetHashCode
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Permissions\DiscordPermissionSet.cs
+    startLine: 295
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Serves as the default hash function.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A hash code for the current object.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.Object.GetHashCode
+  overload: Remora.Discord.API.Objects.DiscordPermissionSet.GetHashCode*
+references:
+- uid: Remora.Discord.API.Objects
+  commentId: N:Remora.Discord.API.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Objects
+  nameWithType: Remora.Discord.API.Objects
+  fullName: Remora.Discord.API.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Objects
+    name: Objects
+    href: Remora.Discord.API.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Objects
+    name: Objects
+    href: Remora.Discord.API.Objects.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet.html
+  name: IDiscordPermissionSet
+  nameWithType: IDiscordPermissionSet
+  fullName: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.API.Abstractions.Objects
+  commentId: N:Remora.Discord.API.Abstractions.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Objects
+  nameWithType: Remora.Discord.API.Abstractions.Objects
+  fullName: Remora.Discord.API.Abstractions.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+- uid: Remora.Discord.API.Objects.DiscordPermissionSet.Empty*
+  commentId: Overload:Remora.Discord.API.Objects.DiscordPermissionSet.Empty
+  href: Remora.Discord.API.Objects.DiscordPermissionSet.html#Remora_Discord_API_Objects_DiscordPermissionSet_Empty
+  name: Empty
+  nameWithType: DiscordPermissionSet.Empty
+  fullName: Remora.Discord.API.Objects.DiscordPermissionSet.Empty
+- uid: Remora.Discord.API.Objects.DiscordPermissionSet
+  commentId: T:Remora.Discord.API.Objects.DiscordPermissionSet
+  parent: Remora.Discord.API.Objects
+  href: Remora.Discord.API.Objects.DiscordPermissionSet.html
+  name: DiscordPermissionSet
+  nameWithType: DiscordPermissionSet
+  fullName: Remora.Discord.API.Objects.DiscordPermissionSet
+- uid: Remora.Discord.API.Objects.DiscordPermissionSet.Value*
+  commentId: Overload:Remora.Discord.API.Objects.DiscordPermissionSet.Value
+  href: Remora.Discord.API.Objects.DiscordPermissionSet.html#Remora_Discord_API_Objects_DiscordPermissionSet_Value
+  name: Value
+  nameWithType: DiscordPermissionSet.Value
+  fullName: Remora.Discord.API.Objects.DiscordPermissionSet.Value
+- uid: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet.Value
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet.Value
+  parent: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet
+  href: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet.html#Remora_Discord_API_Abstractions_Objects_IDiscordPermissionSet_Value
+  name: Value
+  nameWithType: IDiscordPermissionSet.Value
+  fullName: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet.Value
+- uid: System.Numerics.BigInteger
+  commentId: T:System.Numerics.BigInteger
+  parent: System.Numerics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.numerics.biginteger
+  name: BigInteger
+  nameWithType: BigInteger
+  fullName: System.Numerics.BigInteger
+- uid: System.Numerics
+  commentId: N:System.Numerics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Numerics
+  nameWithType: System.Numerics
+  fullName: System.Numerics
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Numerics
+    name: Numerics
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Numerics
+    name: Numerics
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics
+- uid: Remora.Discord.API.Objects.DiscordPermissionSet.#ctor*
+  commentId: Overload:Remora.Discord.API.Objects.DiscordPermissionSet.#ctor
+  href: Remora.Discord.API.Objects.DiscordPermissionSet.html#Remora_Discord_API_Objects_DiscordPermissionSet__ctor_System_Numerics_BigInteger_
+  name: DiscordPermissionSet
+  nameWithType: DiscordPermissionSet.DiscordPermissionSet
+  fullName: Remora.Discord.API.Objects.DiscordPermissionSet.DiscordPermissionSet
+  nameWithType.vb: DiscordPermissionSet.New
+  fullName.vb: Remora.Discord.API.Objects.DiscordPermissionSet.New
+  name.vb: New
+- uid: Remora.Discord.API.Abstractions.Objects.DiscordPermission[]
+  isExternal: true
+  href: Remora.Discord.API.Abstractions.Objects.DiscordPermission.html
+  name: DiscordPermission[]
+  nameWithType: DiscordPermission[]
+  fullName: Remora.Discord.API.Abstractions.Objects.DiscordPermission[]
+  nameWithType.vb: DiscordPermission()
+  fullName.vb: Remora.Discord.API.Abstractions.Objects.DiscordPermission()
+  name.vb: DiscordPermission()
+  spec.csharp:
+  - uid: Remora.Discord.API.Abstractions.Objects.DiscordPermission
+    name: DiscordPermission
+    href: Remora.Discord.API.Abstractions.Objects.DiscordPermission.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Remora.Discord.API.Abstractions.Objects.DiscordPermission
+    name: DiscordPermission
+    href: Remora.Discord.API.Abstractions.Objects.DiscordPermission.html
+  - name: (
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Objects.DiscordTextPermission[]
+  isExternal: true
+  href: Remora.Discord.API.Abstractions.Objects.DiscordTextPermission.html
+  name: DiscordTextPermission[]
+  nameWithType: DiscordTextPermission[]
+  fullName: Remora.Discord.API.Abstractions.Objects.DiscordTextPermission[]
+  nameWithType.vb: DiscordTextPermission()
+  fullName.vb: Remora.Discord.API.Abstractions.Objects.DiscordTextPermission()
+  name.vb: DiscordTextPermission()
+  spec.csharp:
+  - uid: Remora.Discord.API.Abstractions.Objects.DiscordTextPermission
+    name: DiscordTextPermission
+    href: Remora.Discord.API.Abstractions.Objects.DiscordTextPermission.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Remora.Discord.API.Abstractions.Objects.DiscordTextPermission
+    name: DiscordTextPermission
+    href: Remora.Discord.API.Abstractions.Objects.DiscordTextPermission.html
+  - name: (
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Objects.DiscordVoicePermission[]
+  isExternal: true
+  href: Remora.Discord.API.Abstractions.Objects.DiscordVoicePermission.html
+  name: DiscordVoicePermission[]
+  nameWithType: DiscordVoicePermission[]
+  fullName: Remora.Discord.API.Abstractions.Objects.DiscordVoicePermission[]
+  nameWithType.vb: DiscordVoicePermission()
+  fullName.vb: Remora.Discord.API.Abstractions.Objects.DiscordVoicePermission()
+  name.vb: DiscordVoicePermission()
+  spec.csharp:
+  - uid: Remora.Discord.API.Abstractions.Objects.DiscordVoicePermission
+    name: DiscordVoicePermission
+    href: Remora.Discord.API.Abstractions.Objects.DiscordVoicePermission.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Remora.Discord.API.Abstractions.Objects.DiscordVoicePermission
+    name: DiscordVoicePermission
+    href: Remora.Discord.API.Abstractions.Objects.DiscordVoicePermission.html
+  - name: (
+  - name: )
+- uid: Remora.Discord.API.Objects.DiscordPermissionSet.HasPermission*
+  commentId: Overload:Remora.Discord.API.Objects.DiscordPermissionSet.HasPermission
+  href: Remora.Discord.API.Objects.DiscordPermissionSet.html#Remora_Discord_API_Objects_DiscordPermissionSet_HasPermission_Remora_Discord_API_Abstractions_Objects_DiscordPermission_
+  name: HasPermission
+  nameWithType: DiscordPermissionSet.HasPermission
+  fullName: Remora.Discord.API.Objects.DiscordPermissionSet.HasPermission
+- uid: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet.HasPermission(Remora.Discord.API.Abstractions.Objects.DiscordPermission)
+  commentId: M:Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet.HasPermission(Remora.Discord.API.Abstractions.Objects.DiscordPermission)
+  parent: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet
+  href: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet.html#Remora_Discord_API_Abstractions_Objects_IDiscordPermissionSet_HasPermission_Remora_Discord_API_Abstractions_Objects_DiscordPermission_
+  name: HasPermission(DiscordPermission)
+  nameWithType: IDiscordPermissionSet.HasPermission(DiscordPermission)
+  fullName: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet.HasPermission(Remora.Discord.API.Abstractions.Objects.DiscordPermission)
+  spec.csharp:
+  - uid: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet.HasPermission(Remora.Discord.API.Abstractions.Objects.DiscordPermission)
+    name: HasPermission
+    href: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet.html#Remora_Discord_API_Abstractions_Objects_IDiscordPermissionSet_HasPermission_Remora_Discord_API_Abstractions_Objects_DiscordPermission_
+  - name: (
+  - uid: Remora.Discord.API.Abstractions.Objects.DiscordPermission
+    name: DiscordPermission
+    href: Remora.Discord.API.Abstractions.Objects.DiscordPermission.html
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet.HasPermission(Remora.Discord.API.Abstractions.Objects.DiscordPermission)
+    name: HasPermission
+    href: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet.html#Remora_Discord_API_Abstractions_Objects_IDiscordPermissionSet_HasPermission_Remora_Discord_API_Abstractions_Objects_DiscordPermission_
+  - name: (
+  - uid: Remora.Discord.API.Abstractions.Objects.DiscordPermission
+    name: DiscordPermission
+    href: Remora.Discord.API.Abstractions.Objects.DiscordPermission.html
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Objects.DiscordPermission
+  commentId: T:Remora.Discord.API.Abstractions.Objects.DiscordPermission
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.DiscordPermission.html
+  name: DiscordPermission
+  nameWithType: DiscordPermission
+  fullName: Remora.Discord.API.Abstractions.Objects.DiscordPermission
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Remora.Discord.API.Objects.DiscordPermissionSet.GetPermissions*
+  commentId: Overload:Remora.Discord.API.Objects.DiscordPermissionSet.GetPermissions
+  href: Remora.Discord.API.Objects.DiscordPermissionSet.html#Remora_Discord_API_Objects_DiscordPermissionSet_GetPermissions
+  name: GetPermissions
+  nameWithType: DiscordPermissionSet.GetPermissions
+  fullName: Remora.Discord.API.Objects.DiscordPermissionSet.GetPermissions
+- uid: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet.GetPermissions
+  commentId: M:Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet.GetPermissions
+  parent: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet
+  href: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet.html#Remora_Discord_API_Abstractions_Objects_IDiscordPermissionSet_GetPermissions
+  name: GetPermissions()
+  nameWithType: IDiscordPermissionSet.GetPermissions()
+  fullName: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet.GetPermissions()
+  spec.csharp:
+  - uid: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet.GetPermissions
+    name: GetPermissions
+    href: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet.html#Remora_Discord_API_Abstractions_Objects_IDiscordPermissionSet_GetPermissions
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet.GetPermissions
+    name: GetPermissions
+    href: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet.html#Remora_Discord_API_Abstractions_Objects_IDiscordPermissionSet_GetPermissions
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.DiscordPermission}
+  commentId: T:System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.DiscordPermission}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<DiscordPermission>
+  nameWithType: IReadOnlyList<DiscordPermission>
+  fullName: System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.DiscordPermission>
+  nameWithType.vb: IReadOnlyList(Of DiscordPermission)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.DiscordPermission)
+  name.vb: IReadOnlyList(Of DiscordPermission)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.DiscordPermission
+    name: DiscordPermission
+    href: Remora.Discord.API.Abstractions.Objects.DiscordPermission.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.DiscordPermission
+    name: DiscordPermission
+    href: Remora.Discord.API.Abstractions.Objects.DiscordPermission.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Remora.Discord.API.Objects.DiscordPermissionSet.ComputePermissions*
+  commentId: Overload:Remora.Discord.API.Objects.DiscordPermissionSet.ComputePermissions
+  href: Remora.Discord.API.Objects.DiscordPermissionSet.html#Remora_Discord_API_Objects_DiscordPermissionSet_ComputePermissions_Remora_Rest_Core_Snowflake_Remora_Discord_API_Abstractions_Objects_IRole_System_Collections_Generic_IReadOnlyList_Remora_Discord_API_Abstractions_Objects_IRole__System_Collections_Generic_IReadOnlyList_Remora_Discord_API_Abstractions_Objects_IPermissionOverwrite__
+  name: ComputePermissions
+  nameWithType: DiscordPermissionSet.ComputePermissions
+  fullName: Remora.Discord.API.Objects.DiscordPermissionSet.ComputePermissions
+- uid: Remora.Rest.Core.Snowflake
+  commentId: T:Remora.Rest.Core.Snowflake
+  parent: Remora.Rest.Core
+  isExternal: true
+  name: Snowflake
+  nameWithType: Snowflake
+  fullName: Remora.Rest.Core.Snowflake
+- uid: Remora.Discord.API.Abstractions.Objects.IRole
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IRole
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IRole.html
+  name: IRole
+  nameWithType: IRole
+  fullName: Remora.Discord.API.Abstractions.Objects.IRole
+- uid: System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IRole}
+  commentId: T:System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IRole}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<IRole>
+  nameWithType: IReadOnlyList<IRole>
+  fullName: System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.IRole>
+  nameWithType.vb: IReadOnlyList(Of IRole)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.IRole)
+  name.vb: IReadOnlyList(Of IRole)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IRole
+    name: IRole
+    href: Remora.Discord.API.Abstractions.Objects.IRole.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IRole
+    name: IRole
+    href: Remora.Discord.API.Abstractions.Objects.IRole.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite}
+  commentId: T:System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<IPermissionOverwrite>
+  nameWithType: IReadOnlyList<IPermissionOverwrite>
+  fullName: System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite>
+  nameWithType.vb: IReadOnlyList(Of IPermissionOverwrite)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite)
+  name.vb: IReadOnlyList(Of IPermissionOverwrite)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite
+    name: IPermissionOverwrite
+    href: Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite
+    name: IPermissionOverwrite
+    href: Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.html
+  - name: )
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+- uid: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet.HasPermission(Remora.Discord.API.Abstractions.Objects.DiscordTextPermission)
+  commentId: M:Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet.HasPermission(Remora.Discord.API.Abstractions.Objects.DiscordTextPermission)
+  parent: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet
+  href: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet.html#Remora_Discord_API_Abstractions_Objects_IDiscordPermissionSet_HasPermission_Remora_Discord_API_Abstractions_Objects_DiscordTextPermission_
+  name: HasPermission(DiscordTextPermission)
+  nameWithType: IDiscordPermissionSet.HasPermission(DiscordTextPermission)
+  fullName: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet.HasPermission(Remora.Discord.API.Abstractions.Objects.DiscordTextPermission)
+  spec.csharp:
+  - uid: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet.HasPermission(Remora.Discord.API.Abstractions.Objects.DiscordTextPermission)
+    name: HasPermission
+    href: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet.html#Remora_Discord_API_Abstractions_Objects_IDiscordPermissionSet_HasPermission_Remora_Discord_API_Abstractions_Objects_DiscordTextPermission_
+  - name: (
+  - uid: Remora.Discord.API.Abstractions.Objects.DiscordTextPermission
+    name: DiscordTextPermission
+    href: Remora.Discord.API.Abstractions.Objects.DiscordTextPermission.html
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet.HasPermission(Remora.Discord.API.Abstractions.Objects.DiscordTextPermission)
+    name: HasPermission
+    href: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet.html#Remora_Discord_API_Abstractions_Objects_IDiscordPermissionSet_HasPermission_Remora_Discord_API_Abstractions_Objects_DiscordTextPermission_
+  - name: (
+  - uid: Remora.Discord.API.Abstractions.Objects.DiscordTextPermission
+    name: DiscordTextPermission
+    href: Remora.Discord.API.Abstractions.Objects.DiscordTextPermission.html
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Objects.DiscordTextPermission
+  commentId: T:Remora.Discord.API.Abstractions.Objects.DiscordTextPermission
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.DiscordTextPermission.html
+  name: DiscordTextPermission
+  nameWithType: DiscordTextPermission
+  fullName: Remora.Discord.API.Abstractions.Objects.DiscordTextPermission
+- uid: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet.HasPermission(Remora.Discord.API.Abstractions.Objects.DiscordVoicePermission)
+  commentId: M:Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet.HasPermission(Remora.Discord.API.Abstractions.Objects.DiscordVoicePermission)
+  parent: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet
+  href: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet.html#Remora_Discord_API_Abstractions_Objects_IDiscordPermissionSet_HasPermission_Remora_Discord_API_Abstractions_Objects_DiscordVoicePermission_
+  name: HasPermission(DiscordVoicePermission)
+  nameWithType: IDiscordPermissionSet.HasPermission(DiscordVoicePermission)
+  fullName: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet.HasPermission(Remora.Discord.API.Abstractions.Objects.DiscordVoicePermission)
+  spec.csharp:
+  - uid: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet.HasPermission(Remora.Discord.API.Abstractions.Objects.DiscordVoicePermission)
+    name: HasPermission
+    href: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet.html#Remora_Discord_API_Abstractions_Objects_IDiscordPermissionSet_HasPermission_Remora_Discord_API_Abstractions_Objects_DiscordVoicePermission_
+  - name: (
+  - uid: Remora.Discord.API.Abstractions.Objects.DiscordVoicePermission
+    name: DiscordVoicePermission
+    href: Remora.Discord.API.Abstractions.Objects.DiscordVoicePermission.html
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet.HasPermission(Remora.Discord.API.Abstractions.Objects.DiscordVoicePermission)
+    name: HasPermission
+    href: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet.html#Remora_Discord_API_Abstractions_Objects_IDiscordPermissionSet_HasPermission_Remora_Discord_API_Abstractions_Objects_DiscordVoicePermission_
+  - name: (
+  - uid: Remora.Discord.API.Abstractions.Objects.DiscordVoicePermission
+    name: DiscordVoicePermission
+    href: Remora.Discord.API.Abstractions.Objects.DiscordVoicePermission.html
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Objects.DiscordVoicePermission
+  commentId: T:Remora.Discord.API.Abstractions.Objects.DiscordVoicePermission
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.DiscordVoicePermission.html
+  name: DiscordVoicePermission
+  nameWithType: DiscordVoicePermission
+  fullName: Remora.Discord.API.Abstractions.Objects.DiscordVoicePermission
+- uid: Remora.Discord.API.Objects.DiscordPermissionSet.Equals*
+  commentId: Overload:Remora.Discord.API.Objects.DiscordPermissionSet.Equals
+  href: Remora.Discord.API.Objects.DiscordPermissionSet.html#Remora_Discord_API_Objects_DiscordPermissionSet_Equals_Remora_Discord_API_Objects_DiscordPermissionSet_
+  name: Equals
+  nameWithType: DiscordPermissionSet.Equals
+  fullName: Remora.Discord.API.Objects.DiscordPermissionSet.Equals
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: Remora.Discord.API.Objects.DiscordPermissionSet.GetHashCode*
+  commentId: Overload:Remora.Discord.API.Objects.DiscordPermissionSet.GetHashCode
+  href: Remora.Discord.API.Objects.DiscordPermissionSet.html#Remora_Discord_API_Objects_DiscordPermissionSet_GetHashCode
+  name: GetHashCode
+  nameWithType: DiscordPermissionSet.GetHashCode
+  fullName: Remora.Discord.API.Objects.DiscordPermissionSet.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

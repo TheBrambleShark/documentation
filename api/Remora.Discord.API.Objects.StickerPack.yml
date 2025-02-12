@@ -1,0 +1,993 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Objects.StickerPack
+  commentId: T:Remora.Discord.API.Objects.StickerPack
+  id: StickerPack
+  parent: Remora.Discord.API.Objects
+  children:
+  - Remora.Discord.API.Objects.StickerPack.#ctor(Remora.Rest.Core.Snowflake,System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.ISticker},System.String,Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},System.String,Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake})
+  - Remora.Discord.API.Objects.StickerPack.BannerAssetID
+  - Remora.Discord.API.Objects.StickerPack.CoverStickerID
+  - Remora.Discord.API.Objects.StickerPack.Description
+  - Remora.Discord.API.Objects.StickerPack.ID
+  - Remora.Discord.API.Objects.StickerPack.Name
+  - Remora.Discord.API.Objects.StickerPack.SKUID
+  - Remora.Discord.API.Objects.StickerPack.Stickers
+  langs:
+  - csharp
+  - vb
+  name: StickerPack
+  nameWithType: StickerPack
+  fullName: Remora.Discord.API.Objects.StickerPack
+  type: Class
+  source:
+    id: StickerPack
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Stickers\StickerPack.cs
+    startLine: 30
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Represents a pack of stickers.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public record StickerPack : IStickerPack, IEquatable<StickerPack>
+    content.vb: >-
+      <PublicAPI>
+
+      Public Class StickerPack Implements IStickerPack, IEquatable(Of StickerPack)
+  inheritance:
+  - System.Object
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IStickerPack
+  - System.IEquatable{Remora.Discord.API.Objects.StickerPack}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Objects.StickerPack.#ctor(Remora.Rest.Core.Snowflake,System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.ISticker},System.String,Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},System.String,Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake})
+  commentId: M:Remora.Discord.API.Objects.StickerPack.#ctor(Remora.Rest.Core.Snowflake,System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.ISticker},System.String,Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},System.String,Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake})
+  id: '#ctor(Remora.Rest.Core.Snowflake,System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.ISticker},System.String,Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},System.String,Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake})'
+  parent: Remora.Discord.API.Objects.StickerPack
+  langs:
+  - csharp
+  - vb
+  name: StickerPack(Snowflake, IReadOnlyList<ISticker>, string, Snowflake, Optional<Snowflake>, string, Optional<Snowflake>)
+  nameWithType: StickerPack.StickerPack(Snowflake, IReadOnlyList<ISticker>, string, Snowflake, Optional<Snowflake>, string, Optional<Snowflake>)
+  fullName: Remora.Discord.API.Objects.StickerPack.StickerPack(Remora.Rest.Core.Snowflake, System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.ISticker>, string, Remora.Rest.Core.Snowflake, Remora.Rest.Core.Optional<Remora.Rest.Core.Snowflake>, string, Remora.Rest.Core.Optional<Remora.Rest.Core.Snowflake>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Stickers\StickerPack.cs
+    startLine: 30
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Represents a pack of stickers.
+  example: []
+  syntax:
+    content: public StickerPack(Snowflake ID, IReadOnlyList<ISticker> Stickers, string Name, Snowflake SKUID, Optional<Snowflake> CoverStickerID, string Description, Optional<Snowflake> BannerAssetID)
+    parameters:
+    - id: ID
+      type: Remora.Rest.Core.Snowflake
+    - id: Stickers
+      type: System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.ISticker}
+    - id: Name
+      type: System.String
+    - id: SKUID
+      type: Remora.Rest.Core.Snowflake
+    - id: CoverStickerID
+      type: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+    - id: Description
+      type: System.String
+    - id: BannerAssetID
+      type: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+    content.vb: Public Sub New(ID As Snowflake, Stickers As IReadOnlyList(Of ISticker), Name As String, SKUID As Snowflake, CoverStickerID As [Optional](Of Snowflake), Description As String, BannerAssetID As [Optional](Of Snowflake))
+  overload: Remora.Discord.API.Objects.StickerPack.#ctor*
+  nameWithType.vb: StickerPack.New(Snowflake, IReadOnlyList(Of ISticker), String, Snowflake, Optional(Of Snowflake), String, Optional(Of Snowflake))
+  fullName.vb: Remora.Discord.API.Objects.StickerPack.New(Remora.Rest.Core.Snowflake, System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.ISticker), String, Remora.Rest.Core.Snowflake, Remora.Rest.Core.Optional(Of Remora.Rest.Core.Snowflake), String, Remora.Rest.Core.Optional(Of Remora.Rest.Core.Snowflake))
+  name.vb: New(Snowflake, IReadOnlyList(Of ISticker), String, Snowflake, Optional(Of Snowflake), String, Optional(Of Snowflake))
+- uid: Remora.Discord.API.Objects.StickerPack.ID
+  commentId: P:Remora.Discord.API.Objects.StickerPack.ID
+  id: ID
+  parent: Remora.Discord.API.Objects.StickerPack
+  langs:
+  - csharp
+  - vb
+  name: ID
+  nameWithType: StickerPack.ID
+  fullName: Remora.Discord.API.Objects.StickerPack.ID
+  type: Property
+  source:
+    id: ID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Stickers\StickerPack.cs
+    startLine: 33
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the ID of the sticker pack.
+  example: []
+  syntax:
+    content: public Snowflake ID { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Snowflake
+    content.vb: Public Property ID As Snowflake
+  overload: Remora.Discord.API.Objects.StickerPack.ID*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IStickerPack.ID
+- uid: Remora.Discord.API.Objects.StickerPack.Stickers
+  commentId: P:Remora.Discord.API.Objects.StickerPack.Stickers
+  id: Stickers
+  parent: Remora.Discord.API.Objects.StickerPack
+  langs:
+  - csharp
+  - vb
+  name: Stickers
+  nameWithType: StickerPack.Stickers
+  fullName: Remora.Discord.API.Objects.StickerPack.Stickers
+  type: Property
+  source:
+    id: Stickers
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Stickers\StickerPack.cs
+    startLine: 34
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the stickers in the pack.
+  example: []
+  syntax:
+    content: public IReadOnlyList<ISticker> Stickers { get; init; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.ISticker}
+    content.vb: Public Property Stickers As IReadOnlyList(Of ISticker)
+  overload: Remora.Discord.API.Objects.StickerPack.Stickers*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IStickerPack.Stickers
+- uid: Remora.Discord.API.Objects.StickerPack.Name
+  commentId: P:Remora.Discord.API.Objects.StickerPack.Name
+  id: Name
+  parent: Remora.Discord.API.Objects.StickerPack
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: StickerPack.Name
+  fullName: Remora.Discord.API.Objects.StickerPack.Name
+  type: Property
+  source:
+    id: Name
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Stickers\StickerPack.cs
+    startLine: 35
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the name of the sticker pack.
+  example: []
+  syntax:
+    content: public string Name { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: Remora.Discord.API.Objects.StickerPack.Name*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IStickerPack.Name
+- uid: Remora.Discord.API.Objects.StickerPack.SKUID
+  commentId: P:Remora.Discord.API.Objects.StickerPack.SKUID
+  id: SKUID
+  parent: Remora.Discord.API.Objects.StickerPack
+  langs:
+  - csharp
+  - vb
+  name: SKUID
+  nameWithType: StickerPack.SKUID
+  fullName: Remora.Discord.API.Objects.StickerPack.SKUID
+  type: Property
+  source:
+    id: SKUID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Stickers\StickerPack.cs
+    startLine: 36
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the sticker pack's stock keeping unit ID.
+  example: []
+  syntax:
+    content: public Snowflake SKUID { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Snowflake
+    content.vb: Public Property SKUID As Snowflake
+  overload: Remora.Discord.API.Objects.StickerPack.SKUID*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IStickerPack.SKUID
+- uid: Remora.Discord.API.Objects.StickerPack.CoverStickerID
+  commentId: P:Remora.Discord.API.Objects.StickerPack.CoverStickerID
+  id: CoverStickerID
+  parent: Remora.Discord.API.Objects.StickerPack
+  langs:
+  - csharp
+  - vb
+  name: CoverStickerID
+  nameWithType: StickerPack.CoverStickerID
+  fullName: Remora.Discord.API.Objects.StickerPack.CoverStickerID
+  type: Property
+  source:
+    id: CoverStickerID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Stickers\StickerPack.cs
+    startLine: 37
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the ID of the sticker in the pack which is shown as the pack's icon.
+  example: []
+  syntax:
+    content: public Optional<Snowflake> CoverStickerID { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+    content.vb: Public Property CoverStickerID As [Optional](Of Snowflake)
+  overload: Remora.Discord.API.Objects.StickerPack.CoverStickerID*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IStickerPack.CoverStickerID
+- uid: Remora.Discord.API.Objects.StickerPack.Description
+  commentId: P:Remora.Discord.API.Objects.StickerPack.Description
+  id: Description
+  parent: Remora.Discord.API.Objects.StickerPack
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: StickerPack.Description
+  fullName: Remora.Discord.API.Objects.StickerPack.Description
+  type: Property
+  source:
+    id: Description
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Stickers\StickerPack.cs
+    startLine: 38
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the description of the pack.
+  example: []
+  syntax:
+    content: public string Description { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Description As String
+  overload: Remora.Discord.API.Objects.StickerPack.Description*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IStickerPack.Description
+- uid: Remora.Discord.API.Objects.StickerPack.BannerAssetID
+  commentId: P:Remora.Discord.API.Objects.StickerPack.BannerAssetID
+  id: BannerAssetID
+  parent: Remora.Discord.API.Objects.StickerPack
+  langs:
+  - csharp
+  - vb
+  name: BannerAssetID
+  nameWithType: StickerPack.BannerAssetID
+  fullName: Remora.Discord.API.Objects.StickerPack.BannerAssetID
+  type: Property
+  source:
+    id: BannerAssetID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Stickers\StickerPack.cs
+    startLine: 39
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the ID of the sticker pack's banner image.
+  example: []
+  syntax:
+    content: public Optional<Snowflake> BannerAssetID { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+    content.vb: Public Property BannerAssetID As [Optional](Of Snowflake)
+  overload: Remora.Discord.API.Objects.StickerPack.BannerAssetID*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IStickerPack.BannerAssetID
+references:
+- uid: Remora.Discord.API.Objects
+  commentId: N:Remora.Discord.API.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Objects
+  nameWithType: Remora.Discord.API.Objects
+  fullName: Remora.Discord.API.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Objects
+    name: Objects
+    href: Remora.Discord.API.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Objects
+    name: Objects
+    href: Remora.Discord.API.Objects.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Remora.Discord.API.Abstractions.Objects.IStickerPack
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IStickerPack
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IStickerPack.html
+  name: IStickerPack
+  nameWithType: IStickerPack
+  fullName: Remora.Discord.API.Abstractions.Objects.IStickerPack
+- uid: System.IEquatable{Remora.Discord.API.Objects.StickerPack}
+  commentId: T:System.IEquatable{Remora.Discord.API.Objects.StickerPack}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<StickerPack>
+  nameWithType: IEquatable<StickerPack>
+  fullName: System.IEquatable<Remora.Discord.API.Objects.StickerPack>
+  nameWithType.vb: IEquatable(Of StickerPack)
+  fullName.vb: System.IEquatable(Of Remora.Discord.API.Objects.StickerPack)
+  name.vb: IEquatable(Of StickerPack)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Remora.Discord.API.Objects.StickerPack
+    name: StickerPack
+    href: Remora.Discord.API.Objects.StickerPack.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Objects.StickerPack
+    name: StickerPack
+    href: Remora.Discord.API.Objects.StickerPack.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.API.Abstractions.Objects
+  commentId: N:Remora.Discord.API.Abstractions.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Objects
+  nameWithType: Remora.Discord.API.Abstractions.Objects
+  fullName: Remora.Discord.API.Abstractions.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Remora.Discord.API.Objects.StickerPack.#ctor*
+  commentId: Overload:Remora.Discord.API.Objects.StickerPack.#ctor
+  href: Remora.Discord.API.Objects.StickerPack.html#Remora_Discord_API_Objects_StickerPack__ctor_Remora_Rest_Core_Snowflake_System_Collections_Generic_IReadOnlyList_Remora_Discord_API_Abstractions_Objects_ISticker__System_String_Remora_Rest_Core_Snowflake_Remora_Rest_Core_Optional_Remora_Rest_Core_Snowflake__System_String_Remora_Rest_Core_Optional_Remora_Rest_Core_Snowflake__
+  name: StickerPack
+  nameWithType: StickerPack.StickerPack
+  fullName: Remora.Discord.API.Objects.StickerPack.StickerPack
+  nameWithType.vb: StickerPack.New
+  fullName.vb: Remora.Discord.API.Objects.StickerPack.New
+  name.vb: New
+- uid: Remora.Rest.Core.Snowflake
+  commentId: T:Remora.Rest.Core.Snowflake
+  parent: Remora.Rest.Core
+  isExternal: true
+  name: Snowflake
+  nameWithType: Snowflake
+  fullName: Remora.Rest.Core.Snowflake
+- uid: System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.ISticker}
+  commentId: T:System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.ISticker}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<ISticker>
+  nameWithType: IReadOnlyList<ISticker>
+  fullName: System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.ISticker>
+  nameWithType.vb: IReadOnlyList(Of ISticker)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.ISticker)
+  name.vb: IReadOnlyList(Of ISticker)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.ISticker
+    name: ISticker
+    href: Remora.Discord.API.Abstractions.Objects.ISticker.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.ISticker
+    name: ISticker
+    href: Remora.Discord.API.Abstractions.Objects.ISticker.html
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  name: Optional<Snowflake>
+  nameWithType: Optional<Snowflake>
+  fullName: Remora.Rest.Core.Optional<Remora.Rest.Core.Snowflake>
+  nameWithType.vb: Optional(Of Snowflake)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Rest.Core.Snowflake)
+  name.vb: Optional(Of Snowflake)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Remora.Rest.Core.Optional`1
+  commentId: T:Remora.Rest.Core.Optional`1
+  isExternal: true
+  name: Optional<TValue>
+  nameWithType: Optional<TValue>
+  fullName: Remora.Rest.Core.Optional<TValue>
+  nameWithType.vb: Optional(Of TValue)
+  fullName.vb: Remora.Rest.Core.Optional(Of TValue)
+  name.vb: Optional(Of TValue)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Remora.Discord.API.Objects.StickerPack.ID*
+  commentId: Overload:Remora.Discord.API.Objects.StickerPack.ID
+  href: Remora.Discord.API.Objects.StickerPack.html#Remora_Discord_API_Objects_StickerPack_ID
+  name: ID
+  nameWithType: StickerPack.ID
+  fullName: Remora.Discord.API.Objects.StickerPack.ID
+- uid: Remora.Discord.API.Abstractions.Objects.IStickerPack.ID
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IStickerPack.ID
+  parent: Remora.Discord.API.Abstractions.Objects.IStickerPack
+  href: Remora.Discord.API.Abstractions.Objects.IStickerPack.html#Remora_Discord_API_Abstractions_Objects_IStickerPack_ID
+  name: ID
+  nameWithType: IStickerPack.ID
+  fullName: Remora.Discord.API.Abstractions.Objects.IStickerPack.ID
+- uid: Remora.Discord.API.Objects.StickerPack.Stickers*
+  commentId: Overload:Remora.Discord.API.Objects.StickerPack.Stickers
+  href: Remora.Discord.API.Objects.StickerPack.html#Remora_Discord_API_Objects_StickerPack_Stickers
+  name: Stickers
+  nameWithType: StickerPack.Stickers
+  fullName: Remora.Discord.API.Objects.StickerPack.Stickers
+- uid: Remora.Discord.API.Abstractions.Objects.IStickerPack.Stickers
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IStickerPack.Stickers
+  parent: Remora.Discord.API.Abstractions.Objects.IStickerPack
+  href: Remora.Discord.API.Abstractions.Objects.IStickerPack.html#Remora_Discord_API_Abstractions_Objects_IStickerPack_Stickers
+  name: Stickers
+  nameWithType: IStickerPack.Stickers
+  fullName: Remora.Discord.API.Abstractions.Objects.IStickerPack.Stickers
+- uid: Remora.Discord.API.Objects.StickerPack.Name*
+  commentId: Overload:Remora.Discord.API.Objects.StickerPack.Name
+  href: Remora.Discord.API.Objects.StickerPack.html#Remora_Discord_API_Objects_StickerPack_Name
+  name: Name
+  nameWithType: StickerPack.Name
+  fullName: Remora.Discord.API.Objects.StickerPack.Name
+- uid: Remora.Discord.API.Abstractions.Objects.IStickerPack.Name
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IStickerPack.Name
+  parent: Remora.Discord.API.Abstractions.Objects.IStickerPack
+  href: Remora.Discord.API.Abstractions.Objects.IStickerPack.html#Remora_Discord_API_Abstractions_Objects_IStickerPack_Name
+  name: Name
+  nameWithType: IStickerPack.Name
+  fullName: Remora.Discord.API.Abstractions.Objects.IStickerPack.Name
+- uid: Remora.Discord.API.Objects.StickerPack.SKUID*
+  commentId: Overload:Remora.Discord.API.Objects.StickerPack.SKUID
+  href: Remora.Discord.API.Objects.StickerPack.html#Remora_Discord_API_Objects_StickerPack_SKUID
+  name: SKUID
+  nameWithType: StickerPack.SKUID
+  fullName: Remora.Discord.API.Objects.StickerPack.SKUID
+- uid: Remora.Discord.API.Abstractions.Objects.IStickerPack.SKUID
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IStickerPack.SKUID
+  parent: Remora.Discord.API.Abstractions.Objects.IStickerPack
+  href: Remora.Discord.API.Abstractions.Objects.IStickerPack.html#Remora_Discord_API_Abstractions_Objects_IStickerPack_SKUID
+  name: SKUID
+  nameWithType: IStickerPack.SKUID
+  fullName: Remora.Discord.API.Abstractions.Objects.IStickerPack.SKUID
+- uid: Remora.Discord.API.Objects.StickerPack.CoverStickerID*
+  commentId: Overload:Remora.Discord.API.Objects.StickerPack.CoverStickerID
+  href: Remora.Discord.API.Objects.StickerPack.html#Remora_Discord_API_Objects_StickerPack_CoverStickerID
+  name: CoverStickerID
+  nameWithType: StickerPack.CoverStickerID
+  fullName: Remora.Discord.API.Objects.StickerPack.CoverStickerID
+- uid: Remora.Discord.API.Abstractions.Objects.IStickerPack.CoverStickerID
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IStickerPack.CoverStickerID
+  parent: Remora.Discord.API.Abstractions.Objects.IStickerPack
+  href: Remora.Discord.API.Abstractions.Objects.IStickerPack.html#Remora_Discord_API_Abstractions_Objects_IStickerPack_CoverStickerID
+  name: CoverStickerID
+  nameWithType: IStickerPack.CoverStickerID
+  fullName: Remora.Discord.API.Abstractions.Objects.IStickerPack.CoverStickerID
+- uid: Remora.Discord.API.Objects.StickerPack.Description*
+  commentId: Overload:Remora.Discord.API.Objects.StickerPack.Description
+  href: Remora.Discord.API.Objects.StickerPack.html#Remora_Discord_API_Objects_StickerPack_Description
+  name: Description
+  nameWithType: StickerPack.Description
+  fullName: Remora.Discord.API.Objects.StickerPack.Description
+- uid: Remora.Discord.API.Abstractions.Objects.IStickerPack.Description
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IStickerPack.Description
+  parent: Remora.Discord.API.Abstractions.Objects.IStickerPack
+  href: Remora.Discord.API.Abstractions.Objects.IStickerPack.html#Remora_Discord_API_Abstractions_Objects_IStickerPack_Description
+  name: Description
+  nameWithType: IStickerPack.Description
+  fullName: Remora.Discord.API.Abstractions.Objects.IStickerPack.Description
+- uid: Remora.Discord.API.Objects.StickerPack.BannerAssetID*
+  commentId: Overload:Remora.Discord.API.Objects.StickerPack.BannerAssetID
+  href: Remora.Discord.API.Objects.StickerPack.html#Remora_Discord_API_Objects_StickerPack_BannerAssetID
+  name: BannerAssetID
+  nameWithType: StickerPack.BannerAssetID
+  fullName: Remora.Discord.API.Objects.StickerPack.BannerAssetID
+- uid: Remora.Discord.API.Abstractions.Objects.IStickerPack.BannerAssetID
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IStickerPack.BannerAssetID
+  parent: Remora.Discord.API.Abstractions.Objects.IStickerPack
+  href: Remora.Discord.API.Abstractions.Objects.IStickerPack.html#Remora_Discord_API_Abstractions_Objects_IStickerPack_BannerAssetID
+  name: BannerAssetID
+  nameWithType: IStickerPack.BannerAssetID
+  fullName: Remora.Discord.API.Abstractions.Objects.IStickerPack.BannerAssetID

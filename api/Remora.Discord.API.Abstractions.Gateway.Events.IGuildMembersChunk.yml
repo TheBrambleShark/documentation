@@ -1,0 +1,630 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk
+  id: IGuildMembersChunk
+  parent: Remora.Discord.API.Abstractions.Gateway.Events
+  children:
+  - Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.ChunkCount
+  - Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.ChunkIndex
+  - Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.GuildID
+  - Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.Members
+  - Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.Nonce
+  - Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.NotFound
+  - Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.Presences
+  langs:
+  - csharp
+  - vb
+  name: IGuildMembersChunk
+  nameWithType: IGuildMembersChunk
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk
+  type: Interface
+  source:
+    id: IGuildMembersChunk
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Events\Guilds\IGuildMembersChunk.cs
+    startLine: 32
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Events
+  summary: Represents a chunk of guild members.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public interface IGuildMembersChunk : IGatewayEvent, IGatewayPayloadData
+    content.vb: >-
+      <PublicAPI>
+
+      Public Interface IGuildMembersChunk Inherits IGatewayEvent, IGatewayPayloadData
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.GuildID
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.GuildID
+  id: GuildID
+  parent: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk
+  langs:
+  - csharp
+  - vb
+  name: GuildID
+  nameWithType: IGuildMembersChunk.GuildID
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.GuildID
+  type: Property
+  source:
+    id: GuildID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Events\Guilds\IGuildMembersChunk.cs
+    startLine: 38
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Events
+  summary: Gets the ID of the guild.
+  example: []
+  syntax:
+    content: Snowflake GuildID { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Snowflake
+    content.vb: ReadOnly Property GuildID As Snowflake
+  overload: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.GuildID*
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.Members
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.Members
+  id: Members
+  parent: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk
+  langs:
+  - csharp
+  - vb
+  name: Members
+  nameWithType: IGuildMembersChunk.Members
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.Members
+  type: Property
+  source:
+    id: Members
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Events\Guilds\IGuildMembersChunk.cs
+    startLine: 43
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Events
+  summary: Gets the members in this chunk.
+  example: []
+  syntax:
+    content: IReadOnlyList<IGuildMember> Members { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IGuildMember}
+    content.vb: ReadOnly Property Members As IReadOnlyList(Of IGuildMember)
+  overload: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.Members*
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.ChunkIndex
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.ChunkIndex
+  id: ChunkIndex
+  parent: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk
+  langs:
+  - csharp
+  - vb
+  name: ChunkIndex
+  nameWithType: IGuildMembersChunk.ChunkIndex
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.ChunkIndex
+  type: Property
+  source:
+    id: ChunkIndex
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Events\Guilds\IGuildMembersChunk.cs
+    startLine: 48
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Events
+  summary: Gets the index of this chunk in the expected chunks of the response.
+  example: []
+  syntax:
+    content: int ChunkIndex { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property ChunkIndex As Integer
+  overload: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.ChunkIndex*
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.ChunkCount
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.ChunkCount
+  id: ChunkCount
+  parent: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk
+  langs:
+  - csharp
+  - vb
+  name: ChunkCount
+  nameWithType: IGuildMembersChunk.ChunkCount
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.ChunkCount
+  type: Property
+  source:
+    id: ChunkCount
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Events\Guilds\IGuildMembersChunk.cs
+    startLine: 53
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Events
+  summary: Gets the total number of expected chunks for this response.
+  example: []
+  syntax:
+    content: int ChunkCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property ChunkCount As Integer
+  overload: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.ChunkCount*
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.NotFound
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.NotFound
+  id: NotFound
+  parent: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk
+  langs:
+  - csharp
+  - vb
+  name: NotFound
+  nameWithType: IGuildMembersChunk.NotFound
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.NotFound
+  type: Property
+  source:
+    id: NotFound
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Events\Guilds\IGuildMembersChunk.cs
+    startLine: 58
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Events
+  summary: Gets a list of guild members that were not found.
+  example: []
+  syntax:
+    content: Optional<IReadOnlyList<Snowflake>> NotFound { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}}
+    content.vb: ReadOnly Property NotFound As [Optional](Of IReadOnlyList(Of Snowflake))
+  overload: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.NotFound*
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.Presences
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.Presences
+  id: Presences
+  parent: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk
+  langs:
+  - csharp
+  - vb
+  name: Presences
+  nameWithType: IGuildMembersChunk.Presences
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.Presences
+  type: Property
+  source:
+    id: Presences
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Events\Guilds\IGuildMembersChunk.cs
+    startLine: 63
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Events
+  summary: Gets the presences of the returned members.
+  example: []
+  syntax:
+    content: Optional<IReadOnlyList<IPresence>> Presences { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IPresence}}
+    content.vb: ReadOnly Property Presences As [Optional](Of IReadOnlyList(Of IPresence))
+  overload: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.Presences*
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.Nonce
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.Nonce
+  id: Nonce
+  parent: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk
+  langs:
+  - csharp
+  - vb
+  name: Nonce
+  nameWithType: IGuildMembersChunk.Nonce
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.Nonce
+  type: Property
+  source:
+    id: Nonce
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Events\Guilds\IGuildMembersChunk.cs
+    startLine: 68
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Events
+  summary: Gets the nonce used in the original request.
+  example: []
+  syntax:
+    content: Optional<string> Nonce { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.String}
+    content.vb: ReadOnly Property Nonce As [Optional](Of String)
+  overload: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.Nonce*
+references:
+- uid: Remora.Discord.API.Abstractions.Gateway.Events
+  commentId: N:Remora.Discord.API.Abstractions.Gateway.Events
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Gateway.Events
+  nameWithType: Remora.Discord.API.Abstractions.Gateway.Events
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events
+    name: Events
+    href: Remora.Discord.API.Abstractions.Gateway.Events.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events
+    name: Events
+    href: Remora.Discord.API.Abstractions.Gateway.Events.html
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.GuildID*
+  commentId: Overload:Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.GuildID
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.html#Remora_Discord_API_Abstractions_Gateway_Events_IGuildMembersChunk_GuildID
+  name: GuildID
+  nameWithType: IGuildMembersChunk.GuildID
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.GuildID
+- uid: Remora.Rest.Core.Snowflake
+  commentId: T:Remora.Rest.Core.Snowflake
+  parent: Remora.Rest.Core
+  isExternal: true
+  name: Snowflake
+  nameWithType: Snowflake
+  fullName: Remora.Rest.Core.Snowflake
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.Members*
+  commentId: Overload:Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.Members
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.html#Remora_Discord_API_Abstractions_Gateway_Events_IGuildMembersChunk_Members
+  name: Members
+  nameWithType: IGuildMembersChunk.Members
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.Members
+- uid: System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IGuildMember}
+  commentId: T:System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IGuildMember}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<IGuildMember>
+  nameWithType: IReadOnlyList<IGuildMember>
+  fullName: System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.IGuildMember>
+  nameWithType.vb: IReadOnlyList(Of IGuildMember)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.IGuildMember)
+  name.vb: IReadOnlyList(Of IGuildMember)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IGuildMember
+    name: IGuildMember
+    href: Remora.Discord.API.Abstractions.Objects.IGuildMember.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IGuildMember
+    name: IGuildMember
+    href: Remora.Discord.API.Abstractions.Objects.IGuildMember.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.ChunkIndex*
+  commentId: Overload:Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.ChunkIndex
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.html#Remora_Discord_API_Abstractions_Gateway_Events_IGuildMembersChunk_ChunkIndex
+  name: ChunkIndex
+  nameWithType: IGuildMembersChunk.ChunkIndex
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.ChunkIndex
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.ChunkCount*
+  commentId: Overload:Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.ChunkCount
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.html#Remora_Discord_API_Abstractions_Gateway_Events_IGuildMembersChunk_ChunkCount
+  name: ChunkCount
+  nameWithType: IGuildMembersChunk.ChunkCount
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.ChunkCount
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.NotFound*
+  commentId: Overload:Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.NotFound
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.html#Remora_Discord_API_Abstractions_Gateway_Events_IGuildMembersChunk_NotFound
+  name: NotFound
+  nameWithType: IGuildMembersChunk.NotFound
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.NotFound
+- uid: Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}}
+  commentId: T:Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: Optional<IReadOnlyList<Snowflake>>
+  nameWithType: Optional<IReadOnlyList<Snowflake>>
+  fullName: Remora.Rest.Core.Optional<System.Collections.Generic.IReadOnlyList<Remora.Rest.Core.Snowflake>>
+  nameWithType.vb: Optional(Of IReadOnlyList(Of Snowflake))
+  fullName.vb: Remora.Rest.Core.Optional(Of System.Collections.Generic.IReadOnlyList(Of Remora.Rest.Core.Snowflake))
+  name.vb: Optional(Of IReadOnlyList(Of Snowflake))
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+  - name: )
+- uid: Remora.Rest.Core.Optional`1
+  commentId: T:Remora.Rest.Core.Optional`1
+  isExternal: true
+  name: Optional<TValue>
+  nameWithType: Optional<TValue>
+  fullName: Remora.Rest.Core.Optional<TValue>
+  nameWithType.vb: Optional(Of TValue)
+  fullName.vb: Remora.Rest.Core.Optional(Of TValue)
+  name.vb: Optional(Of TValue)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.Presences*
+  commentId: Overload:Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.Presences
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.html#Remora_Discord_API_Abstractions_Gateway_Events_IGuildMembersChunk_Presences
+  name: Presences
+  nameWithType: IGuildMembersChunk.Presences
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.Presences
+- uid: Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IPresence}}
+  commentId: T:Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IPresence}}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: Optional<IReadOnlyList<IPresence>>
+  nameWithType: Optional<IReadOnlyList<IPresence>>
+  fullName: Remora.Rest.Core.Optional<System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.IPresence>>
+  nameWithType.vb: Optional(Of IReadOnlyList(Of IPresence))
+  fullName.vb: Remora.Rest.Core.Optional(Of System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.IPresence))
+  name.vb: Optional(Of IReadOnlyList(Of IPresence))
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IPresence
+    name: IPresence
+    href: Remora.Discord.API.Abstractions.Objects.IPresence.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IPresence
+    name: IPresence
+    href: Remora.Discord.API.Abstractions.Objects.IPresence.html
+  - name: )
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.Nonce*
+  commentId: Overload:Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.Nonce
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.html#Remora_Discord_API_Abstractions_Gateway_Events_IGuildMembersChunk_Nonce
+  name: Nonce
+  nameWithType: IGuildMembersChunk.Nonce
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMembersChunk.Nonce
+- uid: Remora.Rest.Core.Optional{System.String}
+  commentId: T:Remora.Rest.Core.Optional{System.String}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Optional<string>
+  nameWithType: Optional<string>
+  fullName: Remora.Rest.Core.Optional<string>
+  nameWithType.vb: Optional(Of String)
+  fullName.vb: Remora.Rest.Core.Optional(Of String)
+  name.vb: Optional(Of String)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )

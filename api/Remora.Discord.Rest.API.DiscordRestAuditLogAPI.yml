@@ -1,0 +1,1156 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.Rest.API.DiscordRestAuditLogAPI
+  commentId: T:Remora.Discord.Rest.API.DiscordRestAuditLogAPI
+  id: DiscordRestAuditLogAPI
+  parent: Remora.Discord.Rest.API
+  children:
+  - Remora.Discord.Rest.API.DiscordRestAuditLogAPI.#ctor(Remora.Rest.IRestHttpClient,System.Text.Json.JsonSerializerOptions,Remora.Discord.Caching.Abstractions.Services.ICacheProvider)
+  - Remora.Discord.Rest.API.DiscordRestAuditLogAPI.GetGuildAuditLogAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.AuditLogEvent},Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{System.Byte},System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: DiscordRestAuditLogAPI
+  nameWithType: DiscordRestAuditLogAPI
+  fullName: Remora.Discord.Rest.API.DiscordRestAuditLogAPI
+  type: Class
+  source:
+    id: DiscordRestAuditLogAPI
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Rest\API\AuditLog\DiscordRestAuditLogAPI.cs
+    startLine: 37
+  assemblies:
+  - Remora.Discord.Rest
+  namespace: Remora.Discord.Rest.API
+  summary: Represents the Discord Audit Log API.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public class DiscordRestAuditLogAPI : AbstractDiscordRestAPI, IRestCustomizable, IDiscordRestAuditLogAPI
+    content.vb: >-
+      <PublicAPI>
+
+      Public Class DiscordRestAuditLogAPI Inherits AbstractDiscordRestAPI Implements IRestCustomizable, IDiscordRestAuditLogAPI
+  inheritance:
+  - System.Object
+  - Remora.Discord.Rest.API.AbstractDiscordRestAPI
+  implements:
+  - Remora.Rest.IRestCustomizable
+  - Remora.Discord.API.Abstractions.Rest.IDiscordRestAuditLogAPI
+  inheritedMembers:
+  - Remora.Discord.Rest.API.AbstractDiscordRestAPI.RestHttpClient
+  - Remora.Discord.Rest.API.AbstractDiscordRestAPI.JsonOptions
+  - Remora.Discord.Rest.API.AbstractDiscordRestAPI.RateLimitCache
+  - Remora.Discord.Rest.API.AbstractDiscordRestAPI.WithCustomization(System.Action{Remora.Rest.RestRequestBuilder})
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.Rest.API.DiscordRestAuditLogAPI.#ctor(Remora.Rest.IRestHttpClient,System.Text.Json.JsonSerializerOptions,Remora.Discord.Caching.Abstractions.Services.ICacheProvider)
+  commentId: M:Remora.Discord.Rest.API.DiscordRestAuditLogAPI.#ctor(Remora.Rest.IRestHttpClient,System.Text.Json.JsonSerializerOptions,Remora.Discord.Caching.Abstractions.Services.ICacheProvider)
+  id: '#ctor(Remora.Rest.IRestHttpClient,System.Text.Json.JsonSerializerOptions,Remora.Discord.Caching.Abstractions.Services.ICacheProvider)'
+  parent: Remora.Discord.Rest.API.DiscordRestAuditLogAPI
+  langs:
+  - csharp
+  - vb
+  name: DiscordRestAuditLogAPI(IRestHttpClient, JsonSerializerOptions, ICacheProvider)
+  nameWithType: DiscordRestAuditLogAPI.DiscordRestAuditLogAPI(IRestHttpClient, JsonSerializerOptions, ICacheProvider)
+  fullName: Remora.Discord.Rest.API.DiscordRestAuditLogAPI.DiscordRestAuditLogAPI(Remora.Rest.IRestHttpClient, System.Text.Json.JsonSerializerOptions, Remora.Discord.Caching.Abstractions.Services.ICacheProvider)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Rest\API\AuditLog\DiscordRestAuditLogAPI.cs
+    startLine: 46
+  assemblies:
+  - Remora.Discord.Rest
+  namespace: Remora.Discord.Rest.API
+  summary: Initializes a new instance of the <xref href="Remora.Discord.Rest.API.DiscordRestAuditLogAPI" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public DiscordRestAuditLogAPI(IRestHttpClient restHttpClient, JsonSerializerOptions jsonOptions, ICacheProvider rateLimitCache)
+    parameters:
+    - id: restHttpClient
+      type: Remora.Rest.IRestHttpClient
+      description: The Discord HTTP client.
+    - id: jsonOptions
+      type: System.Text.Json.JsonSerializerOptions
+      description: The JSON options.
+    - id: rateLimitCache
+      type: Remora.Discord.Caching.Abstractions.Services.ICacheProvider
+      description: The memory cache used for rate limits.
+    content.vb: Public Sub New(restHttpClient As IRestHttpClient, jsonOptions As JsonSerializerOptions, rateLimitCache As ICacheProvider)
+  overload: Remora.Discord.Rest.API.DiscordRestAuditLogAPI.#ctor*
+  nameWithType.vb: DiscordRestAuditLogAPI.New(IRestHttpClient, JsonSerializerOptions, ICacheProvider)
+  fullName.vb: Remora.Discord.Rest.API.DiscordRestAuditLogAPI.New(Remora.Rest.IRestHttpClient, System.Text.Json.JsonSerializerOptions, Remora.Discord.Caching.Abstractions.Services.ICacheProvider)
+  name.vb: New(IRestHttpClient, JsonSerializerOptions, ICacheProvider)
+- uid: Remora.Discord.Rest.API.DiscordRestAuditLogAPI.GetGuildAuditLogAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.AuditLogEvent},Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{System.Byte},System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Rest.API.DiscordRestAuditLogAPI.GetGuildAuditLogAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.AuditLogEvent},Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{System.Byte},System.Threading.CancellationToken)
+  id: GetGuildAuditLogAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.AuditLogEvent},Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{System.Byte},System.Threading.CancellationToken)
+  parent: Remora.Discord.Rest.API.DiscordRestAuditLogAPI
+  langs:
+  - csharp
+  - vb
+  name: GetGuildAuditLogAsync(Snowflake, Optional<Snowflake>, Optional<AuditLogEvent>, Optional<Snowflake>, Optional<Snowflake>, Optional<byte>, CancellationToken)
+  nameWithType: DiscordRestAuditLogAPI.GetGuildAuditLogAsync(Snowflake, Optional<Snowflake>, Optional<AuditLogEvent>, Optional<Snowflake>, Optional<Snowflake>, Optional<byte>, CancellationToken)
+  fullName: Remora.Discord.Rest.API.DiscordRestAuditLogAPI.GetGuildAuditLogAsync(Remora.Rest.Core.Snowflake, Remora.Rest.Core.Optional<Remora.Rest.Core.Snowflake>, Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.AuditLogEvent>, Remora.Rest.Core.Optional<Remora.Rest.Core.Snowflake>, Remora.Rest.Core.Optional<Remora.Rest.Core.Snowflake>, Remora.Rest.Core.Optional<byte>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: GetGuildAuditLogAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Rest\API\AuditLog\DiscordRestAuditLogAPI.cs
+    startLine: 57
+  assemblies:
+  - Remora.Discord.Rest
+  namespace: Remora.Discord.Rest.API
+  summary: Gets an audit log page for the given guild.
+  example: []
+  syntax:
+    content: public virtual Task<Result<IAuditLog>> GetGuildAuditLogAsync(Snowflake guildID, Optional<Snowflake> userID = default, Optional<AuditLogEvent> actionType = default, Optional<Snowflake> before = default, Optional<Snowflake> after = default, Optional<byte> limit = default, CancellationToken ct = default)
+    parameters:
+    - id: guildID
+      type: Remora.Rest.Core.Snowflake
+      description: The ID of the guild.
+    - id: userID
+      type: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+      description: The ID of the user to filter on.
+    - id: actionType
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.AuditLogEvent}
+      description: The action type to filter on.
+    - id: before
+      type: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+      description: The ID of the audit log entry to limit searches before.
+    - id: after
+      type: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+      description: The ID of the audit log entry to limit searches after.
+    - id: limit
+      type: Remora.Rest.Core.Optional{System.Byte}
+      description: The number of log entries to limit the request to.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IAuditLog}}
+      description: A retrieval result which may or may not have succeeded.
+    content.vb: Public Overridable Function GetGuildAuditLogAsync(guildID As Snowflake, userID As [Optional](Of Snowflake) = Nothing, actionType As [Optional](Of AuditLogEvent) = Nothing, before As [Optional](Of Snowflake) = Nothing, after As [Optional](Of Snowflake) = Nothing, limit As [Optional](Of Byte) = Nothing, ct As CancellationToken = Nothing) As Task(Of Result(Of IAuditLog))
+  overload: Remora.Discord.Rest.API.DiscordRestAuditLogAPI.GetGuildAuditLogAsync*
+  implements:
+  - Remora.Discord.API.Abstractions.Rest.IDiscordRestAuditLogAPI.GetGuildAuditLogAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.AuditLogEvent},Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{System.Byte},System.Threading.CancellationToken)
+  nameWithType.vb: DiscordRestAuditLogAPI.GetGuildAuditLogAsync(Snowflake, Optional(Of Snowflake), Optional(Of AuditLogEvent), Optional(Of Snowflake), Optional(Of Snowflake), Optional(Of Byte), CancellationToken)
+  fullName.vb: Remora.Discord.Rest.API.DiscordRestAuditLogAPI.GetGuildAuditLogAsync(Remora.Rest.Core.Snowflake, Remora.Rest.Core.Optional(Of Remora.Rest.Core.Snowflake), Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.AuditLogEvent), Remora.Rest.Core.Optional(Of Remora.Rest.Core.Snowflake), Remora.Rest.Core.Optional(Of Remora.Rest.Core.Snowflake), Remora.Rest.Core.Optional(Of Byte), System.Threading.CancellationToken)
+  name.vb: GetGuildAuditLogAsync(Snowflake, Optional(Of Snowflake), Optional(Of AuditLogEvent), Optional(Of Snowflake), Optional(Of Snowflake), Optional(Of Byte), CancellationToken)
+references:
+- uid: Remora.Discord.Rest.API
+  commentId: N:Remora.Discord.Rest.API
+  href: Remora.html
+  name: Remora.Discord.Rest.API
+  nameWithType: Remora.Discord.Rest.API
+  fullName: Remora.Discord.Rest.API
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Rest
+    name: Rest
+    href: Remora.Discord.Rest.html
+  - name: .
+  - uid: Remora.Discord.Rest.API
+    name: API
+    href: Remora.Discord.Rest.API.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Rest
+    name: Rest
+    href: Remora.Discord.Rest.html
+  - name: .
+  - uid: Remora.Discord.Rest.API
+    name: API
+    href: Remora.Discord.Rest.API.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Remora.Discord.Rest.API.AbstractDiscordRestAPI
+  commentId: T:Remora.Discord.Rest.API.AbstractDiscordRestAPI
+  parent: Remora.Discord.Rest.API
+  href: Remora.Discord.Rest.API.AbstractDiscordRestAPI.html
+  name: AbstractDiscordRestAPI
+  nameWithType: AbstractDiscordRestAPI
+  fullName: Remora.Discord.Rest.API.AbstractDiscordRestAPI
+- uid: Remora.Rest.IRestCustomizable
+  commentId: T:Remora.Rest.IRestCustomizable
+  parent: Remora.Rest
+  isExternal: true
+  name: IRestCustomizable
+  nameWithType: IRestCustomizable
+  fullName: Remora.Rest.IRestCustomizable
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestAuditLogAPI
+  commentId: T:Remora.Discord.API.Abstractions.Rest.IDiscordRestAuditLogAPI
+  parent: Remora.Discord.API.Abstractions.Rest
+  href: Remora.Discord.API.Abstractions.Rest.IDiscordRestAuditLogAPI.html
+  name: IDiscordRestAuditLogAPI
+  nameWithType: IDiscordRestAuditLogAPI
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestAuditLogAPI
+- uid: Remora.Discord.Rest.API.AbstractDiscordRestAPI.RestHttpClient
+  commentId: P:Remora.Discord.Rest.API.AbstractDiscordRestAPI.RestHttpClient
+  parent: Remora.Discord.Rest.API.AbstractDiscordRestAPI
+  href: Remora.Discord.Rest.API.AbstractDiscordRestAPI.html#Remora_Discord_Rest_API_AbstractDiscordRestAPI_RestHttpClient
+  name: RestHttpClient
+  nameWithType: AbstractDiscordRestAPI.RestHttpClient
+  fullName: Remora.Discord.Rest.API.AbstractDiscordRestAPI.RestHttpClient
+- uid: Remora.Discord.Rest.API.AbstractDiscordRestAPI.JsonOptions
+  commentId: P:Remora.Discord.Rest.API.AbstractDiscordRestAPI.JsonOptions
+  parent: Remora.Discord.Rest.API.AbstractDiscordRestAPI
+  href: Remora.Discord.Rest.API.AbstractDiscordRestAPI.html#Remora_Discord_Rest_API_AbstractDiscordRestAPI_JsonOptions
+  name: JsonOptions
+  nameWithType: AbstractDiscordRestAPI.JsonOptions
+  fullName: Remora.Discord.Rest.API.AbstractDiscordRestAPI.JsonOptions
+- uid: Remora.Discord.Rest.API.AbstractDiscordRestAPI.RateLimitCache
+  commentId: P:Remora.Discord.Rest.API.AbstractDiscordRestAPI.RateLimitCache
+  parent: Remora.Discord.Rest.API.AbstractDiscordRestAPI
+  href: Remora.Discord.Rest.API.AbstractDiscordRestAPI.html#Remora_Discord_Rest_API_AbstractDiscordRestAPI_RateLimitCache
+  name: RateLimitCache
+  nameWithType: AbstractDiscordRestAPI.RateLimitCache
+  fullName: Remora.Discord.Rest.API.AbstractDiscordRestAPI.RateLimitCache
+- uid: Remora.Discord.Rest.API.AbstractDiscordRestAPI.WithCustomization(System.Action{Remora.Rest.RestRequestBuilder})
+  commentId: M:Remora.Discord.Rest.API.AbstractDiscordRestAPI.WithCustomization(System.Action{Remora.Rest.RestRequestBuilder})
+  parent: Remora.Discord.Rest.API.AbstractDiscordRestAPI
+  isExternal: true
+  href: Remora.Discord.Rest.API.AbstractDiscordRestAPI.html#Remora_Discord_Rest_API_AbstractDiscordRestAPI_WithCustomization_System_Action_Remora_Rest_RestRequestBuilder__
+  name: WithCustomization(Action<RestRequestBuilder>)
+  nameWithType: AbstractDiscordRestAPI.WithCustomization(Action<RestRequestBuilder>)
+  fullName: Remora.Discord.Rest.API.AbstractDiscordRestAPI.WithCustomization(System.Action<Remora.Rest.RestRequestBuilder>)
+  nameWithType.vb: AbstractDiscordRestAPI.WithCustomization(Action(Of RestRequestBuilder))
+  fullName.vb: Remora.Discord.Rest.API.AbstractDiscordRestAPI.WithCustomization(System.Action(Of Remora.Rest.RestRequestBuilder))
+  name.vb: WithCustomization(Action(Of RestRequestBuilder))
+  spec.csharp:
+  - uid: Remora.Discord.Rest.API.AbstractDiscordRestAPI.WithCustomization(System.Action{Remora.Rest.RestRequestBuilder})
+    name: WithCustomization
+    href: Remora.Discord.Rest.API.AbstractDiscordRestAPI.html#Remora_Discord_Rest_API_AbstractDiscordRestAPI_WithCustomization_System_Action_Remora_Rest_RestRequestBuilder__
+  - name: (
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Remora.Rest.RestRequestBuilder
+    name: RestRequestBuilder
+    isExternal: true
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Rest.API.AbstractDiscordRestAPI.WithCustomization(System.Action{Remora.Rest.RestRequestBuilder})
+    name: WithCustomization
+    href: Remora.Discord.Rest.API.AbstractDiscordRestAPI.html#Remora_Discord_Rest_API_AbstractDiscordRestAPI_WithCustomization_System_Action_Remora_Rest_RestRequestBuilder__
+  - name: (
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Rest.RestRequestBuilder
+    name: RestRequestBuilder
+    isExternal: true
+  - name: )
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Rest
+  commentId: N:Remora.Rest
+  isExternal: true
+  name: Remora.Rest
+  nameWithType: Remora.Rest
+  fullName: Remora.Rest
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+- uid: Remora.Discord.API.Abstractions.Rest
+  commentId: N:Remora.Discord.API.Abstractions.Rest
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Rest
+  nameWithType: Remora.Discord.API.Abstractions.Rest
+  fullName: Remora.Discord.API.Abstractions.Rest
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Rest
+    name: Rest
+    href: Remora.Discord.API.Abstractions.Rest.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Rest
+    name: Rest
+    href: Remora.Discord.API.Abstractions.Rest.html
+- uid: Remora.Discord.Rest.API.DiscordRestAuditLogAPI
+  commentId: T:Remora.Discord.Rest.API.DiscordRestAuditLogAPI
+  href: Remora.Discord.Rest.API.DiscordRestAuditLogAPI.html
+  name: DiscordRestAuditLogAPI
+  nameWithType: DiscordRestAuditLogAPI
+  fullName: Remora.Discord.Rest.API.DiscordRestAuditLogAPI
+- uid: Remora.Discord.Rest.API.DiscordRestAuditLogAPI.#ctor*
+  commentId: Overload:Remora.Discord.Rest.API.DiscordRestAuditLogAPI.#ctor
+  href: Remora.Discord.Rest.API.DiscordRestAuditLogAPI.html#Remora_Discord_Rest_API_DiscordRestAuditLogAPI__ctor_Remora_Rest_IRestHttpClient_System_Text_Json_JsonSerializerOptions_Remora_Discord_Caching_Abstractions_Services_ICacheProvider_
+  name: DiscordRestAuditLogAPI
+  nameWithType: DiscordRestAuditLogAPI.DiscordRestAuditLogAPI
+  fullName: Remora.Discord.Rest.API.DiscordRestAuditLogAPI.DiscordRestAuditLogAPI
+  nameWithType.vb: DiscordRestAuditLogAPI.New
+  fullName.vb: Remora.Discord.Rest.API.DiscordRestAuditLogAPI.New
+  name.vb: New
+- uid: Remora.Rest.IRestHttpClient
+  commentId: T:Remora.Rest.IRestHttpClient
+  parent: Remora.Rest
+  isExternal: true
+  name: IRestHttpClient
+  nameWithType: IRestHttpClient
+  fullName: Remora.Rest.IRestHttpClient
+- uid: System.Text.Json.JsonSerializerOptions
+  commentId: T:System.Text.Json.JsonSerializerOptions
+  parent: System.Text.Json
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.text.json.jsonserializeroptions
+  name: JsonSerializerOptions
+  nameWithType: JsonSerializerOptions
+  fullName: System.Text.Json.JsonSerializerOptions
+- uid: Remora.Discord.Caching.Abstractions.Services.ICacheProvider
+  commentId: T:Remora.Discord.Caching.Abstractions.Services.ICacheProvider
+  parent: Remora.Discord.Caching.Abstractions.Services
+  href: Remora.Discord.Caching.Abstractions.Services.ICacheProvider.html
+  name: ICacheProvider
+  nameWithType: ICacheProvider
+  fullName: Remora.Discord.Caching.Abstractions.Services.ICacheProvider
+- uid: System.Text.Json
+  commentId: N:System.Text.Json
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Text.Json
+  nameWithType: System.Text.Json
+  fullName: System.Text.Json
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+  - name: .
+  - uid: System.Text.Json
+    name: Json
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text.json
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+  - name: .
+  - uid: System.Text.Json
+    name: Json
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text.json
+- uid: Remora.Discord.Caching.Abstractions.Services
+  commentId: N:Remora.Discord.Caching.Abstractions.Services
+  href: Remora.html
+  name: Remora.Discord.Caching.Abstractions.Services
+  nameWithType: Remora.Discord.Caching.Abstractions.Services
+  fullName: Remora.Discord.Caching.Abstractions.Services
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Caching
+    name: Caching
+    href: Remora.Discord.Caching.html
+  - name: .
+  - uid: Remora.Discord.Caching.Abstractions
+    name: Abstractions
+    href: Remora.Discord.Caching.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.Caching.Abstractions.Services
+    name: Services
+    href: Remora.Discord.Caching.Abstractions.Services.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Caching
+    name: Caching
+    href: Remora.Discord.Caching.html
+  - name: .
+  - uid: Remora.Discord.Caching.Abstractions
+    name: Abstractions
+    href: Remora.Discord.Caching.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.Caching.Abstractions.Services
+    name: Services
+    href: Remora.Discord.Caching.Abstractions.Services.html
+- uid: Remora.Discord.Rest.API.DiscordRestAuditLogAPI.GetGuildAuditLogAsync*
+  commentId: Overload:Remora.Discord.Rest.API.DiscordRestAuditLogAPI.GetGuildAuditLogAsync
+  href: Remora.Discord.Rest.API.DiscordRestAuditLogAPI.html#Remora_Discord_Rest_API_DiscordRestAuditLogAPI_GetGuildAuditLogAsync_Remora_Rest_Core_Snowflake_Remora_Rest_Core_Optional_Remora_Rest_Core_Snowflake__Remora_Rest_Core_Optional_Remora_Discord_API_Abstractions_Objects_AuditLogEvent__Remora_Rest_Core_Optional_Remora_Rest_Core_Snowflake__Remora_Rest_Core_Optional_Remora_Rest_Core_Snowflake__Remora_Rest_Core_Optional_System_Byte__System_Threading_CancellationToken_
+  name: GetGuildAuditLogAsync
+  nameWithType: DiscordRestAuditLogAPI.GetGuildAuditLogAsync
+  fullName: Remora.Discord.Rest.API.DiscordRestAuditLogAPI.GetGuildAuditLogAsync
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestAuditLogAPI.GetGuildAuditLogAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.AuditLogEvent},Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{System.Byte},System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.API.Abstractions.Rest.IDiscordRestAuditLogAPI.GetGuildAuditLogAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.AuditLogEvent},Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{System.Byte},System.Threading.CancellationToken)
+  parent: Remora.Discord.API.Abstractions.Rest.IDiscordRestAuditLogAPI
+  isExternal: true
+  href: Remora.Discord.API.Abstractions.Rest.IDiscordRestAuditLogAPI.html#Remora_Discord_API_Abstractions_Rest_IDiscordRestAuditLogAPI_GetGuildAuditLogAsync_Remora_Rest_Core_Snowflake_Remora_Rest_Core_Optional_Remora_Rest_Core_Snowflake__Remora_Rest_Core_Optional_Remora_Discord_API_Abstractions_Objects_AuditLogEvent__Remora_Rest_Core_Optional_Remora_Rest_Core_Snowflake__Remora_Rest_Core_Optional_Remora_Rest_Core_Snowflake__Remora_Rest_Core_Optional_System_Byte__System_Threading_CancellationToken_
+  name: GetGuildAuditLogAsync(Snowflake, Optional<Snowflake>, Optional<AuditLogEvent>, Optional<Snowflake>, Optional<Snowflake>, Optional<byte>, CancellationToken)
+  nameWithType: IDiscordRestAuditLogAPI.GetGuildAuditLogAsync(Snowflake, Optional<Snowflake>, Optional<AuditLogEvent>, Optional<Snowflake>, Optional<Snowflake>, Optional<byte>, CancellationToken)
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestAuditLogAPI.GetGuildAuditLogAsync(Remora.Rest.Core.Snowflake, Remora.Rest.Core.Optional<Remora.Rest.Core.Snowflake>, Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.AuditLogEvent>, Remora.Rest.Core.Optional<Remora.Rest.Core.Snowflake>, Remora.Rest.Core.Optional<Remora.Rest.Core.Snowflake>, Remora.Rest.Core.Optional<byte>, System.Threading.CancellationToken)
+  nameWithType.vb: IDiscordRestAuditLogAPI.GetGuildAuditLogAsync(Snowflake, Optional(Of Snowflake), Optional(Of AuditLogEvent), Optional(Of Snowflake), Optional(Of Snowflake), Optional(Of Byte), CancellationToken)
+  fullName.vb: Remora.Discord.API.Abstractions.Rest.IDiscordRestAuditLogAPI.GetGuildAuditLogAsync(Remora.Rest.Core.Snowflake, Remora.Rest.Core.Optional(Of Remora.Rest.Core.Snowflake), Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.AuditLogEvent), Remora.Rest.Core.Optional(Of Remora.Rest.Core.Snowflake), Remora.Rest.Core.Optional(Of Remora.Rest.Core.Snowflake), Remora.Rest.Core.Optional(Of Byte), System.Threading.CancellationToken)
+  name.vb: GetGuildAuditLogAsync(Snowflake, Optional(Of Snowflake), Optional(Of AuditLogEvent), Optional(Of Snowflake), Optional(Of Snowflake), Optional(Of Byte), CancellationToken)
+  spec.csharp:
+  - uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestAuditLogAPI.GetGuildAuditLogAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.AuditLogEvent},Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{System.Byte},System.Threading.CancellationToken)
+    name: GetGuildAuditLogAsync
+    href: Remora.Discord.API.Abstractions.Rest.IDiscordRestAuditLogAPI.html#Remora_Discord_API_Abstractions_Rest_IDiscordRestAuditLogAPI_GetGuildAuditLogAsync_Remora_Rest_Core_Snowflake_Remora_Rest_Core_Optional_Remora_Rest_Core_Snowflake__Remora_Rest_Core_Optional_Remora_Discord_API_Abstractions_Objects_AuditLogEvent__Remora_Rest_Core_Optional_Remora_Rest_Core_Snowflake__Remora_Rest_Core_Optional_Remora_Rest_Core_Snowflake__Remora_Rest_Core_Optional_System_Byte__System_Threading_CancellationToken_
+  - name: (
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.AuditLogEvent
+    name: AuditLogEvent
+    href: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.html
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestAuditLogAPI.GetGuildAuditLogAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.AuditLogEvent},Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{System.Byte},System.Threading.CancellationToken)
+    name: GetGuildAuditLogAsync
+    href: Remora.Discord.API.Abstractions.Rest.IDiscordRestAuditLogAPI.html#Remora_Discord_API_Abstractions_Rest_IDiscordRestAuditLogAPI_GetGuildAuditLogAsync_Remora_Rest_Core_Snowflake_Remora_Rest_Core_Optional_Remora_Rest_Core_Snowflake__Remora_Rest_Core_Optional_Remora_Discord_API_Abstractions_Objects_AuditLogEvent__Remora_Rest_Core_Optional_Remora_Rest_Core_Snowflake__Remora_Rest_Core_Optional_Remora_Rest_Core_Snowflake__Remora_Rest_Core_Optional_System_Byte__System_Threading_CancellationToken_
+  - name: (
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.AuditLogEvent
+    name: AuditLogEvent
+    href: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.html
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Remora.Rest.Core.Snowflake
+  commentId: T:Remora.Rest.Core.Snowflake
+  parent: Remora.Rest.Core
+  isExternal: true
+  name: Snowflake
+  nameWithType: Snowflake
+  fullName: Remora.Rest.Core.Snowflake
+- uid: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  name: Optional<Snowflake>
+  nameWithType: Optional<Snowflake>
+  fullName: Remora.Rest.Core.Optional<Remora.Rest.Core.Snowflake>
+  nameWithType.vb: Optional(Of Snowflake)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Rest.Core.Snowflake)
+  name.vb: Optional(Of Snowflake)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+- uid: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.AuditLogEvent}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.AuditLogEvent}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.html
+  name: Optional<AuditLogEvent>
+  nameWithType: Optional<AuditLogEvent>
+  fullName: Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.AuditLogEvent>
+  nameWithType.vb: Optional(Of AuditLogEvent)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.AuditLogEvent)
+  name.vb: Optional(Of AuditLogEvent)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.AuditLogEvent
+    name: AuditLogEvent
+    href: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.AuditLogEvent
+    name: AuditLogEvent
+    href: Remora.Discord.API.Abstractions.Objects.AuditLogEvent.html
+  - name: )
+- uid: Remora.Rest.Core.Optional{System.Byte}
+  commentId: T:Remora.Rest.Core.Optional{System.Byte}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: Optional<byte>
+  nameWithType: Optional<byte>
+  fullName: Remora.Rest.Core.Optional<byte>
+  nameWithType.vb: Optional(Of Byte)
+  fullName.vb: Remora.Rest.Core.Optional(Of Byte)
+  name.vb: Optional(Of Byte)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IAuditLog}}
+  commentId: T:System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IAuditLog}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Result<IAuditLog>>
+  nameWithType: Task<Result<IAuditLog>>
+  fullName: System.Threading.Tasks.Task<Remora.Results.Result<Remora.Discord.API.Abstractions.Objects.IAuditLog>>
+  nameWithType.vb: Task(Of Result(Of IAuditLog))
+  fullName.vb: System.Threading.Tasks.Task(Of Remora.Results.Result(Of Remora.Discord.API.Abstractions.Objects.IAuditLog))
+  name.vb: Task(Of Result(Of IAuditLog))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Remora.Results.Result`1
+    name: Result
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IAuditLog
+    name: IAuditLog
+    href: Remora.Discord.API.Abstractions.Objects.IAuditLog.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Results.Result`1
+    name: Result
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IAuditLog
+    name: IAuditLog
+    href: Remora.Discord.API.Abstractions.Objects.IAuditLog.html
+  - name: )
+  - name: )
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+- uid: Remora.Rest.Core.Optional`1
+  commentId: T:Remora.Rest.Core.Optional`1
+  isExternal: true
+  name: Optional<TValue>
+  nameWithType: Optional<TValue>
+  fullName: Remora.Rest.Core.Optional<TValue>
+  nameWithType.vb: Optional(Of TValue)
+  fullName.vb: Remora.Rest.Core.Optional(Of TValue)
+  name.vb: Optional(Of TValue)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

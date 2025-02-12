@@ -1,0 +1,693 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Objects.SessionStartLimit
+  commentId: T:Remora.Discord.API.Objects.SessionStartLimit
+  id: SessionStartLimit
+  parent: Remora.Discord.API.Objects
+  children:
+  - Remora.Discord.API.Objects.SessionStartLimit.#ctor(System.Int32,System.Int32,System.TimeSpan,System.Int32)
+  - Remora.Discord.API.Objects.SessionStartLimit.MaxConcurrency
+  - Remora.Discord.API.Objects.SessionStartLimit.Remaining
+  - Remora.Discord.API.Objects.SessionStartLimit.ResetAfter
+  - Remora.Discord.API.Objects.SessionStartLimit.Total
+  langs:
+  - csharp
+  - vb
+  name: SessionStartLimit
+  nameWithType: SessionStartLimit
+  fullName: Remora.Discord.API.Objects.SessionStartLimit
+  type: Class
+  source:
+    id: SessionStartLimit
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Gateway\SessionStartLimit.cs
+    startLine: 31
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Represents information about session start limits.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public record SessionStartLimit : ISessionStartLimit, IEquatable<SessionStartLimit>
+    content.vb: >-
+      <PublicAPI>
+
+      Public Class SessionStartLimit Implements ISessionStartLimit, IEquatable(Of SessionStartLimit)
+  inheritance:
+  - System.Object
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.ISessionStartLimit
+  - System.IEquatable{Remora.Discord.API.Objects.SessionStartLimit}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Objects.SessionStartLimit.#ctor(System.Int32,System.Int32,System.TimeSpan,System.Int32)
+  commentId: M:Remora.Discord.API.Objects.SessionStartLimit.#ctor(System.Int32,System.Int32,System.TimeSpan,System.Int32)
+  id: '#ctor(System.Int32,System.Int32,System.TimeSpan,System.Int32)'
+  parent: Remora.Discord.API.Objects.SessionStartLimit
+  langs:
+  - csharp
+  - vb
+  name: SessionStartLimit(int, int, TimeSpan, int)
+  nameWithType: SessionStartLimit.SessionStartLimit(int, int, TimeSpan, int)
+  fullName: Remora.Discord.API.Objects.SessionStartLimit.SessionStartLimit(int, int, System.TimeSpan, int)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Gateway\SessionStartLimit.cs
+    startLine: 31
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Represents information about session start limits.
+  example: []
+  syntax:
+    content: public SessionStartLimit(int Total, int Remaining, TimeSpan ResetAfter, int MaxConcurrency)
+    parameters:
+    - id: Total
+      type: System.Int32
+    - id: Remaining
+      type: System.Int32
+    - id: ResetAfter
+      type: System.TimeSpan
+    - id: MaxConcurrency
+      type: System.Int32
+    content.vb: Public Sub New(Total As Integer, Remaining As Integer, ResetAfter As TimeSpan, MaxConcurrency As Integer)
+  overload: Remora.Discord.API.Objects.SessionStartLimit.#ctor*
+  nameWithType.vb: SessionStartLimit.New(Integer, Integer, TimeSpan, Integer)
+  fullName.vb: Remora.Discord.API.Objects.SessionStartLimit.New(Integer, Integer, System.TimeSpan, Integer)
+  name.vb: New(Integer, Integer, TimeSpan, Integer)
+- uid: Remora.Discord.API.Objects.SessionStartLimit.Total
+  commentId: P:Remora.Discord.API.Objects.SessionStartLimit.Total
+  id: Total
+  parent: Remora.Discord.API.Objects.SessionStartLimit
+  langs:
+  - csharp
+  - vb
+  name: Total
+  nameWithType: SessionStartLimit.Total
+  fullName: Remora.Discord.API.Objects.SessionStartLimit.Total
+  type: Property
+  source:
+    id: Total
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Gateway\SessionStartLimit.cs
+    startLine: 34
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the total number of session starts the user is allowed.
+  example: []
+  syntax:
+    content: public int Total { get; init; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Total As Integer
+  overload: Remora.Discord.API.Objects.SessionStartLimit.Total*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.Total
+- uid: Remora.Discord.API.Objects.SessionStartLimit.Remaining
+  commentId: P:Remora.Discord.API.Objects.SessionStartLimit.Remaining
+  id: Remaining
+  parent: Remora.Discord.API.Objects.SessionStartLimit
+  langs:
+  - csharp
+  - vb
+  name: Remaining
+  nameWithType: SessionStartLimit.Remaining
+  fullName: Remora.Discord.API.Objects.SessionStartLimit.Remaining
+  type: Property
+  source:
+    id: Remaining
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Gateway\SessionStartLimit.cs
+    startLine: 35
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the remaining number of session starts the user is allowed.
+  example: []
+  syntax:
+    content: public int Remaining { get; init; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Remaining As Integer
+  overload: Remora.Discord.API.Objects.SessionStartLimit.Remaining*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.Remaining
+- uid: Remora.Discord.API.Objects.SessionStartLimit.ResetAfter
+  commentId: P:Remora.Discord.API.Objects.SessionStartLimit.ResetAfter
+  id: ResetAfter
+  parent: Remora.Discord.API.Objects.SessionStartLimit
+  langs:
+  - csharp
+  - vb
+  name: ResetAfter
+  nameWithType: SessionStartLimit.ResetAfter
+  fullName: Remora.Discord.API.Objects.SessionStartLimit.ResetAfter
+  type: Property
+  source:
+    id: ResetAfter
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Gateway\SessionStartLimit.cs
+    startLine: 36
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the time (in milliseconds) after which the limit resets.
+  example: []
+  syntax:
+    content: public TimeSpan ResetAfter { get; init; }
+    parameters: []
+    return:
+      type: System.TimeSpan
+    content.vb: Public Property ResetAfter As TimeSpan
+  overload: Remora.Discord.API.Objects.SessionStartLimit.ResetAfter*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.ResetAfter
+- uid: Remora.Discord.API.Objects.SessionStartLimit.MaxConcurrency
+  commentId: P:Remora.Discord.API.Objects.SessionStartLimit.MaxConcurrency
+  id: MaxConcurrency
+  parent: Remora.Discord.API.Objects.SessionStartLimit
+  langs:
+  - csharp
+  - vb
+  name: MaxConcurrency
+  nameWithType: SessionStartLimit.MaxConcurrency
+  fullName: Remora.Discord.API.Objects.SessionStartLimit.MaxConcurrency
+  type: Property
+  source:
+    id: MaxConcurrency
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Gateway\SessionStartLimit.cs
+    startLine: 37
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: >-
+    Gets the maximum number of concurrent identify messages that may be sent if the bot is sharded.
+
+
+    The logic behind this value is slightly complex. Given a maximum concurrency of 16 and 16 shards, all 16
+
+    shards may identify concurrently. However, given a maximum concurrency of 16 and 32 shards, the batching
+
+    properties of this value come into play. Concurrently identifying shards 0 through 15 would be allowed, but
+
+    not shards 0 through 8 and 16 through 24.
+
+
+    Effectively, only shards with different rate limit keys may concurrently identify, where the key is
+
+    calculated as follows.
+
+    <pre><code class="lang-csharp">rate_limit_key = shard_id % max_concurrency</code></pre>
+  example: []
+  syntax:
+    content: public int MaxConcurrency { get; init; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property MaxConcurrency As Integer
+  overload: Remora.Discord.API.Objects.SessionStartLimit.MaxConcurrency*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.MaxConcurrency
+references:
+- uid: Remora.Discord.API.Objects
+  commentId: N:Remora.Discord.API.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Objects
+  nameWithType: Remora.Discord.API.Objects
+  fullName: Remora.Discord.API.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Objects
+    name: Objects
+    href: Remora.Discord.API.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Objects
+    name: Objects
+    href: Remora.Discord.API.Objects.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Remora.Discord.API.Abstractions.Objects.ISessionStartLimit
+  commentId: T:Remora.Discord.API.Abstractions.Objects.ISessionStartLimit
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.html
+  name: ISessionStartLimit
+  nameWithType: ISessionStartLimit
+  fullName: Remora.Discord.API.Abstractions.Objects.ISessionStartLimit
+- uid: System.IEquatable{Remora.Discord.API.Objects.SessionStartLimit}
+  commentId: T:System.IEquatable{Remora.Discord.API.Objects.SessionStartLimit}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<SessionStartLimit>
+  nameWithType: IEquatable<SessionStartLimit>
+  fullName: System.IEquatable<Remora.Discord.API.Objects.SessionStartLimit>
+  nameWithType.vb: IEquatable(Of SessionStartLimit)
+  fullName.vb: System.IEquatable(Of Remora.Discord.API.Objects.SessionStartLimit)
+  name.vb: IEquatable(Of SessionStartLimit)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Remora.Discord.API.Objects.SessionStartLimit
+    name: SessionStartLimit
+    href: Remora.Discord.API.Objects.SessionStartLimit.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Objects.SessionStartLimit
+    name: SessionStartLimit
+    href: Remora.Discord.API.Objects.SessionStartLimit.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.API.Abstractions.Objects
+  commentId: N:Remora.Discord.API.Abstractions.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Objects
+  nameWithType: Remora.Discord.API.Abstractions.Objects
+  fullName: Remora.Discord.API.Abstractions.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Remora.Discord.API.Objects.SessionStartLimit.#ctor*
+  commentId: Overload:Remora.Discord.API.Objects.SessionStartLimit.#ctor
+  href: Remora.Discord.API.Objects.SessionStartLimit.html#Remora_Discord_API_Objects_SessionStartLimit__ctor_System_Int32_System_Int32_System_TimeSpan_System_Int32_
+  name: SessionStartLimit
+  nameWithType: SessionStartLimit.SessionStartLimit
+  fullName: Remora.Discord.API.Objects.SessionStartLimit.SessionStartLimit
+  nameWithType.vb: SessionStartLimit.New
+  fullName.vb: Remora.Discord.API.Objects.SessionStartLimit.New
+  name.vb: New
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.timespan
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: Remora.Discord.API.Objects.SessionStartLimit.Total*
+  commentId: Overload:Remora.Discord.API.Objects.SessionStartLimit.Total
+  href: Remora.Discord.API.Objects.SessionStartLimit.html#Remora_Discord_API_Objects_SessionStartLimit_Total
+  name: Total
+  nameWithType: SessionStartLimit.Total
+  fullName: Remora.Discord.API.Objects.SessionStartLimit.Total
+- uid: Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.Total
+  commentId: P:Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.Total
+  parent: Remora.Discord.API.Abstractions.Objects.ISessionStartLimit
+  href: Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.html#Remora_Discord_API_Abstractions_Objects_ISessionStartLimit_Total
+  name: Total
+  nameWithType: ISessionStartLimit.Total
+  fullName: Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.Total
+- uid: Remora.Discord.API.Objects.SessionStartLimit.Remaining*
+  commentId: Overload:Remora.Discord.API.Objects.SessionStartLimit.Remaining
+  href: Remora.Discord.API.Objects.SessionStartLimit.html#Remora_Discord_API_Objects_SessionStartLimit_Remaining
+  name: Remaining
+  nameWithType: SessionStartLimit.Remaining
+  fullName: Remora.Discord.API.Objects.SessionStartLimit.Remaining
+- uid: Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.Remaining
+  commentId: P:Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.Remaining
+  parent: Remora.Discord.API.Abstractions.Objects.ISessionStartLimit
+  href: Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.html#Remora_Discord_API_Abstractions_Objects_ISessionStartLimit_Remaining
+  name: Remaining
+  nameWithType: ISessionStartLimit.Remaining
+  fullName: Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.Remaining
+- uid: Remora.Discord.API.Objects.SessionStartLimit.ResetAfter*
+  commentId: Overload:Remora.Discord.API.Objects.SessionStartLimit.ResetAfter
+  href: Remora.Discord.API.Objects.SessionStartLimit.html#Remora_Discord_API_Objects_SessionStartLimit_ResetAfter
+  name: ResetAfter
+  nameWithType: SessionStartLimit.ResetAfter
+  fullName: Remora.Discord.API.Objects.SessionStartLimit.ResetAfter
+- uid: Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.ResetAfter
+  commentId: P:Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.ResetAfter
+  parent: Remora.Discord.API.Abstractions.Objects.ISessionStartLimit
+  href: Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.html#Remora_Discord_API_Abstractions_Objects_ISessionStartLimit_ResetAfter
+  name: ResetAfter
+  nameWithType: ISessionStartLimit.ResetAfter
+  fullName: Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.ResetAfter
+- uid: Remora.Discord.API.Objects.SessionStartLimit.MaxConcurrency*
+  commentId: Overload:Remora.Discord.API.Objects.SessionStartLimit.MaxConcurrency
+  href: Remora.Discord.API.Objects.SessionStartLimit.html#Remora_Discord_API_Objects_SessionStartLimit_MaxConcurrency
+  name: MaxConcurrency
+  nameWithType: SessionStartLimit.MaxConcurrency
+  fullName: Remora.Discord.API.Objects.SessionStartLimit.MaxConcurrency
+- uid: Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.MaxConcurrency
+  commentId: P:Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.MaxConcurrency
+  parent: Remora.Discord.API.Abstractions.Objects.ISessionStartLimit
+  href: Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.html#Remora_Discord_API_Abstractions_Objects_ISessionStartLimit_MaxConcurrency
+  name: MaxConcurrency
+  nameWithType: ISessionStartLimit.MaxConcurrency
+  fullName: Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.MaxConcurrency

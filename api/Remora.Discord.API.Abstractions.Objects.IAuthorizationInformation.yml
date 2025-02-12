@@ -1,0 +1,427 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Abstractions.Objects.IAuthorizationInformation
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IAuthorizationInformation
+  id: IAuthorizationInformation
+  parent: Remora.Discord.API.Abstractions.Objects
+  children:
+  - Remora.Discord.API.Abstractions.Objects.IAuthorizationInformation.Application
+  - Remora.Discord.API.Abstractions.Objects.IAuthorizationInformation.Expires
+  - Remora.Discord.API.Abstractions.Objects.IAuthorizationInformation.Scopes
+  - Remora.Discord.API.Abstractions.Objects.IAuthorizationInformation.User
+  langs:
+  - csharp
+  - vb
+  name: IAuthorizationInformation
+  nameWithType: IAuthorizationInformation
+  fullName: Remora.Discord.API.Abstractions.Objects.IAuthorizationInformation
+  type: Interface
+  source:
+    id: IAuthorizationInformation
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\OAuth2\IAuthorizationInformation.cs
+    startLine: 32
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Represents information about OAuth2 authorizations.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public interface IAuthorizationInformation
+    content.vb: >-
+      <PublicAPI>
+
+      Public Interface IAuthorizationInformation
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Abstractions.Objects.IAuthorizationInformation.Application
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IAuthorizationInformation.Application
+  id: Application
+  parent: Remora.Discord.API.Abstractions.Objects.IAuthorizationInformation
+  langs:
+  - csharp
+  - vb
+  name: Application
+  nameWithType: IAuthorizationInformation.Application
+  fullName: Remora.Discord.API.Abstractions.Objects.IAuthorizationInformation.Application
+  type: Property
+  source:
+    id: Application
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\OAuth2\IAuthorizationInformation.cs
+    startLine: 38
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the current application.
+  example: []
+  syntax:
+    content: IPartialApplication Application { get; }
+    parameters: []
+    return:
+      type: Remora.Discord.API.Abstractions.Objects.IPartialApplication
+    content.vb: ReadOnly Property Application As IPartialApplication
+  overload: Remora.Discord.API.Abstractions.Objects.IAuthorizationInformation.Application*
+- uid: Remora.Discord.API.Abstractions.Objects.IAuthorizationInformation.Scopes
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IAuthorizationInformation.Scopes
+  id: Scopes
+  parent: Remora.Discord.API.Abstractions.Objects.IAuthorizationInformation
+  langs:
+  - csharp
+  - vb
+  name: Scopes
+  nameWithType: IAuthorizationInformation.Scopes
+  fullName: Remora.Discord.API.Abstractions.Objects.IAuthorizationInformation.Scopes
+  type: Property
+  source:
+    id: Scopes
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\OAuth2\IAuthorizationInformation.cs
+    startLine: 43
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the scopes the user has authorized the application for.
+  example: []
+  syntax:
+    content: IReadOnlyList<string> Scopes { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{System.String}
+    content.vb: ReadOnly Property Scopes As IReadOnlyList(Of String)
+  overload: Remora.Discord.API.Abstractions.Objects.IAuthorizationInformation.Scopes*
+- uid: Remora.Discord.API.Abstractions.Objects.IAuthorizationInformation.Expires
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IAuthorizationInformation.Expires
+  id: Expires
+  parent: Remora.Discord.API.Abstractions.Objects.IAuthorizationInformation
+  langs:
+  - csharp
+  - vb
+  name: Expires
+  nameWithType: IAuthorizationInformation.Expires
+  fullName: Remora.Discord.API.Abstractions.Objects.IAuthorizationInformation.Expires
+  type: Property
+  source:
+    id: Expires
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\OAuth2\IAuthorizationInformation.cs
+    startLine: 48
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the time when the access token expires.
+  example: []
+  syntax:
+    content: DateTimeOffset Expires { get; }
+    parameters: []
+    return:
+      type: System.DateTimeOffset
+    content.vb: ReadOnly Property Expires As DateTimeOffset
+  overload: Remora.Discord.API.Abstractions.Objects.IAuthorizationInformation.Expires*
+- uid: Remora.Discord.API.Abstractions.Objects.IAuthorizationInformation.User
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IAuthorizationInformation.User
+  id: User
+  parent: Remora.Discord.API.Abstractions.Objects.IAuthorizationInformation
+  langs:
+  - csharp
+  - vb
+  name: User
+  nameWithType: IAuthorizationInformation.User
+  fullName: Remora.Discord.API.Abstractions.Objects.IAuthorizationInformation.User
+  type: Property
+  source:
+    id: User
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\OAuth2\IAuthorizationInformation.cs
+    startLine: 53
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the user who has authorized the application, if the user has authorized with the "identity" scope.
+  example: []
+  syntax:
+    content: Optional<IUser> User { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IUser}
+    content.vb: ReadOnly Property User As [Optional](Of IUser)
+  overload: Remora.Discord.API.Abstractions.Objects.IAuthorizationInformation.User*
+references:
+- uid: Remora.Discord.API.Abstractions.Objects
+  commentId: N:Remora.Discord.API.Abstractions.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Objects
+  nameWithType: Remora.Discord.API.Abstractions.Objects
+  fullName: Remora.Discord.API.Abstractions.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+- uid: Remora.Discord.API.Abstractions.Objects.IAuthorizationInformation.Application*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IAuthorizationInformation.Application
+  href: Remora.Discord.API.Abstractions.Objects.IAuthorizationInformation.html#Remora_Discord_API_Abstractions_Objects_IAuthorizationInformation_Application
+  name: Application
+  nameWithType: IAuthorizationInformation.Application
+  fullName: Remora.Discord.API.Abstractions.Objects.IAuthorizationInformation.Application
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialApplication
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IPartialApplication
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IPartialApplication.html
+  name: IPartialApplication
+  nameWithType: IPartialApplication
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialApplication
+- uid: Remora.Discord.API.Abstractions.Objects.IAuthorizationInformation.Scopes*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IAuthorizationInformation.Scopes
+  href: Remora.Discord.API.Abstractions.Objects.IAuthorizationInformation.html#Remora_Discord_API_Abstractions_Objects_IAuthorizationInformation_Scopes
+  name: Scopes
+  nameWithType: IAuthorizationInformation.Scopes
+  fullName: Remora.Discord.API.Abstractions.Objects.IAuthorizationInformation.Scopes
+- uid: System.Collections.Generic.IReadOnlyList{System.String}
+  commentId: T:System.Collections.Generic.IReadOnlyList{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<string>
+  nameWithType: IReadOnlyList<string>
+  fullName: System.Collections.Generic.IReadOnlyList<string>
+  nameWithType.vb: IReadOnlyList(Of String)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of String)
+  name.vb: IReadOnlyList(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Remora.Discord.API.Abstractions.Objects.IAuthorizationInformation.Expires*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IAuthorizationInformation.Expires
+  href: Remora.Discord.API.Abstractions.Objects.IAuthorizationInformation.html#Remora_Discord_API_Abstractions_Objects_IAuthorizationInformation_Expires
+  name: Expires
+  nameWithType: IAuthorizationInformation.Expires
+  fullName: Remora.Discord.API.Abstractions.Objects.IAuthorizationInformation.Expires
+- uid: System.DateTimeOffset
+  commentId: T:System.DateTimeOffset
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.API.Abstractions.Objects.IAuthorizationInformation.User*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IAuthorizationInformation.User
+  href: Remora.Discord.API.Abstractions.Objects.IAuthorizationInformation.html#Remora_Discord_API_Abstractions_Objects_IAuthorizationInformation_User
+  name: User
+  nameWithType: IAuthorizationInformation.User
+  fullName: Remora.Discord.API.Abstractions.Objects.IAuthorizationInformation.User
+- uid: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IUser}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IUser}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: Remora.Discord.API.Abstractions.Objects.IUser.html
+  name: Optional<IUser>
+  nameWithType: Optional<IUser>
+  fullName: Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IUser>
+  nameWithType.vb: Optional(Of IUser)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IUser)
+  name.vb: Optional(Of IUser)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IUser
+    name: IUser
+    href: Remora.Discord.API.Abstractions.Objects.IUser.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IUser
+    name: IUser
+    href: Remora.Discord.API.Abstractions.Objects.IUser.html
+  - name: )
+- uid: Remora.Rest.Core.Optional`1
+  commentId: T:Remora.Rest.Core.Optional`1
+  isExternal: true
+  name: Optional<TValue>
+  nameWithType: Optional<TValue>
+  fullName: Remora.Rest.Core.Optional<TValue>
+  nameWithType.vb: Optional(Of TValue)
+  fullName.vb: Remora.Rest.Core.Optional(Of TValue)
+  name.vb: Optional(Of TValue)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true

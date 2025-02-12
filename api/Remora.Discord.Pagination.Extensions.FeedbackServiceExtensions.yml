@@ -1,0 +1,936 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.Pagination.Extensions.FeedbackServiceExtensions
+  commentId: T:Remora.Discord.Pagination.Extensions.FeedbackServiceExtensions
+  id: FeedbackServiceExtensions
+  parent: Remora.Discord.Pagination.Extensions
+  children:
+  - Remora.Discord.Pagination.Extensions.FeedbackServiceExtensions.SendContextualPaginatedMessageAsync(Remora.Discord.Commands.Feedback.Services.FeedbackService,Remora.Rest.Core.Snowflake,System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Objects.Embed},Remora.Discord.Pagination.PaginatedAppearanceOptions,Remora.Discord.Commands.Feedback.Messages.FeedbackMessageOptions,System.Threading.CancellationToken)
+  - Remora.Discord.Pagination.Extensions.FeedbackServiceExtensions.SendPaginatedMessageAsync(Remora.Discord.Commands.Feedback.Services.FeedbackService,Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Objects.Embed},Remora.Discord.Pagination.PaginatedAppearanceOptions,Remora.Discord.Commands.Feedback.Messages.FeedbackMessageOptions,System.Threading.CancellationToken)
+  - Remora.Discord.Pagination.Extensions.FeedbackServiceExtensions.SendPrivatePaginatedMessageAsync(Remora.Discord.Commands.Feedback.Services.FeedbackService,Remora.Rest.Core.Snowflake,System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Objects.Embed},Remora.Discord.Pagination.PaginatedAppearanceOptions,Remora.Discord.Commands.Feedback.Messages.FeedbackMessageOptions,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: FeedbackServiceExtensions
+  nameWithType: FeedbackServiceExtensions
+  fullName: Remora.Discord.Pagination.Extensions.FeedbackServiceExtensions
+  type: Class
+  source:
+    id: FeedbackServiceExtensions
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Remora.Discord.Pagination\Extensions\FeedbackServiceExtensions.cs
+    startLine: 41
+  assemblies:
+  - Remora.Discord.Pagination
+  namespace: Remora.Discord.Pagination.Extensions
+  summary: Defines extension methods to the <xref href="Remora.Discord.Commands.Feedback.Services.FeedbackService" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public static class FeedbackServiceExtensions
+    content.vb: >-
+      <PublicAPI>
+
+      Public Module FeedbackServiceExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.Pagination.Extensions.FeedbackServiceExtensions.SendPaginatedMessageAsync(Remora.Discord.Commands.Feedback.Services.FeedbackService,Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Objects.Embed},Remora.Discord.Pagination.PaginatedAppearanceOptions,Remora.Discord.Commands.Feedback.Messages.FeedbackMessageOptions,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Pagination.Extensions.FeedbackServiceExtensions.SendPaginatedMessageAsync(Remora.Discord.Commands.Feedback.Services.FeedbackService,Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Objects.Embed},Remora.Discord.Pagination.PaginatedAppearanceOptions,Remora.Discord.Commands.Feedback.Messages.FeedbackMessageOptions,System.Threading.CancellationToken)
+  id: SendPaginatedMessageAsync(Remora.Discord.Commands.Feedback.Services.FeedbackService,Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Objects.Embed},Remora.Discord.Pagination.PaginatedAppearanceOptions,Remora.Discord.Commands.Feedback.Messages.FeedbackMessageOptions,System.Threading.CancellationToken)
+  isExtensionMethod: true
+  parent: Remora.Discord.Pagination.Extensions.FeedbackServiceExtensions
+  langs:
+  - csharp
+  - vb
+  name: SendPaginatedMessageAsync(FeedbackService, Snowflake, Snowflake, IReadOnlyList<Embed>, PaginatedAppearanceOptions?, FeedbackMessageOptions?, CancellationToken)
+  nameWithType: FeedbackServiceExtensions.SendPaginatedMessageAsync(FeedbackService, Snowflake, Snowflake, IReadOnlyList<Embed>, PaginatedAppearanceOptions?, FeedbackMessageOptions?, CancellationToken)
+  fullName: Remora.Discord.Pagination.Extensions.FeedbackServiceExtensions.SendPaginatedMessageAsync(Remora.Discord.Commands.Feedback.Services.FeedbackService, Remora.Rest.Core.Snowflake, Remora.Rest.Core.Snowflake, System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Objects.Embed>, Remora.Discord.Pagination.PaginatedAppearanceOptions?, Remora.Discord.Commands.Feedback.Messages.FeedbackMessageOptions?, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: SendPaginatedMessageAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Remora.Discord.Pagination\Extensions\FeedbackServiceExtensions.cs
+    startLine: 60
+  assemblies:
+  - Remora.Discord.Pagination
+  namespace: Remora.Discord.Pagination.Extensions
+  summary: Sends a paginated message to the given channel.
+  example: []
+  syntax:
+    content: public static Task<Result<IMessage>> SendPaginatedMessageAsync(this FeedbackService feedback, Snowflake channel, Snowflake sourceUser, IReadOnlyList<Embed> pages, PaginatedAppearanceOptions? appearance = null, FeedbackMessageOptions? options = null, CancellationToken ct = default)
+    parameters:
+    - id: feedback
+      type: Remora.Discord.Commands.Feedback.Services.FeedbackService
+      description: The feedback service.
+    - id: channel
+      type: Remora.Rest.Core.Snowflake
+      description: The channel.
+    - id: sourceUser
+      type: Remora.Rest.Core.Snowflake
+      description: The ID of the user that requested the paginated message. Only this user will be able to change page.
+    - id: pages
+      type: System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Objects.Embed}
+      description: The pages in the message.
+    - id: appearance
+      type: Remora.Discord.Pagination.PaginatedAppearanceOptions
+      description: The appearance options for the paginated message.
+    - id: options
+      type: Remora.Discord.Commands.Feedback.Messages.FeedbackMessageOptions
+      description: >-
+        The message options to use. Any provided message components will be included in addition to the pagination's
+
+        navigation buttons at the root of the component set.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IMessage}}
+      description: A <xref href="System.Threading.Tasks.Task" data-throw-if-not-resolved="false"></xref> representing the asynchronous operation.
+    content.vb: Public Shared Function SendPaginatedMessageAsync(feedback As FeedbackService, channel As Snowflake, sourceUser As Snowflake, pages As IReadOnlyList(Of Embed), appearance As PaginatedAppearanceOptions = Nothing, options As FeedbackMessageOptions = Nothing, ct As CancellationToken = Nothing) As Task(Of Result(Of IMessage))
+  overload: Remora.Discord.Pagination.Extensions.FeedbackServiceExtensions.SendPaginatedMessageAsync*
+  nameWithType.vb: FeedbackServiceExtensions.SendPaginatedMessageAsync(FeedbackService, Snowflake, Snowflake, IReadOnlyList(Of Embed), PaginatedAppearanceOptions, FeedbackMessageOptions, CancellationToken)
+  fullName.vb: Remora.Discord.Pagination.Extensions.FeedbackServiceExtensions.SendPaginatedMessageAsync(Remora.Discord.Commands.Feedback.Services.FeedbackService, Remora.Rest.Core.Snowflake, Remora.Rest.Core.Snowflake, System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Objects.Embed), Remora.Discord.Pagination.PaginatedAppearanceOptions, Remora.Discord.Commands.Feedback.Messages.FeedbackMessageOptions, System.Threading.CancellationToken)
+  name.vb: SendPaginatedMessageAsync(FeedbackService, Snowflake, Snowflake, IReadOnlyList(Of Embed), PaginatedAppearanceOptions, FeedbackMessageOptions, CancellationToken)
+- uid: Remora.Discord.Pagination.Extensions.FeedbackServiceExtensions.SendContextualPaginatedMessageAsync(Remora.Discord.Commands.Feedback.Services.FeedbackService,Remora.Rest.Core.Snowflake,System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Objects.Embed},Remora.Discord.Pagination.PaginatedAppearanceOptions,Remora.Discord.Commands.Feedback.Messages.FeedbackMessageOptions,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Pagination.Extensions.FeedbackServiceExtensions.SendContextualPaginatedMessageAsync(Remora.Discord.Commands.Feedback.Services.FeedbackService,Remora.Rest.Core.Snowflake,System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Objects.Embed},Remora.Discord.Pagination.PaginatedAppearanceOptions,Remora.Discord.Commands.Feedback.Messages.FeedbackMessageOptions,System.Threading.CancellationToken)
+  id: SendContextualPaginatedMessageAsync(Remora.Discord.Commands.Feedback.Services.FeedbackService,Remora.Rest.Core.Snowflake,System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Objects.Embed},Remora.Discord.Pagination.PaginatedAppearanceOptions,Remora.Discord.Commands.Feedback.Messages.FeedbackMessageOptions,System.Threading.CancellationToken)
+  isExtensionMethod: true
+  parent: Remora.Discord.Pagination.Extensions.FeedbackServiceExtensions
+  langs:
+  - csharp
+  - vb
+  name: SendContextualPaginatedMessageAsync(FeedbackService, Snowflake, IReadOnlyList<Embed>, PaginatedAppearanceOptions?, FeedbackMessageOptions?, CancellationToken)
+  nameWithType: FeedbackServiceExtensions.SendContextualPaginatedMessageAsync(FeedbackService, Snowflake, IReadOnlyList<Embed>, PaginatedAppearanceOptions?, FeedbackMessageOptions?, CancellationToken)
+  fullName: Remora.Discord.Pagination.Extensions.FeedbackServiceExtensions.SendContextualPaginatedMessageAsync(Remora.Discord.Commands.Feedback.Services.FeedbackService, Remora.Rest.Core.Snowflake, System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Objects.Embed>, Remora.Discord.Pagination.PaginatedAppearanceOptions?, Remora.Discord.Commands.Feedback.Messages.FeedbackMessageOptions?, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: SendContextualPaginatedMessageAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Remora.Discord.Pagination\Extensions\FeedbackServiceExtensions.cs
+    startLine: 129
+  assemblies:
+  - Remora.Discord.Pagination
+  namespace: Remora.Discord.Pagination.Extensions
+  summary: Sends a paginated message to the current context.
+  example: []
+  syntax:
+    content: public static Task<Result<IMessage>> SendContextualPaginatedMessageAsync(this FeedbackService feedback, Snowflake sourceUser, IReadOnlyList<Embed> pages, PaginatedAppearanceOptions? appearance = null, FeedbackMessageOptions? options = null, CancellationToken ct = default)
+    parameters:
+    - id: feedback
+      type: Remora.Discord.Commands.Feedback.Services.FeedbackService
+      description: The feedback service.
+    - id: sourceUser
+      type: Remora.Rest.Core.Snowflake
+      description: The ID of the user that requested the paginated message. Only this user will be able to change page.
+    - id: pages
+      type: System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Objects.Embed}
+      description: The pages in the message.
+    - id: appearance
+      type: Remora.Discord.Pagination.PaginatedAppearanceOptions
+      description: The appearance options for the paginated message.
+    - id: options
+      type: Remora.Discord.Commands.Feedback.Messages.FeedbackMessageOptions
+      description: >-
+        The message options to use. Any provided message components will be included in addition to the pagination's
+
+        navigation buttons at the root of the component set.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IMessage}}
+      description: A <xref href="System.Threading.Tasks.Task" data-throw-if-not-resolved="false"></xref> representing the asynchronous operation.
+    content.vb: Public Shared Function SendContextualPaginatedMessageAsync(feedback As FeedbackService, sourceUser As Snowflake, pages As IReadOnlyList(Of Embed), appearance As PaginatedAppearanceOptions = Nothing, options As FeedbackMessageOptions = Nothing, ct As CancellationToken = Nothing) As Task(Of Result(Of IMessage))
+  overload: Remora.Discord.Pagination.Extensions.FeedbackServiceExtensions.SendContextualPaginatedMessageAsync*
+  nameWithType.vb: FeedbackServiceExtensions.SendContextualPaginatedMessageAsync(FeedbackService, Snowflake, IReadOnlyList(Of Embed), PaginatedAppearanceOptions, FeedbackMessageOptions, CancellationToken)
+  fullName.vb: Remora.Discord.Pagination.Extensions.FeedbackServiceExtensions.SendContextualPaginatedMessageAsync(Remora.Discord.Commands.Feedback.Services.FeedbackService, Remora.Rest.Core.Snowflake, System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Objects.Embed), Remora.Discord.Pagination.PaginatedAppearanceOptions, Remora.Discord.Commands.Feedback.Messages.FeedbackMessageOptions, System.Threading.CancellationToken)
+  name.vb: SendContextualPaginatedMessageAsync(FeedbackService, Snowflake, IReadOnlyList(Of Embed), PaginatedAppearanceOptions, FeedbackMessageOptions, CancellationToken)
+- uid: Remora.Discord.Pagination.Extensions.FeedbackServiceExtensions.SendPrivatePaginatedMessageAsync(Remora.Discord.Commands.Feedback.Services.FeedbackService,Remora.Rest.Core.Snowflake,System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Objects.Embed},Remora.Discord.Pagination.PaginatedAppearanceOptions,Remora.Discord.Commands.Feedback.Messages.FeedbackMessageOptions,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Pagination.Extensions.FeedbackServiceExtensions.SendPrivatePaginatedMessageAsync(Remora.Discord.Commands.Feedback.Services.FeedbackService,Remora.Rest.Core.Snowflake,System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Objects.Embed},Remora.Discord.Pagination.PaginatedAppearanceOptions,Remora.Discord.Commands.Feedback.Messages.FeedbackMessageOptions,System.Threading.CancellationToken)
+  id: SendPrivatePaginatedMessageAsync(Remora.Discord.Commands.Feedback.Services.FeedbackService,Remora.Rest.Core.Snowflake,System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Objects.Embed},Remora.Discord.Pagination.PaginatedAppearanceOptions,Remora.Discord.Commands.Feedback.Messages.FeedbackMessageOptions,System.Threading.CancellationToken)
+  isExtensionMethod: true
+  parent: Remora.Discord.Pagination.Extensions.FeedbackServiceExtensions
+  langs:
+  - csharp
+  - vb
+  name: SendPrivatePaginatedMessageAsync(FeedbackService, Snowflake, IReadOnlyList<Embed>, PaginatedAppearanceOptions?, FeedbackMessageOptions?, CancellationToken)
+  nameWithType: FeedbackServiceExtensions.SendPrivatePaginatedMessageAsync(FeedbackService, Snowflake, IReadOnlyList<Embed>, PaginatedAppearanceOptions?, FeedbackMessageOptions?, CancellationToken)
+  fullName: Remora.Discord.Pagination.Extensions.FeedbackServiceExtensions.SendPrivatePaginatedMessageAsync(Remora.Discord.Commands.Feedback.Services.FeedbackService, Remora.Rest.Core.Snowflake, System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Objects.Embed>, Remora.Discord.Pagination.PaginatedAppearanceOptions?, Remora.Discord.Commands.Feedback.Messages.FeedbackMessageOptions?, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: SendPrivatePaginatedMessageAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Remora.Discord.Pagination\Extensions\FeedbackServiceExtensions.cs
+    startLine: 194
+  assemblies:
+  - Remora.Discord.Pagination
+  namespace: Remora.Discord.Pagination.Extensions
+  summary: Sends a paginated message to the given user in their private DN channel.
+  example: []
+  syntax:
+    content: public static Task<Result<IMessage>> SendPrivatePaginatedMessageAsync(this FeedbackService feedback, Snowflake user, IReadOnlyList<Embed> pages, PaginatedAppearanceOptions? appearance = null, FeedbackMessageOptions? options = null, CancellationToken ct = default)
+    parameters:
+    - id: feedback
+      type: Remora.Discord.Commands.Feedback.Services.FeedbackService
+      description: The feedback service.
+    - id: user
+      type: Remora.Rest.Core.Snowflake
+      description: The ID of the user to send the embed to.
+    - id: pages
+      type: System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Objects.Embed}
+      description: The pages in the message.
+    - id: appearance
+      type: Remora.Discord.Pagination.PaginatedAppearanceOptions
+      description: The appearance options for the paginated message.
+    - id: options
+      type: Remora.Discord.Commands.Feedback.Messages.FeedbackMessageOptions
+      description: >-
+        The message options to use. Any provided message components will be included in addition to the pagination's
+
+        navigation buttons at the root of the component set.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IMessage}}
+      description: A <xref href="System.Threading.Tasks.Task" data-throw-if-not-resolved="false"></xref> representing the asynchronous operation.
+    content.vb: Public Shared Function SendPrivatePaginatedMessageAsync(feedback As FeedbackService, user As Snowflake, pages As IReadOnlyList(Of Embed), appearance As PaginatedAppearanceOptions = Nothing, options As FeedbackMessageOptions = Nothing, ct As CancellationToken = Nothing) As Task(Of Result(Of IMessage))
+  overload: Remora.Discord.Pagination.Extensions.FeedbackServiceExtensions.SendPrivatePaginatedMessageAsync*
+  nameWithType.vb: FeedbackServiceExtensions.SendPrivatePaginatedMessageAsync(FeedbackService, Snowflake, IReadOnlyList(Of Embed), PaginatedAppearanceOptions, FeedbackMessageOptions, CancellationToken)
+  fullName.vb: Remora.Discord.Pagination.Extensions.FeedbackServiceExtensions.SendPrivatePaginatedMessageAsync(Remora.Discord.Commands.Feedback.Services.FeedbackService, Remora.Rest.Core.Snowflake, System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Objects.Embed), Remora.Discord.Pagination.PaginatedAppearanceOptions, Remora.Discord.Commands.Feedback.Messages.FeedbackMessageOptions, System.Threading.CancellationToken)
+  name.vb: SendPrivatePaginatedMessageAsync(FeedbackService, Snowflake, IReadOnlyList(Of Embed), PaginatedAppearanceOptions, FeedbackMessageOptions, CancellationToken)
+references:
+- uid: Remora.Discord.Commands.Feedback.Services.FeedbackService
+  commentId: T:Remora.Discord.Commands.Feedback.Services.FeedbackService
+  parent: Remora.Discord.Commands.Feedback.Services
+  href: Remora.Discord.Commands.Feedback.Services.FeedbackService.html
+  name: FeedbackService
+  nameWithType: FeedbackService
+  fullName: Remora.Discord.Commands.Feedback.Services.FeedbackService
+- uid: Remora.Discord.Pagination.Extensions
+  commentId: N:Remora.Discord.Pagination.Extensions
+  href: Remora.html
+  name: Remora.Discord.Pagination.Extensions
+  nameWithType: Remora.Discord.Pagination.Extensions
+  fullName: Remora.Discord.Pagination.Extensions
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Pagination
+    name: Pagination
+    href: Remora.Discord.Pagination.html
+  - name: .
+  - uid: Remora.Discord.Pagination.Extensions
+    name: Extensions
+    href: Remora.Discord.Pagination.Extensions.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Pagination
+    name: Pagination
+    href: Remora.Discord.Pagination.html
+  - name: .
+  - uid: Remora.Discord.Pagination.Extensions
+    name: Extensions
+    href: Remora.Discord.Pagination.Extensions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: Remora.Discord.Commands.Feedback.Services
+  commentId: N:Remora.Discord.Commands.Feedback.Services
+  href: Remora.html
+  name: Remora.Discord.Commands.Feedback.Services
+  nameWithType: Remora.Discord.Commands.Feedback.Services
+  fullName: Remora.Discord.Commands.Feedback.Services
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Commands
+    name: Commands
+    href: Remora.Discord.Commands.html
+  - name: .
+  - uid: Remora.Discord.Commands.Feedback
+    name: Feedback
+    href: Remora.Discord.Commands.Feedback.html
+  - name: .
+  - uid: Remora.Discord.Commands.Feedback.Services
+    name: Services
+    href: Remora.Discord.Commands.Feedback.Services.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Commands
+    name: Commands
+    href: Remora.Discord.Commands.html
+  - name: .
+  - uid: Remora.Discord.Commands.Feedback
+    name: Feedback
+    href: Remora.Discord.Commands.Feedback.html
+  - name: .
+  - uid: Remora.Discord.Commands.Feedback.Services
+    name: Services
+    href: Remora.Discord.Commands.Feedback.Services.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Remora.Discord.Pagination.Extensions.FeedbackServiceExtensions.SendPaginatedMessageAsync*
+  commentId: Overload:Remora.Discord.Pagination.Extensions.FeedbackServiceExtensions.SendPaginatedMessageAsync
+  href: Remora.Discord.Pagination.Extensions.FeedbackServiceExtensions.html#Remora_Discord_Pagination_Extensions_FeedbackServiceExtensions_SendPaginatedMessageAsync_Remora_Discord_Commands_Feedback_Services_FeedbackService_Remora_Rest_Core_Snowflake_Remora_Rest_Core_Snowflake_System_Collections_Generic_IReadOnlyList_Remora_Discord_API_Objects_Embed__Remora_Discord_Pagination_PaginatedAppearanceOptions_Remora_Discord_Commands_Feedback_Messages_FeedbackMessageOptions_System_Threading_CancellationToken_
+  name: SendPaginatedMessageAsync
+  nameWithType: FeedbackServiceExtensions.SendPaginatedMessageAsync
+  fullName: Remora.Discord.Pagination.Extensions.FeedbackServiceExtensions.SendPaginatedMessageAsync
+- uid: Remora.Rest.Core.Snowflake
+  commentId: T:Remora.Rest.Core.Snowflake
+  parent: Remora.Rest.Core
+  isExternal: true
+  name: Snowflake
+  nameWithType: Snowflake
+  fullName: Remora.Rest.Core.Snowflake
+- uid: System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Objects.Embed}
+  commentId: T:System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Objects.Embed}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<Embed>
+  nameWithType: IReadOnlyList<Embed>
+  fullName: System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Objects.Embed>
+  nameWithType.vb: IReadOnlyList(Of Embed)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Objects.Embed)
+  name.vb: IReadOnlyList(Of Embed)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Remora.Discord.API.Objects.Embed
+    name: Embed
+    href: Remora.Discord.API.Objects.Embed.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Objects.Embed
+    name: Embed
+    href: Remora.Discord.API.Objects.Embed.html
+  - name: )
+- uid: Remora.Discord.Pagination.PaginatedAppearanceOptions
+  commentId: T:Remora.Discord.Pagination.PaginatedAppearanceOptions
+  parent: Remora.Discord.Pagination
+  href: Remora.Discord.Pagination.PaginatedAppearanceOptions.html
+  name: PaginatedAppearanceOptions
+  nameWithType: PaginatedAppearanceOptions
+  fullName: Remora.Discord.Pagination.PaginatedAppearanceOptions
+- uid: Remora.Discord.Commands.Feedback.Messages.FeedbackMessageOptions
+  commentId: T:Remora.Discord.Commands.Feedback.Messages.FeedbackMessageOptions
+  parent: Remora.Discord.Commands.Feedback.Messages
+  href: Remora.Discord.Commands.Feedback.Messages.FeedbackMessageOptions.html
+  name: FeedbackMessageOptions
+  nameWithType: FeedbackMessageOptions
+  fullName: Remora.Discord.Commands.Feedback.Messages.FeedbackMessageOptions
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IMessage}}
+  commentId: T:System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IMessage}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Result<IMessage>>
+  nameWithType: Task<Result<IMessage>>
+  fullName: System.Threading.Tasks.Task<Remora.Results.Result<Remora.Discord.API.Abstractions.Objects.IMessage>>
+  nameWithType.vb: Task(Of Result(Of IMessage))
+  fullName.vb: System.Threading.Tasks.Task(Of Remora.Results.Result(Of Remora.Discord.API.Abstractions.Objects.IMessage))
+  name.vb: Task(Of Result(Of IMessage))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Remora.Results.Result`1
+    name: Result
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IMessage
+    name: IMessage
+    href: Remora.Discord.API.Abstractions.Objects.IMessage.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Results.Result`1
+    name: Result
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IMessage
+    name: IMessage
+    href: Remora.Discord.API.Abstractions.Objects.IMessage.html
+  - name: )
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Remora.Discord.Pagination
+  commentId: N:Remora.Discord.Pagination
+  href: Remora.html
+  name: Remora.Discord.Pagination
+  nameWithType: Remora.Discord.Pagination
+  fullName: Remora.Discord.Pagination
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Pagination
+    name: Pagination
+    href: Remora.Discord.Pagination.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Pagination
+    name: Pagination
+    href: Remora.Discord.Pagination.html
+- uid: Remora.Discord.Commands.Feedback.Messages
+  commentId: N:Remora.Discord.Commands.Feedback.Messages
+  href: Remora.html
+  name: Remora.Discord.Commands.Feedback.Messages
+  nameWithType: Remora.Discord.Commands.Feedback.Messages
+  fullName: Remora.Discord.Commands.Feedback.Messages
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Commands
+    name: Commands
+    href: Remora.Discord.Commands.html
+  - name: .
+  - uid: Remora.Discord.Commands.Feedback
+    name: Feedback
+    href: Remora.Discord.Commands.Feedback.html
+  - name: .
+  - uid: Remora.Discord.Commands.Feedback.Messages
+    name: Messages
+    href: Remora.Discord.Commands.Feedback.Messages.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Commands
+    name: Commands
+    href: Remora.Discord.Commands.html
+  - name: .
+  - uid: Remora.Discord.Commands.Feedback
+    name: Feedback
+    href: Remora.Discord.Commands.Feedback.html
+  - name: .
+  - uid: Remora.Discord.Commands.Feedback.Messages
+    name: Messages
+    href: Remora.Discord.Commands.Feedback.Messages.html
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Remora.Discord.Pagination.Extensions.FeedbackServiceExtensions.SendContextualPaginatedMessageAsync*
+  commentId: Overload:Remora.Discord.Pagination.Extensions.FeedbackServiceExtensions.SendContextualPaginatedMessageAsync
+  href: Remora.Discord.Pagination.Extensions.FeedbackServiceExtensions.html#Remora_Discord_Pagination_Extensions_FeedbackServiceExtensions_SendContextualPaginatedMessageAsync_Remora_Discord_Commands_Feedback_Services_FeedbackService_Remora_Rest_Core_Snowflake_System_Collections_Generic_IReadOnlyList_Remora_Discord_API_Objects_Embed__Remora_Discord_Pagination_PaginatedAppearanceOptions_Remora_Discord_Commands_Feedback_Messages_FeedbackMessageOptions_System_Threading_CancellationToken_
+  name: SendContextualPaginatedMessageAsync
+  nameWithType: FeedbackServiceExtensions.SendContextualPaginatedMessageAsync
+  fullName: Remora.Discord.Pagination.Extensions.FeedbackServiceExtensions.SendContextualPaginatedMessageAsync
+- uid: Remora.Discord.Pagination.Extensions.FeedbackServiceExtensions.SendPrivatePaginatedMessageAsync*
+  commentId: Overload:Remora.Discord.Pagination.Extensions.FeedbackServiceExtensions.SendPrivatePaginatedMessageAsync
+  href: Remora.Discord.Pagination.Extensions.FeedbackServiceExtensions.html#Remora_Discord_Pagination_Extensions_FeedbackServiceExtensions_SendPrivatePaginatedMessageAsync_Remora_Discord_Commands_Feedback_Services_FeedbackService_Remora_Rest_Core_Snowflake_System_Collections_Generic_IReadOnlyList_Remora_Discord_API_Objects_Embed__Remora_Discord_Pagination_PaginatedAppearanceOptions_Remora_Discord_Commands_Feedback_Messages_FeedbackMessageOptions_System_Threading_CancellationToken_
+  name: SendPrivatePaginatedMessageAsync
+  nameWithType: FeedbackServiceExtensions.SendPrivatePaginatedMessageAsync
+  fullName: Remora.Discord.Pagination.Extensions.FeedbackServiceExtensions.SendPrivatePaginatedMessageAsync

@@ -1,0 +1,1036 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Objects.PartialMentionableSelectComponent
+  commentId: T:Remora.Discord.API.Objects.PartialMentionableSelectComponent
+  id: PartialMentionableSelectComponent
+  parent: Remora.Discord.API.Objects
+  children:
+  - Remora.Discord.API.Objects.PartialMentionableSelectComponent.#ctor(Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.Int32},Remora.Rest.Core.Optional{System.Int32},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IPartialSelectDefaultValue}})
+  - Remora.Discord.API.Objects.PartialMentionableSelectComponent.CustomID
+  - Remora.Discord.API.Objects.PartialMentionableSelectComponent.DefaultValues
+  - Remora.Discord.API.Objects.PartialMentionableSelectComponent.IsDisabled
+  - Remora.Discord.API.Objects.PartialMentionableSelectComponent.MaxValues
+  - Remora.Discord.API.Objects.PartialMentionableSelectComponent.MinValues
+  - Remora.Discord.API.Objects.PartialMentionableSelectComponent.Placeholder
+  - Remora.Discord.API.Objects.PartialMentionableSelectComponent.Type
+  langs:
+  - csharp
+  - vb
+  name: PartialMentionableSelectComponent
+  nameWithType: PartialMentionableSelectComponent
+  fullName: Remora.Discord.API.Objects.PartialMentionableSelectComponent
+  type: Class
+  source:
+    id: PartialMentionableSelectComponent
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Interactions\Components\SelectMenu\PartialMentionableSelectComponent.cs
+    startLine: 30
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Represents a partial dropdown of selectable mentionables (users, roles, and channels).
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public record PartialMentionableSelectComponent : IPartialMentionableSelectComponent, IPartialSelectMenuComponent, IPartialMessageComponent, IEquatable<PartialMentionableSelectComponent>
+    content.vb: >-
+      <PublicAPI>
+
+      Public Class PartialMentionableSelectComponent Implements IPartialMentionableSelectComponent, IPartialSelectMenuComponent, IPartialMessageComponent, IEquatable(Of PartialMentionableSelectComponent)
+  inheritance:
+  - System.Object
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialMentionableSelectComponent
+  - Remora.Discord.API.Abstractions.Objects.IPartialSelectMenuComponent
+  - Remora.Discord.API.Abstractions.Objects.IPartialMessageComponent
+  - System.IEquatable{Remora.Discord.API.Objects.PartialMentionableSelectComponent}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Objects.PartialMentionableSelectComponent.#ctor(Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.Int32},Remora.Rest.Core.Optional{System.Int32},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IPartialSelectDefaultValue}})
+  commentId: M:Remora.Discord.API.Objects.PartialMentionableSelectComponent.#ctor(Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.Int32},Remora.Rest.Core.Optional{System.Int32},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IPartialSelectDefaultValue}})
+  id: '#ctor(Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.Int32},Remora.Rest.Core.Optional{System.Int32},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IPartialSelectDefaultValue}})'
+  parent: Remora.Discord.API.Objects.PartialMentionableSelectComponent
+  langs:
+  - csharp
+  - vb
+  name: PartialMentionableSelectComponent(Optional<string>, Optional<string>, Optional<int>, Optional<int>, Optional<bool>, Optional<IReadOnlyList<IPartialSelectDefaultValue>>)
+  nameWithType: PartialMentionableSelectComponent.PartialMentionableSelectComponent(Optional<string>, Optional<string>, Optional<int>, Optional<int>, Optional<bool>, Optional<IReadOnlyList<IPartialSelectDefaultValue>>)
+  fullName: Remora.Discord.API.Objects.PartialMentionableSelectComponent.PartialMentionableSelectComponent(Remora.Rest.Core.Optional<string>, Remora.Rest.Core.Optional<string>, Remora.Rest.Core.Optional<int>, Remora.Rest.Core.Optional<int>, Remora.Rest.Core.Optional<bool>, Remora.Rest.Core.Optional<System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.IPartialSelectDefaultValue>>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Interactions\Components\SelectMenu\PartialMentionableSelectComponent.cs
+    startLine: 30
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Represents a partial dropdown of selectable mentionables (users, roles, and channels).
+  example: []
+  syntax:
+    content: public PartialMentionableSelectComponent(Optional<string> CustomID, Optional<string> Placeholder = default, Optional<int> MinValues = default, Optional<int> MaxValues = default, Optional<bool> IsDisabled = default, Optional<IReadOnlyList<IPartialSelectDefaultValue>> DefaultValues = default)
+    parameters:
+    - id: CustomID
+      type: Remora.Rest.Core.Optional{System.String}
+    - id: Placeholder
+      type: Remora.Rest.Core.Optional{System.String}
+    - id: MinValues
+      type: Remora.Rest.Core.Optional{System.Int32}
+    - id: MaxValues
+      type: Remora.Rest.Core.Optional{System.Int32}
+    - id: IsDisabled
+      type: Remora.Rest.Core.Optional{System.Boolean}
+    - id: DefaultValues
+      type: Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IPartialSelectDefaultValue}}
+    content.vb: Public Sub New(CustomID As [Optional](Of String), Placeholder As [Optional](Of String) = Nothing, MinValues As [Optional](Of Integer) = Nothing, MaxValues As [Optional](Of Integer) = Nothing, IsDisabled As [Optional](Of Boolean) = Nothing, DefaultValues As [Optional](Of IReadOnlyList(Of IPartialSelectDefaultValue)) = Nothing)
+  overload: Remora.Discord.API.Objects.PartialMentionableSelectComponent.#ctor*
+  nameWithType.vb: PartialMentionableSelectComponent.New(Optional(Of String), Optional(Of String), Optional(Of Integer), Optional(Of Integer), Optional(Of Boolean), Optional(Of IReadOnlyList(Of IPartialSelectDefaultValue)))
+  fullName.vb: Remora.Discord.API.Objects.PartialMentionableSelectComponent.New(Remora.Rest.Core.Optional(Of String), Remora.Rest.Core.Optional(Of String), Remora.Rest.Core.Optional(Of Integer), Remora.Rest.Core.Optional(Of Integer), Remora.Rest.Core.Optional(Of Boolean), Remora.Rest.Core.Optional(Of System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.IPartialSelectDefaultValue)))
+  name.vb: New(Optional(Of String), Optional(Of String), Optional(Of Integer), Optional(Of Integer), Optional(Of Boolean), Optional(Of IReadOnlyList(Of IPartialSelectDefaultValue)))
+- uid: Remora.Discord.API.Objects.PartialMentionableSelectComponent.CustomID
+  commentId: P:Remora.Discord.API.Objects.PartialMentionableSelectComponent.CustomID
+  id: CustomID
+  parent: Remora.Discord.API.Objects.PartialMentionableSelectComponent
+  langs:
+  - csharp
+  - vb
+  name: CustomID
+  nameWithType: PartialMentionableSelectComponent.CustomID
+  fullName: Remora.Discord.API.Objects.PartialMentionableSelectComponent.CustomID
+  type: Property
+  source:
+    id: CustomID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Interactions\Components\SelectMenu\PartialMentionableSelectComponent.cs
+    startLine: 33
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets a custom ID for the component, defined by the developer.
+  example: []
+  syntax:
+    content: public Optional<string> CustomID { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.String}
+    content.vb: Public Property CustomID As [Optional](Of String)
+  overload: Remora.Discord.API.Objects.PartialMentionableSelectComponent.CustomID*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialSelectMenuComponent.CustomID
+- uid: Remora.Discord.API.Objects.PartialMentionableSelectComponent.Placeholder
+  commentId: P:Remora.Discord.API.Objects.PartialMentionableSelectComponent.Placeholder
+  id: Placeholder
+  parent: Remora.Discord.API.Objects.PartialMentionableSelectComponent
+  langs:
+  - csharp
+  - vb
+  name: Placeholder
+  nameWithType: PartialMentionableSelectComponent.Placeholder
+  fullName: Remora.Discord.API.Objects.PartialMentionableSelectComponent.Placeholder
+  type: Property
+  source:
+    id: Placeholder
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Interactions\Components\SelectMenu\PartialMentionableSelectComponent.cs
+    startLine: 34
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the placeholder text for the menu. Max 150 characters.
+  example: []
+  syntax:
+    content: public Optional<string> Placeholder { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.String}
+    content.vb: Public Property Placeholder As [Optional](Of String)
+  overload: Remora.Discord.API.Objects.PartialMentionableSelectComponent.Placeholder*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialSelectMenuComponent.Placeholder
+- uid: Remora.Discord.API.Objects.PartialMentionableSelectComponent.MinValues
+  commentId: P:Remora.Discord.API.Objects.PartialMentionableSelectComponent.MinValues
+  id: MinValues
+  parent: Remora.Discord.API.Objects.PartialMentionableSelectComponent
+  langs:
+  - csharp
+  - vb
+  name: MinValues
+  nameWithType: PartialMentionableSelectComponent.MinValues
+  fullName: Remora.Discord.API.Objects.PartialMentionableSelectComponent.MinValues
+  type: Property
+  source:
+    id: MinValues
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Interactions\Components\SelectMenu\PartialMentionableSelectComponent.cs
+    startLine: 35
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the minimum number of options that must be selected.
+  example: []
+  syntax:
+    content: public Optional<int> MinValues { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Int32}
+    content.vb: Public Property MinValues As [Optional](Of Integer)
+  overload: Remora.Discord.API.Objects.PartialMentionableSelectComponent.MinValues*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialSelectMenuComponent.MinValues
+- uid: Remora.Discord.API.Objects.PartialMentionableSelectComponent.MaxValues
+  commentId: P:Remora.Discord.API.Objects.PartialMentionableSelectComponent.MaxValues
+  id: MaxValues
+  parent: Remora.Discord.API.Objects.PartialMentionableSelectComponent
+  langs:
+  - csharp
+  - vb
+  name: MaxValues
+  nameWithType: PartialMentionableSelectComponent.MaxValues
+  fullName: Remora.Discord.API.Objects.PartialMentionableSelectComponent.MaxValues
+  type: Property
+  source:
+    id: MaxValues
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Interactions\Components\SelectMenu\PartialMentionableSelectComponent.cs
+    startLine: 36
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the maximum number of options that may be selected.
+  example: []
+  syntax:
+    content: public Optional<int> MaxValues { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Int32}
+    content.vb: Public Property MaxValues As [Optional](Of Integer)
+  overload: Remora.Discord.API.Objects.PartialMentionableSelectComponent.MaxValues*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialSelectMenuComponent.MaxValues
+- uid: Remora.Discord.API.Objects.PartialMentionableSelectComponent.IsDisabled
+  commentId: P:Remora.Discord.API.Objects.PartialMentionableSelectComponent.IsDisabled
+  id: IsDisabled
+  parent: Remora.Discord.API.Objects.PartialMentionableSelectComponent
+  langs:
+  - csharp
+  - vb
+  name: IsDisabled
+  nameWithType: PartialMentionableSelectComponent.IsDisabled
+  fullName: Remora.Discord.API.Objects.PartialMentionableSelectComponent.IsDisabled
+  type: Property
+  source:
+    id: IsDisabled
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Interactions\Components\SelectMenu\PartialMentionableSelectComponent.cs
+    startLine: 37
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets a value indicating whether the component is disabled.
+  example: []
+  syntax:
+    content: public Optional<bool> IsDisabled { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Boolean}
+    content.vb: Public Property IsDisabled As [Optional](Of Boolean)
+  overload: Remora.Discord.API.Objects.PartialMentionableSelectComponent.IsDisabled*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialSelectMenuComponent.IsDisabled
+- uid: Remora.Discord.API.Objects.PartialMentionableSelectComponent.DefaultValues
+  commentId: P:Remora.Discord.API.Objects.PartialMentionableSelectComponent.DefaultValues
+  id: DefaultValues
+  parent: Remora.Discord.API.Objects.PartialMentionableSelectComponent
+  langs:
+  - csharp
+  - vb
+  name: DefaultValues
+  nameWithType: PartialMentionableSelectComponent.DefaultValues
+  fullName: Remora.Discord.API.Objects.PartialMentionableSelectComponent.DefaultValues
+  type: Property
+  source:
+    id: DefaultValues
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Interactions\Components\SelectMenu\PartialMentionableSelectComponent.cs
+    startLine: 38
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the default values for auto-populated select menu components.
+  example: []
+  syntax:
+    content: public Optional<IReadOnlyList<IPartialSelectDefaultValue>> DefaultValues { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IPartialSelectDefaultValue}}
+    content.vb: Public Property DefaultValues As [Optional](Of IReadOnlyList(Of IPartialSelectDefaultValue))
+  overload: Remora.Discord.API.Objects.PartialMentionableSelectComponent.DefaultValues*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialMentionableSelectComponent.DefaultValues
+- uid: Remora.Discord.API.Objects.PartialMentionableSelectComponent.Type
+  commentId: P:Remora.Discord.API.Objects.PartialMentionableSelectComponent.Type
+  id: Type
+  parent: Remora.Discord.API.Objects.PartialMentionableSelectComponent
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: PartialMentionableSelectComponent.Type
+  fullName: Remora.Discord.API.Objects.PartialMentionableSelectComponent.Type
+  type: Property
+  source:
+    id: Type
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Interactions\Components\SelectMenu\PartialMentionableSelectComponent.cs
+    startLine: 42
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the type of the component.
+  example: []
+  syntax:
+    content: public Optional<ComponentType> Type { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.ComponentType}
+    content.vb: Public ReadOnly Property Type As [Optional](Of ComponentType)
+  overload: Remora.Discord.API.Objects.PartialMentionableSelectComponent.Type*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialSelectMenuComponent.Type
+references:
+- uid: Remora.Discord.API.Objects
+  commentId: N:Remora.Discord.API.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Objects
+  nameWithType: Remora.Discord.API.Objects
+  fullName: Remora.Discord.API.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Objects
+    name: Objects
+    href: Remora.Discord.API.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Objects
+    name: Objects
+    href: Remora.Discord.API.Objects.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialMentionableSelectComponent
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IPartialMentionableSelectComponent
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IPartialMentionableSelectComponent.html
+  name: IPartialMentionableSelectComponent
+  nameWithType: IPartialMentionableSelectComponent
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialMentionableSelectComponent
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialSelectMenuComponent
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IPartialSelectMenuComponent
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IPartialSelectMenuComponent.html
+  name: IPartialSelectMenuComponent
+  nameWithType: IPartialSelectMenuComponent
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialSelectMenuComponent
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialMessageComponent
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IPartialMessageComponent
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IPartialMessageComponent.html
+  name: IPartialMessageComponent
+  nameWithType: IPartialMessageComponent
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialMessageComponent
+- uid: System.IEquatable{Remora.Discord.API.Objects.PartialMentionableSelectComponent}
+  commentId: T:System.IEquatable{Remora.Discord.API.Objects.PartialMentionableSelectComponent}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<PartialMentionableSelectComponent>
+  nameWithType: IEquatable<PartialMentionableSelectComponent>
+  fullName: System.IEquatable<Remora.Discord.API.Objects.PartialMentionableSelectComponent>
+  nameWithType.vb: IEquatable(Of PartialMentionableSelectComponent)
+  fullName.vb: System.IEquatable(Of Remora.Discord.API.Objects.PartialMentionableSelectComponent)
+  name.vb: IEquatable(Of PartialMentionableSelectComponent)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Remora.Discord.API.Objects.PartialMentionableSelectComponent
+    name: PartialMentionableSelectComponent
+    href: Remora.Discord.API.Objects.PartialMentionableSelectComponent.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Objects.PartialMentionableSelectComponent
+    name: PartialMentionableSelectComponent
+    href: Remora.Discord.API.Objects.PartialMentionableSelectComponent.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.API.Abstractions.Objects
+  commentId: N:Remora.Discord.API.Abstractions.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Objects
+  nameWithType: Remora.Discord.API.Abstractions.Objects
+  fullName: Remora.Discord.API.Abstractions.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Remora.Discord.API.Objects.PartialMentionableSelectComponent.#ctor*
+  commentId: Overload:Remora.Discord.API.Objects.PartialMentionableSelectComponent.#ctor
+  href: Remora.Discord.API.Objects.PartialMentionableSelectComponent.html#Remora_Discord_API_Objects_PartialMentionableSelectComponent__ctor_Remora_Rest_Core_Optional_System_String__Remora_Rest_Core_Optional_System_String__Remora_Rest_Core_Optional_System_Int32__Remora_Rest_Core_Optional_System_Int32__Remora_Rest_Core_Optional_System_Boolean__Remora_Rest_Core_Optional_System_Collections_Generic_IReadOnlyList_Remora_Discord_API_Abstractions_Objects_IPartialSelectDefaultValue___
+  name: PartialMentionableSelectComponent
+  nameWithType: PartialMentionableSelectComponent.PartialMentionableSelectComponent
+  fullName: Remora.Discord.API.Objects.PartialMentionableSelectComponent.PartialMentionableSelectComponent
+  nameWithType.vb: PartialMentionableSelectComponent.New
+  fullName.vb: Remora.Discord.API.Objects.PartialMentionableSelectComponent.New
+  name.vb: New
+- uid: Remora.Rest.Core.Optional{System.String}
+  commentId: T:Remora.Rest.Core.Optional{System.String}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Optional<string>
+  nameWithType: Optional<string>
+  fullName: Remora.Rest.Core.Optional<string>
+  nameWithType.vb: Optional(Of String)
+  fullName.vb: Remora.Rest.Core.Optional(Of String)
+  name.vb: Optional(Of String)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Remora.Rest.Core.Optional{System.Int32}
+  commentId: T:Remora.Rest.Core.Optional{System.Int32}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: Optional<int>
+  nameWithType: Optional<int>
+  fullName: Remora.Rest.Core.Optional<int>
+  nameWithType.vb: Optional(Of Integer)
+  fullName.vb: Remora.Rest.Core.Optional(Of Integer)
+  name.vb: Optional(Of Integer)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Remora.Rest.Core.Optional{System.Boolean}
+  commentId: T:Remora.Rest.Core.Optional{System.Boolean}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: Optional<bool>
+  nameWithType: Optional<bool>
+  fullName: Remora.Rest.Core.Optional<bool>
+  nameWithType.vb: Optional(Of Boolean)
+  fullName.vb: Remora.Rest.Core.Optional(Of Boolean)
+  name.vb: Optional(Of Boolean)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IPartialSelectDefaultValue}}
+  commentId: T:Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IPartialSelectDefaultValue}}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: Optional<IReadOnlyList<IPartialSelectDefaultValue>>
+  nameWithType: Optional<IReadOnlyList<IPartialSelectDefaultValue>>
+  fullName: Remora.Rest.Core.Optional<System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.IPartialSelectDefaultValue>>
+  nameWithType.vb: Optional(Of IReadOnlyList(Of IPartialSelectDefaultValue))
+  fullName.vb: Remora.Rest.Core.Optional(Of System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.IPartialSelectDefaultValue))
+  name.vb: Optional(Of IReadOnlyList(Of IPartialSelectDefaultValue))
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IPartialSelectDefaultValue
+    name: IPartialSelectDefaultValue
+    href: Remora.Discord.API.Abstractions.Objects.IPartialSelectDefaultValue.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IPartialSelectDefaultValue
+    name: IPartialSelectDefaultValue
+    href: Remora.Discord.API.Abstractions.Objects.IPartialSelectDefaultValue.html
+  - name: )
+  - name: )
+- uid: Remora.Rest.Core.Optional`1
+  commentId: T:Remora.Rest.Core.Optional`1
+  isExternal: true
+  name: Optional<TValue>
+  nameWithType: Optional<TValue>
+  fullName: Remora.Rest.Core.Optional<TValue>
+  nameWithType.vb: Optional(Of TValue)
+  fullName.vb: Remora.Rest.Core.Optional(Of TValue)
+  name.vb: Optional(Of TValue)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+- uid: Remora.Discord.API.Objects.PartialMentionableSelectComponent.CustomID*
+  commentId: Overload:Remora.Discord.API.Objects.PartialMentionableSelectComponent.CustomID
+  href: Remora.Discord.API.Objects.PartialMentionableSelectComponent.html#Remora_Discord_API_Objects_PartialMentionableSelectComponent_CustomID
+  name: CustomID
+  nameWithType: PartialMentionableSelectComponent.CustomID
+  fullName: Remora.Discord.API.Objects.PartialMentionableSelectComponent.CustomID
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialSelectMenuComponent.CustomID
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialSelectMenuComponent.CustomID
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialSelectMenuComponent
+  href: Remora.Discord.API.Abstractions.Objects.IPartialSelectMenuComponent.html#Remora_Discord_API_Abstractions_Objects_IPartialSelectMenuComponent_CustomID
+  name: CustomID
+  nameWithType: IPartialSelectMenuComponent.CustomID
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialSelectMenuComponent.CustomID
+- uid: Remora.Discord.API.Objects.PartialMentionableSelectComponent.Placeholder*
+  commentId: Overload:Remora.Discord.API.Objects.PartialMentionableSelectComponent.Placeholder
+  href: Remora.Discord.API.Objects.PartialMentionableSelectComponent.html#Remora_Discord_API_Objects_PartialMentionableSelectComponent_Placeholder
+  name: Placeholder
+  nameWithType: PartialMentionableSelectComponent.Placeholder
+  fullName: Remora.Discord.API.Objects.PartialMentionableSelectComponent.Placeholder
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialSelectMenuComponent.Placeholder
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialSelectMenuComponent.Placeholder
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialSelectMenuComponent
+  href: Remora.Discord.API.Abstractions.Objects.IPartialSelectMenuComponent.html#Remora_Discord_API_Abstractions_Objects_IPartialSelectMenuComponent_Placeholder
+  name: Placeholder
+  nameWithType: IPartialSelectMenuComponent.Placeholder
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialSelectMenuComponent.Placeholder
+- uid: Remora.Discord.API.Objects.PartialMentionableSelectComponent.MinValues*
+  commentId: Overload:Remora.Discord.API.Objects.PartialMentionableSelectComponent.MinValues
+  href: Remora.Discord.API.Objects.PartialMentionableSelectComponent.html#Remora_Discord_API_Objects_PartialMentionableSelectComponent_MinValues
+  name: MinValues
+  nameWithType: PartialMentionableSelectComponent.MinValues
+  fullName: Remora.Discord.API.Objects.PartialMentionableSelectComponent.MinValues
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialSelectMenuComponent.MinValues
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialSelectMenuComponent.MinValues
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialSelectMenuComponent
+  href: Remora.Discord.API.Abstractions.Objects.IPartialSelectMenuComponent.html#Remora_Discord_API_Abstractions_Objects_IPartialSelectMenuComponent_MinValues
+  name: MinValues
+  nameWithType: IPartialSelectMenuComponent.MinValues
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialSelectMenuComponent.MinValues
+- uid: Remora.Discord.API.Objects.PartialMentionableSelectComponent.MaxValues*
+  commentId: Overload:Remora.Discord.API.Objects.PartialMentionableSelectComponent.MaxValues
+  href: Remora.Discord.API.Objects.PartialMentionableSelectComponent.html#Remora_Discord_API_Objects_PartialMentionableSelectComponent_MaxValues
+  name: MaxValues
+  nameWithType: PartialMentionableSelectComponent.MaxValues
+  fullName: Remora.Discord.API.Objects.PartialMentionableSelectComponent.MaxValues
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialSelectMenuComponent.MaxValues
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialSelectMenuComponent.MaxValues
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialSelectMenuComponent
+  href: Remora.Discord.API.Abstractions.Objects.IPartialSelectMenuComponent.html#Remora_Discord_API_Abstractions_Objects_IPartialSelectMenuComponent_MaxValues
+  name: MaxValues
+  nameWithType: IPartialSelectMenuComponent.MaxValues
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialSelectMenuComponent.MaxValues
+- uid: Remora.Discord.API.Objects.PartialMentionableSelectComponent.IsDisabled*
+  commentId: Overload:Remora.Discord.API.Objects.PartialMentionableSelectComponent.IsDisabled
+  href: Remora.Discord.API.Objects.PartialMentionableSelectComponent.html#Remora_Discord_API_Objects_PartialMentionableSelectComponent_IsDisabled
+  name: IsDisabled
+  nameWithType: PartialMentionableSelectComponent.IsDisabled
+  fullName: Remora.Discord.API.Objects.PartialMentionableSelectComponent.IsDisabled
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialSelectMenuComponent.IsDisabled
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialSelectMenuComponent.IsDisabled
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialSelectMenuComponent
+  href: Remora.Discord.API.Abstractions.Objects.IPartialSelectMenuComponent.html#Remora_Discord_API_Abstractions_Objects_IPartialSelectMenuComponent_IsDisabled
+  name: IsDisabled
+  nameWithType: IPartialSelectMenuComponent.IsDisabled
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialSelectMenuComponent.IsDisabled
+- uid: Remora.Discord.API.Objects.PartialMentionableSelectComponent.DefaultValues*
+  commentId: Overload:Remora.Discord.API.Objects.PartialMentionableSelectComponent.DefaultValues
+  href: Remora.Discord.API.Objects.PartialMentionableSelectComponent.html#Remora_Discord_API_Objects_PartialMentionableSelectComponent_DefaultValues
+  name: DefaultValues
+  nameWithType: PartialMentionableSelectComponent.DefaultValues
+  fullName: Remora.Discord.API.Objects.PartialMentionableSelectComponent.DefaultValues
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialMentionableSelectComponent.DefaultValues
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialMentionableSelectComponent.DefaultValues
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialMentionableSelectComponent
+  href: Remora.Discord.API.Abstractions.Objects.IPartialMentionableSelectComponent.html#Remora_Discord_API_Abstractions_Objects_IPartialMentionableSelectComponent_DefaultValues
+  name: DefaultValues
+  nameWithType: IPartialMentionableSelectComponent.DefaultValues
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialMentionableSelectComponent.DefaultValues
+- uid: Remora.Discord.API.Objects.PartialMentionableSelectComponent.Type*
+  commentId: Overload:Remora.Discord.API.Objects.PartialMentionableSelectComponent.Type
+  href: Remora.Discord.API.Objects.PartialMentionableSelectComponent.html#Remora_Discord_API_Objects_PartialMentionableSelectComponent_Type
+  name: Type
+  nameWithType: PartialMentionableSelectComponent.Type
+  fullName: Remora.Discord.API.Objects.PartialMentionableSelectComponent.Type
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialSelectMenuComponent.Type
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialSelectMenuComponent.Type
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialSelectMenuComponent
+  href: Remora.Discord.API.Abstractions.Objects.IPartialSelectMenuComponent.html#Remora_Discord_API_Abstractions_Objects_IPartialSelectMenuComponent_Type
+  name: Type
+  nameWithType: IPartialSelectMenuComponent.Type
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialSelectMenuComponent.Type
+- uid: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.ComponentType}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.ComponentType}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: Remora.Discord.API.Abstractions.Objects.ComponentType.html
+  name: Optional<ComponentType>
+  nameWithType: Optional<ComponentType>
+  fullName: Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.ComponentType>
+  nameWithType.vb: Optional(Of ComponentType)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.ComponentType)
+  name.vb: Optional(Of ComponentType)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.ComponentType
+    name: ComponentType
+    href: Remora.Discord.API.Abstractions.Objects.ComponentType.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.ComponentType
+    name: ComponentType
+    href: Remora.Discord.API.Abstractions.Objects.ComponentType.html
+  - name: )

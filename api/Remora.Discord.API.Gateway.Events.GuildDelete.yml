@@ -1,0 +1,797 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Gateway.Events.GuildDelete
+  commentId: T:Remora.Discord.API.Gateway.Events.GuildDelete
+  id: GuildDelete
+  parent: Remora.Discord.API.Gateway.Events
+  children:
+  - Remora.Discord.API.Gateway.Events.GuildDelete.#ctor(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{System.Boolean})
+  - Remora.Discord.API.Gateway.Events.GuildDelete.ID
+  - Remora.Discord.API.Gateway.Events.GuildDelete.IsUnavailable
+  langs:
+  - csharp
+  - vb
+  name: GuildDelete
+  nameWithType: GuildDelete
+  fullName: Remora.Discord.API.Gateway.Events.GuildDelete
+  type: Class
+  source:
+    id: GuildDelete
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Guilds\GuildDelete.cs
+    startLine: 29
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events
+  summary: Represents the delete of a guild.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public record GuildDelete : IGuildDelete, IGatewayEvent, IGatewayPayloadData, IUnavailableGuild, IEquatable<GuildDelete>
+    content.vb: >-
+      <PublicAPI>
+
+      Public Class GuildDelete Implements IGuildDelete, IGatewayEvent, IGatewayPayloadData, IUnavailableGuild, IEquatable(Of GuildDelete)
+  inheritance:
+  - System.Object
+  implements:
+  - Remora.Discord.API.Abstractions.Gateway.Events.IGuildDelete
+  - Remora.Discord.API.Abstractions.Gateway.Events.IGatewayEvent
+  - Remora.Discord.API.Abstractions.Gateway.IGatewayPayloadData
+  - Remora.Discord.API.Abstractions.Objects.IUnavailableGuild
+  - System.IEquatable{Remora.Discord.API.Gateway.Events.GuildDelete}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Gateway.Events.GuildDelete.#ctor(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{System.Boolean})
+  commentId: M:Remora.Discord.API.Gateway.Events.GuildDelete.#ctor(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{System.Boolean})
+  id: '#ctor(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{System.Boolean})'
+  parent: Remora.Discord.API.Gateway.Events.GuildDelete
+  langs:
+  - csharp
+  - vb
+  name: GuildDelete(Snowflake, Optional<bool>)
+  nameWithType: GuildDelete.GuildDelete(Snowflake, Optional<bool>)
+  fullName: Remora.Discord.API.Gateway.Events.GuildDelete.GuildDelete(Remora.Rest.Core.Snowflake, Remora.Rest.Core.Optional<bool>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Guilds\GuildDelete.cs
+    startLine: 29
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events
+  summary: Represents the delete of a guild.
+  example: []
+  syntax:
+    content: public GuildDelete(Snowflake ID, Optional<bool> IsUnavailable = default)
+    parameters:
+    - id: ID
+      type: Remora.Rest.Core.Snowflake
+    - id: IsUnavailable
+      type: Remora.Rest.Core.Optional{System.Boolean}
+    content.vb: Public Sub New(ID As Snowflake, IsUnavailable As [Optional](Of Boolean) = Nothing)
+  overload: Remora.Discord.API.Gateway.Events.GuildDelete.#ctor*
+  nameWithType.vb: GuildDelete.New(Snowflake, Optional(Of Boolean))
+  fullName.vb: Remora.Discord.API.Gateway.Events.GuildDelete.New(Remora.Rest.Core.Snowflake, Remora.Rest.Core.Optional(Of Boolean))
+  name.vb: New(Snowflake, Optional(Of Boolean))
+- uid: Remora.Discord.API.Gateway.Events.GuildDelete.ID
+  commentId: P:Remora.Discord.API.Gateway.Events.GuildDelete.ID
+  id: ID
+  parent: Remora.Discord.API.Gateway.Events.GuildDelete
+  langs:
+  - csharp
+  - vb
+  name: ID
+  nameWithType: GuildDelete.ID
+  fullName: Remora.Discord.API.Gateway.Events.GuildDelete.ID
+  type: Property
+  source:
+    id: ID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Guilds\GuildDelete.cs
+    startLine: 30
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events
+  summary: Gets the ID of the guild.
+  example: []
+  syntax:
+    content: public Snowflake ID { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Snowflake
+    content.vb: Public Property ID As Snowflake
+  overload: Remora.Discord.API.Gateway.Events.GuildDelete.ID*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IUnavailableGuild.ID
+- uid: Remora.Discord.API.Gateway.Events.GuildDelete.IsUnavailable
+  commentId: P:Remora.Discord.API.Gateway.Events.GuildDelete.IsUnavailable
+  id: IsUnavailable
+  parent: Remora.Discord.API.Gateway.Events.GuildDelete
+  langs:
+  - csharp
+  - vb
+  name: IsUnavailable
+  nameWithType: GuildDelete.IsUnavailable
+  fullName: Remora.Discord.API.Gateway.Events.GuildDelete.IsUnavailable
+  type: Property
+  source:
+    id: IsUnavailable
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Guilds\GuildDelete.cs
+    startLine: 30
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events
+  summary: >-
+    Gets a value indicating whether the guild is unavailable. This field is not set if the user was removed from
+
+    the guild.
+  example: []
+  syntax:
+    content: public Optional<bool> IsUnavailable { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Boolean}
+    content.vb: Public Property IsUnavailable As [Optional](Of Boolean)
+  overload: Remora.Discord.API.Gateway.Events.GuildDelete.IsUnavailable*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IUnavailableGuild.IsUnavailable
+references:
+- uid: Remora.Discord.API.Gateway.Events
+  commentId: N:Remora.Discord.API.Gateway.Events
+  href: Remora.html
+  name: Remora.Discord.API.Gateway.Events
+  nameWithType: Remora.Discord.API.Gateway.Events
+  fullName: Remora.Discord.API.Gateway.Events
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Gateway.Events
+    name: Events
+    href: Remora.Discord.API.Gateway.Events.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Gateway.Events
+    name: Events
+    href: Remora.Discord.API.Gateway.Events.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildDelete
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.Events.IGuildDelete
+  parent: Remora.Discord.API.Abstractions.Gateway.Events
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildDelete.html
+  name: IGuildDelete
+  nameWithType: IGuildDelete
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IGuildDelete
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IGatewayEvent
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.Events.IGatewayEvent
+  parent: Remora.Discord.API.Abstractions.Gateway.Events
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IGatewayEvent.html
+  name: IGatewayEvent
+  nameWithType: IGatewayEvent
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IGatewayEvent
+- uid: Remora.Discord.API.Abstractions.Gateway.IGatewayPayloadData
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.IGatewayPayloadData
+  parent: Remora.Discord.API.Abstractions.Gateway
+  href: Remora.Discord.API.Abstractions.Gateway.IGatewayPayloadData.html
+  name: IGatewayPayloadData
+  nameWithType: IGatewayPayloadData
+  fullName: Remora.Discord.API.Abstractions.Gateway.IGatewayPayloadData
+- uid: Remora.Discord.API.Abstractions.Objects.IUnavailableGuild
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IUnavailableGuild
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IUnavailableGuild.html
+  name: IUnavailableGuild
+  nameWithType: IUnavailableGuild
+  fullName: Remora.Discord.API.Abstractions.Objects.IUnavailableGuild
+- uid: System.IEquatable{Remora.Discord.API.Gateway.Events.GuildDelete}
+  commentId: T:System.IEquatable{Remora.Discord.API.Gateway.Events.GuildDelete}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<GuildDelete>
+  nameWithType: IEquatable<GuildDelete>
+  fullName: System.IEquatable<Remora.Discord.API.Gateway.Events.GuildDelete>
+  nameWithType.vb: IEquatable(Of GuildDelete)
+  fullName.vb: System.IEquatable(Of Remora.Discord.API.Gateway.Events.GuildDelete)
+  name.vb: IEquatable(Of GuildDelete)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Remora.Discord.API.Gateway.Events.GuildDelete
+    name: GuildDelete
+    href: Remora.Discord.API.Gateway.Events.GuildDelete.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Gateway.Events.GuildDelete
+    name: GuildDelete
+    href: Remora.Discord.API.Gateway.Events.GuildDelete.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.API.Abstractions.Gateway.Events
+  commentId: N:Remora.Discord.API.Abstractions.Gateway.Events
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Gateway.Events
+  nameWithType: Remora.Discord.API.Abstractions.Gateway.Events
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events
+    name: Events
+    href: Remora.Discord.API.Abstractions.Gateway.Events.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events
+    name: Events
+    href: Remora.Discord.API.Abstractions.Gateway.Events.html
+- uid: Remora.Discord.API.Abstractions.Gateway
+  commentId: N:Remora.Discord.API.Abstractions.Gateway
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Gateway
+  nameWithType: Remora.Discord.API.Abstractions.Gateway
+  fullName: Remora.Discord.API.Abstractions.Gateway
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+- uid: Remora.Discord.API.Abstractions.Objects
+  commentId: N:Remora.Discord.API.Abstractions.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Objects
+  nameWithType: Remora.Discord.API.Abstractions.Objects
+  fullName: Remora.Discord.API.Abstractions.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Remora.Discord.API.Gateway.Events.GuildDelete.#ctor*
+  commentId: Overload:Remora.Discord.API.Gateway.Events.GuildDelete.#ctor
+  href: Remora.Discord.API.Gateway.Events.GuildDelete.html#Remora_Discord_API_Gateway_Events_GuildDelete__ctor_Remora_Rest_Core_Snowflake_Remora_Rest_Core_Optional_System_Boolean__
+  name: GuildDelete
+  nameWithType: GuildDelete.GuildDelete
+  fullName: Remora.Discord.API.Gateway.Events.GuildDelete.GuildDelete
+  nameWithType.vb: GuildDelete.New
+  fullName.vb: Remora.Discord.API.Gateway.Events.GuildDelete.New
+  name.vb: New
+- uid: Remora.Rest.Core.Snowflake
+  commentId: T:Remora.Rest.Core.Snowflake
+  parent: Remora.Rest.Core
+  isExternal: true
+  name: Snowflake
+  nameWithType: Snowflake
+  fullName: Remora.Rest.Core.Snowflake
+- uid: Remora.Rest.Core.Optional{System.Boolean}
+  commentId: T:Remora.Rest.Core.Optional{System.Boolean}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: Optional<bool>
+  nameWithType: Optional<bool>
+  fullName: Remora.Rest.Core.Optional<bool>
+  nameWithType.vb: Optional(Of Boolean)
+  fullName.vb: Remora.Rest.Core.Optional(Of Boolean)
+  name.vb: Optional(Of Boolean)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+- uid: Remora.Rest.Core.Optional`1
+  commentId: T:Remora.Rest.Core.Optional`1
+  isExternal: true
+  name: Optional<TValue>
+  nameWithType: Optional<TValue>
+  fullName: Remora.Rest.Core.Optional<TValue>
+  nameWithType.vb: Optional(Of TValue)
+  fullName.vb: Remora.Rest.Core.Optional(Of TValue)
+  name.vb: Optional(Of TValue)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Remora.Discord.API.Gateway.Events.GuildDelete.ID*
+  commentId: Overload:Remora.Discord.API.Gateway.Events.GuildDelete.ID
+  href: Remora.Discord.API.Gateway.Events.GuildDelete.html#Remora_Discord_API_Gateway_Events_GuildDelete_ID
+  name: ID
+  nameWithType: GuildDelete.ID
+  fullName: Remora.Discord.API.Gateway.Events.GuildDelete.ID
+- uid: Remora.Discord.API.Abstractions.Objects.IUnavailableGuild.ID
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IUnavailableGuild.ID
+  parent: Remora.Discord.API.Abstractions.Objects.IUnavailableGuild
+  href: Remora.Discord.API.Abstractions.Objects.IUnavailableGuild.html#Remora_Discord_API_Abstractions_Objects_IUnavailableGuild_ID
+  name: ID
+  nameWithType: IUnavailableGuild.ID
+  fullName: Remora.Discord.API.Abstractions.Objects.IUnavailableGuild.ID
+- uid: Remora.Discord.API.Gateway.Events.GuildDelete.IsUnavailable*
+  commentId: Overload:Remora.Discord.API.Gateway.Events.GuildDelete.IsUnavailable
+  href: Remora.Discord.API.Gateway.Events.GuildDelete.html#Remora_Discord_API_Gateway_Events_GuildDelete_IsUnavailable
+  name: IsUnavailable
+  nameWithType: GuildDelete.IsUnavailable
+  fullName: Remora.Discord.API.Gateway.Events.GuildDelete.IsUnavailable
+- uid: Remora.Discord.API.Abstractions.Objects.IUnavailableGuild.IsUnavailable
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IUnavailableGuild.IsUnavailable
+  parent: Remora.Discord.API.Abstractions.Objects.IUnavailableGuild
+  href: Remora.Discord.API.Abstractions.Objects.IUnavailableGuild.html#Remora_Discord_API_Abstractions_Objects_IUnavailableGuild_IsUnavailable
+  name: IsUnavailable
+  nameWithType: IUnavailableGuild.IsUnavailable
+  fullName: Remora.Discord.API.Abstractions.Objects.IUnavailableGuild.IsUnavailable

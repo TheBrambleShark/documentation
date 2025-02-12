@@ -1,0 +1,1640 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Gateway.Events.GuildMemberAdd
+  commentId: T:Remora.Discord.API.Gateway.Events.GuildMemberAdd
+  id: GuildMemberAdd
+  parent: Remora.Discord.API.Gateway.Events
+  children:
+  - Remora.Discord.API.Gateway.Events.GuildMemberAdd.#ctor(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IUser},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IImageHash},System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake},System.DateTimeOffset,Remora.Rest.Core.Optional{System.Nullable{System.DateTimeOffset}},System.Boolean,System.Boolean,Remora.Discord.API.Abstractions.Objects.GuildMemberFlags,Remora.Rest.Core.Optional{System.Nullable{System.Boolean}},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet},Remora.Rest.Core.Optional{System.Nullable{System.DateTimeOffset}})
+  - Remora.Discord.API.Gateway.Events.GuildMemberAdd.Avatar
+  - Remora.Discord.API.Gateway.Events.GuildMemberAdd.CommunicationDisabledUntil
+  - Remora.Discord.API.Gateway.Events.GuildMemberAdd.Flags
+  - Remora.Discord.API.Gateway.Events.GuildMemberAdd.GuildID
+  - Remora.Discord.API.Gateway.Events.GuildMemberAdd.IsDeafened
+  - Remora.Discord.API.Gateway.Events.GuildMemberAdd.IsMuted
+  - Remora.Discord.API.Gateway.Events.GuildMemberAdd.IsPending
+  - Remora.Discord.API.Gateway.Events.GuildMemberAdd.JoinedAt
+  - Remora.Discord.API.Gateway.Events.GuildMemberAdd.Nickname
+  - Remora.Discord.API.Gateway.Events.GuildMemberAdd.Permissions
+  - Remora.Discord.API.Gateway.Events.GuildMemberAdd.PremiumSince
+  - Remora.Discord.API.Gateway.Events.GuildMemberAdd.Roles
+  - Remora.Discord.API.Gateway.Events.GuildMemberAdd.User
+  langs:
+  - csharp
+  - vb
+  name: GuildMemberAdd
+  nameWithType: GuildMemberAdd
+  fullName: Remora.Discord.API.Gateway.Events.GuildMemberAdd
+  type: Class
+  source:
+    id: GuildMemberAdd
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Guilds\GuildMemberAdd.cs
+    startLine: 32
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events
+  summary: Represents a new user joining the guild.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public record GuildMemberAdd : IGuildMemberAdd, IGuildMember, IPartialGuildMember, IGatewayEvent, IGatewayPayloadData, IEquatable<GuildMemberAdd>
+    content.vb: >-
+      <PublicAPI>
+
+      Public Class GuildMemberAdd Implements IGuildMemberAdd, IGuildMember, IPartialGuildMember, IGatewayEvent, IGatewayPayloadData, IEquatable(Of GuildMemberAdd)
+  inheritance:
+  - System.Object
+  implements:
+  - Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberAdd
+  - Remora.Discord.API.Abstractions.Objects.IGuildMember
+  - Remora.Discord.API.Abstractions.Objects.IPartialGuildMember
+  - Remora.Discord.API.Abstractions.Gateway.Events.IGatewayEvent
+  - Remora.Discord.API.Abstractions.Gateway.IGatewayPayloadData
+  - System.IEquatable{Remora.Discord.API.Gateway.Events.GuildMemberAdd}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Gateway.Events.GuildMemberAdd.#ctor(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IUser},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IImageHash},System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake},System.DateTimeOffset,Remora.Rest.Core.Optional{System.Nullable{System.DateTimeOffset}},System.Boolean,System.Boolean,Remora.Discord.API.Abstractions.Objects.GuildMemberFlags,Remora.Rest.Core.Optional{System.Nullable{System.Boolean}},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet},Remora.Rest.Core.Optional{System.Nullable{System.DateTimeOffset}})
+  commentId: M:Remora.Discord.API.Gateway.Events.GuildMemberAdd.#ctor(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IUser},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IImageHash},System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake},System.DateTimeOffset,Remora.Rest.Core.Optional{System.Nullable{System.DateTimeOffset}},System.Boolean,System.Boolean,Remora.Discord.API.Abstractions.Objects.GuildMemberFlags,Remora.Rest.Core.Optional{System.Nullable{System.Boolean}},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet},Remora.Rest.Core.Optional{System.Nullable{System.DateTimeOffset}})
+  id: '#ctor(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IUser},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IImageHash},System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake},System.DateTimeOffset,Remora.Rest.Core.Optional{System.Nullable{System.DateTimeOffset}},System.Boolean,System.Boolean,Remora.Discord.API.Abstractions.Objects.GuildMemberFlags,Remora.Rest.Core.Optional{System.Nullable{System.Boolean}},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet},Remora.Rest.Core.Optional{System.Nullable{System.DateTimeOffset}})'
+  parent: Remora.Discord.API.Gateway.Events.GuildMemberAdd
+  langs:
+  - csharp
+  - vb
+  name: GuildMemberAdd(Snowflake, Optional<IUser>, Optional<string?>, Optional<IImageHash?>, IReadOnlyList<Snowflake>, DateTimeOffset, Optional<DateTimeOffset?>, bool, bool, GuildMemberFlags, Optional<bool?>, Optional<IDiscordPermissionSet>, Optional<DateTimeOffset?>)
+  nameWithType: GuildMemberAdd.GuildMemberAdd(Snowflake, Optional<IUser>, Optional<string?>, Optional<IImageHash?>, IReadOnlyList<Snowflake>, DateTimeOffset, Optional<DateTimeOffset?>, bool, bool, GuildMemberFlags, Optional<bool?>, Optional<IDiscordPermissionSet>, Optional<DateTimeOffset?>)
+  fullName: Remora.Discord.API.Gateway.Events.GuildMemberAdd.GuildMemberAdd(Remora.Rest.Core.Snowflake, Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IUser>, Remora.Rest.Core.Optional<string?>, Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IImageHash?>, System.Collections.Generic.IReadOnlyList<Remora.Rest.Core.Snowflake>, System.DateTimeOffset, Remora.Rest.Core.Optional<System.DateTimeOffset?>, bool, bool, Remora.Discord.API.Abstractions.Objects.GuildMemberFlags, Remora.Rest.Core.Optional<bool?>, Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet>, Remora.Rest.Core.Optional<System.DateTimeOffset?>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Guilds\GuildMemberAdd.cs
+    startLine: 32
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events
+  summary: Represents a new user joining the guild.
+  example: []
+  syntax:
+    content: public GuildMemberAdd(Snowflake GuildID, Optional<IUser> User, Optional<string?> Nickname, Optional<IImageHash?> Avatar, IReadOnlyList<Snowflake> Roles, DateTimeOffset JoinedAt, Optional<DateTimeOffset?> PremiumSince, bool IsDeafened, bool IsMuted, GuildMemberFlags Flags, Optional<bool?> IsPending, Optional<IDiscordPermissionSet> Permissions = default, Optional<DateTimeOffset?> CommunicationDisabledUntil = default)
+    parameters:
+    - id: GuildID
+      type: Remora.Rest.Core.Snowflake
+    - id: User
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IUser}
+    - id: Nickname
+      type: Remora.Rest.Core.Optional{System.String}
+    - id: Avatar
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IImageHash}
+    - id: Roles
+      type: System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}
+    - id: JoinedAt
+      type: System.DateTimeOffset
+    - id: PremiumSince
+      type: Remora.Rest.Core.Optional{System.Nullable{System.DateTimeOffset}}
+    - id: IsDeafened
+      type: System.Boolean
+    - id: IsMuted
+      type: System.Boolean
+    - id: Flags
+      type: Remora.Discord.API.Abstractions.Objects.GuildMemberFlags
+    - id: IsPending
+      type: Remora.Rest.Core.Optional{System.Nullable{System.Boolean}}
+    - id: Permissions
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet}
+    - id: CommunicationDisabledUntil
+      type: Remora.Rest.Core.Optional{System.Nullable{System.DateTimeOffset}}
+    content.vb: Public Sub New(GuildID As Snowflake, User As [Optional](Of IUser), Nickname As [Optional](Of String), Avatar As [Optional](Of IImageHash), Roles As IReadOnlyList(Of Snowflake), JoinedAt As DateTimeOffset, PremiumSince As [Optional](Of DateTimeOffset?), IsDeafened As Boolean, IsMuted As Boolean, Flags As GuildMemberFlags, IsPending As [Optional](Of Boolean?), Permissions As [Optional](Of IDiscordPermissionSet) = Nothing, CommunicationDisabledUntil As [Optional](Of DateTimeOffset?) = Nothing)
+  overload: Remora.Discord.API.Gateway.Events.GuildMemberAdd.#ctor*
+  nameWithType.vb: GuildMemberAdd.New(Snowflake, Optional(Of IUser), Optional(Of String), Optional(Of IImageHash), IReadOnlyList(Of Snowflake), DateTimeOffset, Optional(Of DateTimeOffset?), Boolean, Boolean, GuildMemberFlags, Optional(Of Boolean?), Optional(Of IDiscordPermissionSet), Optional(Of DateTimeOffset?))
+  fullName.vb: Remora.Discord.API.Gateway.Events.GuildMemberAdd.New(Remora.Rest.Core.Snowflake, Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IUser), Remora.Rest.Core.Optional(Of String), Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IImageHash), System.Collections.Generic.IReadOnlyList(Of Remora.Rest.Core.Snowflake), System.DateTimeOffset, Remora.Rest.Core.Optional(Of System.DateTimeOffset?), Boolean, Boolean, Remora.Discord.API.Abstractions.Objects.GuildMemberFlags, Remora.Rest.Core.Optional(Of Boolean?), Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet), Remora.Rest.Core.Optional(Of System.DateTimeOffset?))
+  name.vb: New(Snowflake, Optional(Of IUser), Optional(Of String), Optional(Of IImageHash), IReadOnlyList(Of Snowflake), DateTimeOffset, Optional(Of DateTimeOffset?), Boolean, Boolean, GuildMemberFlags, Optional(Of Boolean?), Optional(Of IDiscordPermissionSet), Optional(Of DateTimeOffset?))
+- uid: Remora.Discord.API.Gateway.Events.GuildMemberAdd.GuildID
+  commentId: P:Remora.Discord.API.Gateway.Events.GuildMemberAdd.GuildID
+  id: GuildID
+  parent: Remora.Discord.API.Gateway.Events.GuildMemberAdd
+  langs:
+  - csharp
+  - vb
+  name: GuildID
+  nameWithType: GuildMemberAdd.GuildID
+  fullName: Remora.Discord.API.Gateway.Events.GuildMemberAdd.GuildID
+  type: Property
+  source:
+    id: GuildID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Guilds\GuildMemberAdd.cs
+    startLine: 35
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events
+  summary: Gets the ID of the guild the member is in.
+  example: []
+  syntax:
+    content: public Snowflake GuildID { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Snowflake
+    content.vb: Public Property GuildID As Snowflake
+  overload: Remora.Discord.API.Gateway.Events.GuildMemberAdd.GuildID*
+  implements:
+  - Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberAdd.GuildID
+- uid: Remora.Discord.API.Gateway.Events.GuildMemberAdd.User
+  commentId: P:Remora.Discord.API.Gateway.Events.GuildMemberAdd.User
+  id: User
+  parent: Remora.Discord.API.Gateway.Events.GuildMemberAdd
+  langs:
+  - csharp
+  - vb
+  name: User
+  nameWithType: GuildMemberAdd.User
+  fullName: Remora.Discord.API.Gateway.Events.GuildMemberAdd.User
+  type: Property
+  source:
+    id: User
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Guilds\GuildMemberAdd.cs
+    startLine: 36
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events
+  summary: Gets the user this guild member represents.
+  example: []
+  syntax:
+    content: public Optional<IUser> User { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IUser}
+    content.vb: Public Property User As [Optional](Of IUser)
+  overload: Remora.Discord.API.Gateway.Events.GuildMemberAdd.User*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IGuildMember.User
+  - Remora.Discord.API.Abstractions.Objects.IPartialGuildMember.User
+- uid: Remora.Discord.API.Gateway.Events.GuildMemberAdd.Nickname
+  commentId: P:Remora.Discord.API.Gateway.Events.GuildMemberAdd.Nickname
+  id: Nickname
+  parent: Remora.Discord.API.Gateway.Events.GuildMemberAdd
+  langs:
+  - csharp
+  - vb
+  name: Nickname
+  nameWithType: GuildMemberAdd.Nickname
+  fullName: Remora.Discord.API.Gateway.Events.GuildMemberAdd.Nickname
+  type: Property
+  source:
+    id: Nickname
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Guilds\GuildMemberAdd.cs
+    startLine: 37
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events
+  summary: Gets the user's guild nickname.
+  example: []
+  syntax:
+    content: public Optional<string?> Nickname { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.String}
+    content.vb: Public Property Nickname As [Optional](Of String)
+  overload: Remora.Discord.API.Gateway.Events.GuildMemberAdd.Nickname*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IGuildMember.Nickname
+  - Remora.Discord.API.Abstractions.Objects.IPartialGuildMember.Nickname
+- uid: Remora.Discord.API.Gateway.Events.GuildMemberAdd.Avatar
+  commentId: P:Remora.Discord.API.Gateway.Events.GuildMemberAdd.Avatar
+  id: Avatar
+  parent: Remora.Discord.API.Gateway.Events.GuildMemberAdd
+  langs:
+  - csharp
+  - vb
+  name: Avatar
+  nameWithType: GuildMemberAdd.Avatar
+  fullName: Remora.Discord.API.Gateway.Events.GuildMemberAdd.Avatar
+  type: Property
+  source:
+    id: Avatar
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Guilds\GuildMemberAdd.cs
+    startLine: 38
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events
+  summary: Gets the member's guild avatar hash.
+  example: []
+  syntax:
+    content: public Optional<IImageHash?> Avatar { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IImageHash}
+    content.vb: Public Property Avatar As [Optional](Of IImageHash)
+  overload: Remora.Discord.API.Gateway.Events.GuildMemberAdd.Avatar*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IGuildMember.Avatar
+  - Remora.Discord.API.Abstractions.Objects.IPartialGuildMember.Avatar
+- uid: Remora.Discord.API.Gateway.Events.GuildMemberAdd.Roles
+  commentId: P:Remora.Discord.API.Gateway.Events.GuildMemberAdd.Roles
+  id: Roles
+  parent: Remora.Discord.API.Gateway.Events.GuildMemberAdd
+  langs:
+  - csharp
+  - vb
+  name: Roles
+  nameWithType: GuildMemberAdd.Roles
+  fullName: Remora.Discord.API.Gateway.Events.GuildMemberAdd.Roles
+  type: Property
+  source:
+    id: Roles
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Guilds\GuildMemberAdd.cs
+    startLine: 39
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events
+  summary: Gets the roles the user has.
+  example: []
+  syntax:
+    content: public IReadOnlyList<Snowflake> Roles { get; init; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}
+    content.vb: Public Property Roles As IReadOnlyList(Of Snowflake)
+  overload: Remora.Discord.API.Gateway.Events.GuildMemberAdd.Roles*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IGuildMember.Roles
+- uid: Remora.Discord.API.Gateway.Events.GuildMemberAdd.JoinedAt
+  commentId: P:Remora.Discord.API.Gateway.Events.GuildMemberAdd.JoinedAt
+  id: JoinedAt
+  parent: Remora.Discord.API.Gateway.Events.GuildMemberAdd
+  langs:
+  - csharp
+  - vb
+  name: JoinedAt
+  nameWithType: GuildMemberAdd.JoinedAt
+  fullName: Remora.Discord.API.Gateway.Events.GuildMemberAdd.JoinedAt
+  type: Property
+  source:
+    id: JoinedAt
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Guilds\GuildMemberAdd.cs
+    startLine: 40
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events
+  summary: Gets when the user joined the guild.
+  example: []
+  syntax:
+    content: public DateTimeOffset JoinedAt { get; init; }
+    parameters: []
+    return:
+      type: System.DateTimeOffset
+    content.vb: Public Property JoinedAt As DateTimeOffset
+  overload: Remora.Discord.API.Gateway.Events.GuildMemberAdd.JoinedAt*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IGuildMember.JoinedAt
+- uid: Remora.Discord.API.Gateway.Events.GuildMemberAdd.PremiumSince
+  commentId: P:Remora.Discord.API.Gateway.Events.GuildMemberAdd.PremiumSince
+  id: PremiumSince
+  parent: Remora.Discord.API.Gateway.Events.GuildMemberAdd
+  langs:
+  - csharp
+  - vb
+  name: PremiumSince
+  nameWithType: GuildMemberAdd.PremiumSince
+  fullName: Remora.Discord.API.Gateway.Events.GuildMemberAdd.PremiumSince
+  type: Property
+  source:
+    id: PremiumSince
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Guilds\GuildMemberAdd.cs
+    startLine: 41
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events
+  summary: Gets when the user started boosting the guild.
+  example: []
+  syntax:
+    content: public Optional<DateTimeOffset?> PremiumSince { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Nullable{System.DateTimeOffset}}
+    content.vb: Public Property PremiumSince As [Optional](Of DateTimeOffset?)
+  overload: Remora.Discord.API.Gateway.Events.GuildMemberAdd.PremiumSince*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IGuildMember.PremiumSince
+  - Remora.Discord.API.Abstractions.Objects.IPartialGuildMember.PremiumSince
+- uid: Remora.Discord.API.Gateway.Events.GuildMemberAdd.IsDeafened
+  commentId: P:Remora.Discord.API.Gateway.Events.GuildMemberAdd.IsDeafened
+  id: IsDeafened
+  parent: Remora.Discord.API.Gateway.Events.GuildMemberAdd
+  langs:
+  - csharp
+  - vb
+  name: IsDeafened
+  nameWithType: GuildMemberAdd.IsDeafened
+  fullName: Remora.Discord.API.Gateway.Events.GuildMemberAdd.IsDeafened
+  type: Property
+  source:
+    id: IsDeafened
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Guilds\GuildMemberAdd.cs
+    startLine: 42
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events
+  summary: Gets a value indicating whether the user is deafened in voice channels.
+  example: []
+  syntax:
+    content: public bool IsDeafened { get; init; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsDeafened As Boolean
+  overload: Remora.Discord.API.Gateway.Events.GuildMemberAdd.IsDeafened*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IGuildMember.IsDeafened
+- uid: Remora.Discord.API.Gateway.Events.GuildMemberAdd.IsMuted
+  commentId: P:Remora.Discord.API.Gateway.Events.GuildMemberAdd.IsMuted
+  id: IsMuted
+  parent: Remora.Discord.API.Gateway.Events.GuildMemberAdd
+  langs:
+  - csharp
+  - vb
+  name: IsMuted
+  nameWithType: GuildMemberAdd.IsMuted
+  fullName: Remora.Discord.API.Gateway.Events.GuildMemberAdd.IsMuted
+  type: Property
+  source:
+    id: IsMuted
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Guilds\GuildMemberAdd.cs
+    startLine: 43
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events
+  summary: Gets a value indicating whether the user is muted in voice channels.
+  example: []
+  syntax:
+    content: public bool IsMuted { get; init; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsMuted As Boolean
+  overload: Remora.Discord.API.Gateway.Events.GuildMemberAdd.IsMuted*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IGuildMember.IsMuted
+- uid: Remora.Discord.API.Gateway.Events.GuildMemberAdd.Flags
+  commentId: P:Remora.Discord.API.Gateway.Events.GuildMemberAdd.Flags
+  id: Flags
+  parent: Remora.Discord.API.Gateway.Events.GuildMemberAdd
+  langs:
+  - csharp
+  - vb
+  name: Flags
+  nameWithType: GuildMemberAdd.Flags
+  fullName: Remora.Discord.API.Gateway.Events.GuildMemberAdd.Flags
+  type: Property
+  source:
+    id: Flags
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Guilds\GuildMemberAdd.cs
+    startLine: 44
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events
+  summary: Gets the flags set on the member.
+  example: []
+  syntax:
+    content: public GuildMemberFlags Flags { get; init; }
+    parameters: []
+    return:
+      type: Remora.Discord.API.Abstractions.Objects.GuildMemberFlags
+    content.vb: Public Property Flags As GuildMemberFlags
+  overload: Remora.Discord.API.Gateway.Events.GuildMemberAdd.Flags*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IGuildMember.Flags
+- uid: Remora.Discord.API.Gateway.Events.GuildMemberAdd.IsPending
+  commentId: P:Remora.Discord.API.Gateway.Events.GuildMemberAdd.IsPending
+  id: IsPending
+  parent: Remora.Discord.API.Gateway.Events.GuildMemberAdd
+  langs:
+  - csharp
+  - vb
+  name: IsPending
+  nameWithType: GuildMemberAdd.IsPending
+  fullName: Remora.Discord.API.Gateway.Events.GuildMemberAdd.IsPending
+  type: Property
+  source:
+    id: IsPending
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Guilds\GuildMemberAdd.cs
+    startLine: 45
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events
+  summary: Gets a value indicating whether the user has passed the guild membership screening requirements.
+  example: []
+  syntax:
+    content: public Optional<bool?> IsPending { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Nullable{System.Boolean}}
+    content.vb: Public Property IsPending As [Optional](Of Boolean?)
+  overload: Remora.Discord.API.Gateway.Events.GuildMemberAdd.IsPending*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IGuildMember.IsPending
+  - Remora.Discord.API.Abstractions.Objects.IPartialGuildMember.IsPending
+- uid: Remora.Discord.API.Gateway.Events.GuildMemberAdd.Permissions
+  commentId: P:Remora.Discord.API.Gateway.Events.GuildMemberAdd.Permissions
+  id: Permissions
+  parent: Remora.Discord.API.Gateway.Events.GuildMemberAdd
+  langs:
+  - csharp
+  - vb
+  name: Permissions
+  nameWithType: GuildMemberAdd.Permissions
+  fullName: Remora.Discord.API.Gateway.Events.GuildMemberAdd.Permissions
+  type: Property
+  source:
+    id: Permissions
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Guilds\GuildMemberAdd.cs
+    startLine: 46
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events
+  summary: Gets the total permissions of the member in a channel, including overrides.
+  example: []
+  syntax:
+    content: public Optional<IDiscordPermissionSet> Permissions { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet}
+    content.vb: Public Property Permissions As [Optional](Of IDiscordPermissionSet)
+  overload: Remora.Discord.API.Gateway.Events.GuildMemberAdd.Permissions*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IGuildMember.Permissions
+  - Remora.Discord.API.Abstractions.Objects.IPartialGuildMember.Permissions
+- uid: Remora.Discord.API.Gateway.Events.GuildMemberAdd.CommunicationDisabledUntil
+  commentId: P:Remora.Discord.API.Gateway.Events.GuildMemberAdd.CommunicationDisabledUntil
+  id: CommunicationDisabledUntil
+  parent: Remora.Discord.API.Gateway.Events.GuildMemberAdd
+  langs:
+  - csharp
+  - vb
+  name: CommunicationDisabledUntil
+  nameWithType: GuildMemberAdd.CommunicationDisabledUntil
+  fullName: Remora.Discord.API.Gateway.Events.GuildMemberAdd.CommunicationDisabledUntil
+  type: Property
+  source:
+    id: CommunicationDisabledUntil
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Guilds\GuildMemberAdd.cs
+    startLine: 47
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events
+  summary: Gets the <xref href="System.DateTimeOffset" data-throw-if-not-resolved="false"></xref> until the user has communication disabled.
+  example: []
+  syntax:
+    content: public Optional<DateTimeOffset?> CommunicationDisabledUntil { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Nullable{System.DateTimeOffset}}
+    content.vb: Public Property CommunicationDisabledUntil As [Optional](Of DateTimeOffset?)
+  overload: Remora.Discord.API.Gateway.Events.GuildMemberAdd.CommunicationDisabledUntil*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IGuildMember.CommunicationDisabledUntil
+  - Remora.Discord.API.Abstractions.Objects.IPartialGuildMember.CommunicationDisabledUntil
+references:
+- uid: Remora.Discord.API.Gateway.Events
+  commentId: N:Remora.Discord.API.Gateway.Events
+  href: Remora.html
+  name: Remora.Discord.API.Gateway.Events
+  nameWithType: Remora.Discord.API.Gateway.Events
+  fullName: Remora.Discord.API.Gateway.Events
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Gateway.Events
+    name: Events
+    href: Remora.Discord.API.Gateway.Events.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Gateway.Events
+    name: Events
+    href: Remora.Discord.API.Gateway.Events.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberAdd
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberAdd
+  parent: Remora.Discord.API.Abstractions.Gateway.Events
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberAdd.html
+  name: IGuildMemberAdd
+  nameWithType: IGuildMemberAdd
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberAdd
+- uid: Remora.Discord.API.Abstractions.Objects.IGuildMember
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IGuildMember
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IGuildMember.html
+  name: IGuildMember
+  nameWithType: IGuildMember
+  fullName: Remora.Discord.API.Abstractions.Objects.IGuildMember
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialGuildMember
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IPartialGuildMember
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IPartialGuildMember.html
+  name: IPartialGuildMember
+  nameWithType: IPartialGuildMember
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialGuildMember
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IGatewayEvent
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.Events.IGatewayEvent
+  parent: Remora.Discord.API.Abstractions.Gateway.Events
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IGatewayEvent.html
+  name: IGatewayEvent
+  nameWithType: IGatewayEvent
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IGatewayEvent
+- uid: Remora.Discord.API.Abstractions.Gateway.IGatewayPayloadData
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.IGatewayPayloadData
+  parent: Remora.Discord.API.Abstractions.Gateway
+  href: Remora.Discord.API.Abstractions.Gateway.IGatewayPayloadData.html
+  name: IGatewayPayloadData
+  nameWithType: IGatewayPayloadData
+  fullName: Remora.Discord.API.Abstractions.Gateway.IGatewayPayloadData
+- uid: System.IEquatable{Remora.Discord.API.Gateway.Events.GuildMemberAdd}
+  commentId: T:System.IEquatable{Remora.Discord.API.Gateway.Events.GuildMemberAdd}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<GuildMemberAdd>
+  nameWithType: IEquatable<GuildMemberAdd>
+  fullName: System.IEquatable<Remora.Discord.API.Gateway.Events.GuildMemberAdd>
+  nameWithType.vb: IEquatable(Of GuildMemberAdd)
+  fullName.vb: System.IEquatable(Of Remora.Discord.API.Gateway.Events.GuildMemberAdd)
+  name.vb: IEquatable(Of GuildMemberAdd)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Remora.Discord.API.Gateway.Events.GuildMemberAdd
+    name: GuildMemberAdd
+    href: Remora.Discord.API.Gateway.Events.GuildMemberAdd.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Gateway.Events.GuildMemberAdd
+    name: GuildMemberAdd
+    href: Remora.Discord.API.Gateway.Events.GuildMemberAdd.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.API.Abstractions.Gateway.Events
+  commentId: N:Remora.Discord.API.Abstractions.Gateway.Events
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Gateway.Events
+  nameWithType: Remora.Discord.API.Abstractions.Gateway.Events
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events
+    name: Events
+    href: Remora.Discord.API.Abstractions.Gateway.Events.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events
+    name: Events
+    href: Remora.Discord.API.Abstractions.Gateway.Events.html
+- uid: Remora.Discord.API.Abstractions.Objects
+  commentId: N:Remora.Discord.API.Abstractions.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Objects
+  nameWithType: Remora.Discord.API.Abstractions.Objects
+  fullName: Remora.Discord.API.Abstractions.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+- uid: Remora.Discord.API.Abstractions.Gateway
+  commentId: N:Remora.Discord.API.Abstractions.Gateway
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Gateway
+  nameWithType: Remora.Discord.API.Abstractions.Gateway
+  fullName: Remora.Discord.API.Abstractions.Gateway
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Remora.Discord.API.Gateway.Events.GuildMemberAdd.#ctor*
+  commentId: Overload:Remora.Discord.API.Gateway.Events.GuildMemberAdd.#ctor
+  href: Remora.Discord.API.Gateway.Events.GuildMemberAdd.html#Remora_Discord_API_Gateway_Events_GuildMemberAdd__ctor_Remora_Rest_Core_Snowflake_Remora_Rest_Core_Optional_Remora_Discord_API_Abstractions_Objects_IUser__Remora_Rest_Core_Optional_System_String__Remora_Rest_Core_Optional_Remora_Discord_API_Abstractions_Objects_IImageHash__System_Collections_Generic_IReadOnlyList_Remora_Rest_Core_Snowflake__System_DateTimeOffset_Remora_Rest_Core_Optional_System_Nullable_System_DateTimeOffset___System_Boolean_System_Boolean_Remora_Discord_API_Abstractions_Objects_GuildMemberFlags_Remora_Rest_Core_Optional_System_Nullable_System_Boolean___Remora_Rest_Core_Optional_Remora_Discord_API_Abstractions_Objects_IDiscordPermissionSet__Remora_Rest_Core_Optional_System_Nullable_System_DateTimeOffset___
+  name: GuildMemberAdd
+  nameWithType: GuildMemberAdd.GuildMemberAdd
+  fullName: Remora.Discord.API.Gateway.Events.GuildMemberAdd.GuildMemberAdd
+  nameWithType.vb: GuildMemberAdd.New
+  fullName.vb: Remora.Discord.API.Gateway.Events.GuildMemberAdd.New
+  name.vb: New
+- uid: Remora.Rest.Core.Snowflake
+  commentId: T:Remora.Rest.Core.Snowflake
+  parent: Remora.Rest.Core
+  isExternal: true
+  name: Snowflake
+  nameWithType: Snowflake
+  fullName: Remora.Rest.Core.Snowflake
+- uid: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IUser}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IUser}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: Remora.Discord.API.Abstractions.Objects.IUser.html
+  name: Optional<IUser>
+  nameWithType: Optional<IUser>
+  fullName: Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IUser>
+  nameWithType.vb: Optional(Of IUser)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IUser)
+  name.vb: Optional(Of IUser)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IUser
+    name: IUser
+    href: Remora.Discord.API.Abstractions.Objects.IUser.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IUser
+    name: IUser
+    href: Remora.Discord.API.Abstractions.Objects.IUser.html
+  - name: )
+- uid: Remora.Rest.Core.Optional{System.String}
+  commentId: T:Remora.Rest.Core.Optional{System.String}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Optional<string>
+  nameWithType: Optional<string>
+  fullName: Remora.Rest.Core.Optional<string>
+  nameWithType.vb: Optional(Of String)
+  fullName.vb: Remora.Rest.Core.Optional(Of String)
+  name.vb: Optional(Of String)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IImageHash}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IImageHash}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: Remora.Discord.API.Abstractions.Objects.IImageHash.html
+  name: Optional<IImageHash>
+  nameWithType: Optional<IImageHash>
+  fullName: Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IImageHash>
+  nameWithType.vb: Optional(Of IImageHash)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IImageHash)
+  name.vb: Optional(Of IImageHash)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IImageHash
+    name: IImageHash
+    href: Remora.Discord.API.Abstractions.Objects.IImageHash.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IImageHash
+    name: IImageHash
+    href: Remora.Discord.API.Abstractions.Objects.IImageHash.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}
+  commentId: T:System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<Snowflake>
+  nameWithType: IReadOnlyList<Snowflake>
+  fullName: System.Collections.Generic.IReadOnlyList<Remora.Rest.Core.Snowflake>
+  nameWithType.vb: IReadOnlyList(Of Snowflake)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Remora.Rest.Core.Snowflake)
+  name.vb: IReadOnlyList(Of Snowflake)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+- uid: System.DateTimeOffset
+  commentId: T:System.DateTimeOffset
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: Remora.Rest.Core.Optional{System.Nullable{System.DateTimeOffset}}
+  commentId: T:Remora.Rest.Core.Optional{System.Nullable{System.DateTimeOffset}}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  name: Optional<DateTimeOffset?>
+  nameWithType: Optional<DateTimeOffset?>
+  fullName: Remora.Rest.Core.Optional<System.DateTimeOffset?>
+  nameWithType.vb: Optional(Of DateTimeOffset?)
+  fullName.vb: Remora.Rest.Core.Optional(Of System.DateTimeOffset?)
+  name.vb: Optional(Of DateTimeOffset?)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  - name: '?'
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  - name: '?'
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Remora.Discord.API.Abstractions.Objects.GuildMemberFlags
+  commentId: T:Remora.Discord.API.Abstractions.Objects.GuildMemberFlags
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.GuildMemberFlags.html
+  name: GuildMemberFlags
+  nameWithType: GuildMemberFlags
+  fullName: Remora.Discord.API.Abstractions.Objects.GuildMemberFlags
+- uid: Remora.Rest.Core.Optional{System.Nullable{System.Boolean}}
+  commentId: T:Remora.Rest.Core.Optional{System.Nullable{System.Boolean}}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: Optional<bool?>
+  nameWithType: Optional<bool?>
+  fullName: Remora.Rest.Core.Optional<bool?>
+  nameWithType.vb: Optional(Of Boolean?)
+  fullName.vb: Remora.Rest.Core.Optional(Of Boolean?)
+  name.vb: Optional(Of Boolean?)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+  - name: )
+- uid: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet.html
+  name: Optional<IDiscordPermissionSet>
+  nameWithType: Optional<IDiscordPermissionSet>
+  fullName: Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet>
+  nameWithType.vb: Optional(Of IDiscordPermissionSet)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet)
+  name.vb: Optional(Of IDiscordPermissionSet)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet
+    name: IDiscordPermissionSet
+    href: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet
+    name: IDiscordPermissionSet
+    href: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet.html
+  - name: )
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+- uid: Remora.Rest.Core.Optional`1
+  commentId: T:Remora.Rest.Core.Optional`1
+  isExternal: true
+  name: Optional<TValue>
+  nameWithType: Optional<TValue>
+  fullName: Remora.Rest.Core.Optional<TValue>
+  nameWithType.vb: Optional(Of TValue)
+  fullName.vb: Remora.Rest.Core.Optional(Of TValue)
+  name.vb: Optional(Of TValue)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Remora.Discord.API.Gateway.Events.GuildMemberAdd.GuildID*
+  commentId: Overload:Remora.Discord.API.Gateway.Events.GuildMemberAdd.GuildID
+  href: Remora.Discord.API.Gateway.Events.GuildMemberAdd.html#Remora_Discord_API_Gateway_Events_GuildMemberAdd_GuildID
+  name: GuildID
+  nameWithType: GuildMemberAdd.GuildID
+  fullName: Remora.Discord.API.Gateway.Events.GuildMemberAdd.GuildID
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberAdd.GuildID
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberAdd.GuildID
+  parent: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberAdd
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberAdd.html#Remora_Discord_API_Abstractions_Gateway_Events_IGuildMemberAdd_GuildID
+  name: GuildID
+  nameWithType: IGuildMemberAdd.GuildID
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IGuildMemberAdd.GuildID
+- uid: Remora.Discord.API.Gateway.Events.GuildMemberAdd.User*
+  commentId: Overload:Remora.Discord.API.Gateway.Events.GuildMemberAdd.User
+  href: Remora.Discord.API.Gateway.Events.GuildMemberAdd.html#Remora_Discord_API_Gateway_Events_GuildMemberAdd_User
+  name: User
+  nameWithType: GuildMemberAdd.User
+  fullName: Remora.Discord.API.Gateway.Events.GuildMemberAdd.User
+- uid: Remora.Discord.API.Abstractions.Objects.IGuildMember.User
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IGuildMember.User
+  parent: Remora.Discord.API.Abstractions.Objects.IGuildMember
+  href: Remora.Discord.API.Abstractions.Objects.IGuildMember.html#Remora_Discord_API_Abstractions_Objects_IGuildMember_User
+  name: User
+  nameWithType: IGuildMember.User
+  fullName: Remora.Discord.API.Abstractions.Objects.IGuildMember.User
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialGuildMember.User
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialGuildMember.User
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialGuildMember
+  href: Remora.Discord.API.Abstractions.Objects.IPartialGuildMember.html#Remora_Discord_API_Abstractions_Objects_IPartialGuildMember_User
+  name: User
+  nameWithType: IPartialGuildMember.User
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialGuildMember.User
+- uid: Remora.Discord.API.Gateway.Events.GuildMemberAdd.Nickname*
+  commentId: Overload:Remora.Discord.API.Gateway.Events.GuildMemberAdd.Nickname
+  href: Remora.Discord.API.Gateway.Events.GuildMemberAdd.html#Remora_Discord_API_Gateway_Events_GuildMemberAdd_Nickname
+  name: Nickname
+  nameWithType: GuildMemberAdd.Nickname
+  fullName: Remora.Discord.API.Gateway.Events.GuildMemberAdd.Nickname
+- uid: Remora.Discord.API.Abstractions.Objects.IGuildMember.Nickname
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IGuildMember.Nickname
+  parent: Remora.Discord.API.Abstractions.Objects.IGuildMember
+  href: Remora.Discord.API.Abstractions.Objects.IGuildMember.html#Remora_Discord_API_Abstractions_Objects_IGuildMember_Nickname
+  name: Nickname
+  nameWithType: IGuildMember.Nickname
+  fullName: Remora.Discord.API.Abstractions.Objects.IGuildMember.Nickname
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialGuildMember.Nickname
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialGuildMember.Nickname
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialGuildMember
+  href: Remora.Discord.API.Abstractions.Objects.IPartialGuildMember.html#Remora_Discord_API_Abstractions_Objects_IPartialGuildMember_Nickname
+  name: Nickname
+  nameWithType: IPartialGuildMember.Nickname
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialGuildMember.Nickname
+- uid: Remora.Discord.API.Gateway.Events.GuildMemberAdd.Avatar*
+  commentId: Overload:Remora.Discord.API.Gateway.Events.GuildMemberAdd.Avatar
+  href: Remora.Discord.API.Gateway.Events.GuildMemberAdd.html#Remora_Discord_API_Gateway_Events_GuildMemberAdd_Avatar
+  name: Avatar
+  nameWithType: GuildMemberAdd.Avatar
+  fullName: Remora.Discord.API.Gateway.Events.GuildMemberAdd.Avatar
+- uid: Remora.Discord.API.Abstractions.Objects.IGuildMember.Avatar
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IGuildMember.Avatar
+  parent: Remora.Discord.API.Abstractions.Objects.IGuildMember
+  href: Remora.Discord.API.Abstractions.Objects.IGuildMember.html#Remora_Discord_API_Abstractions_Objects_IGuildMember_Avatar
+  name: Avatar
+  nameWithType: IGuildMember.Avatar
+  fullName: Remora.Discord.API.Abstractions.Objects.IGuildMember.Avatar
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialGuildMember.Avatar
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialGuildMember.Avatar
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialGuildMember
+  href: Remora.Discord.API.Abstractions.Objects.IPartialGuildMember.html#Remora_Discord_API_Abstractions_Objects_IPartialGuildMember_Avatar
+  name: Avatar
+  nameWithType: IPartialGuildMember.Avatar
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialGuildMember.Avatar
+- uid: Remora.Discord.API.Gateway.Events.GuildMemberAdd.Roles*
+  commentId: Overload:Remora.Discord.API.Gateway.Events.GuildMemberAdd.Roles
+  href: Remora.Discord.API.Gateway.Events.GuildMemberAdd.html#Remora_Discord_API_Gateway_Events_GuildMemberAdd_Roles
+  name: Roles
+  nameWithType: GuildMemberAdd.Roles
+  fullName: Remora.Discord.API.Gateway.Events.GuildMemberAdd.Roles
+- uid: Remora.Discord.API.Abstractions.Objects.IGuildMember.Roles
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IGuildMember.Roles
+  parent: Remora.Discord.API.Abstractions.Objects.IGuildMember
+  href: Remora.Discord.API.Abstractions.Objects.IGuildMember.html#Remora_Discord_API_Abstractions_Objects_IGuildMember_Roles
+  name: Roles
+  nameWithType: IGuildMember.Roles
+  fullName: Remora.Discord.API.Abstractions.Objects.IGuildMember.Roles
+- uid: Remora.Discord.API.Gateway.Events.GuildMemberAdd.JoinedAt*
+  commentId: Overload:Remora.Discord.API.Gateway.Events.GuildMemberAdd.JoinedAt
+  href: Remora.Discord.API.Gateway.Events.GuildMemberAdd.html#Remora_Discord_API_Gateway_Events_GuildMemberAdd_JoinedAt
+  name: JoinedAt
+  nameWithType: GuildMemberAdd.JoinedAt
+  fullName: Remora.Discord.API.Gateway.Events.GuildMemberAdd.JoinedAt
+- uid: Remora.Discord.API.Abstractions.Objects.IGuildMember.JoinedAt
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IGuildMember.JoinedAt
+  parent: Remora.Discord.API.Abstractions.Objects.IGuildMember
+  href: Remora.Discord.API.Abstractions.Objects.IGuildMember.html#Remora_Discord_API_Abstractions_Objects_IGuildMember_JoinedAt
+  name: JoinedAt
+  nameWithType: IGuildMember.JoinedAt
+  fullName: Remora.Discord.API.Abstractions.Objects.IGuildMember.JoinedAt
+- uid: Remora.Discord.API.Gateway.Events.GuildMemberAdd.PremiumSince*
+  commentId: Overload:Remora.Discord.API.Gateway.Events.GuildMemberAdd.PremiumSince
+  href: Remora.Discord.API.Gateway.Events.GuildMemberAdd.html#Remora_Discord_API_Gateway_Events_GuildMemberAdd_PremiumSince
+  name: PremiumSince
+  nameWithType: GuildMemberAdd.PremiumSince
+  fullName: Remora.Discord.API.Gateway.Events.GuildMemberAdd.PremiumSince
+- uid: Remora.Discord.API.Abstractions.Objects.IGuildMember.PremiumSince
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IGuildMember.PremiumSince
+  parent: Remora.Discord.API.Abstractions.Objects.IGuildMember
+  href: Remora.Discord.API.Abstractions.Objects.IGuildMember.html#Remora_Discord_API_Abstractions_Objects_IGuildMember_PremiumSince
+  name: PremiumSince
+  nameWithType: IGuildMember.PremiumSince
+  fullName: Remora.Discord.API.Abstractions.Objects.IGuildMember.PremiumSince
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialGuildMember.PremiumSince
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialGuildMember.PremiumSince
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialGuildMember
+  href: Remora.Discord.API.Abstractions.Objects.IPartialGuildMember.html#Remora_Discord_API_Abstractions_Objects_IPartialGuildMember_PremiumSince
+  name: PremiumSince
+  nameWithType: IPartialGuildMember.PremiumSince
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialGuildMember.PremiumSince
+- uid: Remora.Discord.API.Gateway.Events.GuildMemberAdd.IsDeafened*
+  commentId: Overload:Remora.Discord.API.Gateway.Events.GuildMemberAdd.IsDeafened
+  href: Remora.Discord.API.Gateway.Events.GuildMemberAdd.html#Remora_Discord_API_Gateway_Events_GuildMemberAdd_IsDeafened
+  name: IsDeafened
+  nameWithType: GuildMemberAdd.IsDeafened
+  fullName: Remora.Discord.API.Gateway.Events.GuildMemberAdd.IsDeafened
+- uid: Remora.Discord.API.Abstractions.Objects.IGuildMember.IsDeafened
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IGuildMember.IsDeafened
+  parent: Remora.Discord.API.Abstractions.Objects.IGuildMember
+  href: Remora.Discord.API.Abstractions.Objects.IGuildMember.html#Remora_Discord_API_Abstractions_Objects_IGuildMember_IsDeafened
+  name: IsDeafened
+  nameWithType: IGuildMember.IsDeafened
+  fullName: Remora.Discord.API.Abstractions.Objects.IGuildMember.IsDeafened
+- uid: Remora.Discord.API.Gateway.Events.GuildMemberAdd.IsMuted*
+  commentId: Overload:Remora.Discord.API.Gateway.Events.GuildMemberAdd.IsMuted
+  href: Remora.Discord.API.Gateway.Events.GuildMemberAdd.html#Remora_Discord_API_Gateway_Events_GuildMemberAdd_IsMuted
+  name: IsMuted
+  nameWithType: GuildMemberAdd.IsMuted
+  fullName: Remora.Discord.API.Gateway.Events.GuildMemberAdd.IsMuted
+- uid: Remora.Discord.API.Abstractions.Objects.IGuildMember.IsMuted
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IGuildMember.IsMuted
+  parent: Remora.Discord.API.Abstractions.Objects.IGuildMember
+  href: Remora.Discord.API.Abstractions.Objects.IGuildMember.html#Remora_Discord_API_Abstractions_Objects_IGuildMember_IsMuted
+  name: IsMuted
+  nameWithType: IGuildMember.IsMuted
+  fullName: Remora.Discord.API.Abstractions.Objects.IGuildMember.IsMuted
+- uid: Remora.Discord.API.Gateway.Events.GuildMemberAdd.Flags*
+  commentId: Overload:Remora.Discord.API.Gateway.Events.GuildMemberAdd.Flags
+  href: Remora.Discord.API.Gateway.Events.GuildMemberAdd.html#Remora_Discord_API_Gateway_Events_GuildMemberAdd_Flags
+  name: Flags
+  nameWithType: GuildMemberAdd.Flags
+  fullName: Remora.Discord.API.Gateway.Events.GuildMemberAdd.Flags
+- uid: Remora.Discord.API.Abstractions.Objects.IGuildMember.Flags
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IGuildMember.Flags
+  parent: Remora.Discord.API.Abstractions.Objects.IGuildMember
+  href: Remora.Discord.API.Abstractions.Objects.IGuildMember.html#Remora_Discord_API_Abstractions_Objects_IGuildMember_Flags
+  name: Flags
+  nameWithType: IGuildMember.Flags
+  fullName: Remora.Discord.API.Abstractions.Objects.IGuildMember.Flags
+- uid: Remora.Discord.API.Gateway.Events.GuildMemberAdd.IsPending*
+  commentId: Overload:Remora.Discord.API.Gateway.Events.GuildMemberAdd.IsPending
+  href: Remora.Discord.API.Gateway.Events.GuildMemberAdd.html#Remora_Discord_API_Gateway_Events_GuildMemberAdd_IsPending
+  name: IsPending
+  nameWithType: GuildMemberAdd.IsPending
+  fullName: Remora.Discord.API.Gateway.Events.GuildMemberAdd.IsPending
+- uid: Remora.Discord.API.Abstractions.Objects.IGuildMember.IsPending
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IGuildMember.IsPending
+  parent: Remora.Discord.API.Abstractions.Objects.IGuildMember
+  href: Remora.Discord.API.Abstractions.Objects.IGuildMember.html#Remora_Discord_API_Abstractions_Objects_IGuildMember_IsPending
+  name: IsPending
+  nameWithType: IGuildMember.IsPending
+  fullName: Remora.Discord.API.Abstractions.Objects.IGuildMember.IsPending
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialGuildMember.IsPending
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialGuildMember.IsPending
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialGuildMember
+  href: Remora.Discord.API.Abstractions.Objects.IPartialGuildMember.html#Remora_Discord_API_Abstractions_Objects_IPartialGuildMember_IsPending
+  name: IsPending
+  nameWithType: IPartialGuildMember.IsPending
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialGuildMember.IsPending
+- uid: Remora.Discord.API.Gateway.Events.GuildMemberAdd.Permissions*
+  commentId: Overload:Remora.Discord.API.Gateway.Events.GuildMemberAdd.Permissions
+  href: Remora.Discord.API.Gateway.Events.GuildMemberAdd.html#Remora_Discord_API_Gateway_Events_GuildMemberAdd_Permissions
+  name: Permissions
+  nameWithType: GuildMemberAdd.Permissions
+  fullName: Remora.Discord.API.Gateway.Events.GuildMemberAdd.Permissions
+- uid: Remora.Discord.API.Abstractions.Objects.IGuildMember.Permissions
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IGuildMember.Permissions
+  parent: Remora.Discord.API.Abstractions.Objects.IGuildMember
+  href: Remora.Discord.API.Abstractions.Objects.IGuildMember.html#Remora_Discord_API_Abstractions_Objects_IGuildMember_Permissions
+  name: Permissions
+  nameWithType: IGuildMember.Permissions
+  fullName: Remora.Discord.API.Abstractions.Objects.IGuildMember.Permissions
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialGuildMember.Permissions
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialGuildMember.Permissions
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialGuildMember
+  href: Remora.Discord.API.Abstractions.Objects.IPartialGuildMember.html#Remora_Discord_API_Abstractions_Objects_IPartialGuildMember_Permissions
+  name: Permissions
+  nameWithType: IPartialGuildMember.Permissions
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialGuildMember.Permissions
+- uid: Remora.Discord.API.Gateway.Events.GuildMemberAdd.CommunicationDisabledUntil*
+  commentId: Overload:Remora.Discord.API.Gateway.Events.GuildMemberAdd.CommunicationDisabledUntil
+  href: Remora.Discord.API.Gateway.Events.GuildMemberAdd.html#Remora_Discord_API_Gateway_Events_GuildMemberAdd_CommunicationDisabledUntil
+  name: CommunicationDisabledUntil
+  nameWithType: GuildMemberAdd.CommunicationDisabledUntil
+  fullName: Remora.Discord.API.Gateway.Events.GuildMemberAdd.CommunicationDisabledUntil
+- uid: Remora.Discord.API.Abstractions.Objects.IGuildMember.CommunicationDisabledUntil
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IGuildMember.CommunicationDisabledUntil
+  parent: Remora.Discord.API.Abstractions.Objects.IGuildMember
+  href: Remora.Discord.API.Abstractions.Objects.IGuildMember.html#Remora_Discord_API_Abstractions_Objects_IGuildMember_CommunicationDisabledUntil
+  name: CommunicationDisabledUntil
+  nameWithType: IGuildMember.CommunicationDisabledUntil
+  fullName: Remora.Discord.API.Abstractions.Objects.IGuildMember.CommunicationDisabledUntil
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialGuildMember.CommunicationDisabledUntil
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialGuildMember.CommunicationDisabledUntil
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialGuildMember
+  href: Remora.Discord.API.Abstractions.Objects.IPartialGuildMember.html#Remora_Discord_API_Abstractions_Objects_IPartialGuildMember_CommunicationDisabledUntil
+  name: CommunicationDisabledUntil
+  nameWithType: IPartialGuildMember.CommunicationDisabledUntil
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialGuildMember.CommunicationDisabledUntil

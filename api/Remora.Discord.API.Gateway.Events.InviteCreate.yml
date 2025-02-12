@@ -1,0 +1,1363 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Gateway.Events.InviteCreate
+  commentId: T:Remora.Discord.API.Gateway.Events.InviteCreate
+  id: InviteCreate
+  parent: Remora.Discord.API.Gateway.Events
+  children:
+  - Remora.Discord.API.Gateway.Events.InviteCreate.#ctor(Remora.Rest.Core.Snowflake,System.String,System.DateTimeOffset,Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IUser},System.TimeSpan,System.Int32,Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IPartialUser},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.InviteTarget},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IPartialApplication},System.Boolean,System.Int32)
+  - Remora.Discord.API.Gateway.Events.InviteCreate.ChannelID
+  - Remora.Discord.API.Gateway.Events.InviteCreate.Code
+  - Remora.Discord.API.Gateway.Events.InviteCreate.CreatedAt
+  - Remora.Discord.API.Gateway.Events.InviteCreate.GuildID
+  - Remora.Discord.API.Gateway.Events.InviteCreate.Inviter
+  - Remora.Discord.API.Gateway.Events.InviteCreate.IsTemporary
+  - Remora.Discord.API.Gateway.Events.InviteCreate.MaxAge
+  - Remora.Discord.API.Gateway.Events.InviteCreate.MaxUses
+  - Remora.Discord.API.Gateway.Events.InviteCreate.TargetApplication
+  - Remora.Discord.API.Gateway.Events.InviteCreate.TargetType
+  - Remora.Discord.API.Gateway.Events.InviteCreate.TargetUser
+  - Remora.Discord.API.Gateway.Events.InviteCreate.Uses
+  langs:
+  - csharp
+  - vb
+  name: InviteCreate
+  nameWithType: InviteCreate
+  fullName: Remora.Discord.API.Gateway.Events.InviteCreate
+  type: Class
+  source:
+    id: InviteCreate
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Invites\InviteCreate.cs
+    startLine: 33
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events
+  summary: Represents the creation of an invite.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public record InviteCreate : IInviteCreate, IGatewayEvent, IGatewayPayloadData, IEquatable<InviteCreate>
+    content.vb: >-
+      <PublicAPI>
+
+      Public Class InviteCreate Implements IInviteCreate, IGatewayEvent, IGatewayPayloadData, IEquatable(Of InviteCreate)
+  inheritance:
+  - System.Object
+  implements:
+  - Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate
+  - Remora.Discord.API.Abstractions.Gateway.Events.IGatewayEvent
+  - Remora.Discord.API.Abstractions.Gateway.IGatewayPayloadData
+  - System.IEquatable{Remora.Discord.API.Gateway.Events.InviteCreate}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Gateway.Events.InviteCreate.#ctor(Remora.Rest.Core.Snowflake,System.String,System.DateTimeOffset,Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IUser},System.TimeSpan,System.Int32,Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IPartialUser},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.InviteTarget},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IPartialApplication},System.Boolean,System.Int32)
+  commentId: M:Remora.Discord.API.Gateway.Events.InviteCreate.#ctor(Remora.Rest.Core.Snowflake,System.String,System.DateTimeOffset,Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IUser},System.TimeSpan,System.Int32,Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IPartialUser},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.InviteTarget},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IPartialApplication},System.Boolean,System.Int32)
+  id: '#ctor(Remora.Rest.Core.Snowflake,System.String,System.DateTimeOffset,Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IUser},System.TimeSpan,System.Int32,Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IPartialUser},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.InviteTarget},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IPartialApplication},System.Boolean,System.Int32)'
+  parent: Remora.Discord.API.Gateway.Events.InviteCreate
+  langs:
+  - csharp
+  - vb
+  name: InviteCreate(Snowflake, string, DateTimeOffset, Optional<Snowflake>, Optional<IUser>, TimeSpan, int, Optional<IPartialUser>, Optional<InviteTarget>, Optional<IPartialApplication>, bool, int)
+  nameWithType: InviteCreate.InviteCreate(Snowflake, string, DateTimeOffset, Optional<Snowflake>, Optional<IUser>, TimeSpan, int, Optional<IPartialUser>, Optional<InviteTarget>, Optional<IPartialApplication>, bool, int)
+  fullName: Remora.Discord.API.Gateway.Events.InviteCreate.InviteCreate(Remora.Rest.Core.Snowflake, string, System.DateTimeOffset, Remora.Rest.Core.Optional<Remora.Rest.Core.Snowflake>, Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IUser>, System.TimeSpan, int, Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IPartialUser>, Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.InviteTarget>, Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IPartialApplication>, bool, int)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Invites\InviteCreate.cs
+    startLine: 33
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events
+  summary: Represents the creation of an invite.
+  example: []
+  syntax:
+    content: public InviteCreate(Snowflake ChannelID, string Code, DateTimeOffset CreatedAt, Optional<Snowflake> GuildID, Optional<IUser> Inviter, TimeSpan MaxAge, int MaxUses, Optional<IPartialUser> TargetUser, Optional<InviteTarget> TargetType, Optional<IPartialApplication> TargetApplication, bool IsTemporary, int Uses)
+    parameters:
+    - id: ChannelID
+      type: Remora.Rest.Core.Snowflake
+    - id: Code
+      type: System.String
+    - id: CreatedAt
+      type: System.DateTimeOffset
+    - id: GuildID
+      type: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+    - id: Inviter
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IUser}
+    - id: MaxAge
+      type: System.TimeSpan
+    - id: MaxUses
+      type: System.Int32
+    - id: TargetUser
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IPartialUser}
+    - id: TargetType
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.InviteTarget}
+    - id: TargetApplication
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IPartialApplication}
+    - id: IsTemporary
+      type: System.Boolean
+    - id: Uses
+      type: System.Int32
+    content.vb: Public Sub New(ChannelID As Snowflake, Code As String, CreatedAt As DateTimeOffset, GuildID As [Optional](Of Snowflake), Inviter As [Optional](Of IUser), MaxAge As TimeSpan, MaxUses As Integer, TargetUser As [Optional](Of IPartialUser), TargetType As [Optional](Of InviteTarget), TargetApplication As [Optional](Of IPartialApplication), IsTemporary As Boolean, Uses As Integer)
+  overload: Remora.Discord.API.Gateway.Events.InviteCreate.#ctor*
+  nameWithType.vb: InviteCreate.New(Snowflake, String, DateTimeOffset, Optional(Of Snowflake), Optional(Of IUser), TimeSpan, Integer, Optional(Of IPartialUser), Optional(Of InviteTarget), Optional(Of IPartialApplication), Boolean, Integer)
+  fullName.vb: Remora.Discord.API.Gateway.Events.InviteCreate.New(Remora.Rest.Core.Snowflake, String, System.DateTimeOffset, Remora.Rest.Core.Optional(Of Remora.Rest.Core.Snowflake), Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IUser), System.TimeSpan, Integer, Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IPartialUser), Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.InviteTarget), Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IPartialApplication), Boolean, Integer)
+  name.vb: New(Snowflake, String, DateTimeOffset, Optional(Of Snowflake), Optional(Of IUser), TimeSpan, Integer, Optional(Of IPartialUser), Optional(Of InviteTarget), Optional(Of IPartialApplication), Boolean, Integer)
+- uid: Remora.Discord.API.Gateway.Events.InviteCreate.ChannelID
+  commentId: P:Remora.Discord.API.Gateway.Events.InviteCreate.ChannelID
+  id: ChannelID
+  parent: Remora.Discord.API.Gateway.Events.InviteCreate
+  langs:
+  - csharp
+  - vb
+  name: ChannelID
+  nameWithType: InviteCreate.ChannelID
+  fullName: Remora.Discord.API.Gateway.Events.InviteCreate.ChannelID
+  type: Property
+  source:
+    id: ChannelID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Invites\InviteCreate.cs
+    startLine: 36
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events
+  summary: Gets the ID of the channel the invite is for.
+  example: []
+  syntax:
+    content: public Snowflake ChannelID { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Snowflake
+    content.vb: Public Property ChannelID As Snowflake
+  overload: Remora.Discord.API.Gateway.Events.InviteCreate.ChannelID*
+  implements:
+  - Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.ChannelID
+- uid: Remora.Discord.API.Gateway.Events.InviteCreate.Code
+  commentId: P:Remora.Discord.API.Gateway.Events.InviteCreate.Code
+  id: Code
+  parent: Remora.Discord.API.Gateway.Events.InviteCreate
+  langs:
+  - csharp
+  - vb
+  name: Code
+  nameWithType: InviteCreate.Code
+  fullName: Remora.Discord.API.Gateway.Events.InviteCreate.Code
+  type: Property
+  source:
+    id: Code
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Invites\InviteCreate.cs
+    startLine: 37
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events
+  summary: Gets the unique code of the invite.
+  example: []
+  syntax:
+    content: public string Code { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Code As String
+  overload: Remora.Discord.API.Gateway.Events.InviteCreate.Code*
+  implements:
+  - Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.Code
+- uid: Remora.Discord.API.Gateway.Events.InviteCreate.CreatedAt
+  commentId: P:Remora.Discord.API.Gateway.Events.InviteCreate.CreatedAt
+  id: CreatedAt
+  parent: Remora.Discord.API.Gateway.Events.InviteCreate
+  langs:
+  - csharp
+  - vb
+  name: CreatedAt
+  nameWithType: InviteCreate.CreatedAt
+  fullName: Remora.Discord.API.Gateway.Events.InviteCreate.CreatedAt
+  type: Property
+  source:
+    id: CreatedAt
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Invites\InviteCreate.cs
+    startLine: 38
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events
+  summary: Gets the time the invite was created.
+  example: []
+  syntax:
+    content: public DateTimeOffset CreatedAt { get; init; }
+    parameters: []
+    return:
+      type: System.DateTimeOffset
+    content.vb: Public Property CreatedAt As DateTimeOffset
+  overload: Remora.Discord.API.Gateway.Events.InviteCreate.CreatedAt*
+  implements:
+  - Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.CreatedAt
+- uid: Remora.Discord.API.Gateway.Events.InviteCreate.GuildID
+  commentId: P:Remora.Discord.API.Gateway.Events.InviteCreate.GuildID
+  id: GuildID
+  parent: Remora.Discord.API.Gateway.Events.InviteCreate
+  langs:
+  - csharp
+  - vb
+  name: GuildID
+  nameWithType: InviteCreate.GuildID
+  fullName: Remora.Discord.API.Gateway.Events.InviteCreate.GuildID
+  type: Property
+  source:
+    id: GuildID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Invites\InviteCreate.cs
+    startLine: 39
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events
+  summary: Gets the ID of the guild the invite is for.
+  example: []
+  syntax:
+    content: public Optional<Snowflake> GuildID { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+    content.vb: Public Property GuildID As [Optional](Of Snowflake)
+  overload: Remora.Discord.API.Gateway.Events.InviteCreate.GuildID*
+  implements:
+  - Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.GuildID
+- uid: Remora.Discord.API.Gateway.Events.InviteCreate.Inviter
+  commentId: P:Remora.Discord.API.Gateway.Events.InviteCreate.Inviter
+  id: Inviter
+  parent: Remora.Discord.API.Gateway.Events.InviteCreate
+  langs:
+  - csharp
+  - vb
+  name: Inviter
+  nameWithType: InviteCreate.Inviter
+  fullName: Remora.Discord.API.Gateway.Events.InviteCreate.Inviter
+  type: Property
+  source:
+    id: Inviter
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Invites\InviteCreate.cs
+    startLine: 40
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events
+  summary: Gets the user that created the invite.
+  example: []
+  syntax:
+    content: public Optional<IUser> Inviter { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IUser}
+    content.vb: Public Property Inviter As [Optional](Of IUser)
+  overload: Remora.Discord.API.Gateway.Events.InviteCreate.Inviter*
+  implements:
+  - Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.Inviter
+- uid: Remora.Discord.API.Gateway.Events.InviteCreate.MaxAge
+  commentId: P:Remora.Discord.API.Gateway.Events.InviteCreate.MaxAge
+  id: MaxAge
+  parent: Remora.Discord.API.Gateway.Events.InviteCreate
+  langs:
+  - csharp
+  - vb
+  name: MaxAge
+  nameWithType: InviteCreate.MaxAge
+  fullName: Remora.Discord.API.Gateway.Events.InviteCreate.MaxAge
+  type: Property
+  source:
+    id: MaxAge
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Invites\InviteCreate.cs
+    startLine: 41
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events
+  summary: Gets the time (in seconds) the invite is valid for.
+  example: []
+  syntax:
+    content: public TimeSpan MaxAge { get; init; }
+    parameters: []
+    return:
+      type: System.TimeSpan
+    content.vb: Public Property MaxAge As TimeSpan
+  overload: Remora.Discord.API.Gateway.Events.InviteCreate.MaxAge*
+  implements:
+  - Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.MaxAge
+- uid: Remora.Discord.API.Gateway.Events.InviteCreate.MaxUses
+  commentId: P:Remora.Discord.API.Gateway.Events.InviteCreate.MaxUses
+  id: MaxUses
+  parent: Remora.Discord.API.Gateway.Events.InviteCreate
+  langs:
+  - csharp
+  - vb
+  name: MaxUses
+  nameWithType: InviteCreate.MaxUses
+  fullName: Remora.Discord.API.Gateway.Events.InviteCreate.MaxUses
+  type: Property
+  source:
+    id: MaxUses
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Invites\InviteCreate.cs
+    startLine: 42
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events
+  summary: Gets the maximum number of times the invite can be used.
+  example: []
+  syntax:
+    content: public int MaxUses { get; init; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property MaxUses As Integer
+  overload: Remora.Discord.API.Gateway.Events.InviteCreate.MaxUses*
+  implements:
+  - Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.MaxUses
+- uid: Remora.Discord.API.Gateway.Events.InviteCreate.TargetUser
+  commentId: P:Remora.Discord.API.Gateway.Events.InviteCreate.TargetUser
+  id: TargetUser
+  parent: Remora.Discord.API.Gateway.Events.InviteCreate
+  langs:
+  - csharp
+  - vb
+  name: TargetUser
+  nameWithType: InviteCreate.TargetUser
+  fullName: Remora.Discord.API.Gateway.Events.InviteCreate.TargetUser
+  type: Property
+  source:
+    id: TargetUser
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Invites\InviteCreate.cs
+    startLine: 43
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events
+  summary: Gets the target user for this invite.
+  example: []
+  syntax:
+    content: public Optional<IPartialUser> TargetUser { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IPartialUser}
+    content.vb: Public Property TargetUser As [Optional](Of IPartialUser)
+  overload: Remora.Discord.API.Gateway.Events.InviteCreate.TargetUser*
+  implements:
+  - Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.TargetUser
+- uid: Remora.Discord.API.Gateway.Events.InviteCreate.TargetType
+  commentId: P:Remora.Discord.API.Gateway.Events.InviteCreate.TargetType
+  id: TargetType
+  parent: Remora.Discord.API.Gateway.Events.InviteCreate
+  langs:
+  - csharp
+  - vb
+  name: TargetType
+  nameWithType: InviteCreate.TargetType
+  fullName: Remora.Discord.API.Gateway.Events.InviteCreate.TargetType
+  type: Property
+  source:
+    id: TargetType
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Invites\InviteCreate.cs
+    startLine: 44
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events
+  summary: Gets the type of user target for this invite.
+  example: []
+  syntax:
+    content: public Optional<InviteTarget> TargetType { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.InviteTarget}
+    content.vb: Public Property TargetType As [Optional](Of InviteTarget)
+  overload: Remora.Discord.API.Gateway.Events.InviteCreate.TargetType*
+  implements:
+  - Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.TargetType
+- uid: Remora.Discord.API.Gateway.Events.InviteCreate.TargetApplication
+  commentId: P:Remora.Discord.API.Gateway.Events.InviteCreate.TargetApplication
+  id: TargetApplication
+  parent: Remora.Discord.API.Gateway.Events.InviteCreate
+  langs:
+  - csharp
+  - vb
+  name: TargetApplication
+  nameWithType: InviteCreate.TargetApplication
+  fullName: Remora.Discord.API.Gateway.Events.InviteCreate.TargetApplication
+  type: Property
+  source:
+    id: TargetApplication
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Invites\InviteCreate.cs
+    startLine: 45
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events
+  summary: Gets the embedded application this invite is for.
+  example: []
+  syntax:
+    content: public Optional<IPartialApplication> TargetApplication { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IPartialApplication}
+    content.vb: Public Property TargetApplication As [Optional](Of IPartialApplication)
+  overload: Remora.Discord.API.Gateway.Events.InviteCreate.TargetApplication*
+  implements:
+  - Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.TargetApplication
+- uid: Remora.Discord.API.Gateway.Events.InviteCreate.IsTemporary
+  commentId: P:Remora.Discord.API.Gateway.Events.InviteCreate.IsTemporary
+  id: IsTemporary
+  parent: Remora.Discord.API.Gateway.Events.InviteCreate
+  langs:
+  - csharp
+  - vb
+  name: IsTemporary
+  nameWithType: InviteCreate.IsTemporary
+  fullName: Remora.Discord.API.Gateway.Events.InviteCreate.IsTemporary
+  type: Property
+  source:
+    id: IsTemporary
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Invites\InviteCreate.cs
+    startLine: 46
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events
+  summary: >-
+    Gets a value indicating whether the invite is temporary (invited users will be kicked on disconnect unless
+
+    they're assigned to a role).
+  example: []
+  syntax:
+    content: public bool IsTemporary { get; init; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsTemporary As Boolean
+  overload: Remora.Discord.API.Gateway.Events.InviteCreate.IsTemporary*
+  implements:
+  - Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.IsTemporary
+- uid: Remora.Discord.API.Gateway.Events.InviteCreate.Uses
+  commentId: P:Remora.Discord.API.Gateway.Events.InviteCreate.Uses
+  id: Uses
+  parent: Remora.Discord.API.Gateway.Events.InviteCreate
+  langs:
+  - csharp
+  - vb
+  name: Uses
+  nameWithType: InviteCreate.Uses
+  fullName: Remora.Discord.API.Gateway.Events.InviteCreate.Uses
+  type: Property
+  source:
+    id: Uses
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Invites\InviteCreate.cs
+    startLine: 47
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events
+  summary: Gets how many times the invite has been used. Always zero.
+  example: []
+  syntax:
+    content: public int Uses { get; init; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Uses As Integer
+  overload: Remora.Discord.API.Gateway.Events.InviteCreate.Uses*
+  implements:
+  - Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.Uses
+references:
+- uid: Remora.Discord.API.Gateway.Events
+  commentId: N:Remora.Discord.API.Gateway.Events
+  href: Remora.html
+  name: Remora.Discord.API.Gateway.Events
+  nameWithType: Remora.Discord.API.Gateway.Events
+  fullName: Remora.Discord.API.Gateway.Events
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Gateway.Events
+    name: Events
+    href: Remora.Discord.API.Gateway.Events.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Gateway.Events
+    name: Events
+    href: Remora.Discord.API.Gateway.Events.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate
+  parent: Remora.Discord.API.Abstractions.Gateway.Events
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.html
+  name: IInviteCreate
+  nameWithType: IInviteCreate
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IGatewayEvent
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.Events.IGatewayEvent
+  parent: Remora.Discord.API.Abstractions.Gateway.Events
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IGatewayEvent.html
+  name: IGatewayEvent
+  nameWithType: IGatewayEvent
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IGatewayEvent
+- uid: Remora.Discord.API.Abstractions.Gateway.IGatewayPayloadData
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.IGatewayPayloadData
+  parent: Remora.Discord.API.Abstractions.Gateway
+  href: Remora.Discord.API.Abstractions.Gateway.IGatewayPayloadData.html
+  name: IGatewayPayloadData
+  nameWithType: IGatewayPayloadData
+  fullName: Remora.Discord.API.Abstractions.Gateway.IGatewayPayloadData
+- uid: System.IEquatable{Remora.Discord.API.Gateway.Events.InviteCreate}
+  commentId: T:System.IEquatable{Remora.Discord.API.Gateway.Events.InviteCreate}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<InviteCreate>
+  nameWithType: IEquatable<InviteCreate>
+  fullName: System.IEquatable<Remora.Discord.API.Gateway.Events.InviteCreate>
+  nameWithType.vb: IEquatable(Of InviteCreate)
+  fullName.vb: System.IEquatable(Of Remora.Discord.API.Gateway.Events.InviteCreate)
+  name.vb: IEquatable(Of InviteCreate)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Remora.Discord.API.Gateway.Events.InviteCreate
+    name: InviteCreate
+    href: Remora.Discord.API.Gateway.Events.InviteCreate.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Gateway.Events.InviteCreate
+    name: InviteCreate
+    href: Remora.Discord.API.Gateway.Events.InviteCreate.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.API.Abstractions.Gateway.Events
+  commentId: N:Remora.Discord.API.Abstractions.Gateway.Events
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Gateway.Events
+  nameWithType: Remora.Discord.API.Abstractions.Gateway.Events
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events
+    name: Events
+    href: Remora.Discord.API.Abstractions.Gateway.Events.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events
+    name: Events
+    href: Remora.Discord.API.Abstractions.Gateway.Events.html
+- uid: Remora.Discord.API.Abstractions.Gateway
+  commentId: N:Remora.Discord.API.Abstractions.Gateway
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Gateway
+  nameWithType: Remora.Discord.API.Abstractions.Gateway
+  fullName: Remora.Discord.API.Abstractions.Gateway
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Remora.Discord.API.Gateway.Events.InviteCreate.#ctor*
+  commentId: Overload:Remora.Discord.API.Gateway.Events.InviteCreate.#ctor
+  href: Remora.Discord.API.Gateway.Events.InviteCreate.html#Remora_Discord_API_Gateway_Events_InviteCreate__ctor_Remora_Rest_Core_Snowflake_System_String_System_DateTimeOffset_Remora_Rest_Core_Optional_Remora_Rest_Core_Snowflake__Remora_Rest_Core_Optional_Remora_Discord_API_Abstractions_Objects_IUser__System_TimeSpan_System_Int32_Remora_Rest_Core_Optional_Remora_Discord_API_Abstractions_Objects_IPartialUser__Remora_Rest_Core_Optional_Remora_Discord_API_Abstractions_Objects_InviteTarget__Remora_Rest_Core_Optional_Remora_Discord_API_Abstractions_Objects_IPartialApplication__System_Boolean_System_Int32_
+  name: InviteCreate
+  nameWithType: InviteCreate.InviteCreate
+  fullName: Remora.Discord.API.Gateway.Events.InviteCreate.InviteCreate
+  nameWithType.vb: InviteCreate.New
+  fullName.vb: Remora.Discord.API.Gateway.Events.InviteCreate.New
+  name.vb: New
+- uid: Remora.Rest.Core.Snowflake
+  commentId: T:Remora.Rest.Core.Snowflake
+  parent: Remora.Rest.Core
+  isExternal: true
+  name: Snowflake
+  nameWithType: Snowflake
+  fullName: Remora.Rest.Core.Snowflake
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.DateTimeOffset
+  commentId: T:System.DateTimeOffset
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  name: Optional<Snowflake>
+  nameWithType: Optional<Snowflake>
+  fullName: Remora.Rest.Core.Optional<Remora.Rest.Core.Snowflake>
+  nameWithType.vb: Optional(Of Snowflake)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Rest.Core.Snowflake)
+  name.vb: Optional(Of Snowflake)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+- uid: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IUser}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IUser}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: Remora.Discord.API.Abstractions.Objects.IUser.html
+  name: Optional<IUser>
+  nameWithType: Optional<IUser>
+  fullName: Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IUser>
+  nameWithType.vb: Optional(Of IUser)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IUser)
+  name.vb: Optional(Of IUser)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IUser
+    name: IUser
+    href: Remora.Discord.API.Abstractions.Objects.IUser.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IUser
+    name: IUser
+    href: Remora.Discord.API.Abstractions.Objects.IUser.html
+  - name: )
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.timespan
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IPartialUser}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IPartialUser}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: Remora.Discord.API.Abstractions.Objects.IPartialUser.html
+  name: Optional<IPartialUser>
+  nameWithType: Optional<IPartialUser>
+  fullName: Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IPartialUser>
+  nameWithType.vb: Optional(Of IPartialUser)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IPartialUser)
+  name.vb: Optional(Of IPartialUser)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IPartialUser
+    name: IPartialUser
+    href: Remora.Discord.API.Abstractions.Objects.IPartialUser.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IPartialUser
+    name: IPartialUser
+    href: Remora.Discord.API.Abstractions.Objects.IPartialUser.html
+  - name: )
+- uid: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.InviteTarget}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.InviteTarget}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: Remora.Discord.API.Abstractions.Objects.InviteTarget.html
+  name: Optional<InviteTarget>
+  nameWithType: Optional<InviteTarget>
+  fullName: Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.InviteTarget>
+  nameWithType.vb: Optional(Of InviteTarget)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.InviteTarget)
+  name.vb: Optional(Of InviteTarget)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.InviteTarget
+    name: InviteTarget
+    href: Remora.Discord.API.Abstractions.Objects.InviteTarget.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.InviteTarget
+    name: InviteTarget
+    href: Remora.Discord.API.Abstractions.Objects.InviteTarget.html
+  - name: )
+- uid: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IPartialApplication}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IPartialApplication}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: Remora.Discord.API.Abstractions.Objects.IPartialApplication.html
+  name: Optional<IPartialApplication>
+  nameWithType: Optional<IPartialApplication>
+  fullName: Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IPartialApplication>
+  nameWithType.vb: Optional(Of IPartialApplication)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IPartialApplication)
+  name.vb: Optional(Of IPartialApplication)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IPartialApplication
+    name: IPartialApplication
+    href: Remora.Discord.API.Abstractions.Objects.IPartialApplication.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IPartialApplication
+    name: IPartialApplication
+    href: Remora.Discord.API.Abstractions.Objects.IPartialApplication.html
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+- uid: Remora.Rest.Core.Optional`1
+  commentId: T:Remora.Rest.Core.Optional`1
+  isExternal: true
+  name: Optional<TValue>
+  nameWithType: Optional<TValue>
+  fullName: Remora.Rest.Core.Optional<TValue>
+  nameWithType.vb: Optional(Of TValue)
+  fullName.vb: Remora.Rest.Core.Optional(Of TValue)
+  name.vb: Optional(Of TValue)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Remora.Discord.API.Gateway.Events.InviteCreate.ChannelID*
+  commentId: Overload:Remora.Discord.API.Gateway.Events.InviteCreate.ChannelID
+  href: Remora.Discord.API.Gateway.Events.InviteCreate.html#Remora_Discord_API_Gateway_Events_InviteCreate_ChannelID
+  name: ChannelID
+  nameWithType: InviteCreate.ChannelID
+  fullName: Remora.Discord.API.Gateway.Events.InviteCreate.ChannelID
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.ChannelID
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.ChannelID
+  parent: Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.html#Remora_Discord_API_Abstractions_Gateway_Events_IInviteCreate_ChannelID
+  name: ChannelID
+  nameWithType: IInviteCreate.ChannelID
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.ChannelID
+- uid: Remora.Discord.API.Gateway.Events.InviteCreate.Code*
+  commentId: Overload:Remora.Discord.API.Gateway.Events.InviteCreate.Code
+  href: Remora.Discord.API.Gateway.Events.InviteCreate.html#Remora_Discord_API_Gateway_Events_InviteCreate_Code
+  name: Code
+  nameWithType: InviteCreate.Code
+  fullName: Remora.Discord.API.Gateway.Events.InviteCreate.Code
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.Code
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.Code
+  parent: Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.html#Remora_Discord_API_Abstractions_Gateway_Events_IInviteCreate_Code
+  name: Code
+  nameWithType: IInviteCreate.Code
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.Code
+- uid: Remora.Discord.API.Gateway.Events.InviteCreate.CreatedAt*
+  commentId: Overload:Remora.Discord.API.Gateway.Events.InviteCreate.CreatedAt
+  href: Remora.Discord.API.Gateway.Events.InviteCreate.html#Remora_Discord_API_Gateway_Events_InviteCreate_CreatedAt
+  name: CreatedAt
+  nameWithType: InviteCreate.CreatedAt
+  fullName: Remora.Discord.API.Gateway.Events.InviteCreate.CreatedAt
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.CreatedAt
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.CreatedAt
+  parent: Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.html#Remora_Discord_API_Abstractions_Gateway_Events_IInviteCreate_CreatedAt
+  name: CreatedAt
+  nameWithType: IInviteCreate.CreatedAt
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.CreatedAt
+- uid: Remora.Discord.API.Gateway.Events.InviteCreate.GuildID*
+  commentId: Overload:Remora.Discord.API.Gateway.Events.InviteCreate.GuildID
+  href: Remora.Discord.API.Gateway.Events.InviteCreate.html#Remora_Discord_API_Gateway_Events_InviteCreate_GuildID
+  name: GuildID
+  nameWithType: InviteCreate.GuildID
+  fullName: Remora.Discord.API.Gateway.Events.InviteCreate.GuildID
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.GuildID
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.GuildID
+  parent: Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.html#Remora_Discord_API_Abstractions_Gateway_Events_IInviteCreate_GuildID
+  name: GuildID
+  nameWithType: IInviteCreate.GuildID
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.GuildID
+- uid: Remora.Discord.API.Gateway.Events.InviteCreate.Inviter*
+  commentId: Overload:Remora.Discord.API.Gateway.Events.InviteCreate.Inviter
+  href: Remora.Discord.API.Gateway.Events.InviteCreate.html#Remora_Discord_API_Gateway_Events_InviteCreate_Inviter
+  name: Inviter
+  nameWithType: InviteCreate.Inviter
+  fullName: Remora.Discord.API.Gateway.Events.InviteCreate.Inviter
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.Inviter
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.Inviter
+  parent: Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.html#Remora_Discord_API_Abstractions_Gateway_Events_IInviteCreate_Inviter
+  name: Inviter
+  nameWithType: IInviteCreate.Inviter
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.Inviter
+- uid: Remora.Discord.API.Gateway.Events.InviteCreate.MaxAge*
+  commentId: Overload:Remora.Discord.API.Gateway.Events.InviteCreate.MaxAge
+  href: Remora.Discord.API.Gateway.Events.InviteCreate.html#Remora_Discord_API_Gateway_Events_InviteCreate_MaxAge
+  name: MaxAge
+  nameWithType: InviteCreate.MaxAge
+  fullName: Remora.Discord.API.Gateway.Events.InviteCreate.MaxAge
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.MaxAge
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.MaxAge
+  parent: Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.html#Remora_Discord_API_Abstractions_Gateway_Events_IInviteCreate_MaxAge
+  name: MaxAge
+  nameWithType: IInviteCreate.MaxAge
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.MaxAge
+- uid: Remora.Discord.API.Gateway.Events.InviteCreate.MaxUses*
+  commentId: Overload:Remora.Discord.API.Gateway.Events.InviteCreate.MaxUses
+  href: Remora.Discord.API.Gateway.Events.InviteCreate.html#Remora_Discord_API_Gateway_Events_InviteCreate_MaxUses
+  name: MaxUses
+  nameWithType: InviteCreate.MaxUses
+  fullName: Remora.Discord.API.Gateway.Events.InviteCreate.MaxUses
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.MaxUses
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.MaxUses
+  parent: Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.html#Remora_Discord_API_Abstractions_Gateway_Events_IInviteCreate_MaxUses
+  name: MaxUses
+  nameWithType: IInviteCreate.MaxUses
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.MaxUses
+- uid: Remora.Discord.API.Gateway.Events.InviteCreate.TargetUser*
+  commentId: Overload:Remora.Discord.API.Gateway.Events.InviteCreate.TargetUser
+  href: Remora.Discord.API.Gateway.Events.InviteCreate.html#Remora_Discord_API_Gateway_Events_InviteCreate_TargetUser
+  name: TargetUser
+  nameWithType: InviteCreate.TargetUser
+  fullName: Remora.Discord.API.Gateway.Events.InviteCreate.TargetUser
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.TargetUser
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.TargetUser
+  parent: Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.html#Remora_Discord_API_Abstractions_Gateway_Events_IInviteCreate_TargetUser
+  name: TargetUser
+  nameWithType: IInviteCreate.TargetUser
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.TargetUser
+- uid: Remora.Discord.API.Gateway.Events.InviteCreate.TargetType*
+  commentId: Overload:Remora.Discord.API.Gateway.Events.InviteCreate.TargetType
+  href: Remora.Discord.API.Gateway.Events.InviteCreate.html#Remora_Discord_API_Gateway_Events_InviteCreate_TargetType
+  name: TargetType
+  nameWithType: InviteCreate.TargetType
+  fullName: Remora.Discord.API.Gateway.Events.InviteCreate.TargetType
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.TargetType
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.TargetType
+  parent: Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.html#Remora_Discord_API_Abstractions_Gateway_Events_IInviteCreate_TargetType
+  name: TargetType
+  nameWithType: IInviteCreate.TargetType
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.TargetType
+- uid: Remora.Discord.API.Gateway.Events.InviteCreate.TargetApplication*
+  commentId: Overload:Remora.Discord.API.Gateway.Events.InviteCreate.TargetApplication
+  href: Remora.Discord.API.Gateway.Events.InviteCreate.html#Remora_Discord_API_Gateway_Events_InviteCreate_TargetApplication
+  name: TargetApplication
+  nameWithType: InviteCreate.TargetApplication
+  fullName: Remora.Discord.API.Gateway.Events.InviteCreate.TargetApplication
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.TargetApplication
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.TargetApplication
+  parent: Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.html#Remora_Discord_API_Abstractions_Gateway_Events_IInviteCreate_TargetApplication
+  name: TargetApplication
+  nameWithType: IInviteCreate.TargetApplication
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.TargetApplication
+- uid: Remora.Discord.API.Gateway.Events.InviteCreate.IsTemporary*
+  commentId: Overload:Remora.Discord.API.Gateway.Events.InviteCreate.IsTemporary
+  href: Remora.Discord.API.Gateway.Events.InviteCreate.html#Remora_Discord_API_Gateway_Events_InviteCreate_IsTemporary
+  name: IsTemporary
+  nameWithType: InviteCreate.IsTemporary
+  fullName: Remora.Discord.API.Gateway.Events.InviteCreate.IsTemporary
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.IsTemporary
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.IsTemporary
+  parent: Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.html#Remora_Discord_API_Abstractions_Gateway_Events_IInviteCreate_IsTemporary
+  name: IsTemporary
+  nameWithType: IInviteCreate.IsTemporary
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.IsTemporary
+- uid: Remora.Discord.API.Gateway.Events.InviteCreate.Uses*
+  commentId: Overload:Remora.Discord.API.Gateway.Events.InviteCreate.Uses
+  href: Remora.Discord.API.Gateway.Events.InviteCreate.html#Remora_Discord_API_Gateway_Events_InviteCreate_Uses
+  name: Uses
+  nameWithType: InviteCreate.Uses
+  fullName: Remora.Discord.API.Gateway.Events.InviteCreate.Uses
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.Uses
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.Uses
+  parent: Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.html#Remora_Discord_API_Abstractions_Gateway_Events_IInviteCreate_Uses
+  name: Uses
+  nameWithType: IInviteCreate.Uses
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IInviteCreate.Uses

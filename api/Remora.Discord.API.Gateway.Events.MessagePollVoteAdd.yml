@@ -1,0 +1,885 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Gateway.Events.MessagePollVoteAdd
+  commentId: T:Remora.Discord.API.Gateway.Events.MessagePollVoteAdd
+  id: MessagePollVoteAdd
+  parent: Remora.Discord.API.Gateway.Events
+  children:
+  - Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.#ctor(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,System.Int32,Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake})
+  - Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.AnswerID
+  - Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.ChannelID
+  - Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.GuildID
+  - Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.MessageID
+  - Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.UserID
+  langs:
+  - csharp
+  - vb
+  name: MessagePollVoteAdd
+  nameWithType: MessagePollVoteAdd
+  fullName: Remora.Discord.API.Gateway.Events.MessagePollVoteAdd
+  type: Class
+  source:
+    id: MessagePollVoteAdd
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Polls\MessagePollVoteAdd.cs
+    startLine: 29
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events
+  summary: Represents the addition of a vote to a poll.
+  remarks: If the poll allows multiple selections, then one event will be sent per answer.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public record MessagePollVoteAdd : IMessagePollVoteAdd, IGatewayEvent, IGatewayPayloadData, IEquatable<MessagePollVoteAdd>
+    content.vb: >-
+      <PublicAPI>
+
+      Public Class MessagePollVoteAdd Implements IMessagePollVoteAdd, IGatewayEvent, IGatewayPayloadData, IEquatable(Of MessagePollVoteAdd)
+  inheritance:
+  - System.Object
+  implements:
+  - Remora.Discord.API.Abstractions.Gateway.Events.IMessagePollVoteAdd
+  - Remora.Discord.API.Abstractions.Gateway.Events.IGatewayEvent
+  - Remora.Discord.API.Abstractions.Gateway.IGatewayPayloadData
+  - System.IEquatable{Remora.Discord.API.Gateway.Events.MessagePollVoteAdd}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.#ctor(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,System.Int32,Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake})
+  commentId: M:Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.#ctor(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,System.Int32,Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake})
+  id: '#ctor(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,System.Int32,Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake})'
+  parent: Remora.Discord.API.Gateway.Events.MessagePollVoteAdd
+  langs:
+  - csharp
+  - vb
+  name: MessagePollVoteAdd(Snowflake, Snowflake, Snowflake, int, Optional<Snowflake>)
+  nameWithType: MessagePollVoteAdd.MessagePollVoteAdd(Snowflake, Snowflake, Snowflake, int, Optional<Snowflake>)
+  fullName: Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.MessagePollVoteAdd(Remora.Rest.Core.Snowflake, Remora.Rest.Core.Snowflake, Remora.Rest.Core.Snowflake, int, Remora.Rest.Core.Optional<Remora.Rest.Core.Snowflake>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Polls\MessagePollVoteAdd.cs
+    startLine: 29
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events
+  summary: Represents the addition of a vote to a poll.
+  remarks: If the poll allows multiple selections, then one event will be sent per answer.
+  example: []
+  syntax:
+    content: public MessagePollVoteAdd(Snowflake UserID, Snowflake ChannelID, Snowflake MessageID, int AnswerID, Optional<Snowflake> GuildID = default)
+    parameters:
+    - id: UserID
+      type: Remora.Rest.Core.Snowflake
+    - id: ChannelID
+      type: Remora.Rest.Core.Snowflake
+    - id: MessageID
+      type: Remora.Rest.Core.Snowflake
+    - id: AnswerID
+      type: System.Int32
+    - id: GuildID
+      type: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+    content.vb: Public Sub New(UserID As Snowflake, ChannelID As Snowflake, MessageID As Snowflake, AnswerID As Integer, GuildID As [Optional](Of Snowflake) = Nothing)
+  overload: Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.#ctor*
+  nameWithType.vb: MessagePollVoteAdd.New(Snowflake, Snowflake, Snowflake, Integer, Optional(Of Snowflake))
+  fullName.vb: Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.New(Remora.Rest.Core.Snowflake, Remora.Rest.Core.Snowflake, Remora.Rest.Core.Snowflake, Integer, Remora.Rest.Core.Optional(Of Remora.Rest.Core.Snowflake))
+  name.vb: New(Snowflake, Snowflake, Snowflake, Integer, Optional(Of Snowflake))
+- uid: Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.UserID
+  commentId: P:Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.UserID
+  id: UserID
+  parent: Remora.Discord.API.Gateway.Events.MessagePollVoteAdd
+  langs:
+  - csharp
+  - vb
+  name: UserID
+  nameWithType: MessagePollVoteAdd.UserID
+  fullName: Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.UserID
+  type: Property
+  source:
+    id: UserID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Polls\MessagePollVoteAdd.cs
+    startLine: 32
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events
+  summary: Gets the ID of the user.
+  example: []
+  syntax:
+    content: public Snowflake UserID { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Snowflake
+    content.vb: Public Property UserID As Snowflake
+  overload: Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.UserID*
+  implements:
+  - Remora.Discord.API.Abstractions.Gateway.Events.IMessagePollVoteAdd.UserID
+- uid: Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.ChannelID
+  commentId: P:Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.ChannelID
+  id: ChannelID
+  parent: Remora.Discord.API.Gateway.Events.MessagePollVoteAdd
+  langs:
+  - csharp
+  - vb
+  name: ChannelID
+  nameWithType: MessagePollVoteAdd.ChannelID
+  fullName: Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.ChannelID
+  type: Property
+  source:
+    id: ChannelID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Polls\MessagePollVoteAdd.cs
+    startLine: 33
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events
+  summary: Gets the ID of the channel.
+  example: []
+  syntax:
+    content: public Snowflake ChannelID { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Snowflake
+    content.vb: Public Property ChannelID As Snowflake
+  overload: Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.ChannelID*
+  implements:
+  - Remora.Discord.API.Abstractions.Gateway.Events.IMessagePollVoteAdd.ChannelID
+- uid: Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.MessageID
+  commentId: P:Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.MessageID
+  id: MessageID
+  parent: Remora.Discord.API.Gateway.Events.MessagePollVoteAdd
+  langs:
+  - csharp
+  - vb
+  name: MessageID
+  nameWithType: MessagePollVoteAdd.MessageID
+  fullName: Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.MessageID
+  type: Property
+  source:
+    id: MessageID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Polls\MessagePollVoteAdd.cs
+    startLine: 34
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events
+  summary: Gets the ID of the message.
+  example: []
+  syntax:
+    content: public Snowflake MessageID { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Snowflake
+    content.vb: Public Property MessageID As Snowflake
+  overload: Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.MessageID*
+  implements:
+  - Remora.Discord.API.Abstractions.Gateway.Events.IMessagePollVoteAdd.MessageID
+- uid: Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.AnswerID
+  commentId: P:Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.AnswerID
+  id: AnswerID
+  parent: Remora.Discord.API.Gateway.Events.MessagePollVoteAdd
+  langs:
+  - csharp
+  - vb
+  name: AnswerID
+  nameWithType: MessagePollVoteAdd.AnswerID
+  fullName: Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.AnswerID
+  type: Property
+  source:
+    id: AnswerID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Polls\MessagePollVoteAdd.cs
+    startLine: 35
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events
+  summary: Gets the ID of the answer.
+  example: []
+  syntax:
+    content: public int AnswerID { get; init; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property AnswerID As Integer
+  overload: Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.AnswerID*
+  implements:
+  - Remora.Discord.API.Abstractions.Gateway.Events.IMessagePollVoteAdd.AnswerID
+- uid: Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.GuildID
+  commentId: P:Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.GuildID
+  id: GuildID
+  parent: Remora.Discord.API.Gateway.Events.MessagePollVoteAdd
+  langs:
+  - csharp
+  - vb
+  name: GuildID
+  nameWithType: MessagePollVoteAdd.GuildID
+  fullName: Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.GuildID
+  type: Property
+  source:
+    id: GuildID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Gateway\Events\Polls\MessagePollVoteAdd.cs
+    startLine: 36
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Gateway.Events
+  summary: Gets the ID of the guild.
+  example: []
+  syntax:
+    content: public Optional<Snowflake> GuildID { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+    content.vb: Public Property GuildID As [Optional](Of Snowflake)
+  overload: Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.GuildID*
+  implements:
+  - Remora.Discord.API.Abstractions.Gateway.Events.IMessagePollVoteAdd.GuildID
+references:
+- uid: Remora.Discord.API.Gateway.Events
+  commentId: N:Remora.Discord.API.Gateway.Events
+  href: Remora.html
+  name: Remora.Discord.API.Gateway.Events
+  nameWithType: Remora.Discord.API.Gateway.Events
+  fullName: Remora.Discord.API.Gateway.Events
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Gateway.Events
+    name: Events
+    href: Remora.Discord.API.Gateway.Events.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Gateway.Events
+    name: Events
+    href: Remora.Discord.API.Gateway.Events.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IMessagePollVoteAdd
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.Events.IMessagePollVoteAdd
+  parent: Remora.Discord.API.Abstractions.Gateway.Events
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IMessagePollVoteAdd.html
+  name: IMessagePollVoteAdd
+  nameWithType: IMessagePollVoteAdd
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IMessagePollVoteAdd
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IGatewayEvent
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.Events.IGatewayEvent
+  parent: Remora.Discord.API.Abstractions.Gateway.Events
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IGatewayEvent.html
+  name: IGatewayEvent
+  nameWithType: IGatewayEvent
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IGatewayEvent
+- uid: Remora.Discord.API.Abstractions.Gateway.IGatewayPayloadData
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.IGatewayPayloadData
+  parent: Remora.Discord.API.Abstractions.Gateway
+  href: Remora.Discord.API.Abstractions.Gateway.IGatewayPayloadData.html
+  name: IGatewayPayloadData
+  nameWithType: IGatewayPayloadData
+  fullName: Remora.Discord.API.Abstractions.Gateway.IGatewayPayloadData
+- uid: System.IEquatable{Remora.Discord.API.Gateway.Events.MessagePollVoteAdd}
+  commentId: T:System.IEquatable{Remora.Discord.API.Gateway.Events.MessagePollVoteAdd}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<MessagePollVoteAdd>
+  nameWithType: IEquatable<MessagePollVoteAdd>
+  fullName: System.IEquatable<Remora.Discord.API.Gateway.Events.MessagePollVoteAdd>
+  nameWithType.vb: IEquatable(Of MessagePollVoteAdd)
+  fullName.vb: System.IEquatable(Of Remora.Discord.API.Gateway.Events.MessagePollVoteAdd)
+  name.vb: IEquatable(Of MessagePollVoteAdd)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Remora.Discord.API.Gateway.Events.MessagePollVoteAdd
+    name: MessagePollVoteAdd
+    href: Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Gateway.Events.MessagePollVoteAdd
+    name: MessagePollVoteAdd
+    href: Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.API.Abstractions.Gateway.Events
+  commentId: N:Remora.Discord.API.Abstractions.Gateway.Events
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Gateway.Events
+  nameWithType: Remora.Discord.API.Abstractions.Gateway.Events
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events
+    name: Events
+    href: Remora.Discord.API.Abstractions.Gateway.Events.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events
+    name: Events
+    href: Remora.Discord.API.Abstractions.Gateway.Events.html
+- uid: Remora.Discord.API.Abstractions.Gateway
+  commentId: N:Remora.Discord.API.Abstractions.Gateway
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Gateway
+  nameWithType: Remora.Discord.API.Abstractions.Gateway
+  fullName: Remora.Discord.API.Abstractions.Gateway
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.#ctor*
+  commentId: Overload:Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.#ctor
+  href: Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.html#Remora_Discord_API_Gateway_Events_MessagePollVoteAdd__ctor_Remora_Rest_Core_Snowflake_Remora_Rest_Core_Snowflake_Remora_Rest_Core_Snowflake_System_Int32_Remora_Rest_Core_Optional_Remora_Rest_Core_Snowflake__
+  name: MessagePollVoteAdd
+  nameWithType: MessagePollVoteAdd.MessagePollVoteAdd
+  fullName: Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.MessagePollVoteAdd
+  nameWithType.vb: MessagePollVoteAdd.New
+  fullName.vb: Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.New
+  name.vb: New
+- uid: Remora.Rest.Core.Snowflake
+  commentId: T:Remora.Rest.Core.Snowflake
+  parent: Remora.Rest.Core
+  isExternal: true
+  name: Snowflake
+  nameWithType: Snowflake
+  fullName: Remora.Rest.Core.Snowflake
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  name: Optional<Snowflake>
+  nameWithType: Optional<Snowflake>
+  fullName: Remora.Rest.Core.Optional<Remora.Rest.Core.Snowflake>
+  nameWithType.vb: Optional(Of Snowflake)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Rest.Core.Snowflake)
+  name.vb: Optional(Of Snowflake)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+- uid: Remora.Rest.Core.Optional`1
+  commentId: T:Remora.Rest.Core.Optional`1
+  isExternal: true
+  name: Optional<TValue>
+  nameWithType: Optional<TValue>
+  fullName: Remora.Rest.Core.Optional<TValue>
+  nameWithType.vb: Optional(Of TValue)
+  fullName.vb: Remora.Rest.Core.Optional(Of TValue)
+  name.vb: Optional(Of TValue)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.UserID*
+  commentId: Overload:Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.UserID
+  href: Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.html#Remora_Discord_API_Gateway_Events_MessagePollVoteAdd_UserID
+  name: UserID
+  nameWithType: MessagePollVoteAdd.UserID
+  fullName: Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.UserID
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IMessagePollVoteAdd.UserID
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Events.IMessagePollVoteAdd.UserID
+  parent: Remora.Discord.API.Abstractions.Gateway.Events.IMessagePollVoteAdd
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IMessagePollVoteAdd.html#Remora_Discord_API_Abstractions_Gateway_Events_IMessagePollVoteAdd_UserID
+  name: UserID
+  nameWithType: IMessagePollVoteAdd.UserID
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IMessagePollVoteAdd.UserID
+- uid: Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.ChannelID*
+  commentId: Overload:Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.ChannelID
+  href: Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.html#Remora_Discord_API_Gateway_Events_MessagePollVoteAdd_ChannelID
+  name: ChannelID
+  nameWithType: MessagePollVoteAdd.ChannelID
+  fullName: Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.ChannelID
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IMessagePollVoteAdd.ChannelID
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Events.IMessagePollVoteAdd.ChannelID
+  parent: Remora.Discord.API.Abstractions.Gateway.Events.IMessagePollVoteAdd
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IMessagePollVoteAdd.html#Remora_Discord_API_Abstractions_Gateway_Events_IMessagePollVoteAdd_ChannelID
+  name: ChannelID
+  nameWithType: IMessagePollVoteAdd.ChannelID
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IMessagePollVoteAdd.ChannelID
+- uid: Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.MessageID*
+  commentId: Overload:Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.MessageID
+  href: Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.html#Remora_Discord_API_Gateway_Events_MessagePollVoteAdd_MessageID
+  name: MessageID
+  nameWithType: MessagePollVoteAdd.MessageID
+  fullName: Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.MessageID
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IMessagePollVoteAdd.MessageID
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Events.IMessagePollVoteAdd.MessageID
+  parent: Remora.Discord.API.Abstractions.Gateway.Events.IMessagePollVoteAdd
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IMessagePollVoteAdd.html#Remora_Discord_API_Abstractions_Gateway_Events_IMessagePollVoteAdd_MessageID
+  name: MessageID
+  nameWithType: IMessagePollVoteAdd.MessageID
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IMessagePollVoteAdd.MessageID
+- uid: Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.AnswerID*
+  commentId: Overload:Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.AnswerID
+  href: Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.html#Remora_Discord_API_Gateway_Events_MessagePollVoteAdd_AnswerID
+  name: AnswerID
+  nameWithType: MessagePollVoteAdd.AnswerID
+  fullName: Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.AnswerID
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IMessagePollVoteAdd.AnswerID
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Events.IMessagePollVoteAdd.AnswerID
+  parent: Remora.Discord.API.Abstractions.Gateway.Events.IMessagePollVoteAdd
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IMessagePollVoteAdd.html#Remora_Discord_API_Abstractions_Gateway_Events_IMessagePollVoteAdd_AnswerID
+  name: AnswerID
+  nameWithType: IMessagePollVoteAdd.AnswerID
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IMessagePollVoteAdd.AnswerID
+- uid: Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.GuildID*
+  commentId: Overload:Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.GuildID
+  href: Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.html#Remora_Discord_API_Gateway_Events_MessagePollVoteAdd_GuildID
+  name: GuildID
+  nameWithType: MessagePollVoteAdd.GuildID
+  fullName: Remora.Discord.API.Gateway.Events.MessagePollVoteAdd.GuildID
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IMessagePollVoteAdd.GuildID
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Events.IMessagePollVoteAdd.GuildID
+  parent: Remora.Discord.API.Abstractions.Gateway.Events.IMessagePollVoteAdd
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IMessagePollVoteAdd.html#Remora_Discord_API_Abstractions_Gateway_Events_IMessagePollVoteAdd_GuildID
+  name: GuildID
+  nameWithType: IMessagePollVoteAdd.GuildID
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IMessagePollVoteAdd.GuildID

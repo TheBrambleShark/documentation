@@ -1,0 +1,327 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState
+  id: IUpdateVoiceState
+  parent: Remora.Discord.API.Abstractions.Gateway.Commands
+  children:
+  - Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.ChannelID
+  - Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.GuildID
+  - Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.IsSelfDeafened
+  - Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.IsSelfMuted
+  langs:
+  - csharp
+  - vb
+  name: IUpdateVoiceState
+  nameWithType: IUpdateVoiceState
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState
+  type: Interface
+  source:
+    id: IUpdateVoiceState
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Commands\IUpdateVoiceState.cs
+    startLine: 30
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Commands
+  summary: Represents a command to update the voice state of the client.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public interface IUpdateVoiceState : IGatewayCommand, IGatewayPayloadData
+    content.vb: >-
+      <PublicAPI>
+
+      Public Interface IUpdateVoiceState Inherits IGatewayCommand, IGatewayPayloadData
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.GuildID
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.GuildID
+  id: GuildID
+  parent: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState
+  langs:
+  - csharp
+  - vb
+  name: GuildID
+  nameWithType: IUpdateVoiceState.GuildID
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.GuildID
+  type: Property
+  source:
+    id: GuildID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Commands\IUpdateVoiceState.cs
+    startLine: 36
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Commands
+  summary: Gets the guild that the status should be updated in.
+  example: []
+  syntax:
+    content: Snowflake GuildID { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Snowflake
+    content.vb: ReadOnly Property GuildID As Snowflake
+  overload: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.GuildID*
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.ChannelID
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.ChannelID
+  id: ChannelID
+  parent: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState
+  langs:
+  - csharp
+  - vb
+  name: ChannelID
+  nameWithType: IUpdateVoiceState.ChannelID
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.ChannelID
+  type: Property
+  source:
+    id: ChannelID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Commands\IUpdateVoiceState.cs
+    startLine: 41
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Commands
+  summary: Gets the channel the client wants to join, or null if disconnecting.
+  example: []
+  syntax:
+    content: Snowflake? ChannelID { get; }
+    parameters: []
+    return:
+      type: System.Nullable{Remora.Rest.Core.Snowflake}
+    content.vb: ReadOnly Property ChannelID As Snowflake?
+  overload: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.ChannelID*
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.IsSelfMuted
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.IsSelfMuted
+  id: IsSelfMuted
+  parent: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState
+  langs:
+  - csharp
+  - vb
+  name: IsSelfMuted
+  nameWithType: IUpdateVoiceState.IsSelfMuted
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.IsSelfMuted
+  type: Property
+  source:
+    id: IsSelfMuted
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Commands\IUpdateVoiceState.cs
+    startLine: 46
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Commands
+  summary: Gets a value indicating whether the client is muted.
+  example: []
+  syntax:
+    content: bool IsSelfMuted { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsSelfMuted As Boolean
+  overload: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.IsSelfMuted*
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.IsSelfDeafened
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.IsSelfDeafened
+  id: IsSelfDeafened
+  parent: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState
+  langs:
+  - csharp
+  - vb
+  name: IsSelfDeafened
+  nameWithType: IUpdateVoiceState.IsSelfDeafened
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.IsSelfDeafened
+  type: Property
+  source:
+    id: IsSelfDeafened
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Commands\IUpdateVoiceState.cs
+    startLine: 51
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Commands
+  summary: Gets a value indicating whether the client is deafened.
+  example: []
+  syntax:
+    content: bool IsSelfDeafened { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsSelfDeafened As Boolean
+  overload: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.IsSelfDeafened*
+references:
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands
+  commentId: N:Remora.Discord.API.Abstractions.Gateway.Commands
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Gateway.Commands
+  nameWithType: Remora.Discord.API.Abstractions.Gateway.Commands
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway.Commands
+    name: Commands
+    href: Remora.Discord.API.Abstractions.Gateway.Commands.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway.Commands
+    name: Commands
+    href: Remora.Discord.API.Abstractions.Gateway.Commands.html
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.GuildID*
+  commentId: Overload:Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.GuildID
+  href: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.html#Remora_Discord_API_Abstractions_Gateway_Commands_IUpdateVoiceState_GuildID
+  name: GuildID
+  nameWithType: IUpdateVoiceState.GuildID
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.GuildID
+- uid: Remora.Rest.Core.Snowflake
+  commentId: T:Remora.Rest.Core.Snowflake
+  parent: Remora.Rest.Core
+  isExternal: true
+  name: Snowflake
+  nameWithType: Snowflake
+  fullName: Remora.Rest.Core.Snowflake
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.ChannelID*
+  commentId: Overload:Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.ChannelID
+  href: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.html#Remora_Discord_API_Abstractions_Gateway_Commands_IUpdateVoiceState_ChannelID
+  name: ChannelID
+  nameWithType: IUpdateVoiceState.ChannelID
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.ChannelID
+- uid: System.Nullable{Remora.Rest.Core.Snowflake}
+  commentId: T:System.Nullable{Remora.Rest.Core.Snowflake}
+  parent: System
+  definition: System.Nullable`1
+  name: Snowflake?
+  nameWithType: Snowflake?
+  fullName: Remora.Rest.Core.Snowflake?
+  spec.csharp:
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '?'
+  spec.vb:
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.IsSelfMuted*
+  commentId: Overload:Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.IsSelfMuted
+  href: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.html#Remora_Discord_API_Abstractions_Gateway_Commands_IUpdateVoiceState_IsSelfMuted
+  name: IsSelfMuted
+  nameWithType: IUpdateVoiceState.IsSelfMuted
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.IsSelfMuted
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.IsSelfDeafened*
+  commentId: Overload:Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.IsSelfDeafened
+  href: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.html#Remora_Discord_API_Abstractions_Gateway_Commands_IUpdateVoiceState_IsSelfDeafened
+  name: IsSelfDeafened
+  nameWithType: IUpdateVoiceState.IsSelfDeafened
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IUpdateVoiceState.IsSelfDeafened

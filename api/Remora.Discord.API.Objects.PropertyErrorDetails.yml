@@ -1,0 +1,747 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Objects.PropertyErrorDetails
+  commentId: T:Remora.Discord.API.Objects.PropertyErrorDetails
+  id: PropertyErrorDetails
+  parent: Remora.Discord.API.Objects
+  children:
+  - Remora.Discord.API.Objects.PropertyErrorDetails.#ctor(System.Collections.Generic.IReadOnlyDictionary{System.String,Remora.Discord.API.Abstractions.Objects.IPropertyErrorDetails},System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IErrorDetails})
+  - Remora.Discord.API.Objects.PropertyErrorDetails.Errors
+  - Remora.Discord.API.Objects.PropertyErrorDetails.MemberErrors
+  langs:
+  - csharp
+  - vb
+  name: PropertyErrorDetails
+  nameWithType: PropertyErrorDetails
+  fullName: Remora.Discord.API.Objects.PropertyErrorDetails
+  type: Class
+  source:
+    id: PropertyErrorDetails
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Errors\PropertyErrorDetails.cs
+    startLine: 31
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Represents detailed information about errors in a property from Discord.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public record PropertyErrorDetails : IPropertyErrorDetails, IEquatable<PropertyErrorDetails>
+    content.vb: >-
+      <PublicAPI>
+
+      Public Class PropertyErrorDetails Implements IPropertyErrorDetails, IEquatable(Of PropertyErrorDetails)
+  inheritance:
+  - System.Object
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPropertyErrorDetails
+  - System.IEquatable{Remora.Discord.API.Objects.PropertyErrorDetails}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Objects.PropertyErrorDetails.#ctor(System.Collections.Generic.IReadOnlyDictionary{System.String,Remora.Discord.API.Abstractions.Objects.IPropertyErrorDetails},System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IErrorDetails})
+  commentId: M:Remora.Discord.API.Objects.PropertyErrorDetails.#ctor(System.Collections.Generic.IReadOnlyDictionary{System.String,Remora.Discord.API.Abstractions.Objects.IPropertyErrorDetails},System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IErrorDetails})
+  id: '#ctor(System.Collections.Generic.IReadOnlyDictionary{System.String,Remora.Discord.API.Abstractions.Objects.IPropertyErrorDetails},System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IErrorDetails})'
+  parent: Remora.Discord.API.Objects.PropertyErrorDetails
+  langs:
+  - csharp
+  - vb
+  name: PropertyErrorDetails(IReadOnlyDictionary<string, IPropertyErrorDetails>?, IReadOnlyList<IErrorDetails>?)
+  nameWithType: PropertyErrorDetails.PropertyErrorDetails(IReadOnlyDictionary<string, IPropertyErrorDetails>?, IReadOnlyList<IErrorDetails>?)
+  fullName: Remora.Discord.API.Objects.PropertyErrorDetails.PropertyErrorDetails(System.Collections.Generic.IReadOnlyDictionary<string, Remora.Discord.API.Abstractions.Objects.IPropertyErrorDetails>?, System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.IErrorDetails>?)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Errors\PropertyErrorDetails.cs
+    startLine: 31
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Represents detailed information about errors in a property from Discord.
+  example: []
+  syntax:
+    content: public PropertyErrorDetails(IReadOnlyDictionary<string, IPropertyErrorDetails>? MemberErrors = null, IReadOnlyList<IErrorDetails>? Errors = null)
+    parameters:
+    - id: MemberErrors
+      type: System.Collections.Generic.IReadOnlyDictionary{System.String,Remora.Discord.API.Abstractions.Objects.IPropertyErrorDetails}
+    - id: Errors
+      type: System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IErrorDetails}
+    content.vb: Public Sub New(MemberErrors As IReadOnlyDictionary(Of String, IPropertyErrorDetails) = Nothing, Errors As IReadOnlyList(Of IErrorDetails) = Nothing)
+  overload: Remora.Discord.API.Objects.PropertyErrorDetails.#ctor*
+  nameWithType.vb: PropertyErrorDetails.New(IReadOnlyDictionary(Of String, IPropertyErrorDetails), IReadOnlyList(Of IErrorDetails))
+  fullName.vb: Remora.Discord.API.Objects.PropertyErrorDetails.New(System.Collections.Generic.IReadOnlyDictionary(Of String, Remora.Discord.API.Abstractions.Objects.IPropertyErrorDetails), System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.IErrorDetails))
+  name.vb: New(IReadOnlyDictionary(Of String, IPropertyErrorDetails), IReadOnlyList(Of IErrorDetails))
+- uid: Remora.Discord.API.Objects.PropertyErrorDetails.MemberErrors
+  commentId: P:Remora.Discord.API.Objects.PropertyErrorDetails.MemberErrors
+  id: MemberErrors
+  parent: Remora.Discord.API.Objects.PropertyErrorDetails
+  langs:
+  - csharp
+  - vb
+  name: MemberErrors
+  nameWithType: PropertyErrorDetails.MemberErrors
+  fullName: Remora.Discord.API.Objects.PropertyErrorDetails.MemberErrors
+  type: Property
+  source:
+    id: MemberErrors
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Errors\PropertyErrorDetails.cs
+    startLine: 34
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: >-
+    Gets a set of error details regarding inner properties, if any. If the property is an array, the key
+
+    corresponds to the index in the array.
+  example: []
+  syntax:
+    content: public IReadOnlyDictionary<string, IPropertyErrorDetails>? MemberErrors { get; init; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyDictionary{System.String,Remora.Discord.API.Abstractions.Objects.IPropertyErrorDetails}
+    content.vb: Public Property MemberErrors As IReadOnlyDictionary(Of String, IPropertyErrorDetails)
+  overload: Remora.Discord.API.Objects.PropertyErrorDetails.MemberErrors*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPropertyErrorDetails.MemberErrors
+- uid: Remora.Discord.API.Objects.PropertyErrorDetails.Errors
+  commentId: P:Remora.Discord.API.Objects.PropertyErrorDetails.Errors
+  id: Errors
+  parent: Remora.Discord.API.Objects.PropertyErrorDetails
+  langs:
+  - csharp
+  - vb
+  name: Errors
+  nameWithType: PropertyErrorDetails.Errors
+  fullName: Remora.Discord.API.Objects.PropertyErrorDetails.Errors
+  type: Property
+  source:
+    id: Errors
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Errors\PropertyErrorDetails.cs
+    startLine: 35
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets a list of error details regarding this property, if any.
+  example: []
+  syntax:
+    content: public IReadOnlyList<IErrorDetails>? Errors { get; init; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IErrorDetails}
+    content.vb: Public Property Errors As IReadOnlyList(Of IErrorDetails)
+  overload: Remora.Discord.API.Objects.PropertyErrorDetails.Errors*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPropertyErrorDetails.Errors
+references:
+- uid: Remora.Discord.API.Objects
+  commentId: N:Remora.Discord.API.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Objects
+  nameWithType: Remora.Discord.API.Objects
+  fullName: Remora.Discord.API.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Objects
+    name: Objects
+    href: Remora.Discord.API.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Objects
+    name: Objects
+    href: Remora.Discord.API.Objects.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Remora.Discord.API.Abstractions.Objects.IPropertyErrorDetails
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IPropertyErrorDetails
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IPropertyErrorDetails.html
+  name: IPropertyErrorDetails
+  nameWithType: IPropertyErrorDetails
+  fullName: Remora.Discord.API.Abstractions.Objects.IPropertyErrorDetails
+- uid: System.IEquatable{Remora.Discord.API.Objects.PropertyErrorDetails}
+  commentId: T:System.IEquatable{Remora.Discord.API.Objects.PropertyErrorDetails}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<PropertyErrorDetails>
+  nameWithType: IEquatable<PropertyErrorDetails>
+  fullName: System.IEquatable<Remora.Discord.API.Objects.PropertyErrorDetails>
+  nameWithType.vb: IEquatable(Of PropertyErrorDetails)
+  fullName.vb: System.IEquatable(Of Remora.Discord.API.Objects.PropertyErrorDetails)
+  name.vb: IEquatable(Of PropertyErrorDetails)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Remora.Discord.API.Objects.PropertyErrorDetails
+    name: PropertyErrorDetails
+    href: Remora.Discord.API.Objects.PropertyErrorDetails.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Objects.PropertyErrorDetails
+    name: PropertyErrorDetails
+    href: Remora.Discord.API.Objects.PropertyErrorDetails.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.API.Abstractions.Objects
+  commentId: N:Remora.Discord.API.Abstractions.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Objects
+  nameWithType: Remora.Discord.API.Abstractions.Objects
+  fullName: Remora.Discord.API.Abstractions.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Remora.Discord.API.Objects.PropertyErrorDetails.#ctor*
+  commentId: Overload:Remora.Discord.API.Objects.PropertyErrorDetails.#ctor
+  href: Remora.Discord.API.Objects.PropertyErrorDetails.html#Remora_Discord_API_Objects_PropertyErrorDetails__ctor_System_Collections_Generic_IReadOnlyDictionary_System_String_Remora_Discord_API_Abstractions_Objects_IPropertyErrorDetails__System_Collections_Generic_IReadOnlyList_Remora_Discord_API_Abstractions_Objects_IErrorDetails__
+  name: PropertyErrorDetails
+  nameWithType: PropertyErrorDetails.PropertyErrorDetails
+  fullName: Remora.Discord.API.Objects.PropertyErrorDetails.PropertyErrorDetails
+  nameWithType.vb: PropertyErrorDetails.New
+  fullName.vb: Remora.Discord.API.Objects.PropertyErrorDetails.New
+  name.vb: New
+- uid: System.Collections.Generic.IReadOnlyDictionary{System.String,Remora.Discord.API.Abstractions.Objects.IPropertyErrorDetails}
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary{System.String,Remora.Discord.API.Abstractions.Objects.IPropertyErrorDetails}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<string, IPropertyErrorDetails>
+  nameWithType: IReadOnlyDictionary<string, IPropertyErrorDetails>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<string, Remora.Discord.API.Abstractions.Objects.IPropertyErrorDetails>
+  nameWithType.vb: IReadOnlyDictionary(Of String, IPropertyErrorDetails)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of String, Remora.Discord.API.Abstractions.Objects.IPropertyErrorDetails)
+  name.vb: IReadOnlyDictionary(Of String, IPropertyErrorDetails)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IPropertyErrorDetails
+    name: IPropertyErrorDetails
+    href: Remora.Discord.API.Abstractions.Objects.IPropertyErrorDetails.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IPropertyErrorDetails
+    name: IPropertyErrorDetails
+    href: Remora.Discord.API.Abstractions.Objects.IPropertyErrorDetails.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IErrorDetails}
+  commentId: T:System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IErrorDetails}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<IErrorDetails>
+  nameWithType: IReadOnlyList<IErrorDetails>
+  fullName: System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.IErrorDetails>
+  nameWithType.vb: IReadOnlyList(Of IErrorDetails)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.IErrorDetails)
+  name.vb: IReadOnlyList(Of IErrorDetails)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IErrorDetails
+    name: IErrorDetails
+    href: Remora.Discord.API.Abstractions.Objects.IErrorDetails.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IErrorDetails
+    name: IErrorDetails
+    href: Remora.Discord.API.Abstractions.Objects.IErrorDetails.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyDictionary`2
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<TKey, TValue>
+  nameWithType: IReadOnlyDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<TKey, TValue>
+  nameWithType.vb: IReadOnlyDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of TKey, TValue)
+  name.vb: IReadOnlyDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Remora.Discord.API.Objects.PropertyErrorDetails.MemberErrors*
+  commentId: Overload:Remora.Discord.API.Objects.PropertyErrorDetails.MemberErrors
+  href: Remora.Discord.API.Objects.PropertyErrorDetails.html#Remora_Discord_API_Objects_PropertyErrorDetails_MemberErrors
+  name: MemberErrors
+  nameWithType: PropertyErrorDetails.MemberErrors
+  fullName: Remora.Discord.API.Objects.PropertyErrorDetails.MemberErrors
+- uid: Remora.Discord.API.Abstractions.Objects.IPropertyErrorDetails.MemberErrors
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPropertyErrorDetails.MemberErrors
+  parent: Remora.Discord.API.Abstractions.Objects.IPropertyErrorDetails
+  href: Remora.Discord.API.Abstractions.Objects.IPropertyErrorDetails.html#Remora_Discord_API_Abstractions_Objects_IPropertyErrorDetails_MemberErrors
+  name: MemberErrors
+  nameWithType: IPropertyErrorDetails.MemberErrors
+  fullName: Remora.Discord.API.Abstractions.Objects.IPropertyErrorDetails.MemberErrors
+- uid: Remora.Discord.API.Objects.PropertyErrorDetails.Errors*
+  commentId: Overload:Remora.Discord.API.Objects.PropertyErrorDetails.Errors
+  href: Remora.Discord.API.Objects.PropertyErrorDetails.html#Remora_Discord_API_Objects_PropertyErrorDetails_Errors
+  name: Errors
+  nameWithType: PropertyErrorDetails.Errors
+  fullName: Remora.Discord.API.Objects.PropertyErrorDetails.Errors
+- uid: Remora.Discord.API.Abstractions.Objects.IPropertyErrorDetails.Errors
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPropertyErrorDetails.Errors
+  parent: Remora.Discord.API.Abstractions.Objects.IPropertyErrorDetails
+  href: Remora.Discord.API.Abstractions.Objects.IPropertyErrorDetails.html#Remora_Discord_API_Abstractions_Objects_IPropertyErrorDetails_Errors
+  name: Errors
+  nameWithType: IPropertyErrorDetails.Errors
+  fullName: Remora.Discord.API.Abstractions.Objects.IPropertyErrorDetails.Errors

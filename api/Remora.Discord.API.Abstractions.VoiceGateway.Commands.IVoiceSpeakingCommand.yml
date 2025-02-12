@@ -1,0 +1,275 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Abstractions.VoiceGateway.Commands.IVoiceSpeakingCommand
+  commentId: T:Remora.Discord.API.Abstractions.VoiceGateway.Commands.IVoiceSpeakingCommand
+  id: IVoiceSpeakingCommand
+  parent: Remora.Discord.API.Abstractions.VoiceGateway.Commands
+  children:
+  - Remora.Discord.API.Abstractions.VoiceGateway.Commands.IVoiceSpeakingCommand.Delay
+  - Remora.Discord.API.Abstractions.VoiceGateway.Commands.IVoiceSpeakingCommand.SSRC
+  - Remora.Discord.API.Abstractions.VoiceGateway.Commands.IVoiceSpeakingCommand.Speaking
+  langs:
+  - csharp
+  - vb
+  name: IVoiceSpeakingCommand
+  nameWithType: IVoiceSpeakingCommand
+  fullName: Remora.Discord.API.Abstractions.VoiceGateway.Commands.IVoiceSpeakingCommand
+  type: Interface
+  source:
+    id: IVoiceSpeakingCommand
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\VoiceGateway\Commands\IVoiceSpeakingCommand.cs
+    startLine: 29
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.VoiceGateway.Commands
+  summary: Represents a speaking update request.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public interface IVoiceSpeakingCommand : IVoiceGatewayCommand, IVoiceGatewayPayloadData
+    content.vb: >-
+      <PublicAPI>
+
+      Public Interface IVoiceSpeakingCommand Inherits IVoiceGatewayCommand, IVoiceGatewayPayloadData
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Abstractions.VoiceGateway.Commands.IVoiceSpeakingCommand.Speaking
+  commentId: P:Remora.Discord.API.Abstractions.VoiceGateway.Commands.IVoiceSpeakingCommand.Speaking
+  id: Speaking
+  parent: Remora.Discord.API.Abstractions.VoiceGateway.Commands.IVoiceSpeakingCommand
+  langs:
+  - csharp
+  - vb
+  name: Speaking
+  nameWithType: IVoiceSpeakingCommand.Speaking
+  fullName: Remora.Discord.API.Abstractions.VoiceGateway.Commands.IVoiceSpeakingCommand.Speaking
+  type: Property
+  source:
+    id: Speaking
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\VoiceGateway\Commands\IVoiceSpeakingCommand.cs
+    startLine: 35
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.VoiceGateway.Commands
+  summary: Gets the speaker flags.
+  example: []
+  syntax:
+    content: SpeakingFlags Speaking { get; }
+    parameters: []
+    return:
+      type: Remora.Discord.API.Abstractions.VoiceGateway.SpeakingFlags
+    content.vb: ReadOnly Property Speaking As SpeakingFlags
+  overload: Remora.Discord.API.Abstractions.VoiceGateway.Commands.IVoiceSpeakingCommand.Speaking*
+- uid: Remora.Discord.API.Abstractions.VoiceGateway.Commands.IVoiceSpeakingCommand.Delay
+  commentId: P:Remora.Discord.API.Abstractions.VoiceGateway.Commands.IVoiceSpeakingCommand.Delay
+  id: Delay
+  parent: Remora.Discord.API.Abstractions.VoiceGateway.Commands.IVoiceSpeakingCommand
+  langs:
+  - csharp
+  - vb
+  name: Delay
+  nameWithType: IVoiceSpeakingCommand.Delay
+  fullName: Remora.Discord.API.Abstractions.VoiceGateway.Commands.IVoiceSpeakingCommand.Delay
+  type: Property
+  source:
+    id: Delay
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\VoiceGateway\Commands\IVoiceSpeakingCommand.cs
+    startLine: 40
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.VoiceGateway.Commands
+  summary: Gets a defunct, but required field. Set to a value of 0 when sending.
+  example: []
+  syntax:
+    content: int Delay { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property Delay As Integer
+  overload: Remora.Discord.API.Abstractions.VoiceGateway.Commands.IVoiceSpeakingCommand.Delay*
+- uid: Remora.Discord.API.Abstractions.VoiceGateway.Commands.IVoiceSpeakingCommand.SSRC
+  commentId: P:Remora.Discord.API.Abstractions.VoiceGateway.Commands.IVoiceSpeakingCommand.SSRC
+  id: SSRC
+  parent: Remora.Discord.API.Abstractions.VoiceGateway.Commands.IVoiceSpeakingCommand
+  langs:
+  - csharp
+  - vb
+  name: SSRC
+  nameWithType: IVoiceSpeakingCommand.SSRC
+  fullName: Remora.Discord.API.Abstractions.VoiceGateway.Commands.IVoiceSpeakingCommand.SSRC
+  type: Property
+  source:
+    id: SSRC
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\VoiceGateway\Commands\IVoiceSpeakingCommand.cs
+    startLine: 45
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.VoiceGateway.Commands
+  summary: Gets the synchronization source ID that this speech event is associated with.
+  example: []
+  syntax:
+    content: uint SSRC { get; }
+    parameters: []
+    return:
+      type: System.UInt32
+    content.vb: ReadOnly Property SSRC As UInteger
+  overload: Remora.Discord.API.Abstractions.VoiceGateway.Commands.IVoiceSpeakingCommand.SSRC*
+references:
+- uid: Remora.Discord.API.Abstractions.VoiceGateway.Commands
+  commentId: N:Remora.Discord.API.Abstractions.VoiceGateway.Commands
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.VoiceGateway.Commands
+  nameWithType: Remora.Discord.API.Abstractions.VoiceGateway.Commands
+  fullName: Remora.Discord.API.Abstractions.VoiceGateway.Commands
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.VoiceGateway
+    name: VoiceGateway
+    href: Remora.Discord.API.Abstractions.VoiceGateway.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.VoiceGateway.Commands
+    name: Commands
+    href: Remora.Discord.API.Abstractions.VoiceGateway.Commands.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.VoiceGateway
+    name: VoiceGateway
+    href: Remora.Discord.API.Abstractions.VoiceGateway.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.VoiceGateway.Commands
+    name: Commands
+    href: Remora.Discord.API.Abstractions.VoiceGateway.Commands.html
+- uid: Remora.Discord.API.Abstractions.VoiceGateway.Commands.IVoiceSpeakingCommand.Speaking*
+  commentId: Overload:Remora.Discord.API.Abstractions.VoiceGateway.Commands.IVoiceSpeakingCommand.Speaking
+  href: Remora.Discord.API.Abstractions.VoiceGateway.Commands.IVoiceSpeakingCommand.html#Remora_Discord_API_Abstractions_VoiceGateway_Commands_IVoiceSpeakingCommand_Speaking
+  name: Speaking
+  nameWithType: IVoiceSpeakingCommand.Speaking
+  fullName: Remora.Discord.API.Abstractions.VoiceGateway.Commands.IVoiceSpeakingCommand.Speaking
+- uid: Remora.Discord.API.Abstractions.VoiceGateway.SpeakingFlags
+  commentId: T:Remora.Discord.API.Abstractions.VoiceGateway.SpeakingFlags
+  parent: Remora.Discord.API.Abstractions.VoiceGateway
+  href: Remora.Discord.API.Abstractions.VoiceGateway.SpeakingFlags.html
+  name: SpeakingFlags
+  nameWithType: SpeakingFlags
+  fullName: Remora.Discord.API.Abstractions.VoiceGateway.SpeakingFlags
+- uid: Remora.Discord.API.Abstractions.VoiceGateway
+  commentId: N:Remora.Discord.API.Abstractions.VoiceGateway
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.VoiceGateway
+  nameWithType: Remora.Discord.API.Abstractions.VoiceGateway
+  fullName: Remora.Discord.API.Abstractions.VoiceGateway
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.VoiceGateway
+    name: VoiceGateway
+    href: Remora.Discord.API.Abstractions.VoiceGateway.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.VoiceGateway
+    name: VoiceGateway
+    href: Remora.Discord.API.Abstractions.VoiceGateway.html
+- uid: Remora.Discord.API.Abstractions.VoiceGateway.Commands.IVoiceSpeakingCommand.Delay*
+  commentId: Overload:Remora.Discord.API.Abstractions.VoiceGateway.Commands.IVoiceSpeakingCommand.Delay
+  href: Remora.Discord.API.Abstractions.VoiceGateway.Commands.IVoiceSpeakingCommand.html#Remora_Discord_API_Abstractions_VoiceGateway_Commands_IVoiceSpeakingCommand_Delay
+  name: Delay
+  nameWithType: IVoiceSpeakingCommand.Delay
+  fullName: Remora.Discord.API.Abstractions.VoiceGateway.Commands.IVoiceSpeakingCommand.Delay
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.API.Abstractions.VoiceGateway.Commands.IVoiceSpeakingCommand.SSRC*
+  commentId: Overload:Remora.Discord.API.Abstractions.VoiceGateway.Commands.IVoiceSpeakingCommand.SSRC
+  href: Remora.Discord.API.Abstractions.VoiceGateway.Commands.IVoiceSpeakingCommand.html#Remora_Discord_API_Abstractions_VoiceGateway_Commands_IVoiceSpeakingCommand_SSRC
+  name: SSRC
+  nameWithType: IVoiceSpeakingCommand.SSRC
+  fullName: Remora.Discord.API.Abstractions.VoiceGateway.Commands.IVoiceSpeakingCommand.SSRC
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger

@@ -1,0 +1,1104 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Objects.Template
+  commentId: T:Remora.Discord.API.Objects.Template
+  id: Template
+  parent: Remora.Discord.API.Objects
+  children:
+  - Remora.Discord.API.Objects.Template.#ctor(System.String,System.String,System.String,System.Int32,Remora.Rest.Core.Snowflake,Remora.Discord.API.Abstractions.Objects.IUser,System.DateTimeOffset,System.DateTimeOffset,Remora.Rest.Core.Snowflake,Remora.Discord.API.Abstractions.Objects.IGuildTemplate,System.Nullable{System.Boolean})
+  - Remora.Discord.API.Objects.Template.Code
+  - Remora.Discord.API.Objects.Template.CreatedAt
+  - Remora.Discord.API.Objects.Template.Creator
+  - Remora.Discord.API.Objects.Template.CreatorID
+  - Remora.Discord.API.Objects.Template.Description
+  - Remora.Discord.API.Objects.Template.IsDirty
+  - Remora.Discord.API.Objects.Template.Name
+  - Remora.Discord.API.Objects.Template.SerializedSourceGuild
+  - Remora.Discord.API.Objects.Template.SourceGuildID
+  - Remora.Discord.API.Objects.Template.UpdatedAt
+  - Remora.Discord.API.Objects.Template.UsageCount
+  langs:
+  - csharp
+  - vb
+  name: Template
+  nameWithType: Template
+  fullName: Remora.Discord.API.Objects.Template
+  type: Class
+  source:
+    id: Template
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Templates\Template.cs
+    startLine: 32
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Represents a guild template.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public record Template : ITemplate, IEquatable<Template>
+    content.vb: >-
+      <PublicAPI>
+
+      Public Class Template Implements ITemplate, IEquatable(Of Template)
+  inheritance:
+  - System.Object
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.ITemplate
+  - System.IEquatable{Remora.Discord.API.Objects.Template}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Objects.Template.#ctor(System.String,System.String,System.String,System.Int32,Remora.Rest.Core.Snowflake,Remora.Discord.API.Abstractions.Objects.IUser,System.DateTimeOffset,System.DateTimeOffset,Remora.Rest.Core.Snowflake,Remora.Discord.API.Abstractions.Objects.IGuildTemplate,System.Nullable{System.Boolean})
+  commentId: M:Remora.Discord.API.Objects.Template.#ctor(System.String,System.String,System.String,System.Int32,Remora.Rest.Core.Snowflake,Remora.Discord.API.Abstractions.Objects.IUser,System.DateTimeOffset,System.DateTimeOffset,Remora.Rest.Core.Snowflake,Remora.Discord.API.Abstractions.Objects.IGuildTemplate,System.Nullable{System.Boolean})
+  id: '#ctor(System.String,System.String,System.String,System.Int32,Remora.Rest.Core.Snowflake,Remora.Discord.API.Abstractions.Objects.IUser,System.DateTimeOffset,System.DateTimeOffset,Remora.Rest.Core.Snowflake,Remora.Discord.API.Abstractions.Objects.IGuildTemplate,System.Nullable{System.Boolean})'
+  parent: Remora.Discord.API.Objects.Template
+  langs:
+  - csharp
+  - vb
+  name: Template(string, string, string?, int, Snowflake, IUser, DateTimeOffset, DateTimeOffset, Snowflake, IGuildTemplate, bool?)
+  nameWithType: Template.Template(string, string, string?, int, Snowflake, IUser, DateTimeOffset, DateTimeOffset, Snowflake, IGuildTemplate, bool?)
+  fullName: Remora.Discord.API.Objects.Template.Template(string, string, string?, int, Remora.Rest.Core.Snowflake, Remora.Discord.API.Abstractions.Objects.IUser, System.DateTimeOffset, System.DateTimeOffset, Remora.Rest.Core.Snowflake, Remora.Discord.API.Abstractions.Objects.IGuildTemplate, bool?)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Templates\Template.cs
+    startLine: 32
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Represents a guild template.
+  example: []
+  syntax:
+    content: public Template(string Code, string Name, string? Description, int UsageCount, Snowflake CreatorID, IUser Creator, DateTimeOffset CreatedAt, DateTimeOffset UpdatedAt, Snowflake SourceGuildID, IGuildTemplate SerializedSourceGuild, bool? IsDirty)
+    parameters:
+    - id: Code
+      type: System.String
+    - id: Name
+      type: System.String
+    - id: Description
+      type: System.String
+    - id: UsageCount
+      type: System.Int32
+    - id: CreatorID
+      type: Remora.Rest.Core.Snowflake
+    - id: Creator
+      type: Remora.Discord.API.Abstractions.Objects.IUser
+    - id: CreatedAt
+      type: System.DateTimeOffset
+    - id: UpdatedAt
+      type: System.DateTimeOffset
+    - id: SourceGuildID
+      type: Remora.Rest.Core.Snowflake
+    - id: SerializedSourceGuild
+      type: Remora.Discord.API.Abstractions.Objects.IGuildTemplate
+    - id: IsDirty
+      type: System.Nullable{System.Boolean}
+    content.vb: Public Sub New(Code As String, Name As String, Description As String, UsageCount As Integer, CreatorID As Snowflake, Creator As IUser, CreatedAt As DateTimeOffset, UpdatedAt As DateTimeOffset, SourceGuildID As Snowflake, SerializedSourceGuild As IGuildTemplate, IsDirty As Boolean?)
+  overload: Remora.Discord.API.Objects.Template.#ctor*
+  nameWithType.vb: Template.New(String, String, String, Integer, Snowflake, IUser, DateTimeOffset, DateTimeOffset, Snowflake, IGuildTemplate, Boolean?)
+  fullName.vb: Remora.Discord.API.Objects.Template.New(String, String, String, Integer, Remora.Rest.Core.Snowflake, Remora.Discord.API.Abstractions.Objects.IUser, System.DateTimeOffset, System.DateTimeOffset, Remora.Rest.Core.Snowflake, Remora.Discord.API.Abstractions.Objects.IGuildTemplate, Boolean?)
+  name.vb: New(String, String, String, Integer, Snowflake, IUser, DateTimeOffset, DateTimeOffset, Snowflake, IGuildTemplate, Boolean?)
+- uid: Remora.Discord.API.Objects.Template.Code
+  commentId: P:Remora.Discord.API.Objects.Template.Code
+  id: Code
+  parent: Remora.Discord.API.Objects.Template
+  langs:
+  - csharp
+  - vb
+  name: Code
+  nameWithType: Template.Code
+  fullName: Remora.Discord.API.Objects.Template.Code
+  type: Property
+  source:
+    id: Code
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Templates\Template.cs
+    startLine: 35
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the template code (a unique ID).
+  example: []
+  syntax:
+    content: public string Code { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Code As String
+  overload: Remora.Discord.API.Objects.Template.Code*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.ITemplate.Code
+- uid: Remora.Discord.API.Objects.Template.Name
+  commentId: P:Remora.Discord.API.Objects.Template.Name
+  id: Name
+  parent: Remora.Discord.API.Objects.Template
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: Template.Name
+  fullName: Remora.Discord.API.Objects.Template.Name
+  type: Property
+  source:
+    id: Name
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Templates\Template.cs
+    startLine: 36
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the name of the template.
+  example: []
+  syntax:
+    content: public string Name { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: Remora.Discord.API.Objects.Template.Name*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.ITemplate.Name
+- uid: Remora.Discord.API.Objects.Template.Description
+  commentId: P:Remora.Discord.API.Objects.Template.Description
+  id: Description
+  parent: Remora.Discord.API.Objects.Template
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: Template.Description
+  fullName: Remora.Discord.API.Objects.Template.Description
+  type: Property
+  source:
+    id: Description
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Templates\Template.cs
+    startLine: 37
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the description for the template.
+  example: []
+  syntax:
+    content: public string? Description { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Description As String
+  overload: Remora.Discord.API.Objects.Template.Description*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.ITemplate.Description
+- uid: Remora.Discord.API.Objects.Template.UsageCount
+  commentId: P:Remora.Discord.API.Objects.Template.UsageCount
+  id: UsageCount
+  parent: Remora.Discord.API.Objects.Template
+  langs:
+  - csharp
+  - vb
+  name: UsageCount
+  nameWithType: Template.UsageCount
+  fullName: Remora.Discord.API.Objects.Template.UsageCount
+  type: Property
+  source:
+    id: UsageCount
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Templates\Template.cs
+    startLine: 38
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the number of times this template has been used.
+  example: []
+  syntax:
+    content: public int UsageCount { get; init; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property UsageCount As Integer
+  overload: Remora.Discord.API.Objects.Template.UsageCount*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.ITemplate.UsageCount
+- uid: Remora.Discord.API.Objects.Template.CreatorID
+  commentId: P:Remora.Discord.API.Objects.Template.CreatorID
+  id: CreatorID
+  parent: Remora.Discord.API.Objects.Template
+  langs:
+  - csharp
+  - vb
+  name: CreatorID
+  nameWithType: Template.CreatorID
+  fullName: Remora.Discord.API.Objects.Template.CreatorID
+  type: Property
+  source:
+    id: CreatorID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Templates\Template.cs
+    startLine: 39
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the ID of the user who created the template.
+  example: []
+  syntax:
+    content: public Snowflake CreatorID { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Snowflake
+    content.vb: Public Property CreatorID As Snowflake
+  overload: Remora.Discord.API.Objects.Template.CreatorID*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.ITemplate.CreatorID
+- uid: Remora.Discord.API.Objects.Template.Creator
+  commentId: P:Remora.Discord.API.Objects.Template.Creator
+  id: Creator
+  parent: Remora.Discord.API.Objects.Template
+  langs:
+  - csharp
+  - vb
+  name: Creator
+  nameWithType: Template.Creator
+  fullName: Remora.Discord.API.Objects.Template.Creator
+  type: Property
+  source:
+    id: Creator
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Templates\Template.cs
+    startLine: 40
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the user who created the template.
+  example: []
+  syntax:
+    content: public IUser Creator { get; init; }
+    parameters: []
+    return:
+      type: Remora.Discord.API.Abstractions.Objects.IUser
+    content.vb: Public Property Creator As IUser
+  overload: Remora.Discord.API.Objects.Template.Creator*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.ITemplate.Creator
+- uid: Remora.Discord.API.Objects.Template.CreatedAt
+  commentId: P:Remora.Discord.API.Objects.Template.CreatedAt
+  id: CreatedAt
+  parent: Remora.Discord.API.Objects.Template
+  langs:
+  - csharp
+  - vb
+  name: CreatedAt
+  nameWithType: Template.CreatedAt
+  fullName: Remora.Discord.API.Objects.Template.CreatedAt
+  type: Property
+  source:
+    id: CreatedAt
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Templates\Template.cs
+    startLine: 41
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the time when the template was created.
+  example: []
+  syntax:
+    content: public DateTimeOffset CreatedAt { get; init; }
+    parameters: []
+    return:
+      type: System.DateTimeOffset
+    content.vb: Public Property CreatedAt As DateTimeOffset
+  overload: Remora.Discord.API.Objects.Template.CreatedAt*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.ITemplate.CreatedAt
+- uid: Remora.Discord.API.Objects.Template.UpdatedAt
+  commentId: P:Remora.Discord.API.Objects.Template.UpdatedAt
+  id: UpdatedAt
+  parent: Remora.Discord.API.Objects.Template
+  langs:
+  - csharp
+  - vb
+  name: UpdatedAt
+  nameWithType: Template.UpdatedAt
+  fullName: Remora.Discord.API.Objects.Template.UpdatedAt
+  type: Property
+  source:
+    id: UpdatedAt
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Templates\Template.cs
+    startLine: 42
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the last time the template was updated.
+  example: []
+  syntax:
+    content: public DateTimeOffset UpdatedAt { get; init; }
+    parameters: []
+    return:
+      type: System.DateTimeOffset
+    content.vb: Public Property UpdatedAt As DateTimeOffset
+  overload: Remora.Discord.API.Objects.Template.UpdatedAt*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.ITemplate.UpdatedAt
+- uid: Remora.Discord.API.Objects.Template.SourceGuildID
+  commentId: P:Remora.Discord.API.Objects.Template.SourceGuildID
+  id: SourceGuildID
+  parent: Remora.Discord.API.Objects.Template
+  langs:
+  - csharp
+  - vb
+  name: SourceGuildID
+  nameWithType: Template.SourceGuildID
+  fullName: Remora.Discord.API.Objects.Template.SourceGuildID
+  type: Property
+  source:
+    id: SourceGuildID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Templates\Template.cs
+    startLine: 43
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the ID of the guild the template is based on.
+  example: []
+  syntax:
+    content: public Snowflake SourceGuildID { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Snowflake
+    content.vb: Public Property SourceGuildID As Snowflake
+  overload: Remora.Discord.API.Objects.Template.SourceGuildID*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.ITemplate.SourceGuildID
+- uid: Remora.Discord.API.Objects.Template.SerializedSourceGuild
+  commentId: P:Remora.Discord.API.Objects.Template.SerializedSourceGuild
+  id: SerializedSourceGuild
+  parent: Remora.Discord.API.Objects.Template
+  langs:
+  - csharp
+  - vb
+  name: SerializedSourceGuild
+  nameWithType: Template.SerializedSourceGuild
+  fullName: Remora.Discord.API.Objects.Template.SerializedSourceGuild
+  type: Property
+  source:
+    id: SerializedSourceGuild
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Templates\Template.cs
+    startLine: 44
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the guild snapshot this template contains.
+  example: []
+  syntax:
+    content: public IGuildTemplate SerializedSourceGuild { get; init; }
+    parameters: []
+    return:
+      type: Remora.Discord.API.Abstractions.Objects.IGuildTemplate
+    content.vb: Public Property SerializedSourceGuild As IGuildTemplate
+  overload: Remora.Discord.API.Objects.Template.SerializedSourceGuild*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.ITemplate.SerializedSourceGuild
+- uid: Remora.Discord.API.Objects.Template.IsDirty
+  commentId: P:Remora.Discord.API.Objects.Template.IsDirty
+  id: IsDirty
+  parent: Remora.Discord.API.Objects.Template
+  langs:
+  - csharp
+  - vb
+  name: IsDirty
+  nameWithType: Template.IsDirty
+  fullName: Remora.Discord.API.Objects.Template.IsDirty
+  type: Property
+  source:
+    id: IsDirty
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Templates\Template.cs
+    startLine: 45
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets a value indicating whether the template has unsynchronized changes.
+  example: []
+  syntax:
+    content: public bool? IsDirty { get; init; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Boolean}
+    content.vb: Public Property IsDirty As Boolean?
+  overload: Remora.Discord.API.Objects.Template.IsDirty*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.ITemplate.IsDirty
+references:
+- uid: Remora.Discord.API.Objects
+  commentId: N:Remora.Discord.API.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Objects
+  nameWithType: Remora.Discord.API.Objects
+  fullName: Remora.Discord.API.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Objects
+    name: Objects
+    href: Remora.Discord.API.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Objects
+    name: Objects
+    href: Remora.Discord.API.Objects.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Remora.Discord.API.Abstractions.Objects.ITemplate
+  commentId: T:Remora.Discord.API.Abstractions.Objects.ITemplate
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.ITemplate.html
+  name: ITemplate
+  nameWithType: ITemplate
+  fullName: Remora.Discord.API.Abstractions.Objects.ITemplate
+- uid: System.IEquatable{Remora.Discord.API.Objects.Template}
+  commentId: T:System.IEquatable{Remora.Discord.API.Objects.Template}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<Template>
+  nameWithType: IEquatable<Template>
+  fullName: System.IEquatable<Remora.Discord.API.Objects.Template>
+  nameWithType.vb: IEquatable(Of Template)
+  fullName.vb: System.IEquatable(Of Remora.Discord.API.Objects.Template)
+  name.vb: IEquatable(Of Template)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Remora.Discord.API.Objects.Template
+    name: Template
+    href: Remora.Discord.API.Objects.Template.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Objects.Template
+    name: Template
+    href: Remora.Discord.API.Objects.Template.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.API.Abstractions.Objects
+  commentId: N:Remora.Discord.API.Abstractions.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Objects
+  nameWithType: Remora.Discord.API.Abstractions.Objects
+  fullName: Remora.Discord.API.Abstractions.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Remora.Discord.API.Objects.Template.#ctor*
+  commentId: Overload:Remora.Discord.API.Objects.Template.#ctor
+  href: Remora.Discord.API.Objects.Template.html#Remora_Discord_API_Objects_Template__ctor_System_String_System_String_System_String_System_Int32_Remora_Rest_Core_Snowflake_Remora_Discord_API_Abstractions_Objects_IUser_System_DateTimeOffset_System_DateTimeOffset_Remora_Rest_Core_Snowflake_Remora_Discord_API_Abstractions_Objects_IGuildTemplate_System_Nullable_System_Boolean__
+  name: Template
+  nameWithType: Template.Template
+  fullName: Remora.Discord.API.Objects.Template.Template
+  nameWithType.vb: Template.New
+  fullName.vb: Remora.Discord.API.Objects.Template.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Remora.Rest.Core.Snowflake
+  commentId: T:Remora.Rest.Core.Snowflake
+  parent: Remora.Rest.Core
+  isExternal: true
+  name: Snowflake
+  nameWithType: Snowflake
+  fullName: Remora.Rest.Core.Snowflake
+- uid: Remora.Discord.API.Abstractions.Objects.IUser
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IUser
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IUser.html
+  name: IUser
+  nameWithType: IUser
+  fullName: Remora.Discord.API.Abstractions.Objects.IUser
+- uid: System.DateTimeOffset
+  commentId: T:System.DateTimeOffset
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: Remora.Discord.API.Abstractions.Objects.IGuildTemplate
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IGuildTemplate
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IGuildTemplate.html
+  name: IGuildTemplate
+  nameWithType: IGuildTemplate
+  fullName: Remora.Discord.API.Abstractions.Objects.IGuildTemplate
+- uid: System.Nullable{System.Boolean}
+  commentId: T:System.Nullable{System.Boolean}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool?
+  nameWithType: bool?
+  fullName: bool?
+  nameWithType.vb: Boolean?
+  fullName.vb: Boolean?
+  name.vb: Boolean?
+  spec.csharp:
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+  spec.vb:
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Remora.Discord.API.Objects.Template.Code*
+  commentId: Overload:Remora.Discord.API.Objects.Template.Code
+  href: Remora.Discord.API.Objects.Template.html#Remora_Discord_API_Objects_Template_Code
+  name: Code
+  nameWithType: Template.Code
+  fullName: Remora.Discord.API.Objects.Template.Code
+- uid: Remora.Discord.API.Abstractions.Objects.ITemplate.Code
+  commentId: P:Remora.Discord.API.Abstractions.Objects.ITemplate.Code
+  parent: Remora.Discord.API.Abstractions.Objects.ITemplate
+  href: Remora.Discord.API.Abstractions.Objects.ITemplate.html#Remora_Discord_API_Abstractions_Objects_ITemplate_Code
+  name: Code
+  nameWithType: ITemplate.Code
+  fullName: Remora.Discord.API.Abstractions.Objects.ITemplate.Code
+- uid: Remora.Discord.API.Objects.Template.Name*
+  commentId: Overload:Remora.Discord.API.Objects.Template.Name
+  href: Remora.Discord.API.Objects.Template.html#Remora_Discord_API_Objects_Template_Name
+  name: Name
+  nameWithType: Template.Name
+  fullName: Remora.Discord.API.Objects.Template.Name
+- uid: Remora.Discord.API.Abstractions.Objects.ITemplate.Name
+  commentId: P:Remora.Discord.API.Abstractions.Objects.ITemplate.Name
+  parent: Remora.Discord.API.Abstractions.Objects.ITemplate
+  href: Remora.Discord.API.Abstractions.Objects.ITemplate.html#Remora_Discord_API_Abstractions_Objects_ITemplate_Name
+  name: Name
+  nameWithType: ITemplate.Name
+  fullName: Remora.Discord.API.Abstractions.Objects.ITemplate.Name
+- uid: Remora.Discord.API.Objects.Template.Description*
+  commentId: Overload:Remora.Discord.API.Objects.Template.Description
+  href: Remora.Discord.API.Objects.Template.html#Remora_Discord_API_Objects_Template_Description
+  name: Description
+  nameWithType: Template.Description
+  fullName: Remora.Discord.API.Objects.Template.Description
+- uid: Remora.Discord.API.Abstractions.Objects.ITemplate.Description
+  commentId: P:Remora.Discord.API.Abstractions.Objects.ITemplate.Description
+  parent: Remora.Discord.API.Abstractions.Objects.ITemplate
+  href: Remora.Discord.API.Abstractions.Objects.ITemplate.html#Remora_Discord_API_Abstractions_Objects_ITemplate_Description
+  name: Description
+  nameWithType: ITemplate.Description
+  fullName: Remora.Discord.API.Abstractions.Objects.ITemplate.Description
+- uid: Remora.Discord.API.Objects.Template.UsageCount*
+  commentId: Overload:Remora.Discord.API.Objects.Template.UsageCount
+  href: Remora.Discord.API.Objects.Template.html#Remora_Discord_API_Objects_Template_UsageCount
+  name: UsageCount
+  nameWithType: Template.UsageCount
+  fullName: Remora.Discord.API.Objects.Template.UsageCount
+- uid: Remora.Discord.API.Abstractions.Objects.ITemplate.UsageCount
+  commentId: P:Remora.Discord.API.Abstractions.Objects.ITemplate.UsageCount
+  parent: Remora.Discord.API.Abstractions.Objects.ITemplate
+  href: Remora.Discord.API.Abstractions.Objects.ITemplate.html#Remora_Discord_API_Abstractions_Objects_ITemplate_UsageCount
+  name: UsageCount
+  nameWithType: ITemplate.UsageCount
+  fullName: Remora.Discord.API.Abstractions.Objects.ITemplate.UsageCount
+- uid: Remora.Discord.API.Objects.Template.CreatorID*
+  commentId: Overload:Remora.Discord.API.Objects.Template.CreatorID
+  href: Remora.Discord.API.Objects.Template.html#Remora_Discord_API_Objects_Template_CreatorID
+  name: CreatorID
+  nameWithType: Template.CreatorID
+  fullName: Remora.Discord.API.Objects.Template.CreatorID
+- uid: Remora.Discord.API.Abstractions.Objects.ITemplate.CreatorID
+  commentId: P:Remora.Discord.API.Abstractions.Objects.ITemplate.CreatorID
+  parent: Remora.Discord.API.Abstractions.Objects.ITemplate
+  href: Remora.Discord.API.Abstractions.Objects.ITemplate.html#Remora_Discord_API_Abstractions_Objects_ITemplate_CreatorID
+  name: CreatorID
+  nameWithType: ITemplate.CreatorID
+  fullName: Remora.Discord.API.Abstractions.Objects.ITemplate.CreatorID
+- uid: Remora.Discord.API.Objects.Template.Creator*
+  commentId: Overload:Remora.Discord.API.Objects.Template.Creator
+  href: Remora.Discord.API.Objects.Template.html#Remora_Discord_API_Objects_Template_Creator
+  name: Creator
+  nameWithType: Template.Creator
+  fullName: Remora.Discord.API.Objects.Template.Creator
+- uid: Remora.Discord.API.Abstractions.Objects.ITemplate.Creator
+  commentId: P:Remora.Discord.API.Abstractions.Objects.ITemplate.Creator
+  parent: Remora.Discord.API.Abstractions.Objects.ITemplate
+  href: Remora.Discord.API.Abstractions.Objects.ITemplate.html#Remora_Discord_API_Abstractions_Objects_ITemplate_Creator
+  name: Creator
+  nameWithType: ITemplate.Creator
+  fullName: Remora.Discord.API.Abstractions.Objects.ITemplate.Creator
+- uid: Remora.Discord.API.Objects.Template.CreatedAt*
+  commentId: Overload:Remora.Discord.API.Objects.Template.CreatedAt
+  href: Remora.Discord.API.Objects.Template.html#Remora_Discord_API_Objects_Template_CreatedAt
+  name: CreatedAt
+  nameWithType: Template.CreatedAt
+  fullName: Remora.Discord.API.Objects.Template.CreatedAt
+- uid: Remora.Discord.API.Abstractions.Objects.ITemplate.CreatedAt
+  commentId: P:Remora.Discord.API.Abstractions.Objects.ITemplate.CreatedAt
+  parent: Remora.Discord.API.Abstractions.Objects.ITemplate
+  href: Remora.Discord.API.Abstractions.Objects.ITemplate.html#Remora_Discord_API_Abstractions_Objects_ITemplate_CreatedAt
+  name: CreatedAt
+  nameWithType: ITemplate.CreatedAt
+  fullName: Remora.Discord.API.Abstractions.Objects.ITemplate.CreatedAt
+- uid: Remora.Discord.API.Objects.Template.UpdatedAt*
+  commentId: Overload:Remora.Discord.API.Objects.Template.UpdatedAt
+  href: Remora.Discord.API.Objects.Template.html#Remora_Discord_API_Objects_Template_UpdatedAt
+  name: UpdatedAt
+  nameWithType: Template.UpdatedAt
+  fullName: Remora.Discord.API.Objects.Template.UpdatedAt
+- uid: Remora.Discord.API.Abstractions.Objects.ITemplate.UpdatedAt
+  commentId: P:Remora.Discord.API.Abstractions.Objects.ITemplate.UpdatedAt
+  parent: Remora.Discord.API.Abstractions.Objects.ITemplate
+  href: Remora.Discord.API.Abstractions.Objects.ITemplate.html#Remora_Discord_API_Abstractions_Objects_ITemplate_UpdatedAt
+  name: UpdatedAt
+  nameWithType: ITemplate.UpdatedAt
+  fullName: Remora.Discord.API.Abstractions.Objects.ITemplate.UpdatedAt
+- uid: Remora.Discord.API.Objects.Template.SourceGuildID*
+  commentId: Overload:Remora.Discord.API.Objects.Template.SourceGuildID
+  href: Remora.Discord.API.Objects.Template.html#Remora_Discord_API_Objects_Template_SourceGuildID
+  name: SourceGuildID
+  nameWithType: Template.SourceGuildID
+  fullName: Remora.Discord.API.Objects.Template.SourceGuildID
+- uid: Remora.Discord.API.Abstractions.Objects.ITemplate.SourceGuildID
+  commentId: P:Remora.Discord.API.Abstractions.Objects.ITemplate.SourceGuildID
+  parent: Remora.Discord.API.Abstractions.Objects.ITemplate
+  href: Remora.Discord.API.Abstractions.Objects.ITemplate.html#Remora_Discord_API_Abstractions_Objects_ITemplate_SourceGuildID
+  name: SourceGuildID
+  nameWithType: ITemplate.SourceGuildID
+  fullName: Remora.Discord.API.Abstractions.Objects.ITemplate.SourceGuildID
+- uid: Remora.Discord.API.Objects.Template.SerializedSourceGuild*
+  commentId: Overload:Remora.Discord.API.Objects.Template.SerializedSourceGuild
+  href: Remora.Discord.API.Objects.Template.html#Remora_Discord_API_Objects_Template_SerializedSourceGuild
+  name: SerializedSourceGuild
+  nameWithType: Template.SerializedSourceGuild
+  fullName: Remora.Discord.API.Objects.Template.SerializedSourceGuild
+- uid: Remora.Discord.API.Abstractions.Objects.ITemplate.SerializedSourceGuild
+  commentId: P:Remora.Discord.API.Abstractions.Objects.ITemplate.SerializedSourceGuild
+  parent: Remora.Discord.API.Abstractions.Objects.ITemplate
+  href: Remora.Discord.API.Abstractions.Objects.ITemplate.html#Remora_Discord_API_Abstractions_Objects_ITemplate_SerializedSourceGuild
+  name: SerializedSourceGuild
+  nameWithType: ITemplate.SerializedSourceGuild
+  fullName: Remora.Discord.API.Abstractions.Objects.ITemplate.SerializedSourceGuild
+- uid: Remora.Discord.API.Objects.Template.IsDirty*
+  commentId: Overload:Remora.Discord.API.Objects.Template.IsDirty
+  href: Remora.Discord.API.Objects.Template.html#Remora_Discord_API_Objects_Template_IsDirty
+  name: IsDirty
+  nameWithType: Template.IsDirty
+  fullName: Remora.Discord.API.Objects.Template.IsDirty
+- uid: Remora.Discord.API.Abstractions.Objects.ITemplate.IsDirty
+  commentId: P:Remora.Discord.API.Abstractions.Objects.ITemplate.IsDirty
+  parent: Remora.Discord.API.Abstractions.Objects.ITemplate
+  href: Remora.Discord.API.Abstractions.Objects.ITemplate.html#Remora_Discord_API_Abstractions_Objects_ITemplate_IsDirty
+  name: IsDirty
+  nameWithType: ITemplate.IsDirty
+  fullName: Remora.Discord.API.Abstractions.Objects.ITemplate.IsDirty

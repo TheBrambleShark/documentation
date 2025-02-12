@@ -1,0 +1,742 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Objects.GatewayEndpoint
+  commentId: T:Remora.Discord.API.Objects.GatewayEndpoint
+  id: GatewayEndpoint
+  parent: Remora.Discord.API.Objects
+  children:
+  - Remora.Discord.API.Objects.GatewayEndpoint.#ctor(System.String,Remora.Rest.Core.Optional{System.Int32},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.ISessionStartLimit})
+  - Remora.Discord.API.Objects.GatewayEndpoint.SessionStartLimit
+  - Remora.Discord.API.Objects.GatewayEndpoint.Shards
+  - Remora.Discord.API.Objects.GatewayEndpoint.Url
+  langs:
+  - csharp
+  - vb
+  name: GatewayEndpoint
+  nameWithType: GatewayEndpoint
+  fullName: Remora.Discord.API.Objects.GatewayEndpoint
+  type: Class
+  source:
+    id: GatewayEndpoint
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Gateway\GatewayEndpoint.cs
+    startLine: 31
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Represents a gateway endpoint.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public record GatewayEndpoint : IGatewayEndpoint, IEquatable<GatewayEndpoint>
+    content.vb: >-
+      <PublicAPI>
+
+      Public Class GatewayEndpoint Implements IGatewayEndpoint, IEquatable(Of GatewayEndpoint)
+  inheritance:
+  - System.Object
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IGatewayEndpoint
+  - System.IEquatable{Remora.Discord.API.Objects.GatewayEndpoint}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Objects.GatewayEndpoint.#ctor(System.String,Remora.Rest.Core.Optional{System.Int32},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.ISessionStartLimit})
+  commentId: M:Remora.Discord.API.Objects.GatewayEndpoint.#ctor(System.String,Remora.Rest.Core.Optional{System.Int32},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.ISessionStartLimit})
+  id: '#ctor(System.String,Remora.Rest.Core.Optional{System.Int32},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.ISessionStartLimit})'
+  parent: Remora.Discord.API.Objects.GatewayEndpoint
+  langs:
+  - csharp
+  - vb
+  name: GatewayEndpoint(string, Optional<int>, Optional<ISessionStartLimit>)
+  nameWithType: GatewayEndpoint.GatewayEndpoint(string, Optional<int>, Optional<ISessionStartLimit>)
+  fullName: Remora.Discord.API.Objects.GatewayEndpoint.GatewayEndpoint(string, Remora.Rest.Core.Optional<int>, Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.ISessionStartLimit>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Gateway\GatewayEndpoint.cs
+    startLine: 31
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Represents a gateway endpoint.
+  example: []
+  syntax:
+    content: public GatewayEndpoint(string Url, Optional<int> Shards = default, Optional<ISessionStartLimit> SessionStartLimit = default)
+    parameters:
+    - id: Url
+      type: System.String
+    - id: Shards
+      type: Remora.Rest.Core.Optional{System.Int32}
+    - id: SessionStartLimit
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.ISessionStartLimit}
+    content.vb: Public Sub New(Url As String, Shards As [Optional](Of Integer) = Nothing, SessionStartLimit As [Optional](Of ISessionStartLimit) = Nothing)
+  overload: Remora.Discord.API.Objects.GatewayEndpoint.#ctor*
+  nameWithType.vb: GatewayEndpoint.New(String, Optional(Of Integer), Optional(Of ISessionStartLimit))
+  fullName.vb: Remora.Discord.API.Objects.GatewayEndpoint.New(String, Remora.Rest.Core.Optional(Of Integer), Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.ISessionStartLimit))
+  name.vb: New(String, Optional(Of Integer), Optional(Of ISessionStartLimit))
+- uid: Remora.Discord.API.Objects.GatewayEndpoint.Url
+  commentId: P:Remora.Discord.API.Objects.GatewayEndpoint.Url
+  id: Url
+  parent: Remora.Discord.API.Objects.GatewayEndpoint
+  langs:
+  - csharp
+  - vb
+  name: Url
+  nameWithType: GatewayEndpoint.Url
+  fullName: Remora.Discord.API.Objects.GatewayEndpoint.Url
+  type: Property
+  source:
+    id: Url
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Gateway\GatewayEndpoint.cs
+    startLine: 34
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the gateway endpoint.
+  example: []
+  syntax:
+    content: public string Url { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Url As String
+  overload: Remora.Discord.API.Objects.GatewayEndpoint.Url*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IGatewayEndpoint.Url
+- uid: Remora.Discord.API.Objects.GatewayEndpoint.Shards
+  commentId: P:Remora.Discord.API.Objects.GatewayEndpoint.Shards
+  id: Shards
+  parent: Remora.Discord.API.Objects.GatewayEndpoint
+  langs:
+  - csharp
+  - vb
+  name: Shards
+  nameWithType: GatewayEndpoint.Shards
+  fullName: Remora.Discord.API.Objects.GatewayEndpoint.Shards
+  type: Property
+  source:
+    id: Shards
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Gateway\GatewayEndpoint.cs
+    startLine: 35
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the recommended number of shards to use when connecting.
+  example: []
+  syntax:
+    content: public Optional<int> Shards { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Int32}
+    content.vb: Public Property Shards As [Optional](Of Integer)
+  overload: Remora.Discord.API.Objects.GatewayEndpoint.Shards*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IGatewayEndpoint.Shards
+- uid: Remora.Discord.API.Objects.GatewayEndpoint.SessionStartLimit
+  commentId: P:Remora.Discord.API.Objects.GatewayEndpoint.SessionStartLimit
+  id: SessionStartLimit
+  parent: Remora.Discord.API.Objects.GatewayEndpoint
+  langs:
+  - csharp
+  - vb
+  name: SessionStartLimit
+  nameWithType: GatewayEndpoint.SessionStartLimit
+  fullName: Remora.Discord.API.Objects.GatewayEndpoint.SessionStartLimit
+  type: Property
+  source:
+    id: SessionStartLimit
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Gateway\GatewayEndpoint.cs
+    startLine: 36
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets information about the current session start limit.
+  example: []
+  syntax:
+    content: public Optional<ISessionStartLimit> SessionStartLimit { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.ISessionStartLimit}
+    content.vb: Public Property SessionStartLimit As [Optional](Of ISessionStartLimit)
+  overload: Remora.Discord.API.Objects.GatewayEndpoint.SessionStartLimit*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IGatewayEndpoint.SessionStartLimit
+references:
+- uid: Remora.Discord.API.Objects
+  commentId: N:Remora.Discord.API.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Objects
+  nameWithType: Remora.Discord.API.Objects
+  fullName: Remora.Discord.API.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Objects
+    name: Objects
+    href: Remora.Discord.API.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Objects
+    name: Objects
+    href: Remora.Discord.API.Objects.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Remora.Discord.API.Abstractions.Objects.IGatewayEndpoint
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IGatewayEndpoint
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IGatewayEndpoint.html
+  name: IGatewayEndpoint
+  nameWithType: IGatewayEndpoint
+  fullName: Remora.Discord.API.Abstractions.Objects.IGatewayEndpoint
+- uid: System.IEquatable{Remora.Discord.API.Objects.GatewayEndpoint}
+  commentId: T:System.IEquatable{Remora.Discord.API.Objects.GatewayEndpoint}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<GatewayEndpoint>
+  nameWithType: IEquatable<GatewayEndpoint>
+  fullName: System.IEquatable<Remora.Discord.API.Objects.GatewayEndpoint>
+  nameWithType.vb: IEquatable(Of GatewayEndpoint)
+  fullName.vb: System.IEquatable(Of Remora.Discord.API.Objects.GatewayEndpoint)
+  name.vb: IEquatable(Of GatewayEndpoint)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Remora.Discord.API.Objects.GatewayEndpoint
+    name: GatewayEndpoint
+    href: Remora.Discord.API.Objects.GatewayEndpoint.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Objects.GatewayEndpoint
+    name: GatewayEndpoint
+    href: Remora.Discord.API.Objects.GatewayEndpoint.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.API.Abstractions.Objects
+  commentId: N:Remora.Discord.API.Abstractions.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Objects
+  nameWithType: Remora.Discord.API.Abstractions.Objects
+  fullName: Remora.Discord.API.Abstractions.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Remora.Discord.API.Objects.GatewayEndpoint.#ctor*
+  commentId: Overload:Remora.Discord.API.Objects.GatewayEndpoint.#ctor
+  href: Remora.Discord.API.Objects.GatewayEndpoint.html#Remora_Discord_API_Objects_GatewayEndpoint__ctor_System_String_Remora_Rest_Core_Optional_System_Int32__Remora_Rest_Core_Optional_Remora_Discord_API_Abstractions_Objects_ISessionStartLimit__
+  name: GatewayEndpoint
+  nameWithType: GatewayEndpoint.GatewayEndpoint
+  fullName: Remora.Discord.API.Objects.GatewayEndpoint.GatewayEndpoint
+  nameWithType.vb: GatewayEndpoint.New
+  fullName.vb: Remora.Discord.API.Objects.GatewayEndpoint.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Remora.Rest.Core.Optional{System.Int32}
+  commentId: T:Remora.Rest.Core.Optional{System.Int32}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: Optional<int>
+  nameWithType: Optional<int>
+  fullName: Remora.Rest.Core.Optional<int>
+  nameWithType.vb: Optional(Of Integer)
+  fullName.vb: Remora.Rest.Core.Optional(Of Integer)
+  name.vb: Optional(Of Integer)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.ISessionStartLimit}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.ISessionStartLimit}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.html
+  name: Optional<ISessionStartLimit>
+  nameWithType: Optional<ISessionStartLimit>
+  fullName: Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.ISessionStartLimit>
+  nameWithType.vb: Optional(Of ISessionStartLimit)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.ISessionStartLimit)
+  name.vb: Optional(Of ISessionStartLimit)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.ISessionStartLimit
+    name: ISessionStartLimit
+    href: Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.ISessionStartLimit
+    name: ISessionStartLimit
+    href: Remora.Discord.API.Abstractions.Objects.ISessionStartLimit.html
+  - name: )
+- uid: Remora.Rest.Core.Optional`1
+  commentId: T:Remora.Rest.Core.Optional`1
+  isExternal: true
+  name: Optional<TValue>
+  nameWithType: Optional<TValue>
+  fullName: Remora.Rest.Core.Optional<TValue>
+  nameWithType.vb: Optional(Of TValue)
+  fullName.vb: Remora.Rest.Core.Optional(Of TValue)
+  name.vb: Optional(Of TValue)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+- uid: Remora.Discord.API.Objects.GatewayEndpoint.Url*
+  commentId: Overload:Remora.Discord.API.Objects.GatewayEndpoint.Url
+  href: Remora.Discord.API.Objects.GatewayEndpoint.html#Remora_Discord_API_Objects_GatewayEndpoint_Url
+  name: Url
+  nameWithType: GatewayEndpoint.Url
+  fullName: Remora.Discord.API.Objects.GatewayEndpoint.Url
+- uid: Remora.Discord.API.Abstractions.Objects.IGatewayEndpoint.Url
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IGatewayEndpoint.Url
+  parent: Remora.Discord.API.Abstractions.Objects.IGatewayEndpoint
+  href: Remora.Discord.API.Abstractions.Objects.IGatewayEndpoint.html#Remora_Discord_API_Abstractions_Objects_IGatewayEndpoint_Url
+  name: Url
+  nameWithType: IGatewayEndpoint.Url
+  fullName: Remora.Discord.API.Abstractions.Objects.IGatewayEndpoint.Url
+- uid: Remora.Discord.API.Objects.GatewayEndpoint.Shards*
+  commentId: Overload:Remora.Discord.API.Objects.GatewayEndpoint.Shards
+  href: Remora.Discord.API.Objects.GatewayEndpoint.html#Remora_Discord_API_Objects_GatewayEndpoint_Shards
+  name: Shards
+  nameWithType: GatewayEndpoint.Shards
+  fullName: Remora.Discord.API.Objects.GatewayEndpoint.Shards
+- uid: Remora.Discord.API.Abstractions.Objects.IGatewayEndpoint.Shards
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IGatewayEndpoint.Shards
+  parent: Remora.Discord.API.Abstractions.Objects.IGatewayEndpoint
+  href: Remora.Discord.API.Abstractions.Objects.IGatewayEndpoint.html#Remora_Discord_API_Abstractions_Objects_IGatewayEndpoint_Shards
+  name: Shards
+  nameWithType: IGatewayEndpoint.Shards
+  fullName: Remora.Discord.API.Abstractions.Objects.IGatewayEndpoint.Shards
+- uid: Remora.Discord.API.Objects.GatewayEndpoint.SessionStartLimit*
+  commentId: Overload:Remora.Discord.API.Objects.GatewayEndpoint.SessionStartLimit
+  href: Remora.Discord.API.Objects.GatewayEndpoint.html#Remora_Discord_API_Objects_GatewayEndpoint_SessionStartLimit
+  name: SessionStartLimit
+  nameWithType: GatewayEndpoint.SessionStartLimit
+  fullName: Remora.Discord.API.Objects.GatewayEndpoint.SessionStartLimit
+- uid: Remora.Discord.API.Abstractions.Objects.IGatewayEndpoint.SessionStartLimit
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IGatewayEndpoint.SessionStartLimit
+  parent: Remora.Discord.API.Abstractions.Objects.IGatewayEndpoint
+  href: Remora.Discord.API.Abstractions.Objects.IGatewayEndpoint.html#Remora_Discord_API_Abstractions_Objects_IGatewayEndpoint_SessionStartLimit
+  name: SessionStartLimit
+  nameWithType: IGatewayEndpoint.SessionStartLimit
+  fullName: Remora.Discord.API.Abstractions.Objects.IGatewayEndpoint.SessionStartLimit

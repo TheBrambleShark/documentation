@@ -1,0 +1,901 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Objects.PartialForumTag
+  commentId: T:Remora.Discord.API.Objects.PartialForumTag
+  id: PartialForumTag
+  parent: Remora.Discord.API.Objects
+  children:
+  - Remora.Discord.API.Objects.PartialForumTag.#ctor(Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{System.Nullable{Remora.Rest.Core.Snowflake}},Remora.Rest.Core.Optional{System.String})
+  - Remora.Discord.API.Objects.PartialForumTag.EmojiID
+  - Remora.Discord.API.Objects.PartialForumTag.EmojiName
+  - Remora.Discord.API.Objects.PartialForumTag.ID
+  - Remora.Discord.API.Objects.PartialForumTag.IsModerated
+  - Remora.Discord.API.Objects.PartialForumTag.Name
+  langs:
+  - csharp
+  - vb
+  name: PartialForumTag
+  nameWithType: PartialForumTag
+  fullName: Remora.Discord.API.Objects.PartialForumTag
+  type: Class
+  source:
+    id: PartialForumTag
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Channels\PartialForumTag.cs
+    startLine: 29
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Supports all classes in the .NET class hierarchy and provides low-level services to derived classes. This is the ultimate base class of all .NET classes; it is the root of the type hierarchy.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public record PartialForumTag : IPartialForumTag, IEquatable<PartialForumTag>
+    content.vb: >-
+      <PublicAPI>
+
+      Public Class PartialForumTag Implements IPartialForumTag, IEquatable(Of PartialForumTag)
+  inheritance:
+  - System.Object
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialForumTag
+  - System.IEquatable{Remora.Discord.API.Objects.PartialForumTag}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Objects.PartialForumTag.#ctor(Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{System.Nullable{Remora.Rest.Core.Snowflake}},Remora.Rest.Core.Optional{System.String})
+  commentId: M:Remora.Discord.API.Objects.PartialForumTag.#ctor(Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{System.Nullable{Remora.Rest.Core.Snowflake}},Remora.Rest.Core.Optional{System.String})
+  id: '#ctor(Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.Boolean},Remora.Rest.Core.Optional{System.Nullable{Remora.Rest.Core.Snowflake}},Remora.Rest.Core.Optional{System.String})'
+  parent: Remora.Discord.API.Objects.PartialForumTag
+  langs:
+  - csharp
+  - vb
+  name: PartialForumTag(Optional<Snowflake>, Optional<string>, Optional<bool>, Optional<Snowflake?>, Optional<string?>)
+  nameWithType: PartialForumTag.PartialForumTag(Optional<Snowflake>, Optional<string>, Optional<bool>, Optional<Snowflake?>, Optional<string?>)
+  fullName: Remora.Discord.API.Objects.PartialForumTag.PartialForumTag(Remora.Rest.Core.Optional<Remora.Rest.Core.Snowflake>, Remora.Rest.Core.Optional<string>, Remora.Rest.Core.Optional<bool>, Remora.Rest.Core.Optional<Remora.Rest.Core.Snowflake?>, Remora.Rest.Core.Optional<string?>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Channels\PartialForumTag.cs
+    startLine: 29
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  example: []
+  syntax:
+    content: public PartialForumTag(Optional<Snowflake> ID = default, Optional<string> Name = default, Optional<bool> IsModerated = default, Optional<Snowflake?> EmojiID = default, Optional<string?> EmojiName = default)
+    parameters:
+    - id: ID
+      type: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+    - id: Name
+      type: Remora.Rest.Core.Optional{System.String}
+    - id: IsModerated
+      type: Remora.Rest.Core.Optional{System.Boolean}
+    - id: EmojiID
+      type: Remora.Rest.Core.Optional{System.Nullable{Remora.Rest.Core.Snowflake}}
+    - id: EmojiName
+      type: Remora.Rest.Core.Optional{System.String}
+    content.vb: Public Sub New(ID As [Optional](Of Snowflake) = Nothing, Name As [Optional](Of String) = Nothing, IsModerated As [Optional](Of Boolean) = Nothing, EmojiID As [Optional](Of Snowflake?) = Nothing, EmojiName As [Optional](Of String) = Nothing)
+  overload: Remora.Discord.API.Objects.PartialForumTag.#ctor*
+  nameWithType.vb: PartialForumTag.New(Optional(Of Snowflake), Optional(Of String), Optional(Of Boolean), Optional(Of Snowflake?), Optional(Of String))
+  fullName.vb: Remora.Discord.API.Objects.PartialForumTag.New(Remora.Rest.Core.Optional(Of Remora.Rest.Core.Snowflake), Remora.Rest.Core.Optional(Of String), Remora.Rest.Core.Optional(Of Boolean), Remora.Rest.Core.Optional(Of Remora.Rest.Core.Snowflake?), Remora.Rest.Core.Optional(Of String))
+  name.vb: New(Optional(Of Snowflake), Optional(Of String), Optional(Of Boolean), Optional(Of Snowflake?), Optional(Of String))
+- uid: Remora.Discord.API.Objects.PartialForumTag.ID
+  commentId: P:Remora.Discord.API.Objects.PartialForumTag.ID
+  id: ID
+  parent: Remora.Discord.API.Objects.PartialForumTag
+  langs:
+  - csharp
+  - vb
+  name: ID
+  nameWithType: PartialForumTag.ID
+  fullName: Remora.Discord.API.Objects.PartialForumTag.ID
+  type: Property
+  source:
+    id: ID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Channels\PartialForumTag.cs
+    startLine: 32
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the ID of the tag.
+  example: []
+  syntax:
+    content: public Optional<Snowflake> ID { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+    content.vb: Public Property ID As [Optional](Of Snowflake)
+  overload: Remora.Discord.API.Objects.PartialForumTag.ID*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialForumTag.ID
+- uid: Remora.Discord.API.Objects.PartialForumTag.Name
+  commentId: P:Remora.Discord.API.Objects.PartialForumTag.Name
+  id: Name
+  parent: Remora.Discord.API.Objects.PartialForumTag
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: PartialForumTag.Name
+  fullName: Remora.Discord.API.Objects.PartialForumTag.Name
+  type: Property
+  source:
+    id: Name
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Channels\PartialForumTag.cs
+    startLine: 33
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the name of the tag.
+  example: []
+  syntax:
+    content: public Optional<string> Name { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.String}
+    content.vb: Public Property Name As [Optional](Of String)
+  overload: Remora.Discord.API.Objects.PartialForumTag.Name*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialForumTag.Name
+- uid: Remora.Discord.API.Objects.PartialForumTag.IsModerated
+  commentId: P:Remora.Discord.API.Objects.PartialForumTag.IsModerated
+  id: IsModerated
+  parent: Remora.Discord.API.Objects.PartialForumTag
+  langs:
+  - csharp
+  - vb
+  name: IsModerated
+  nameWithType: PartialForumTag.IsModerated
+  fullName: Remora.Discord.API.Objects.PartialForumTag.IsModerated
+  type: Property
+  source:
+    id: IsModerated
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Channels\PartialForumTag.cs
+    startLine: 34
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: >-
+    Gets a value indicating whether the tag can only be added or removed by someone with the
+
+    <xref href="Remora.Discord.API.Abstractions.Objects.DiscordPermission.ManageThreads" data-throw-if-not-resolved="false"></xref> permission.
+  example: []
+  syntax:
+    content: public Optional<bool> IsModerated { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Boolean}
+    content.vb: Public Property IsModerated As [Optional](Of Boolean)
+  overload: Remora.Discord.API.Objects.PartialForumTag.IsModerated*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialForumTag.IsModerated
+- uid: Remora.Discord.API.Objects.PartialForumTag.EmojiID
+  commentId: P:Remora.Discord.API.Objects.PartialForumTag.EmojiID
+  id: EmojiID
+  parent: Remora.Discord.API.Objects.PartialForumTag
+  langs:
+  - csharp
+  - vb
+  name: EmojiID
+  nameWithType: PartialForumTag.EmojiID
+  fullName: Remora.Discord.API.Objects.PartialForumTag.EmojiID
+  type: Property
+  source:
+    id: EmojiID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Channels\PartialForumTag.cs
+    startLine: 35
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the ID of the custom guild emoji to use.
+  remarks: >-
+    Discord's documentation is somewhat unclear as to whether this field is optional, nullable, or both. As as
+
+    result, we're hedging our bets here.
+  example: []
+  syntax:
+    content: public Optional<Snowflake?> EmojiID { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Nullable{Remora.Rest.Core.Snowflake}}
+    content.vb: Public Property EmojiID As [Optional](Of Snowflake?)
+  overload: Remora.Discord.API.Objects.PartialForumTag.EmojiID*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialForumTag.EmojiID
+- uid: Remora.Discord.API.Objects.PartialForumTag.EmojiName
+  commentId: P:Remora.Discord.API.Objects.PartialForumTag.EmojiName
+  id: EmojiName
+  parent: Remora.Discord.API.Objects.PartialForumTag
+  langs:
+  - csharp
+  - vb
+  name: EmojiName
+  nameWithType: PartialForumTag.EmojiName
+  fullName: Remora.Discord.API.Objects.PartialForumTag.EmojiName
+  type: Property
+  source:
+    id: EmojiName
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Channels\PartialForumTag.cs
+    startLine: 36
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the unicode string of the emoji to use.
+  remarks: >-
+    Discord's documentation is somewhat unclear as to whether this field is optional, nullable, or both. As as
+
+    result, we're hedging our bets here.
+  example: []
+  syntax:
+    content: public Optional<string?> EmojiName { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.String}
+    content.vb: Public Property EmojiName As [Optional](Of String)
+  overload: Remora.Discord.API.Objects.PartialForumTag.EmojiName*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IPartialForumTag.EmojiName
+references:
+- uid: Remora.Discord.API.Objects
+  commentId: N:Remora.Discord.API.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Objects
+  nameWithType: Remora.Discord.API.Objects
+  fullName: Remora.Discord.API.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Objects
+    name: Objects
+    href: Remora.Discord.API.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Objects
+    name: Objects
+    href: Remora.Discord.API.Objects.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialForumTag
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IPartialForumTag
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IPartialForumTag.html
+  name: IPartialForumTag
+  nameWithType: IPartialForumTag
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialForumTag
+- uid: System.IEquatable{Remora.Discord.API.Objects.PartialForumTag}
+  commentId: T:System.IEquatable{Remora.Discord.API.Objects.PartialForumTag}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<PartialForumTag>
+  nameWithType: IEquatable<PartialForumTag>
+  fullName: System.IEquatable<Remora.Discord.API.Objects.PartialForumTag>
+  nameWithType.vb: IEquatable(Of PartialForumTag)
+  fullName.vb: System.IEquatable(Of Remora.Discord.API.Objects.PartialForumTag)
+  name.vb: IEquatable(Of PartialForumTag)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Remora.Discord.API.Objects.PartialForumTag
+    name: PartialForumTag
+    href: Remora.Discord.API.Objects.PartialForumTag.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Objects.PartialForumTag
+    name: PartialForumTag
+    href: Remora.Discord.API.Objects.PartialForumTag.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.API.Abstractions.Objects
+  commentId: N:Remora.Discord.API.Abstractions.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Objects
+  nameWithType: Remora.Discord.API.Abstractions.Objects
+  fullName: Remora.Discord.API.Abstractions.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Remora.Discord.API.Objects.PartialForumTag.#ctor*
+  commentId: Overload:Remora.Discord.API.Objects.PartialForumTag.#ctor
+  href: Remora.Discord.API.Objects.PartialForumTag.html#Remora_Discord_API_Objects_PartialForumTag__ctor_Remora_Rest_Core_Optional_Remora_Rest_Core_Snowflake__Remora_Rest_Core_Optional_System_String__Remora_Rest_Core_Optional_System_Boolean__Remora_Rest_Core_Optional_System_Nullable_Remora_Rest_Core_Snowflake___Remora_Rest_Core_Optional_System_String__
+  name: PartialForumTag
+  nameWithType: PartialForumTag.PartialForumTag
+  fullName: Remora.Discord.API.Objects.PartialForumTag.PartialForumTag
+  nameWithType.vb: PartialForumTag.New
+  fullName.vb: Remora.Discord.API.Objects.PartialForumTag.New
+  name.vb: New
+- uid: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  name: Optional<Snowflake>
+  nameWithType: Optional<Snowflake>
+  fullName: Remora.Rest.Core.Optional<Remora.Rest.Core.Snowflake>
+  nameWithType.vb: Optional(Of Snowflake)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Rest.Core.Snowflake)
+  name.vb: Optional(Of Snowflake)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+- uid: Remora.Rest.Core.Optional{System.String}
+  commentId: T:Remora.Rest.Core.Optional{System.String}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Optional<string>
+  nameWithType: Optional<string>
+  fullName: Remora.Rest.Core.Optional<string>
+  nameWithType.vb: Optional(Of String)
+  fullName.vb: Remora.Rest.Core.Optional(Of String)
+  name.vb: Optional(Of String)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Remora.Rest.Core.Optional{System.Boolean}
+  commentId: T:Remora.Rest.Core.Optional{System.Boolean}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: Optional<bool>
+  nameWithType: Optional<bool>
+  fullName: Remora.Rest.Core.Optional<bool>
+  nameWithType.vb: Optional(Of Boolean)
+  fullName.vb: Remora.Rest.Core.Optional(Of Boolean)
+  name.vb: Optional(Of Boolean)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Remora.Rest.Core.Optional{System.Nullable{Remora.Rest.Core.Snowflake}}
+  commentId: T:Remora.Rest.Core.Optional{System.Nullable{Remora.Rest.Core.Snowflake}}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  name: Optional<Snowflake?>
+  nameWithType: Optional<Snowflake?>
+  fullName: Remora.Rest.Core.Optional<Remora.Rest.Core.Snowflake?>
+  nameWithType.vb: Optional(Of Snowflake?)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Rest.Core.Snowflake?)
+  name.vb: Optional(Of Snowflake?)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '?'
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '?'
+  - name: )
+- uid: Remora.Rest.Core.Optional`1
+  commentId: T:Remora.Rest.Core.Optional`1
+  isExternal: true
+  name: Optional<TValue>
+  nameWithType: Optional<TValue>
+  fullName: Remora.Rest.Core.Optional<TValue>
+  nameWithType.vb: Optional(Of TValue)
+  fullName.vb: Remora.Rest.Core.Optional(Of TValue)
+  name.vb: Optional(Of TValue)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+- uid: Remora.Discord.API.Objects.PartialForumTag.ID*
+  commentId: Overload:Remora.Discord.API.Objects.PartialForumTag.ID
+  href: Remora.Discord.API.Objects.PartialForumTag.html#Remora_Discord_API_Objects_PartialForumTag_ID
+  name: ID
+  nameWithType: PartialForumTag.ID
+  fullName: Remora.Discord.API.Objects.PartialForumTag.ID
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialForumTag.ID
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialForumTag.ID
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialForumTag
+  href: Remora.Discord.API.Abstractions.Objects.IPartialForumTag.html#Remora_Discord_API_Abstractions_Objects_IPartialForumTag_ID
+  name: ID
+  nameWithType: IPartialForumTag.ID
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialForumTag.ID
+- uid: Remora.Discord.API.Objects.PartialForumTag.Name*
+  commentId: Overload:Remora.Discord.API.Objects.PartialForumTag.Name
+  href: Remora.Discord.API.Objects.PartialForumTag.html#Remora_Discord_API_Objects_PartialForumTag_Name
+  name: Name
+  nameWithType: PartialForumTag.Name
+  fullName: Remora.Discord.API.Objects.PartialForumTag.Name
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialForumTag.Name
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialForumTag.Name
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialForumTag
+  href: Remora.Discord.API.Abstractions.Objects.IPartialForumTag.html#Remora_Discord_API_Abstractions_Objects_IPartialForumTag_Name
+  name: Name
+  nameWithType: IPartialForumTag.Name
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialForumTag.Name
+- uid: Remora.Discord.API.Abstractions.Objects.DiscordPermission.ManageThreads
+  commentId: F:Remora.Discord.API.Abstractions.Objects.DiscordPermission.ManageThreads
+  href: Remora.Discord.API.Abstractions.Objects.DiscordPermission.html#Remora_Discord_API_Abstractions_Objects_DiscordPermission_ManageThreads
+  name: ManageThreads
+  nameWithType: DiscordPermission.ManageThreads
+  fullName: Remora.Discord.API.Abstractions.Objects.DiscordPermission.ManageThreads
+- uid: Remora.Discord.API.Objects.PartialForumTag.IsModerated*
+  commentId: Overload:Remora.Discord.API.Objects.PartialForumTag.IsModerated
+  href: Remora.Discord.API.Objects.PartialForumTag.html#Remora_Discord_API_Objects_PartialForumTag_IsModerated
+  name: IsModerated
+  nameWithType: PartialForumTag.IsModerated
+  fullName: Remora.Discord.API.Objects.PartialForumTag.IsModerated
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialForumTag.IsModerated
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialForumTag.IsModerated
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialForumTag
+  href: Remora.Discord.API.Abstractions.Objects.IPartialForumTag.html#Remora_Discord_API_Abstractions_Objects_IPartialForumTag_IsModerated
+  name: IsModerated
+  nameWithType: IPartialForumTag.IsModerated
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialForumTag.IsModerated
+- uid: Remora.Discord.API.Objects.PartialForumTag.EmojiID*
+  commentId: Overload:Remora.Discord.API.Objects.PartialForumTag.EmojiID
+  href: Remora.Discord.API.Objects.PartialForumTag.html#Remora_Discord_API_Objects_PartialForumTag_EmojiID
+  name: EmojiID
+  nameWithType: PartialForumTag.EmojiID
+  fullName: Remora.Discord.API.Objects.PartialForumTag.EmojiID
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialForumTag.EmojiID
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialForumTag.EmojiID
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialForumTag
+  href: Remora.Discord.API.Abstractions.Objects.IPartialForumTag.html#Remora_Discord_API_Abstractions_Objects_IPartialForumTag_EmojiID
+  name: EmojiID
+  nameWithType: IPartialForumTag.EmojiID
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialForumTag.EmojiID
+- uid: Remora.Discord.API.Objects.PartialForumTag.EmojiName*
+  commentId: Overload:Remora.Discord.API.Objects.PartialForumTag.EmojiName
+  href: Remora.Discord.API.Objects.PartialForumTag.html#Remora_Discord_API_Objects_PartialForumTag_EmojiName
+  name: EmojiName
+  nameWithType: PartialForumTag.EmojiName
+  fullName: Remora.Discord.API.Objects.PartialForumTag.EmojiName
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialForumTag.EmojiName
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialForumTag.EmojiName
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialForumTag
+  href: Remora.Discord.API.Abstractions.Objects.IPartialForumTag.html#Remora_Discord_API_Abstractions_Objects_IPartialForumTag_EmojiName
+  name: EmojiName
+  nameWithType: IPartialForumTag.EmojiName
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialForumTag.EmojiName

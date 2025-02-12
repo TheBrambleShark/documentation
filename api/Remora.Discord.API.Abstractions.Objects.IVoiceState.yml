@@ -1,0 +1,775 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Abstractions.Objects.IVoiceState
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IVoiceState
+  id: IVoiceState
+  parent: Remora.Discord.API.Abstractions.Objects
+  children:
+  - Remora.Discord.API.Abstractions.Objects.IVoiceState.ChannelID
+  - Remora.Discord.API.Abstractions.Objects.IVoiceState.GuildID
+  - Remora.Discord.API.Abstractions.Objects.IVoiceState.IsDeafened
+  - Remora.Discord.API.Abstractions.Objects.IVoiceState.IsMuted
+  - Remora.Discord.API.Abstractions.Objects.IVoiceState.IsSelfDeafened
+  - Remora.Discord.API.Abstractions.Objects.IVoiceState.IsSelfMuted
+  - Remora.Discord.API.Abstractions.Objects.IVoiceState.IsStreaming
+  - Remora.Discord.API.Abstractions.Objects.IVoiceState.IsSuppressed
+  - Remora.Discord.API.Abstractions.Objects.IVoiceState.IsVideoEnabled
+  - Remora.Discord.API.Abstractions.Objects.IVoiceState.Member
+  - Remora.Discord.API.Abstractions.Objects.IVoiceState.RequestToSpeakTimestamp
+  - Remora.Discord.API.Abstractions.Objects.IVoiceState.SessionID
+  - Remora.Discord.API.Abstractions.Objects.IVoiceState.UserID
+  langs:
+  - csharp
+  - vb
+  name: IVoiceState
+  nameWithType: IVoiceState
+  fullName: Remora.Discord.API.Abstractions.Objects.IVoiceState
+  type: Interface
+  source:
+    id: IVoiceState
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Voice\IVoiceState.cs
+    startLine: 31
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Represents a user's voice connection status.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public interface IVoiceState : IPartialVoiceState
+    content.vb: >-
+      <PublicAPI>
+
+      Public Interface IVoiceState Inherits IPartialVoiceState
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Abstractions.Objects.IVoiceState.GuildID
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IVoiceState.GuildID
+  id: GuildID
+  parent: Remora.Discord.API.Abstractions.Objects.IVoiceState
+  langs:
+  - csharp
+  - vb
+  name: GuildID
+  nameWithType: IVoiceState.GuildID
+  fullName: Remora.Discord.API.Abstractions.Objects.IVoiceState.GuildID
+  type: Property
+  source:
+    id: GuildID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Voice\IVoiceState.cs
+    startLine: 37
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the guild ID this voice state is for.
+  example: []
+  syntax:
+    content: Optional<Snowflake> GuildID { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+    content.vb: ReadOnly Property GuildID As [Optional](Of Snowflake)
+  overload: Remora.Discord.API.Abstractions.Objects.IVoiceState.GuildID*
+- uid: Remora.Discord.API.Abstractions.Objects.IVoiceState.ChannelID
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IVoiceState.ChannelID
+  id: ChannelID
+  parent: Remora.Discord.API.Abstractions.Objects.IVoiceState
+  langs:
+  - csharp
+  - vb
+  name: ChannelID
+  nameWithType: IVoiceState.ChannelID
+  fullName: Remora.Discord.API.Abstractions.Objects.IVoiceState.ChannelID
+  type: Property
+  source:
+    id: ChannelID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Voice\IVoiceState.cs
+    startLine: 42
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the channel ID this user is connected to.
+  example: []
+  syntax:
+    content: Snowflake? ChannelID { get; }
+    parameters: []
+    return:
+      type: System.Nullable{Remora.Rest.Core.Snowflake}
+    content.vb: ReadOnly Property ChannelID As Snowflake?
+  overload: Remora.Discord.API.Abstractions.Objects.IVoiceState.ChannelID*
+- uid: Remora.Discord.API.Abstractions.Objects.IVoiceState.UserID
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IVoiceState.UserID
+  id: UserID
+  parent: Remora.Discord.API.Abstractions.Objects.IVoiceState
+  langs:
+  - csharp
+  - vb
+  name: UserID
+  nameWithType: IVoiceState.UserID
+  fullName: Remora.Discord.API.Abstractions.Objects.IVoiceState.UserID
+  type: Property
+  source:
+    id: UserID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Voice\IVoiceState.cs
+    startLine: 47
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the user ID this voice state is for.
+  example: []
+  syntax:
+    content: Snowflake UserID { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Snowflake
+    content.vb: ReadOnly Property UserID As Snowflake
+  overload: Remora.Discord.API.Abstractions.Objects.IVoiceState.UserID*
+- uid: Remora.Discord.API.Abstractions.Objects.IVoiceState.Member
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IVoiceState.Member
+  id: Member
+  parent: Remora.Discord.API.Abstractions.Objects.IVoiceState
+  langs:
+  - csharp
+  - vb
+  name: Member
+  nameWithType: IVoiceState.Member
+  fullName: Remora.Discord.API.Abstractions.Objects.IVoiceState.Member
+  type: Property
+  source:
+    id: Member
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Voice\IVoiceState.cs
+    startLine: 52
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the guild member this voice state is for.
+  example: []
+  syntax:
+    content: Optional<IGuildMember> Member { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IGuildMember}
+    content.vb: ReadOnly Property Member As [Optional](Of IGuildMember)
+  overload: Remora.Discord.API.Abstractions.Objects.IVoiceState.Member*
+- uid: Remora.Discord.API.Abstractions.Objects.IVoiceState.SessionID
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IVoiceState.SessionID
+  id: SessionID
+  parent: Remora.Discord.API.Abstractions.Objects.IVoiceState
+  langs:
+  - csharp
+  - vb
+  name: SessionID
+  nameWithType: IVoiceState.SessionID
+  fullName: Remora.Discord.API.Abstractions.Objects.IVoiceState.SessionID
+  type: Property
+  source:
+    id: SessionID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Voice\IVoiceState.cs
+    startLine: 57
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the session ID for this voice state.
+  example: []
+  syntax:
+    content: string SessionID { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property SessionID As String
+  overload: Remora.Discord.API.Abstractions.Objects.IVoiceState.SessionID*
+- uid: Remora.Discord.API.Abstractions.Objects.IVoiceState.IsDeafened
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IVoiceState.IsDeafened
+  id: IsDeafened
+  parent: Remora.Discord.API.Abstractions.Objects.IVoiceState
+  langs:
+  - csharp
+  - vb
+  name: IsDeafened
+  nameWithType: IVoiceState.IsDeafened
+  fullName: Remora.Discord.API.Abstractions.Objects.IVoiceState.IsDeafened
+  type: Property
+  source:
+    id: IsDeafened
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Voice\IVoiceState.cs
+    startLine: 62
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets a value indicating whether the user is deafened by the server.
+  example: []
+  syntax:
+    content: bool IsDeafened { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsDeafened As Boolean
+  overload: Remora.Discord.API.Abstractions.Objects.IVoiceState.IsDeafened*
+- uid: Remora.Discord.API.Abstractions.Objects.IVoiceState.IsMuted
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IVoiceState.IsMuted
+  id: IsMuted
+  parent: Remora.Discord.API.Abstractions.Objects.IVoiceState
+  langs:
+  - csharp
+  - vb
+  name: IsMuted
+  nameWithType: IVoiceState.IsMuted
+  fullName: Remora.Discord.API.Abstractions.Objects.IVoiceState.IsMuted
+  type: Property
+  source:
+    id: IsMuted
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Voice\IVoiceState.cs
+    startLine: 67
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets a value indicating whether the user is muted by the server.
+  example: []
+  syntax:
+    content: bool IsMuted { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsMuted As Boolean
+  overload: Remora.Discord.API.Abstractions.Objects.IVoiceState.IsMuted*
+- uid: Remora.Discord.API.Abstractions.Objects.IVoiceState.IsSelfDeafened
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IVoiceState.IsSelfDeafened
+  id: IsSelfDeafened
+  parent: Remora.Discord.API.Abstractions.Objects.IVoiceState
+  langs:
+  - csharp
+  - vb
+  name: IsSelfDeafened
+  nameWithType: IVoiceState.IsSelfDeafened
+  fullName: Remora.Discord.API.Abstractions.Objects.IVoiceState.IsSelfDeafened
+  type: Property
+  source:
+    id: IsSelfDeafened
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Voice\IVoiceState.cs
+    startLine: 72
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets a value indicating whether the user is locally deafened.
+  example: []
+  syntax:
+    content: bool IsSelfDeafened { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsSelfDeafened As Boolean
+  overload: Remora.Discord.API.Abstractions.Objects.IVoiceState.IsSelfDeafened*
+- uid: Remora.Discord.API.Abstractions.Objects.IVoiceState.IsSelfMuted
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IVoiceState.IsSelfMuted
+  id: IsSelfMuted
+  parent: Remora.Discord.API.Abstractions.Objects.IVoiceState
+  langs:
+  - csharp
+  - vb
+  name: IsSelfMuted
+  nameWithType: IVoiceState.IsSelfMuted
+  fullName: Remora.Discord.API.Abstractions.Objects.IVoiceState.IsSelfMuted
+  type: Property
+  source:
+    id: IsSelfMuted
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Voice\IVoiceState.cs
+    startLine: 77
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets a value indicating whether the user is locally muted.
+  example: []
+  syntax:
+    content: bool IsSelfMuted { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsSelfMuted As Boolean
+  overload: Remora.Discord.API.Abstractions.Objects.IVoiceState.IsSelfMuted*
+- uid: Remora.Discord.API.Abstractions.Objects.IVoiceState.IsStreaming
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IVoiceState.IsStreaming
+  id: IsStreaming
+  parent: Remora.Discord.API.Abstractions.Objects.IVoiceState
+  langs:
+  - csharp
+  - vb
+  name: IsStreaming
+  nameWithType: IVoiceState.IsStreaming
+  fullName: Remora.Discord.API.Abstractions.Objects.IVoiceState.IsStreaming
+  type: Property
+  source:
+    id: IsStreaming
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Voice\IVoiceState.cs
+    startLine: 82
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets a value indicating whether the user is currently streaming using "Go Live".
+  example: []
+  syntax:
+    content: Optional<bool> IsStreaming { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Boolean}
+    content.vb: ReadOnly Property IsStreaming As [Optional](Of Boolean)
+  overload: Remora.Discord.API.Abstractions.Objects.IVoiceState.IsStreaming*
+- uid: Remora.Discord.API.Abstractions.Objects.IVoiceState.IsVideoEnabled
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IVoiceState.IsVideoEnabled
+  id: IsVideoEnabled
+  parent: Remora.Discord.API.Abstractions.Objects.IVoiceState
+  langs:
+  - csharp
+  - vb
+  name: IsVideoEnabled
+  nameWithType: IVoiceState.IsVideoEnabled
+  fullName: Remora.Discord.API.Abstractions.Objects.IVoiceState.IsVideoEnabled
+  type: Property
+  source:
+    id: IsVideoEnabled
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Voice\IVoiceState.cs
+    startLine: 87
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets a value indicating whether the user's camera is enabled.
+  example: []
+  syntax:
+    content: bool IsVideoEnabled { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsVideoEnabled As Boolean
+  overload: Remora.Discord.API.Abstractions.Objects.IVoiceState.IsVideoEnabled*
+- uid: Remora.Discord.API.Abstractions.Objects.IVoiceState.IsSuppressed
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IVoiceState.IsSuppressed
+  id: IsSuppressed
+  parent: Remora.Discord.API.Abstractions.Objects.IVoiceState
+  langs:
+  - csharp
+  - vb
+  name: IsSuppressed
+  nameWithType: IVoiceState.IsSuppressed
+  fullName: Remora.Discord.API.Abstractions.Objects.IVoiceState.IsSuppressed
+  type: Property
+  source:
+    id: IsSuppressed
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Voice\IVoiceState.cs
+    startLine: 92
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets a value indicating whether the user is muted by the current user.
+  example: []
+  syntax:
+    content: bool IsSuppressed { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsSuppressed As Boolean
+  overload: Remora.Discord.API.Abstractions.Objects.IVoiceState.IsSuppressed*
+- uid: Remora.Discord.API.Abstractions.Objects.IVoiceState.RequestToSpeakTimestamp
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IVoiceState.RequestToSpeakTimestamp
+  id: RequestToSpeakTimestamp
+  parent: Remora.Discord.API.Abstractions.Objects.IVoiceState
+  langs:
+  - csharp
+  - vb
+  name: RequestToSpeakTimestamp
+  nameWithType: IVoiceState.RequestToSpeakTimestamp
+  fullName: Remora.Discord.API.Abstractions.Objects.IVoiceState.RequestToSpeakTimestamp
+  type: Property
+  source:
+    id: RequestToSpeakTimestamp
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Voice\IVoiceState.cs
+    startLine: 97
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the time at which the user requested to speak.
+  example: []
+  syntax:
+    content: DateTimeOffset? RequestToSpeakTimestamp { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTimeOffset}
+    content.vb: ReadOnly Property RequestToSpeakTimestamp As DateTimeOffset?
+  overload: Remora.Discord.API.Abstractions.Objects.IVoiceState.RequestToSpeakTimestamp*
+references:
+- uid: Remora.Discord.API.Abstractions.Objects
+  commentId: N:Remora.Discord.API.Abstractions.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Objects
+  nameWithType: Remora.Discord.API.Abstractions.Objects
+  fullName: Remora.Discord.API.Abstractions.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+- uid: Remora.Discord.API.Abstractions.Objects.IVoiceState.GuildID*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IVoiceState.GuildID
+  href: Remora.Discord.API.Abstractions.Objects.IVoiceState.html#Remora_Discord_API_Abstractions_Objects_IVoiceState_GuildID
+  name: GuildID
+  nameWithType: IVoiceState.GuildID
+  fullName: Remora.Discord.API.Abstractions.Objects.IVoiceState.GuildID
+- uid: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  name: Optional<Snowflake>
+  nameWithType: Optional<Snowflake>
+  fullName: Remora.Rest.Core.Optional<Remora.Rest.Core.Snowflake>
+  nameWithType.vb: Optional(Of Snowflake)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Rest.Core.Snowflake)
+  name.vb: Optional(Of Snowflake)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+- uid: Remora.Rest.Core.Optional`1
+  commentId: T:Remora.Rest.Core.Optional`1
+  isExternal: true
+  name: Optional<TValue>
+  nameWithType: Optional<TValue>
+  fullName: Remora.Rest.Core.Optional<TValue>
+  nameWithType.vb: Optional(Of TValue)
+  fullName.vb: Remora.Rest.Core.Optional(Of TValue)
+  name.vb: Optional(Of TValue)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+- uid: Remora.Discord.API.Abstractions.Objects.IVoiceState.ChannelID*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IVoiceState.ChannelID
+  href: Remora.Discord.API.Abstractions.Objects.IVoiceState.html#Remora_Discord_API_Abstractions_Objects_IVoiceState_ChannelID
+  name: ChannelID
+  nameWithType: IVoiceState.ChannelID
+  fullName: Remora.Discord.API.Abstractions.Objects.IVoiceState.ChannelID
+- uid: System.Nullable{Remora.Rest.Core.Snowflake}
+  commentId: T:System.Nullable{Remora.Rest.Core.Snowflake}
+  parent: System
+  definition: System.Nullable`1
+  name: Snowflake?
+  nameWithType: Snowflake?
+  fullName: Remora.Rest.Core.Snowflake?
+  spec.csharp:
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '?'
+  spec.vb:
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.API.Abstractions.Objects.IVoiceState.UserID*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IVoiceState.UserID
+  href: Remora.Discord.API.Abstractions.Objects.IVoiceState.html#Remora_Discord_API_Abstractions_Objects_IVoiceState_UserID
+  name: UserID
+  nameWithType: IVoiceState.UserID
+  fullName: Remora.Discord.API.Abstractions.Objects.IVoiceState.UserID
+- uid: Remora.Rest.Core.Snowflake
+  commentId: T:Remora.Rest.Core.Snowflake
+  parent: Remora.Rest.Core
+  isExternal: true
+  name: Snowflake
+  nameWithType: Snowflake
+  fullName: Remora.Rest.Core.Snowflake
+- uid: Remora.Discord.API.Abstractions.Objects.IVoiceState.Member*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IVoiceState.Member
+  href: Remora.Discord.API.Abstractions.Objects.IVoiceState.html#Remora_Discord_API_Abstractions_Objects_IVoiceState_Member
+  name: Member
+  nameWithType: IVoiceState.Member
+  fullName: Remora.Discord.API.Abstractions.Objects.IVoiceState.Member
+- uid: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IGuildMember}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IGuildMember}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: Remora.Discord.API.Abstractions.Objects.IGuildMember.html
+  name: Optional<IGuildMember>
+  nameWithType: Optional<IGuildMember>
+  fullName: Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IGuildMember>
+  nameWithType.vb: Optional(Of IGuildMember)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IGuildMember)
+  name.vb: Optional(Of IGuildMember)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IGuildMember
+    name: IGuildMember
+    href: Remora.Discord.API.Abstractions.Objects.IGuildMember.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IGuildMember
+    name: IGuildMember
+    href: Remora.Discord.API.Abstractions.Objects.IGuildMember.html
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Objects.IVoiceState.SessionID*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IVoiceState.SessionID
+  href: Remora.Discord.API.Abstractions.Objects.IVoiceState.html#Remora_Discord_API_Abstractions_Objects_IVoiceState_SessionID
+  name: SessionID
+  nameWithType: IVoiceState.SessionID
+  fullName: Remora.Discord.API.Abstractions.Objects.IVoiceState.SessionID
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Remora.Discord.API.Abstractions.Objects.IVoiceState.IsDeafened*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IVoiceState.IsDeafened
+  href: Remora.Discord.API.Abstractions.Objects.IVoiceState.html#Remora_Discord_API_Abstractions_Objects_IVoiceState_IsDeafened
+  name: IsDeafened
+  nameWithType: IVoiceState.IsDeafened
+  fullName: Remora.Discord.API.Abstractions.Objects.IVoiceState.IsDeafened
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Remora.Discord.API.Abstractions.Objects.IVoiceState.IsMuted*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IVoiceState.IsMuted
+  href: Remora.Discord.API.Abstractions.Objects.IVoiceState.html#Remora_Discord_API_Abstractions_Objects_IVoiceState_IsMuted
+  name: IsMuted
+  nameWithType: IVoiceState.IsMuted
+  fullName: Remora.Discord.API.Abstractions.Objects.IVoiceState.IsMuted
+- uid: Remora.Discord.API.Abstractions.Objects.IVoiceState.IsSelfDeafened*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IVoiceState.IsSelfDeafened
+  href: Remora.Discord.API.Abstractions.Objects.IVoiceState.html#Remora_Discord_API_Abstractions_Objects_IVoiceState_IsSelfDeafened
+  name: IsSelfDeafened
+  nameWithType: IVoiceState.IsSelfDeafened
+  fullName: Remora.Discord.API.Abstractions.Objects.IVoiceState.IsSelfDeafened
+- uid: Remora.Discord.API.Abstractions.Objects.IVoiceState.IsSelfMuted*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IVoiceState.IsSelfMuted
+  href: Remora.Discord.API.Abstractions.Objects.IVoiceState.html#Remora_Discord_API_Abstractions_Objects_IVoiceState_IsSelfMuted
+  name: IsSelfMuted
+  nameWithType: IVoiceState.IsSelfMuted
+  fullName: Remora.Discord.API.Abstractions.Objects.IVoiceState.IsSelfMuted
+- uid: Remora.Discord.API.Abstractions.Objects.IVoiceState.IsStreaming*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IVoiceState.IsStreaming
+  href: Remora.Discord.API.Abstractions.Objects.IVoiceState.html#Remora_Discord_API_Abstractions_Objects_IVoiceState_IsStreaming
+  name: IsStreaming
+  nameWithType: IVoiceState.IsStreaming
+  fullName: Remora.Discord.API.Abstractions.Objects.IVoiceState.IsStreaming
+- uid: Remora.Rest.Core.Optional{System.Boolean}
+  commentId: T:Remora.Rest.Core.Optional{System.Boolean}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: Optional<bool>
+  nameWithType: Optional<bool>
+  fullName: Remora.Rest.Core.Optional<bool>
+  nameWithType.vb: Optional(Of Boolean)
+  fullName.vb: Remora.Rest.Core.Optional(Of Boolean)
+  name.vb: Optional(Of Boolean)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Objects.IVoiceState.IsVideoEnabled*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IVoiceState.IsVideoEnabled
+  href: Remora.Discord.API.Abstractions.Objects.IVoiceState.html#Remora_Discord_API_Abstractions_Objects_IVoiceState_IsVideoEnabled
+  name: IsVideoEnabled
+  nameWithType: IVoiceState.IsVideoEnabled
+  fullName: Remora.Discord.API.Abstractions.Objects.IVoiceState.IsVideoEnabled
+- uid: Remora.Discord.API.Abstractions.Objects.IVoiceState.IsSuppressed*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IVoiceState.IsSuppressed
+  href: Remora.Discord.API.Abstractions.Objects.IVoiceState.html#Remora_Discord_API_Abstractions_Objects_IVoiceState_IsSuppressed
+  name: IsSuppressed
+  nameWithType: IVoiceState.IsSuppressed
+  fullName: Remora.Discord.API.Abstractions.Objects.IVoiceState.IsSuppressed
+- uid: Remora.Discord.API.Abstractions.Objects.IVoiceState.RequestToSpeakTimestamp*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IVoiceState.RequestToSpeakTimestamp
+  href: Remora.Discord.API.Abstractions.Objects.IVoiceState.html#Remora_Discord_API_Abstractions_Objects_IVoiceState_RequestToSpeakTimestamp
+  name: RequestToSpeakTimestamp
+  nameWithType: IVoiceState.RequestToSpeakTimestamp
+  fullName: Remora.Discord.API.Abstractions.Objects.IVoiceState.RequestToSpeakTimestamp
+- uid: System.Nullable{System.DateTimeOffset}
+  commentId: T:System.Nullable{System.DateTimeOffset}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  name: DateTimeOffset?
+  nameWithType: DateTimeOffset?
+  fullName: System.DateTimeOffset?
+  spec.csharp:
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  - name: '?'
+  spec.vb:
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  - name: '?'

@@ -1,0 +1,304 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestGatewayAPI
+  commentId: T:Remora.Discord.API.Abstractions.Rest.IDiscordRestGatewayAPI
+  id: IDiscordRestGatewayAPI
+  parent: Remora.Discord.API.Abstractions.Rest
+  children:
+  - Remora.Discord.API.Abstractions.Rest.IDiscordRestGatewayAPI.GetGatewayAsync(System.Threading.CancellationToken)
+  - Remora.Discord.API.Abstractions.Rest.IDiscordRestGatewayAPI.GetGatewayBotAsync(System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IDiscordRestGatewayAPI
+  nameWithType: IDiscordRestGatewayAPI
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestGatewayAPI
+  type: Interface
+  source:
+    id: IDiscordRestGatewayAPI
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Rest\IDiscordRestGatewayAPI.cs
+    startLine: 33
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Rest
+  summary: Represents the Discord Gateway REST API.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public interface IDiscordRestGatewayAPI
+    content.vb: >-
+      <PublicAPI>
+
+      Public Interface IDiscordRestGatewayAPI
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestGatewayAPI.GetGatewayAsync(System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.API.Abstractions.Rest.IDiscordRestGatewayAPI.GetGatewayAsync(System.Threading.CancellationToken)
+  id: GetGatewayAsync(System.Threading.CancellationToken)
+  parent: Remora.Discord.API.Abstractions.Rest.IDiscordRestGatewayAPI
+  langs:
+  - csharp
+  - vb
+  name: GetGatewayAsync(CancellationToken)
+  nameWithType: IDiscordRestGatewayAPI.GetGatewayAsync(CancellationToken)
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestGatewayAPI.GetGatewayAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: GetGatewayAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Rest\IDiscordRestGatewayAPI.cs
+    startLine: 41
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Rest
+  summary: Gets a gateway endpoint.
+  example: []
+  syntax:
+    content: Task<Result<IGatewayEndpoint>> GetGatewayAsync(CancellationToken ct = default)
+    parameters:
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IGatewayEndpoint}}
+      description: A retrieval result which may or may not have succeeded.
+    content.vb: Function GetGatewayAsync(ct As CancellationToken = Nothing) As Task(Of Result(Of IGatewayEndpoint))
+  overload: Remora.Discord.API.Abstractions.Rest.IDiscordRestGatewayAPI.GetGatewayAsync*
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestGatewayAPI.GetGatewayBotAsync(System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.API.Abstractions.Rest.IDiscordRestGatewayAPI.GetGatewayBotAsync(System.Threading.CancellationToken)
+  id: GetGatewayBotAsync(System.Threading.CancellationToken)
+  parent: Remora.Discord.API.Abstractions.Rest.IDiscordRestGatewayAPI
+  langs:
+  - csharp
+  - vb
+  name: GetGatewayBotAsync(CancellationToken)
+  nameWithType: IDiscordRestGatewayAPI.GetGatewayBotAsync(CancellationToken)
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestGatewayAPI.GetGatewayBotAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: GetGatewayBotAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Rest\IDiscordRestGatewayAPI.cs
+    startLine: 48
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Rest
+  summary: Gets a gateway endpoint for bots.
+  example: []
+  syntax:
+    content: Task<Result<IGatewayEndpoint>> GetGatewayBotAsync(CancellationToken ct = default)
+    parameters:
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IGatewayEndpoint}}
+      description: A retrieval result which may or may not have succeeded.
+    content.vb: Function GetGatewayBotAsync(ct As CancellationToken = Nothing) As Task(Of Result(Of IGatewayEndpoint))
+  overload: Remora.Discord.API.Abstractions.Rest.IDiscordRestGatewayAPI.GetGatewayBotAsync*
+references:
+- uid: Remora.Discord.API.Abstractions.Rest
+  commentId: N:Remora.Discord.API.Abstractions.Rest
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Rest
+  nameWithType: Remora.Discord.API.Abstractions.Rest
+  fullName: Remora.Discord.API.Abstractions.Rest
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Rest
+    name: Rest
+    href: Remora.Discord.API.Abstractions.Rest.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Rest
+    name: Rest
+    href: Remora.Discord.API.Abstractions.Rest.html
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestGatewayAPI.GetGatewayAsync*
+  commentId: Overload:Remora.Discord.API.Abstractions.Rest.IDiscordRestGatewayAPI.GetGatewayAsync
+  href: Remora.Discord.API.Abstractions.Rest.IDiscordRestGatewayAPI.html#Remora_Discord_API_Abstractions_Rest_IDiscordRestGatewayAPI_GetGatewayAsync_System_Threading_CancellationToken_
+  name: GetGatewayAsync
+  nameWithType: IDiscordRestGatewayAPI.GetGatewayAsync
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestGatewayAPI.GetGatewayAsync
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IGatewayEndpoint}}
+  commentId: T:System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IGatewayEndpoint}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Result<IGatewayEndpoint>>
+  nameWithType: Task<Result<IGatewayEndpoint>>
+  fullName: System.Threading.Tasks.Task<Remora.Results.Result<Remora.Discord.API.Abstractions.Objects.IGatewayEndpoint>>
+  nameWithType.vb: Task(Of Result(Of IGatewayEndpoint))
+  fullName.vb: System.Threading.Tasks.Task(Of Remora.Results.Result(Of Remora.Discord.API.Abstractions.Objects.IGatewayEndpoint))
+  name.vb: Task(Of Result(Of IGatewayEndpoint))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Remora.Results.Result`1
+    name: Result
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IGatewayEndpoint
+    name: IGatewayEndpoint
+    href: Remora.Discord.API.Abstractions.Objects.IGatewayEndpoint.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Results.Result`1
+    name: Result
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IGatewayEndpoint
+    name: IGatewayEndpoint
+    href: Remora.Discord.API.Abstractions.Objects.IGatewayEndpoint.html
+  - name: )
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestGatewayAPI.GetGatewayBotAsync*
+  commentId: Overload:Remora.Discord.API.Abstractions.Rest.IDiscordRestGatewayAPI.GetGatewayBotAsync
+  href: Remora.Discord.API.Abstractions.Rest.IDiscordRestGatewayAPI.html#Remora_Discord_API_Abstractions_Rest_IDiscordRestGatewayAPI_GetGatewayBotAsync_System_Threading_CancellationToken_
+  name: GetGatewayBotAsync
+  nameWithType: IDiscordRestGatewayAPI.GetGatewayBotAsync
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestGatewayAPI.GetGatewayBotAsync

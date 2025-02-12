@@ -1,0 +1,474 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Abstractions.Objects.IPollCreateRequest
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IPollCreateRequest
+  id: IPollCreateRequest
+  parent: Remora.Discord.API.Abstractions.Objects
+  children:
+  - Remora.Discord.API.Abstractions.Objects.IPollCreateRequest.Answers
+  - Remora.Discord.API.Abstractions.Objects.IPollCreateRequest.Duration
+  - Remora.Discord.API.Abstractions.Objects.IPollCreateRequest.IsMultiselectAllowed
+  - Remora.Discord.API.Abstractions.Objects.IPollCreateRequest.LayoutType
+  - Remora.Discord.API.Abstractions.Objects.IPollCreateRequest.Question
+  langs:
+  - csharp
+  - vb
+  name: IPollCreateRequest
+  nameWithType: IPollCreateRequest
+  fullName: Remora.Discord.API.Abstractions.Objects.IPollCreateRequest
+  type: Interface
+  source:
+    id: IPollCreateRequest
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Polls\IPollCreateRequest.cs
+    startLine: 31
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Represents a poll creation request.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public interface IPollCreateRequest
+    content.vb: >-
+      <PublicAPI>
+
+      Public Interface IPollCreateRequest
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Abstractions.Objects.IPollCreateRequest.Question
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPollCreateRequest.Question
+  id: Question
+  parent: Remora.Discord.API.Abstractions.Objects.IPollCreateRequest
+  langs:
+  - csharp
+  - vb
+  name: Question
+  nameWithType: IPollCreateRequest.Question
+  fullName: Remora.Discord.API.Abstractions.Objects.IPollCreateRequest.Question
+  type: Property
+  source:
+    id: Question
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Polls\IPollCreateRequest.cs
+    startLine: 37
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the question of the poll.
+  example: []
+  syntax:
+    content: IPollMedia Question { get; }
+    parameters: []
+    return:
+      type: Remora.Discord.API.Abstractions.Objects.IPollMedia
+    content.vb: ReadOnly Property Question As IPollMedia
+  overload: Remora.Discord.API.Abstractions.Objects.IPollCreateRequest.Question*
+- uid: Remora.Discord.API.Abstractions.Objects.IPollCreateRequest.Answers
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPollCreateRequest.Answers
+  id: Answers
+  parent: Remora.Discord.API.Abstractions.Objects.IPollCreateRequest
+  langs:
+  - csharp
+  - vb
+  name: Answers
+  nameWithType: IPollCreateRequest.Answers
+  fullName: Remora.Discord.API.Abstractions.Objects.IPollCreateRequest.Answers
+  type: Property
+  source:
+    id: Answers
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Polls\IPollCreateRequest.cs
+    startLine: 42
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets a list of each available answer in the poll.
+  example: []
+  syntax:
+    content: IReadOnlyList<IPollAnswer> Answers { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IPollAnswer}
+    content.vb: ReadOnly Property Answers As IReadOnlyList(Of IPollAnswer)
+  overload: Remora.Discord.API.Abstractions.Objects.IPollCreateRequest.Answers*
+- uid: Remora.Discord.API.Abstractions.Objects.IPollCreateRequest.Duration
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPollCreateRequest.Duration
+  id: Duration
+  parent: Remora.Discord.API.Abstractions.Objects.IPollCreateRequest
+  langs:
+  - csharp
+  - vb
+  name: Duration
+  nameWithType: IPollCreateRequest.Duration
+  fullName: Remora.Discord.API.Abstractions.Objects.IPollCreateRequest.Duration
+  type: Property
+  source:
+    id: Duration
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Polls\IPollCreateRequest.cs
+    startLine: 48
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the number of hours the poll should be open for.
+  remarks: A poll can be open for up to 7 days.
+  example: []
+  syntax:
+    content: int Duration { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property Duration As Integer
+  overload: Remora.Discord.API.Abstractions.Objects.IPollCreateRequest.Duration*
+- uid: Remora.Discord.API.Abstractions.Objects.IPollCreateRequest.IsMultiselectAllowed
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPollCreateRequest.IsMultiselectAllowed
+  id: IsMultiselectAllowed
+  parent: Remora.Discord.API.Abstractions.Objects.IPollCreateRequest
+  langs:
+  - csharp
+  - vb
+  name: IsMultiselectAllowed
+  nameWithType: IPollCreateRequest.IsMultiselectAllowed
+  fullName: Remora.Discord.API.Abstractions.Objects.IPollCreateRequest.IsMultiselectAllowed
+  type: Property
+  source:
+    id: IsMultiselectAllowed
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Polls\IPollCreateRequest.cs
+    startLine: 53
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets a value indicating whether a user can select multiple answers.
+  example: []
+  syntax:
+    content: bool IsMultiselectAllowed { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsMultiselectAllowed As Boolean
+  overload: Remora.Discord.API.Abstractions.Objects.IPollCreateRequest.IsMultiselectAllowed*
+- uid: Remora.Discord.API.Abstractions.Objects.IPollCreateRequest.LayoutType
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPollCreateRequest.LayoutType
+  id: LayoutType
+  parent: Remora.Discord.API.Abstractions.Objects.IPollCreateRequest
+  langs:
+  - csharp
+  - vb
+  name: LayoutType
+  nameWithType: IPollCreateRequest.LayoutType
+  fullName: Remora.Discord.API.Abstractions.Objects.IPollCreateRequest.LayoutType
+  type: Property
+  source:
+    id: LayoutType
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Polls\IPollCreateRequest.cs
+    startLine: 58
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the layout type of the poll.
+  example: []
+  syntax:
+    content: Optional<PollLayoutType> LayoutType { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.PollLayoutType}
+    content.vb: ReadOnly Property LayoutType As [Optional](Of PollLayoutType)
+  overload: Remora.Discord.API.Abstractions.Objects.IPollCreateRequest.LayoutType*
+references:
+- uid: Remora.Discord.API.Abstractions.Objects
+  commentId: N:Remora.Discord.API.Abstractions.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Objects
+  nameWithType: Remora.Discord.API.Abstractions.Objects
+  fullName: Remora.Discord.API.Abstractions.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+- uid: Remora.Discord.API.Abstractions.Objects.IPollCreateRequest.Question*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IPollCreateRequest.Question
+  href: Remora.Discord.API.Abstractions.Objects.IPollCreateRequest.html#Remora_Discord_API_Abstractions_Objects_IPollCreateRequest_Question
+  name: Question
+  nameWithType: IPollCreateRequest.Question
+  fullName: Remora.Discord.API.Abstractions.Objects.IPollCreateRequest.Question
+- uid: Remora.Discord.API.Abstractions.Objects.IPollMedia
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IPollMedia
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IPollMedia.html
+  name: IPollMedia
+  nameWithType: IPollMedia
+  fullName: Remora.Discord.API.Abstractions.Objects.IPollMedia
+- uid: Remora.Discord.API.Abstractions.Objects.IPollCreateRequest.Answers*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IPollCreateRequest.Answers
+  href: Remora.Discord.API.Abstractions.Objects.IPollCreateRequest.html#Remora_Discord_API_Abstractions_Objects_IPollCreateRequest_Answers
+  name: Answers
+  nameWithType: IPollCreateRequest.Answers
+  fullName: Remora.Discord.API.Abstractions.Objects.IPollCreateRequest.Answers
+- uid: System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IPollAnswer}
+  commentId: T:System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IPollAnswer}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<IPollAnswer>
+  nameWithType: IReadOnlyList<IPollAnswer>
+  fullName: System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.IPollAnswer>
+  nameWithType.vb: IReadOnlyList(Of IPollAnswer)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.IPollAnswer)
+  name.vb: IReadOnlyList(Of IPollAnswer)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IPollAnswer
+    name: IPollAnswer
+    href: Remora.Discord.API.Abstractions.Objects.IPollAnswer.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IPollAnswer
+    name: IPollAnswer
+    href: Remora.Discord.API.Abstractions.Objects.IPollAnswer.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Remora.Discord.API.Abstractions.Objects.IPollCreateRequest.Duration*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IPollCreateRequest.Duration
+  href: Remora.Discord.API.Abstractions.Objects.IPollCreateRequest.html#Remora_Discord_API_Abstractions_Objects_IPollCreateRequest_Duration
+  name: Duration
+  nameWithType: IPollCreateRequest.Duration
+  fullName: Remora.Discord.API.Abstractions.Objects.IPollCreateRequest.Duration
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.API.Abstractions.Objects.IPollCreateRequest.IsMultiselectAllowed*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IPollCreateRequest.IsMultiselectAllowed
+  href: Remora.Discord.API.Abstractions.Objects.IPollCreateRequest.html#Remora_Discord_API_Abstractions_Objects_IPollCreateRequest_IsMultiselectAllowed
+  name: IsMultiselectAllowed
+  nameWithType: IPollCreateRequest.IsMultiselectAllowed
+  fullName: Remora.Discord.API.Abstractions.Objects.IPollCreateRequest.IsMultiselectAllowed
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Remora.Discord.API.Abstractions.Objects.IPollCreateRequest.LayoutType*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IPollCreateRequest.LayoutType
+  href: Remora.Discord.API.Abstractions.Objects.IPollCreateRequest.html#Remora_Discord_API_Abstractions_Objects_IPollCreateRequest_LayoutType
+  name: LayoutType
+  nameWithType: IPollCreateRequest.LayoutType
+  fullName: Remora.Discord.API.Abstractions.Objects.IPollCreateRequest.LayoutType
+- uid: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.PollLayoutType}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.PollLayoutType}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: Remora.Discord.API.Abstractions.Objects.PollLayoutType.html
+  name: Optional<PollLayoutType>
+  nameWithType: Optional<PollLayoutType>
+  fullName: Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.PollLayoutType>
+  nameWithType.vb: Optional(Of PollLayoutType)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.PollLayoutType)
+  name.vb: Optional(Of PollLayoutType)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.PollLayoutType
+    name: PollLayoutType
+    href: Remora.Discord.API.Abstractions.Objects.PollLayoutType.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.PollLayoutType
+    name: PollLayoutType
+    href: Remora.Discord.API.Abstractions.Objects.PollLayoutType.html
+  - name: )
+- uid: Remora.Rest.Core.Optional`1
+  commentId: T:Remora.Rest.Core.Optional`1
+  isExternal: true
+  name: Optional<TValue>
+  nameWithType: Optional<TValue>
+  fullName: Remora.Rest.Core.Optional<TValue>
+  nameWithType.vb: Optional(Of TValue)
+  fullName.vb: Remora.Rest.Core.Optional(Of TValue)
+  name.vb: Optional(Of TValue)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true

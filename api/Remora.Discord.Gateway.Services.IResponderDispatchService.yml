@@ -1,0 +1,300 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.Gateway.Services.IResponderDispatchService
+  commentId: T:Remora.Discord.Gateway.Services.IResponderDispatchService
+  id: IResponderDispatchService
+  parent: Remora.Discord.Gateway.Services
+  children:
+  - Remora.Discord.Gateway.Services.IResponderDispatchService.DispatchAsync(Remora.Discord.API.Abstractions.Gateway.IPayload,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IResponderDispatchService
+  nameWithType: IResponderDispatchService
+  fullName: Remora.Discord.Gateway.Services.IResponderDispatchService
+  type: Interface
+  source:
+    id: IResponderDispatchService
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Gateway\Services\IResponderDispatchService.cs
+    startLine: 32
+  assemblies:
+  - Remora.Discord.Gateway
+  namespace: Remora.Discord.Gateway.Services
+  summary: Manages dispatch and processing of gateway payloads.
+  example: []
+  syntax:
+    content: public interface IResponderDispatchService
+    content.vb: Public Interface IResponderDispatchService
+- uid: Remora.Discord.Gateway.Services.IResponderDispatchService.DispatchAsync(Remora.Discord.API.Abstractions.Gateway.IPayload,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Gateway.Services.IResponderDispatchService.DispatchAsync(Remora.Discord.API.Abstractions.Gateway.IPayload,System.Threading.CancellationToken)
+  id: DispatchAsync(Remora.Discord.API.Abstractions.Gateway.IPayload,System.Threading.CancellationToken)
+  parent: Remora.Discord.Gateway.Services.IResponderDispatchService
+  langs:
+  - csharp
+  - vb
+  name: DispatchAsync(IPayload, CancellationToken)
+  nameWithType: IResponderDispatchService.DispatchAsync(IPayload, CancellationToken)
+  fullName: Remora.Discord.Gateway.Services.IResponderDispatchService.DispatchAsync(Remora.Discord.API.Abstractions.Gateway.IPayload, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: DispatchAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Gateway\Services\IResponderDispatchService.cs
+    startLine: 45
+  assemblies:
+  - Remora.Discord.Gateway
+  namespace: Remora.Discord.Gateway.Services
+  summary: >-
+    Dispatches the given payload to interested responders. If the service is stopped with pending dispatches, the
+
+    pending payloads will be dropped. Any payloads that have been dispatched (that is, a call to this method has
+
+    returned a successful result) will be allowed to run to completion.
+  example: []
+  syntax:
+    content: Task<Result> DispatchAsync(IPayload payload, CancellationToken ct = default)
+    parameters:
+    - id: payload
+      type: Remora.Discord.API.Abstractions.Gateway.IPayload
+      description: The payload to dispatch.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: >-
+        The cancellation token for this operation. Note that this is *not* the cancellation token which will be passed
+
+        to any instantiated responders.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result}
+      description: A result which may or may not have succeeded.
+    content.vb: Function DispatchAsync(payload As IPayload, ct As CancellationToken = Nothing) As Task(Of Result)
+  overload: Remora.Discord.Gateway.Services.IResponderDispatchService.DispatchAsync*
+references:
+- uid: Remora.Discord.Gateway.Services
+  commentId: N:Remora.Discord.Gateway.Services
+  href: Remora.html
+  name: Remora.Discord.Gateway.Services
+  nameWithType: Remora.Discord.Gateway.Services
+  fullName: Remora.Discord.Gateway.Services
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Gateway
+    name: Gateway
+    href: Remora.Discord.Gateway.html
+  - name: .
+  - uid: Remora.Discord.Gateway.Services
+    name: Services
+    href: Remora.Discord.Gateway.Services.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Gateway
+    name: Gateway
+    href: Remora.Discord.Gateway.html
+  - name: .
+  - uid: Remora.Discord.Gateway.Services
+    name: Services
+    href: Remora.Discord.Gateway.Services.html
+- uid: Remora.Discord.Gateway.Services.IResponderDispatchService.DispatchAsync*
+  commentId: Overload:Remora.Discord.Gateway.Services.IResponderDispatchService.DispatchAsync
+  href: Remora.Discord.Gateway.Services.IResponderDispatchService.html#Remora_Discord_Gateway_Services_IResponderDispatchService_DispatchAsync_Remora_Discord_API_Abstractions_Gateway_IPayload_System_Threading_CancellationToken_
+  name: DispatchAsync
+  nameWithType: IResponderDispatchService.DispatchAsync
+  fullName: Remora.Discord.Gateway.Services.IResponderDispatchService.DispatchAsync
+- uid: Remora.Discord.API.Abstractions.Gateway.IPayload
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.IPayload
+  parent: Remora.Discord.API.Abstractions.Gateway
+  href: Remora.Discord.API.Abstractions.Gateway.IPayload.html
+  name: IPayload
+  nameWithType: IPayload
+  fullName: Remora.Discord.API.Abstractions.Gateway.IPayload
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Remora.Results.Result}
+  commentId: T:System.Threading.Tasks.Task{Remora.Results.Result}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Result>
+  nameWithType: Task<Result>
+  fullName: System.Threading.Tasks.Task<Remora.Results.Result>
+  nameWithType.vb: Task(Of Result)
+  fullName.vb: System.Threading.Tasks.Task(Of Remora.Results.Result)
+  name.vb: Task(Of Result)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Remora.Results.Result
+    name: Result
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Results.Result
+    name: Result
+    isExternal: true
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Gateway
+  commentId: N:Remora.Discord.API.Abstractions.Gateway
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Gateway
+  nameWithType: Remora.Discord.API.Abstractions.Gateway
+  fullName: Remora.Discord.API.Abstractions.Gateway
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

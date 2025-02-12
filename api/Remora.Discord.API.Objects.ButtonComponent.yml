@@ -1,0 +1,1020 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Objects.ButtonComponent
+  commentId: T:Remora.Discord.API.Objects.ButtonComponent
+  id: ButtonComponent
+  parent: Remora.Discord.API.Objects
+  children:
+  - Remora.Discord.API.Objects.ButtonComponent.#ctor(Remora.Discord.API.Abstractions.Objects.ButtonComponentStyle,Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IPartialEmoji},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.Boolean})
+  - Remora.Discord.API.Objects.ButtonComponent.CustomID
+  - Remora.Discord.API.Objects.ButtonComponent.Emoji
+  - Remora.Discord.API.Objects.ButtonComponent.IsDisabled
+  - Remora.Discord.API.Objects.ButtonComponent.Label
+  - Remora.Discord.API.Objects.ButtonComponent.Style
+  - Remora.Discord.API.Objects.ButtonComponent.Type
+  - Remora.Discord.API.Objects.ButtonComponent.URL
+  langs:
+  - csharp
+  - vb
+  name: ButtonComponent
+  nameWithType: ButtonComponent
+  fullName: Remora.Discord.API.Objects.ButtonComponent
+  type: Class
+  source:
+    id: ButtonComponent
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Interactions\Components\Button\ButtonComponent.cs
+    startLine: 29
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Represents a button component.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public record ButtonComponent : IButtonComponent, IMessageComponent, IPartialButtonComponent, IPartialMessageComponent, IEquatable<ButtonComponent>
+    content.vb: >-
+      <PublicAPI>
+
+      Public Class ButtonComponent Implements IButtonComponent, IMessageComponent, IPartialButtonComponent, IPartialMessageComponent, IEquatable(Of ButtonComponent)
+  inheritance:
+  - System.Object
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IButtonComponent
+  - Remora.Discord.API.Abstractions.Objects.IMessageComponent
+  - Remora.Discord.API.Abstractions.Objects.IPartialButtonComponent
+  - Remora.Discord.API.Abstractions.Objects.IPartialMessageComponent
+  - System.IEquatable{Remora.Discord.API.Objects.ButtonComponent}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Objects.ButtonComponent.#ctor(Remora.Discord.API.Abstractions.Objects.ButtonComponentStyle,Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IPartialEmoji},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.Boolean})
+  commentId: M:Remora.Discord.API.Objects.ButtonComponent.#ctor(Remora.Discord.API.Abstractions.Objects.ButtonComponentStyle,Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IPartialEmoji},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.Boolean})
+  id: '#ctor(Remora.Discord.API.Abstractions.Objects.ButtonComponentStyle,Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IPartialEmoji},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.Boolean})'
+  parent: Remora.Discord.API.Objects.ButtonComponent
+  langs:
+  - csharp
+  - vb
+  name: ButtonComponent(ButtonComponentStyle, Optional<string>, Optional<IPartialEmoji>, Optional<string>, Optional<string>, Optional<bool>)
+  nameWithType: ButtonComponent.ButtonComponent(ButtonComponentStyle, Optional<string>, Optional<IPartialEmoji>, Optional<string>, Optional<string>, Optional<bool>)
+  fullName: Remora.Discord.API.Objects.ButtonComponent.ButtonComponent(Remora.Discord.API.Abstractions.Objects.ButtonComponentStyle, Remora.Rest.Core.Optional<string>, Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IPartialEmoji>, Remora.Rest.Core.Optional<string>, Remora.Rest.Core.Optional<string>, Remora.Rest.Core.Optional<bool>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Interactions\Components\Button\ButtonComponent.cs
+    startLine: 29
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Represents a button component.
+  example: []
+  syntax:
+    content: public ButtonComponent(ButtonComponentStyle Style, Optional<string> Label = default, Optional<IPartialEmoji> Emoji = default, Optional<string> CustomID = default, Optional<string> URL = default, Optional<bool> IsDisabled = default)
+    parameters:
+    - id: Style
+      type: Remora.Discord.API.Abstractions.Objects.ButtonComponentStyle
+    - id: Label
+      type: Remora.Rest.Core.Optional{System.String}
+    - id: Emoji
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IPartialEmoji}
+    - id: CustomID
+      type: Remora.Rest.Core.Optional{System.String}
+    - id: URL
+      type: Remora.Rest.Core.Optional{System.String}
+    - id: IsDisabled
+      type: Remora.Rest.Core.Optional{System.Boolean}
+    content.vb: Public Sub New(Style As ButtonComponentStyle, Label As [Optional](Of String) = Nothing, Emoji As [Optional](Of IPartialEmoji) = Nothing, CustomID As [Optional](Of String) = Nothing, URL As [Optional](Of String) = Nothing, IsDisabled As [Optional](Of Boolean) = Nothing)
+  overload: Remora.Discord.API.Objects.ButtonComponent.#ctor*
+  nameWithType.vb: ButtonComponent.New(ButtonComponentStyle, Optional(Of String), Optional(Of IPartialEmoji), Optional(Of String), Optional(Of String), Optional(Of Boolean))
+  fullName.vb: Remora.Discord.API.Objects.ButtonComponent.New(Remora.Discord.API.Abstractions.Objects.ButtonComponentStyle, Remora.Rest.Core.Optional(Of String), Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IPartialEmoji), Remora.Rest.Core.Optional(Of String), Remora.Rest.Core.Optional(Of String), Remora.Rest.Core.Optional(Of Boolean))
+  name.vb: New(ButtonComponentStyle, Optional(Of String), Optional(Of IPartialEmoji), Optional(Of String), Optional(Of String), Optional(Of Boolean))
+- uid: Remora.Discord.API.Objects.ButtonComponent.Style
+  commentId: P:Remora.Discord.API.Objects.ButtonComponent.Style
+  id: Style
+  parent: Remora.Discord.API.Objects.ButtonComponent
+  langs:
+  - csharp
+  - vb
+  name: Style
+  nameWithType: ButtonComponent.Style
+  fullName: Remora.Discord.API.Objects.ButtonComponent.Style
+  type: Property
+  source:
+    id: Style
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Interactions\Components\Button\ButtonComponent.cs
+    startLine: 32
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the button's style.
+  example: []
+  syntax:
+    content: public ButtonComponentStyle Style { get; init; }
+    parameters: []
+    return:
+      type: Remora.Discord.API.Abstractions.Objects.ButtonComponentStyle
+    content.vb: Public Property Style As ButtonComponentStyle
+  overload: Remora.Discord.API.Objects.ButtonComponent.Style*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IButtonComponent.Style
+- uid: Remora.Discord.API.Objects.ButtonComponent.Label
+  commentId: P:Remora.Discord.API.Objects.ButtonComponent.Label
+  id: Label
+  parent: Remora.Discord.API.Objects.ButtonComponent
+  langs:
+  - csharp
+  - vb
+  name: Label
+  nameWithType: ButtonComponent.Label
+  fullName: Remora.Discord.API.Objects.ButtonComponent.Label
+  type: Property
+  source:
+    id: Label
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Interactions\Components\Button\ButtonComponent.cs
+    startLine: 33
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the label on the button.
+  example: []
+  syntax:
+    content: public Optional<string> Label { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.String}
+    content.vb: Public Property Label As [Optional](Of String)
+  overload: Remora.Discord.API.Objects.ButtonComponent.Label*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IButtonComponent.Label
+  - Remora.Discord.API.Abstractions.Objects.IPartialButtonComponent.Label
+- uid: Remora.Discord.API.Objects.ButtonComponent.Emoji
+  commentId: P:Remora.Discord.API.Objects.ButtonComponent.Emoji
+  id: Emoji
+  parent: Remora.Discord.API.Objects.ButtonComponent
+  langs:
+  - csharp
+  - vb
+  name: Emoji
+  nameWithType: ButtonComponent.Emoji
+  fullName: Remora.Discord.API.Objects.ButtonComponent.Emoji
+  type: Property
+  source:
+    id: Emoji
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Interactions\Components\Button\ButtonComponent.cs
+    startLine: 34
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the emoji displayed in the button.
+  example: []
+  syntax:
+    content: public Optional<IPartialEmoji> Emoji { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IPartialEmoji}
+    content.vb: Public Property Emoji As [Optional](Of IPartialEmoji)
+  overload: Remora.Discord.API.Objects.ButtonComponent.Emoji*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IButtonComponent.Emoji
+  - Remora.Discord.API.Abstractions.Objects.IPartialButtonComponent.Emoji
+- uid: Remora.Discord.API.Objects.ButtonComponent.CustomID
+  commentId: P:Remora.Discord.API.Objects.ButtonComponent.CustomID
+  id: CustomID
+  parent: Remora.Discord.API.Objects.ButtonComponent
+  langs:
+  - csharp
+  - vb
+  name: CustomID
+  nameWithType: ButtonComponent.CustomID
+  fullName: Remora.Discord.API.Objects.ButtonComponent.CustomID
+  type: Property
+  source:
+    id: CustomID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Interactions\Components\Button\ButtonComponent.cs
+    startLine: 35
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets a custom ID for the component, defined by the developer.
+  example: []
+  syntax:
+    content: public Optional<string> CustomID { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.String}
+    content.vb: Public Property CustomID As [Optional](Of String)
+  overload: Remora.Discord.API.Objects.ButtonComponent.CustomID*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IButtonComponent.CustomID
+  - Remora.Discord.API.Abstractions.Objects.IPartialButtonComponent.CustomID
+- uid: Remora.Discord.API.Objects.ButtonComponent.URL
+  commentId: P:Remora.Discord.API.Objects.ButtonComponent.URL
+  id: URL
+  parent: Remora.Discord.API.Objects.ButtonComponent
+  langs:
+  - csharp
+  - vb
+  name: URL
+  nameWithType: ButtonComponent.URL
+  fullName: Remora.Discord.API.Objects.ButtonComponent.URL
+  type: Property
+  source:
+    id: URL
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Interactions\Components\Button\ButtonComponent.cs
+    startLine: 36
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the URL used for link-style buttons.
+  example: []
+  syntax:
+    content: public Optional<string> URL { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.String}
+    content.vb: Public Property URL As [Optional](Of String)
+  overload: Remora.Discord.API.Objects.ButtonComponent.URL*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IButtonComponent.URL
+  - Remora.Discord.API.Abstractions.Objects.IPartialButtonComponent.URL
+- uid: Remora.Discord.API.Objects.ButtonComponent.IsDisabled
+  commentId: P:Remora.Discord.API.Objects.ButtonComponent.IsDisabled
+  id: IsDisabled
+  parent: Remora.Discord.API.Objects.ButtonComponent
+  langs:
+  - csharp
+  - vb
+  name: IsDisabled
+  nameWithType: ButtonComponent.IsDisabled
+  fullName: Remora.Discord.API.Objects.ButtonComponent.IsDisabled
+  type: Property
+  source:
+    id: IsDisabled
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Interactions\Components\Button\ButtonComponent.cs
+    startLine: 37
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets a value indicating whether the component is disabled.
+  example: []
+  syntax:
+    content: public Optional<bool> IsDisabled { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Boolean}
+    content.vb: Public Property IsDisabled As [Optional](Of Boolean)
+  overload: Remora.Discord.API.Objects.ButtonComponent.IsDisabled*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IButtonComponent.IsDisabled
+  - Remora.Discord.API.Abstractions.Objects.IPartialButtonComponent.IsDisabled
+- uid: Remora.Discord.API.Objects.ButtonComponent.Type
+  commentId: P:Remora.Discord.API.Objects.ButtonComponent.Type
+  id: Type
+  parent: Remora.Discord.API.Objects.ButtonComponent
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: ButtonComponent.Type
+  fullName: Remora.Discord.API.Objects.ButtonComponent.Type
+  type: Property
+  source:
+    id: Type
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\Interactions\Components\Button\ButtonComponent.cs
+    startLine: 41
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the type of the component.
+  example: []
+  syntax:
+    content: public ComponentType Type { get; }
+    parameters: []
+    return:
+      type: Remora.Discord.API.Abstractions.Objects.ComponentType
+    content.vb: Public ReadOnly Property Type As ComponentType
+  overload: Remora.Discord.API.Objects.ButtonComponent.Type*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IButtonComponent.Type
+references:
+- uid: Remora.Discord.API.Objects
+  commentId: N:Remora.Discord.API.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Objects
+  nameWithType: Remora.Discord.API.Objects
+  fullName: Remora.Discord.API.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Objects
+    name: Objects
+    href: Remora.Discord.API.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Objects
+    name: Objects
+    href: Remora.Discord.API.Objects.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Remora.Discord.API.Abstractions.Objects.IButtonComponent
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IButtonComponent
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IButtonComponent.html
+  name: IButtonComponent
+  nameWithType: IButtonComponent
+  fullName: Remora.Discord.API.Abstractions.Objects.IButtonComponent
+- uid: Remora.Discord.API.Abstractions.Objects.IMessageComponent
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IMessageComponent
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IMessageComponent.html
+  name: IMessageComponent
+  nameWithType: IMessageComponent
+  fullName: Remora.Discord.API.Abstractions.Objects.IMessageComponent
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialButtonComponent
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IPartialButtonComponent
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IPartialButtonComponent.html
+  name: IPartialButtonComponent
+  nameWithType: IPartialButtonComponent
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialButtonComponent
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialMessageComponent
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IPartialMessageComponent
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IPartialMessageComponent.html
+  name: IPartialMessageComponent
+  nameWithType: IPartialMessageComponent
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialMessageComponent
+- uid: System.IEquatable{Remora.Discord.API.Objects.ButtonComponent}
+  commentId: T:System.IEquatable{Remora.Discord.API.Objects.ButtonComponent}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<ButtonComponent>
+  nameWithType: IEquatable<ButtonComponent>
+  fullName: System.IEquatable<Remora.Discord.API.Objects.ButtonComponent>
+  nameWithType.vb: IEquatable(Of ButtonComponent)
+  fullName.vb: System.IEquatable(Of Remora.Discord.API.Objects.ButtonComponent)
+  name.vb: IEquatable(Of ButtonComponent)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Remora.Discord.API.Objects.ButtonComponent
+    name: ButtonComponent
+    href: Remora.Discord.API.Objects.ButtonComponent.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Objects.ButtonComponent
+    name: ButtonComponent
+    href: Remora.Discord.API.Objects.ButtonComponent.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.API.Abstractions.Objects
+  commentId: N:Remora.Discord.API.Abstractions.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Objects
+  nameWithType: Remora.Discord.API.Abstractions.Objects
+  fullName: Remora.Discord.API.Abstractions.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Remora.Discord.API.Objects.ButtonComponent.#ctor*
+  commentId: Overload:Remora.Discord.API.Objects.ButtonComponent.#ctor
+  href: Remora.Discord.API.Objects.ButtonComponent.html#Remora_Discord_API_Objects_ButtonComponent__ctor_Remora_Discord_API_Abstractions_Objects_ButtonComponentStyle_Remora_Rest_Core_Optional_System_String__Remora_Rest_Core_Optional_Remora_Discord_API_Abstractions_Objects_IPartialEmoji__Remora_Rest_Core_Optional_System_String__Remora_Rest_Core_Optional_System_String__Remora_Rest_Core_Optional_System_Boolean__
+  name: ButtonComponent
+  nameWithType: ButtonComponent.ButtonComponent
+  fullName: Remora.Discord.API.Objects.ButtonComponent.ButtonComponent
+  nameWithType.vb: ButtonComponent.New
+  fullName.vb: Remora.Discord.API.Objects.ButtonComponent.New
+  name.vb: New
+- uid: Remora.Discord.API.Abstractions.Objects.ButtonComponentStyle
+  commentId: T:Remora.Discord.API.Abstractions.Objects.ButtonComponentStyle
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.ButtonComponentStyle.html
+  name: ButtonComponentStyle
+  nameWithType: ButtonComponentStyle
+  fullName: Remora.Discord.API.Abstractions.Objects.ButtonComponentStyle
+- uid: Remora.Rest.Core.Optional{System.String}
+  commentId: T:Remora.Rest.Core.Optional{System.String}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Optional<string>
+  nameWithType: Optional<string>
+  fullName: Remora.Rest.Core.Optional<string>
+  nameWithType.vb: Optional(Of String)
+  fullName.vb: Remora.Rest.Core.Optional(Of String)
+  name.vb: Optional(Of String)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IPartialEmoji}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Discord.API.Abstractions.Objects.IPartialEmoji}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: Remora.Discord.API.Abstractions.Objects.IPartialEmoji.html
+  name: Optional<IPartialEmoji>
+  nameWithType: Optional<IPartialEmoji>
+  fullName: Remora.Rest.Core.Optional<Remora.Discord.API.Abstractions.Objects.IPartialEmoji>
+  nameWithType.vb: Optional(Of IPartialEmoji)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Discord.API.Abstractions.Objects.IPartialEmoji)
+  name.vb: Optional(Of IPartialEmoji)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IPartialEmoji
+    name: IPartialEmoji
+    href: Remora.Discord.API.Abstractions.Objects.IPartialEmoji.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IPartialEmoji
+    name: IPartialEmoji
+    href: Remora.Discord.API.Abstractions.Objects.IPartialEmoji.html
+  - name: )
+- uid: Remora.Rest.Core.Optional{System.Boolean}
+  commentId: T:Remora.Rest.Core.Optional{System.Boolean}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: Optional<bool>
+  nameWithType: Optional<bool>
+  fullName: Remora.Rest.Core.Optional<bool>
+  nameWithType.vb: Optional(Of Boolean)
+  fullName.vb: Remora.Rest.Core.Optional(Of Boolean)
+  name.vb: Optional(Of Boolean)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Remora.Rest.Core.Optional`1
+  commentId: T:Remora.Rest.Core.Optional`1
+  isExternal: true
+  name: Optional<TValue>
+  nameWithType: Optional<TValue>
+  fullName: Remora.Rest.Core.Optional<TValue>
+  nameWithType.vb: Optional(Of TValue)
+  fullName.vb: Remora.Rest.Core.Optional(Of TValue)
+  name.vb: Optional(Of TValue)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+- uid: Remora.Discord.API.Objects.ButtonComponent.Style*
+  commentId: Overload:Remora.Discord.API.Objects.ButtonComponent.Style
+  href: Remora.Discord.API.Objects.ButtonComponent.html#Remora_Discord_API_Objects_ButtonComponent_Style
+  name: Style
+  nameWithType: ButtonComponent.Style
+  fullName: Remora.Discord.API.Objects.ButtonComponent.Style
+- uid: Remora.Discord.API.Abstractions.Objects.IButtonComponent.Style
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IButtonComponent.Style
+  parent: Remora.Discord.API.Abstractions.Objects.IButtonComponent
+  href: Remora.Discord.API.Abstractions.Objects.IButtonComponent.html#Remora_Discord_API_Abstractions_Objects_IButtonComponent_Style
+  name: Style
+  nameWithType: IButtonComponent.Style
+  fullName: Remora.Discord.API.Abstractions.Objects.IButtonComponent.Style
+- uid: Remora.Discord.API.Objects.ButtonComponent.Label*
+  commentId: Overload:Remora.Discord.API.Objects.ButtonComponent.Label
+  href: Remora.Discord.API.Objects.ButtonComponent.html#Remora_Discord_API_Objects_ButtonComponent_Label
+  name: Label
+  nameWithType: ButtonComponent.Label
+  fullName: Remora.Discord.API.Objects.ButtonComponent.Label
+- uid: Remora.Discord.API.Abstractions.Objects.IButtonComponent.Label
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IButtonComponent.Label
+  parent: Remora.Discord.API.Abstractions.Objects.IButtonComponent
+  href: Remora.Discord.API.Abstractions.Objects.IButtonComponent.html#Remora_Discord_API_Abstractions_Objects_IButtonComponent_Label
+  name: Label
+  nameWithType: IButtonComponent.Label
+  fullName: Remora.Discord.API.Abstractions.Objects.IButtonComponent.Label
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialButtonComponent.Label
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialButtonComponent.Label
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialButtonComponent
+  href: Remora.Discord.API.Abstractions.Objects.IPartialButtonComponent.html#Remora_Discord_API_Abstractions_Objects_IPartialButtonComponent_Label
+  name: Label
+  nameWithType: IPartialButtonComponent.Label
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialButtonComponent.Label
+- uid: Remora.Discord.API.Objects.ButtonComponent.Emoji*
+  commentId: Overload:Remora.Discord.API.Objects.ButtonComponent.Emoji
+  href: Remora.Discord.API.Objects.ButtonComponent.html#Remora_Discord_API_Objects_ButtonComponent_Emoji
+  name: Emoji
+  nameWithType: ButtonComponent.Emoji
+  fullName: Remora.Discord.API.Objects.ButtonComponent.Emoji
+- uid: Remora.Discord.API.Abstractions.Objects.IButtonComponent.Emoji
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IButtonComponent.Emoji
+  parent: Remora.Discord.API.Abstractions.Objects.IButtonComponent
+  href: Remora.Discord.API.Abstractions.Objects.IButtonComponent.html#Remora_Discord_API_Abstractions_Objects_IButtonComponent_Emoji
+  name: Emoji
+  nameWithType: IButtonComponent.Emoji
+  fullName: Remora.Discord.API.Abstractions.Objects.IButtonComponent.Emoji
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialButtonComponent.Emoji
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialButtonComponent.Emoji
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialButtonComponent
+  href: Remora.Discord.API.Abstractions.Objects.IPartialButtonComponent.html#Remora_Discord_API_Abstractions_Objects_IPartialButtonComponent_Emoji
+  name: Emoji
+  nameWithType: IPartialButtonComponent.Emoji
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialButtonComponent.Emoji
+- uid: Remora.Discord.API.Objects.ButtonComponent.CustomID*
+  commentId: Overload:Remora.Discord.API.Objects.ButtonComponent.CustomID
+  href: Remora.Discord.API.Objects.ButtonComponent.html#Remora_Discord_API_Objects_ButtonComponent_CustomID
+  name: CustomID
+  nameWithType: ButtonComponent.CustomID
+  fullName: Remora.Discord.API.Objects.ButtonComponent.CustomID
+- uid: Remora.Discord.API.Abstractions.Objects.IButtonComponent.CustomID
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IButtonComponent.CustomID
+  parent: Remora.Discord.API.Abstractions.Objects.IButtonComponent
+  href: Remora.Discord.API.Abstractions.Objects.IButtonComponent.html#Remora_Discord_API_Abstractions_Objects_IButtonComponent_CustomID
+  name: CustomID
+  nameWithType: IButtonComponent.CustomID
+  fullName: Remora.Discord.API.Abstractions.Objects.IButtonComponent.CustomID
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialButtonComponent.CustomID
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialButtonComponent.CustomID
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialButtonComponent
+  href: Remora.Discord.API.Abstractions.Objects.IPartialButtonComponent.html#Remora_Discord_API_Abstractions_Objects_IPartialButtonComponent_CustomID
+  name: CustomID
+  nameWithType: IPartialButtonComponent.CustomID
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialButtonComponent.CustomID
+- uid: Remora.Discord.API.Objects.ButtonComponent.URL*
+  commentId: Overload:Remora.Discord.API.Objects.ButtonComponent.URL
+  href: Remora.Discord.API.Objects.ButtonComponent.html#Remora_Discord_API_Objects_ButtonComponent_URL
+  name: URL
+  nameWithType: ButtonComponent.URL
+  fullName: Remora.Discord.API.Objects.ButtonComponent.URL
+- uid: Remora.Discord.API.Abstractions.Objects.IButtonComponent.URL
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IButtonComponent.URL
+  parent: Remora.Discord.API.Abstractions.Objects.IButtonComponent
+  href: Remora.Discord.API.Abstractions.Objects.IButtonComponent.html#Remora_Discord_API_Abstractions_Objects_IButtonComponent_URL
+  name: URL
+  nameWithType: IButtonComponent.URL
+  fullName: Remora.Discord.API.Abstractions.Objects.IButtonComponent.URL
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialButtonComponent.URL
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialButtonComponent.URL
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialButtonComponent
+  href: Remora.Discord.API.Abstractions.Objects.IPartialButtonComponent.html#Remora_Discord_API_Abstractions_Objects_IPartialButtonComponent_URL
+  name: URL
+  nameWithType: IPartialButtonComponent.URL
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialButtonComponent.URL
+- uid: Remora.Discord.API.Objects.ButtonComponent.IsDisabled*
+  commentId: Overload:Remora.Discord.API.Objects.ButtonComponent.IsDisabled
+  href: Remora.Discord.API.Objects.ButtonComponent.html#Remora_Discord_API_Objects_ButtonComponent_IsDisabled
+  name: IsDisabled
+  nameWithType: ButtonComponent.IsDisabled
+  fullName: Remora.Discord.API.Objects.ButtonComponent.IsDisabled
+- uid: Remora.Discord.API.Abstractions.Objects.IButtonComponent.IsDisabled
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IButtonComponent.IsDisabled
+  parent: Remora.Discord.API.Abstractions.Objects.IButtonComponent
+  href: Remora.Discord.API.Abstractions.Objects.IButtonComponent.html#Remora_Discord_API_Abstractions_Objects_IButtonComponent_IsDisabled
+  name: IsDisabled
+  nameWithType: IButtonComponent.IsDisabled
+  fullName: Remora.Discord.API.Abstractions.Objects.IButtonComponent.IsDisabled
+- uid: Remora.Discord.API.Abstractions.Objects.IPartialButtonComponent.IsDisabled
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPartialButtonComponent.IsDisabled
+  parent: Remora.Discord.API.Abstractions.Objects.IPartialButtonComponent
+  href: Remora.Discord.API.Abstractions.Objects.IPartialButtonComponent.html#Remora_Discord_API_Abstractions_Objects_IPartialButtonComponent_IsDisabled
+  name: IsDisabled
+  nameWithType: IPartialButtonComponent.IsDisabled
+  fullName: Remora.Discord.API.Abstractions.Objects.IPartialButtonComponent.IsDisabled
+- uid: Remora.Discord.API.Objects.ButtonComponent.Type*
+  commentId: Overload:Remora.Discord.API.Objects.ButtonComponent.Type
+  href: Remora.Discord.API.Objects.ButtonComponent.html#Remora_Discord_API_Objects_ButtonComponent_Type
+  name: Type
+  nameWithType: ButtonComponent.Type
+  fullName: Remora.Discord.API.Objects.ButtonComponent.Type
+- uid: Remora.Discord.API.Abstractions.Objects.IButtonComponent.Type
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IButtonComponent.Type
+  parent: Remora.Discord.API.Abstractions.Objects.IButtonComponent
+  href: Remora.Discord.API.Abstractions.Objects.IButtonComponent.html#Remora_Discord_API_Abstractions_Objects_IButtonComponent_Type
+  name: Type
+  nameWithType: IButtonComponent.Type
+  fullName: Remora.Discord.API.Abstractions.Objects.IButtonComponent.Type
+- uid: Remora.Discord.API.Abstractions.Objects.ComponentType
+  commentId: T:Remora.Discord.API.Abstractions.Objects.ComponentType
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.ComponentType.html
+  name: ComponentType
+  nameWithType: ComponentType
+  fullName: Remora.Discord.API.Abstractions.Objects.ComponentType

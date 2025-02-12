@@ -1,0 +1,270 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite
+  id: IPermissionOverwrite
+  parent: Remora.Discord.API.Abstractions.Objects
+  children:
+  - Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.Allow
+  - Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.Deny
+  - Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.ID
+  - Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.Type
+  langs:
+  - csharp
+  - vb
+  name: IPermissionOverwrite
+  nameWithType: IPermissionOverwrite
+  fullName: Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite
+  type: Interface
+  source:
+    id: IPermissionOverwrite
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Permissions\IPermissionOverwrite.cs
+    startLine: 30
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Represents a channel- or category-specific permission overwrite.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public interface IPermissionOverwrite : IPartialPermissionOverwrite
+    content.vb: >-
+      <PublicAPI>
+
+      Public Interface IPermissionOverwrite Inherits IPartialPermissionOverwrite
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.ID
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.ID
+  id: ID
+  parent: Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite
+  langs:
+  - csharp
+  - vb
+  name: ID
+  nameWithType: IPermissionOverwrite.ID
+  fullName: Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.ID
+  type: Property
+  source:
+    id: ID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Permissions\IPermissionOverwrite.cs
+    startLine: 36
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the ID of the role or user ID that the overwrite affects.
+  example: []
+  syntax:
+    content: Snowflake ID { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Snowflake
+    content.vb: ReadOnly Property ID As Snowflake
+  overload: Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.ID*
+- uid: Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.Type
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.Type
+  id: Type
+  parent: Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: IPermissionOverwrite.Type
+  fullName: Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.Type
+  type: Property
+  source:
+    id: Type
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Permissions\IPermissionOverwrite.cs
+    startLine: 41
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the type of the overwrite.
+  example: []
+  syntax:
+    content: PermissionOverwriteType Type { get; }
+    parameters: []
+    return:
+      type: Remora.Discord.API.Abstractions.Objects.PermissionOverwriteType
+    content.vb: ReadOnly Property Type As PermissionOverwriteType
+  overload: Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.Type*
+- uid: Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.Allow
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.Allow
+  id: Allow
+  parent: Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite
+  langs:
+  - csharp
+  - vb
+  name: Allow
+  nameWithType: IPermissionOverwrite.Allow
+  fullName: Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.Allow
+  type: Property
+  source:
+    id: Allow
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Permissions\IPermissionOverwrite.cs
+    startLine: 46
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the set of permissions that are explicitly allowed.
+  example: []
+  syntax:
+    content: IDiscordPermissionSet Allow { get; }
+    parameters: []
+    return:
+      type: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet
+    content.vb: ReadOnly Property Allow As IDiscordPermissionSet
+  overload: Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.Allow*
+- uid: Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.Deny
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.Deny
+  id: Deny
+  parent: Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite
+  langs:
+  - csharp
+  - vb
+  name: Deny
+  nameWithType: IPermissionOverwrite.Deny
+  fullName: Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.Deny
+  type: Property
+  source:
+    id: Deny
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Permissions\IPermissionOverwrite.cs
+    startLine: 51
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Gets the set of permissions that are explicitly denied.
+  example: []
+  syntax:
+    content: IDiscordPermissionSet Deny { get; }
+    parameters: []
+    return:
+      type: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet
+    content.vb: ReadOnly Property Deny As IDiscordPermissionSet
+  overload: Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.Deny*
+references:
+- uid: Remora.Discord.API.Abstractions.Objects
+  commentId: N:Remora.Discord.API.Abstractions.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Objects
+  nameWithType: Remora.Discord.API.Abstractions.Objects
+  fullName: Remora.Discord.API.Abstractions.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+- uid: Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.ID*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.ID
+  href: Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.html#Remora_Discord_API_Abstractions_Objects_IPermissionOverwrite_ID
+  name: ID
+  nameWithType: IPermissionOverwrite.ID
+  fullName: Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.ID
+- uid: Remora.Rest.Core.Snowflake
+  commentId: T:Remora.Rest.Core.Snowflake
+  parent: Remora.Rest.Core
+  isExternal: true
+  name: Snowflake
+  nameWithType: Snowflake
+  fullName: Remora.Rest.Core.Snowflake
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+- uid: Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.Type*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.Type
+  href: Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.html#Remora_Discord_API_Abstractions_Objects_IPermissionOverwrite_Type
+  name: Type
+  nameWithType: IPermissionOverwrite.Type
+  fullName: Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.Type
+- uid: Remora.Discord.API.Abstractions.Objects.PermissionOverwriteType
+  commentId: T:Remora.Discord.API.Abstractions.Objects.PermissionOverwriteType
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.PermissionOverwriteType.html
+  name: PermissionOverwriteType
+  nameWithType: PermissionOverwriteType
+  fullName: Remora.Discord.API.Abstractions.Objects.PermissionOverwriteType
+- uid: Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.Allow*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.Allow
+  href: Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.html#Remora_Discord_API_Abstractions_Objects_IPermissionOverwrite_Allow
+  name: Allow
+  nameWithType: IPermissionOverwrite.Allow
+  fullName: Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.Allow
+- uid: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet.html
+  name: IDiscordPermissionSet
+  nameWithType: IDiscordPermissionSet
+  fullName: Remora.Discord.API.Abstractions.Objects.IDiscordPermissionSet
+- uid: Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.Deny*
+  commentId: Overload:Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.Deny
+  href: Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.html#Remora_Discord_API_Abstractions_Objects_IPermissionOverwrite_Deny
+  name: Deny
+  nameWithType: IPermissionOverwrite.Deny
+  fullName: Remora.Discord.API.Abstractions.Objects.IPermissionOverwrite.Deny

@@ -1,0 +1,1293 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.Commands.Responders.CommandResponder
+  commentId: T:Remora.Discord.Commands.Responders.CommandResponder
+  id: CommandResponder
+  parent: Remora.Discord.Commands.Responders
+  children:
+  - Remora.Discord.Commands.Responders.CommandResponder.#ctor(Remora.Commands.Services.CommandService,Microsoft.Extensions.Options.IOptions{Remora.Discord.Commands.Responders.CommandResponderOptions},Remora.Discord.Commands.Services.ExecutionEventCollectorService,System.IServiceProvider,Remora.Discord.Commands.Services.ContextInjectionService,Microsoft.Extensions.Options.IOptions{Remora.Commands.Tokenization.TokenizerOptions},Microsoft.Extensions.Options.IOptions{Remora.Commands.Trees.TreeSearchOptions},Remora.Discord.Commands.Services.ITreeNameResolver)
+  - Remora.Discord.Commands.Responders.CommandResponder.ExecuteCommandAsync(System.String,Remora.Discord.Commands.Contexts.MessageContext,System.Threading.CancellationToken)
+  - Remora.Discord.Commands.Responders.CommandResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate,System.Threading.CancellationToken)
+  - Remora.Discord.Commands.Responders.CommandResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: CommandResponder
+  nameWithType: CommandResponder
+  fullName: Remora.Discord.Commands.Responders.CommandResponder
+  type: Class
+  source:
+    id: CommandResponder
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Remora.Discord.Commands\Responders\CommandResponder.cs
+    startLine: 43
+  assemblies:
+  - Remora.Discord.Commands
+  namespace: Remora.Discord.Commands.Responders
+  summary: Responds to commands.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public class CommandResponder : IResponder<IMessageCreate>, IResponder<IMessageUpdate>, IResponder
+    content.vb: >-
+      <PublicAPI>
+
+      Public Class CommandResponder Implements IResponder(Of IMessageCreate), IResponder(Of IMessageUpdate), IResponder
+  inheritance:
+  - System.Object
+  implements:
+  - Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate}
+  - Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate}
+  - Remora.Discord.Gateway.Responders.IResponder
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.Commands.Responders.CommandResponder.#ctor(Remora.Commands.Services.CommandService,Microsoft.Extensions.Options.IOptions{Remora.Discord.Commands.Responders.CommandResponderOptions},Remora.Discord.Commands.Services.ExecutionEventCollectorService,System.IServiceProvider,Remora.Discord.Commands.Services.ContextInjectionService,Microsoft.Extensions.Options.IOptions{Remora.Commands.Tokenization.TokenizerOptions},Microsoft.Extensions.Options.IOptions{Remora.Commands.Trees.TreeSearchOptions},Remora.Discord.Commands.Services.ITreeNameResolver)
+  commentId: M:Remora.Discord.Commands.Responders.CommandResponder.#ctor(Remora.Commands.Services.CommandService,Microsoft.Extensions.Options.IOptions{Remora.Discord.Commands.Responders.CommandResponderOptions},Remora.Discord.Commands.Services.ExecutionEventCollectorService,System.IServiceProvider,Remora.Discord.Commands.Services.ContextInjectionService,Microsoft.Extensions.Options.IOptions{Remora.Commands.Tokenization.TokenizerOptions},Microsoft.Extensions.Options.IOptions{Remora.Commands.Trees.TreeSearchOptions},Remora.Discord.Commands.Services.ITreeNameResolver)
+  id: '#ctor(Remora.Commands.Services.CommandService,Microsoft.Extensions.Options.IOptions{Remora.Discord.Commands.Responders.CommandResponderOptions},Remora.Discord.Commands.Services.ExecutionEventCollectorService,System.IServiceProvider,Remora.Discord.Commands.Services.ContextInjectionService,Microsoft.Extensions.Options.IOptions{Remora.Commands.Tokenization.TokenizerOptions},Microsoft.Extensions.Options.IOptions{Remora.Commands.Trees.TreeSearchOptions},Remora.Discord.Commands.Services.ITreeNameResolver)'
+  parent: Remora.Discord.Commands.Responders.CommandResponder
+  langs:
+  - csharp
+  - vb
+  name: CommandResponder(CommandService, IOptions<CommandResponderOptions>, ExecutionEventCollectorService, IServiceProvider, ContextInjectionService, IOptions<TokenizerOptions>, IOptions<TreeSearchOptions>, ITreeNameResolver?)
+  nameWithType: CommandResponder.CommandResponder(CommandService, IOptions<CommandResponderOptions>, ExecutionEventCollectorService, IServiceProvider, ContextInjectionService, IOptions<TokenizerOptions>, IOptions<TreeSearchOptions>, ITreeNameResolver?)
+  fullName: Remora.Discord.Commands.Responders.CommandResponder.CommandResponder(Remora.Commands.Services.CommandService, Microsoft.Extensions.Options.IOptions<Remora.Discord.Commands.Responders.CommandResponderOptions>, Remora.Discord.Commands.Services.ExecutionEventCollectorService, System.IServiceProvider, Remora.Discord.Commands.Services.ContextInjectionService, Microsoft.Extensions.Options.IOptions<Remora.Commands.Tokenization.TokenizerOptions>, Microsoft.Extensions.Options.IOptions<Remora.Commands.Trees.TreeSearchOptions>, Remora.Discord.Commands.Services.ITreeNameResolver?)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Remora.Discord.Commands\Responders\CommandResponder.cs
+    startLine: 68
+  assemblies:
+  - Remora.Discord.Commands
+  namespace: Remora.Discord.Commands.Responders
+  summary: Initializes a new instance of the <xref href="Remora.Discord.Commands.Responders.CommandResponder" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public CommandResponder(CommandService commandService, IOptions<CommandResponderOptions> options, ExecutionEventCollectorService eventCollector, IServiceProvider services, ContextInjectionService contextInjection, IOptions<TokenizerOptions> tokenizerOptions, IOptions<TreeSearchOptions> treeSearchOptions, ITreeNameResolver? treeNameResolver = null)
+    parameters:
+    - id: commandService
+      type: Remora.Commands.Services.CommandService
+      description: The command service.
+    - id: options
+      type: Microsoft.Extensions.Options.IOptions{Remora.Discord.Commands.Responders.CommandResponderOptions}
+      description: The command responder options.
+    - id: eventCollector
+      type: Remora.Discord.Commands.Services.ExecutionEventCollectorService
+      description: The event collector.
+    - id: services
+      type: System.IServiceProvider
+      description: The available services.
+    - id: contextInjection
+      type: Remora.Discord.Commands.Services.ContextInjectionService
+      description: The injection service.
+    - id: tokenizerOptions
+      type: Microsoft.Extensions.Options.IOptions{Remora.Commands.Tokenization.TokenizerOptions}
+      description: The tokenizer options.
+    - id: treeSearchOptions
+      type: Microsoft.Extensions.Options.IOptions{Remora.Commands.Trees.TreeSearchOptions}
+      description: The tree search options.
+    - id: treeNameResolver
+      type: Remora.Discord.Commands.Services.ITreeNameResolver
+      description: The tree name resolver, if one is available.
+    content.vb: Public Sub New(commandService As CommandService, options As IOptions(Of CommandResponderOptions), eventCollector As ExecutionEventCollectorService, services As IServiceProvider, contextInjection As ContextInjectionService, tokenizerOptions As IOptions(Of TokenizerOptions), treeSearchOptions As IOptions(Of TreeSearchOptions), treeNameResolver As ITreeNameResolver = Nothing)
+  overload: Remora.Discord.Commands.Responders.CommandResponder.#ctor*
+  nameWithType.vb: CommandResponder.New(CommandService, IOptions(Of CommandResponderOptions), ExecutionEventCollectorService, IServiceProvider, ContextInjectionService, IOptions(Of TokenizerOptions), IOptions(Of TreeSearchOptions), ITreeNameResolver)
+  fullName.vb: Remora.Discord.Commands.Responders.CommandResponder.New(Remora.Commands.Services.CommandService, Microsoft.Extensions.Options.IOptions(Of Remora.Discord.Commands.Responders.CommandResponderOptions), Remora.Discord.Commands.Services.ExecutionEventCollectorService, System.IServiceProvider, Remora.Discord.Commands.Services.ContextInjectionService, Microsoft.Extensions.Options.IOptions(Of Remora.Commands.Tokenization.TokenizerOptions), Microsoft.Extensions.Options.IOptions(Of Remora.Commands.Trees.TreeSearchOptions), Remora.Discord.Commands.Services.ITreeNameResolver)
+  name.vb: New(CommandService, IOptions(Of CommandResponderOptions), ExecutionEventCollectorService, IServiceProvider, ContextInjectionService, IOptions(Of TokenizerOptions), IOptions(Of TreeSearchOptions), ITreeNameResolver)
+- uid: Remora.Discord.Commands.Responders.CommandResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Commands.Responders.CommandResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate,System.Threading.CancellationToken)
+  id: RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate,System.Threading.CancellationToken)
+  parent: Remora.Discord.Commands.Responders.CommandResponder
+  langs:
+  - csharp
+  - vb
+  name: RespondAsync(IMessageCreate, CancellationToken)
+  nameWithType: CommandResponder.RespondAsync(IMessageCreate, CancellationToken)
+  fullName: Remora.Discord.Commands.Responders.CommandResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: RespondAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Remora.Discord.Commands\Responders\CommandResponder.cs
+    startLine: 93
+  assemblies:
+  - Remora.Discord.Commands
+  namespace: Remora.Discord.Commands.Responders
+  summary: Responds to the given gateway event, handling it asynchronously.
+  example: []
+  syntax:
+    content: public virtual Task<Result> RespondAsync(IMessageCreate gatewayEvent, CancellationToken ct = default)
+    parameters:
+    - id: gatewayEvent
+      type: Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate
+      description: The event to respond to.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result}
+      description: A response result which may or may not have succeeded.
+    content.vb: Public Overridable Function RespondAsync(gatewayEvent As IMessageCreate, ct As CancellationToken = Nothing) As Task(Of Result)
+  overload: Remora.Discord.Commands.Responders.CommandResponder.RespondAsync*
+  implements:
+  - Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate,System.Threading.CancellationToken)
+- uid: Remora.Discord.Commands.Responders.CommandResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Commands.Responders.CommandResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate,System.Threading.CancellationToken)
+  id: RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate,System.Threading.CancellationToken)
+  parent: Remora.Discord.Commands.Responders.CommandResponder
+  langs:
+  - csharp
+  - vb
+  name: RespondAsync(IMessageUpdate, CancellationToken)
+  nameWithType: CommandResponder.RespondAsync(IMessageUpdate, CancellationToken)
+  fullName: Remora.Discord.Commands.Responders.CommandResponder.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: RespondAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Remora.Discord.Commands\Responders\CommandResponder.cs
+    startLine: 124
+  assemblies:
+  - Remora.Discord.Commands
+  namespace: Remora.Discord.Commands.Responders
+  summary: Responds to the given gateway event, handling it asynchronously.
+  example: []
+  syntax:
+    content: public virtual Task<Result> RespondAsync(IMessageUpdate gatewayEvent, CancellationToken ct = default)
+    parameters:
+    - id: gatewayEvent
+      type: Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate
+      description: The event to respond to.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result}
+      description: A response result which may or may not have succeeded.
+    content.vb: Public Overridable Function RespondAsync(gatewayEvent As IMessageUpdate, ct As CancellationToken = Nothing) As Task(Of Result)
+  overload: Remora.Discord.Commands.Responders.CommandResponder.RespondAsync*
+  implements:
+  - Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate,System.Threading.CancellationToken)
+- uid: Remora.Discord.Commands.Responders.CommandResponder.ExecuteCommandAsync(System.String,Remora.Discord.Commands.Contexts.MessageContext,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Commands.Responders.CommandResponder.ExecuteCommandAsync(System.String,Remora.Discord.Commands.Contexts.MessageContext,System.Threading.CancellationToken)
+  id: ExecuteCommandAsync(System.String,Remora.Discord.Commands.Contexts.MessageContext,System.Threading.CancellationToken)
+  parent: Remora.Discord.Commands.Responders.CommandResponder
+  langs:
+  - csharp
+  - vb
+  name: ExecuteCommandAsync(string, MessageContext, CancellationToken)
+  nameWithType: CommandResponder.ExecuteCommandAsync(string, MessageContext, CancellationToken)
+  fullName: Remora.Discord.Commands.Responders.CommandResponder.ExecuteCommandAsync(string, Remora.Discord.Commands.Contexts.MessageContext, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: ExecuteCommandAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Remora.Discord.Commands\Responders\CommandResponder.cs
+    startLine: 178
+  assemblies:
+  - Remora.Discord.Commands
+  namespace: Remora.Discord.Commands.Responders
+  summary: Executes the actual command.
+  example: []
+  syntax:
+    content: protected virtual Task<Result> ExecuteCommandAsync(string content, MessageContext operationContext, CancellationToken ct = default)
+    parameters:
+    - id: content
+      type: System.String
+      description: The contents of the message.
+    - id: operationContext
+      type: Remora.Discord.Commands.Contexts.MessageContext
+      description: The command context.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result}
+      description: A result which may or may not have succeeded.
+    content.vb: Protected Overridable Function ExecuteCommandAsync(content As String, operationContext As MessageContext, ct As CancellationToken = Nothing) As Task(Of Result)
+  overload: Remora.Discord.Commands.Responders.CommandResponder.ExecuteCommandAsync*
+  nameWithType.vb: CommandResponder.ExecuteCommandAsync(String, MessageContext, CancellationToken)
+  fullName.vb: Remora.Discord.Commands.Responders.CommandResponder.ExecuteCommandAsync(String, Remora.Discord.Commands.Contexts.MessageContext, System.Threading.CancellationToken)
+  name.vb: ExecuteCommandAsync(String, MessageContext, CancellationToken)
+references:
+- uid: Remora.Discord.Commands.Responders
+  commentId: N:Remora.Discord.Commands.Responders
+  href: Remora.html
+  name: Remora.Discord.Commands.Responders
+  nameWithType: Remora.Discord.Commands.Responders
+  fullName: Remora.Discord.Commands.Responders
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Commands
+    name: Commands
+    href: Remora.Discord.Commands.html
+  - name: .
+  - uid: Remora.Discord.Commands.Responders
+    name: Responders
+    href: Remora.Discord.Commands.Responders.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Commands
+    name: Commands
+    href: Remora.Discord.Commands.html
+  - name: .
+  - uid: Remora.Discord.Commands.Responders
+    name: Responders
+    href: Remora.Discord.Commands.Responders.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate}
+  commentId: T:Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate}
+  parent: Remora.Discord.Gateway.Responders
+  definition: Remora.Discord.Gateway.Responders.IResponder`1
+  href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  name: IResponder<IMessageCreate>
+  nameWithType: IResponder<IMessageCreate>
+  fullName: Remora.Discord.Gateway.Responders.IResponder<Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate>
+  nameWithType.vb: IResponder(Of IMessageCreate)
+  fullName.vb: Remora.Discord.Gateway.Responders.IResponder(Of Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate)
+  name.vb: IResponder(Of IMessageCreate)
+  spec.csharp:
+  - uid: Remora.Discord.Gateway.Responders.IResponder`1
+    name: IResponder
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate
+    name: IMessageCreate
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Discord.Gateway.Responders.IResponder`1
+    name: IResponder
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate
+    name: IMessageCreate
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate.html
+  - name: )
+- uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate}
+  commentId: T:Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate}
+  parent: Remora.Discord.Gateway.Responders
+  definition: Remora.Discord.Gateway.Responders.IResponder`1
+  href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  name: IResponder<IMessageUpdate>
+  nameWithType: IResponder<IMessageUpdate>
+  fullName: Remora.Discord.Gateway.Responders.IResponder<Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate>
+  nameWithType.vb: IResponder(Of IMessageUpdate)
+  fullName.vb: Remora.Discord.Gateway.Responders.IResponder(Of Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate)
+  name.vb: IResponder(Of IMessageUpdate)
+  spec.csharp:
+  - uid: Remora.Discord.Gateway.Responders.IResponder`1
+    name: IResponder
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate
+    name: IMessageUpdate
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate.html
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Discord.Gateway.Responders.IResponder`1
+    name: IResponder
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate
+    name: IMessageUpdate
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate.html
+  - name: )
+- uid: Remora.Discord.Gateway.Responders.IResponder
+  commentId: T:Remora.Discord.Gateway.Responders.IResponder
+  parent: Remora.Discord.Gateway.Responders
+  href: Remora.Discord.Gateway.Responders.IResponder.html
+  name: IResponder
+  nameWithType: IResponder
+  fullName: Remora.Discord.Gateway.Responders.IResponder
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.Gateway.Responders.IResponder`1
+  commentId: T:Remora.Discord.Gateway.Responders.IResponder`1
+  href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  name: IResponder<TGatewayEvent>
+  nameWithType: IResponder<TGatewayEvent>
+  fullName: Remora.Discord.Gateway.Responders.IResponder<TGatewayEvent>
+  nameWithType.vb: IResponder(Of TGatewayEvent)
+  fullName.vb: Remora.Discord.Gateway.Responders.IResponder(Of TGatewayEvent)
+  name.vb: IResponder(Of TGatewayEvent)
+  spec.csharp:
+  - uid: Remora.Discord.Gateway.Responders.IResponder`1
+    name: IResponder
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  - name: <
+  - name: TGatewayEvent
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Discord.Gateway.Responders.IResponder`1
+    name: IResponder
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TGatewayEvent
+  - name: )
+- uid: Remora.Discord.Gateway.Responders
+  commentId: N:Remora.Discord.Gateway.Responders
+  href: Remora.html
+  name: Remora.Discord.Gateway.Responders
+  nameWithType: Remora.Discord.Gateway.Responders
+  fullName: Remora.Discord.Gateway.Responders
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Gateway
+    name: Gateway
+    href: Remora.Discord.Gateway.html
+  - name: .
+  - uid: Remora.Discord.Gateway.Responders
+    name: Responders
+    href: Remora.Discord.Gateway.Responders.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Gateway
+    name: Gateway
+    href: Remora.Discord.Gateway.html
+  - name: .
+  - uid: Remora.Discord.Gateway.Responders
+    name: Responders
+    href: Remora.Discord.Gateway.Responders.html
+- uid: Remora.Discord.Commands.Responders.CommandResponder
+  commentId: T:Remora.Discord.Commands.Responders.CommandResponder
+  href: Remora.Discord.Commands.Responders.CommandResponder.html
+  name: CommandResponder
+  nameWithType: CommandResponder
+  fullName: Remora.Discord.Commands.Responders.CommandResponder
+- uid: Remora.Discord.Commands.Responders.CommandResponder.#ctor*
+  commentId: Overload:Remora.Discord.Commands.Responders.CommandResponder.#ctor
+  href: Remora.Discord.Commands.Responders.CommandResponder.html#Remora_Discord_Commands_Responders_CommandResponder__ctor_Remora_Commands_Services_CommandService_Microsoft_Extensions_Options_IOptions_Remora_Discord_Commands_Responders_CommandResponderOptions__Remora_Discord_Commands_Services_ExecutionEventCollectorService_System_IServiceProvider_Remora_Discord_Commands_Services_ContextInjectionService_Microsoft_Extensions_Options_IOptions_Remora_Commands_Tokenization_TokenizerOptions__Microsoft_Extensions_Options_IOptions_Remora_Commands_Trees_TreeSearchOptions__Remora_Discord_Commands_Services_ITreeNameResolver_
+  name: CommandResponder
+  nameWithType: CommandResponder.CommandResponder
+  fullName: Remora.Discord.Commands.Responders.CommandResponder.CommandResponder
+  nameWithType.vb: CommandResponder.New
+  fullName.vb: Remora.Discord.Commands.Responders.CommandResponder.New
+  name.vb: New
+- uid: Remora.Commands.Services.CommandService
+  commentId: T:Remora.Commands.Services.CommandService
+  parent: Remora.Commands.Services
+  isExternal: true
+  name: CommandService
+  nameWithType: CommandService
+  fullName: Remora.Commands.Services.CommandService
+- uid: Microsoft.Extensions.Options.IOptions{Remora.Discord.Commands.Responders.CommandResponderOptions}
+  commentId: T:Microsoft.Extensions.Options.IOptions{Remora.Discord.Commands.Responders.CommandResponderOptions}
+  parent: Microsoft.Extensions.Options
+  definition: Microsoft.Extensions.Options.IOptions`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  name: IOptions<CommandResponderOptions>
+  nameWithType: IOptions<CommandResponderOptions>
+  fullName: Microsoft.Extensions.Options.IOptions<Remora.Discord.Commands.Responders.CommandResponderOptions>
+  nameWithType.vb: IOptions(Of CommandResponderOptions)
+  fullName.vb: Microsoft.Extensions.Options.IOptions(Of Remora.Discord.Commands.Responders.CommandResponderOptions)
+  name.vb: IOptions(Of CommandResponderOptions)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: <
+  - uid: Remora.Discord.Commands.Responders.CommandResponderOptions
+    name: CommandResponderOptions
+    href: Remora.Discord.Commands.Responders.CommandResponderOptions.html
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.Commands.Responders.CommandResponderOptions
+    name: CommandResponderOptions
+    href: Remora.Discord.Commands.Responders.CommandResponderOptions.html
+  - name: )
+- uid: Remora.Discord.Commands.Services.ExecutionEventCollectorService
+  commentId: T:Remora.Discord.Commands.Services.ExecutionEventCollectorService
+  parent: Remora.Discord.Commands.Services
+  href: Remora.Discord.Commands.Services.ExecutionEventCollectorService.html
+  name: ExecutionEventCollectorService
+  nameWithType: ExecutionEventCollectorService
+  fullName: Remora.Discord.Commands.Services.ExecutionEventCollectorService
+- uid: System.IServiceProvider
+  commentId: T:System.IServiceProvider
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iserviceprovider
+  name: IServiceProvider
+  nameWithType: IServiceProvider
+  fullName: System.IServiceProvider
+- uid: Remora.Discord.Commands.Services.ContextInjectionService
+  commentId: T:Remora.Discord.Commands.Services.ContextInjectionService
+  parent: Remora.Discord.Commands.Services
+  href: Remora.Discord.Commands.Services.ContextInjectionService.html
+  name: ContextInjectionService
+  nameWithType: ContextInjectionService
+  fullName: Remora.Discord.Commands.Services.ContextInjectionService
+- uid: Microsoft.Extensions.Options.IOptions{Remora.Commands.Tokenization.TokenizerOptions}
+  commentId: T:Microsoft.Extensions.Options.IOptions{Remora.Commands.Tokenization.TokenizerOptions}
+  parent: Microsoft.Extensions.Options
+  definition: Microsoft.Extensions.Options.IOptions`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  name: IOptions<TokenizerOptions>
+  nameWithType: IOptions<TokenizerOptions>
+  fullName: Microsoft.Extensions.Options.IOptions<Remora.Commands.Tokenization.TokenizerOptions>
+  nameWithType.vb: IOptions(Of TokenizerOptions)
+  fullName.vb: Microsoft.Extensions.Options.IOptions(Of Remora.Commands.Tokenization.TokenizerOptions)
+  name.vb: IOptions(Of TokenizerOptions)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: <
+  - uid: Remora.Commands.Tokenization.TokenizerOptions
+    name: TokenizerOptions
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Commands.Tokenization.TokenizerOptions
+    name: TokenizerOptions
+    isExternal: true
+  - name: )
+- uid: Microsoft.Extensions.Options.IOptions{Remora.Commands.Trees.TreeSearchOptions}
+  commentId: T:Microsoft.Extensions.Options.IOptions{Remora.Commands.Trees.TreeSearchOptions}
+  parent: Microsoft.Extensions.Options
+  definition: Microsoft.Extensions.Options.IOptions`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  name: IOptions<TreeSearchOptions>
+  nameWithType: IOptions<TreeSearchOptions>
+  fullName: Microsoft.Extensions.Options.IOptions<Remora.Commands.Trees.TreeSearchOptions>
+  nameWithType.vb: IOptions(Of TreeSearchOptions)
+  fullName.vb: Microsoft.Extensions.Options.IOptions(Of Remora.Commands.Trees.TreeSearchOptions)
+  name.vb: IOptions(Of TreeSearchOptions)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: <
+  - uid: Remora.Commands.Trees.TreeSearchOptions
+    name: TreeSearchOptions
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Commands.Trees.TreeSearchOptions
+    name: TreeSearchOptions
+    isExternal: true
+  - name: )
+- uid: Remora.Discord.Commands.Services.ITreeNameResolver
+  commentId: T:Remora.Discord.Commands.Services.ITreeNameResolver
+  parent: Remora.Discord.Commands.Services
+  href: Remora.Discord.Commands.Services.ITreeNameResolver.html
+  name: ITreeNameResolver
+  nameWithType: ITreeNameResolver
+  fullName: Remora.Discord.Commands.Services.ITreeNameResolver
+- uid: Remora.Commands.Services
+  commentId: N:Remora.Commands.Services
+  isExternal: true
+  name: Remora.Commands.Services
+  nameWithType: Remora.Commands.Services
+  fullName: Remora.Commands.Services
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Commands
+    name: Commands
+    isExternal: true
+  - name: .
+  - uid: Remora.Commands.Services
+    name: Services
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Commands
+    name: Commands
+    isExternal: true
+  - name: .
+  - uid: Remora.Commands.Services
+    name: Services
+    isExternal: true
+- uid: Microsoft.Extensions.Options.IOptions`1
+  commentId: T:Microsoft.Extensions.Options.IOptions`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  name: IOptions<TOptions>
+  nameWithType: IOptions<TOptions>
+  fullName: Microsoft.Extensions.Options.IOptions<TOptions>
+  nameWithType.vb: IOptions(Of TOptions)
+  fullName.vb: Microsoft.Extensions.Options.IOptions(Of TOptions)
+  name.vb: IOptions(Of TOptions)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: <
+  - name: TOptions
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TOptions
+  - name: )
+- uid: Microsoft.Extensions.Options
+  commentId: N:Microsoft.Extensions.Options
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Options
+  nameWithType: Microsoft.Extensions.Options
+  fullName: Microsoft.Extensions.Options
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Options
+    name: Options
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Options
+    name: Options
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options
+- uid: Remora.Discord.Commands.Services
+  commentId: N:Remora.Discord.Commands.Services
+  href: Remora.html
+  name: Remora.Discord.Commands.Services
+  nameWithType: Remora.Discord.Commands.Services
+  fullName: Remora.Discord.Commands.Services
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Commands
+    name: Commands
+    href: Remora.Discord.Commands.html
+  - name: .
+  - uid: Remora.Discord.Commands.Services
+    name: Services
+    href: Remora.Discord.Commands.Services.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Commands
+    name: Commands
+    href: Remora.Discord.Commands.html
+  - name: .
+  - uid: Remora.Discord.Commands.Services
+    name: Services
+    href: Remora.Discord.Commands.Services.html
+- uid: Remora.Discord.Commands.Responders.CommandResponder.RespondAsync*
+  commentId: Overload:Remora.Discord.Commands.Responders.CommandResponder.RespondAsync
+  href: Remora.Discord.Commands.Responders.CommandResponder.html#Remora_Discord_Commands_Responders_CommandResponder_RespondAsync_Remora_Discord_API_Abstractions_Gateway_Events_IMessageCreate_System_Threading_CancellationToken_
+  name: RespondAsync
+  nameWithType: CommandResponder.RespondAsync
+  fullName: Remora.Discord.Commands.Responders.CommandResponder.RespondAsync
+- uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate,System.Threading.CancellationToken)
+  parent: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate}
+  definition: Remora.Discord.Gateway.Responders.IResponder`1.RespondAsync(`0,System.Threading.CancellationToken)
+  href: Remora.Discord.Gateway.Responders.IResponder-1.html#Remora_Discord_Gateway_Responders_IResponder_1_RespondAsync__0_System_Threading_CancellationToken_
+  name: RespondAsync(IMessageCreate, CancellationToken)
+  nameWithType: IResponder<IMessageCreate>.RespondAsync(IMessageCreate, CancellationToken)
+  fullName: Remora.Discord.Gateway.Responders.IResponder<Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate>.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate, System.Threading.CancellationToken)
+  nameWithType.vb: IResponder(Of IMessageCreate).RespondAsync(IMessageCreate, CancellationToken)
+  fullName.vb: Remora.Discord.Gateway.Responders.IResponder(Of Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate).RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate,System.Threading.CancellationToken)
+    name: RespondAsync
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html#Remora_Discord_Gateway_Responders_IResponder_1_RespondAsync__0_System_Threading_CancellationToken_
+  - name: (
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate
+    name: IMessageCreate
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate,System.Threading.CancellationToken)
+    name: RespondAsync
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html#Remora_Discord_Gateway_Responders_IResponder_1_RespondAsync__0_System_Threading_CancellationToken_
+  - name: (
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate
+    name: IMessageCreate
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate
+  parent: Remora.Discord.API.Abstractions.Gateway.Events
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate.html
+  name: IMessageCreate
+  nameWithType: IMessageCreate
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IMessageCreate
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Remora.Results.Result}
+  commentId: T:System.Threading.Tasks.Task{Remora.Results.Result}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Result>
+  nameWithType: Task<Result>
+  fullName: System.Threading.Tasks.Task<Remora.Results.Result>
+  nameWithType.vb: Task(Of Result)
+  fullName.vb: System.Threading.Tasks.Task(Of Remora.Results.Result)
+  name.vb: Task(Of Result)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Remora.Results.Result
+    name: Result
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Results.Result
+    name: Result
+    isExternal: true
+  - name: )
+- uid: Remora.Discord.Gateway.Responders.IResponder`1.RespondAsync(`0,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Gateway.Responders.IResponder`1.RespondAsync(`0,System.Threading.CancellationToken)
+  isExternal: true
+  href: Remora.Discord.Gateway.Responders.IResponder-1.html#Remora_Discord_Gateway_Responders_IResponder_1_RespondAsync__0_System_Threading_CancellationToken_
+  name: RespondAsync(TGatewayEvent, CancellationToken)
+  nameWithType: IResponder<TGatewayEvent>.RespondAsync(TGatewayEvent, CancellationToken)
+  fullName: Remora.Discord.Gateway.Responders.IResponder<TGatewayEvent>.RespondAsync(TGatewayEvent, System.Threading.CancellationToken)
+  nameWithType.vb: IResponder(Of TGatewayEvent).RespondAsync(TGatewayEvent, CancellationToken)
+  fullName.vb: Remora.Discord.Gateway.Responders.IResponder(Of TGatewayEvent).RespondAsync(TGatewayEvent, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Remora.Discord.Gateway.Responders.IResponder`1.RespondAsync(`0,System.Threading.CancellationToken)
+    name: RespondAsync
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html#Remora_Discord_Gateway_Responders_IResponder_1_RespondAsync__0_System_Threading_CancellationToken_
+  - name: (
+  - name: TGatewayEvent
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Gateway.Responders.IResponder`1.RespondAsync(`0,System.Threading.CancellationToken)
+    name: RespondAsync
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html#Remora_Discord_Gateway_Responders_IResponder_1_RespondAsync__0_System_Threading_CancellationToken_
+  - name: (
+  - name: TGatewayEvent
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Gateway.Events
+  commentId: N:Remora.Discord.API.Abstractions.Gateway.Events
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Gateway.Events
+  nameWithType: Remora.Discord.API.Abstractions.Gateway.Events
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events
+    name: Events
+    href: Remora.Discord.API.Abstractions.Gateway.Events.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events
+    name: Events
+    href: Remora.Discord.API.Abstractions.Gateway.Events.html
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate,System.Threading.CancellationToken)
+  parent: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate}
+  definition: Remora.Discord.Gateway.Responders.IResponder`1.RespondAsync(`0,System.Threading.CancellationToken)
+  href: Remora.Discord.Gateway.Responders.IResponder-1.html#Remora_Discord_Gateway_Responders_IResponder_1_RespondAsync__0_System_Threading_CancellationToken_
+  name: RespondAsync(IMessageUpdate, CancellationToken)
+  nameWithType: IResponder<IMessageUpdate>.RespondAsync(IMessageUpdate, CancellationToken)
+  fullName: Remora.Discord.Gateway.Responders.IResponder<Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate>.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate, System.Threading.CancellationToken)
+  nameWithType.vb: IResponder(Of IMessageUpdate).RespondAsync(IMessageUpdate, CancellationToken)
+  fullName.vb: Remora.Discord.Gateway.Responders.IResponder(Of Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate).RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate,System.Threading.CancellationToken)
+    name: RespondAsync
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html#Remora_Discord_Gateway_Responders_IResponder_1_RespondAsync__0_System_Threading_CancellationToken_
+  - name: (
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate
+    name: IMessageUpdate
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Remora.Discord.Gateway.Responders.IResponder{Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate}.RespondAsync(Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate,System.Threading.CancellationToken)
+    name: RespondAsync
+    href: Remora.Discord.Gateway.Responders.IResponder-1.html#Remora_Discord_Gateway_Responders_IResponder_1_RespondAsync__0_System_Threading_CancellationToken_
+  - name: (
+  - uid: Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate
+    name: IMessageUpdate
+    href: Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate
+  parent: Remora.Discord.API.Abstractions.Gateway.Events
+  href: Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate.html
+  name: IMessageUpdate
+  nameWithType: IMessageUpdate
+  fullName: Remora.Discord.API.Abstractions.Gateway.Events.IMessageUpdate
+- uid: Remora.Discord.Commands.Responders.CommandResponder.ExecuteCommandAsync*
+  commentId: Overload:Remora.Discord.Commands.Responders.CommandResponder.ExecuteCommandAsync
+  href: Remora.Discord.Commands.Responders.CommandResponder.html#Remora_Discord_Commands_Responders_CommandResponder_ExecuteCommandAsync_System_String_Remora_Discord_Commands_Contexts_MessageContext_System_Threading_CancellationToken_
+  name: ExecuteCommandAsync
+  nameWithType: CommandResponder.ExecuteCommandAsync
+  fullName: Remora.Discord.Commands.Responders.CommandResponder.ExecuteCommandAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Remora.Discord.Commands.Contexts.MessageContext
+  commentId: T:Remora.Discord.Commands.Contexts.MessageContext
+  parent: Remora.Discord.Commands.Contexts
+  href: Remora.Discord.Commands.Contexts.MessageContext.html
+  name: MessageContext
+  nameWithType: MessageContext
+  fullName: Remora.Discord.Commands.Contexts.MessageContext
+- uid: Remora.Discord.Commands.Contexts
+  commentId: N:Remora.Discord.Commands.Contexts
+  href: Remora.html
+  name: Remora.Discord.Commands.Contexts
+  nameWithType: Remora.Discord.Commands.Contexts
+  fullName: Remora.Discord.Commands.Contexts
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Commands
+    name: Commands
+    href: Remora.Discord.Commands.html
+  - name: .
+  - uid: Remora.Discord.Commands.Contexts
+    name: Contexts
+    href: Remora.Discord.Commands.Contexts.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Commands
+    name: Commands
+    href: Remora.Discord.Commands.html
+  - name: .
+  - uid: Remora.Discord.Commands.Contexts
+    name: Contexts
+    href: Remora.Discord.Commands.Contexts.html

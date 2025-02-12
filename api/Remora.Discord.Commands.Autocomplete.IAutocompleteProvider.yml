@@ -1,0 +1,419 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.Commands.Autocomplete.IAutocompleteProvider
+  commentId: T:Remora.Discord.Commands.Autocomplete.IAutocompleteProvider
+  id: IAutocompleteProvider
+  parent: Remora.Discord.Commands.Autocomplete
+  children:
+  - Remora.Discord.Commands.Autocomplete.IAutocompleteProvider.GetSuggestionsAsync(System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IApplicationCommandInteractionDataOption},System.String,System.Threading.CancellationToken)
+  - Remora.Discord.Commands.Autocomplete.IAutocompleteProvider.Identity
+  langs:
+  - csharp
+  - vb
+  name: IAutocompleteProvider
+  nameWithType: IAutocompleteProvider
+  fullName: Remora.Discord.Commands.Autocomplete.IAutocompleteProvider
+  type: Interface
+  source:
+    id: IAutocompleteProvider
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Remora.Discord.Commands\Autocomplete\IAutocompleteProvider.cs
+    startLine: 52
+  assemblies:
+  - Remora.Discord.Commands
+  namespace: Remora.Discord.Commands.Autocomplete
+  summary: Represents the public interface of an autocomplete provider.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public interface IAutocompleteProvider
+    content.vb: >-
+      <PublicAPI>
+
+      Public Interface IAutocompleteProvider
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.Commands.Autocomplete.IAutocompleteProvider.Identity
+  commentId: P:Remora.Discord.Commands.Autocomplete.IAutocompleteProvider.Identity
+  id: Identity
+  parent: Remora.Discord.Commands.Autocomplete.IAutocompleteProvider
+  langs:
+  - csharp
+  - vb
+  name: Identity
+  nameWithType: IAutocompleteProvider.Identity
+  fullName: Remora.Discord.Commands.Autocomplete.IAutocompleteProvider.Identity
+  type: Property
+  source:
+    id: Identity
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Remora.Discord.Commands\Autocomplete\IAutocompleteProvider.cs
+    startLine: 58
+  assemblies:
+  - Remora.Discord.Commands
+  namespace: Remora.Discord.Commands.Autocomplete
+  summary: Gets the identity of the autocomplete provider.
+  example: []
+  syntax:
+    content: string Identity { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property Identity As String
+  overload: Remora.Discord.Commands.Autocomplete.IAutocompleteProvider.Identity*
+- uid: Remora.Discord.Commands.Autocomplete.IAutocompleteProvider.GetSuggestionsAsync(System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IApplicationCommandInteractionDataOption},System.String,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Commands.Autocomplete.IAutocompleteProvider.GetSuggestionsAsync(System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IApplicationCommandInteractionDataOption},System.String,System.Threading.CancellationToken)
+  id: GetSuggestionsAsync(System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IApplicationCommandInteractionDataOption},System.String,System.Threading.CancellationToken)
+  parent: Remora.Discord.Commands.Autocomplete.IAutocompleteProvider
+  langs:
+  - csharp
+  - vb
+  name: GetSuggestionsAsync(IReadOnlyList<IApplicationCommandInteractionDataOption>, string, CancellationToken)
+  nameWithType: IAutocompleteProvider.GetSuggestionsAsync(IReadOnlyList<IApplicationCommandInteractionDataOption>, string, CancellationToken)
+  fullName: Remora.Discord.Commands.Autocomplete.IAutocompleteProvider.GetSuggestionsAsync(System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.IApplicationCommandInteractionDataOption>, string, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: GetSuggestionsAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Remora.Discord.Commands\Autocomplete\IAutocompleteProvider.cs
+    startLine: 67
+  assemblies:
+  - Remora.Discord.Commands
+  namespace: Remora.Discord.Commands.Autocomplete
+  summary: Gets a set of autocomplete suggestions based on provided user input.
+  example: []
+  syntax:
+    content: ValueTask<IReadOnlyList<IApplicationCommandOptionChoice>> GetSuggestionsAsync(IReadOnlyList<IApplicationCommandInteractionDataOption> options, string userInput, CancellationToken ct = default)
+    parameters:
+    - id: options
+      type: System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IApplicationCommandInteractionDataOption}
+      description: The other options in the command being invoked.
+    - id: userInput
+      type: System.String
+      description: The user's current input.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.ValueTask{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IApplicationCommandOptionChoice}}
+      description: The suggested options.
+    content.vb: Function GetSuggestionsAsync(options As IReadOnlyList(Of IApplicationCommandInteractionDataOption), userInput As String, ct As CancellationToken = Nothing) As ValueTask(Of IReadOnlyList(Of IApplicationCommandOptionChoice))
+  overload: Remora.Discord.Commands.Autocomplete.IAutocompleteProvider.GetSuggestionsAsync*
+  nameWithType.vb: IAutocompleteProvider.GetSuggestionsAsync(IReadOnlyList(Of IApplicationCommandInteractionDataOption), String, CancellationToken)
+  fullName.vb: Remora.Discord.Commands.Autocomplete.IAutocompleteProvider.GetSuggestionsAsync(System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.IApplicationCommandInteractionDataOption), String, System.Threading.CancellationToken)
+  name.vb: GetSuggestionsAsync(IReadOnlyList(Of IApplicationCommandInteractionDataOption), String, CancellationToken)
+references:
+- uid: Remora.Discord.Commands.Autocomplete
+  commentId: N:Remora.Discord.Commands.Autocomplete
+  href: Remora.html
+  name: Remora.Discord.Commands.Autocomplete
+  nameWithType: Remora.Discord.Commands.Autocomplete
+  fullName: Remora.Discord.Commands.Autocomplete
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Commands
+    name: Commands
+    href: Remora.Discord.Commands.html
+  - name: .
+  - uid: Remora.Discord.Commands.Autocomplete
+    name: Autocomplete
+    href: Remora.Discord.Commands.Autocomplete.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Commands
+    name: Commands
+    href: Remora.Discord.Commands.html
+  - name: .
+  - uid: Remora.Discord.Commands.Autocomplete
+    name: Autocomplete
+    href: Remora.Discord.Commands.Autocomplete.html
+- uid: Remora.Discord.Commands.Autocomplete.IAutocompleteProvider.Identity*
+  commentId: Overload:Remora.Discord.Commands.Autocomplete.IAutocompleteProvider.Identity
+  href: Remora.Discord.Commands.Autocomplete.IAutocompleteProvider.html#Remora_Discord_Commands_Autocomplete_IAutocompleteProvider_Identity
+  name: Identity
+  nameWithType: IAutocompleteProvider.Identity
+  fullName: Remora.Discord.Commands.Autocomplete.IAutocompleteProvider.Identity
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.Commands.Autocomplete.IAutocompleteProvider.GetSuggestionsAsync*
+  commentId: Overload:Remora.Discord.Commands.Autocomplete.IAutocompleteProvider.GetSuggestionsAsync
+  href: Remora.Discord.Commands.Autocomplete.IAutocompleteProvider.html#Remora_Discord_Commands_Autocomplete_IAutocompleteProvider_GetSuggestionsAsync_System_Collections_Generic_IReadOnlyList_Remora_Discord_API_Abstractions_Objects_IApplicationCommandInteractionDataOption__System_String_System_Threading_CancellationToken_
+  name: GetSuggestionsAsync
+  nameWithType: IAutocompleteProvider.GetSuggestionsAsync
+  fullName: Remora.Discord.Commands.Autocomplete.IAutocompleteProvider.GetSuggestionsAsync
+- uid: System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IApplicationCommandInteractionDataOption}
+  commentId: T:System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IApplicationCommandInteractionDataOption}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<IApplicationCommandInteractionDataOption>
+  nameWithType: IReadOnlyList<IApplicationCommandInteractionDataOption>
+  fullName: System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.IApplicationCommandInteractionDataOption>
+  nameWithType.vb: IReadOnlyList(Of IApplicationCommandInteractionDataOption)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.IApplicationCommandInteractionDataOption)
+  name.vb: IReadOnlyList(Of IApplicationCommandInteractionDataOption)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IApplicationCommandInteractionDataOption
+    name: IApplicationCommandInteractionDataOption
+    href: Remora.Discord.API.Abstractions.Objects.IApplicationCommandInteractionDataOption.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IApplicationCommandInteractionDataOption
+    name: IApplicationCommandInteractionDataOption
+    href: Remora.Discord.API.Abstractions.Objects.IApplicationCommandInteractionDataOption.html
+  - name: )
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.ValueTask{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IApplicationCommandOptionChoice}}
+  commentId: T:System.Threading.Tasks.ValueTask{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IApplicationCommandOptionChoice}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.ValueTask`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  name: ValueTask<IReadOnlyList<IApplicationCommandOptionChoice>>
+  nameWithType: ValueTask<IReadOnlyList<IApplicationCommandOptionChoice>>
+  fullName: System.Threading.Tasks.ValueTask<System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.IApplicationCommandOptionChoice>>
+  nameWithType.vb: ValueTask(Of IReadOnlyList(Of IApplicationCommandOptionChoice))
+  fullName.vb: System.Threading.Tasks.ValueTask(Of System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.IApplicationCommandOptionChoice))
+  name.vb: ValueTask(Of IReadOnlyList(Of IApplicationCommandOptionChoice))
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOptionChoice
+    name: IApplicationCommandOptionChoice
+    href: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOptionChoice.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOptionChoice
+    name: IApplicationCommandOptionChoice
+    href: Remora.Discord.API.Abstractions.Objects.IApplicationCommandOptionChoice.html
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.ValueTask`1
+  commentId: T:System.Threading.Tasks.ValueTask`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  name: ValueTask<TResult>
+  nameWithType: ValueTask<TResult>
+  fullName: System.Threading.Tasks.ValueTask<TResult>
+  nameWithType.vb: ValueTask(Of TResult)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult)
+  name.vb: ValueTask(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

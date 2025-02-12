@@ -1,0 +1,719 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Objects.AuditLogChange
+  commentId: T:Remora.Discord.API.Objects.AuditLogChange
+  id: AuditLogChange
+  parent: Remora.Discord.API.Objects
+  children:
+  - Remora.Discord.API.Objects.AuditLogChange.#ctor(Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String},System.String)
+  - Remora.Discord.API.Objects.AuditLogChange.Key
+  - Remora.Discord.API.Objects.AuditLogChange.NewValue
+  - Remora.Discord.API.Objects.AuditLogChange.OldValue
+  langs:
+  - csharp
+  - vb
+  name: AuditLogChange
+  nameWithType: AuditLogChange
+  fullName: Remora.Discord.API.Objects.AuditLogChange
+  type: Class
+  source:
+    id: AuditLogChange
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\AuditLogs\AuditLogChange.cs
+    startLine: 31
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Represents a change to an audit log value.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public record AuditLogChange : IAuditLogChange, IEquatable<AuditLogChange>
+    content.vb: >-
+      <PublicAPI>
+
+      Public Class AuditLogChange Implements IAuditLogChange, IEquatable(Of AuditLogChange)
+  inheritance:
+  - System.Object
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IAuditLogChange
+  - System.IEquatable{Remora.Discord.API.Objects.AuditLogChange}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Objects.AuditLogChange.#ctor(Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String},System.String)
+  commentId: M:Remora.Discord.API.Objects.AuditLogChange.#ctor(Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String},System.String)
+  id: '#ctor(Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String},System.String)'
+  parent: Remora.Discord.API.Objects.AuditLogChange
+  langs:
+  - csharp
+  - vb
+  name: AuditLogChange(Optional<string>, Optional<string>, string)
+  nameWithType: AuditLogChange.AuditLogChange(Optional<string>, Optional<string>, string)
+  fullName: Remora.Discord.API.Objects.AuditLogChange.AuditLogChange(Remora.Rest.Core.Optional<string>, Remora.Rest.Core.Optional<string>, string)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\AuditLogs\AuditLogChange.cs
+    startLine: 31
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Represents a change to an audit log value.
+  example: []
+  syntax:
+    content: public AuditLogChange(Optional<string> NewValue, Optional<string> OldValue, string Key)
+    parameters:
+    - id: NewValue
+      type: Remora.Rest.Core.Optional{System.String}
+    - id: OldValue
+      type: Remora.Rest.Core.Optional{System.String}
+    - id: Key
+      type: System.String
+    content.vb: Public Sub New(NewValue As [Optional](Of String), OldValue As [Optional](Of String), Key As String)
+  overload: Remora.Discord.API.Objects.AuditLogChange.#ctor*
+  nameWithType.vb: AuditLogChange.New(Optional(Of String), Optional(Of String), String)
+  fullName.vb: Remora.Discord.API.Objects.AuditLogChange.New(Remora.Rest.Core.Optional(Of String), Remora.Rest.Core.Optional(Of String), String)
+  name.vb: New(Optional(Of String), Optional(Of String), String)
+- uid: Remora.Discord.API.Objects.AuditLogChange.NewValue
+  commentId: P:Remora.Discord.API.Objects.AuditLogChange.NewValue
+  id: NewValue
+  parent: Remora.Discord.API.Objects.AuditLogChange
+  langs:
+  - csharp
+  - vb
+  name: NewValue
+  nameWithType: AuditLogChange.NewValue
+  fullName: Remora.Discord.API.Objects.AuditLogChange.NewValue
+  type: Property
+  source:
+    id: NewValue
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\AuditLogs\AuditLogChange.cs
+    startLine: 32
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the new value of the key.
+  remarks: >-
+    This is the raw unparsed value from Discord's payload. Use the additional information available in the audit log
+
+    entry to determine an appropriate type to parse it into.
+  example: []
+  syntax:
+    content: public Optional<string> NewValue { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.String}
+    content.vb: Public Property NewValue As [Optional](Of String)
+  overload: Remora.Discord.API.Objects.AuditLogChange.NewValue*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IAuditLogChange.NewValue
+- uid: Remora.Discord.API.Objects.AuditLogChange.OldValue
+  commentId: P:Remora.Discord.API.Objects.AuditLogChange.OldValue
+  id: OldValue
+  parent: Remora.Discord.API.Objects.AuditLogChange
+  langs:
+  - csharp
+  - vb
+  name: OldValue
+  nameWithType: AuditLogChange.OldValue
+  fullName: Remora.Discord.API.Objects.AuditLogChange.OldValue
+  type: Property
+  source:
+    id: OldValue
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\AuditLogs\AuditLogChange.cs
+    startLine: 32
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the old value of the key.
+  remarks: >-
+    This is the raw unparsed value from Discord's payload. Use the additional information available in the audit log
+
+    entry to determine an appropriate type to parse it into.
+  example: []
+  syntax:
+    content: public Optional<string> OldValue { get; init; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.String}
+    content.vb: Public Property OldValue As [Optional](Of String)
+  overload: Remora.Discord.API.Objects.AuditLogChange.OldValue*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IAuditLogChange.OldValue
+- uid: Remora.Discord.API.Objects.AuditLogChange.Key
+  commentId: P:Remora.Discord.API.Objects.AuditLogChange.Key
+  id: Key
+  parent: Remora.Discord.API.Objects.AuditLogChange
+  langs:
+  - csharp
+  - vb
+  name: Key
+  nameWithType: AuditLogChange.Key
+  fullName: Remora.Discord.API.Objects.AuditLogChange.Key
+  type: Property
+  source:
+    id: Key
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API\API\Objects\AuditLogs\AuditLogChange.cs
+    startLine: 32
+  assemblies:
+  - Remora.Discord.API
+  namespace: Remora.Discord.API.Objects
+  summary: Gets the name of the audit log change key.
+  example: []
+  syntax:
+    content: public string Key { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Key As String
+  overload: Remora.Discord.API.Objects.AuditLogChange.Key*
+  implements:
+  - Remora.Discord.API.Abstractions.Objects.IAuditLogChange.Key
+references:
+- uid: Remora.Discord.API.Objects
+  commentId: N:Remora.Discord.API.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Objects
+  nameWithType: Remora.Discord.API.Objects
+  fullName: Remora.Discord.API.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Objects
+    name: Objects
+    href: Remora.Discord.API.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Objects
+    name: Objects
+    href: Remora.Discord.API.Objects.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Remora.Discord.API.Abstractions.Objects.IAuditLogChange
+  commentId: T:Remora.Discord.API.Abstractions.Objects.IAuditLogChange
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.IAuditLogChange.html
+  name: IAuditLogChange
+  nameWithType: IAuditLogChange
+  fullName: Remora.Discord.API.Abstractions.Objects.IAuditLogChange
+- uid: System.IEquatable{Remora.Discord.API.Objects.AuditLogChange}
+  commentId: T:System.IEquatable{Remora.Discord.API.Objects.AuditLogChange}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<AuditLogChange>
+  nameWithType: IEquatable<AuditLogChange>
+  fullName: System.IEquatable<Remora.Discord.API.Objects.AuditLogChange>
+  nameWithType.vb: IEquatable(Of AuditLogChange)
+  fullName.vb: System.IEquatable(Of Remora.Discord.API.Objects.AuditLogChange)
+  name.vb: IEquatable(Of AuditLogChange)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Remora.Discord.API.Objects.AuditLogChange
+    name: AuditLogChange
+    href: Remora.Discord.API.Objects.AuditLogChange.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Objects.AuditLogChange
+    name: AuditLogChange
+    href: Remora.Discord.API.Objects.AuditLogChange.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.API.Abstractions.Objects
+  commentId: N:Remora.Discord.API.Abstractions.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Objects
+  nameWithType: Remora.Discord.API.Abstractions.Objects
+  fullName: Remora.Discord.API.Abstractions.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Remora.Discord.API.Objects.AuditLogChange.#ctor*
+  commentId: Overload:Remora.Discord.API.Objects.AuditLogChange.#ctor
+  href: Remora.Discord.API.Objects.AuditLogChange.html#Remora_Discord_API_Objects_AuditLogChange__ctor_Remora_Rest_Core_Optional_System_String__Remora_Rest_Core_Optional_System_String__System_String_
+  name: AuditLogChange
+  nameWithType: AuditLogChange.AuditLogChange
+  fullName: Remora.Discord.API.Objects.AuditLogChange.AuditLogChange
+  nameWithType.vb: AuditLogChange.New
+  fullName.vb: Remora.Discord.API.Objects.AuditLogChange.New
+  name.vb: New
+- uid: Remora.Rest.Core.Optional{System.String}
+  commentId: T:Remora.Rest.Core.Optional{System.String}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Optional<string>
+  nameWithType: Optional<string>
+  fullName: Remora.Rest.Core.Optional<string>
+  nameWithType.vb: Optional(Of String)
+  fullName.vb: Remora.Rest.Core.Optional(Of String)
+  name.vb: Optional(Of String)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Remora.Rest.Core.Optional`1
+  commentId: T:Remora.Rest.Core.Optional`1
+  isExternal: true
+  name: Optional<TValue>
+  nameWithType: Optional<TValue>
+  fullName: Remora.Rest.Core.Optional<TValue>
+  nameWithType.vb: Optional(Of TValue)
+  fullName.vb: Remora.Rest.Core.Optional(Of TValue)
+  name.vb: Optional(Of TValue)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+- uid: Remora.Discord.API.Objects.AuditLogChange.NewValue*
+  commentId: Overload:Remora.Discord.API.Objects.AuditLogChange.NewValue
+  href: Remora.Discord.API.Objects.AuditLogChange.html#Remora_Discord_API_Objects_AuditLogChange_NewValue
+  name: NewValue
+  nameWithType: AuditLogChange.NewValue
+  fullName: Remora.Discord.API.Objects.AuditLogChange.NewValue
+- uid: Remora.Discord.API.Abstractions.Objects.IAuditLogChange.NewValue
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IAuditLogChange.NewValue
+  parent: Remora.Discord.API.Abstractions.Objects.IAuditLogChange
+  href: Remora.Discord.API.Abstractions.Objects.IAuditLogChange.html#Remora_Discord_API_Abstractions_Objects_IAuditLogChange_NewValue
+  name: NewValue
+  nameWithType: IAuditLogChange.NewValue
+  fullName: Remora.Discord.API.Abstractions.Objects.IAuditLogChange.NewValue
+- uid: Remora.Discord.API.Objects.AuditLogChange.OldValue*
+  commentId: Overload:Remora.Discord.API.Objects.AuditLogChange.OldValue
+  href: Remora.Discord.API.Objects.AuditLogChange.html#Remora_Discord_API_Objects_AuditLogChange_OldValue
+  name: OldValue
+  nameWithType: AuditLogChange.OldValue
+  fullName: Remora.Discord.API.Objects.AuditLogChange.OldValue
+- uid: Remora.Discord.API.Abstractions.Objects.IAuditLogChange.OldValue
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IAuditLogChange.OldValue
+  parent: Remora.Discord.API.Abstractions.Objects.IAuditLogChange
+  href: Remora.Discord.API.Abstractions.Objects.IAuditLogChange.html#Remora_Discord_API_Abstractions_Objects_IAuditLogChange_OldValue
+  name: OldValue
+  nameWithType: IAuditLogChange.OldValue
+  fullName: Remora.Discord.API.Abstractions.Objects.IAuditLogChange.OldValue
+- uid: Remora.Discord.API.Objects.AuditLogChange.Key*
+  commentId: Overload:Remora.Discord.API.Objects.AuditLogChange.Key
+  href: Remora.Discord.API.Objects.AuditLogChange.html#Remora_Discord_API_Objects_AuditLogChange_Key
+  name: Key
+  nameWithType: AuditLogChange.Key
+  fullName: Remora.Discord.API.Objects.AuditLogChange.Key
+- uid: Remora.Discord.API.Abstractions.Objects.IAuditLogChange.Key
+  commentId: P:Remora.Discord.API.Abstractions.Objects.IAuditLogChange.Key
+  parent: Remora.Discord.API.Abstractions.Objects.IAuditLogChange
+  href: Remora.Discord.API.Abstractions.Objects.IAuditLogChange.html#Remora_Discord_API_Abstractions_Objects_IAuditLogChange_Key
+  name: Key
+  nameWithType: IAuditLogChange.Key
+  fullName: Remora.Discord.API.Abstractions.Objects.IAuditLogChange.Key

@@ -1,0 +1,629 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.Caching.Abstractions.CacheKey
+  commentId: T:Remora.Discord.Caching.Abstractions.CacheKey
+  id: CacheKey
+  parent: Remora.Discord.Caching.Abstractions
+  children:
+  - Remora.Discord.Caching.Abstractions.CacheKey.AppendToString(System.Text.StringBuilder)
+  - Remora.Discord.Caching.Abstractions.CacheKey.LocalizedStringKey(System.String,System.String)
+  - Remora.Discord.Caching.Abstractions.CacheKey.StringKey(System.String)
+  - Remora.Discord.Caching.Abstractions.CacheKey.ToCanonicalString
+  langs:
+  - csharp
+  - vb
+  name: CacheKey
+  nameWithType: CacheKey
+  fullName: Remora.Discord.Caching.Abstractions.CacheKey
+  type: Class
+  source:
+    id: CacheKey
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Caching.Abstractions\CacheKey.cs
+    startLine: 30
+  assemblies:
+  - Remora.Discord.Caching.Abstractions
+  namespace: Remora.Discord.Caching.Abstractions
+  summary: The base type for a cache key.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public abstract record CacheKey : IEquatable<CacheKey>
+    content.vb: >-
+      <PublicAPI>
+
+      Public MustInherit Class CacheKey Implements IEquatable(Of CacheKey)
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Remora.Discord.Caching.KeyHelpers.ChannelCacheKey
+  - Remora.Discord.Caching.KeyHelpers.ConnectionCacheKey
+  - Remora.Discord.Caching.KeyHelpers.CurrentApplicationCacheKey
+  - Remora.Discord.Caching.KeyHelpers.CurrentAuthorizationInformationCacheKey
+  - Remora.Discord.Caching.KeyHelpers.CurrentUserCacheKey
+  - Remora.Discord.Caching.KeyHelpers.EvictionCacheKey
+  - Remora.Discord.Caching.KeyHelpers.GuildCacheKey
+  - Remora.Discord.Caching.KeyHelpers.GuildPreviewCacheKey
+  - Remora.Discord.Caching.KeyHelpers.InviteCacheKey
+  - Remora.Discord.Caching.KeyHelpers.OriginalInteractionMessageCacheKey
+  - Remora.Discord.Caching.KeyHelpers.TemplateCacheKey
+  - Remora.Discord.Caching.KeyHelpers.ThreadMemberCacheKey
+  - Remora.Discord.Caching.KeyHelpers.ThreadMembersCacheKey
+  - Remora.Discord.Caching.KeyHelpers.UserCacheKey
+  - Remora.Discord.Caching.KeyHelpers.VoiceRegionCacheKey
+  - Remora.Discord.Caching.KeyHelpers.VoiceRegionsCacheKey
+  - Remora.Discord.Caching.KeyHelpers.WebhookCacheKey
+  - Remora.Discord.Caching.KeyHelpers.WebhookMessageCacheKey
+  implements:
+  - System.IEquatable{Remora.Discord.Caching.Abstractions.CacheKey}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.Caching.Abstractions.CacheKey.AppendToString(System.Text.StringBuilder)
+  commentId: M:Remora.Discord.Caching.Abstractions.CacheKey.AppendToString(System.Text.StringBuilder)
+  id: AppendToString(System.Text.StringBuilder)
+  parent: Remora.Discord.Caching.Abstractions.CacheKey
+  langs:
+  - csharp
+  - vb
+  name: AppendToString(StringBuilder)
+  nameWithType: CacheKey.AppendToString(StringBuilder)
+  fullName: Remora.Discord.Caching.Abstractions.CacheKey.AppendToString(System.Text.StringBuilder)
+  type: Method
+  source:
+    id: AppendToString
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Caching.Abstractions\CacheKey.cs
+    startLine: 38
+  assemblies:
+  - Remora.Discord.Caching.Abstractions
+  namespace: Remora.Discord.Caching.Abstractions
+  summary: Appends the canonical string representation of this cache key to <code class="paramref">stringBuilder</code>.
+  example: []
+  syntax:
+    content: protected abstract StringBuilder AppendToString(StringBuilder stringBuilder)
+    parameters:
+    - id: stringBuilder
+      type: System.Text.StringBuilder
+      description: The <xref href="System.Text.StringBuilder" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Text.StringBuilder
+      description: The original <code class="paramref">stringBuilder</code>, for chaining.
+    content.vb: Protected MustOverride Function AppendToString(stringBuilder As StringBuilder) As StringBuilder
+  overload: Remora.Discord.Caching.Abstractions.CacheKey.AppendToString*
+- uid: Remora.Discord.Caching.Abstractions.CacheKey.ToCanonicalString
+  commentId: M:Remora.Discord.Caching.Abstractions.CacheKey.ToCanonicalString
+  id: ToCanonicalString
+  parent: Remora.Discord.Caching.Abstractions.CacheKey
+  langs:
+  - csharp
+  - vb
+  name: ToCanonicalString()
+  nameWithType: CacheKey.ToCanonicalString()
+  fullName: Remora.Discord.Caching.Abstractions.CacheKey.ToCanonicalString()
+  type: Method
+  source:
+    id: ToCanonicalString
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Caching.Abstractions\CacheKey.cs
+    startLine: 44
+  assemblies:
+  - Remora.Discord.Caching.Abstractions
+  namespace: Remora.Discord.Caching.Abstractions
+  summary: Gets the canonical string representation of this cache key.
+  example: []
+  syntax:
+    content: public virtual string ToCanonicalString()
+    return:
+      type: System.String
+      description: The canonical string representation of this cache key.
+    content.vb: Public Overridable Function ToCanonicalString() As String
+  overload: Remora.Discord.Caching.Abstractions.CacheKey.ToCanonicalString*
+- uid: Remora.Discord.Caching.Abstractions.CacheKey.StringKey(System.String)
+  commentId: M:Remora.Discord.Caching.Abstractions.CacheKey.StringKey(System.String)
+  id: StringKey(System.String)
+  parent: Remora.Discord.Caching.Abstractions.CacheKey
+  langs:
+  - csharp
+  - vb
+  name: StringKey(string)
+  nameWithType: CacheKey.StringKey(string)
+  fullName: Remora.Discord.Caching.Abstractions.CacheKey.StringKey(string)
+  type: Method
+  source:
+    id: StringKey
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Caching.Abstractions\CacheKey.cs
+    startLine: 77
+  assemblies:
+  - Remora.Discord.Caching.Abstractions
+  namespace: Remora.Discord.Caching.Abstractions
+  summary: Creates a string-based cache key from an input string.
+  example: []
+  syntax:
+    content: public static CacheKey StringKey(string keyString)
+    parameters:
+    - id: keyString
+      type: System.String
+      description: The key string.
+    return:
+      type: Remora.Discord.Caching.Abstractions.CacheKey
+      description: >-
+        A new string-based cache key. This key is equal to other keys created by this method as long as
+
+        <code class="paramref">keyString</code> is the same.
+    content.vb: Public Shared Function StringKey(keyString As String) As CacheKey
+  overload: Remora.Discord.Caching.Abstractions.CacheKey.StringKey*
+  nameWithType.vb: CacheKey.StringKey(String)
+  fullName.vb: Remora.Discord.Caching.Abstractions.CacheKey.StringKey(String)
+  name.vb: StringKey(String)
+- uid: Remora.Discord.Caching.Abstractions.CacheKey.LocalizedStringKey(System.String,System.String)
+  commentId: M:Remora.Discord.Caching.Abstractions.CacheKey.LocalizedStringKey(System.String,System.String)
+  id: LocalizedStringKey(System.String,System.String)
+  parent: Remora.Discord.Caching.Abstractions.CacheKey
+  langs:
+  - csharp
+  - vb
+  name: LocalizedStringKey(string, string)
+  nameWithType: CacheKey.LocalizedStringKey(string, string)
+  fullName: Remora.Discord.Caching.Abstractions.CacheKey.LocalizedStringKey(string, string)
+  type: Method
+  source:
+    id: LocalizedStringKey
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Caching.Abstractions\CacheKey.cs
+    startLine: 96
+  assemblies:
+  - Remora.Discord.Caching.Abstractions
+  namespace: Remora.Discord.Caching.Abstractions
+  summary: >-
+    Creates a string-based cache key from a context string and key string. The context of a key can be, for
+
+    instance, a GUID or the name of the application domain that manages this key. Therefore, two keys with the same
+
+    <code class="paramref">keyString</code> can be functionally distinct by belonging to different contexts.
+  remarks: >-
+    <code class="paramref">context</code> should not contain <code>:</code> (colon symbol) as this can make the separation between
+
+    context and key string ambiguous.
+  example: []
+  syntax:
+    content: public static CacheKey LocalizedStringKey(string context, string keyString)
+    parameters:
+    - id: context
+      type: System.String
+      description: The key context.
+    - id: keyString
+      type: System.String
+      description: The key string.
+    return:
+      type: Remora.Discord.Caching.Abstractions.CacheKey
+      description: >-
+        A new string-based cache key. This key is equal to other keys created by this method as long as
+
+        <code class="paramref">context</code> and <code class="paramref">keyString</code> are the same.
+    content.vb: Public Shared Function LocalizedStringKey(context As String, keyString As String) As CacheKey
+  overload: Remora.Discord.Caching.Abstractions.CacheKey.LocalizedStringKey*
+  nameWithType.vb: CacheKey.LocalizedStringKey(String, String)
+  fullName.vb: Remora.Discord.Caching.Abstractions.CacheKey.LocalizedStringKey(String, String)
+  name.vb: LocalizedStringKey(String, String)
+references:
+- uid: Remora.Discord.Caching.Abstractions
+  commentId: N:Remora.Discord.Caching.Abstractions
+  href: Remora.html
+  name: Remora.Discord.Caching.Abstractions
+  nameWithType: Remora.Discord.Caching.Abstractions
+  fullName: Remora.Discord.Caching.Abstractions
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Caching
+    name: Caching
+    href: Remora.Discord.Caching.html
+  - name: .
+  - uid: Remora.Discord.Caching.Abstractions
+    name: Abstractions
+    href: Remora.Discord.Caching.Abstractions.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Caching
+    name: Caching
+    href: Remora.Discord.Caching.html
+  - name: .
+  - uid: Remora.Discord.Caching.Abstractions
+    name: Abstractions
+    href: Remora.Discord.Caching.Abstractions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IEquatable{Remora.Discord.Caching.Abstractions.CacheKey}
+  commentId: T:System.IEquatable{Remora.Discord.Caching.Abstractions.CacheKey}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<CacheKey>
+  nameWithType: IEquatable<CacheKey>
+  fullName: System.IEquatable<Remora.Discord.Caching.Abstractions.CacheKey>
+  nameWithType.vb: IEquatable(Of CacheKey)
+  fullName.vb: System.IEquatable(Of Remora.Discord.Caching.Abstractions.CacheKey)
+  name.vb: IEquatable(Of CacheKey)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Remora.Discord.Caching.Abstractions.CacheKey
+    name: CacheKey
+    href: Remora.Discord.Caching.Abstractions.CacheKey.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.Caching.Abstractions.CacheKey
+    name: CacheKey
+    href: Remora.Discord.Caching.Abstractions.CacheKey.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Text.StringBuilder
+  commentId: T:System.Text.StringBuilder
+  parent: System.Text
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.text.stringbuilder
+  name: StringBuilder
+  nameWithType: StringBuilder
+  fullName: System.Text.StringBuilder
+- uid: Remora.Discord.Caching.Abstractions.CacheKey.AppendToString*
+  commentId: Overload:Remora.Discord.Caching.Abstractions.CacheKey.AppendToString
+  href: Remora.Discord.Caching.Abstractions.CacheKey.html#Remora_Discord_Caching_Abstractions_CacheKey_AppendToString_System_Text_StringBuilder_
+  name: AppendToString
+  nameWithType: CacheKey.AppendToString
+  fullName: Remora.Discord.Caching.Abstractions.CacheKey.AppendToString
+- uid: System.Text
+  commentId: N:System.Text
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Text
+  nameWithType: System.Text
+  fullName: System.Text
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+- uid: Remora.Discord.Caching.Abstractions.CacheKey.ToCanonicalString*
+  commentId: Overload:Remora.Discord.Caching.Abstractions.CacheKey.ToCanonicalString
+  href: Remora.Discord.Caching.Abstractions.CacheKey.html#Remora_Discord_Caching_Abstractions_CacheKey_ToCanonicalString
+  name: ToCanonicalString
+  nameWithType: CacheKey.ToCanonicalString
+  fullName: Remora.Discord.Caching.Abstractions.CacheKey.ToCanonicalString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Remora.Discord.Caching.Abstractions.CacheKey.StringKey*
+  commentId: Overload:Remora.Discord.Caching.Abstractions.CacheKey.StringKey
+  href: Remora.Discord.Caching.Abstractions.CacheKey.html#Remora_Discord_Caching_Abstractions_CacheKey_StringKey_System_String_
+  name: StringKey
+  nameWithType: CacheKey.StringKey
+  fullName: Remora.Discord.Caching.Abstractions.CacheKey.StringKey
+- uid: Remora.Discord.Caching.Abstractions.CacheKey
+  commentId: T:Remora.Discord.Caching.Abstractions.CacheKey
+  parent: Remora.Discord.Caching.Abstractions
+  href: Remora.Discord.Caching.Abstractions.CacheKey.html
+  name: CacheKey
+  nameWithType: CacheKey
+  fullName: Remora.Discord.Caching.Abstractions.CacheKey
+- uid: Remora.Discord.Caching.Abstractions.CacheKey.LocalizedStringKey*
+  commentId: Overload:Remora.Discord.Caching.Abstractions.CacheKey.LocalizedStringKey
+  href: Remora.Discord.Caching.Abstractions.CacheKey.html#Remora_Discord_Caching_Abstractions_CacheKey_LocalizedStringKey_System_String_System_String_
+  name: LocalizedStringKey
+  nameWithType: CacheKey.LocalizedStringKey
+  fullName: Remora.Discord.Caching.Abstractions.CacheKey.LocalizedStringKey

@@ -1,0 +1,302 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.Commands.Services.IPreExecutionEvent
+  commentId: T:Remora.Discord.Commands.Services.IPreExecutionEvent
+  id: IPreExecutionEvent
+  parent: Remora.Discord.Commands.Services
+  children:
+  - Remora.Discord.Commands.Services.IPreExecutionEvent.BeforeExecutionAsync(Remora.Discord.Commands.Contexts.ICommandContext,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IPreExecutionEvent
+  nameWithType: IPreExecutionEvent
+  fullName: Remora.Discord.Commands.Services.IPreExecutionEvent
+  type: Interface
+  source:
+    id: IPreExecutionEvent
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Remora.Discord.Commands\Services\Execution\IPreExecutionEvent.cs
+    startLine: 33
+  assemblies:
+  - Remora.Discord.Commands
+  namespace: Remora.Discord.Commands.Services
+  summary: Represents the public interface of a service that can perform a pre-execution event.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public interface IPreExecutionEvent
+    content.vb: >-
+      <PublicAPI>
+
+      Public Interface IPreExecutionEvent
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.Commands.Services.IPreExecutionEvent.BeforeExecutionAsync(Remora.Discord.Commands.Contexts.ICommandContext,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.Commands.Services.IPreExecutionEvent.BeforeExecutionAsync(Remora.Discord.Commands.Contexts.ICommandContext,System.Threading.CancellationToken)
+  id: BeforeExecutionAsync(Remora.Discord.Commands.Contexts.ICommandContext,System.Threading.CancellationToken)
+  parent: Remora.Discord.Commands.Services.IPreExecutionEvent
+  langs:
+  - csharp
+  - vb
+  name: BeforeExecutionAsync(ICommandContext, CancellationToken)
+  nameWithType: IPreExecutionEvent.BeforeExecutionAsync(ICommandContext, CancellationToken)
+  fullName: Remora.Discord.Commands.Services.IPreExecutionEvent.BeforeExecutionAsync(Remora.Discord.Commands.Contexts.ICommandContext, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: BeforeExecutionAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Remora.Discord.Commands\Services\Execution\IPreExecutionEvent.cs
+    startLine: 42
+  assemblies:
+  - Remora.Discord.Commands
+  namespace: Remora.Discord.Commands.Services
+  summary: Runs before the attempted execution of a command.
+  example: []
+  syntax:
+    content: Task<Result> BeforeExecutionAsync(ICommandContext context, CancellationToken ct = default)
+    parameters:
+    - id: context
+      type: Remora.Discord.Commands.Contexts.ICommandContext
+      description: The command context.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token of the current operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result}
+      description: A <xref href="System.Threading.Tasks.Task" data-throw-if-not-resolved="false"></xref> representing the asynchronous operation.
+    content.vb: Function BeforeExecutionAsync(context As ICommandContext, ct As CancellationToken = Nothing) As Task(Of Result)
+  overload: Remora.Discord.Commands.Services.IPreExecutionEvent.BeforeExecutionAsync*
+references:
+- uid: Remora.Discord.Commands.Services
+  commentId: N:Remora.Discord.Commands.Services
+  href: Remora.html
+  name: Remora.Discord.Commands.Services
+  nameWithType: Remora.Discord.Commands.Services
+  fullName: Remora.Discord.Commands.Services
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Commands
+    name: Commands
+    href: Remora.Discord.Commands.html
+  - name: .
+  - uid: Remora.Discord.Commands.Services
+    name: Services
+    href: Remora.Discord.Commands.Services.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Commands
+    name: Commands
+    href: Remora.Discord.Commands.html
+  - name: .
+  - uid: Remora.Discord.Commands.Services
+    name: Services
+    href: Remora.Discord.Commands.Services.html
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Remora.Discord.Commands.Services.IPreExecutionEvent.BeforeExecutionAsync*
+  commentId: Overload:Remora.Discord.Commands.Services.IPreExecutionEvent.BeforeExecutionAsync
+  href: Remora.Discord.Commands.Services.IPreExecutionEvent.html#Remora_Discord_Commands_Services_IPreExecutionEvent_BeforeExecutionAsync_Remora_Discord_Commands_Contexts_ICommandContext_System_Threading_CancellationToken_
+  name: BeforeExecutionAsync
+  nameWithType: IPreExecutionEvent.BeforeExecutionAsync
+  fullName: Remora.Discord.Commands.Services.IPreExecutionEvent.BeforeExecutionAsync
+- uid: Remora.Discord.Commands.Contexts.ICommandContext
+  commentId: T:Remora.Discord.Commands.Contexts.ICommandContext
+  parent: Remora.Discord.Commands.Contexts
+  href: Remora.Discord.Commands.Contexts.ICommandContext.html
+  name: ICommandContext
+  nameWithType: ICommandContext
+  fullName: Remora.Discord.Commands.Contexts.ICommandContext
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Remora.Results.Result}
+  commentId: T:System.Threading.Tasks.Task{Remora.Results.Result}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Result>
+  nameWithType: Task<Result>
+  fullName: System.Threading.Tasks.Task<Remora.Results.Result>
+  nameWithType.vb: Task(Of Result)
+  fullName.vb: System.Threading.Tasks.Task(Of Remora.Results.Result)
+  name.vb: Task(Of Result)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Remora.Results.Result
+    name: Result
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Results.Result
+    name: Result
+    isExternal: true
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Remora.Discord.Commands.Contexts
+  commentId: N:Remora.Discord.Commands.Contexts
+  href: Remora.html
+  name: Remora.Discord.Commands.Contexts
+  nameWithType: Remora.Discord.Commands.Contexts
+  fullName: Remora.Discord.Commands.Contexts
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Commands
+    name: Commands
+    href: Remora.Discord.Commands.html
+  - name: .
+  - uid: Remora.Discord.Commands.Contexts
+    name: Contexts
+    href: Remora.Discord.Commands.Contexts.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Commands
+    name: Commands
+    href: Remora.Discord.Commands.html
+  - name: .
+  - uid: Remora.Discord.Commands.Contexts
+    name: Contexts
+    href: Remora.Discord.Commands.Contexts.html
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )

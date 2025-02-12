@@ -1,0 +1,1345 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI
+  commentId: T:Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI
+  id: IDiscordRestUserAPI
+  parent: Remora.Discord.API.Abstractions.Rest
+  children:
+  - Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.CreateDMAsync(Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  - Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetCurrentUserApplicationRoleConnectionAsync(Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  - Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetCurrentUserAsync(System.Threading.CancellationToken)
+  - Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetCurrentUserConnectionsAsync(System.Threading.CancellationToken)
+  - Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetCurrentUserGuildMemberAsync(Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  - Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetCurrentUserGuildsAsync(Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{System.Int32},Remora.Rest.Core.Optional{System.Boolean},System.Threading.CancellationToken)
+  - Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetUserAsync(Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  - Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetUserDMsAsync(System.Threading.CancellationToken)
+  - Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.LeaveGuildAsync(Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  - Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.ModifyCurrentUserAsync(Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.IO.Stream},System.Threading.CancellationToken)
+  - Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.UpdateCurrentUserApplicationRoleConnectionAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}},System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IDiscordRestUserAPI
+  nameWithType: IDiscordRestUserAPI
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI
+  type: Interface
+  source:
+    id: IDiscordRestUserAPI
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Rest\IDiscordRestUserAPI.cs
+    startLine: 36
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Rest
+  summary: Represents the Discord User API.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public interface IDiscordRestUserAPI
+    content.vb: >-
+      <PublicAPI>
+
+      Public Interface IDiscordRestUserAPI
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetCurrentUserAsync(System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetCurrentUserAsync(System.Threading.CancellationToken)
+  id: GetCurrentUserAsync(System.Threading.CancellationToken)
+  parent: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI
+  langs:
+  - csharp
+  - vb
+  name: GetCurrentUserAsync(CancellationToken)
+  nameWithType: IDiscordRestUserAPI.GetCurrentUserAsync(CancellationToken)
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetCurrentUserAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: GetCurrentUserAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Rest\IDiscordRestUserAPI.cs
+    startLine: 44
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Rest
+  summary: Gets the user object of the requester's account.
+  example: []
+  syntax:
+    content: Task<Result<IUser>> GetCurrentUserAsync(CancellationToken ct = default)
+    parameters:
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IUser}}
+      description: A retrieval result which may or may not have succeeded.
+    content.vb: Function GetCurrentUserAsync(ct As CancellationToken = Nothing) As Task(Of Result(Of IUser))
+  overload: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetCurrentUserAsync*
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetUserAsync(Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetUserAsync(Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  id: GetUserAsync(Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  parent: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI
+  langs:
+  - csharp
+  - vb
+  name: GetUserAsync(Snowflake, CancellationToken)
+  nameWithType: IDiscordRestUserAPI.GetUserAsync(Snowflake, CancellationToken)
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetUserAsync(Remora.Rest.Core.Snowflake, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: GetUserAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Rest\IDiscordRestUserAPI.cs
+    startLine: 52
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Rest
+  summary: Gets the user with the given ID.
+  example: []
+  syntax:
+    content: Task<Result<IUser>> GetUserAsync(Snowflake userID, CancellationToken ct = default)
+    parameters:
+    - id: userID
+      type: Remora.Rest.Core.Snowflake
+      description: The ID of the user.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IUser}}
+      description: A retrieval result which may or may not have succeeded.
+    content.vb: Function GetUserAsync(userID As Snowflake, ct As CancellationToken = Nothing) As Task(Of Result(Of IUser))
+  overload: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetUserAsync*
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.ModifyCurrentUserAsync(Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.IO.Stream},System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.ModifyCurrentUserAsync(Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.IO.Stream},System.Threading.CancellationToken)
+  id: ModifyCurrentUserAsync(Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.IO.Stream},System.Threading.CancellationToken)
+  parent: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI
+  langs:
+  - csharp
+  - vb
+  name: ModifyCurrentUserAsync(Optional<string>, Optional<Stream?>, CancellationToken)
+  nameWithType: IDiscordRestUserAPI.ModifyCurrentUserAsync(Optional<string>, Optional<Stream?>, CancellationToken)
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.ModifyCurrentUserAsync(Remora.Rest.Core.Optional<string>, Remora.Rest.Core.Optional<System.IO.Stream?>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: ModifyCurrentUserAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Rest\IDiscordRestUserAPI.cs
+    startLine: 65
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Rest
+  summary: Modifies the current user.
+  remarks: >-
+    Any streams passed to this method will be disposed of at the end of the call. If you want to reuse the streams
+
+    afterwards, ensure that what you pass is a copy that the method can take ownership of.
+  example: []
+  syntax:
+    content: Task<Result<IUser>> ModifyCurrentUserAsync(Optional<string> username, Optional<Stream?> avatar = default, CancellationToken ct = default)
+    parameters:
+    - id: username
+      type: Remora.Rest.Core.Optional{System.String}
+      description: The new username.
+    - id: avatar
+      type: Remora.Rest.Core.Optional{System.IO.Stream}
+      description: The new avatar.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IUser}}
+      description: A modification result which may or may not have succeeded.
+    content.vb: Function ModifyCurrentUserAsync(username As [Optional](Of String), avatar As [Optional](Of Stream) = Nothing, ct As CancellationToken = Nothing) As Task(Of Result(Of IUser))
+  overload: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.ModifyCurrentUserAsync*
+  nameWithType.vb: IDiscordRestUserAPI.ModifyCurrentUserAsync(Optional(Of String), Optional(Of Stream), CancellationToken)
+  fullName.vb: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.ModifyCurrentUserAsync(Remora.Rest.Core.Optional(Of String), Remora.Rest.Core.Optional(Of System.IO.Stream), System.Threading.CancellationToken)
+  name.vb: ModifyCurrentUserAsync(Optional(Of String), Optional(Of Stream), CancellationToken)
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetCurrentUserGuildsAsync(Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{System.Int32},Remora.Rest.Core.Optional{System.Boolean},System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetCurrentUserGuildsAsync(Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{System.Int32},Remora.Rest.Core.Optional{System.Boolean},System.Threading.CancellationToken)
+  id: GetCurrentUserGuildsAsync(Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{System.Int32},Remora.Rest.Core.Optional{System.Boolean},System.Threading.CancellationToken)
+  parent: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI
+  langs:
+  - csharp
+  - vb
+  name: GetCurrentUserGuildsAsync(Optional<Snowflake>, Optional<Snowflake>, Optional<int>, Optional<bool>, CancellationToken)
+  nameWithType: IDiscordRestUserAPI.GetCurrentUserGuildsAsync(Optional<Snowflake>, Optional<Snowflake>, Optional<int>, Optional<bool>, CancellationToken)
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetCurrentUserGuildsAsync(Remora.Rest.Core.Optional<Remora.Rest.Core.Snowflake>, Remora.Rest.Core.Optional<Remora.Rest.Core.Snowflake>, Remora.Rest.Core.Optional<int>, Remora.Rest.Core.Optional<bool>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: GetCurrentUserGuildsAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Rest\IDiscordRestUserAPI.cs
+    startLine: 81
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Rest
+  summary: Gets the guilds the user is in.
+  example: []
+  syntax:
+    content: Task<Result<IReadOnlyList<IPartialGuild>>> GetCurrentUserGuildsAsync(Optional<Snowflake> before = default, Optional<Snowflake> after = default, Optional<int> limit = default, Optional<bool> withCounts = default, CancellationToken ct = default)
+    parameters:
+    - id: before
+      type: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+      description: Get guilds before this guild ID.
+    - id: after
+      type: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+      description: Get guilds after this guild ID.
+    - id: limit
+      type: Remora.Rest.Core.Optional{System.Int32}
+      description: The maximum number of guilds to get (1-200). Defaults to 200.
+    - id: withCounts
+      type: Remora.Rest.Core.Optional{System.Boolean}
+      description: Whether member and presence counts should be included.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IPartialGuild}}}
+      description: A retrieval result which may or may not have succeeded.
+    content.vb: Function GetCurrentUserGuildsAsync(before As [Optional](Of Snowflake) = Nothing, after As [Optional](Of Snowflake) = Nothing, limit As [Optional](Of Integer) = Nothing, withCounts As [Optional](Of Boolean) = Nothing, ct As CancellationToken = Nothing) As Task(Of Result(Of IReadOnlyList(Of IPartialGuild)))
+  overload: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetCurrentUserGuildsAsync*
+  nameWithType.vb: IDiscordRestUserAPI.GetCurrentUserGuildsAsync(Optional(Of Snowflake), Optional(Of Snowflake), Optional(Of Integer), Optional(Of Boolean), CancellationToken)
+  fullName.vb: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetCurrentUserGuildsAsync(Remora.Rest.Core.Optional(Of Remora.Rest.Core.Snowflake), Remora.Rest.Core.Optional(Of Remora.Rest.Core.Snowflake), Remora.Rest.Core.Optional(Of Integer), Remora.Rest.Core.Optional(Of Boolean), System.Threading.CancellationToken)
+  name.vb: GetCurrentUserGuildsAsync(Optional(Of Snowflake), Optional(Of Snowflake), Optional(Of Integer), Optional(Of Boolean), CancellationToken)
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetCurrentUserGuildMemberAsync(Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetCurrentUserGuildMemberAsync(Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  id: GetCurrentUserGuildMemberAsync(Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  parent: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI
+  langs:
+  - csharp
+  - vb
+  name: GetCurrentUserGuildMemberAsync(Snowflake, CancellationToken)
+  nameWithType: IDiscordRestUserAPI.GetCurrentUserGuildMemberAsync(Snowflake, CancellationToken)
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetCurrentUserGuildMemberAsync(Remora.Rest.Core.Snowflake, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: GetCurrentUserGuildMemberAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Rest\IDiscordRestUserAPI.cs
+    startLine: 99
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Rest
+  summary: Gets a guild member object for the current user.
+  remarks: Requires the "guild.members.read" OAuth" scope.
+  example: []
+  syntax:
+    content: Task<Result<IGuildMember>> GetCurrentUserGuildMemberAsync(Snowflake guildID, CancellationToken ct = default)
+    parameters:
+    - id: guildID
+      type: Remora.Rest.Core.Snowflake
+      description: The ID of the guild.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IGuildMember}}
+      description: A retrieval result which may or may not have succeeded.
+    content.vb: Function GetCurrentUserGuildMemberAsync(guildID As Snowflake, ct As CancellationToken = Nothing) As Task(Of Result(Of IGuildMember))
+  overload: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetCurrentUserGuildMemberAsync*
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.LeaveGuildAsync(Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.LeaveGuildAsync(Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  id: LeaveGuildAsync(Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  parent: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI
+  langs:
+  - csharp
+  - vb
+  name: LeaveGuildAsync(Snowflake, CancellationToken)
+  nameWithType: IDiscordRestUserAPI.LeaveGuildAsync(Snowflake, CancellationToken)
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.LeaveGuildAsync(Remora.Rest.Core.Snowflake, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: LeaveGuildAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Rest\IDiscordRestUserAPI.cs
+    startLine: 107
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Rest
+  summary: Leaves the given guild.
+  example: []
+  syntax:
+    content: Task<Result> LeaveGuildAsync(Snowflake guildID, CancellationToken ct = default)
+    parameters:
+    - id: guildID
+      type: Remora.Rest.Core.Snowflake
+      description: The ID of the guild.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result}
+      description: A deletion result which may or may not have succeeded.
+    content.vb: Function LeaveGuildAsync(guildID As Snowflake, ct As CancellationToken = Nothing) As Task(Of Result)
+  overload: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.LeaveGuildAsync*
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetUserDMsAsync(System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetUserDMsAsync(System.Threading.CancellationToken)
+  id: GetUserDMsAsync(System.Threading.CancellationToken)
+  parent: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI
+  langs:
+  - csharp
+  - vb
+  name: GetUserDMsAsync(CancellationToken)
+  nameWithType: IDiscordRestUserAPI.GetUserDMsAsync(CancellationToken)
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetUserDMsAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: GetUserDMsAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Rest\IDiscordRestUserAPI.cs
+    startLine: 114
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Rest
+  summary: Gets a list of DM channels the user has. This always returns an empty array for bots.
+  example: []
+  syntax:
+    content: Task<Result<IReadOnlyList<IChannel>>> GetUserDMsAsync(CancellationToken ct = default)
+    parameters:
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IChannel}}}
+      description: A retrieval result which may or may not have succeeded.
+    content.vb: Function GetUserDMsAsync(ct As CancellationToken = Nothing) As Task(Of Result(Of IReadOnlyList(Of IChannel)))
+  overload: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetUserDMsAsync*
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.CreateDMAsync(Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.CreateDMAsync(Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  id: CreateDMAsync(Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  parent: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI
+  langs:
+  - csharp
+  - vb
+  name: CreateDMAsync(Snowflake, CancellationToken)
+  nameWithType: IDiscordRestUserAPI.CreateDMAsync(Snowflake, CancellationToken)
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.CreateDMAsync(Remora.Rest.Core.Snowflake, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: CreateDMAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Rest\IDiscordRestUserAPI.cs
+    startLine: 125
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Rest
+  summary: Creates a new DM channel with the given user.
+  example: []
+  syntax:
+    content: Task<Result<IChannel>> CreateDMAsync(Snowflake recipientID, CancellationToken ct = default)
+    parameters:
+    - id: recipientID
+      type: Remora.Rest.Core.Snowflake
+      description: The ID of the recipient.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IChannel}}
+      description: A creation result which may or may not have succeeded.
+    content.vb: Function CreateDMAsync(recipientID As Snowflake, ct As CancellationToken = Nothing) As Task(Of Result(Of IChannel))
+  overload: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.CreateDMAsync*
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetCurrentUserConnectionsAsync(System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetCurrentUserConnectionsAsync(System.Threading.CancellationToken)
+  id: GetCurrentUserConnectionsAsync(System.Threading.CancellationToken)
+  parent: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI
+  langs:
+  - csharp
+  - vb
+  name: GetCurrentUserConnectionsAsync(CancellationToken)
+  nameWithType: IDiscordRestUserAPI.GetCurrentUserConnectionsAsync(CancellationToken)
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetCurrentUserConnectionsAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: GetCurrentUserConnectionsAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Rest\IDiscordRestUserAPI.cs
+    startLine: 139
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Rest
+  summary: Gets a list of connection objects.
+  remarks: Requires the "connections" OAuth" scope.
+  example: []
+  syntax:
+    content: Task<Result<IReadOnlyList<IConnection>>> GetCurrentUserConnectionsAsync(CancellationToken ct = default)
+    parameters:
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IConnection}}}
+      description: A retrieval result which may or may not have succeeded.
+    content.vb: Function GetCurrentUserConnectionsAsync(ct As CancellationToken = Nothing) As Task(Of Result(Of IReadOnlyList(Of IConnection)))
+  overload: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetCurrentUserConnectionsAsync*
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetCurrentUserApplicationRoleConnectionAsync(Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetCurrentUserApplicationRoleConnectionAsync(Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  id: GetCurrentUserApplicationRoleConnectionAsync(Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  parent: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI
+  langs:
+  - csharp
+  - vb
+  name: GetCurrentUserApplicationRoleConnectionAsync(Snowflake, CancellationToken)
+  nameWithType: IDiscordRestUserAPI.GetCurrentUserApplicationRoleConnectionAsync(Snowflake, CancellationToken)
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetCurrentUserApplicationRoleConnectionAsync(Remora.Rest.Core.Snowflake, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: GetCurrentUserApplicationRoleConnectionAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Rest\IDiscordRestUserAPI.cs
+    startLine: 154
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Rest
+  summary: Gets the application role connection for the user.
+  remarks: >-
+    Requires an OAuth2 access token with role_connections.write scope for the specified
+
+    <code class="paramref">applicationID</code>.
+  example: []
+  syntax:
+    content: Task<Result<IApplicationRoleConnection>> GetCurrentUserApplicationRoleConnectionAsync(Snowflake applicationID, CancellationToken ct = default)
+    parameters:
+    - id: applicationID
+      type: Remora.Rest.Core.Snowflake
+      description: The ID of the application.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IApplicationRoleConnection}}
+      description: A retrieval result which may or may not have succeeded.
+    content.vb: Function GetCurrentUserApplicationRoleConnectionAsync(applicationID As Snowflake, ct As CancellationToken = Nothing) As Task(Of Result(Of IApplicationRoleConnection))
+  overload: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetCurrentUserApplicationRoleConnectionAsync*
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.UpdateCurrentUserApplicationRoleConnectionAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}},System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.UpdateCurrentUserApplicationRoleConnectionAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}},System.Threading.CancellationToken)
+  id: UpdateCurrentUserApplicationRoleConnectionAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}},System.Threading.CancellationToken)
+  parent: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI
+  langs:
+  - csharp
+  - vb
+  name: UpdateCurrentUserApplicationRoleConnectionAsync(Snowflake, Optional<string>, Optional<string>, Optional<IReadOnlyDictionary<string, string>>, CancellationToken)
+  nameWithType: IDiscordRestUserAPI.UpdateCurrentUserApplicationRoleConnectionAsync(Snowflake, Optional<string>, Optional<string>, Optional<IReadOnlyDictionary<string, string>>, CancellationToken)
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.UpdateCurrentUserApplicationRoleConnectionAsync(Remora.Rest.Core.Snowflake, Remora.Rest.Core.Optional<string>, Remora.Rest.Core.Optional<string>, Remora.Rest.Core.Optional<System.Collections.Generic.IReadOnlyDictionary<string, string>>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: UpdateCurrentUserApplicationRoleConnectionAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Rest\IDiscordRestUserAPI.cs
+    startLine: 176
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Rest
+  summary: Updates and returns the application role connection for the user.
+  remarks: >-
+    Requires an OAuth2 access token with role_connections.write scope for the specified
+
+    <code class="paramref">applicationID</code>.
+  example: []
+  syntax:
+    content: Task<Result<IApplicationRoleConnection>> UpdateCurrentUserApplicationRoleConnectionAsync(Snowflake applicationID, Optional<string> platformName = default, Optional<string> platformUsername = default, Optional<IReadOnlyDictionary<string, string>> metadata = default, CancellationToken ct = default)
+    parameters:
+    - id: applicationID
+      type: Remora.Rest.Core.Snowflake
+      description: The ID of the application.
+    - id: platformName
+      type: Remora.Rest.Core.Optional{System.String}
+      description: The vanity name of the platform a bot has connected (max 50 characters).
+    - id: platformUsername
+      type: Remora.Rest.Core.Optional{System.String}
+      description: The username on the platform a bot has connected (max 100 characters).
+    - id: metadata
+      type: Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}}
+      description: >-
+        The object mapping application role connection metadata keys to their stringified value (max 100 characters) for
+
+        the user on the platform a bot has connected.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IApplicationRoleConnection}}
+      description: A retrieval result which may or may not have succeeded.
+    content.vb: Function UpdateCurrentUserApplicationRoleConnectionAsync(applicationID As Snowflake, platformName As [Optional](Of String) = Nothing, platformUsername As [Optional](Of String) = Nothing, metadata As [Optional](Of IReadOnlyDictionary(Of String, String)) = Nothing, ct As CancellationToken = Nothing) As Task(Of Result(Of IApplicationRoleConnection))
+  overload: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.UpdateCurrentUserApplicationRoleConnectionAsync*
+  nameWithType.vb: IDiscordRestUserAPI.UpdateCurrentUserApplicationRoleConnectionAsync(Snowflake, Optional(Of String), Optional(Of String), Optional(Of IReadOnlyDictionary(Of String, String)), CancellationToken)
+  fullName.vb: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.UpdateCurrentUserApplicationRoleConnectionAsync(Remora.Rest.Core.Snowflake, Remora.Rest.Core.Optional(Of String), Remora.Rest.Core.Optional(Of String), Remora.Rest.Core.Optional(Of System.Collections.Generic.IReadOnlyDictionary(Of String, String)), System.Threading.CancellationToken)
+  name.vb: UpdateCurrentUserApplicationRoleConnectionAsync(Snowflake, Optional(Of String), Optional(Of String), Optional(Of IReadOnlyDictionary(Of String, String)), CancellationToken)
+references:
+- uid: Remora.Discord.API.Abstractions.Rest
+  commentId: N:Remora.Discord.API.Abstractions.Rest
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Rest
+  nameWithType: Remora.Discord.API.Abstractions.Rest
+  fullName: Remora.Discord.API.Abstractions.Rest
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Rest
+    name: Rest
+    href: Remora.Discord.API.Abstractions.Rest.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Rest
+    name: Rest
+    href: Remora.Discord.API.Abstractions.Rest.html
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetCurrentUserAsync*
+  commentId: Overload:Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetCurrentUserAsync
+  href: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.html#Remora_Discord_API_Abstractions_Rest_IDiscordRestUserAPI_GetCurrentUserAsync_System_Threading_CancellationToken_
+  name: GetCurrentUserAsync
+  nameWithType: IDiscordRestUserAPI.GetCurrentUserAsync
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetCurrentUserAsync
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IUser}}
+  commentId: T:System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IUser}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Result<IUser>>
+  nameWithType: Task<Result<IUser>>
+  fullName: System.Threading.Tasks.Task<Remora.Results.Result<Remora.Discord.API.Abstractions.Objects.IUser>>
+  nameWithType.vb: Task(Of Result(Of IUser))
+  fullName.vb: System.Threading.Tasks.Task(Of Remora.Results.Result(Of Remora.Discord.API.Abstractions.Objects.IUser))
+  name.vb: Task(Of Result(Of IUser))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Remora.Results.Result`1
+    name: Result
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IUser
+    name: IUser
+    href: Remora.Discord.API.Abstractions.Objects.IUser.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Results.Result`1
+    name: Result
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IUser
+    name: IUser
+    href: Remora.Discord.API.Abstractions.Objects.IUser.html
+  - name: )
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetUserAsync*
+  commentId: Overload:Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetUserAsync
+  href: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.html#Remora_Discord_API_Abstractions_Rest_IDiscordRestUserAPI_GetUserAsync_Remora_Rest_Core_Snowflake_System_Threading_CancellationToken_
+  name: GetUserAsync
+  nameWithType: IDiscordRestUserAPI.GetUserAsync
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetUserAsync
+- uid: Remora.Rest.Core.Snowflake
+  commentId: T:Remora.Rest.Core.Snowflake
+  parent: Remora.Rest.Core
+  isExternal: true
+  name: Snowflake
+  nameWithType: Snowflake
+  fullName: Remora.Rest.Core.Snowflake
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.ModifyCurrentUserAsync*
+  commentId: Overload:Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.ModifyCurrentUserAsync
+  href: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.html#Remora_Discord_API_Abstractions_Rest_IDiscordRestUserAPI_ModifyCurrentUserAsync_Remora_Rest_Core_Optional_System_String__Remora_Rest_Core_Optional_System_IO_Stream__System_Threading_CancellationToken_
+  name: ModifyCurrentUserAsync
+  nameWithType: IDiscordRestUserAPI.ModifyCurrentUserAsync
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.ModifyCurrentUserAsync
+- uid: Remora.Rest.Core.Optional{System.String}
+  commentId: T:Remora.Rest.Core.Optional{System.String}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Optional<string>
+  nameWithType: Optional<string>
+  fullName: Remora.Rest.Core.Optional<string>
+  nameWithType.vb: Optional(Of String)
+  fullName.vb: Remora.Rest.Core.Optional(Of String)
+  name.vb: Optional(Of String)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Remora.Rest.Core.Optional{System.IO.Stream}
+  commentId: T:Remora.Rest.Core.Optional{System.IO.Stream}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  name: Optional<Stream>
+  nameWithType: Optional<Stream>
+  fullName: Remora.Rest.Core.Optional<System.IO.Stream>
+  nameWithType.vb: Optional(Of Stream)
+  fullName.vb: Remora.Rest.Core.Optional(Of System.IO.Stream)
+  name.vb: Optional(Of Stream)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: )
+- uid: Remora.Rest.Core.Optional`1
+  commentId: T:Remora.Rest.Core.Optional`1
+  isExternal: true
+  name: Optional<TValue>
+  nameWithType: Optional<TValue>
+  fullName: Remora.Rest.Core.Optional<TValue>
+  nameWithType.vb: Optional(Of TValue)
+  fullName.vb: Remora.Rest.Core.Optional(Of TValue)
+  name.vb: Optional(Of TValue)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetCurrentUserGuildsAsync*
+  commentId: Overload:Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetCurrentUserGuildsAsync
+  href: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.html#Remora_Discord_API_Abstractions_Rest_IDiscordRestUserAPI_GetCurrentUserGuildsAsync_Remora_Rest_Core_Optional_Remora_Rest_Core_Snowflake__Remora_Rest_Core_Optional_Remora_Rest_Core_Snowflake__Remora_Rest_Core_Optional_System_Int32__Remora_Rest_Core_Optional_System_Boolean__System_Threading_CancellationToken_
+  name: GetCurrentUserGuildsAsync
+  nameWithType: IDiscordRestUserAPI.GetCurrentUserGuildsAsync
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetCurrentUserGuildsAsync
+- uid: Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+  commentId: T:Remora.Rest.Core.Optional{Remora.Rest.Core.Snowflake}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  name: Optional<Snowflake>
+  nameWithType: Optional<Snowflake>
+  fullName: Remora.Rest.Core.Optional<Remora.Rest.Core.Snowflake>
+  nameWithType.vb: Optional(Of Snowflake)
+  fullName.vb: Remora.Rest.Core.Optional(Of Remora.Rest.Core.Snowflake)
+  name.vb: Optional(Of Snowflake)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+- uid: Remora.Rest.Core.Optional{System.Int32}
+  commentId: T:Remora.Rest.Core.Optional{System.Int32}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: Optional<int>
+  nameWithType: Optional<int>
+  fullName: Remora.Rest.Core.Optional<int>
+  nameWithType.vb: Optional(Of Integer)
+  fullName.vb: Remora.Rest.Core.Optional(Of Integer)
+  name.vb: Optional(Of Integer)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Remora.Rest.Core.Optional{System.Boolean}
+  commentId: T:Remora.Rest.Core.Optional{System.Boolean}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: Optional<bool>
+  nameWithType: Optional<bool>
+  fullName: Remora.Rest.Core.Optional<bool>
+  nameWithType.vb: Optional(Of Boolean)
+  fullName.vb: Remora.Rest.Core.Optional(Of Boolean)
+  name.vb: Optional(Of Boolean)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Threading.Tasks.Task{Remora.Results.Result{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IPartialGuild}}}
+  commentId: T:System.Threading.Tasks.Task{Remora.Results.Result{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IPartialGuild}}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Result<IReadOnlyList<IPartialGuild>>>
+  nameWithType: Task<Result<IReadOnlyList<IPartialGuild>>>
+  fullName: System.Threading.Tasks.Task<Remora.Results.Result<System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.IPartialGuild>>>
+  nameWithType.vb: Task(Of Result(Of IReadOnlyList(Of IPartialGuild)))
+  fullName.vb: System.Threading.Tasks.Task(Of Remora.Results.Result(Of System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.IPartialGuild)))
+  name.vb: Task(Of Result(Of IReadOnlyList(Of IPartialGuild)))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Remora.Results.Result`1
+    name: Result
+    isExternal: true
+  - name: <
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IPartialGuild
+    name: IPartialGuild
+    href: Remora.Discord.API.Abstractions.Objects.IPartialGuild.html
+  - name: '>'
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Results.Result`1
+    name: Result
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IPartialGuild
+    name: IPartialGuild
+    href: Remora.Discord.API.Abstractions.Objects.IPartialGuild.html
+  - name: )
+  - name: )
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetCurrentUserGuildMemberAsync*
+  commentId: Overload:Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetCurrentUserGuildMemberAsync
+  href: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.html#Remora_Discord_API_Abstractions_Rest_IDiscordRestUserAPI_GetCurrentUserGuildMemberAsync_Remora_Rest_Core_Snowflake_System_Threading_CancellationToken_
+  name: GetCurrentUserGuildMemberAsync
+  nameWithType: IDiscordRestUserAPI.GetCurrentUserGuildMemberAsync
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetCurrentUserGuildMemberAsync
+- uid: System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IGuildMember}}
+  commentId: T:System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IGuildMember}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Result<IGuildMember>>
+  nameWithType: Task<Result<IGuildMember>>
+  fullName: System.Threading.Tasks.Task<Remora.Results.Result<Remora.Discord.API.Abstractions.Objects.IGuildMember>>
+  nameWithType.vb: Task(Of Result(Of IGuildMember))
+  fullName.vb: System.Threading.Tasks.Task(Of Remora.Results.Result(Of Remora.Discord.API.Abstractions.Objects.IGuildMember))
+  name.vb: Task(Of Result(Of IGuildMember))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Remora.Results.Result`1
+    name: Result
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IGuildMember
+    name: IGuildMember
+    href: Remora.Discord.API.Abstractions.Objects.IGuildMember.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Results.Result`1
+    name: Result
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IGuildMember
+    name: IGuildMember
+    href: Remora.Discord.API.Abstractions.Objects.IGuildMember.html
+  - name: )
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.LeaveGuildAsync*
+  commentId: Overload:Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.LeaveGuildAsync
+  href: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.html#Remora_Discord_API_Abstractions_Rest_IDiscordRestUserAPI_LeaveGuildAsync_Remora_Rest_Core_Snowflake_System_Threading_CancellationToken_
+  name: LeaveGuildAsync
+  nameWithType: IDiscordRestUserAPI.LeaveGuildAsync
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.LeaveGuildAsync
+- uid: System.Threading.Tasks.Task{Remora.Results.Result}
+  commentId: T:System.Threading.Tasks.Task{Remora.Results.Result}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Result>
+  nameWithType: Task<Result>
+  fullName: System.Threading.Tasks.Task<Remora.Results.Result>
+  nameWithType.vb: Task(Of Result)
+  fullName.vb: System.Threading.Tasks.Task(Of Remora.Results.Result)
+  name.vb: Task(Of Result)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Remora.Results.Result
+    name: Result
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Results.Result
+    name: Result
+    isExternal: true
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetUserDMsAsync*
+  commentId: Overload:Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetUserDMsAsync
+  href: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.html#Remora_Discord_API_Abstractions_Rest_IDiscordRestUserAPI_GetUserDMsAsync_System_Threading_CancellationToken_
+  name: GetUserDMsAsync
+  nameWithType: IDiscordRestUserAPI.GetUserDMsAsync
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetUserDMsAsync
+- uid: System.Threading.Tasks.Task{Remora.Results.Result{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IChannel}}}
+  commentId: T:System.Threading.Tasks.Task{Remora.Results.Result{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IChannel}}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Result<IReadOnlyList<IChannel>>>
+  nameWithType: Task<Result<IReadOnlyList<IChannel>>>
+  fullName: System.Threading.Tasks.Task<Remora.Results.Result<System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.IChannel>>>
+  nameWithType.vb: Task(Of Result(Of IReadOnlyList(Of IChannel)))
+  fullName.vb: System.Threading.Tasks.Task(Of Remora.Results.Result(Of System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.IChannel)))
+  name.vb: Task(Of Result(Of IReadOnlyList(Of IChannel)))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Remora.Results.Result`1
+    name: Result
+    isExternal: true
+  - name: <
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IChannel
+    name: IChannel
+    href: Remora.Discord.API.Abstractions.Objects.IChannel.html
+  - name: '>'
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Results.Result`1
+    name: Result
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IChannel
+    name: IChannel
+    href: Remora.Discord.API.Abstractions.Objects.IChannel.html
+  - name: )
+  - name: )
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.CreateDMAsync*
+  commentId: Overload:Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.CreateDMAsync
+  href: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.html#Remora_Discord_API_Abstractions_Rest_IDiscordRestUserAPI_CreateDMAsync_Remora_Rest_Core_Snowflake_System_Threading_CancellationToken_
+  name: CreateDMAsync
+  nameWithType: IDiscordRestUserAPI.CreateDMAsync
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.CreateDMAsync
+- uid: System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IChannel}}
+  commentId: T:System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IChannel}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Result<IChannel>>
+  nameWithType: Task<Result<IChannel>>
+  fullName: System.Threading.Tasks.Task<Remora.Results.Result<Remora.Discord.API.Abstractions.Objects.IChannel>>
+  nameWithType.vb: Task(Of Result(Of IChannel))
+  fullName.vb: System.Threading.Tasks.Task(Of Remora.Results.Result(Of Remora.Discord.API.Abstractions.Objects.IChannel))
+  name.vb: Task(Of Result(Of IChannel))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Remora.Results.Result`1
+    name: Result
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IChannel
+    name: IChannel
+    href: Remora.Discord.API.Abstractions.Objects.IChannel.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Results.Result`1
+    name: Result
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IChannel
+    name: IChannel
+    href: Remora.Discord.API.Abstractions.Objects.IChannel.html
+  - name: )
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetCurrentUserConnectionsAsync*
+  commentId: Overload:Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetCurrentUserConnectionsAsync
+  href: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.html#Remora_Discord_API_Abstractions_Rest_IDiscordRestUserAPI_GetCurrentUserConnectionsAsync_System_Threading_CancellationToken_
+  name: GetCurrentUserConnectionsAsync
+  nameWithType: IDiscordRestUserAPI.GetCurrentUserConnectionsAsync
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetCurrentUserConnectionsAsync
+- uid: System.Threading.Tasks.Task{Remora.Results.Result{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IConnection}}}
+  commentId: T:System.Threading.Tasks.Task{Remora.Results.Result{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IConnection}}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Result<IReadOnlyList<IConnection>>>
+  nameWithType: Task<Result<IReadOnlyList<IConnection>>>
+  fullName: System.Threading.Tasks.Task<Remora.Results.Result<System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.IConnection>>>
+  nameWithType.vb: Task(Of Result(Of IReadOnlyList(Of IConnection)))
+  fullName.vb: System.Threading.Tasks.Task(Of Remora.Results.Result(Of System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.IConnection)))
+  name.vb: Task(Of Result(Of IReadOnlyList(Of IConnection)))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Remora.Results.Result`1
+    name: Result
+    isExternal: true
+  - name: <
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IConnection
+    name: IConnection
+    href: Remora.Discord.API.Abstractions.Objects.IConnection.html
+  - name: '>'
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Results.Result`1
+    name: Result
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IConnection
+    name: IConnection
+    href: Remora.Discord.API.Abstractions.Objects.IConnection.html
+  - name: )
+  - name: )
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetCurrentUserApplicationRoleConnectionAsync*
+  commentId: Overload:Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetCurrentUserApplicationRoleConnectionAsync
+  href: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.html#Remora_Discord_API_Abstractions_Rest_IDiscordRestUserAPI_GetCurrentUserApplicationRoleConnectionAsync_Remora_Rest_Core_Snowflake_System_Threading_CancellationToken_
+  name: GetCurrentUserApplicationRoleConnectionAsync
+  nameWithType: IDiscordRestUserAPI.GetCurrentUserApplicationRoleConnectionAsync
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.GetCurrentUserApplicationRoleConnectionAsync
+- uid: System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IApplicationRoleConnection}}
+  commentId: T:System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IApplicationRoleConnection}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Result<IApplicationRoleConnection>>
+  nameWithType: Task<Result<IApplicationRoleConnection>>
+  fullName: System.Threading.Tasks.Task<Remora.Results.Result<Remora.Discord.API.Abstractions.Objects.IApplicationRoleConnection>>
+  nameWithType.vb: Task(Of Result(Of IApplicationRoleConnection))
+  fullName.vb: System.Threading.Tasks.Task(Of Remora.Results.Result(Of Remora.Discord.API.Abstractions.Objects.IApplicationRoleConnection))
+  name.vb: Task(Of Result(Of IApplicationRoleConnection))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Remora.Results.Result`1
+    name: Result
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IApplicationRoleConnection
+    name: IApplicationRoleConnection
+    href: Remora.Discord.API.Abstractions.Objects.IApplicationRoleConnection.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Results.Result`1
+    name: Result
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IApplicationRoleConnection
+    name: IApplicationRoleConnection
+    href: Remora.Discord.API.Abstractions.Objects.IApplicationRoleConnection.html
+  - name: )
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.UpdateCurrentUserApplicationRoleConnectionAsync*
+  commentId: Overload:Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.UpdateCurrentUserApplicationRoleConnectionAsync
+  href: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.html#Remora_Discord_API_Abstractions_Rest_IDiscordRestUserAPI_UpdateCurrentUserApplicationRoleConnectionAsync_Remora_Rest_Core_Snowflake_Remora_Rest_Core_Optional_System_String__Remora_Rest_Core_Optional_System_String__Remora_Rest_Core_Optional_System_Collections_Generic_IReadOnlyDictionary_System_String_System_String___System_Threading_CancellationToken_
+  name: UpdateCurrentUserApplicationRoleConnectionAsync
+  nameWithType: IDiscordRestUserAPI.UpdateCurrentUserApplicationRoleConnectionAsync
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestUserAPI.UpdateCurrentUserApplicationRoleConnectionAsync
+- uid: Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}}
+  commentId: T:Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: Optional<IReadOnlyDictionary<string, string>>
+  nameWithType: Optional<IReadOnlyDictionary<string, string>>
+  fullName: Remora.Rest.Core.Optional<System.Collections.Generic.IReadOnlyDictionary<string, string>>
+  nameWithType.vb: Optional(Of IReadOnlyDictionary(Of String, String))
+  fullName.vb: Remora.Rest.Core.Optional(Of System.Collections.Generic.IReadOnlyDictionary(Of String, String))
+  name.vb: Optional(Of IReadOnlyDictionary(Of String, String))
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )

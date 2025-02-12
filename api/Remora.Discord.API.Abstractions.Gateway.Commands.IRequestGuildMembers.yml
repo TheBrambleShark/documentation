@@ -1,0 +1,501 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers
+  commentId: T:Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers
+  id: IRequestGuildMembers
+  parent: Remora.Discord.API.Abstractions.Gateway.Commands
+  children:
+  - Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers.GuildID
+  - Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers.Limit
+  - Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers.Nonce
+  - Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers.Presences
+  - Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers.Query
+  - Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers.UserIDs
+  langs:
+  - csharp
+  - vb
+  name: IRequestGuildMembers
+  nameWithType: IRequestGuildMembers
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers
+  type: Interface
+  source:
+    id: IRequestGuildMembers
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Commands\IRequestGuildMembers.cs
+    startLine: 31
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Commands
+  summary: Represents a command used to request guild members.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public interface IRequestGuildMembers : IGatewayCommand, IGatewayPayloadData
+    content.vb: >-
+      <PublicAPI>
+
+      Public Interface IRequestGuildMembers Inherits IGatewayCommand, IGatewayPayloadData
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers.GuildID
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers.GuildID
+  id: GuildID
+  parent: Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers
+  langs:
+  - csharp
+  - vb
+  name: GuildID
+  nameWithType: IRequestGuildMembers.GuildID
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers.GuildID
+  type: Property
+  source:
+    id: GuildID
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Commands\IRequestGuildMembers.cs
+    startLine: 37
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Commands
+  summary: Gets the ID of the guild that members should be requested from.
+  example: []
+  syntax:
+    content: Snowflake GuildID { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Snowflake
+    content.vb: ReadOnly Property GuildID As Snowflake
+  overload: Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers.GuildID*
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers.Query
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers.Query
+  id: Query
+  parent: Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers
+  langs:
+  - csharp
+  - vb
+  name: Query
+  nameWithType: IRequestGuildMembers.Query
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers.Query
+  type: Property
+  source:
+    id: Query
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Commands\IRequestGuildMembers.cs
+    startLine: 42
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Commands
+  summary: Gets a query string that the requested usernames should start with.
+  example: []
+  syntax:
+    content: Optional<string> Query { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.String}
+    content.vb: ReadOnly Property Query As [Optional](Of String)
+  overload: Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers.Query*
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers.Limit
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers.Limit
+  id: Limit
+  parent: Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers
+  langs:
+  - csharp
+  - vb
+  name: Limit
+  nameWithType: IRequestGuildMembers.Limit
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers.Limit
+  type: Property
+  source:
+    id: Limit
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Commands\IRequestGuildMembers.cs
+    startLine: 47
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Commands
+  summary: Gets a limiting number of users to fetch.
+  example: []
+  syntax:
+    content: Optional<int> Limit { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Int32}
+    content.vb: ReadOnly Property Limit As [Optional](Of Integer)
+  overload: Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers.Limit*
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers.Presences
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers.Presences
+  id: Presences
+  parent: Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers
+  langs:
+  - csharp
+  - vb
+  name: Presences
+  nameWithType: IRequestGuildMembers.Presences
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers.Presences
+  type: Property
+  source:
+    id: Presences
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Commands\IRequestGuildMembers.cs
+    startLine: 52
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Commands
+  summary: Gets a value indicating whether we want to fetch the presences of the users.
+  example: []
+  syntax:
+    content: Optional<bool> Presences { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Boolean}
+    content.vb: ReadOnly Property Presences As [Optional](Of Boolean)
+  overload: Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers.Presences*
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers.UserIDs
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers.UserIDs
+  id: UserIDs
+  parent: Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers
+  langs:
+  - csharp
+  - vb
+  name: UserIDs
+  nameWithType: IRequestGuildMembers.UserIDs
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers.UserIDs
+  type: Property
+  source:
+    id: UserIDs
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Commands\IRequestGuildMembers.cs
+    startLine: 57
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Commands
+  summary: Gets a collection of user IDs that should be fetched.
+  example: []
+  syntax:
+    content: Optional<IReadOnlyList<Snowflake>> UserIDs { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}}
+    content.vb: ReadOnly Property UserIDs As [Optional](Of IReadOnlyList(Of Snowflake))
+  overload: Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers.UserIDs*
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers.Nonce
+  commentId: P:Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers.Nonce
+  id: Nonce
+  parent: Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers
+  langs:
+  - csharp
+  - vb
+  name: Nonce
+  nameWithType: IRequestGuildMembers.Nonce
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers.Nonce
+  type: Property
+  source:
+    id: Nonce
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Gateway\Commands\IRequestGuildMembers.cs
+    startLine: 62
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Gateway.Commands
+  summary: Gets a nonce (unique string) to identify the incoming guild member chunks after the request has been accepted.
+  example: []
+  syntax:
+    content: Optional<string> Nonce { get; }
+    parameters: []
+    return:
+      type: Remora.Rest.Core.Optional{System.String}
+    content.vb: ReadOnly Property Nonce As [Optional](Of String)
+  overload: Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers.Nonce*
+references:
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands
+  commentId: N:Remora.Discord.API.Abstractions.Gateway.Commands
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Gateway.Commands
+  nameWithType: Remora.Discord.API.Abstractions.Gateway.Commands
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway.Commands
+    name: Commands
+    href: Remora.Discord.API.Abstractions.Gateway.Commands.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway
+    name: Gateway
+    href: Remora.Discord.API.Abstractions.Gateway.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Gateway.Commands
+    name: Commands
+    href: Remora.Discord.API.Abstractions.Gateway.Commands.html
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers.GuildID*
+  commentId: Overload:Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers.GuildID
+  href: Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers.html#Remora_Discord_API_Abstractions_Gateway_Commands_IRequestGuildMembers_GuildID
+  name: GuildID
+  nameWithType: IRequestGuildMembers.GuildID
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers.GuildID
+- uid: Remora.Rest.Core.Snowflake
+  commentId: T:Remora.Rest.Core.Snowflake
+  parent: Remora.Rest.Core
+  isExternal: true
+  name: Snowflake
+  nameWithType: Snowflake
+  fullName: Remora.Rest.Core.Snowflake
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers.Query*
+  commentId: Overload:Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers.Query
+  href: Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers.html#Remora_Discord_API_Abstractions_Gateway_Commands_IRequestGuildMembers_Query
+  name: Query
+  nameWithType: IRequestGuildMembers.Query
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers.Query
+- uid: Remora.Rest.Core.Optional{System.String}
+  commentId: T:Remora.Rest.Core.Optional{System.String}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Optional<string>
+  nameWithType: Optional<string>
+  fullName: Remora.Rest.Core.Optional<string>
+  nameWithType.vb: Optional(Of String)
+  fullName.vb: Remora.Rest.Core.Optional(Of String)
+  name.vb: Optional(Of String)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Remora.Rest.Core.Optional`1
+  commentId: T:Remora.Rest.Core.Optional`1
+  isExternal: true
+  name: Optional<TValue>
+  nameWithType: Optional<TValue>
+  fullName: Remora.Rest.Core.Optional<TValue>
+  nameWithType.vb: Optional(Of TValue)
+  fullName.vb: Remora.Rest.Core.Optional(Of TValue)
+  name.vb: Optional(Of TValue)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers.Limit*
+  commentId: Overload:Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers.Limit
+  href: Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers.html#Remora_Discord_API_Abstractions_Gateway_Commands_IRequestGuildMembers_Limit
+  name: Limit
+  nameWithType: IRequestGuildMembers.Limit
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers.Limit
+- uid: Remora.Rest.Core.Optional{System.Int32}
+  commentId: T:Remora.Rest.Core.Optional{System.Int32}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: Optional<int>
+  nameWithType: Optional<int>
+  fullName: Remora.Rest.Core.Optional<int>
+  nameWithType.vb: Optional(Of Integer)
+  fullName.vb: Remora.Rest.Core.Optional(Of Integer)
+  name.vb: Optional(Of Integer)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers.Presences*
+  commentId: Overload:Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers.Presences
+  href: Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers.html#Remora_Discord_API_Abstractions_Gateway_Commands_IRequestGuildMembers_Presences
+  name: Presences
+  nameWithType: IRequestGuildMembers.Presences
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers.Presences
+- uid: Remora.Rest.Core.Optional{System.Boolean}
+  commentId: T:Remora.Rest.Core.Optional{System.Boolean}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: Optional<bool>
+  nameWithType: Optional<bool>
+  fullName: Remora.Rest.Core.Optional<bool>
+  nameWithType.vb: Optional(Of Boolean)
+  fullName.vb: Remora.Rest.Core.Optional(Of Boolean)
+  name.vb: Optional(Of Boolean)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers.UserIDs*
+  commentId: Overload:Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers.UserIDs
+  href: Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers.html#Remora_Discord_API_Abstractions_Gateway_Commands_IRequestGuildMembers_UserIDs
+  name: UserIDs
+  nameWithType: IRequestGuildMembers.UserIDs
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers.UserIDs
+- uid: Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}}
+  commentId: T:Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: Optional<IReadOnlyList<Snowflake>>
+  nameWithType: Optional<IReadOnlyList<Snowflake>>
+  fullName: Remora.Rest.Core.Optional<System.Collections.Generic.IReadOnlyList<Remora.Rest.Core.Snowflake>>
+  nameWithType.vb: Optional(Of IReadOnlyList(Of Snowflake))
+  fullName.vb: Remora.Rest.Core.Optional(Of System.Collections.Generic.IReadOnlyList(Of Remora.Rest.Core.Snowflake))
+  name.vb: Optional(Of IReadOnlyList(Of Snowflake))
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers.Nonce*
+  commentId: Overload:Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers.Nonce
+  href: Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers.html#Remora_Discord_API_Abstractions_Gateway_Commands_IRequestGuildMembers_Nonce
+  name: Nonce
+  nameWithType: IRequestGuildMembers.Nonce
+  fullName: Remora.Discord.API.Abstractions.Gateway.Commands.IRequestGuildMembers.Nonce

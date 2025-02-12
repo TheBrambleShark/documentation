@@ -1,0 +1,186 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Abstractions.Objects.TeamMemberRole
+  commentId: T:Remora.Discord.API.Abstractions.Objects.TeamMemberRole
+  id: TeamMemberRole
+  parent: Remora.Discord.API.Abstractions.Objects
+  children:
+  - Remora.Discord.API.Abstractions.Objects.TeamMemberRole.Admin
+  - Remora.Discord.API.Abstractions.Objects.TeamMemberRole.Developer
+  - Remora.Discord.API.Abstractions.Objects.TeamMemberRole.Owner
+  - Remora.Discord.API.Abstractions.Objects.TeamMemberRole.ReadOnly
+  langs:
+  - csharp
+  - vb
+  name: TeamMemberRole
+  nameWithType: TeamMemberRole
+  fullName: Remora.Discord.API.Abstractions.Objects.TeamMemberRole
+  type: Enum
+  source:
+    id: TeamMemberRole
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Teams\TeamMemberRole.cs
+    startLine: 27
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: Enumerates various roles a team member can have.
+  example: []
+  syntax:
+    content: public enum TeamMemberRole
+    content.vb: Public Enum TeamMemberRole
+- uid: Remora.Discord.API.Abstractions.Objects.TeamMemberRole.Owner
+  commentId: F:Remora.Discord.API.Abstractions.Objects.TeamMemberRole.Owner
+  id: Owner
+  parent: Remora.Discord.API.Abstractions.Objects.TeamMemberRole
+  langs:
+  - csharp
+  - vb
+  name: Owner
+  nameWithType: TeamMemberRole.Owner
+  fullName: Remora.Discord.API.Abstractions.Objects.TeamMemberRole.Owner
+  type: Field
+  source:
+    id: Owner
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Teams\TeamMemberRole.cs
+    startLine: 33
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: " Owners are the most permissible role, and can take destructive, irreversible actions like deleting team-owned\r\napps or the team itself. Teams are limited to 1 owner."
+  example: []
+  syntax:
+    content: Owner = 0
+    return:
+      type: Remora.Discord.API.Abstractions.Objects.TeamMemberRole
+- uid: Remora.Discord.API.Abstractions.Objects.TeamMemberRole.Admin
+  commentId: F:Remora.Discord.API.Abstractions.Objects.TeamMemberRole.Admin
+  id: Admin
+  parent: Remora.Discord.API.Abstractions.Objects.TeamMemberRole
+  langs:
+  - csharp
+  - vb
+  name: Admin
+  nameWithType: TeamMemberRole.Admin
+  fullName: Remora.Discord.API.Abstractions.Objects.TeamMemberRole.Admin
+  type: Field
+  source:
+    id: Admin
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Teams\TeamMemberRole.cs
+    startLine: 39
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: >-
+    Admins have similar access as owners, except they cannot take destructive actions on the team or team-owned
+
+    apps.
+  example: []
+  syntax:
+    content: Admin = 1
+    return:
+      type: Remora.Discord.API.Abstractions.Objects.TeamMemberRole
+- uid: Remora.Discord.API.Abstractions.Objects.TeamMemberRole.Developer
+  commentId: F:Remora.Discord.API.Abstractions.Objects.TeamMemberRole.Developer
+  id: Developer
+  parent: Remora.Discord.API.Abstractions.Objects.TeamMemberRole
+  langs:
+  - csharp
+  - vb
+  name: Developer
+  nameWithType: TeamMemberRole.Developer
+  fullName: Remora.Discord.API.Abstractions.Objects.TeamMemberRole.Developer
+  type: Field
+  source:
+    id: Developer
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Teams\TeamMemberRole.cs
+    startLine: 47
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: " Developers can access information about team-owned apps, like the client secret or public key. They can also\r\ntake limited actions on team-owned apps, like configuring interaction endpoints or resetting the bot token.\r\nMembers with the Developer role *cannot* manage the team or its members, or take destructive actions on\r\nteam-owned apps."
+  example: []
+  syntax:
+    content: Developer = 2
+    return:
+      type: Remora.Discord.API.Abstractions.Objects.TeamMemberRole
+- uid: Remora.Discord.API.Abstractions.Objects.TeamMemberRole.ReadOnly
+  commentId: F:Remora.Discord.API.Abstractions.Objects.TeamMemberRole.ReadOnly
+  id: ReadOnly
+  parent: Remora.Discord.API.Abstractions.Objects.TeamMemberRole
+  langs:
+  - csharp
+  - vb
+  name: ReadOnly
+  nameWithType: TeamMemberRole.ReadOnly
+  fullName: Remora.Discord.API.Abstractions.Objects.TeamMemberRole.ReadOnly
+  type: Field
+  source:
+    id: ReadOnly
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Objects\Teams\TeamMemberRole.cs
+    startLine: 53
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Objects
+  summary: >-
+    Read-only members can access information about a team and any team-owned apps. Some examples include getting the
+
+    IDs of applications and exporting payout records.
+  example: []
+  syntax:
+    content: ReadOnly = 3
+    return:
+      type: Remora.Discord.API.Abstractions.Objects.TeamMemberRole
+references:
+- uid: Remora.Discord.API.Abstractions.Objects
+  commentId: N:Remora.Discord.API.Abstractions.Objects
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Objects
+  nameWithType: Remora.Discord.API.Abstractions.Objects
+  fullName: Remora.Discord.API.Abstractions.Objects
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Objects
+    name: Objects
+    href: Remora.Discord.API.Abstractions.Objects.html
+- uid: Remora.Discord.API.Abstractions.Objects.TeamMemberRole
+  commentId: T:Remora.Discord.API.Abstractions.Objects.TeamMemberRole
+  parent: Remora.Discord.API.Abstractions.Objects
+  href: Remora.Discord.API.Abstractions.Objects.TeamMemberRole.html
+  name: TeamMemberRole
+  nameWithType: TeamMemberRole
+  fullName: Remora.Discord.API.Abstractions.Objects.TeamMemberRole

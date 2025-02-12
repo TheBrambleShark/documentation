@@ -1,0 +1,862 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestEmojiAPI
+  commentId: T:Remora.Discord.API.Abstractions.Rest.IDiscordRestEmojiAPI
+  id: IDiscordRestEmojiAPI
+  parent: Remora.Discord.API.Abstractions.Rest
+  children:
+  - Remora.Discord.API.Abstractions.Rest.IDiscordRestEmojiAPI.CreateGuildEmojiAsync(Remora.Rest.Core.Snowflake,System.String,System.IO.Stream,System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{System.String},System.Threading.CancellationToken)
+  - Remora.Discord.API.Abstractions.Rest.IDiscordRestEmojiAPI.DeleteGuildEmojiAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{System.String},System.Threading.CancellationToken)
+  - Remora.Discord.API.Abstractions.Rest.IDiscordRestEmojiAPI.GetGuildEmojiAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  - Remora.Discord.API.Abstractions.Rest.IDiscordRestEmojiAPI.ListGuildEmojisAsync(Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  - Remora.Discord.API.Abstractions.Rest.IDiscordRestEmojiAPI.ModifyGuildEmojiAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}},Remora.Rest.Core.Optional{System.String},System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IDiscordRestEmojiAPI
+  nameWithType: IDiscordRestEmojiAPI
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestEmojiAPI
+  type: Interface
+  source:
+    id: IDiscordRestEmojiAPI
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Rest\IDiscordRestEmojiAPI.cs
+    startLine: 36
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Rest
+  summary: Represents the Discord Emoji API.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public interface IDiscordRestEmojiAPI
+    content.vb: >-
+      <PublicAPI>
+
+      Public Interface IDiscordRestEmojiAPI
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestEmojiAPI.ListGuildEmojisAsync(Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.API.Abstractions.Rest.IDiscordRestEmojiAPI.ListGuildEmojisAsync(Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  id: ListGuildEmojisAsync(Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  parent: Remora.Discord.API.Abstractions.Rest.IDiscordRestEmojiAPI
+  langs:
+  - csharp
+  - vb
+  name: ListGuildEmojisAsync(Snowflake, CancellationToken)
+  nameWithType: IDiscordRestEmojiAPI.ListGuildEmojisAsync(Snowflake, CancellationToken)
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestEmojiAPI.ListGuildEmojisAsync(Remora.Rest.Core.Snowflake, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: ListGuildEmojisAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Rest\IDiscordRestEmojiAPI.cs
+    startLine: 45
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Rest
+  summary: Gets a list of emojis for the given guild.
+  example: []
+  syntax:
+    content: Task<Result<IReadOnlyList<IEmoji>>> ListGuildEmojisAsync(Snowflake guildID, CancellationToken ct = default)
+    parameters:
+    - id: guildID
+      type: Remora.Rest.Core.Snowflake
+      description: The ID of the guild.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IEmoji}}}
+      description: A retrieval result which may or may not have succeeded.
+    content.vb: Function ListGuildEmojisAsync(guildID As Snowflake, ct As CancellationToken = Nothing) As Task(Of Result(Of IReadOnlyList(Of IEmoji)))
+  overload: Remora.Discord.API.Abstractions.Rest.IDiscordRestEmojiAPI.ListGuildEmojisAsync*
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestEmojiAPI.GetGuildEmojiAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.API.Abstractions.Rest.IDiscordRestEmojiAPI.GetGuildEmojiAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  id: GetGuildEmojiAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,System.Threading.CancellationToken)
+  parent: Remora.Discord.API.Abstractions.Rest.IDiscordRestEmojiAPI
+  langs:
+  - csharp
+  - vb
+  name: GetGuildEmojiAsync(Snowflake, Snowflake, CancellationToken)
+  nameWithType: IDiscordRestEmojiAPI.GetGuildEmojiAsync(Snowflake, Snowflake, CancellationToken)
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestEmojiAPI.GetGuildEmojiAsync(Remora.Rest.Core.Snowflake, Remora.Rest.Core.Snowflake, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: GetGuildEmojiAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Rest\IDiscordRestEmojiAPI.cs
+    startLine: 58
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Rest
+  summary: Gets the emoji on the given guild with the given ID.
+  example: []
+  syntax:
+    content: Task<Result<IEmoji>> GetGuildEmojiAsync(Snowflake guildID, Snowflake emojiID, CancellationToken ct = default)
+    parameters:
+    - id: guildID
+      type: Remora.Rest.Core.Snowflake
+      description: The ID of the guild.
+    - id: emojiID
+      type: Remora.Rest.Core.Snowflake
+      description: The ID of the emoji.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IEmoji}}
+      description: A retrieval result which may or may not have succeeded.
+    content.vb: Function GetGuildEmojiAsync(guildID As Snowflake, emojiID As Snowflake, ct As CancellationToken = Nothing) As Task(Of Result(Of IEmoji))
+  overload: Remora.Discord.API.Abstractions.Rest.IDiscordRestEmojiAPI.GetGuildEmojiAsync*
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestEmojiAPI.CreateGuildEmojiAsync(Remora.Rest.Core.Snowflake,System.String,System.IO.Stream,System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{System.String},System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.API.Abstractions.Rest.IDiscordRestEmojiAPI.CreateGuildEmojiAsync(Remora.Rest.Core.Snowflake,System.String,System.IO.Stream,System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{System.String},System.Threading.CancellationToken)
+  id: CreateGuildEmojiAsync(Remora.Rest.Core.Snowflake,System.String,System.IO.Stream,System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake},Remora.Rest.Core.Optional{System.String},System.Threading.CancellationToken)
+  parent: Remora.Discord.API.Abstractions.Rest.IDiscordRestEmojiAPI
+  langs:
+  - csharp
+  - vb
+  name: CreateGuildEmojiAsync(Snowflake, string, Stream, IReadOnlyList<Snowflake>, Optional<string>, CancellationToken)
+  nameWithType: IDiscordRestEmojiAPI.CreateGuildEmojiAsync(Snowflake, string, Stream, IReadOnlyList<Snowflake>, Optional<string>, CancellationToken)
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestEmojiAPI.CreateGuildEmojiAsync(Remora.Rest.Core.Snowflake, string, System.IO.Stream, System.Collections.Generic.IReadOnlyList<Remora.Rest.Core.Snowflake>, Remora.Rest.Core.Optional<string>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: CreateGuildEmojiAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Rest\IDiscordRestEmojiAPI.cs
+    startLine: 79
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Rest
+  summary: Creates a new emoji for the given guild with the given parameters.
+  remarks: >-
+    Any streams passed to this method will be disposed of at the end of the call. If you want to reuse the streams
+
+    afterwards, ensure that what you pass is a copy that the method can take ownership of.
+  example: []
+  syntax:
+    content: Task<Result<IEmoji>> CreateGuildEmojiAsync(Snowflake guildID, string name, Stream image, IReadOnlyList<Snowflake> roles, Optional<string> reason = default, CancellationToken ct = default)
+    parameters:
+    - id: guildID
+      type: Remora.Rest.Core.Snowflake
+      description: The ID of the guild.
+    - id: name
+      type: System.String
+      description: The name of the new emoji.
+    - id: image
+      type: System.IO.Stream
+      description: The image data.
+    - id: roles
+      type: System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}
+      description: The roles that the emoji will be restricted to.
+    - id: reason
+      type: Remora.Rest.Core.Optional{System.String}
+      description: The reason to mark the action in the audit log with.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IEmoji}}
+      description: A creation result which may or may not have succeeded.
+    content.vb: Function CreateGuildEmojiAsync(guildID As Snowflake, name As String, image As Stream, roles As IReadOnlyList(Of Snowflake), reason As [Optional](Of String) = Nothing, ct As CancellationToken = Nothing) As Task(Of Result(Of IEmoji))
+  overload: Remora.Discord.API.Abstractions.Rest.IDiscordRestEmojiAPI.CreateGuildEmojiAsync*
+  nameWithType.vb: IDiscordRestEmojiAPI.CreateGuildEmojiAsync(Snowflake, String, Stream, IReadOnlyList(Of Snowflake), Optional(Of String), CancellationToken)
+  fullName.vb: Remora.Discord.API.Abstractions.Rest.IDiscordRestEmojiAPI.CreateGuildEmojiAsync(Remora.Rest.Core.Snowflake, String, System.IO.Stream, System.Collections.Generic.IReadOnlyList(Of Remora.Rest.Core.Snowflake), Remora.Rest.Core.Optional(Of String), System.Threading.CancellationToken)
+  name.vb: CreateGuildEmojiAsync(Snowflake, String, Stream, IReadOnlyList(Of Snowflake), Optional(Of String), CancellationToken)
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestEmojiAPI.ModifyGuildEmojiAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}},Remora.Rest.Core.Optional{System.String},System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.API.Abstractions.Rest.IDiscordRestEmojiAPI.ModifyGuildEmojiAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}},Remora.Rest.Core.Optional{System.String},System.Threading.CancellationToken)
+  id: ModifyGuildEmojiAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{System.String},Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}},Remora.Rest.Core.Optional{System.String},System.Threading.CancellationToken)
+  parent: Remora.Discord.API.Abstractions.Rest.IDiscordRestEmojiAPI
+  langs:
+  - csharp
+  - vb
+  name: ModifyGuildEmojiAsync(Snowflake, Snowflake, Optional<string>, Optional<IReadOnlyList<Snowflake>?>, Optional<string>, CancellationToken)
+  nameWithType: IDiscordRestEmojiAPI.ModifyGuildEmojiAsync(Snowflake, Snowflake, Optional<string>, Optional<IReadOnlyList<Snowflake>?>, Optional<string>, CancellationToken)
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestEmojiAPI.ModifyGuildEmojiAsync(Remora.Rest.Core.Snowflake, Remora.Rest.Core.Snowflake, Remora.Rest.Core.Optional<string>, Remora.Rest.Core.Optional<System.Collections.Generic.IReadOnlyList<Remora.Rest.Core.Snowflake>?>, Remora.Rest.Core.Optional<string>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: ModifyGuildEmojiAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Rest\IDiscordRestEmojiAPI.cs
+    startLine: 99
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Rest
+  summary: Modifies the given emoji.
+  example: []
+  syntax:
+    content: Task<Result<IEmoji>> ModifyGuildEmojiAsync(Snowflake guildID, Snowflake emojiID, Optional<string> name = default, Optional<IReadOnlyList<Snowflake>?> roles = default, Optional<string> reason = default, CancellationToken ct = default)
+    parameters:
+    - id: guildID
+      type: Remora.Rest.Core.Snowflake
+      description: The ID of the guild.
+    - id: emojiID
+      type: Remora.Rest.Core.Snowflake
+      description: The ID of the emoji.
+    - id: name
+      type: Remora.Rest.Core.Optional{System.String}
+      description: The new name of the emoji.
+    - id: roles
+      type: Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}}
+      description: The new restricted roles.
+    - id: reason
+      type: Remora.Rest.Core.Optional{System.String}
+      description: The reason to mark the action in the audit log with.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IEmoji}}
+      description: A modification result which may or may not have succeeded.
+    content.vb: Function ModifyGuildEmojiAsync(guildID As Snowflake, emojiID As Snowflake, name As [Optional](Of String) = Nothing, roles As [Optional](Of IReadOnlyList(Of Snowflake)) = Nothing, reason As [Optional](Of String) = Nothing, ct As CancellationToken = Nothing) As Task(Of Result(Of IEmoji))
+  overload: Remora.Discord.API.Abstractions.Rest.IDiscordRestEmojiAPI.ModifyGuildEmojiAsync*
+  nameWithType.vb: IDiscordRestEmojiAPI.ModifyGuildEmojiAsync(Snowflake, Snowflake, Optional(Of String), Optional(Of IReadOnlyList(Of Snowflake)), Optional(Of String), CancellationToken)
+  fullName.vb: Remora.Discord.API.Abstractions.Rest.IDiscordRestEmojiAPI.ModifyGuildEmojiAsync(Remora.Rest.Core.Snowflake, Remora.Rest.Core.Snowflake, Remora.Rest.Core.Optional(Of String), Remora.Rest.Core.Optional(Of System.Collections.Generic.IReadOnlyList(Of Remora.Rest.Core.Snowflake)), Remora.Rest.Core.Optional(Of String), System.Threading.CancellationToken)
+  name.vb: ModifyGuildEmojiAsync(Snowflake, Snowflake, Optional(Of String), Optional(Of IReadOnlyList(Of Snowflake)), Optional(Of String), CancellationToken)
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestEmojiAPI.DeleteGuildEmojiAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{System.String},System.Threading.CancellationToken)
+  commentId: M:Remora.Discord.API.Abstractions.Rest.IDiscordRestEmojiAPI.DeleteGuildEmojiAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{System.String},System.Threading.CancellationToken)
+  id: DeleteGuildEmojiAsync(Remora.Rest.Core.Snowflake,Remora.Rest.Core.Snowflake,Remora.Rest.Core.Optional{System.String},System.Threading.CancellationToken)
+  parent: Remora.Discord.API.Abstractions.Rest.IDiscordRestEmojiAPI
+  langs:
+  - csharp
+  - vb
+  name: DeleteGuildEmojiAsync(Snowflake, Snowflake, Optional<string>, CancellationToken)
+  nameWithType: IDiscordRestEmojiAPI.DeleteGuildEmojiAsync(Snowflake, Snowflake, Optional<string>, CancellationToken)
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestEmojiAPI.DeleteGuildEmojiAsync(Remora.Rest.Core.Snowflake, Remora.Rest.Core.Snowflake, Remora.Rest.Core.Optional<string>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: DeleteGuildEmojiAsync
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.API.Abstractions\API\Rest\IDiscordRestEmojiAPI.cs
+    startLine: 117
+  assemblies:
+  - Remora.Discord.API.Abstractions
+  namespace: Remora.Discord.API.Abstractions.Rest
+  summary: Deletes the given emoji.
+  example: []
+  syntax:
+    content: Task<Result> DeleteGuildEmojiAsync(Snowflake guildID, Snowflake emojiID, Optional<string> reason = default, CancellationToken ct = default)
+    parameters:
+    - id: guildID
+      type: Remora.Rest.Core.Snowflake
+      description: The ID of the guild.
+    - id: emojiID
+      type: Remora.Rest.Core.Snowflake
+      description: The ID of the emoji.
+    - id: reason
+      type: Remora.Rest.Core.Optional{System.String}
+      description: The reason to mark the action in the audit log with.
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: The cancellation token for this operation.
+    return:
+      type: System.Threading.Tasks.Task{Remora.Results.Result}
+      description: A deletion result which may or may not have succeeded.
+    content.vb: Function DeleteGuildEmojiAsync(guildID As Snowflake, emojiID As Snowflake, reason As [Optional](Of String) = Nothing, ct As CancellationToken = Nothing) As Task(Of Result)
+  overload: Remora.Discord.API.Abstractions.Rest.IDiscordRestEmojiAPI.DeleteGuildEmojiAsync*
+  nameWithType.vb: IDiscordRestEmojiAPI.DeleteGuildEmojiAsync(Snowflake, Snowflake, Optional(Of String), CancellationToken)
+  fullName.vb: Remora.Discord.API.Abstractions.Rest.IDiscordRestEmojiAPI.DeleteGuildEmojiAsync(Remora.Rest.Core.Snowflake, Remora.Rest.Core.Snowflake, Remora.Rest.Core.Optional(Of String), System.Threading.CancellationToken)
+  name.vb: DeleteGuildEmojiAsync(Snowflake, Snowflake, Optional(Of String), CancellationToken)
+references:
+- uid: Remora.Discord.API.Abstractions.Rest
+  commentId: N:Remora.Discord.API.Abstractions.Rest
+  href: Remora.html
+  name: Remora.Discord.API.Abstractions.Rest
+  nameWithType: Remora.Discord.API.Abstractions.Rest
+  fullName: Remora.Discord.API.Abstractions.Rest
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Rest
+    name: Rest
+    href: Remora.Discord.API.Abstractions.Rest.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.API
+    name: API
+    href: Remora.Discord.API.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions
+    name: Abstractions
+    href: Remora.Discord.API.Abstractions.html
+  - name: .
+  - uid: Remora.Discord.API.Abstractions.Rest
+    name: Rest
+    href: Remora.Discord.API.Abstractions.Rest.html
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestEmojiAPI.ListGuildEmojisAsync*
+  commentId: Overload:Remora.Discord.API.Abstractions.Rest.IDiscordRestEmojiAPI.ListGuildEmojisAsync
+  href: Remora.Discord.API.Abstractions.Rest.IDiscordRestEmojiAPI.html#Remora_Discord_API_Abstractions_Rest_IDiscordRestEmojiAPI_ListGuildEmojisAsync_Remora_Rest_Core_Snowflake_System_Threading_CancellationToken_
+  name: ListGuildEmojisAsync
+  nameWithType: IDiscordRestEmojiAPI.ListGuildEmojisAsync
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestEmojiAPI.ListGuildEmojisAsync
+- uid: Remora.Rest.Core.Snowflake
+  commentId: T:Remora.Rest.Core.Snowflake
+  parent: Remora.Rest.Core
+  isExternal: true
+  name: Snowflake
+  nameWithType: Snowflake
+  fullName: Remora.Rest.Core.Snowflake
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Remora.Results.Result{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IEmoji}}}
+  commentId: T:System.Threading.Tasks.Task{Remora.Results.Result{System.Collections.Generic.IReadOnlyList{Remora.Discord.API.Abstractions.Objects.IEmoji}}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Result<IReadOnlyList<IEmoji>>>
+  nameWithType: Task<Result<IReadOnlyList<IEmoji>>>
+  fullName: System.Threading.Tasks.Task<Remora.Results.Result<System.Collections.Generic.IReadOnlyList<Remora.Discord.API.Abstractions.Objects.IEmoji>>>
+  nameWithType.vb: Task(Of Result(Of IReadOnlyList(Of IEmoji)))
+  fullName.vb: System.Threading.Tasks.Task(Of Remora.Results.Result(Of System.Collections.Generic.IReadOnlyList(Of Remora.Discord.API.Abstractions.Objects.IEmoji)))
+  name.vb: Task(Of Result(Of IReadOnlyList(Of IEmoji)))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Remora.Results.Result`1
+    name: Result
+    isExternal: true
+  - name: <
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IEmoji
+    name: IEmoji
+    href: Remora.Discord.API.Abstractions.Objects.IEmoji.html
+  - name: '>'
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Results.Result`1
+    name: Result
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IEmoji
+    name: IEmoji
+    href: Remora.Discord.API.Abstractions.Objects.IEmoji.html
+  - name: )
+  - name: )
+  - name: )
+- uid: Remora.Rest.Core
+  commentId: N:Remora.Rest.Core
+  isExternal: true
+  name: Remora.Rest.Core
+  nameWithType: Remora.Rest.Core
+  fullName: Remora.Rest.Core
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest
+    name: Rest
+    isExternal: true
+  - name: .
+  - uid: Remora.Rest.Core
+    name: Core
+    isExternal: true
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestEmojiAPI.GetGuildEmojiAsync*
+  commentId: Overload:Remora.Discord.API.Abstractions.Rest.IDiscordRestEmojiAPI.GetGuildEmojiAsync
+  href: Remora.Discord.API.Abstractions.Rest.IDiscordRestEmojiAPI.html#Remora_Discord_API_Abstractions_Rest_IDiscordRestEmojiAPI_GetGuildEmojiAsync_Remora_Rest_Core_Snowflake_Remora_Rest_Core_Snowflake_System_Threading_CancellationToken_
+  name: GetGuildEmojiAsync
+  nameWithType: IDiscordRestEmojiAPI.GetGuildEmojiAsync
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestEmojiAPI.GetGuildEmojiAsync
+- uid: System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IEmoji}}
+  commentId: T:System.Threading.Tasks.Task{Remora.Results.Result{Remora.Discord.API.Abstractions.Objects.IEmoji}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Result<IEmoji>>
+  nameWithType: Task<Result<IEmoji>>
+  fullName: System.Threading.Tasks.Task<Remora.Results.Result<Remora.Discord.API.Abstractions.Objects.IEmoji>>
+  nameWithType.vb: Task(Of Result(Of IEmoji))
+  fullName.vb: System.Threading.Tasks.Task(Of Remora.Results.Result(Of Remora.Discord.API.Abstractions.Objects.IEmoji))
+  name.vb: Task(Of Result(Of IEmoji))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Remora.Results.Result`1
+    name: Result
+    isExternal: true
+  - name: <
+  - uid: Remora.Discord.API.Abstractions.Objects.IEmoji
+    name: IEmoji
+    href: Remora.Discord.API.Abstractions.Objects.IEmoji.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Results.Result`1
+    name: Result
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.API.Abstractions.Objects.IEmoji
+    name: IEmoji
+    href: Remora.Discord.API.Abstractions.Objects.IEmoji.html
+  - name: )
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestEmojiAPI.CreateGuildEmojiAsync*
+  commentId: Overload:Remora.Discord.API.Abstractions.Rest.IDiscordRestEmojiAPI.CreateGuildEmojiAsync
+  href: Remora.Discord.API.Abstractions.Rest.IDiscordRestEmojiAPI.html#Remora_Discord_API_Abstractions_Rest_IDiscordRestEmojiAPI_CreateGuildEmojiAsync_Remora_Rest_Core_Snowflake_System_String_System_IO_Stream_System_Collections_Generic_IReadOnlyList_Remora_Rest_Core_Snowflake__Remora_Rest_Core_Optional_System_String__System_Threading_CancellationToken_
+  name: CreateGuildEmojiAsync
+  nameWithType: IDiscordRestEmojiAPI.CreateGuildEmojiAsync
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestEmojiAPI.CreateGuildEmojiAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}
+  commentId: T:System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<Snowflake>
+  nameWithType: IReadOnlyList<Snowflake>
+  fullName: System.Collections.Generic.IReadOnlyList<Remora.Rest.Core.Snowflake>
+  nameWithType.vb: IReadOnlyList(Of Snowflake)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Remora.Rest.Core.Snowflake)
+  name.vb: IReadOnlyList(Of Snowflake)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+- uid: Remora.Rest.Core.Optional{System.String}
+  commentId: T:Remora.Rest.Core.Optional{System.String}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Optional<string>
+  nameWithType: Optional<string>
+  fullName: Remora.Rest.Core.Optional<string>
+  nameWithType.vb: Optional(Of String)
+  fullName.vb: Remora.Rest.Core.Optional(Of String)
+  name.vb: Optional(Of String)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Remora.Rest.Core.Optional`1
+  commentId: T:Remora.Rest.Core.Optional`1
+  isExternal: true
+  name: Optional<TValue>
+  nameWithType: Optional<TValue>
+  fullName: Remora.Rest.Core.Optional<TValue>
+  nameWithType.vb: Optional(Of TValue)
+  fullName.vb: Remora.Rest.Core.Optional(Of TValue)
+  name.vb: Optional(Of TValue)
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestEmojiAPI.ModifyGuildEmojiAsync*
+  commentId: Overload:Remora.Discord.API.Abstractions.Rest.IDiscordRestEmojiAPI.ModifyGuildEmojiAsync
+  href: Remora.Discord.API.Abstractions.Rest.IDiscordRestEmojiAPI.html#Remora_Discord_API_Abstractions_Rest_IDiscordRestEmojiAPI_ModifyGuildEmojiAsync_Remora_Rest_Core_Snowflake_Remora_Rest_Core_Snowflake_Remora_Rest_Core_Optional_System_String__Remora_Rest_Core_Optional_System_Collections_Generic_IReadOnlyList_Remora_Rest_Core_Snowflake___Remora_Rest_Core_Optional_System_String__System_Threading_CancellationToken_
+  name: ModifyGuildEmojiAsync
+  nameWithType: IDiscordRestEmojiAPI.ModifyGuildEmojiAsync
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestEmojiAPI.ModifyGuildEmojiAsync
+- uid: Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}}
+  commentId: T:Remora.Rest.Core.Optional{System.Collections.Generic.IReadOnlyList{Remora.Rest.Core.Snowflake}}
+  parent: Remora.Rest.Core
+  definition: Remora.Rest.Core.Optional`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: Optional<IReadOnlyList<Snowflake>>
+  nameWithType: Optional<IReadOnlyList<Snowflake>>
+  fullName: Remora.Rest.Core.Optional<System.Collections.Generic.IReadOnlyList<Remora.Rest.Core.Snowflake>>
+  nameWithType.vb: Optional(Of IReadOnlyList(Of Snowflake))
+  fullName.vb: Remora.Rest.Core.Optional(Of System.Collections.Generic.IReadOnlyList(Of Remora.Rest.Core.Snowflake))
+  name.vb: Optional(Of IReadOnlyList(Of Snowflake))
+  spec.csharp:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: <
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: Remora.Rest.Core.Optional`1
+    name: Optional
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Rest.Core.Snowflake
+    name: Snowflake
+    isExternal: true
+  - name: )
+  - name: )
+- uid: Remora.Discord.API.Abstractions.Rest.IDiscordRestEmojiAPI.DeleteGuildEmojiAsync*
+  commentId: Overload:Remora.Discord.API.Abstractions.Rest.IDiscordRestEmojiAPI.DeleteGuildEmojiAsync
+  href: Remora.Discord.API.Abstractions.Rest.IDiscordRestEmojiAPI.html#Remora_Discord_API_Abstractions_Rest_IDiscordRestEmojiAPI_DeleteGuildEmojiAsync_Remora_Rest_Core_Snowflake_Remora_Rest_Core_Snowflake_Remora_Rest_Core_Optional_System_String__System_Threading_CancellationToken_
+  name: DeleteGuildEmojiAsync
+  nameWithType: IDiscordRestEmojiAPI.DeleteGuildEmojiAsync
+  fullName: Remora.Discord.API.Abstractions.Rest.IDiscordRestEmojiAPI.DeleteGuildEmojiAsync
+- uid: System.Threading.Tasks.Task{Remora.Results.Result}
+  commentId: T:System.Threading.Tasks.Task{Remora.Results.Result}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Result>
+  nameWithType: Task<Result>
+  fullName: System.Threading.Tasks.Task<Remora.Results.Result>
+  nameWithType.vb: Task(Of Result)
+  fullName.vb: System.Threading.Tasks.Task(Of Remora.Results.Result)
+  name.vb: Task(Of Result)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Remora.Results.Result
+    name: Result
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Results.Result
+    name: Result
+    isExternal: true
+  - name: )

@@ -1,0 +1,600 @@
+### YamlMime:ManagedReference
+items:
+- uid: Remora.Discord.Caching.Services.ImmutableCacheSettings
+  commentId: T:Remora.Discord.Caching.Services.ImmutableCacheSettings
+  id: ImmutableCacheSettings
+  parent: Remora.Discord.Caching.Services
+  children:
+  - Remora.Discord.Caching.Services.ImmutableCacheSettings.#ctor(Microsoft.Extensions.Options.IOptions{Remora.Discord.Caching.Services.CacheSettings})
+  - Remora.Discord.Caching.Services.ImmutableCacheSettings.GetEntryOptions``1
+  - Remora.Discord.Caching.Services.ImmutableCacheSettings.GetEvictionEntryOptions``1
+  langs:
+  - csharp
+  - vb
+  name: ImmutableCacheSettings
+  nameWithType: ImmutableCacheSettings
+  fullName: Remora.Discord.Caching.Services.ImmutableCacheSettings
+  type: Class
+  source:
+    id: ImmutableCacheSettings
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Caching\Services\ImmutableCacheSettings.cs
+    startLine: 33
+  assemblies:
+  - Remora.Discord.Caching
+  namespace: Remora.Discord.Caching.Services
+  summary: Allows for accessing settings for cache objects.
+  example: []
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public class ImmutableCacheSettings
+    content.vb: >-
+      <PublicAPI>
+
+      Public Class ImmutableCacheSettings
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Remora.Discord.Caching.Services.ImmutableCacheSettings.#ctor(Microsoft.Extensions.Options.IOptions{Remora.Discord.Caching.Services.CacheSettings})
+  commentId: M:Remora.Discord.Caching.Services.ImmutableCacheSettings.#ctor(Microsoft.Extensions.Options.IOptions{Remora.Discord.Caching.Services.CacheSettings})
+  id: '#ctor(Microsoft.Extensions.Options.IOptions{Remora.Discord.Caching.Services.CacheSettings})'
+  parent: Remora.Discord.Caching.Services.ImmutableCacheSettings
+  langs:
+  - csharp
+  - vb
+  name: ImmutableCacheSettings(IOptions<CacheSettings>)
+  nameWithType: ImmutableCacheSettings.ImmutableCacheSettings(IOptions<CacheSettings>)
+  fullName: Remora.Discord.Caching.Services.ImmutableCacheSettings.ImmutableCacheSettings(Microsoft.Extensions.Options.IOptions<Remora.Discord.Caching.Services.CacheSettings>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Caching\Services\ImmutableCacheSettings.cs
+    startLine: 47
+  assemblies:
+  - Remora.Discord.Caching
+  namespace: Remora.Discord.Caching.Services
+  summary: Initializes a new instance of the <xref href="Remora.Discord.Caching.Services.ImmutableCacheSettings" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public ImmutableCacheSettings(IOptions<CacheSettings> backingSettingsOptions)
+    parameters:
+    - id: backingSettingsOptions
+      type: Microsoft.Extensions.Options.IOptions{Remora.Discord.Caching.Services.CacheSettings}
+      description: The backing <xref href="Remora.Discord.Caching.Services.CacheSettings" data-throw-if-not-resolved="false"></xref> options that will be used to construct this instance.
+    content.vb: Public Sub New(backingSettingsOptions As IOptions(Of CacheSettings))
+  overload: Remora.Discord.Caching.Services.ImmutableCacheSettings.#ctor*
+  nameWithType.vb: ImmutableCacheSettings.New(IOptions(Of CacheSettings))
+  fullName.vb: Remora.Discord.Caching.Services.ImmutableCacheSettings.New(Microsoft.Extensions.Options.IOptions(Of Remora.Discord.Caching.Services.CacheSettings))
+  name.vb: New(IOptions(Of CacheSettings))
+- uid: Remora.Discord.Caching.Services.ImmutableCacheSettings.GetEntryOptions``1
+  commentId: M:Remora.Discord.Caching.Services.ImmutableCacheSettings.GetEntryOptions``1
+  id: GetEntryOptions``1
+  parent: Remora.Discord.Caching.Services.ImmutableCacheSettings
+  langs:
+  - csharp
+  - vb
+  name: GetEntryOptions<T>()
+  nameWithType: ImmutableCacheSettings.GetEntryOptions<T>()
+  fullName: Remora.Discord.Caching.Services.ImmutableCacheSettings.GetEntryOptions<T>()
+  type: Method
+  source:
+    id: GetEntryOptions
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Caching\Services\ImmutableCacheSettings.cs
+    startLine: 101
+  assemblies:
+  - Remora.Discord.Caching
+  namespace: Remora.Discord.Caching.Services
+  summary: Gets a set of cache options, with expirations relative to now.
+  example: []
+  syntax:
+    content: public CacheEntryOptions GetEntryOptions<T>()
+    typeParameters:
+    - id: T
+      description: The cache entry type.
+    return:
+      type: Remora.Discord.Caching.Abstractions.CacheEntryOptions
+      description: The entry options.
+    content.vb: Public Function GetEntryOptions(Of T)() As CacheEntryOptions
+  overload: Remora.Discord.Caching.Services.ImmutableCacheSettings.GetEntryOptions*
+  nameWithType.vb: ImmutableCacheSettings.GetEntryOptions(Of T)()
+  fullName.vb: Remora.Discord.Caching.Services.ImmutableCacheSettings.GetEntryOptions(Of T)()
+  name.vb: GetEntryOptions(Of T)()
+- uid: Remora.Discord.Caching.Services.ImmutableCacheSettings.GetEvictionEntryOptions``1
+  commentId: M:Remora.Discord.Caching.Services.ImmutableCacheSettings.GetEvictionEntryOptions``1
+  id: GetEvictionEntryOptions``1
+  parent: Remora.Discord.Caching.Services.ImmutableCacheSettings
+  langs:
+  - csharp
+  - vb
+  name: GetEvictionEntryOptions<T>()
+  nameWithType: ImmutableCacheSettings.GetEvictionEntryOptions<T>()
+  fullName: Remora.Discord.Caching.Services.ImmutableCacheSettings.GetEvictionEntryOptions<T>()
+  type: Method
+  source:
+    id: GetEvictionEntryOptions
+    path: D:\Projects\apps\Remora\documentation\src\Remora.Discord\Backend\Remora.Discord.Caching\Services\ImmutableCacheSettings.cs
+    startLine: 113
+  assemblies:
+  - Remora.Discord.Caching
+  namespace: Remora.Discord.Caching.Services
+  summary: Gets a set of cache options for an evicted value, with expirations relative to now.
+  example: []
+  syntax:
+    content: public CacheEntryOptions GetEvictionEntryOptions<T>()
+    typeParameters:
+    - id: T
+      description: The cache entry type.
+    return:
+      type: Remora.Discord.Caching.Abstractions.CacheEntryOptions
+      description: The entry options.
+    content.vb: Public Function GetEvictionEntryOptions(Of T)() As CacheEntryOptions
+  overload: Remora.Discord.Caching.Services.ImmutableCacheSettings.GetEvictionEntryOptions*
+  nameWithType.vb: ImmutableCacheSettings.GetEvictionEntryOptions(Of T)()
+  fullName.vb: Remora.Discord.Caching.Services.ImmutableCacheSettings.GetEvictionEntryOptions(Of T)()
+  name.vb: GetEvictionEntryOptions(Of T)()
+references:
+- uid: Remora.Discord.Caching.Services
+  commentId: N:Remora.Discord.Caching.Services
+  href: Remora.html
+  name: Remora.Discord.Caching.Services
+  nameWithType: Remora.Discord.Caching.Services
+  fullName: Remora.Discord.Caching.Services
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Caching
+    name: Caching
+    href: Remora.Discord.Caching.html
+  - name: .
+  - uid: Remora.Discord.Caching.Services
+    name: Services
+    href: Remora.Discord.Caching.Services.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Caching
+    name: Caching
+    href: Remora.Discord.Caching.html
+  - name: .
+  - uid: Remora.Discord.Caching.Services
+    name: Services
+    href: Remora.Discord.Caching.Services.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Remora.Discord.Caching.Services.ImmutableCacheSettings
+  commentId: T:Remora.Discord.Caching.Services.ImmutableCacheSettings
+  parent: Remora.Discord.Caching.Services
+  href: Remora.Discord.Caching.Services.ImmutableCacheSettings.html
+  name: ImmutableCacheSettings
+  nameWithType: ImmutableCacheSettings
+  fullName: Remora.Discord.Caching.Services.ImmutableCacheSettings
+- uid: Remora.Discord.Caching.Services.CacheSettings
+  commentId: T:Remora.Discord.Caching.Services.CacheSettings
+  parent: Remora.Discord.Caching.Services
+  href: Remora.Discord.Caching.Services.CacheSettings.html
+  name: CacheSettings
+  nameWithType: CacheSettings
+  fullName: Remora.Discord.Caching.Services.CacheSettings
+- uid: Remora.Discord.Caching.Services.ImmutableCacheSettings.#ctor*
+  commentId: Overload:Remora.Discord.Caching.Services.ImmutableCacheSettings.#ctor
+  href: Remora.Discord.Caching.Services.ImmutableCacheSettings.html#Remora_Discord_Caching_Services_ImmutableCacheSettings__ctor_Microsoft_Extensions_Options_IOptions_Remora_Discord_Caching_Services_CacheSettings__
+  name: ImmutableCacheSettings
+  nameWithType: ImmutableCacheSettings.ImmutableCacheSettings
+  fullName: Remora.Discord.Caching.Services.ImmutableCacheSettings.ImmutableCacheSettings
+  nameWithType.vb: ImmutableCacheSettings.New
+  fullName.vb: Remora.Discord.Caching.Services.ImmutableCacheSettings.New
+  name.vb: New
+- uid: Microsoft.Extensions.Options.IOptions{Remora.Discord.Caching.Services.CacheSettings}
+  commentId: T:Microsoft.Extensions.Options.IOptions{Remora.Discord.Caching.Services.CacheSettings}
+  parent: Microsoft.Extensions.Options
+  definition: Microsoft.Extensions.Options.IOptions`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  name: IOptions<CacheSettings>
+  nameWithType: IOptions<CacheSettings>
+  fullName: Microsoft.Extensions.Options.IOptions<Remora.Discord.Caching.Services.CacheSettings>
+  nameWithType.vb: IOptions(Of CacheSettings)
+  fullName.vb: Microsoft.Extensions.Options.IOptions(Of Remora.Discord.Caching.Services.CacheSettings)
+  name.vb: IOptions(Of CacheSettings)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: <
+  - uid: Remora.Discord.Caching.Services.CacheSettings
+    name: CacheSettings
+    href: Remora.Discord.Caching.Services.CacheSettings.html
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Remora.Discord.Caching.Services.CacheSettings
+    name: CacheSettings
+    href: Remora.Discord.Caching.Services.CacheSettings.html
+  - name: )
+- uid: Microsoft.Extensions.Options.IOptions`1
+  commentId: T:Microsoft.Extensions.Options.IOptions`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  name: IOptions<TOptions>
+  nameWithType: IOptions<TOptions>
+  fullName: Microsoft.Extensions.Options.IOptions<TOptions>
+  nameWithType.vb: IOptions(Of TOptions)
+  fullName.vb: Microsoft.Extensions.Options.IOptions(Of TOptions)
+  name.vb: IOptions(Of TOptions)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: <
+  - name: TOptions
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TOptions
+  - name: )
+- uid: Microsoft.Extensions.Options
+  commentId: N:Microsoft.Extensions.Options
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Options
+  nameWithType: Microsoft.Extensions.Options
+  fullName: Microsoft.Extensions.Options
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Options
+    name: Options
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Options
+    name: Options
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options
+- uid: Remora.Discord.Caching.Services.ImmutableCacheSettings.GetEntryOptions*
+  commentId: Overload:Remora.Discord.Caching.Services.ImmutableCacheSettings.GetEntryOptions
+  href: Remora.Discord.Caching.Services.ImmutableCacheSettings.html#Remora_Discord_Caching_Services_ImmutableCacheSettings_GetEntryOptions__1
+  name: GetEntryOptions
+  nameWithType: ImmutableCacheSettings.GetEntryOptions
+  fullName: Remora.Discord.Caching.Services.ImmutableCacheSettings.GetEntryOptions
+- uid: Remora.Discord.Caching.Abstractions.CacheEntryOptions
+  commentId: T:Remora.Discord.Caching.Abstractions.CacheEntryOptions
+  parent: Remora.Discord.Caching.Abstractions
+  href: Remora.Discord.Caching.Abstractions.CacheEntryOptions.html
+  name: CacheEntryOptions
+  nameWithType: CacheEntryOptions
+  fullName: Remora.Discord.Caching.Abstractions.CacheEntryOptions
+- uid: Remora.Discord.Caching.Abstractions
+  commentId: N:Remora.Discord.Caching.Abstractions
+  href: Remora.html
+  name: Remora.Discord.Caching.Abstractions
+  nameWithType: Remora.Discord.Caching.Abstractions
+  fullName: Remora.Discord.Caching.Abstractions
+  spec.csharp:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Caching
+    name: Caching
+    href: Remora.Discord.Caching.html
+  - name: .
+  - uid: Remora.Discord.Caching.Abstractions
+    name: Abstractions
+    href: Remora.Discord.Caching.Abstractions.html
+  spec.vb:
+  - uid: Remora
+    name: Remora
+    href: Remora.html
+  - name: .
+  - uid: Remora.Discord
+    name: Discord
+    href: Remora.Discord.html
+  - name: .
+  - uid: Remora.Discord.Caching
+    name: Caching
+    href: Remora.Discord.Caching.html
+  - name: .
+  - uid: Remora.Discord.Caching.Abstractions
+    name: Abstractions
+    href: Remora.Discord.Caching.Abstractions.html
+- uid: Remora.Discord.Caching.Services.ImmutableCacheSettings.GetEvictionEntryOptions*
+  commentId: Overload:Remora.Discord.Caching.Services.ImmutableCacheSettings.GetEvictionEntryOptions
+  href: Remora.Discord.Caching.Services.ImmutableCacheSettings.html#Remora_Discord_Caching_Services_ImmutableCacheSettings_GetEvictionEntryOptions__1
+  name: GetEvictionEntryOptions
+  nameWithType: ImmutableCacheSettings.GetEvictionEntryOptions
+  fullName: Remora.Discord.Caching.Services.ImmutableCacheSettings.GetEvictionEntryOptions
