@@ -10,6 +10,11 @@ To get started with contribution, follow the steps below:
 1. `git clone` your fork with the `--recurse-submodules` parameter
 1. Navigate to `templates/discordfx/discordfx/` and rename `toc.html.tmlp` to `toc.html.primary.tmpl`
 
+HINT: If you forgot to use the `--recurse-submodules` argument, you can run the following command to import submodules.:
+```sh
+git submodule update --init --recursive
+```
+
 After this is complete, you may follow the instructions below to add additional documentation.
 
 ### Adding a project
